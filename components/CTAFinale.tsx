@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { InlineWidget } from 'react-calendly'
 import { ButtonGlow } from './ui/ButtonGlow'
 import { ScrollReveal } from './ui/ScrollReveal'
 
@@ -22,6 +21,33 @@ const initialForm: FormData = {
   phone: '',
   interest: '',
   message: '',
+}
+
+// Lazy-load Calendly only when the user asks for it
+function CalendlySlot({ url }: { url: string }) {
+  const [loaded, setLoaded] = useState(false)
+
+  if (!loaded) {
+    return (
+      <div className="flex flex-col items-center justify-center gap-5 min-h-[260px]">
+        <div className="text-center">
+          <p className="font-sans font-semibold text-text-primary mb-2">
+            Vous préférez en parler directement ?
+          </p>
+          <p className="font-sans text-text-muted text-sm">
+            Réservez un créneau de 30 minutes, sans engagement.
+          </p>
+        </div>
+        <ButtonGlow onClick={() => setLoaded(true)}>
+          Voir les créneaux disponibles →
+        </ButtonGlow>
+      </div>
+    )
+  }
+
+  // Dynamic import on first render after click
+  const { InlineWidget } = require('react-calendly')
+  return <InlineWidget url={url} styles={{ height: '500px', minWidth: '280px' }} />
 }
 
 export function CTAFinale() {
@@ -83,6 +109,7 @@ export function CTAFinale() {
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-white/5">
+          {/* Left — contact form */}
           <ScrollReveal>
             <div className="bg-bg-secondary p-10 border-b md:border-b-0 md:border-r border-white/5">
               <h3 className="font-sans font-semibold text-h3 text-text-primary mb-8">
@@ -147,7 +174,11 @@ export function CTAFinale() {
                     <p className="font-sans text-sm text-text-muted mb-3">Vous intéresse * :</p>
                     <div className="flex flex-wrap gap-3" role="radiogroup" aria-label="Service souhaité">
                       {(['setting', 'closing', 'les_deux'] as Interest[]).map((value) => {
-                        const labels: Record<Interest, string> = { setting: 'Setting', closing: 'Closing', les_deux: 'Les deux' }
+                        const labels: Record<Interest, string> = {
+                          setting: 'Setting',
+                          closing: 'Closing',
+                          les_deux: 'Les deux',
+                        }
                         return (
                           <button
                             key={value}
@@ -200,20 +231,10 @@ export function CTAFinale() {
             </div>
           </ScrollReveal>
 
+          {/* Right — Calendly (lazy) */}
           <ScrollReveal delay={150}>
-            <div className="bg-bg-secondary p-10 flex flex-col gap-6">
-              <div>
-                <h3 className="font-sans font-semibold text-h3 text-text-primary mb-2">
-                  Vous préférez en parler directement ?
-                </h3>
-                <p className="font-sans text-text-muted text-sm">
-                  Réservez un créneau de 30 minutes, sans engagement.
-                </p>
-              </div>
-              <InlineWidget
-                url={calendlyUrl}
-                styles={{ height: '500px', minWidth: '280px' }}
-              />
+            <div className="bg-bg-secondary p-10 flex flex-col justify-center min-h-full">
+              <CalendlySlot url={calendlyUrl} />
             </div>
           </ScrollReveal>
         </div>
