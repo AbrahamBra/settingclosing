@@ -1,3 +1,5 @@
+'use client'
+
 export function ButtonGlow({ as: Tag = 'button', className = '', children, ...props }: any) {
   return (
     <Tag

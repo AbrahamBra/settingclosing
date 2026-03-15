@@ -11,8 +11,8 @@ export function LenisProvider() {
 
     async function init() {
       try {
-        // Try modern package first, fall back to deprecated
-        const mod = await import('lenis').catch(() => import('@studio-freight/lenis'))
+        // Use @studio-freight/lenis (lenis package not installed)
+        const mod = await import('@studio-freight/lenis')
         const Lenis = mod.default
         lenis = new Lenis({
           duration: 1.2,
