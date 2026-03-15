@@ -5,15 +5,15 @@ import { ScrollReveal } from './ui/ScrollReveal'
 const phases = [
   {
     title: 'Prospection assistée par IA',
-    desc: "Mise en place du système : ciblage, Sales Navigator, messages orientés bénéfice client. L'IA génère et affine en continu.",
+    desc: "Ciblage, Sales Navigator, messages orientés bénéfice client. L'IA génère et affine les approches en continu.",
   },
   {
     title: 'Base de connaissance',
-    desc: 'Construction du contexte client et des best practices. Chaque réponse gagne en pertinence, les taux de réponse augmentent.',
+    desc: 'On construit le contexte métier et les best practices de votre secteur. Vos messages deviennent plus pertinents, les prospects répondent plus.',
   },
   {
     title: 'Scoring + Nurturing',
-    desc: 'Système de scoring pour prioriser les bons prospects au bon moment. Nurturing des leads froids pour maximiser les RDV.',
+    desc: 'Chaque lead est scoré : qui appeler maintenant, qui nurture, qui oublier. Fini de perdre du temps sur les mauvais profils.',
   },
 ]
 
@@ -42,7 +42,7 @@ export function SectionSetting() {
                     {i < phases.length - 1 && (
                       <div
                         className="w-px flex-1 my-1.5"
-                        style={{ background: 'rgba(255,255,255,0.08)', minHeight: '24px' }}
+                        style={{ background: 'rgba(0,0,0,0.12)', minHeight: '24px' }}
                       />
                     )}
                   </div>
@@ -76,7 +76,7 @@ export function SectionSetting() {
                 </p>
               </div>
 
-              <div className="border-t border-white/5 pt-5">
+              <div className="border-t border-black/8 pt-5">
                 <p className="font-sans text-text-muted text-sm mb-2">Prime à la performance</p>
                 <div className="flex items-baseline gap-2">
                   <p className="font-serif text-h3 text-text-primary">25 € – 150 €</p>
@@ -87,7 +87,7 @@ export function SectionSetting() {
                 </p>
               </div>
 
-              <div className="border-t border-white/5 pt-5">
+              <div className="border-t border-black/8 pt-5">
                 <p className="font-sans text-text-primary font-semibold mb-1">
                   Garantie : minimum 5 RDV qualifiés
                 </p>

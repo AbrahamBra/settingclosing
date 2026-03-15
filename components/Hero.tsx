@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { ButtonGlow } from './ui/ButtonGlow'
 
-const personas = ['solopreneur', 'infopreneur']
+const personas = ['solopreneurs', 'infopreneurs']
 
 export function Hero() {
   const [index, setIndex] = useState(0)
@@ -19,17 +19,17 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden section-padding flex flex-col items-center text-center min-h-screen justify-center">
-      {/* Radial glow background */}
+      {/* Radial glow */}
       <div
-        className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none select-none"
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none select-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.13) 0%, transparent 60%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.09) 0%, transparent 60%)',
         }}
       />
 
       <div className="container-max max-w-3xl relative">
-        {/* Eyebrow pill */}
+        {/* Eyebrow */}
         <motion.div
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -57,8 +57,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-muted mb-4 max-w-xl mx-auto"
         >
-          ChallengersLab prend en charge votre setting et votre closing — avec les
-          méthodes qui font la différence en B2B.
+          ChallengersLab prend en charge votre prospection et votre closing.
+          Des méthodes qui fonctionnent en B2B, adaptées à votre marché.
         </motion.p>
 
         <motion.div
@@ -67,9 +67,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center justify-center gap-2 text-text-muted font-sans text-base mb-12"
         >
-          <span>Pour le</span>
-          {/* Fixed-width container — no overflow-hidden so blur animation isn't clipped */}
-          <span className="relative inline-block w-[150px] h-6">
+          <span>Pour les</span>
+          <span className="relative inline-block w-[165px] h-6">
             <AnimatePresence mode="wait">
               <motion.span
                 key={personas[index]}
@@ -83,7 +82,7 @@ export function Hero() {
               </motion.span>
             </AnimatePresence>
           </span>
-          <span>qui veut déléguer.</span>
+          <span>qui veulent déléguer.</span>
         </motion.div>
 
         <motion.div

@@ -9,27 +9,24 @@ export function GlassCard({ accent = false, className = '', children, ...props }
     <div
       className={`relative rounded-2xl overflow-hidden ${className}`}
       style={{
-        background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)',
+        background: 'rgba(255,255,255,0.88)',
         border: accent
-          ? '1px solid rgba(59, 130, 246, 0.45)'
-          : '1px solid rgba(255, 255, 255, 0.09)',
-        backdropFilter: 'blur(10px)',
-        WebkitBackdropFilter: 'blur(10px)',
+          ? '1px solid rgba(59, 130, 246, 0.4)'
+          : '1px solid rgba(28, 25, 23, 0.1)',
+        boxShadow: accent
+          ? '0 2px 20px rgba(59,130,246,0.08), 0 1px 4px rgba(28,25,23,0.06)'
+          : '0 2px 16px rgba(28,25,23,0.07), 0 1px 3px rgba(28,25,23,0.05)',
       }}
       {...props}
     >
-      {/* Gradient border highlight */}
+      {/* Subtle top-left sheen */}
       <div
         aria-hidden="true"
         className="absolute inset-0 rounded-2xl pointer-events-none"
         style={{
-          padding: '1px',
           background: accent
-            ? 'linear-gradient(135deg, rgba(59,130,246,0.3) 0%, transparent 55%)'
-            : 'linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 55%)',
-          WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
-          WebkitMaskComposite: 'xor',
-          maskComposite: 'exclude',
+            ? 'linear-gradient(160deg, rgba(59,130,246,0.05) 0%, transparent 45%)'
+            : 'linear-gradient(160deg, rgba(255,255,255,0.6) 0%, transparent 45%)',
         }}
       />
       {children}

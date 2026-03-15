@@ -5,7 +5,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 const phases = [
   {
     title: 'Challenger la discovery',
-    desc: 'Apprendre à poser les bonnes questions avant de parler prix. Comprendre les vrais enjeux pour vendre la bonne solution.',
+    desc: 'Poser les bonnes questions avant de parler prix. On ne pitch pas une solution sans comprendre le problème.',
   },
   {
     title: 'Challenger le pricing',
@@ -13,7 +13,7 @@ const phases = [
   },
   {
     title: 'Déléguer à des closers',
-    desc: 'Mise en place du système pour recruter et manager des closers. Vous passez de vendeur à manager commercial.',
+    desc: "Recruter et manager des closers. Vous n'êtes plus dans le pipe, vous le gérez.",
   },
 ]
 
@@ -33,11 +33,11 @@ export function SectionClosing() {
                   <span className="font-sans text-text-muted text-base">/ mois</span>
                 </div>
                 <p className="font-sans text-text-muted text-sm mt-1">
-                  × 3 mois — engagement sur la durée pour de vrais résultats
+                  × 3 mois. Un mois par phase : discovery, pricing, délégation.
                 </p>
               </div>
 
-              <div className="border-t border-white/5 pt-5 space-y-3">
+              <div className="border-t border-black/8 pt-5 space-y-3">
                 <p className="font-sans text-text-primary font-semibold">
                   2h de coaching par semaine
                 </p>
@@ -63,7 +63,7 @@ export function SectionClosing() {
               Closing
             </p>
             <h2 className="font-serif text-h2 text-text-primary mb-10">
-              Apprenez à closer comme les meilleurs commerciaux B2B.
+              La méthode Challenger Sale. Appliquée à votre activité.
             </h2>
 
             <ul className="flex flex-col">
@@ -76,7 +76,7 @@ export function SectionClosing() {
                     {i < phases.length - 1 && (
                       <div
                         className="w-px flex-1 my-1.5"
-                        style={{ background: 'rgba(255,255,255,0.08)', minHeight: '24px' }}
+                        style={{ background: 'rgba(0,0,0,0.12)', minHeight: '24px' }}
                       />
                     )}
                   </div>

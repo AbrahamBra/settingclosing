@@ -11,10 +11,10 @@ const config: Config = {
       colors: {
         accent: '#3B82F6',
         'accent-hover': '#2563EB',
-        'bg-primary': '#0A0A0F',
-        'bg-secondary': '#111118',
-        'text-primary': '#F8FAFC',
-        'text-muted': '#94A3B8',
+        'bg-primary': '#FAF9F6',
+        'bg-secondary': '#EDE7DC',
+        'text-primary': '#1C1917',
+        'text-muted': '#6C6560',
       },
       fontFamily: {
         serif: ['var(--font-serif)', 'Georgia', 'serif'],

@@ -108,10 +108,10 @@ export function CTAFinale() {
           </h2>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-white/5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-black/8">
           {/* Left — contact form */}
           <ScrollReveal>
-            <div className="bg-bg-secondary p-10 border-b md:border-b-0 md:border-r border-white/5">
+            <div className="bg-bg-secondary p-10 border-b md:border-b-0 md:border-r border-black/8">
               <h3 className="font-sans font-semibold text-h3 text-text-primary mb-8">
                 Nous contacter
               </h3>
@@ -134,7 +134,7 @@ export function CTAFinale() {
                       minLength={2}
                       value={form.firstName}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-white/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="Jean"
                     />
                   </div>
@@ -150,7 +150,7 @@ export function CTAFinale() {
                       required
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-white/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="jean@example.com"
                     />
                   </div>
@@ -165,7 +165,7 @@ export function CTAFinale() {
                       type="tel"
                       value={form.phone}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-white/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="+33 6 00 00 00 00"
                     />
                   </div>
@@ -189,7 +189,7 @@ export function CTAFinale() {
                             className={`px-4 py-2 rounded-lg font-sans text-sm border transition-colors ${
                               form.interest === value
                                 ? 'border-accent text-accent bg-accent/10'
-                                : 'border-white/10 text-text-muted hover:border-white/20'
+                                : 'border-black/10 text-text-muted hover:border-black/20'
                             }`}
                           >
                             {labels[value]}
@@ -210,7 +210,7 @@ export function CTAFinale() {
                       maxLength={1000}
                       value={form.message}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-white/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
+                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
                       placeholder="Décrivez votre situation..."
                     />
                   </div>

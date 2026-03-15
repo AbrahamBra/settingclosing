@@ -6,11 +6,11 @@
   --accent: #3B82F6;
   --accent-hover: #2563EB;
   --accent-rgb: 59, 130, 246;
-  --bg-primary: #0A0A0F;
-  --bg-secondary: #111118;
-  --text-primary: #F8FAFC;
-  --text-muted: #94A3B8;
-  --border: rgba(255, 255, 255, 0.06);
+  --bg-primary: #FAF9F6;
+  --bg-secondary: #EDE7DC;
+  --text-primary: #1C1917;
+  --text-muted: #6C6560;
+  --border: rgba(28, 25, 23, 0.08);
 
   --z-base: 0;
   --z-card: 10;

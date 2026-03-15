@@ -1,12 +1,12 @@
 export function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-bg-primary">
+    <footer className="border-t border-black/8 bg-bg-primary">
       <div className="container-max px-6 md:px-12 lg:px-20 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
             <p className="font-serif text-xl text-text-primary mb-2">ChallengersLab</p>
             <p className="font-sans text-text-muted text-sm max-w-xs">
-              Les meilleures méthodes B2B, pour votre activité.
+              Ce qui fonctionne en B2B, appliqué à votre activité.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-8 text-sm font-sans text-text-muted">
@@ -38,7 +38,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-white/5 mt-8 pt-8">
+        <div className="border-t border-black/8 mt-8 pt-8">
           <p className="font-sans text-text-muted text-xs">
             © {new Date().getFullYear()} ChallengersLab. Tous droits réservés.
           </p>

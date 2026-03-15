@@ -12,7 +12,7 @@ const problems = [
   },
   {
     title: 'Vous faites tout vous-même',
-    body: "Pendant que vous prospectez et tentez de closer, votre vraie valeur ajoutée — la création, le coaching, l'expertise — attend.",
+    body: "Pendant que vous prospectez et tentez de closer, votre vrai travail attend.",
   },
 ]
 
@@ -35,7 +35,7 @@ export function Probleme() {
                   className="absolute top-4 right-5 font-serif select-none pointer-events-none leading-none"
                   style={{
                     fontSize: '5rem',
-                    color: 'rgba(255,255,255,0.04)',
+                    color: 'rgba(28,25,23,0.07)',
                     fontWeight: 400,
                   }}
                 >

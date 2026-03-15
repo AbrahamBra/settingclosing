@@ -29,7 +29,7 @@ export function Navbar() {
       <nav
         style={{ zIndex: 50 }}
         className={`fixed top-0 left-0 right-0 flex items-center justify-between px-6 md:px-12 h-16 transition-all duration-300 ${
-          scrolled ? 'bg-bg-primary/95 backdrop-blur-md border-b border-white/5' : 'bg-transparent'
+          scrolled ? 'bg-bg-primary/95 backdrop-blur-md border-b border-black/8' : 'bg-transparent'
         }`}
       >
         <a href="#" className="font-serif text-xl text-text-primary">
@@ -75,7 +75,7 @@ export function Navbar() {
         role="dialog"
         aria-modal="true"
         aria-label="Menu de navigation"
-        className={`fixed top-0 right-0 h-full w-72 bg-bg-secondary border-l border-white/5 flex flex-col p-8 gap-8 transition-transform duration-300 md:hidden ${
+        className={`fixed top-0 right-0 h-full w-72 bg-bg-secondary border-l border-black/8 flex flex-col p-8 gap-8 transition-transform duration-300 md:hidden ${
           drawerOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{ zIndex: 50 }}

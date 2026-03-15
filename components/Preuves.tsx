@@ -52,7 +52,7 @@ export function Preuves() {
                   <button
                     aria-label={`Regarder le témoignage de ${video.name} (${video.company})`}
                     onClick={() => setActiveVideo(video)}
-                    className="relative w-full aspect-video rounded-xl overflow-hidden group bg-bg-primary"
+                    className="relative w-full aspect-video rounded-xl overflow-hidden group bg-bg-secondary"
                   >
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="w-14 h-14 rounded-full bg-accent/90 flex items-center justify-center">
