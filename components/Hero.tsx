@@ -18,43 +18,65 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="section-padding flex flex-col items-center text-center min-h-screen justify-center">
-      <div className="container-max max-w-3xl">
+    <section className="relative overflow-hidden section-padding flex flex-col items-center text-center min-h-screen justify-center">
+      {/* Radial glow background */}
+      <div
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] pointer-events-none select-none"
+        style={{
+          background:
+            'radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.13) 0%, transparent 60%)',
+        }}
+      />
+
+      <div className="container-max max-w-3xl relative">
+        {/* Eyebrow pill */}
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/10 font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-8"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
+          Setting &amp; Closing B2B
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="font-serif text-h1 md:text-display text-text-primary mb-6"
+          transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+          className="font-serif text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] leading-[1.15] text-text-primary mb-6"
         >
           Vous avez une offre qui cartonne.{' '}
-          <br className="hidden md:block" />
+          <br className="hidden sm:block" />
           Arrêtez de perdre du temps à la vendre.
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-muted mb-4 max-w-xl mx-auto"
         >
-          ChallengersLab prend en charge votre setting et votre closing — avec les méthodes qui font la différence en B2B.
+          ChallengersLab prend en charge votre setting et votre closing — avec les
+          méthodes qui font la différence en B2B.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center justify-center gap-2 text-text-muted font-sans text-base mb-12"
         >
           <span>Pour le</span>
-          <span className="relative inline-block w-36 h-7 overflow-hidden">
+          {/* Fixed-width container — no overflow-hidden so blur animation isn't clipped */}
+          <span className="relative inline-block w-[150px] h-6">
             <AnimatePresence mode="wait">
               <motion.span
                 key={personas[index]}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                initial={{ opacity: 0, filter: 'blur(8px)' }}
+                animate={{ opacity: 1, filter: 'blur(0px)' }}
+                exit={{ opacity: 0, filter: 'blur(8px)' }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 className="absolute inset-0 flex items-center justify-center text-accent font-semibold"
               >
                 {personas[index]}
@@ -67,7 +89,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">

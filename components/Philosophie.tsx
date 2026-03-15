@@ -16,7 +16,7 @@ export function Philosophie() {
         </ScrollReveal>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 rounded-2xl overflow-hidden">
           <ScrollReveal delay={100}>
-            <div className="bg-bg-primary p-10">
+            <div className="bg-bg-secondary p-10">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
                 Setting
               </p>
@@ -29,7 +29,7 @@ export function Philosophie() {
             </div>
           </ScrollReveal>
           <ScrollReveal delay={200}>
-            <div className="bg-bg-primary p-10">
+            <div className="bg-bg-secondary p-10">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
                 Closing
               </p>

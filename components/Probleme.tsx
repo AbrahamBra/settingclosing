@@ -28,7 +28,21 @@ export function Probleme() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {problems.map((problem, i) => (
             <ScrollReveal key={problem.title} delay={i * 100}>
-              <GlassCard className="p-8 h-full">
+              <GlassCard className="p-8 h-full relative overflow-hidden">
+                {/* Decorative number */}
+                <span
+                  aria-hidden="true"
+                  className="absolute top-4 right-5 font-serif select-none pointer-events-none leading-none"
+                  style={{
+                    fontSize: '5rem',
+                    color: 'rgba(255,255,255,0.04)',
+                    fontWeight: 400,
+                  }}
+                >
+                  0{i + 1}
+                </span>
+                {/* Accent top-line */}
+                <div className="w-8 h-0.5 bg-accent mb-6 rounded-full" />
                 <h3 className="font-sans font-semibold text-h3 text-text-primary mb-4">
                   {problem.title}
                 </h3>
