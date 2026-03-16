@@ -103,6 +103,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             pointerEvents: 'none',
             zIndex: 9998,
             opacity: 0.03,
+            transform: 'translateZ(0)',
+            willChange: 'transform',
           }}
         >
           <filter id="grain">

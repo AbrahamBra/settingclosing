@@ -8,13 +8,11 @@ import { SectionComplementarite } from '@/components/SectionComplementarite'
 import { Preuves } from '@/components/Preuves'
 import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
-import { LenisProvider } from '@/components/LenisProvider'
 import { CursorGlowClient } from '@/components/CursorGlowClient'
 
 export default function Home() {
   return (
     <>
-      <LenisProvider />
       <CursorGlowClient />
       <Navbar />
       <main>
