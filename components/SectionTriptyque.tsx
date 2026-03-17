@@ -32,51 +32,63 @@ const layerConfig: Record<Layer, { label: string; textClass: string; bgClass: st
 const steps = [
   {
     num: '01',
-    label: 'Signal détecté',
-    layer: 'ia' as Layer,
-    desc: "Reactin surveille vos posts. Spyer surveille les comptes concurrents et complémentaires. L'IA identifie qui a interagi, quand, avec quel type de contenu.",
+    label: 'Stratégie & ciblage',
+    layer: 'hybrid' as Layer,
+    desc: "ICP défini avec l'IA. Comptes à monitorer sélectionnés (concurrents, complémentaires). Filtres Sales Navigator configurés : fonctions, industrie, taille, triggers récents. L'humain valide les cibles — c'est la fondation du reste.",
   },
   {
     num: '02',
-    label: 'Profil analysé',
-    layer: 'hybrid' as Layer,
-    desc: "Claude analyse le profil : titre, bio, posts récents, connexions communes. Résultat déposé dans un Google Sheet — contacter ou non, contexte, segment probable.",
+    label: 'Signaux inbound',
+    layer: 'ia' as Layer,
+    desc: "Reactin surveille chaque interaction sur vos posts. L'IA identifie qui a réagi, quand, avec quel type de contenu — like passif, commentaire précis, question publique.",
   },
   {
     num: '03',
-    label: 'Scoring humain',
-    layer: 'methode' as Layer,
-    desc: "L'œil humain valide. 5 niveaux de maturité d'achat. Ce jugement s'affine en continu — c'est lui qui calibre tout le reste sur les deux premiers mois.",
+    label: 'Signaux outbound',
+    layer: 'ia' as Layer,
+    desc: "Spyer monitore les comptes concurrents et complémentaires. Sales Navigator remonte les changements de poste, prises de fonction et signaux d'achat récents. L'IA priorise les profils à contacter.",
   },
   {
     num: '04',
-    label: 'Base de connaissance',
+    label: 'Profil analysé',
     layer: 'hybrid' as Layer,
-    desc: "Claude est entraîné sur votre secteur : jargon, objections, exemples de messages qui ont marché. Le setter améliore la base à chaque itération via son journal de bord.",
+    desc: "Claude analyse le profil : titre, bio, posts récents, connexions communes. Résultat déposé dans un Google Sheet — contacter ou non, contexte clé, segment probable.",
   },
   {
     num: '05',
-    label: 'Message co-rédigé',
-    layer: 'hybrid' as Layer,
-    desc: "Claude propose un draft. La méthode impose les règles : 5 phrases max, 2e phrase = fait précis tiré du profil, jamais de pitch dans le premier DM.",
+    label: 'Scoring & ajustement',
+    layer: 'methode' as Layer,
+    desc: "5 niveaux de maturité d'achat. L'œil humain valide chaque profil et ajuste les critères de ciblage au fil des retours terrain. Ce jugement recalibre Sales Navigator et Spyer en continu.",
   },
   {
     num: '06',
+    label: 'Skill maison',
+    layer: 'hybrid' as Layer,
+    desc: "Pour les clients qui le souhaitent : un skill Claude encodé sur leur expertise — jargon métier, objections connues, exemples de messages qui ont décroché des réponses. S'affine à chaque itération via le journal de bord du setter.",
+  },
+  {
+    num: '07',
+    label: 'Message co-rédigé',
+    layer: 'hybrid' as Layer,
+    desc: "Claude propose un draft ancré dans le skill. La méthode impose les règles : 5 phrases max, 2e phrase = fait précis tiré du profil, jamais de pitch dans le premier DM.",
+  },
+  {
+    num: '08',
     label: 'Validé et envoyé',
     layer: 'humain' as Layer,
     desc: "Test du téléphone appliqué. Si ça ne sonnerait pas naturel dit à voix haute, on réécrit. Aucun message ne part sans validation humaine.",
   },
   {
-    num: '07',
+    num: '09',
     label: 'RDV qualifié',
     layer: 'humain' as Layer,
-    desc: "Le setter convertit la conversation en rendez-vous. Pas de pitch — une ouverture. Les leads tièdes rentrent en nurturing vers la newsletter.",
+    desc: "Le setter convertit la conversation en rendez-vous. Pas de pitch — une ouverture. Les leads tièdes qui ne sont pas prêts rentrent en nurturing vers la newsletter.",
   },
   {
-    num: '08',
+    num: '10',
     label: 'Closing structuré',
     layer: 'humain' as Layer,
-    desc: "Challenger Sale. Discovery structurée, valeur perçue augmentée. Vous closez plus, sans baisser le tarif.",
+    desc: "Challenger Sale. Discovery structurée : on repose le problème avant de parler solution. Valeur perçue augmentée. Vous signez plus, sans négocier le prix.",
   },
 ]
 
@@ -152,8 +164,8 @@ export function SectionTriptyque() {
         {/* Note de bas */}
         <ScrollReveal delay={200}>
           <p className="font-sans text-text-muted text-sm text-center mt-10 max-w-xl mx-auto">
-            La calibration de l&apos;ensemble prend environ deux mois. C&apos;est itératif — chaque échange
-            terrain améliore la base de connaissance. Après ça, le système tourne.
+            Ce pipeline se calibre en deux mois. Après ça, vous vous concentrez sur les appels —
+            pas sur la prospection.
           </p>
         </ScrollReveal>
       </div>
