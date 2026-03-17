@@ -27,7 +27,7 @@ export function Preuves() {
               <p className="font-sans text-sm text-text-muted">solopreneurs accompagnés</p>
             </div>
             <div className="bg-bg-primary px-8 py-7 text-center">
-              <p className="font-serif text-4xl text-accent mb-1">S1</p>
+              <p className="font-serif text-4xl text-accent mb-1">Sem. 1</p>
               <p className="font-sans text-sm text-text-muted">premiers RDV dès la semaine 1</p>
             </div>
             <div className="bg-bg-primary px-8 py-7 text-center">

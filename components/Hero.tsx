@@ -57,8 +57,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-muted mb-4 max-w-xl mx-auto"
         >
-          ChallengersLab identifie les prospects qui veulent déjà acheter —
-          et les amène jusqu&apos;à vous. Setting délégué, closing structuré.
+          Premiers rendez-vous qualifiés dès la première semaine.{' '}
+          Pipeline complet : setting délégué, closing coaché.
         </motion.p>
 
         <motion.div
