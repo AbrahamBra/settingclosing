@@ -22,6 +22,7 @@ export function Navbar() {
   const navLinks = [
     { label: 'Setting', href: '#setting' },
     { label: 'Closing', href: '#closing' },
+    { label: 'Blog', href: '/blog' },
   ]
 
   return (
