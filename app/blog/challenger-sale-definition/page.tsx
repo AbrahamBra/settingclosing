@@ -70,7 +70,7 @@ const faqItems = [
       "Non. La tension constructive du Challenger Sale n'est pas de l'agressivité — c'est de l'assertivité. Le Challenger dit ce que le client ne veut pas forcément entendre, mais avec des données et une perspective étayée. Il ne cède pas au premier signe de résistance, mais reste dans une posture d'expert, pas de commercial pressé.",
   },
   {
-    question: 'Est-ce que le Challenger Sale s'applique en inbound ?',
+    question: "Est-ce que le Challenger Sale s'applique en inbound ?",
     answer:
       "Oui, mais différemment. En inbound, le prospect est déjà en demande — il ne faut donc pas challenger sa perception du problème de la même façon qu'en outbound. L'approche s'applique surtout à la phase de discovery : structurer les bonnes questions pour faire prendre conscience au prospect de l'ampleur réelle de son problème, et calibrer la valeur perçue de la solution.",
   },
