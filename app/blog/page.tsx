@@ -20,6 +20,16 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'messages-linkedin-sans-reponse',
+    category: 'Setting',
+    title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses",
+    description:
+      "5 erreurs précises qui tuent les taux de réponse — avec des exemples de mauvais drafts, leur analyse, et les versions corrigées.",
+    readTime: '8 min',
+    date: '17 mars 2026',
+    dateTime: '2026-03-17',
+  },
+  {
     slug: 'signal-achat-linkedin',
     category: 'Setting',
     title: "C'est quoi un signal d'achat LinkedIn ?",
