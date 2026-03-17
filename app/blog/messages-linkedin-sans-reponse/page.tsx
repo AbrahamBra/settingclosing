@@ -569,7 +569,10 @@ export default function MessagesLinkedInSansReponsePage() {
             <p className="font-sans text-text-muted leading-relaxed">
               La règle de vérification finale reste la même : lisez à voix haute.
               Si vous entendez le LLM, réécrivez.
-              C&apos;est vous qui validez — pas l&apos;algorithme.
+              C&apos;est vous qui validez — pas l&apos;algorithme. Ce principe s&apos;inscrit dans l&apos;architecture d&apos;un <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">programme de setting commercial B2B</a> structuré : IA, méthode, validation humaine.
+            </p>
+            <p className="font-sans text-text-muted leading-relaxed mt-4">
+              Pour comprendre comment les trois couches s&apos;articulent — détection des signaux, scoring, phases de calibration et de scaling — voir <a href="/blog/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn</a>.
             </p>
 
             <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
@@ -602,6 +605,24 @@ export default function MessagesLinkedInSansReponsePage() {
               ))}
             </div>
           </section>
+
+          {/* Pour aller plus loin */}
+          <div className="mt-14 pt-8 border-t border-black/8">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
+              Pour aller plus loin
+            </p>
+            <div className="space-y-3">
+              {[
+                { href: '/blog/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
+                { href: '/blog/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
+              ].map(({ href, label }) => (
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                  <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
+                  <span>{label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">

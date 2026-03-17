@@ -346,6 +346,9 @@ export default function ChallengerSalePage() {
               ChallengersLab applique cette méthode dans le programme Closing : un mois par composante,
               avec 2h de coaching par semaine dont une heure en situation réelle sur un appel prospect.
             </p>
+            <p className="font-sans text-text-muted leading-relaxed mt-4">
+              La méthode Challenger Sale couvre la conversion — en amont, c&apos;est le <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting commercial B2B</a> qui génère les rendez-vous qualifiés sur lesquels vous l&apos;appliquez.
+            </p>
           </section>
 
           {/* FAQ */}
@@ -366,6 +369,24 @@ export default function ChallengerSalePage() {
               ))}
             </div>
           </section>
+
+          {/* Pour aller plus loin */}
+          <div className="mt-14 pt-8 border-t border-black/8">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
+              Pour aller plus loin
+            </p>
+            <div className="space-y-3">
+              {[
+                { href: '/blog/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
+                { href: '/blog/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
+              ].map(({ href, label }) => (
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                  <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
+                  <span>{label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">

@@ -243,7 +243,7 @@ export default function SignalAchatLinkedInPage() {
               Les 2 sources de signaux
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-8">
-              Tous les signaux ne viennent pas du même endroit. Dans un système de setting structuré,
+              Tous les signaux ne viennent pas du même endroit. Dans un <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">système de setting B2B</a> structuré,
               on distingue deux flux d&apos;acquisition distincts — avec des outils et des approches différentes.
             </p>
 
@@ -442,6 +442,25 @@ export default function SignalAchatLinkedInPage() {
               ))}
             </div>
           </section>
+
+          {/* Pour aller plus loin */}
+          <div className="mt-14 pt-8 border-t border-black/8">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
+              Pour aller plus loin
+            </p>
+            <div className="space-y-3">
+              {[
+                { href: '/blog/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
+                { href: '/blog/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
+                { href: '/blog/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
+              ].map(({ href, label }) => (
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                  <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
+                  <span>{label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">

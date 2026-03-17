@@ -276,7 +276,7 @@ export default function SetterDefinitionPage() {
               Les 3 phases d&apos;un programme de setting
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-8">
-              Le setting ne se résume pas à envoyer des messages LinkedIn en masse. Une vraie
+              Le <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting commercial B2B</a> ne se résume pas à envoyer des messages LinkedIn en masse. Une vraie
               infrastructure se construit en 3 phases — chacune conditionne l&apos;efficacité de la suivante.
             </p>
 
@@ -395,6 +395,25 @@ export default function SetterDefinitionPage() {
               ))}
             </div>
           </section>
+
+          {/* Pour aller plus loin */}
+          <div className="mt-14 pt-8 border-t border-black/8">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
+              Pour aller plus loin
+            </p>
+            <div className="space-y-3">
+              {[
+                { href: '/blog/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
+                { href: '/blog/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
+                { href: '/blog/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
+              ].map(({ href, label }) => (
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                  <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
+                  <span>{label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">

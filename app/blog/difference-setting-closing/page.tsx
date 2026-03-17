@@ -229,7 +229,7 @@ export default function DifferenceSettingClosingPage() {
               Le cycle de vente B2B complet
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-8">
-              Un cycle de vente B2B complet comprend 8 étapes. Le setting couvre les 4 premières.
+              Un cycle de vente B2B complet comprend 8 étapes. Le <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting commercial B2B</a> couvre les 4 premières.
               Le closing couvre les 4 dernières.
             </p>
             <div className="space-y-0">
@@ -401,7 +401,16 @@ export default function DifferenceSettingClosingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Pour aller plus loin
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <a
+                href="/blog/setting-commercial-b2b"
+                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-black/8 hover:border-accent/30 transition-colors"
+              >
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">Guide pilier</p>
+                <p className="font-sans font-semibold text-text-primary group-hover:text-accent transition-colors">
+                  Setting commercial B2B : guide complet →
+                </p>
+              </a>
               <a
                 href="/blog/setter-b2b-definition"
                 className="group bg-bg-secondary rounded-xl px-6 py-5 border border-black/8 hover:border-accent/30 transition-colors"

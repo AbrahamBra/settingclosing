@@ -172,7 +172,7 @@ export default function Page() {
               l&apos;IA pour détecter les interactions et co-rédiger les messages, la méthode
               pour scorer les leads par maturité d&apos;achat et imposer les règles de rédaction,
               et l&apos;humain pour valider chaque message avant envoi et prendre les décisions
-              de setting et closing. Aucun message ne part sans avoir passé les trois filtres.
+              de <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting commercial B2B</a> et closing. Aucun message ne part sans avoir passé les trois filtres.
             </p>
           </div>
 
@@ -449,7 +449,7 @@ export default function Page() {
               <p className="mb-6">
                 Ces exemples sont anonymisés depuis des situations réelles sur deux marchés B2B différents.
                 Même logique dans les deux cas : le premier draft ignore les règles,
-                la version corrigée les applique toutes.
+                la version corrigée les applique toutes. Les erreurs les plus communes — et comment les corriger — sont analysées dans <a href="/blog/messages-linkedin-sans-reponse" className="text-accent hover:underline transition-colors">Pourquoi vos messages LinkedIn n&apos;obtiennent pas de réponses</a>.
               </p>
 
               {/* Example 1 */}
@@ -646,6 +646,24 @@ export default function Page() {
             </section>
 
           </article>
+
+          {/* Pour aller plus loin */}
+          <div className="mt-14 pt-8 border-t border-black/8">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
+              Pour aller plus loin
+            </p>
+            <div className="space-y-3">
+              {[
+                { href: '/blog/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
+                { href: '/blog/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
+              ].map(({ href, label }) => (
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                  <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
+                  <span>{label}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
           {/* CTA */}
           <div className="mt-16 pt-10 border-t border-black/8 text-center">
