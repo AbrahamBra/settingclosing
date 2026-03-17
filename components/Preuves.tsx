@@ -23,7 +23,7 @@ export function Preuves() {
         <ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-black/5 rounded-2xl overflow-hidden mb-16">
             <div className="bg-bg-primary px-8 py-7 text-center">
-              <p className="font-serif text-4xl text-accent mb-1">7</p>
+              <p className="font-serif text-4xl text-accent mb-1">10+</p>
               <p className="font-sans text-sm text-text-muted">solopreneurs accompagnés</p>
             </div>
             <div className="bg-bg-primary px-8 py-7 text-center">

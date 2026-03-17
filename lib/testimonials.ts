@@ -16,42 +16,6 @@ export interface VideoTestimonial extends Testimonial {
   thumbnailUrl: string
 }
 
-export const textTestimonials: Testimonial[] = [
-  {
-    id: '99pct',
-    name: 'Placeholder Nom',
-    company: '99% Done',
-    role: 'Fondateur',
-    quote: 'Placeholder citation — à remplacer avant mise en ligne.',
-    type: 'text',
-  },
-  {
-    id: 'ellipse',
-    name: 'Placeholder Nom',
-    company: 'Ellipse',
-    role: 'Fondateur',
-    quote: 'Placeholder citation — à remplacer avant mise en ligne.',
-    type: 'text',
-  },
-  {
-    id: 'kbdigit',
-    name: 'Placeholder Nom',
-    company: 'KBDigit',
-    role: 'Fondateur',
-    quote: 'Placeholder citation — à remplacer avant mise en ligne.',
-    type: 'text',
-  },
-]
+export const textTestimonials: Testimonial[] = []
 
-export const videoTestimonials: VideoTestimonial[] = [
-  {
-    id: 'video-1',
-    name: 'Placeholder Nom',
-    company: 'Placeholder Entreprise',
-    quote: '',
-    type: 'video',
-    videoId: 'placeholder-video-id',
-    provider: 'youtube',
-    thumbnailUrl: '/thumbnails/placeholder-1.jpg',
-  },
-]
+export const videoTestimonials: VideoTestimonial[] = []
