@@ -29,7 +29,7 @@ export function SectionSetting() {
               Setting
             </p>
             <h2 className="font-serif text-h2 text-text-primary mb-10">
-              5 rendez-vous qualifiés. Minimum. Garanti.
+              2 à 4 rendez-vous qualifiés par semaine.
             </h2>
 
             <ul className="flex flex-col">
@@ -89,10 +89,10 @@ export function SectionSetting() {
 
               <div className="border-t border-black/8 pt-5">
                 <p className="font-sans text-text-primary font-semibold mb-1">
-                  Garantie : minimum 5 RDV qualifiés
+                  Garantie : minimum 5 RDV qualifiés / mois
                 </p>
                 <p className="font-sans text-text-muted text-sm">
-                  Vous déléguez plusieurs clients ? On s&apos;adapte au volume.
+                  En pratique : 2 à 4 RDV par semaine. Avec lead magnet, le volume monte encore — les leads remontés sont priorisés pour maximiser le closing.
                 </p>
               </div>
 

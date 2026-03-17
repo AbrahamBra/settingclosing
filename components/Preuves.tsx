@@ -31,8 +31,8 @@ export function Preuves() {
               <p className="font-sans text-sm text-text-muted">premiers RDV dès la semaine 1</p>
             </div>
             <div className="bg-bg-primary px-8 py-7 text-center">
-              <p className="font-serif text-4xl text-accent mb-1">5+</p>
-              <p className="font-sans text-sm text-text-muted">RDV qualifiés garantis / mois</p>
+              <p className="font-serif text-4xl text-accent mb-1">2–4</p>
+              <p className="font-sans text-sm text-text-muted">RDV qualifiés par semaine</p>
             </div>
           </div>
         </ScrollReveal>
