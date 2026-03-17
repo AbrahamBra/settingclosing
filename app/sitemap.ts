@@ -21,6 +21,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: 'https://challengerslab.fr/blog/prospection-linkedin-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/blog/comment-devenir-setter-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/blog/cout-setter-b2b-prix',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://challengerslab.fr/blog/ia-methode-humain-setting-linkedin',
       lastModified: new Date('2026-03-17'),
       changeFrequency: 'monthly',

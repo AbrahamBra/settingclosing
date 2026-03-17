@@ -20,6 +20,36 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'prospection-linkedin-b2b',
+    category: 'Setting',
+    title: 'Prospection LinkedIn B2B : méthode complète en 2026',
+    description:
+      "Comment prospecter sur LinkedIn en B2B en 2026 : signaux d'achat, messages qui obtiennent des réponses, Sales Navigator, IA comme co-rédacteur. La méthode terrain.",
+    readTime: '13 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
+    slug: 'comment-devenir-setter-b2b',
+    category: 'Setting',
+    title: 'Comment devenir setter B2B en 2026',
+    description:
+      "Le métier de setter B2B en 2026 : ce que ça demande, les compétences réelles, les étapes pour démarrer et combien on peut gagner. Sans bullshit formation.",
+    readTime: '11 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
+    slug: 'cout-setter-b2b-prix',
+    category: 'Setting',
+    title: "Coût d'un setter B2B en 2026 : les vrais chiffres",
+    description:
+      "Fixe mensuel, prime par RDV, modèle hybride : les vrais chiffres du marché, les pièges à éviter et comment calculer le ROI réel d'un programme de setting.",
+    readTime: '9 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
     slug: 'setting-commercial-b2b',
     category: 'Setting',
     title: 'Setting commercial B2B : définition, méthode et programme complet',
