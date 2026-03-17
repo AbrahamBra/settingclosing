@@ -145,10 +145,10 @@ export default function Page() {
               IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn qui tient sur la durée
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
-              La plupart des solopreneurs qui utilisent l&apos;IA pour prospecter sur LinkedIn
-              obtiennent les mêmes résultats : des messages génériques, un taux de réponse
-              proche de zéro, et la conviction que LinkedIn ne fonctionne pas pour eux.
-              Le problème n&apos;est pas la plateforme. C&apos;est l&apos;architecture.
+              Coller un profil dans Claude ou ChatGPT et demander un message de prospection
+              donne presque toujours la même chose : formel, bien structuré, clairement automatique.
+              Le taux de réponse reste à 3%. La conclusion rapide : LinkedIn ne marche pas pour eux.
+              La vraie raison : le modèle n&apos;a aucun contexte sur leur marché.
             </p>
             <div className="flex items-center gap-3 text-xs text-text-muted font-sans">
               <span>Par ChallengersLab</span>
@@ -205,16 +205,16 @@ export default function Page() {
                 revenir". C&apos;est exactement le style que les prospects ont appris à ignorer.
               </p>
               <p className="mb-4">
-                Le problème n&apos;est pas l&apos;outil. C&apos;est que l&apos;outil n&apos;a aucune information sur :
-                ce qui rend ce prospect spécifiquement pertinent, les règles non-négociables
-                du message B2B qui fonctionne, les exemples de messages qui ont réellement
-                obtenu des réponses dans ce secteur, et le signal d&apos;achat qui justifie
-                de contacter cette personne maintenant.
+                Le problème n&apos;est pas l&apos;outil. C&apos;est que l&apos;outil n&apos;a jamais vu votre marché.
+                Il ne sait pas pourquoi ce profil précis mérite d&apos;être contacté aujourd&apos;hui,
+                ni quelles formulations ont obtenu des réponses dans votre secteur.
+                Il n&apos;a pas le contexte. Il n&apos;a pas les règles. Il a juste du style —
+                et le style sans substance produit exactement ce qu&apos;on veut éviter.
               </p>
               <p>
-                Sans ces quatre éléments, le LLM produit du style générique. Avec ces quatre
-                éléments, il produit des messages qui sonnent écrits depuis un téléphone un
-                mardi matin.
+                Donnez-lui le contexte, les règles et deux ou trois exemples de messages
+                qui ont marché dans votre secteur — les messages changent de nature.
+                Ils sonnent écrits depuis un téléphone un mardi matin, parce qu&apos;ils le sont presque.
               </p>
             </section>
 
@@ -275,15 +275,16 @@ export default function Page() {
                 Le journal de bord : le moteur de l&apos;amélioration
               </h3>
               <p className="mb-4">
-                À chaque échange terrain, le setter note : un angle qui a fonctionné,
-                une objection nouvelle, une formulation qui sonnait faux. Ces notes
-                alimentent directement les documents d&apos;input de Claude — les exemples
-                de bons messages, les règles sectorielles, les contre-exemples à éviter.
+                À chaque échange terrain, le setter note ce qu&apos;il observe : un angle
+                qui a déclenché une réponse, une objection qu&apos;il n&apos;avait pas anticipée,
+                une formulation qui sonnait faux à la relecture. Ces notes alimentent
+                directement les documents d&apos;input de Claude — les règles s&apos;affinent,
+                les exemples s&apos;accumulent, les contre-exemples aussi.
               </p>
               <p>
-                C&apos;est un système cyclique. Plus on prospecte, meilleure devient la base.
-                Meilleure est la base, meilleurs deviennent les messages. Au bout de deux mois,
-                le système est assez calibré pour tourner avec moins d&apos;intervention manuelle.
+                Deux mois de ce cycle et le système n&apos;est plus le même. Les messages sortent
+                plus proches de la cible, le setter corrige moins, les réponses arrivent plus vite.
+                C&apos;est itératif dans le sens littéral : chaque échange améliore le suivant.
               </p>
             </section>
 
@@ -354,9 +355,9 @@ export default function Page() {
                 souvent définitivement.
               </p>
               <p>
-                C&apos;est aussi l&apos;humain qui décide du mode d&apos;approche, gère la conversation
-                de setting, qualifie le lead, et conduit le closing. La machine produit des
-                opportunités. L&apos;humain les convertit.
+                C&apos;est aussi l&apos;humain qui lit la conversation, sent si le prospect est prêt
+                ou pas, et décide si on pousse ou si on laisse maturer. La machine ne peut pas
+                faire ce jugement. Pas encore — et probablement pas pour ce type de vente.
               </p>
             </section>
 
@@ -565,8 +566,8 @@ export default function Page() {
                   </p>
                   <p className="font-sans text-sm text-text-muted leading-relaxed">
                     Le problème : pas assez de RDV. La solution : setting direct,
-                    signal + message + qualification. Le nurturing n&apos;est pas la priorité.
-                    Il disperserait l&apos;énergie sans résoudre le vrai problème.
+                    signal + message + qualification. À ce stade, le nurturing ajoute
+                    de la complexité sans ajouter de rendez-vous.
                   </p>
                 </div>
                 <div>
@@ -581,10 +582,10 @@ export default function Page() {
                 </div>
               </div>
               <p className="mb-4">
-                La newsletter n&apos;est pas du contenu générique — c&apos;est un canal de
-                réactivation ciblée. Les leads tièdes qui ont montré un intérêt mais
-                ne sont pas prêts reçoivent du contenu éducatif aligné avec leur
-                niveau de maturité. Quand leur contexte évolue, ils reviennent d&apos;eux-mêmes.
+                La newsletter n&apos;est pas là pour &ldquo;engager la communauté&rdquo;. Elle existe pour
+                que les leads tièdes — ceux qui ne sont pas encore prêts — restent dans
+                l&apos;orbite jusqu&apos;à ce que leur contexte change. Le moment où ça change,
+                ils pensent à vous en premier.
               </p>
               <p>
                 Ce mécanisme ne fonctionne qu&apos;une fois que le pipeline principal est stable.
