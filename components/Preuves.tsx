@@ -19,6 +19,24 @@ export function Preuves() {
           </h2>
         </ScrollReveal>
 
+        {/* Stat block */}
+        <ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-black/5 rounded-2xl overflow-hidden mb-16">
+            <div className="bg-bg-primary px-8 py-7 text-center">
+              <p className="font-serif text-4xl text-accent mb-1">7</p>
+              <p className="font-sans text-sm text-text-muted">solopreneurs accompagnés</p>
+            </div>
+            <div className="bg-bg-primary px-8 py-7 text-center">
+              <p className="font-serif text-4xl text-accent mb-1">S1</p>
+              <p className="font-sans text-sm text-text-muted">premiers RDV dès la semaine 1</p>
+            </div>
+            <div className="bg-bg-primary px-8 py-7 text-center">
+              <p className="font-serif text-4xl text-accent mb-1">5+</p>
+              <p className="font-sans text-sm text-text-muted">RDV qualifiés garantis / mois</p>
+            </div>
+          </div>
+        </ScrollReveal>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {textTestimonials.map((testimonial, i) => (
             <ScrollReveal key={testimonial.id} delay={i * 100}>

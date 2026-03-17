@@ -2,24 +2,24 @@ import { GlassCard } from './ui/GlassCard'
 import { ButtonGlow } from './ui/ButtonGlow'
 import { ScrollReveal } from './ui/ScrollReveal'
 
-const flow = [
+const differentiants = [
   {
-    label: 'Setting',
-    title: 'Remplir le pipeline',
-    desc: 'RDV qualifiés livrés chaque mois. Vous ne prospectez plus.',
+    icon: '⟡',
+    title: 'Signal-based, pas cold',
+    desc: "On ne prospecte pas toute la liste. On identifie les prospects qui montrent déjà un signal d'achat — sur vos posts ou sur des comptes tiers. Vous parlez aux bonnes personnes au bon moment.",
     accent: false,
   },
   {
-    label: 'Closing',
-    title: 'Convertir les deals',
-    desc: 'Méthode, valeur perçue, closers opérationnels. Vous ne perdez plus de deals.',
-    accent: false,
-  },
-  {
-    label: 'Les deux',
-    title: 'Pipeline complet',
-    desc: 'Concentrez-vous sur votre vraie valeur ajoutée. Le reste est délégué.',
+    icon: '⟡',
+    title: 'Pipeline complet, un seul toit',
+    desc: "Du premier message au deal signé : signal, scoring, setting, closing. Pas deux prestataires à coordonner — une seule méthode bout en bout, calibrée pour votre marché.",
     accent: true,
+  },
+  {
+    icon: '⟡',
+    title: 'Alignés sur vos résultats',
+    desc: "500 €/mois fixe + prime par RDV livré. On n'est rémunérés sur la performance que si vous avez des rendez-vous. Nos intérêts sont les mêmes que les vôtres.",
+    accent: false,
   },
 ]
 
@@ -29,23 +29,20 @@ export function SectionComplementarite() {
       <div className="container-max max-w-4xl">
         <ScrollReveal>
           <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent text-center mb-4">
-            Complémentarité
+            Pourquoi ChallengersLab
           </p>
           <h2 className="font-serif text-h2 text-text-primary text-center mb-4">
-            L&apos;un remplit le pipeline. L&apos;autre le convertit.
+            Ce qui nous rend différents.
           </h2>
           <p className="font-sans text-text-muted text-center text-lg mb-16 max-w-2xl mx-auto">
-            Utilisez l&apos;une, l&apos;autre, ou les deux — selon là où vous perdez le plus de temps.
+            N&apos;importe quel setter peut envoyer des messages. Très peu commencent en amont — au moment où le prospect décide d&apos;acheter.
           </p>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {flow.map((item, i) => (
-            <ScrollReveal key={item.label} delay={i * 120}>
-              <GlassCard accent={item.accent} className="p-7 h-full flex flex-col gap-3">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
-                  {item.label}
-                </p>
+          {differentiants.map((item, i) => (
+            <ScrollReveal key={item.title} delay={i * 120}>
+              <GlassCard accent={item.accent} className="p-7 h-full flex flex-col gap-4">
                 <p className="font-sans font-semibold text-text-primary text-lg leading-snug">
                   {item.title}
                 </p>
@@ -60,7 +57,7 @@ export function SectionComplementarite() {
         <ScrollReveal delay={200}>
           <div className="text-center">
             <ButtonGlow as="a" href="#contact">
-              Discuter de mes besoins →
+              Discuter de mon pipeline →
             </ButtonGlow>
           </div>
         </ScrollReveal>

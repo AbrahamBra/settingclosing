@@ -57,8 +57,8 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-muted mb-4 max-w-xl mx-auto"
         >
-          ChallengersLab prend en charge votre prospection et votre closing.
-          Des méthodes qui fonctionnent en B2B, adaptées à votre marché.
+          ChallengersLab identifie les prospects qui veulent déjà acheter —
+          et les amène jusqu&apos;à vous. Setting délégué, closing structuré.
         </motion.p>
 
         <motion.div
@@ -82,7 +82,7 @@ export function Hero() {
               </motion.span>
             </AnimatePresence>
           </span>
-          <span>qui veulent déléguer.</span>
+          <span>qui veulent scaler.</span>
         </motion.div>
 
         <motion.div

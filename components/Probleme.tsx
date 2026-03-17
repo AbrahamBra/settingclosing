@@ -3,16 +3,22 @@ import { ScrollReveal } from './ui/ScrollReveal'
 
 const problems = [
   {
-    title: 'Vous prospectez dans le vide',
-    body: "Pas de ciblage, pas de scoring. Des messages centrés sur le produit plutôt que sur ce que le client gagne. Peu de réponses, beaucoup de temps perdu.",
+    title: 'Vos messages se perdent dans le bruit',
+    stat: '2–3%',
+    statLabel: 'de taux de réponse en outreach classique',
+    body: "Pas de ciblage, pas de scoring. Des messages centrés sur le produit plutôt que sur ce que le client gagne. Beaucoup de temps perdu sur des gens qui ne veulent pas acheter.",
   },
   {
     title: 'Vos appels ne convertissent pas',
-    body: "Sans discovery solide et sans méthode pour augmenter la valeur perçue, vous baissez le prix ou vous perdez le deal.",
+    stat: '-40%',
+    statLabel: "sur le tarif quand il n'y a pas de méthode",
+    body: "Sans discovery solide et sans scoring de maturité préalable, vous appelez les mauvais au mauvais moment. Vous baissez le prix ou vous perdez le deal.",
   },
   {
     title: 'Vous faites tout vous-même',
-    body: "Pendant que vous prospectez et tentez de closer, votre vrai travail attend.",
+    stat: '100%',
+    statLabel: 'du temps commercial sur vos épaules',
+    body: "Pendant que vous prospectez, nurturez et tentez de closer, votre vrai travail attend. Ce n'est pas un problème de discipline — c'est un problème d'organisation.",
   },
 ]
 
@@ -28,7 +34,7 @@ export function Probleme() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {problems.map((problem, i) => (
             <ScrollReveal key={problem.title} delay={i * 100}>
-              <GlassCard className="p-8 h-full relative overflow-hidden">
+              <GlassCard className="p-8 h-full relative overflow-hidden flex flex-col gap-5">
                 {/* Decorative number */}
                 <span
                   aria-hidden="true"
@@ -42,13 +48,24 @@ export function Probleme() {
                   0{i + 1}
                 </span>
                 {/* Accent top-line */}
-                <div className="w-8 h-0.5 bg-accent mb-6 rounded-full" />
-                <h3 className="font-sans font-semibold text-h3 text-text-primary mb-4">
-                  {problem.title}
-                </h3>
-                <p className="font-sans text-text-muted leading-relaxed">
-                  {problem.body}
-                </p>
+                <div className="w-8 h-0.5 bg-accent rounded-full" />
+                {/* Stat */}
+                <div>
+                  <p className="font-serif text-3xl text-accent leading-none mb-1">
+                    {problem.stat}
+                  </p>
+                  <p className="font-sans text-xs text-text-muted">
+                    {problem.statLabel}
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-sans font-semibold text-h3 text-text-primary mb-3">
+                    {problem.title}
+                  </h3>
+                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                    {problem.body}
+                  </p>
+                </div>
               </GlassCard>
             </ScrollReveal>
           ))}
