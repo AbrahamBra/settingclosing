@@ -46,9 +46,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="font-serif text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] leading-[1.15] text-text-primary mb-6"
         >
-          Vous avez une offre qui cartonne.{' '}
+          Vous avez déjà l&apos;offre.{' '}
           <br className="hidden sm:block" />
-          Arrêtez de perdre du temps à la vendre.
+          Nous avons la machine.
         </motion.h1>
 
         <motion.p
