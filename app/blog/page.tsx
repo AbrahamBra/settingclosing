@@ -20,6 +20,16 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'signal-achat-linkedin',
+    category: 'Setting',
+    title: "C'est quoi un signal d'achat LinkedIn ?",
+    description:
+      "Un prospect qui like, commente ou interagit avec un sujet lié à votre offre a levé la main sans vous contacter. C'est un signal d'achat — et c'est la base du setting moderne.",
+    readTime: '7 min',
+    date: '17 mars 2026',
+    dateTime: '2026-03-17',
+  },
+  {
     slug: 'setter-b2b-definition',
     category: 'Setting',
     title: "C'est quoi un setter en B2B ?",
