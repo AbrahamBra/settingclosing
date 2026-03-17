@@ -4,6 +4,7 @@ import { Probleme } from '@/components/Probleme'
 import { Philosophie } from '@/components/Philosophie'
 import { SectionSetting } from '@/components/SectionSetting'
 import { SectionClosing } from '@/components/SectionClosing'
+import { SectionTriptyque } from '@/components/SectionTriptyque'
 import { SectionComplementarite } from '@/components/SectionComplementarite'
 import { Preuves } from '@/components/Preuves'
 import { CTAFinale } from '@/components/CTAFinale'
@@ -19,6 +20,7 @@ export default function Home() {
         <Hero />
         <Probleme />
         <Philosophie />
+        <SectionTriptyque />
         <SectionSetting />
         <SectionClosing />
         <SectionComplementarite />

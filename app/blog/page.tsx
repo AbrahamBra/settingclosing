@@ -20,6 +20,16 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'ia-methode-humain-setting-linkedin',
+    category: 'Méthode',
+    title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn",
+    description:
+      "Phase de calibration, phase de scaling : comment fonctionne vraiment un système de setting LinkedIn piloté par l'IA mais validé par l'humain. Avec les deux modes de message.",
+    readTime: '12 min',
+    date: '17 mars 2026',
+    dateTime: '2026-03-17',
+  },
+  {
     slug: 'messages-linkedin-sans-reponse',
     category: 'Setting',
     title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses",

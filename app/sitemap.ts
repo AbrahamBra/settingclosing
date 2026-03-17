@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://challengerslab.fr/blog/ia-methode-humain-setting-linkedin',
+      lastModified: new Date('2026-03-17'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://challengerslab.fr/blog/messages-linkedin-sans-reponse',
       lastModified: new Date('2026-03-17'),
       changeFrequency: 'monthly',

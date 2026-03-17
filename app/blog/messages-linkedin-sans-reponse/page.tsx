@@ -375,6 +375,157 @@ export default function MessagesLinkedInSansReponsePage() {
             </div>
           </section>
 
+          {/* Section — Deux modes de message */}
+          <section className="mb-14">
+            <h2 className="font-serif text-h2 text-text-primary mb-5">
+              Deux modes de message selon le signal
+            </h2>
+            <p className="font-sans text-text-muted leading-relaxed mb-8">
+              Un signal fort et un signal faible n&apos;appellent pas la même approche.
+              Appliquer la même structure à tout le monde revient à traiter un prospect chaud
+              comme un contact froid — et à brûler les meilleures opportunités.
+              Il existe deux modes, avec des objectifs distincts.
+            </p>
+
+            {/* Comparison cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+              {/* Mode One Shot */}
+              <div className="rounded-xl border border-blue-200/60 bg-blue-50/30 overflow-hidden">
+                <div className="px-5 py-3 border-b border-blue-200/60 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-blue-400 shrink-0" />
+                  <p className="font-sans text-xs font-semibold text-blue-600 uppercase tracking-widest">
+                    Mode One Shot — Tier 1
+                  </p>
+                </div>
+                <div className="px-5 py-5">
+                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                    <strong className="text-text-primary font-semibold">Signal fort :</strong>{' '}
+                    commentaire direct sur votre sujet, question publique liée à votre offre,
+                    interaction répétée sur plusieurs posts, a mentionné un problème que vous résolvez.
+                  </p>
+                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                    <strong className="text-text-primary font-semibold">Objectif :</strong>{' '}
+                    décrocher un rendez-vous dans le premier échange. Pas de nurturing,
+                    pas de phase de découverte en DM. Un message, une question de qualification directe,
+                    un appel proposé.
+                  </p>
+                  <div className="rounded-lg border border-blue-200/40 bg-white/60 px-4 py-4">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
+                      Structure
+                    </p>
+                    <ol className="space-y-1.5">
+                      {[
+                        'Observation précise du signal (1 phrase)',
+                        'Ce que ce signal dit de leur situation (1 phrase)',
+                        'Question de qualification directe ou proposition d\'appel',
+                      ].map((s, i) => (
+                        <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                          <span className="text-blue-400 font-semibold shrink-0">{i + 1}.</span>
+                          <span className="leading-relaxed">{s}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              {/* Mode Conversation */}
+              <div className="rounded-xl border border-amber-200/60 bg-amber-50/30 overflow-hidden">
+                <div className="px-5 py-3 border-b border-amber-200/60 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
+                  <p className="font-sans text-xs font-semibold text-amber-600 uppercase tracking-widest">
+                    Mode Conversation — Tier 2 / 3
+                  </p>
+                </div>
+                <div className="px-5 py-5">
+                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                    <strong className="text-text-primary font-semibold">Signal faible ou indirect :</strong>{' '}
+                    like passif, commentaire hors-sujet, vue de profil, demande de connexion sans message,
+                    monitoring de compte concurrent ou complémentaire.
+                  </p>
+                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                    <strong className="text-text-primary font-semibold">Objectif :</strong>{' '}
+                    ouvrir la conversation, qualifier sur 2 à 3 échanges. Pas de rendez-vous
+                    dans le premier message — ce serait aller trop vite. On teste l&apos;intérêt
+                    avant de proposer quoi que ce soit.
+                  </p>
+                  <div className="rounded-lg border border-amber-200/40 bg-white/60 px-4 py-4">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
+                      Structure
+                    </p>
+                    <ol className="space-y-1.5">
+                      {[
+                        'Fait précis tiré du profil (1 phrase)',
+                        'Micro-question ouverte — pas de pitch (1 phrase)',
+                        'Attendre la réponse → qualifier en étape 2',
+                      ].map((s, i) => (
+                        <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                          <span className="text-amber-400 font-semibold shrink-0">{i + 1}.</span>
+                          <span className="leading-relaxed">{s}</span>
+                        </li>
+                      ))}
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Exemples des deux modes */}
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-5">
+              Même profil, deux intensités de signal — deux messages différents
+            </p>
+
+            <div className="space-y-4 mb-6">
+              {/* One Shot example */}
+              <div className="rounded-xl border border-blue-200/60 bg-blue-50/30 overflow-hidden">
+                <div className="px-5 py-3 border-b border-blue-200/60 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-blue-400 shrink-0" />
+                  <p className="font-sans text-xs font-semibold text-blue-600 uppercase tracking-widest">
+                    One Shot — Signal fort (a commenté : &quot;on cherche exactement ça&quot;)
+                  </p>
+                </div>
+                <div className="px-5 py-5">
+                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                    &quot;Bonjour Marc, votre commentaire sur le post de Jean — &quot;on cherche exactement ça&quot; —
+                    c&apos;est le signe que vous avez déjà identifié le problème. La question c&apos;est si vous avez
+                    encore la bande passante pour construire le système vous-même.
+                    Vous avez 20 min jeudi pour qu&apos;on regarde ça ensemble ?&quot;
+                  </p>
+                </div>
+              </div>
+
+              {/* Conversation example */}
+              <div className="rounded-xl border border-amber-200/60 bg-amber-50/30 overflow-hidden">
+                <div className="px-5 py-3 border-b border-amber-200/60 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
+                  <p className="font-sans text-xs font-semibold text-amber-600 uppercase tracking-widest">
+                    Conversation — Signal faible (like sur un post, pas de commentaire)
+                  </p>
+                </div>
+                <div className="px-5 py-5">
+                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                    &quot;Bonjour Marc, j&apos;ai vu que vous avez liké le post sur la prospection outbound
+                    sans outil tiers. Curieux de savoir si c&apos;est un sujet actif pour vous en ce moment
+                    ou plutôt une veille ?&quot;
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
+              <p className="font-sans font-semibold text-text-primary mb-1">
+                Le mode détermine aussi la suite de la conversation.
+              </p>
+              <p className="font-sans text-text-muted text-sm leading-relaxed">
+                En mode One Shot, si pas de réponse au bout de 5 jours, une seule relance courte.
+                En mode Conversation, chaque échange affine le scoring : tier 2 peut monter en tier 1
+                après deux réponses qualitatives. Les leads qui ne qualifient pas dans les 3 échanges
+                rentrent en nurturing newsletter — pas de DM supplémentaire.
+              </p>
+            </div>
+          </section>
+
           {/* Section — Les règles résumées */}
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-6">
