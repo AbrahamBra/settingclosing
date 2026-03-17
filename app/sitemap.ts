@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: 'https://challengerslab.fr/blog/setting-commercial-b2b',
+      lastModified: new Date('2026-03-17'),
+      changeFrequency: 'monthly',
+      priority: 1.0,
+    },
+    {
       url: 'https://challengerslab.fr/blog/ia-methode-humain-setting-linkedin',
       lastModified: new Date('2026-03-17'),
       changeFrequency: 'monthly',

@@ -20,6 +20,16 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'setting-commercial-b2b',
+    category: 'Setting',
+    title: 'Setting commercial B2B : définition, méthode et programme complet',
+    description:
+      "Tout sur le setting commercial en B2B : définition exacte, rôle du setter, méthode LinkedIn signal-based, les 3 phases d'un programme et ce que ça coûte réellement.",
+    readTime: '14 min',
+    date: '17 mars 2026',
+    dateTime: '2026-03-17',
+  },
+  {
     slug: 'ia-methode-humain-setting-linkedin',
     category: 'Méthode',
     title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn",
