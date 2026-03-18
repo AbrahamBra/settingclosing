@@ -1,7 +1,7 @@
 interface PipelineStepProps {
   num: string
   label: string
-  layers: Array<'ia' | 'methode' | 'hybrid' | 'humain'>
+  layers: readonly ('ia' | 'methode' | 'hybrid' | 'humain')[]
   desc: string
   tools: string[]
   isLast?: boolean
