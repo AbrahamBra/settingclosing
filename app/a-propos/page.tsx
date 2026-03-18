@@ -99,7 +99,7 @@ export default function AProposPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               ChallengersLab
             </p>
-            <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
+            <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
               Ce qu&apos;on fait, pourquoi, et comment
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed">
@@ -113,11 +113,11 @@ export default function AProposPage() {
           <section className="mb-16">
             <div className="flex flex-col sm:flex-row gap-8 items-start">
               {/* Photo placeholder */}
-              <div className="shrink-0 w-24 h-24 rounded-2xl bg-bg-secondary border border-black/8 flex items-center justify-center">
-                <span className="font-serif text-3xl text-accent">A</span>
+              <div className="shrink-0 w-24 h-24 rounded-2xl bg-bg-secondary border border-white/[0.06] flex items-center justify-center">
+                <span className="font-sans font-extrabold text-3xl text-accent">A</span>
               </div>
               <div>
-                <h2 className="font-serif text-h3 text-text-primary mb-2">Abraham</h2>
+                <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-2">Abraham</h2>
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
                   Fondateur · ChallengersLab
                 </p>
@@ -140,7 +140,7 @@ export default function AProposPage() {
 
           {/* Résultats */}
           <section className="mb-16">
-            <h2 className="font-serif text-h2 text-text-primary mb-6">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6">
               Ce que ça donne en pratique
             </h2>
 
@@ -150,8 +150,8 @@ export default function AProposPage() {
                 { stat: '2–4', label: 'RDV qualifiés par semaine en régime de croisière' },
                 { stat: '> 20 %', label: 'taux de réponse sur signal vs 3% sans méthode' },
               ].map(({ stat, label }) => (
-                <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-black/8">
-                  <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
+                <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-white/[0.06]">
+                  <p className="font-sans font-extrabold text-2xl text-accent mb-1">{stat}</p>
                   <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
                 </div>
               ))}
@@ -184,7 +184,7 @@ export default function AProposPage() {
 
           {/* Méthode */}
           <section className="mb-16">
-            <h2 className="font-serif text-h2 text-text-primary mb-6">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6">
               La méthode, concrètement
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-6">
@@ -228,7 +228,7 @@ export default function AProposPage() {
 
           {/* Pour qui */}
           <section className="mb-16">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Pour qui c&apos;est fait — et pour qui ce ne l&apos;est pas
             </h2>
 
@@ -251,7 +251,7 @@ export default function AProposPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
                   Ça ne marche pas pour
                 </p>
@@ -274,7 +274,7 @@ export default function AProposPage() {
 
           {/* Ressources */}
           <section className="mb-14">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Pour comprendre la méthode en détail
             </h2>
             <div className="space-y-3">
@@ -299,11 +299,11 @@ export default function AProposPage() {
           </section>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>
-            <h3 className="font-serif text-h3 text-text-primary mb-3">
+            <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
               Vous voulez voir si c&apos;est fait pour vous ?
             </h3>
             <p className="font-sans text-text-muted leading-relaxed mb-6">

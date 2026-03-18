@@ -147,7 +147,7 @@ export default function DevenirBusinessDeveloperPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Guide carrière · Reconversion
             </p>
-            <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
+            <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
               Business developer : le métier que vous ne connaissiez pas (et qui recrute près de chez vous)
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
@@ -165,15 +165,15 @@ export default function DevenirBusinessDeveloperPage() {
               { stat: '45–60k€', label: 'en 3 à 5 ans pour un profil confirmé' },
               { stat: '100 %', label: 'rémunéré pendant toute la durée de la formation en alternance' },
             ].map(({ stat, label }) => (
-              <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-black/8">
-                <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
+              <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-white/[0.06]">
+                <p className="font-sans font-extrabold text-2xl text-accent mb-1">{stat}</p>
                 <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
               </div>
             ))}
           </div>
 
           {/* Sommaire */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Sommaire
             </p>
@@ -218,7 +218,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section 1 — Un commercial version 2025 */}
           <section id="commercial-2025" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Un commercial, mais version 2026
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
@@ -250,7 +250,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section 2 — Le numérique */}
           <section id="numerique" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Le numérique a tout changé
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-6">
@@ -292,7 +292,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section 3 — Pourquoi ça recrute */}
           <section id="recrutement" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Pourquoi ce métier recrute autant
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
@@ -305,7 +305,7 @@ export default function DevenirBusinessDeveloperPage() {
               développer au-delà du bouche-à-oreille en ont besoin. Les grandes entreprises ont des équipes
               entières dédiées à la prospection. Les agences spécialisées en recrutent pour leurs clients.
             </p>
-            <div className="bg-bg-secondary rounded-xl p-6 border border-black/8 mb-4">
+            <div className="bg-bg-secondary rounded-xl p-6 border border-white/[0.06] mb-4">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                 Rémunération
               </p>
@@ -332,7 +332,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section 4 — Reconversion */}
           <section id="reconversion" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               La reconversion est un atout, pas un handicap
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
@@ -361,7 +361,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section 5 — Alternance */}
           <section id="alternance" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Se former en alternance : apprendre en faisant
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
@@ -383,13 +383,13 @@ export default function DevenirBusinessDeveloperPage() {
               development. La pédagogie est orientée terrain : des mises en situation, des simulations
               d&apos;appels, des études de cas réels. Vous pratiquez dès le premier jour.
             </p>
-            <div className="bg-bg-secondary rounded-xl border border-black/8 overflow-hidden mb-6">
-              <div className="px-5 py-3 border-b border-black/8">
+            <div className="bg-bg-secondary rounded-xl border border-white/[0.06] overflow-hidden mb-6">
+              <div className="px-5 py-3 border-b border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
                   Programme de formation
                 </p>
               </div>
-              <div className="divide-y divide-black/8">
+              <div className="divide-y divide-white/[0.06]">
                 {[
                   {
                     module: 'Fondamentaux du développement commercial',
@@ -436,7 +436,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section 6 — Terrain */}
           <section id="terrain" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Ce que ça donne sur le terrain : l&apos;exemple ChallengersLab
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
@@ -455,7 +455,7 @@ export default function DevenirBusinessDeveloperPage() {
               analyser les résultats d&apos;une campagne. Il voit comment l&apos;IA transforme le métier
               au quotidien, pas dans un article de blog, mais dans la pratique, sur de vrais clients.
             </p>
-            <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
               <p className="font-sans text-sm text-text-muted leading-relaxed">
                 C&apos;est un environnement exigeant. Mais c&apos;est aussi un environnement où on apprend
                 vite, parce que chaque action a un résultat mesurable. En quelques mois, un alternant motivé
@@ -467,7 +467,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section 7 — Comment se lancer */}
           <section id="lancer" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Comment se lancer
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-6">
@@ -491,7 +491,7 @@ export default function DevenirBusinessDeveloperPage() {
                   desc: "Si vous voulez comprendre à quoi ressemble le quotidien d'un business developer dans une agence qui mêle commerce et intelligence artificielle, on est disponibles pour en parler.",
                 },
               ].map(({ num, title, desc }) => (
-                <div key={num} className="flex gap-5 bg-bg-secondary rounded-xl p-5 border border-black/8">
+                <div key={num} className="flex gap-5 bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                   <span className="font-sans text-accent font-semibold text-xs tabular-nums shrink-0 w-6 pt-0.5">
                     {num}
                   </span>
@@ -516,7 +516,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* Section — Setter / Closer */}
           <section id="setter-closer" className="mb-14 scroll-mt-24">
-            <h2 className="font-serif text-h2 text-text-primary mb-5">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
               Setter, closer : le business developer du solopreneur
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
@@ -530,7 +530,7 @@ export default function DevenirBusinessDeveloperPage() {
               <strong>setter</strong> et le <strong>closer</strong>.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 mb-6">
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                   Le setter
                 </p>
@@ -546,7 +546,7 @@ export default function DevenirBusinessDeveloperPage() {
                   Comprendre le rôle du setter →
                 </a>
               </div>
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                   Le closer
                 </p>
@@ -585,7 +585,7 @@ export default function DevenirBusinessDeveloperPage() {
               consultants cherchent des profils commerciaux capables de gérer ça pour eux, souvent
               rémunérés à la performance. Les revenus peuvent monter vite quand ça tourne.
             </p>
-            <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                 Pour aller plus loin
               </p>
@@ -611,12 +611,12 @@ export default function DevenirBusinessDeveloperPage() {
 
           {/* FAQ */}
           <section className="mb-14">
-            <h2 className="font-serif text-h2 text-text-primary mb-8">
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-8">
               Questions fréquentes
             </h2>
             <div className="space-y-4">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="bg-bg-secondary rounded-xl p-6 border border-black/8">
+                <div key={question} className="bg-bg-secondary rounded-xl p-6 border border-white/[0.06]">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>

@@ -29,7 +29,7 @@ export default function MentionsLegalesPage() {
           </nav>
 
           <header className="mb-14">
-            <h1 className="font-serif text-h1 text-text-primary mb-4">
+            <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-4">
               Mentions légales
             </h1>
             <p className="font-sans text-text-muted text-sm">
@@ -41,7 +41,7 @@ export default function MentionsLegalesPage() {
 
             {/* Éditeur */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Éditeur du site</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Éditeur du site</h2>
               <p className="text-text-muted mb-2">
                 Le site <strong>challengerslab.fr</strong> est édité par :
               </p>
@@ -56,7 +56,7 @@ export default function MentionsLegalesPage() {
 
             {/* Hébergeur */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Hébergement</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Hébergement</h2>
               <ul className="list-none space-y-1 text-text-muted">
                 <li><strong>Hébergeur :</strong> Vercel Inc.</li>
                 <li><strong>Adresse :</strong> 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis</li>
@@ -66,7 +66,7 @@ export default function MentionsLegalesPage() {
 
             {/* Propriété intellectuelle */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Propriété intellectuelle</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Propriété intellectuelle</h2>
               <p className="text-text-muted">
                 L'ensemble des contenus présents sur le site challengerslab.fr (textes, images,
                 graphismes, logo, icônes, structure) est protégé par le droit d'auteur et reste
@@ -78,7 +78,7 @@ export default function MentionsLegalesPage() {
 
             {/* Données personnelles */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Données personnelles</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Données personnelles</h2>
               <p className="text-text-muted">
                 Les informations collectées via le formulaire de contact (prénom, email,
                 téléphone, message) sont uniquement utilisées pour répondre à votre demande.
@@ -92,7 +92,7 @@ export default function MentionsLegalesPage() {
 
             {/* Cookies */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Cookies</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Cookies</h2>
               <p className="text-text-muted">
                 Le site utilise Google Analytics pour mesurer l'audience. Ce service peut
                 déposer des cookies sur votre navigateur. Vous pouvez les refuser en
@@ -102,7 +102,7 @@ export default function MentionsLegalesPage() {
 
             {/* Limitation de responsabilité */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Limitation de responsabilité</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Limitation de responsabilité</h2>
               <p className="text-text-muted">
                 ChallengersLab s'efforce d'assurer l'exactitude des informations publiées sur
                 ce site. Toutefois, ChallengersLab ne peut garantir l'exactitude, la

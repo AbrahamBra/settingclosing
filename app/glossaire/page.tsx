@@ -244,7 +244,7 @@ export default function GlossairePage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Référence
             </p>
-            <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
+            <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
               Glossaire Setting &amp; Closing B2B
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed">
@@ -255,7 +255,7 @@ export default function GlossairePage() {
           </header>
 
           {/* Index rapide */}
-          <nav aria-label="Index du glossaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+          <nav aria-label="Index du glossaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Termes définis
             </p>
@@ -264,7 +264,7 @@ export default function GlossairePage() {
                 <a
                   key={t.id}
                   href={`#${t.id}`}
-                  className="font-sans text-xs text-text-muted hover:text-text-primary bg-bg-primary border border-black/8 rounded-lg px-3 py-1.5 transition-colors"
+                  className="font-sans text-xs text-text-muted hover:text-text-primary bg-bg-primary border border-white/[0.06] rounded-lg px-3 py-1.5 transition-colors"
                 >
                   {t.term}
                 </a>
@@ -277,7 +277,7 @@ export default function GlossairePage() {
             {terms.map((t) => (
               <article key={t.id} id={t.id} className="scroll-mt-24">
                 <div className="mb-3">
-                  <h2 className="font-serif text-h3 text-text-primary">{t.term}</h2>
+                  <h2 className="font-sans font-extrabold text-h3 text-text-primary">{t.term}</h2>
                 </div>
                 <p className="font-sans text-text-muted leading-relaxed mb-5">
                   {t.definition}
@@ -292,7 +292,7 @@ export default function GlossairePage() {
                           <a
                             key={rel}
                             href={`#${rel}`}
-                            className="font-sans text-xs text-text-muted hover:text-text-primary bg-bg-secondary border border-black/8 rounded-lg px-2.5 py-1 transition-colors"
+                            className="font-sans text-xs text-text-muted hover:text-text-primary bg-bg-secondary border border-white/[0.06] rounded-lg px-2.5 py-1 transition-colors"
                           >
                             → {related.term}
                           </a>
@@ -309,17 +309,17 @@ export default function GlossairePage() {
                     {t.articleLabel} →
                   </a>
                 </div>
-                <div className="mt-5 border-b border-black/6" />
+                <div className="mt-5 border-b border-white/[0.06]" />
               </article>
             ))}
           </div>
 
           {/* CTA */}
-          <div className="mt-16 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-16 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>
-            <h3 className="font-serif text-h3 text-text-primary mb-3">
+            <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
               Vous voulez mettre tout ça en pratique ?
             </h3>
             <p className="font-sans text-text-muted leading-relaxed mb-6">

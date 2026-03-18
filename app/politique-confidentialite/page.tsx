@@ -29,7 +29,7 @@ export default function PolitiqueConfidentialitePage() {
           </nav>
 
           <header className="mb-14">
-            <h1 className="font-serif text-h1 text-text-primary mb-4">
+            <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-4">
               Politique de confidentialité
             </h1>
             <p className="font-sans text-text-muted text-sm">
@@ -41,7 +41,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Responsable */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Responsable du traitement</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Responsable du traitement</h2>
               <p className="text-text-muted">
                 Le responsable du traitement des données personnelles collectées sur
                 challengerslab.fr est ChallengersLab, représenté par Abraham.
@@ -53,7 +53,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Données collectées */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Données collectées</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Données collectées</h2>
               <p className="text-text-muted mb-3">
                 Nous collectons uniquement les données que vous nous transmettez
                 volontairement via le formulaire de contact :
@@ -69,7 +69,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Finalité */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Finalité du traitement</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Finalité du traitement</h2>
               <p className="text-text-muted">
                 Les données collectées sont utilisées exclusivement pour :
               </p>
@@ -86,7 +86,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Base légale */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Base légale</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Base légale</h2>
               <p className="text-text-muted">
                 Le traitement de vos données repose sur votre consentement (article 6.1.a du
                 RGPD), exprimé lors de l'envoi du formulaire de contact.
@@ -95,7 +95,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Durée de conservation */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Durée de conservation</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Durée de conservation</h2>
               <p className="text-text-muted">
                 Les données personnelles collectées via le formulaire de contact sont
                 conservées pendant une durée maximale de 3 ans à compter du dernier contact,
@@ -105,7 +105,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Cookies */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Cookies et mesure d'audience</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Cookies et mesure d'audience</h2>
               <p className="text-text-muted mb-3">
                 Le site utilise Google Analytics 4 pour mesurer l'audience et comprendre
                 comment les visiteurs utilisent le site. Ce service peut déposer des cookies
@@ -119,7 +119,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Droits */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Vos droits</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Vos droits</h2>
               <p className="text-text-muted mb-3">
                 Conformément au RGPD, vous disposez des droits suivants :
               </p>
@@ -142,7 +142,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Hébergement */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Hébergement des données</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Hébergement des données</h2>
               <p className="text-text-muted">
                 Les données du site sont hébergées par Vercel Inc. (États-Unis). Les emails
                 de contact sont traités via Resend. Ces services sont conformes au RGPD via
@@ -152,7 +152,7 @@ export default function PolitiqueConfidentialitePage() {
 
             {/* Modification */}
             <section>
-              <h2 className="font-serif text-h3 text-text-primary mb-4">Modification de cette politique</h2>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Modification de cette politique</h2>
               <p className="text-text-muted">
                 Cette politique de confidentialité peut être mise à jour. La date de dernière
                 modification est indiquée en haut de cette page. Nous vous invitons à la
