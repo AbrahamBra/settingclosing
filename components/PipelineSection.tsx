@@ -67,14 +67,30 @@ const settingSteps = [
   },
 ]
 
-const closingStep = {
-  num: '10',
-  label: 'Closing structuré',
-  layers: ['humain'] as const,
-  desc: "Challenger Sale. Discovery structurée : on repose le problème avant de parler solution. Valeur perçue augmentée. Vous signez plus, sans négocier le prix.",
-  tools: ['Challenger Sale', 'Discovery'],
-  isLast: true,
-}
+const closingSteps = [
+  {
+    num: '10',
+    label: 'Closer la discovery',
+    layers: ['methode', 'humain'] as const,
+    desc: "Seuil : deals entre 2k et 5k€. On vous forme à vendre correctement. Poser les bonnes questions avant de parler prix. Discovery structurée : comprendre le problème du prospect, qualifier son urgence, et ne pitcher qu'au bon moment. La base que 80% des fondateurs n'ont jamais apprise.",
+    tools: ['Challenger Sale', 'Discovery', '2-5k€'],
+  },
+  {
+    num: '11',
+    label: 'Challenger le pricing',
+    layers: ['methode', 'humain'] as const,
+    desc: "Seuil : deals entre 5k et 10k€. À ce niveau, le prospect compare et négocie. On vous forme à augmenter la valeur perçue de votre offre pour que le prix ne soit plus le critère de décision. Structurer une offre qui se vend d'elle-même. Vous signez plus — sans baisser le tarif.",
+    tools: ['Valeur perçue', 'Pricing', '5-10k€'],
+  },
+  {
+    num: '12',
+    label: 'Déléguer le closing',
+    layers: ['humain'] as const,
+    desc: "Seuil : deals à 10k€ et plus. Cycle de vente long, multi-interlocuteurs. Le fondateur ne peut plus tout faire seul. On recrute, forme et manage des closers dédiés sur votre offre. Vous n'êtes plus dans le pipe — vous le gérez.",
+    tools: ['Closers formés', 'Management', '10k€+'],
+    isLast: true,
+  },
+]
 
 export function PipelineSection() {
   return (
@@ -125,11 +141,13 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        {/* Closing step 10 */}
+        {/* Closing steps 10-12 */}
         <div className="max-w-2xl mx-auto">
-          <ScrollReveal delay={settingSteps.length * 50}>
-            <PipelineStep {...closingStep} />
-          </ScrollReveal>
+          {closingSteps.map((step, i) => (
+            <ScrollReveal key={step.num} delay={(settingSteps.length + i) * 50}>
+              <PipelineStep {...step} />
+            </ScrollReveal>
+          ))}
         </div>
 
         {/* Bottom note */}
