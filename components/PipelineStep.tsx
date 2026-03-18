@@ -1,17 +1,13 @@
+import { layerConfig } from '@/lib/pipeline-data'
+import type { LayerKey } from '@/lib/pipeline-data'
+
 interface PipelineStepProps {
   num: string
   label: string
-  layers: readonly ('ia' | 'methode' | 'hybrid' | 'humain')[]
+  layers: readonly LayerKey[]
   desc: string
   tools: string[]
   isLast?: boolean
-}
-
-const layerConfig = {
-  ia: { label: 'IA', text: 'text-[#818CF8]', bg: 'bg-[#818CF8]/10', border: 'border-[#818CF8]/20' },
-  methode: { label: 'Méthode', text: 'text-[#FBBF24]', bg: 'bg-[#FBBF24]/10', border: 'border-[#FBBF24]/20' },
-  hybrid: { label: 'IA + Méthode', text: 'text-[#C084FC]', bg: 'bg-[#C084FC]/10', border: 'border-[#C084FC]/20' },
-  humain: { label: 'Humain', text: 'text-[#34D399]', bg: 'bg-[#34D399]/10', border: 'border-[#34D399]/20' },
 }
 
 export function PipelineStep({ num, label, layers, desc, tools, isLast = false }: PipelineStepProps) {
