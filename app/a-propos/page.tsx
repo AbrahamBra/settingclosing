@@ -4,13 +4,13 @@ import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'À propos de ChallengersLab | Setting et closing B2B pour solopreneurs',
+  title: 'À propos de ChallengersLab | Setting et closing B2B',
   description:
-    "ChallengersLab aide les solopreneurs et infopreneurs à remplir leur agenda de RDV qualifiés via une méthode de setting LinkedIn signal-based. Qui on est, d'où ça vient, et comment ça marche.",
+    "ChallengersLab aide les fondateurs, freelances et solopreneurs B2B à remplir leur agenda de RDV qualifiés via une méthode de setting LinkedIn signal-based. Qui on est, d'où ça vient, et comment ça marche.",
   openGraph: {
     title: 'À propos de ChallengersLab',
     description:
-      "ChallengersLab aide les solopreneurs et infopreneurs à remplir leur agenda de RDV qualifiés via une méthode de setting LinkedIn signal-based.",
+      "ChallengersLab aide les fondateurs, freelances et solopreneurs B2B à remplir leur agenda de RDV qualifiés via une méthode de setting LinkedIn signal-based.",
     locale: 'fr_FR',
     type: 'profile',
   },
@@ -47,7 +47,7 @@ const orgSchema = {
   name: 'ChallengersLab',
   url: 'https://challengerslab.fr',
   description:
-    "ChallengersLab construit et opère des programmes de setting commercial B2B pour solopreneurs et infopreneurs. Setter dédié, méthode LinkedIn signal-based, IA comme co-rédacteur, coaching closing.",
+    "ChallengersLab construit et opère des programmes de setting commercial B2B pour fondateurs, freelances et solopreneurs B2B. Setter dédié, méthode LinkedIn signal-based, IA comme co-rédacteur, coaching closing.",
   founder: {
     '@type': 'Person',
     name: 'Abraham',
@@ -103,7 +103,7 @@ export default function AProposPage() {
               Ce qu&apos;on fait, pourquoi, et comment
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed">
-              ChallengersLab aide les solopreneurs et infopreneurs à remplir leur agenda de RDV qualifiés
+              ChallengersLab aide les fondateurs, freelances et solopreneurs B2B à remplir leur agenda de RDV qualifiés
               sans passer leurs matinées sur LinkedIn. Setter dédié, méthode signal-based, IA comme
               co-rédacteur, coaching closing selon la formule.
             </p>

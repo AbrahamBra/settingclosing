@@ -5,11 +5,11 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Blog — Setting, Closing et vente B2B | ChallengersLab',
   description:
-    'Méthodes, définitions et stratégies pour solopreneurs et infopreneurs qui veulent mieux prospecter et mieux closer en B2B.',
+    'Méthodes, définitions et stratégies pour fondateurs, freelances et solopreneurs B2B qui veulent mieux prospecter et mieux closer en B2B.',
   openGraph: {
     title: 'Blog — Setting, Closing et vente B2B | ChallengersLab',
     description:
-      'Méthodes, définitions et stratégies pour solopreneurs et infopreneurs qui veulent mieux prospecter et mieux closer en B2B.',
+      'Méthodes, définitions et stratégies pour fondateurs, freelances et solopreneurs B2B qui veulent mieux prospecter et mieux closer en B2B.',
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -189,7 +189,7 @@ const blogSchema = {
   '@id': 'https://challengerslab.fr/blog',
   name: 'Blog — Setting, Closing et vente B2B',
   description:
-    'Méthodes, définitions et stratégies pour solopreneurs et infopreneurs qui veulent mieux prospecter et mieux closer en B2B.',
+    'Méthodes, définitions et stratégies pour fondateurs, freelances et solopreneurs B2B qui veulent mieux prospecter et mieux closer en B2B.',
   url: 'https://challengerslab.fr/blog',
   isPartOf: { '@id': 'https://challengerslab.fr/#website' },
   breadcrumb: {

@@ -19,7 +19,7 @@ const ibmPlexSans = IBM_Plex_Sans({
 
 export const metadata: Metadata = {
   title: 'Setting commercial B2B externalisé | ChallengersLab',
-  description: 'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour solopreneurs et infopreneurs.',
+  description: 'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour fondateurs, freelances et solopreneurs B2B.',
   openGraph: {
     title: 'Setting commercial B2B externalisé | ChallengersLab',
     description: 'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.',
@@ -54,7 +54,7 @@ const jsonLd = {
       '@id': 'https://challengerslab.fr/#business',
       name: 'ChallengersLab',
       url: 'https://challengerslab.fr',
-      description: 'Setting et closing externalisés pour solopreneurs et infopreneurs.',
+      description: 'Setting et closing externalisés pour fondateurs, freelances et solopreneurs B2B.',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         itemListElement: [
@@ -74,7 +74,7 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Coaching Closing B2B',
-            description: 'Coaching closing 2h/semaine, méthode Challenger Sale, pour solopreneurs et infopreneurs',
+            description: 'Coaching closing 2h/semaine, méthode Challenger Sale, pour fondateurs, freelances et solopreneurs B2B',
             priceSpecification: {
               '@type': 'PriceSpecification',
               minPrice: 1500,

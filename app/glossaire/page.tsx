@@ -250,7 +250,7 @@ export default function GlossairePage() {
             <p className="font-sans text-text-muted text-lg leading-relaxed">
               Les définitions exactes des termes qu&apos;on utilise dans le setting et le closing B2B.
               Pas de jargon pour le jargon — chaque entrée explique ce que le mot veut dire en pratique,
-              dans un contexte de vente B2B pour solopreneurs et infopreneurs.
+              dans un contexte de vente B2B pour fondateurs, freelances et solopreneurs B2B.
             </p>
           </header>
 
@@ -323,7 +323,7 @@ export default function GlossairePage() {
               Vous voulez mettre tout ça en pratique ?
             </h3>
             <p className="font-sans text-text-muted leading-relaxed mb-6">
-              ChallengersLab prend en charge le setting commercial pour les solopreneurs et infopreneurs
+              ChallengersLab prend en charge le setting commercial pour les fondateurs, freelances et solopreneurs B2B
               en B2B. Setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.
             </p>
             <a

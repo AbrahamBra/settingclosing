@@ -4,7 +4,7 @@ import { Navbar } from '@/components/Navbar'
 export const metadata: Metadata = {
   title: 'Setting commercial B2B externalisé | ChallengersLab',
   description:
-    'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour solopreneurs et infopreneurs.',
+    'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour fondateurs, freelances et solopreneurs B2B.',
   alternates: {
     canonical: 'https://challengerslab.fr',
   },

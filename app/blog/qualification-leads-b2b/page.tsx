@@ -280,7 +280,7 @@ export default function QualificationLeadsB2BPage() {
             </div>
             <p className="font-sans text-text-muted leading-relaxed">
               MEDDIC s&apos;applique principalement pendant la discovery call et les appels suivants.
-              Pour les solopreneurs et infopreneurs avec des cycles courts (1 à 2 appels), les critères
+              Pour les fondateurs, freelances et solopreneurs B2B avec des cycles courts (1 à 2 appels), les critères
               les plus utiles sont : Identify Pain, Economic Buyer, et Decision Process.
             </p>
           </section>

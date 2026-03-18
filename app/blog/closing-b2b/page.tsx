@@ -492,7 +492,7 @@ export default function ClosingB2BPage() {
               ))}
             </div>
             <p className="font-sans text-text-muted leading-relaxed">
-              Pour les solopreneurs et infopreneurs, le Take Control est la composante la plus difficile
+              Pour les fondateurs, freelances et solopreneurs B2B, le Take Control est la composante la plus difficile
               à intégrer — elle va contre l&apos;instinct de ne pas brusquer le prospect. C&apos;est
               pourtant ce qui distingue un appel qui se termine par &ldquo;je réfléchis&rdquo; (deal
               probablement perdu) d&apos;un appel qui se termine par une décision claire.{' '}

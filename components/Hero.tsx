@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { ButtonGlow } from './ui/ButtonGlow'
 
-const personas = ['solopreneurs', 'infopreneurs']
+const personas = ['fondateurs', 'freelances', 'solopreneurs']
 
 export function Hero() {
   const [index, setIndex] = useState(0)
