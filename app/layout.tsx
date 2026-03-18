@@ -18,13 +18,21 @@ const ibmPlexSans = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'ChallengersLab — Setting & Closing pour solopreneurs',
-  description: 'Déléguez votre prospection et votre closing à des experts formés aux meilleures méthodes B2B. Garantie 5 RDV minimum.',
+  title: 'Setting commercial B2B externalisé | ChallengersLab',
+  description: 'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour solopreneurs et infopreneurs.',
   openGraph: {
-    title: 'ChallengersLab — Setting & Closing pour solopreneurs',
-    description: 'Déléguez votre prospection et votre closing à des experts formés aux meilleures méthodes B2B. Garantie 5 RDV minimum.',
+    title: 'Setting commercial B2B externalisé | ChallengersLab',
+    description: 'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
+    images: [
+      {
+        url: 'https://challengerslab.fr/og-default.png',
+        width: 1200,
+        height: 630,
+        alt: 'ChallengersLab — Setting commercial B2B externalisé',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://challengerslab.fr',
@@ -52,22 +60,25 @@ const jsonLd = {
         itemListElement: [
           {
             '@type': 'Offer',
-            name: 'Setting',
-            description: 'Prospection externalisée avec garantie 5 RDV minimum',
+            name: 'Setting commercial B2B',
+            description: 'Setting externalisé : setter dédié, méthode LinkedIn signal-based, RDV qualifiés dès la première semaine',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: '500',
+              minPrice: 2000,
+              maxPrice: 5000,
               priceCurrency: 'EUR',
+              unitText: 'MONTH',
               valueAddedTaxIncluded: false,
             },
           },
           {
             '@type': 'Offer',
-            name: 'Closing',
-            description: 'Coaching closing 2h/semaine, méthode Challenger Sale',
+            name: 'Coaching Closing B2B',
+            description: 'Coaching closing 2h/semaine, méthode Challenger Sale, pour solopreneurs et infopreneurs',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: '1000',
+              minPrice: 1500,
+              maxPrice: 3000,
               priceCurrency: 'EUR',
               unitText: 'MONTH',
               valueAddedTaxIncluded: false,

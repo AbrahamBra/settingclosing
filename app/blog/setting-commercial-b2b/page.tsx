@@ -675,6 +675,7 @@ export default function SettingCommercialPage() {
                 { href: '/blog/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
                 { href: '/blog/relance-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
                 { href: '/blog/closer-b2b', label: 'Closer B2B : définition, compétences et comment en recruter un' },
+                { href: '/glossaire', label: 'Glossaire setting & closing B2B : toutes les définitions' },
               ].map(({ href, label }) => (
                 <a
                   key={href}

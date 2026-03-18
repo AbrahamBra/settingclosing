@@ -21,6 +21,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: 'https://challengerslab.fr/blog/closing-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 1.0,
+    },
+    {
+      url: 'https://challengerslab.fr/blog/discovery-call-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/blog/gestion-objections-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/blog/script-closing-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://challengerslab.fr/blog/prospection-linkedin-b2b',
       lastModified: new Date('2026-03-18'),
       changeFrequency: 'monthly',
@@ -97,6 +121,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date('2026-03-18'),
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+    {
+      url: 'https://challengerslab.fr/glossaire',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
   ]
 }

@@ -284,6 +284,7 @@ export default function AProposPage() {
                 { href: '/blog/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/blog/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting" },
                 { href: '/blog/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
+                { href: '/glossaire', label: 'Glossaire setting & closing B2B : setter, closer, signal d\'achat, ICP…' },
               ].map(({ href, label }) => (
                 <a
                   key={href}
