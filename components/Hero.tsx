@@ -24,7 +24,7 @@ export function Hero() {
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none select-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(59,130,246,0.09) 0%, transparent 60%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(248,113,113,0.09) 0%, transparent 60%)',
         }}
       />
 
@@ -34,9 +34,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/10 font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-8"
+          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#38BDF8]/20 bg-[#38BDF8]/10 font-sans text-xs font-semibold uppercase tracking-widest text-[#38BDF8] mb-8"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-accent inline-block" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8] inline-block" />
           Setting &amp; Closing B2B
         </motion.div>
 
@@ -44,7 +44,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="font-serif text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] leading-[1.15] text-text-primary mb-6"
+          className="font-sans font-extrabold tracking-tight text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] leading-[1.15] text-white mb-6"
         >
           Vous avez déjà l&apos;offre.{' '}
           <br className="hidden sm:block" />
@@ -55,7 +55,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-sans text-lg text-text-muted mb-4 max-w-xl mx-auto"
+          className="font-sans text-lg text-text-secondary mb-4 max-w-xl mx-auto"
         >
           Premiers rendez-vous qualifiés dès la première semaine.{' '}
           Pipeline complet : setting délégué, closing coaché.
@@ -95,11 +95,29 @@ export function Hero() {
             Réserver un appel gratuit
           </ButtonGlow>
           <a
-            href="#setting"
+            href="#pipeline"
             className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
           >
             Découvrir l&apos;offre ↓
           </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+          className="flex justify-center gap-12 mt-16 pt-6 border-t border-white/[0.06]"
+        >
+          {[
+            { num: '5+', label: 'RDV/mois garantis' },
+            { num: '500€', label: '/mois' },
+            { num: '14j', label: 'premiers résultats' },
+          ].map((s) => (
+            <div key={s.label} className="text-center">
+              <div className="font-mono text-2xl font-extrabold text-[#38BDF8]">{s.num}</div>
+              <div className="text-text-muted text-xs uppercase tracking-wider mt-1">{s.label}</div>
+            </div>
+          ))}
         </motion.div>
       </div>
     </section>

@@ -1,23 +1,23 @@
 export function Footer() {
   return (
-    <footer className="border-t border-black/8 bg-bg-primary">
+    <footer className="border-t border-white/[0.06] bg-bg-secondary">
       <div className="container-max px-6 md:px-12 lg:px-20 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="font-serif text-xl text-text-primary mb-2">ChallengersLab</p>
+            <p className="font-sans font-extrabold text-xl text-white mb-2">ChallengersLab</p>
             <p className="font-sans text-text-muted text-sm max-w-xs">
               Ce qui fonctionne en B2B, appliqué à votre activité.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-8 text-sm font-sans text-text-muted">
             <div className="flex flex-col gap-2">
-              <p className="text-text-primary font-semibold mb-1">Ressources</p>
+              <p className="text-white font-semibold mb-1">Ressources</p>
               <a href="/blog" className="hover:text-text-primary transition-colors">Blog</a>
               <a href="/glossaire" className="hover:text-text-primary transition-colors">Glossaire</a>
               <a href="/a-propos" className="hover:text-text-primary transition-colors">À propos</a>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-text-primary font-semibold mb-1">Contact</p>
+              <p className="text-white font-semibold mb-1">Contact</p>
               <a
                 href="mailto:contact@challengerslab.fr"
                 className="hover:text-text-primary transition-colors"
@@ -34,7 +34,7 @@ export function Footer() {
               </a>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="text-text-primary font-semibold mb-1">Légal</p>
+              <p className="text-white font-semibold mb-1">Légal</p>
               <a href="/mentions-legales" className="hover:text-text-primary transition-colors">
                 Mentions légales
               </a>
@@ -44,7 +44,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="border-t border-black/8 mt-8 pt-8">
+        <div className="border-t border-white/[0.06] mt-8 pt-8">
           <p className="font-sans text-text-muted text-xs">
             © {new Date().getFullYear()} ChallengersLab. Tous droits réservés.
           </p>
