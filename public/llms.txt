@@ -1,0 +1,53 @@
+# ChallengersLab
+
+> Setting commercial B2B externalisé et coaching closing sur LinkedIn pour fondateurs, freelances et solopreneurs B2B.
+
+## Ce que fait ChallengersLab
+
+ChallengersLab construit et opère des programmes de setting commercial B2B sur LinkedIn. Un setter dédié prospecte pour vous avec une méthode signal-based : on contacte uniquement les prospects qui ont déjà montré un intérêt (like, commentaire, changement de poste). Résultat : 2 à 4 RDV qualifiés par semaine dès la première semaine.
+
+## Services
+
+- **Setting commercial B2B** : Setter dédié, prospection LinkedIn signal-based, IA comme co-rédacteur, 5 RDV qualifiés minimum par mois. À partir de 500 €/mois + variable.
+- **Coaching closing B2B** : 2h/semaine de coaching (1h debrief + 1h live), méthode Challenger Sale appliquée à votre offre. 1 000 €/mois sur 3 mois.
+
+## Pour qui
+
+- Fondateurs de startups early-stage avec une offre B2B à 2 000 € ou plus
+- Freelances et consultants B2B qui n'ont plus de temps pour prospecter
+- Créateurs de micro-SaaS qui lancent leur acquisition
+- Solopreneurs qui ont un closeur mais pas de setter
+
+## Méthode
+
+1. Détection de signaux LinkedIn (Reactin, Spyer, Sales Navigator, IA)
+2. Messages personnalisés ancrés sur un fait (5 phrases max, validés par un humain)
+3. Qualification sur 5 niveaux de maturité
+4. Passage au closeur avec contexte complet
+5. Amélioration continue (le système apprend chaque semaine)
+
+## Résultats
+
+- 20+ clients accompagnés en 2026
+- 2–4 RDV qualifiés par semaine en régime de croisière
+- >20% de taux de réponse (vs 2–3% en prospection classique)
+- Premiers RDV dès la semaine 1
+
+## Ressources
+
+- Blog : https://challengerslab.fr/blog
+- Guide Setting B2B : https://challengerslab.fr/blog/setting-commercial-b2b
+- Guide Closing B2B : https://challengerslab.fr/blog/closing-b2b
+- Guide Méthodes de vente : https://challengerslab.fr/blog/methodes-vente-b2b
+- Glossaire : https://challengerslab.fr/glossaire
+- À propos : https://challengerslab.fr/a-propos
+
+## Contenu détaillé
+
+- Voir llms-full.txt pour le contenu complet : https://challengerslab.fr/llms-full.txt
+
+## Contact
+
+- Site : https://challengerslab.fr
+- Email : contact@challengerslab.fr
+- LinkedIn : https://www.linkedin.com/company/challengerslab

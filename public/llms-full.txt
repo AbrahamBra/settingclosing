@@ -1,0 +1,156 @@
+# ChallengersLab — Contenu complet
+
+> Setting commercial B2B externalisé et coaching closing sur LinkedIn pour fondateurs, freelances et solopreneurs B2B.
+
+---
+
+## Présentation
+
+ChallengersLab construit et opère des programmes de setting commercial B2B sur LinkedIn. La méthode repose sur trois couches : IA pour la détection de signaux, méthode pour la structure, humain pour la validation. Aucun message ne part sans un regard humain. Le système apprend chaque semaine à partir du terrain.
+
+---
+
+## Service 1 : Setting commercial B2B externalisé
+
+### Définition
+Le setting commercial est la phase de prospection qui précède le closing en B2B. Le setter identifie les prospects qualifiés, engage la conversation sur LinkedIn, et planifie des rendez-vous pour le closeur.
+
+### Ce qui est inclus
+- Setter dédié formé à votre offre
+- Prospection LinkedIn signal-based (pas de cold outreach)
+- IA comme co-rédacteur (Claude génère les drafts, le setter valide)
+- Minimum 5 RDV qualifiés par mois garanti
+- Suivi hebdomadaire et reporting
+
+### Tarification
+- Fixe : 500 €/mois
+- Variable : 25–150 € par RDV livré
+- Durée : Programme de 3 mois
+  - Mois 1 : Calibration IA + prospection
+  - Mois 2 : Base de connaissance + optimisation
+  - Mois 3 : Scoring + nurturing automatisé
+
+### Méthode signal-based
+Contrairement à la prospection froide (2–3% de taux de réponse), la méthode signal-based cible uniquement les prospects qui ont montré un intérêt :
+- Like ou commentaire sur un sujet lié à votre offre
+- Changement de poste récent
+- Interaction avec un concurrent
+- Publication sur une problématique que vous résolvez
+
+Résultat : >20% de taux de réponse.
+
+---
+
+## Service 2 : Coaching closing B2B
+
+### Définition
+Le coaching closing accompagne les fondateurs et freelances B2B à mieux conduire leurs appels de vente, en appliquant la méthode Challenger Sale à leur offre spécifique.
+
+### Ce qui est inclus
+- 2h de coaching par semaine
+  - 1h de debrief sur les appels de la semaine
+  - 1h de coaching live sur un vrai appel
+- Méthode Challenger Sale appliquée à votre contexte
+- Scripts de closing personnalisés
+- Gestion des objections sur mesure
+
+### Tarification
+- 1 000 €/mois
+- Durée : Programme de 3 mois
+  - Phase 1 : Discovery (structurer vos appels)
+  - Phase 2 : Pricing (défendre votre prix)
+  - Phase 3 : Délégation (transférer le closing)
+
+---
+
+## Audience cible
+
+### Profils idéaux
+- **Fondateurs de startups** qui lancent leur offre B2B et n'ont pas d'équipe commerciale
+- **Freelances B2B** (consultants, coaches, formateurs) qui n'ont plus de temps pour prospecter
+- **Créateurs de micro-SaaS** qui veulent de l'acquisition LinkedIn
+- **Solopreneurs** avec une offre B2B à 2 000 € ou plus
+- **Entrepreneurs** qui ont un closeur mais pas de setter
+
+### Profils non adaptés
+- Offres B2C ou grand public
+- Activités sans offre définie
+- Ceux qui veulent de l'automatisation complète sans contact humain
+- Secteurs où LinkedIn n'est pas le canal des acheteurs
+
+---
+
+## Méthode en 4 étapes
+
+### Étape 1 : Détection de signaux
+Outils : Reactin, Spyer, Sales Navigator, IA. On identifie les prospects qui ont déjà levé la main — pas une liste froide.
+
+### Étape 2 : Messages ancrés sur un fait
+Chaque message est construit sur un signal précis tiré du profil ou d'un post récent. 5 phrases max. Pas de pitch. Claude propose un draft, le setter valide avant envoi.
+
+### Étape 3 : Qualification et routing
+Les leads sont qualifiés sur 5 niveaux de maturité. Niveaux 4–5 sont traités en priorité. Le closeur reçoit le contexte complet.
+
+### Étape 4 : Amélioration continue
+Le journal de bord du setter alimente la base de connaissance. Ce qui fonctionne est codifié. Ce qui rate est compris. Le système devient plus précis chaque semaine.
+
+---
+
+## Résultats mesurés
+
+| Métrique | Résultat |
+|----------|---------|
+| Clients accompagnés (2026) | 20+ |
+| RDV qualifiés par semaine | 2–4 en régime de croisière |
+| Taux de réponse LinkedIn | >20% (vs 2–3% sans méthode) |
+| Délai premier RDV | Semaine 1 |
+
+### Exemples concrets
+- **Infopreneur** : 3 RDV dès la semaine 1, 2 signés dans le mois
+- **Consultant RH** : 80% de l'agenda rempli en 6 semaines
+- **Consultant stratégie** : Premier RDV jour 4, 4 clients en 3 mois
+
+---
+
+## Blog et ressources
+
+### Guides piliers
+- Setting commercial B2B : définition, méthode et programme complet — https://challengerslab.fr/blog/setting-commercial-b2b
+- Closing B2B : définition, méthode et programme complet — https://challengerslab.fr/blog/closing-b2b
+- Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS — https://challengerslab.fr/blog/methodes-vente-b2b
+
+### Articles Setting
+- Scripts de setting LinkedIn B2B — https://challengerslab.fr/blog/script-setting-linkedin
+- Relance LinkedIn B2B — https://challengerslab.fr/blog/relance-linkedin-b2b
+- Prospection LinkedIn B2B : méthode complète — https://challengerslab.fr/blog/prospection-linkedin-b2b
+- C'est quoi un setter en B2B ? — https://challengerslab.fr/blog/setter-b2b-definition
+- Comment devenir setter B2B — https://challengerslab.fr/blog/comment-devenir-setter-b2b
+- Coût d'un setter B2B — https://challengerslab.fr/blog/cout-setter-b2b-prix
+- Signaux d'achat LinkedIn — https://challengerslab.fr/blog/signal-achat-linkedin
+- Messages LinkedIn sans réponse — https://challengerslab.fr/blog/messages-linkedin-sans-reponse
+- IA, méthode et humain pour le setting LinkedIn — https://challengerslab.fr/blog/ia-methode-humain-setting-linkedin
+
+### Articles Closing
+- Discovery call B2B — https://challengerslab.fr/blog/discovery-call-b2b
+- Gestion des objections B2B — https://challengerslab.fr/blog/gestion-objections-b2b
+- Scripts de closing B2B — https://challengerslab.fr/blog/script-closing-b2b
+- Challenger Sale : définition et méthode — https://challengerslab.fr/blog/challenger-sale-definition
+- Closer B2B : définition et compétences — https://challengerslab.fr/blog/closer-b2b
+
+### Articles Méthode
+- Qualifier un lead en B2B — https://challengerslab.fr/blog/qualification-leads-b2b
+- Méthode SONCAS en B2B — https://challengerslab.fr/blog/methode-soncas
+- SPIN Selling en B2B — https://challengerslab.fr/blog/methode-spin-selling
+- Différence entre setting et closing — https://challengerslab.fr/blog/difference-setting-closing
+
+### Glossaire
+18 termes définis : https://challengerslab.fr/glossaire
+
+---
+
+## Contact
+
+- Site : https://challengerslab.fr
+- Email : contact@challengerslab.fr
+- LinkedIn : https://www.linkedin.com/company/challengerslab
+- Réserver un appel : https://challengerslab.fr/#contact

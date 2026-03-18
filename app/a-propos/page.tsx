@@ -239,10 +239,10 @@ export default function AProposPage() {
                 </p>
                 <ul className="space-y-2 font-sans text-sm text-text-muted">
                   {[
-                    'Solopreneurs avec une offre B2B à 2 000 € ou plus',
-                    'Infopreneurs qui veulent remplir leurs programmes haute valeur',
-                    'Consultants indépendants qui n\'ont plus de temps pour prospecter',
-                    'Ceux qui ont un closeur mais pas de setter',
+                    'Fondateurs de startups avec une offre B2B à 2 000 € ou plus',
+                    'Freelances et consultants B2B qui n\'ont plus de temps pour prospecter',
+                    'Créateurs de micro-SaaS qui lancent leur acquisition',
+                    'Solopreneurs qui ont un closeur mais pas de setter',
                   ].map((item) => (
                     <li key={item} className="flex gap-2">
                       <span className="text-accent shrink-0">→</span>
