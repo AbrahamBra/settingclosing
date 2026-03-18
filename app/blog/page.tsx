@@ -140,6 +140,30 @@ const closingArticles = [
 
 const methodeArticles = [
   {
+    slug: 'qualification-leads-b2b',
+    title: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples',
+    description: "BANT, MEDDIC, ou signaux LinkedIn : comment qualifier un lead avant de planifier un call. Avec un système en 5 niveaux adapté à la prospection outbound.",
+    readTime: '8 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
+    slug: 'methode-soncas',
+    title: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples concrets',
+    description: "Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie : comment détecter les leviers motivationnels d'un prospect et adapter son discours en discovery call.",
+    readTime: '10 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
+    slug: 'methode-spin-selling',
+    title: 'SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer',
+    description: "Situation, Problème, Implication, Need-payoff : le cadre de questions issu d'une étude sur 35 000 appels de vente pour conduire un prospect à se convaincre lui-même.",
+    readTime: '9 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
     slug: 'difference-setting-closing',
     title: 'Quelle est la différence entre setting et closing ?',
     description: "Deux rôles distincts dans un cycle de vente B2B. Comprendre la différence vous aide à identifier votre vrai levier de croissance et dans quel ordre investir.",

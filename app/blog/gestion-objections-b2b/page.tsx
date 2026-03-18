@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Gérer les objections en vente B2B : méthode et exemples | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Les objections en vente B2B ne se traitent pas toutes pareil. Vraies objections vs prétextes, les 5 plus fréquentes avec réponses concrètes.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -143,11 +144,7 @@ export default function GestionObjectionsPage() {
               et celles qui signalent que la décision est non. Confondre les deux vous fait passer du temps
               à argumenter avec des gens qui ne signeront pas.
             </p>
-            <div className="flex items-center gap-3 font-sans text-xs text-text-muted">
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>9 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="9 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Section 1 — Vraies vs fausses */}

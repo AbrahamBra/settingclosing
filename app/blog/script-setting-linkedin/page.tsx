@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: 'Scripts de setting LinkedIn B2B : exemples et cadre complet | ChallengersLab',
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     'Les vrais scripts de setting LinkedIn : anatomie d\'un message qui obtient des réponses, 6 scripts concrets (inbound + outbound), les 4 erreurs qui tuent le taux de réponse.',
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -152,13 +153,7 @@ export default function ScriptSettingLinkedinPage() {
               Pas de templates à copier-coller. Un cadre pour écrire des messages qui obtiennent
               vraiment des réponses, avec 6 scripts concrets pour les situations les plus courantes.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>11 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="11 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Definition Block */}

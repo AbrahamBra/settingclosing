@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Prospection LinkedIn B2B : méthode complète en 2026 | ChallengersLab",
@@ -27,9 +28,9 @@ const articleSchema = {
   description:
     "Comment prospecter sur LinkedIn en B2B en 2026 : signaux d'achat, messages qui obtiennent des réponses, Sales Navigator, IA comme co-rédacteur. La méthode terrain.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -142,13 +143,7 @@ export default function ProspectionLinkedInB2BPage() {
               c&apos;est le contexte. Voici comment construire un système qui livre des RDV qualifiés
               semaine après semaine.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>13 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="13 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Bloc Définition */}

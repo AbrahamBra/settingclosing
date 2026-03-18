@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Discovery call B2B : structure, questions et erreurs à éviter | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "La discovery call est le premier appel commercial du closeur. Structure en 4 phases, les 10 meilleures questions à poser, les 3 erreurs qui font perdre des deals.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -143,11 +144,7 @@ export default function DiscoveryCallPage() {
               que le closeur a pitché sans vraiment comprendre ce que le prospect voulait. La discovery
               call est la phase qui évite ça — et la plupart des gens la bâclent.
             </p>
-            <div className="flex items-center gap-3 font-sans text-xs text-text-muted">
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>10 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Résultat concret */}

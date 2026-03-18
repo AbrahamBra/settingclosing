@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: 'Setting vs Closing : quelle est la différence en B2B ? | ChallengersLab',
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     'Le setting désigne la phase de prospection commerciale B2B. Le closing désigne la phase de vente. Deux rôles distincts qui s\'optimisent indépendamment.',
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -189,13 +190,7 @@ export default function DifferenceSettingClosingPage() {
               Deux rôles distincts dans un cycle de vente B2B. Comprendre lequel travailler
               en premier change tout à ce que vous signez chaque mois.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-16">16 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>7 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-16" readTime="7 min de lecture" dateLabel="16 mars 2026" />
           </header>
 
           {/* Two Definition Blocks */}

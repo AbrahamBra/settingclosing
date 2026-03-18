@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Scripts et phrases de closing B2B : cadre et exemples | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Les scripts de closing B2B ne sont pas des textes à réciter. Ouverture, discovery, pitch, demande de décision — les cadres avec exemples concrets.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -143,11 +144,7 @@ export default function ScriptClosingPage() {
               de l&apos;appel, les objectifs de chaque moment, les questions qui font avancer. Les mots
               changent selon le prospect. La structure, non.
             </p>
-            <div className="flex items-center gap-3 font-sans text-xs text-text-muted">
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>10 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Section 1 — Script vs template */}

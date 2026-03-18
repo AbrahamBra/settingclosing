@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois : le cadre complet pour des follow-ups qui obtiennent des réponses.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -160,13 +161,7 @@ export default function RelanceLinkedInB2BPage() {
               ou classer le prospect comme perdu ? Ce guide répond à ces trois questions avec des exemples
               de messages réels et un cadre applicable dès aujourd&apos;hui.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>9 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="9 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Stat block */}

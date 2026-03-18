@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Les 5 erreurs qui tuent les taux de réponse LinkedIn : pitch trop tôt, deuxième phrase générique, formules automatiques, longueur excessive et test du téléphone raté.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -177,13 +178,7 @@ export default function MessagesLinkedInSansReponsePage() {
               Ce n&apos;est pas LinkedIn qui ne fonctionne pas. Ce sont 5 erreurs précises
               qui tuent les taux de réponse — et qui se corrigent avec une règle simple à chaque fois.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-17">17 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>8 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-17" readTime="8 min de lecture" dateLabel="17 mars 2026" />
           </header>
 
           {/* Stat block */}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: 'Setting commercial B2B : définition, méthode et programme complet | ChallengersLab',
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Le setting commercial est la phase de prospection qui précède le closing en B2B. Définition exacte, rôle du setter, méthode LinkedIn signal-based, les 5 erreurs et programme des 3 mois en détail.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -160,13 +161,7 @@ export default function SettingCommercialPage() {
               tourner seul. Ce guide couvre tout : la méthode, les outils, les erreurs qui tuent
               les taux de réponse, et ce que ça donne semaine par semaine.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-17">17 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>25 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-17" readTime="25 min de lecture" dateLabel="17 mars 2026" />
           </header>
 
           {/* Definition block — GEO */}

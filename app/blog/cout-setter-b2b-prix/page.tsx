@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Coût d'un setter B2B en 2026 : prix, modèles et ce qu'on évite | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Combien coûte un setter B2B ? Fixe mensuel, prime par RDV, modèle hybride : les vrais chiffres, les pièges à éviter et comment calculer le ROI réel d'un programme de setting.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -142,13 +143,7 @@ export default function CoutSetterB2BPage() {
               Fixe, prime, hybride : ce que le marché pratique et comment ne pas se faire avoir.
               Avant de signer quoi que ce soit, posez ces questions et comprenez ce que vous payez vraiment.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>9 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="9 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Definition block */}

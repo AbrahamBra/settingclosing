@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "C'est quoi un signal d'achat LinkedIn ? | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Un signal d'achat LinkedIn est une action détectable — like, commentaire, interaction sur un compte tiers — qui indique qu'un prospect s'intéresse activement à un sujet lié à votre offre.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -180,13 +181,7 @@ export default function SignalAchatLinkedInPage() {
               La plupart des solopreneurs pensent que prospecter sur LinkedIn, c&apos;est contacter des inconnus à froid.
               Un signal d&apos;achat, c&apos;est l&apos;opposé : le prospect a déjà levé la main — vous n&apos;avez plus qu&apos;à le voir.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-17">17 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>7 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-17" readTime="7 min de lecture" dateLabel="17 mars 2026" />
           </header>
 
           {/* Definition Block */}

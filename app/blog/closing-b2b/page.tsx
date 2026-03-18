@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: 'Closing B2B : définition, méthode et programme complet | ChallengersLab',
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Le closing B2B est la phase de vente où un commercial transforme un prospect qualifié en client signé. Définition exacte, rôle du closeur, discovery call, gestion des objections et programme.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -159,11 +160,7 @@ export default function ClosingB2BPage() {
               gestion des objections, les erreurs les plus fréquentes, la méthode Challenger Sale —
               et comment un programme de coaching closing fonctionne semaine par semaine.
             </p>
-            <div className="flex items-center gap-3 font-sans text-xs text-text-muted">
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>25 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="25 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Stats */}

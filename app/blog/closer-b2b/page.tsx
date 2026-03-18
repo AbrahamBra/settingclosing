@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: 'Closer B2B : définition, compétences et comment en recruter un | ChallengersLab',
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     'Le closer B2B prend en charge les appels entrants sur des leads qualifiés et les transforme en clients signés. Il ne prospecte pas, ne fait pas de setting, ne gère pas les relances. Son seul rôle : signer.',
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -166,13 +167,7 @@ export default function CloserB2BPage() {
               qui prend un appel sur un lead qualifié et en sort avec une signature — ou sans. Voici
               ce que ça implique vraiment.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>11 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="11 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Definition Block */}

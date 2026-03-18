@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: 'Setter B2B : définition, rôle et comment en trouver un | ChallengersLab',
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     'Un setter B2B est un commercial spécialisé dans la prospection sortante. Il identifie des prospects pertinents, les contacte, qualifie leur intérêt et décroche des rendez-vous commerciaux qualifiés.',
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -182,13 +183,7 @@ export default function SetterDefinitionPage() {
             <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
               Définition complète, rôle au quotidien, coût réel et les 3 phases du setting expliquées simplement.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-16">16 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>8 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-16" readTime="8 min de lecture" dateLabel="16 mars 2026" />
           </header>
 
           {/* Definition Block — auto-extractable par les IA */}

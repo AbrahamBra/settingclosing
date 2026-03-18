@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "IA, méthode et humain : les 3 couches d'une machine à RDV LinkedIn | ChallengersLab",
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Un système de setting LinkedIn qui tient combine trois couches distinctes : l'IA pour la détection et la co-rédaction, la méthode pour le scoring et les règles non-négociables, et l'humain pour la validation et la décision. Explications et exemples.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -150,13 +151,7 @@ export default function Page() {
               Le taux de réponse reste à 3%. La conclusion rapide : LinkedIn ne marche pas pour eux.
               La vraie raison : le modèle n&apos;a aucun contexte sur leur marché.
             </p>
-            <div className="flex items-center gap-3 text-xs text-text-muted font-sans">
-              <span>Par ChallengersLab</span>
-              <span>·</span>
-              <time dateTime="2026-03-17">17 mars 2026</time>
-              <span>·</span>
-              <span>12 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-17" readTime="12 min de lecture" dateLabel="17 mars 2026" />
           </header>
 
           {/* Definition block — GEO */}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: 'Challenger Sale : définition, méthode et application en B2B | ChallengersLab',
@@ -29,9 +30,9 @@ const articleSchema = {
   description:
     "Le Challenger Sale est une méthode de vente B2B développée par Matthew Dixon et Brent Adamson (CEB, 2011), basée sur une étude portant sur 6 000 commerciaux. Elle identifie 5 profils de vendeurs et démontre que les top performers challengent leurs prospects plutôt que de les accompagner.",
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -191,13 +192,7 @@ export default function ChallengerSalePage() {
               La méthode de vente B2B issue d&apos;une étude sur 6 000 commerciaux — et pourquoi
               le profil qui surperforme n&apos;est pas celui qu&apos;on attendait.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-16">16 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>9 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-16" readTime="9 min de lecture" dateLabel="16 mars 2026" />
           </header>
 
           {/* Definition Block */}

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Comment devenir setter B2B en 2026 | ChallengersLab",
@@ -27,9 +28,9 @@ const articleSchema = {
   description:
     'Le métier de setter B2B en 2026 : compétences réelles, outils, rémunération et étapes pour démarrer. Guide concret sans formation bullshit.',
   author: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    '@type': 'Person',
+    name: 'Abraham',
+    url: 'https://challengerslab.fr/a-propos',
   },
   publisher: {
     '@type': 'Organization',
@@ -140,13 +141,7 @@ export default function CommentDevenirSetterB2BPage() {
               Les compétences réelles, les outils, la rémunération et les étapes pour démarrer.
               Ce que personne ne vous dit dans les formations à 3 000 €.
             </p>
-            <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
-              <span>Par ChallengersLab</span>
-              <span aria-hidden="true">·</span>
-              <time dateTime="2026-03-18">18 mars 2026</time>
-              <span aria-hidden="true">·</span>
-              <span>11 min de lecture</span>
-            </div>
+            <AuthorBlock date="2026-03-18" readTime="11 min de lecture" dateLabel="18 mars 2026" />
           </header>
 
           {/* Bloc Définition */}
