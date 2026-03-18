@@ -9,40 +9,26 @@ export function VideoBackground() {
     const video = videoRef.current
     if (!video) return
 
-    // Wait for video metadata to load so we know its duration
-    const onLoaded = () => {
-      video.pause() // We control playback via scroll
-
-      const onScroll = () => {
+    let ticking = false
+    const onScroll = () => {
+      if (ticking) return
+      ticking = true
+      requestAnimationFrame(() => {
         const scrollY = window.scrollY
         const maxScroll = document.documentElement.scrollHeight - window.innerHeight
-        if (maxScroll <= 0) return
+        if (maxScroll <= 0) { ticking = false; return }
 
-        // Map scroll position to video time
+        // Map scroll to vertical position: top of page = 20%, bottom = 80%
         const progress = Math.min(scrollY / maxScroll, 1)
-        video.currentTime = progress * video.duration
-      }
-
-      window.addEventListener('scroll', onScroll, { passive: true })
-      onScroll() // Set initial position
-
-      // Store cleanup ref
-      video.dataset.cleanup = 'true'
-      const cleanup = () => window.removeEventListener('scroll', onScroll)
-      ;(video as any)._cleanup = cleanup
+        const yPos = 20 + progress * 60
+        video.style.objectPosition = `center ${yPos}%`
+        ticking = false
+      })
     }
 
-    if (video.readyState >= 1) {
-      onLoaded()
-    } else {
-      video.addEventListener('loadedmetadata', onLoaded, { once: true })
-    }
-
-    return () => {
-      if ((video as any)?._cleanup) {
-        ;(video as any)._cleanup()
-      }
-    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    onScroll()
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
   return (
@@ -58,21 +44,23 @@ export function VideoBackground() {
     >
       <video
         ref={videoRef}
+        autoPlay
         muted
+        loop
         playsInline
-        preload="auto"
         style={{
           width: '100%',
           height: '100%',
           objectFit: 'cover',
+          objectPosition: 'center 20%',
           filter: 'blur(1px) saturate(0.4) brightness(0.7)',
-          opacity: 0.28,
+          opacity: 0.25,
           mixBlendMode: 'luminosity',
         }}
       >
         <source src="/bg-video.mp4" type="video/mp4" />
       </video>
-      {/* Subtle edge fade only — no heavy center overlay */}
+      {/* Subtle edge fade */}
       <div
         style={{
           position: 'absolute',
