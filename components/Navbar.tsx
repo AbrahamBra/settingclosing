@@ -24,6 +24,7 @@ export function Navbar() {
     { label: 'Offres', href: '#pricing' },
     { label: 'Blog', href: '/blog' },
     { label: 'Ressources', href: '/ressources/devenir-business-developer' },
+    { label: 'À propos', href: '/a-propos' },
   ]
 
   return (
