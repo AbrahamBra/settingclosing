@@ -26,7 +26,7 @@ const articles = [
 
 export function BlogTeaser() {
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-bg-secondary">
       <div className="container-max">
         {/* Header */}
         <ScrollReveal>

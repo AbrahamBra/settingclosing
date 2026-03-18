@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
+import { PainBridge } from '@/components/PainBridge'
+import { PipelineSummary } from '@/components/PipelineSummary'
 import { PipelineSection } from '@/components/PipelineSection'
 import { PricingComparison } from '@/components/PricingComparison'
 import { BlogTeaser } from '@/components/BlogTeaser'
+import { SocialProof } from '@/components/SocialProof'
 import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
 import { CursorGlowClient } from '@/components/CursorGlowClient'
@@ -24,9 +27,12 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <PainBridge />
+        <PipelineSummary />
         <PipelineSection />
         <PricingComparison />
         <BlogTeaser />
+        <SocialProof />
         <CTAFinale />
       </main>
       <Footer />

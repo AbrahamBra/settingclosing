@@ -100,7 +100,7 @@ export function CTAFinale() {
   }
 
   return (
-    <section id="contact" className="section-padding bg-bg-primary">
+    <section id="contact" className="section-padding bg-bg-secondary">
       <div className="container-max">
         <ScrollReveal>
           <h2 className="font-sans text-h2 font-bold text-white text-center mb-16">

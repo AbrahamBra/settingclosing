@@ -4,7 +4,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 
 export function PricingComparison() {
   return (
-    <section id="pricing" className="section-padding">
+    <section id="pricing" className="section-padding bg-bg-secondary">
       <div className="container-max">
         {/* Header */}
         <div className="text-center mb-12">
