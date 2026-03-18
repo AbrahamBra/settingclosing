@@ -1,5 +1,13 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
+import { Hero } from '@/components/Hero'
+import { PipelineSection } from '@/components/PipelineSection'
+import { ProofGrid } from '@/components/ProofGrid'
+import { PricingComparison } from '@/components/PricingComparison'
+import { BlogTeaser } from '@/components/BlogTeaser'
+import { CTAFinale } from '@/components/CTAFinale'
+import { Footer } from '@/components/Footer'
+import { CursorGlowClient } from '@/components/CursorGlowClient'
 
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
@@ -9,17 +17,6 @@ export const metadata: Metadata = {
     canonical: 'https://challengerslab.fr',
   },
 }
-import { Hero } from '@/components/Hero'
-import { Probleme } from '@/components/Probleme'
-import { Philosophie } from '@/components/Philosophie'
-import { SectionSetting } from '@/components/SectionSetting'
-import { SectionClosing } from '@/components/SectionClosing'
-import { SectionTriptyque } from '@/components/SectionTriptyque'
-import { SectionComplementarite } from '@/components/SectionComplementarite'
-import { Preuves } from '@/components/Preuves'
-import { CTAFinale } from '@/components/CTAFinale'
-import { Footer } from '@/components/Footer'
-import { CursorGlowClient } from '@/components/CursorGlowClient'
 
 export default function Home() {
   return (
@@ -28,13 +25,10 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Probleme />
-        <Philosophie />
-        <SectionTriptyque />
-        <SectionSetting />
-        <SectionClosing />
-        <SectionComplementarite />
-        <Preuves />
+        <PipelineSection />
+        <ProofGrid />
+        <PricingComparison />
+        <BlogTeaser />
         <CTAFinale />
       </main>
       <Footer />
