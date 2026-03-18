@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Instrument_Serif, IBM_Plex_Sans } from 'next/font/google'
+import { Inter, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
@@ -18,11 +18,11 @@ const ibmPlexSans = IBM_Plex_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Setting commercial B2B externalisé | ChallengersLab',
-  description: 'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour fondateurs, freelances et solopreneurs B2B.',
+  title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
+  description: 'ChallengersLab gère votre setting commercial LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour fondateurs, freelances et solopreneurs.',
   openGraph: {
-    title: 'Setting commercial B2B externalisé | ChallengersLab',
-    description: 'ChallengersLab gère votre setting commercial B2B sur LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.',
+    title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
+    description: 'ChallengersLab gère votre setting commercial LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: 'https://challengerslab.fr/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'ChallengersLab — Setting commercial B2B externalisé',
+        alt: 'ChallengersLab — Setting commercial LinkedIn externalisé',
       },
     ],
   },
@@ -54,7 +54,7 @@ const jsonLd = {
       '@id': 'https://challengerslab.fr/#business',
       name: 'ChallengersLab',
       url: 'https://challengerslab.fr',
-      description: 'Setting et closing externalisés pour fondateurs, freelances et solopreneurs B2B.',
+      description: 'Setting et closing LinkedIn externalisés pour fondateurs, freelances et solopreneurs.',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         itemListElement: [

@@ -3,13 +3,13 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Blog — Setting, Closing et vente B2B | ChallengersLab',
+  title: 'Blog — Setting et closing LinkedIn | ChallengersLab',
   description:
-    'Méthodes, définitions et stratégies pour fondateurs, freelances et solopreneurs B2B qui veulent mieux prospecter et mieux closer en B2B.',
+    'Méthodes, définitions et stratégies de setting et closing LinkedIn pour fondateurs et freelances qui veulent prospecter et closer sur LinkedIn.',
   openGraph: {
-    title: 'Blog — Setting, Closing et vente B2B | ChallengersLab',
+    title: 'Blog — Setting et closing LinkedIn | ChallengersLab',
     description:
-      'Méthodes, définitions et stratégies pour fondateurs, freelances et solopreneurs B2B qui veulent mieux prospecter et mieux closer en B2B.',
+      'Méthodes, définitions et stratégies de setting et closing LinkedIn pour fondateurs et freelances qui veulent prospecter et closer sur LinkedIn.',
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: 'https://challengerslab.fr/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Blog ChallengersLab — Setting, Closing et vente B2B',
+        alt: 'Blog ChallengersLab — Setting et closing LinkedIn',
       },
     ],
   },
@@ -187,9 +187,9 @@ const blogSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': 'https://challengerslab.fr/blog',
-  name: 'Blog — Setting, Closing et vente B2B',
+  name: 'Blog — Setting et closing LinkedIn',
   description:
-    'Méthodes, définitions et stratégies pour fondateurs, freelances et solopreneurs B2B qui veulent mieux prospecter et mieux closer en B2B.',
+    'Méthodes, définitions et stratégies de setting et closing LinkedIn pour fondateurs et freelances qui veulent prospecter et closer sur LinkedIn.',
   url: 'https://challengerslab.fr/blog',
   isPartOf: { '@id': 'https://challengerslab.fr/#website' },
   breadcrumb: {
@@ -266,10 +266,10 @@ export default function BlogIndexPage() {
               Blog
             </p>
             <h1 className="font-serif text-h1 text-text-primary mb-4">
-              Setting, closing et vente B2B
+              Setting et closing LinkedIn
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed">
-              Méthodes et définitions pour fondateurs et freelances B2B qui veulent prospecter mieux et signer plus.
+              Méthodes et définitions pour fondateurs et freelances qui veulent prospecter et closer sur LinkedIn.
             </p>
             <p className="font-sans text-text-muted text-sm mt-3">
               {settingArticles.length + closingArticles.length + methodeArticles.length} articles · 3 guides piliers

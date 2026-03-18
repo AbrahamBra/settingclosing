@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting commercial B2B : définition, méthode et programme complet | ChallengersLab',
+  title: 'Setting commercial LinkedIn : définition, méthode et programme complet | ChallengersLab',
   description:
     "Le setting commercial est la phase de prospection qui précède le closing en B2B. Définition exacte, rôle du setter au quotidien, méthode LinkedIn signal-based, les 5 erreurs qui tuent le setting, et programme des 3 mois en détail.",
   openGraph: {
-    title: 'Setting commercial B2B : définition et méthode complète',
+    title: 'Setting commercial LinkedIn : définition et méthode complète',
     description:
       "Setter, setting LinkedIn, signal-based : tout sur le setting commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart le font mal.",
     locale: 'fr_FR',

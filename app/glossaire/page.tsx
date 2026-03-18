@@ -3,13 +3,13 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Glossaire Setting & Closing B2B | ChallengersLab',
+  title: 'Glossaire Setting & Closing LinkedIn | ChallengersLab',
   description:
-    'Définitions précises des termes clés du setting et closing B2B : setter, closer, signal d\'achat, ICP, discovery, pipeline, qualification. Le lexique de référence pour solopreneurs.',
+    'Définitions précises des termes clés du setting et closing LinkedIn : setter, closer, signal d\'achat, ICP, discovery, pipeline, qualification. Le lexique de référence.',
   openGraph: {
-    title: 'Glossaire Setting & Closing B2B | ChallengersLab',
+    title: 'Glossaire Setting & Closing LinkedIn | ChallengersLab',
     description:
-      "Les définitions exactes des termes du setting et closing B2B — setter, closer, signal d'achat, ICP, pipeline, qualification et plus.",
+      "Les définitions exactes des termes du setting et closing LinkedIn — setter, closer, signal d'achat, ICP, pipeline, qualification et plus.",
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: 'https://challengerslab.fr/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'Glossaire Setting & Closing B2B — ChallengersLab',
+        alt: 'Glossaire Setting & Closing LinkedIn — ChallengersLab',
       },
     ],
   },

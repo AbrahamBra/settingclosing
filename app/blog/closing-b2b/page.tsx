@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Closing B2B : définition, méthode et programme complet | ChallengersLab',
+  title: 'Closing LinkedIn : définition, méthode et programme complet | ChallengersLab',
   description:
     "Le closing B2B est la phase de vente où un commercial transforme un prospect qualifié en client signé. Définition exacte, rôle du closeur, discovery call, gestion des objections et programme complet.",
   openGraph: {
-    title: 'Closing B2B : définition et méthode complète',
+    title: 'Closing LinkedIn : définition et méthode complète',
     description:
       "Closeur, discovery call, objections, Challenger Sale : tout sur le closing commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart signent moins qu'ils ne devraient.",
     locale: 'fr_FR',

@@ -4,7 +4,7 @@ import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'À propos de ChallengersLab | Setting et closing B2B',
+  title: 'À propos de ChallengersLab | Setting et closing LinkedIn',
   description:
     "ChallengersLab aide les fondateurs, freelances et solopreneurs B2B à remplir leur agenda de RDV qualifiés via une méthode de setting LinkedIn signal-based. Qui on est, d'où ça vient, et comment ça marche.",
   openGraph: {

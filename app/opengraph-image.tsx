@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'ChallengersLab — Setting commercial B2B externalisé'
+export const alt = 'ChallengersLab — Setting commercial LinkedIn externalisé'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -42,7 +42,7 @@ export default function OGImage() {
             maxWidth: 900,
           }}
         >
-          Setting commercial B2B externalisé
+          Setting commercial LinkedIn externalisé
         </div>
         {/* Subtitle */}
         <div
