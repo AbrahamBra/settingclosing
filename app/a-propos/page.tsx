@@ -48,10 +48,11 @@ const orgSchema = {
   url: 'https://challengerslab.fr',
   description:
     "ChallengersLab construit et opère des programmes de setting commercial B2B pour fondateurs, freelances et solopreneurs B2B. Setter dédié, méthode LinkedIn signal-based, IA comme co-rédacteur, coaching closing.",
-  founder: {
-    '@type': 'Person',
-    name: 'Abraham',
-  },
+  founder: [
+    { '@type': 'Person', name: 'Abdelhay' },
+    { '@type': 'Person', name: 'Brahim' },
+    { '@type': 'Person', name: 'Abraham' },
+  ],
   areaServed: 'FR',
   serviceType: 'Setting commercial B2B externalisé',
 }
@@ -109,30 +110,67 @@ export default function AProposPage() {
             </p>
           </header>
 
-          {/* Founder section */}
+          {/* Fondateurs */}
           <section className="mb-16">
-            <div className="flex flex-col sm:flex-row gap-8 items-start">
-              {/* Photo placeholder */}
-              <div className="shrink-0 w-24 h-24 rounded-2xl bg-bg-secondary border border-white/[0.06] flex items-center justify-center">
-                <span className="font-sans font-extrabold text-3xl text-accent">A</span>
+            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-8">
+              Les fondateurs
+            </h2>
+
+            <div className="grid sm:grid-cols-3 gap-6">
+              {/* Abdelhay — Closing */}
+              <div className="bg-bg-secondary rounded-2xl p-6 border border-white/[0.06]">
+                <div className="flex flex-col items-center text-center gap-3 mb-5">
+                  <div className="shrink-0 w-16 h-16 rounded-xl bg-bg-primary border border-accent/20 flex items-center justify-center">
+                    <span className="font-sans font-extrabold text-2xl text-accent">AH</span>
+                  </div>
+                  <div>
+                    <h3 className="font-sans font-extrabold text-lg text-text-primary">Abdelhay</h3>
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
+                      Performance commerciale &amp; Closing
+                    </p>
+                  </div>
+                </div>
+                <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  {/* TODO: Ajouter la description d'Abdelhay */}
+                  Description à venir.
+                </p>
               </div>
-              <div>
-                <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-2">Abraham</h2>
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-                  Fondateur · ChallengersLab
+
+              {/* Brahim — Setting */}
+              <div className="bg-bg-secondary rounded-2xl p-6 border border-white/[0.06]">
+                <div className="flex flex-col items-center text-center gap-3 mb-5">
+                  <div className="shrink-0 w-16 h-16 rounded-xl bg-bg-primary border border-accent/20 flex items-center justify-center">
+                    <span className="font-sans font-extrabold text-2xl text-accent">B</span>
+                  </div>
+                  <div>
+                    <h3 className="font-sans font-extrabold text-lg text-text-primary">Brahim</h3>
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
+                      Setting
+                    </p>
+                  </div>
+                </div>
+                <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  {/* TODO: Ajouter la description de Brahim */}
+                  Description à venir.
                 </p>
-                <p className="font-sans text-text-muted leading-relaxed mb-4">
-                  J&apos;ai passé plusieurs années à faire de la prospection commerciale B2B — d&apos;abord pour
-                  moi, ensuite pour des clients. À un moment, j&apos;ai arrêté d&apos;envoyer des messages
-                  génériques et j&apos;ai commencé à construire quelque chose de plus précis : détecter
-                  qui montre déjà un signe d&apos;intérêt, contacter uniquement ces personnes, valider
-                  chaque message à la main avant l&apos;envoi.
-                </p>
-                <p className="font-sans text-text-muted leading-relaxed">
-                  ChallengersLab, c&apos;est la formalisation de cette méthode. Un programme qui combine
-                  un setter humain, une approche signal-based sur LinkedIn, et Claude comme
-                  co-rédacteur de messages. Le résultat : des RDV qualifiés dès la première semaine,
-                  sans brûler les leads avec des templates copier-coller.
+              </div>
+
+              {/* Abraham — Méthode & Système */}
+              <div className="bg-bg-secondary rounded-2xl p-6 border border-white/[0.06]">
+                <div className="flex flex-col items-center text-center gap-3 mb-5">
+                  <div className="shrink-0 w-16 h-16 rounded-xl bg-bg-primary border border-accent/20 flex items-center justify-center">
+                    <span className="font-sans font-extrabold text-2xl text-accent">A</span>
+                  </div>
+                  <div>
+                    <h3 className="font-sans font-extrabold text-lg text-text-primary">Abraham</h3>
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
+                      Méthode &amp; Système
+                    </p>
+                  </div>
+                </div>
+                <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  {/* TODO: Ajouter la description d'Abraham */}
+                  Description à venir.
                 </p>
               </div>
             </div>
