@@ -50,16 +50,6 @@ const articles = [
     dateTime: '2026-03-18',
   },
   {
-    slug: 'setting-commercial-b2b',
-    category: 'Setting',
-    title: 'Setting commercial B2B : définition, méthode et programme complet',
-    description:
-      "Tout sur le setting commercial en B2B : définition exacte, rôle du setter, méthode LinkedIn signal-based, les 3 phases d'un programme et ce que ça coûte réellement.",
-    readTime: '14 min',
-    date: '17 mars 2026',
-    dateTime: '2026-03-17',
-  },
-  {
     slug: 'ia-methode-humain-setting-linkedin',
     category: 'Méthode',
     title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn",
@@ -139,6 +129,26 @@ export default function BlogIndexPage() {
               Méthodes et définitions pour solopreneurs qui veulent prospecter mieux et signer plus.
             </p>
           </header>
+
+          {/* Guide pilier */}
+          <a
+            href="/blog/setting-commercial-b2b"
+            className="group block bg-bg-secondary rounded-2xl p-7 mb-14 border border-accent/20 hover:border-accent/40 transition-colors"
+          >
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
+              Guide complet · 14 min
+            </p>
+            <h2 className="font-serif text-h3 text-text-primary mb-3 group-hover:text-accent transition-colors">
+              Setting commercial B2B : définition, méthode et programme complet
+            </h2>
+            <p className="font-sans text-text-muted leading-relaxed mb-4">
+              Le guide de référence : ce qu&apos;est vraiment le setting, le rôle du setter au quotidien,
+              la méthode LinkedIn signal-based, les 3 phases d&apos;un programme et ce que ça coûte.
+            </p>
+            <span className="font-sans text-sm text-accent group-hover:translate-x-1 transition-transform inline-block">
+              Lire le guide →
+            </span>
+          </a>
 
           {/* Articles list */}
           <div className="divide-y divide-black/8">

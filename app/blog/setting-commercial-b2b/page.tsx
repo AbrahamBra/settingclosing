@@ -189,11 +189,43 @@ export default function SettingCommercialPage() {
             ))}
           </div>
 
+          {/* Sommaire */}
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+              Sommaire
+            </p>
+            <ol className="space-y-2">
+              {[
+                { id: 'definition', label: "Ce que le setting commercial est — et ce qu'il n'est pas" },
+                { id: 'journee', label: 'Une journée de setting B2B concrètement' },
+                { id: 'linkedin', label: 'Setting LinkedIn : pourquoi ce canal a changé la prospection B2B' },
+                { id: 'setting-closing', label: 'Setting et closing : deux rôles, un pipeline' },
+                { id: 'phases', label: "Les phases d'un programme de setting B2B" },
+                { id: 'ia', label: "L'IA dans le setting commercial moderne" },
+                { id: 'delegation', label: 'Pourquoi déléguer son setting plutôt que le faire soi-même' },
+                { id: 'cout', label: 'Ce que ça coûte — et ce que ça remplace' },
+                { id: 'faq', label: 'Questions fréquentes' },
+              ].map(({ id, label }, i) => (
+                <li key={id} className="flex gap-3 items-baseline">
+                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-5 text-right">
+                    {String(i + 1).padStart(2, '0')}
+                  </span>
+                  <a
+                    href={`#${id}`}
+                    className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors leading-snug"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+
           {/* Article body */}
           <article className="font-sans text-text-muted leading-relaxed space-y-12">
 
             {/* Section 1 */}
-            <section>
+            <section id="definition">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 Ce que le setting commercial est — et ce qu&apos;il n&apos;est pas
               </h2>
@@ -238,7 +270,7 @@ export default function SettingCommercialPage() {
             </section>
 
             {/* Section 2 */}
-            <section>
+            <section id="journee">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 Une journée de setting B2B concrètement
               </h2>
@@ -277,7 +309,7 @@ export default function SettingCommercialPage() {
             </section>
 
             {/* Section 3 */}
-            <section>
+            <section id="linkedin">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 Setting LinkedIn : pourquoi ce canal a changé la prospection B2B
               </h2>
@@ -289,7 +321,7 @@ export default function SettingCommercialPage() {
                 Un acheteur B2B qui like un post sur les marges, qui commente une question sur
                 l&apos;acquisition ou qui partage un contenu sur l&apos;outbound ne sait souvent pas qu&apos;il
                 vient de signaler quelque chose. Mais il l&apos;a fait. Ces interactions sont des{' '}
-                <a href="/blog/signal-achat-linkedin" className="text-accent hover:underline">
+                <a href="/blog/signal-achat-linkedin" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
                   signaux d&apos;achat
                 </a>{' '}
                 — et les détecter systématiquement est la base du setting LinkedIn moderne.
@@ -322,7 +354,7 @@ export default function SettingCommercialPage() {
                 La différence avec la prospection à froid classique : le prospect n&apos;est pas froid.
                 Il a déjà montré quelque chose. Le message s&apos;ancre sur cette preuve — et le taux
                 de réponse change de nature. C&apos;est la raison pour laquelle{' '}
-                <a href="/blog/messages-linkedin-sans-reponse" className="text-accent hover:underline">
+                <a href="/blog/messages-linkedin-sans-reponse" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
                   les messages génériques n&apos;obtiennent pas de réponses
                 </a>{' '}
                 alors que les messages ancrés sur signal dépassent 20%.
@@ -337,13 +369,13 @@ export default function SettingCommercialPage() {
             </section>
 
             {/* Section 4 */}
-            <section>
+            <section id="setting-closing">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 Setting et closing : deux rôles, un pipeline
               </h2>
               <p className="mb-4">
                 Le{' '}
-                <a href="/blog/difference-setting-closing" className="text-accent hover:underline">
+                <a href="/blog/difference-setting-closing" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
                   setting et le closing sont les deux moitiés d&apos;un pipeline commercial B2B
                 </a>.
                 Le setter travaille avant l&apos;appel. Le closeur travaille pendant et après.
@@ -404,7 +436,7 @@ export default function SettingCommercialPage() {
             </section>
 
             {/* Section 5 */}
-            <section>
+            <section id="phases">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 Les phases d&apos;un programme de setting B2B
               </h2>
@@ -472,7 +504,7 @@ export default function SettingCommercialPage() {
             </section>
 
             {/* Section 6 */}
-            <section>
+            <section id="ia">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 L&apos;IA dans le setting commercial moderne
               </h2>
@@ -490,7 +522,7 @@ export default function SettingCommercialPage() {
               </p>
               <p className="mb-4">
                 Pour les clients qui le souhaitent, on construit un{' '}
-                <a href="/blog/ia-methode-humain-setting-linkedin" className="text-accent hover:underline">
+                <a href="/blog/ia-methode-humain-setting-linkedin" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
                   skill maison
                 </a>{' '}
                 — un skill Claude encodé sur l&apos;expertise spécifique du client : jargon métier,
@@ -505,7 +537,7 @@ export default function SettingCommercialPage() {
             </section>
 
             {/* Section 7 */}
-            <section>
+            <section id="delegation">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 Pourquoi déléguer son setting plutôt que le faire soi-même
               </h2>
@@ -540,7 +572,7 @@ export default function SettingCommercialPage() {
 
               <p>
                 Un{' '}
-                <a href="/blog/setter-b2b-definition" className="text-accent hover:underline">
+                <a href="/blog/setter-b2b-definition" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
                   setter B2B
                 </a>{' '}
                 expérimenté évite les erreurs de débutant dès le premier message.
@@ -550,7 +582,7 @@ export default function SettingCommercialPage() {
             </section>
 
             {/* Section 8 */}
-            <section>
+            <section id="cout">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
                 Ce que ça coûte — et ce que ça remplace
               </h2>
@@ -637,10 +669,15 @@ export default function SettingCommercialPage() {
                 { href: '/blog/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/blog/ia-methode-humain-setting-linkedin', label: 'IA, méthode et humain : les 3 couches d\'un système de setting' },
                 { href: '/blog/messages-linkedin-sans-reponse', label: 'Pourquoi vos messages LinkedIn n\'obtiennent pas de réponses' },
+                { href: '/blog/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : méthode complète en 2026' },
+                { href: '/blog/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
+                { href: '/blog/cout-setter-b2b-prix', label: "Coût d'un setter B2B en 2026 : les vrais chiffres" },
               ].map(({ href, label }) => (
                 <a
                   key={href}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
