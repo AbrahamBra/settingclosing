@@ -31,7 +31,7 @@ function CalendlySlot({ url }: { url: string }) {
     return (
       <div className="flex flex-col items-center justify-center gap-5 min-h-[260px]">
         <div className="text-center">
-          <p className="font-sans font-semibold text-text-primary mb-2">
+          <p className="font-sans font-semibold text-white mb-2">
             Vous préférez en parler directement ?
           </p>
           <p className="font-sans text-text-muted text-sm">
@@ -103,7 +103,7 @@ export function CTAFinale() {
     <section id="contact" className="section-padding bg-bg-primary">
       <div className="container-max">
         <ScrollReveal>
-          <h2 className="font-serif text-h2 text-text-primary text-center mb-16">
+          <h2 className="font-sans text-h2 font-bold text-white text-center mb-16">
             Prêt à déléguer ?
           </h2>
         </ScrollReveal>
@@ -112,12 +112,12 @@ export function CTAFinale() {
           {/* Left — contact form */}
           <ScrollReveal>
             <div className="bg-bg-secondary p-10 border-b md:border-b-0 md:border-r border-black/8">
-              <h3 className="font-sans font-semibold text-h3 text-text-primary mb-8">
+              <h3 className="font-sans font-semibold text-h3 text-white mb-8">
                 Nous contacter
               </h3>
 
               {state === 'success' ? (
-                <p className="font-sans text-accent font-semibold">
+                <p className="font-sans text-[#34D399] font-semibold">
                   Message reçu. On vous répond sous 24h.
                 </p>
               ) : (
@@ -134,7 +134,7 @@ export function CTAFinale() {
                       minLength={2}
                       value={form.firstName}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="Jean"
                     />
                   </div>
@@ -150,7 +150,7 @@ export function CTAFinale() {
                       required
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="jean@example.com"
                     />
                   </div>
@@ -165,7 +165,7 @@ export function CTAFinale() {
                       type="tel"
                       value={form.phone}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="+33 6 00 00 00 00"
                     />
                   </div>
@@ -189,7 +189,7 @@ export function CTAFinale() {
                             className={`px-4 py-2 rounded-lg font-sans text-sm border transition-colors ${
                               form.interest === value
                                 ? 'border-accent text-accent bg-accent/10'
-                                : 'border-black/10 text-text-muted hover:border-black/20'
+                                : 'border-white/[0.06] text-text-muted hover:border-white/[0.12]'
                             }`}
                           >
                             {labels[value]}
@@ -210,7 +210,7 @@ export function CTAFinale() {
                       maxLength={1000}
                       value={form.message}
                       onChange={handleChange}
-                      className="w-full bg-bg-primary border border-black/10 rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
+                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
                       placeholder="Décrivez votre situation..."
                     />
                   </div>
