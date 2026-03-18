@@ -20,7 +20,7 @@ export function Navbar() {
   }, [drawerOpen])
 
   const navLinks = [
-    { label: 'Méthode', href: '#pipeline' },
+    { label: 'Méthode', href: '/methode' },
     { label: 'Offres', href: '#pricing' },
     { label: 'Blog', href: '/blog' },
     { label: 'Ressources', href: '/ressources/devenir-business-developer' },
