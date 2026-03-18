@@ -13,8 +13,8 @@ const settingSteps = [
     num: '02',
     label: 'Signaux inbound',
     layers: ['ia'] as const,
-    desc: "Reactin surveille chaque interaction sur vos posts. L'IA identifie qui a réagi, quand, avec quel type de contenu — like passif, commentaire précis, question publique.",
-    tools: ['Reactin'],
+    desc: "Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel type de contenu. On traque aussi les lead magnets à succès pour maximiser la prise de RDV — c'est là que le scoring devient clé : LinkedIn limite les demandes d'ajout par semaine et la messagerie devient vite ingérable sans priorisation.",
+    tools: ['Reactin', 'Lead magnets', 'Scoring'],
   },
   {
     num: '03',
