@@ -70,14 +70,27 @@ Font stack:
   Display/Body:  Inter (variable, weights 400-800)
   Mono/Data:     JetBrains Mono (weights 400-500)
 
-Scale:
-  Display (H1):  32-40px, weight 800, tracking -1.5px, line-height 1.1
-  H2:            22-28px, weight 700, tracking -0.5px, line-height 1.2
-  H3:            16-18px, weight 600, line-height 1.3
-  Body:          14-16px, weight 400, line-height 1.7
-  Small:         12-13px, weight 400-500
-  Label:         9-11px, weight 600, uppercase, tracking 2-3px
-  Mono data:     14-24px, weight 500-800 (for stats, numbers)
+Scale (deliberate reduction from current — current uses 72px display / 56px h1 / 40px h2
+with weight 400 serif. New scale uses smaller sizes with heavy weight sans-serif for
+a tighter, more modern feel):
+
+  display:  clamp(2rem, 5vw, 2.5rem)   weight 800, tracking -1.5px, lh 1.1   (replaces 4.5rem/400)
+  h1:       clamp(1.75rem, 4vw, 2.25rem) weight 800, tracking -1px, lh 1.15   (replaces 3.5rem/400)
+  h2:       clamp(1.375rem, 3vw, 1.75rem) weight 700, tracking -0.5px, lh 1.2 (replaces 2.5rem/400)
+  h3:       clamp(1rem, 2vw, 1.125rem)  weight 600, lh 1.3                    (replaces 1.5rem/500)
+  Body:     1rem (16px),                 weight 400, lh 1.7
+  Small:    0.8125rem (13px),            weight 400-500
+  Label:    0.6875rem (11px),            weight 600, uppercase, tracking 2-3px
+  Mono:     var (14-24px),               weight 500-800 (stats, numbers)
+```
+
+Semantic color mapping for pipeline tags:
+```
+Code layer "ia"     → Indigo #818CF8  (was blue-400 in SectionTriptyque)
+Code layer "methode"→ Amber  #FBBF24  (was amber-400)
+Code layer "hybrid" → Violet #C084FC  (was violet-400)
+Code layer "humain" → Emerald #34D399 (was emerald-400)
+Cyan #38BDF8 is used only for stats/data highlights, NOT as a pipeline tag.
 ```
 
 ### 2.3 Spacing
@@ -129,6 +142,23 @@ Keep structure (logo left, links center, CTA right). Changes:
 - CTA button: coral #F87171 instead of blue
 - Links: text-muted → hover:text-primary
 - Same mobile drawer behavior
+
+**Navigation links updated:**
+- "Méthode" → href="#pipeline" (was #setting)
+- "Offres" → href="#pricing" (was #closing)
+- "Blog" → href="/blog"
+- "Ressources" → href="/ressources/devenir-business-developer"
+- CTA: "Réserver un appel" → href="#contact"
+
+### 3.1b Footer
+
+Keep existing Footer structure, adapt to dark theme:
+- Background: #0B0E18 (surface) with top border rgba(255,255,255,0.06)
+- Logo: Inter 800, text-white
+- Link columns: text-muted → hover:text-primary
+- Keep all existing links: Blog, Glossaire, A propos, Mentions légales, Politique de confidentialité
+- Contact info: email + LinkedIn link (keep current URLs)
+- Copyright text: text-muted
 
 ### 3.2 Hero
 
@@ -190,7 +220,12 @@ Connector line between steps with gradient (indigo → amber → emerald).
 
 **Bottom note:** "Ce pipeline se calibre en deux mois. Après ça, vous vous concentrez sur les appels — pas sur la prospection."
 
-### 3.4 Preuves Section (new)
+### 3.4 Preuves Section (replaces old Preuves)
+
+The current Preuves component has text testimonials, video testimonials, and a stats block ("20+ clients", "Sem. 1", "2-4 RDV/semaine"). These are replaced:
+- **Stats** → moved to Hero stats bar (section 3.2)
+- **Text testimonials** → dropped from homepage (empty data currently). Re-add when real testimonials are available.
+- **Video testimonials** → replaced by tool demo videos below
 
 **Title:** "Ça ressemble à quoi concrètement ?"
 
@@ -200,7 +235,7 @@ Grid of proof cards (2x2 on desktop, 1 column mobile):
 - Capture conversation LinkedIn (user provides)
 - Dashboard résultats campagne (user provides)
 
-Each card: dark surface card with image/video + title + caption.
+Each card: dark surface card with image/video + title + caption. `VideoModal` component is reused for fullscreen video playback.
 
 Until user provides assets, show clear placeholders indicating what's needed.
 
@@ -210,18 +245,20 @@ Until user provides assets, show clear placeholders indicating what's needed.
 
 Side-by-side comparison layout:
 
-**Setting card:**
-- All copy from existing SectionSetting
-- 500€/mois + 25-150€/RDV
-- 3-month program (Mois 1/2/3)
-- Guarantee: min 5 RDV/mois
+**Setting card** — all copy carried over verbatim from `components/SectionSetting.tsx`:
+- Headline: "2 à 4 rendez-vous qualifiés par semaine."
+- Pricing: 500€/mois fixed + 25€–150€/RDV variable
+- Note: "Garanti, peu importe le volume de RDV" / "Vous ne payez des primes que sur les RDV qui arrivent"
+- 3 phases: Mois 1 "Prospection assistée par IA", Mois 2 "Base de connaissance", Mois 3 "Scoring + Nurturing" (full descriptions from component)
+- Guarantee: "minimum 5 RDV qualifiés / mois"
+- Practical note: "En pratique : 2 à 4 RDV par semaine. Avec lead magnet, le volume monte..."
 - CTA: "Déléguer mon setting →"
 
-**Closing card:**
-- All copy from existing SectionClosing
-- 1000€/mois × 3 mois
-- 3-month program (Mois 1/2/3)
-- Includes 2h coaching/semaine
+**Closing card** — all copy carried over verbatim from `components/SectionClosing.tsx`:
+- Headline: "La méthode Challenger Sale. Appliquée à votre activité."
+- Pricing: 1 000€/mois × 3 mois
+- 3 phases: Mois 1 "Challenger la discovery", Mois 2 "Challenger le pricing", Mois 3 "Déléguer à des closers" (full descriptions from component)
+- Includes: "2h de coaching par semaine" (1h visio debriefs + 1h en situation réelle sur appel prospect)
 - CTA: "Améliorer mon closing →"
 
 Visual treatment: dark cards with accent border-top (indigo for Setting, emerald for Closing). Keep existing detailed timeline/phase descriptions inside each card.
@@ -237,10 +274,12 @@ Link: "Tout voir →" to /blog
 ### 3.7 CTA Finale
 
 **Keep all existing copy and form fields.** Visual adaptation:
-- Dark card background
-- Form inputs: dark surface with border
-- Submit button: coral
-- Calendly section: keep as-is, adapt colors
+- Section background: #0B0E18 (surface)
+- Form inputs: bg-[#111627] border border-white/6 text-primary placeholder:text-muted rounded-lg focus:border-[#F87171] focus:ring-1 focus:ring-[#F87171]/30
+- Select dropdown: same styling as inputs
+- Submit button: coral #F87171, same ButtonGlow behavior
+- Calendly section: keep InlineWidget, adapt surrounding card colors
+- Success message: emerald #34D399 text
 
 ---
 
@@ -262,9 +301,15 @@ Flat categorized link list (Setting, Closing, Méthode sections). Each article =
 - Title, excerpt, author, reading time
 - Visual: split layout (text left, image right on desktop)
 
+**Pillar guides** (currently "guides piliers" at top of blog index):
+- Keep the 3 pillar guides as a distinct row ABOVE the article grid: "Setting commercial B2B", "Closing B2B", "Méthodes de vente B2B"
+- Larger cards with accent border-left (indigo/emerald/amber respectively)
+- These are cornerstone content and must remain visually prominent
+
 **Category filter pills:**
 - Tous (coral) | Setting (indigo) | Closing (emerald) | Méthode (amber) | IA + Outils (violet)
 - Click to filter — client-side filtering
+- "IA + Outils" is a new category for future articles (e.g. Claude tutorials). Initially empty — filter exists but no articles have this tag yet. Article "ia-methode-humain-setting-linkedin" stays in Méthode category.
 
 **Article grid:**
 - 3 columns desktop, 2 tablet, 1 mobile
@@ -322,7 +367,7 @@ Plain prose in max-w-3xl container. NavbarBlog + text + AuthorBlock.
 ## 6. Content Gaps — What User Needs to Create
 
 ### Required for launch (homepage):
-- [ ] Screenshot: Sales Navigator with configured filters
+- [x] Screenshot: Sales Navigator with configured filters (**PROVIDED** — needs name anonymization on right panel. Shows targeting: Directeurs Marketing/Com/RH/Ventes, PME 11-500, France, <1 an en poste, filtres Nouveau poste + Posts LinkedIn actifs)
 - [ ] Screenshot: Claude Cowork analyzing LinkedIn profiles
 - [ ] Screenshot: Google Sheet with scoring columns
 - [ ] Screenshot: Example LinkedIn conversation (anonymized)
@@ -393,9 +438,16 @@ Plain prose in max-w-3xl container. NavbarBlog + text + AuthorBlock.
 - `/mentions-legales` — keep, adapt to dark theme
 - `/politique-confidentialite` — keep, adapt to dark theme
 - `/not-found` (404) — keep, adapt to dark theme
-- `/ressources/*` — keep, adapt to dark theme
+- `/ressources/*` — keep, adapt to dark theme (includes `/ressources/devenir-business-developer`)
+- `/a-propos` — keep, adapt to dark theme
+- `/glossaire` — keep, adapt to dark theme
 
 These pages just need the color/typography swap. No structural changes.
+
+**Preserved patterns across all pages:**
+- Breadcrumb navigation: keep, adapt colors (text-muted for inactive, text-primary for current)
+- JSON-LD structured data: keep all existing schema markup (Article, CollectionPage, Person, etc.)
+- Existing z-index layer system from globals.css preserved as-is (--z-base through --z-grain)
 
 ---
 
@@ -414,10 +466,13 @@ These pages just need the color/typography swap. No structural changes.
 ## 10. Migration Strategy
 
 1. Update design system (colors, fonts, spacing) in tailwind.config.ts + globals.css
-2. Build new components (Pipeline, ProofGrid, Pricing, etc.)
+2. Build new components (Pipeline, ProofGrid, Pricing, CosmicBackground, etc.)
 3. Rebuild homepage with new sections
-4. Rebuild blog index with editorial layout
+4. Rebuild blog index with editorial layout (including pillar guides)
 5. Add rich content blocks to article template
-6. Adapt existing pages (legal, 404, resources) to dark theme
-7. Remove deprecated components
-8. User adds screenshots/videos to proof sections and articles
+6. Adapt existing pages (legal, 404, resources, a-propos, glossaire) to dark theme
+7. Adapt Footer to dark theme
+8. Remove deprecated components
+9. User adds screenshots/videos to proof sections and articles
+
+**Rollback strategy:** Work in a git branch (`redesign/dark-pipeline`). The current site stays live on main until the redesign is complete and verified. Merge only after user validates the full build on localhost. If conversion drops post-launch, revert the merge.
