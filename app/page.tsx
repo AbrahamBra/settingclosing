@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
-import { PainBridge } from '@/components/PainBridge'
 import { PipelineSummary } from '@/components/PipelineSummary'
 import { PipelineSection } from '@/components/PipelineSection'
 import { PricingComparison } from '@/components/PricingComparison'
@@ -27,7 +26,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <PainBridge />
         <PipelineSummary />
         <PipelineSection />
         <PricingComparison />
