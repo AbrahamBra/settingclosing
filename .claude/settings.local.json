@@ -38,7 +38,14 @@
       "Bash(where node:*)",
       "Bash(npx vercel:*)",
       "Bash(niveau de maturité\" → formulation directe et imagée ; \"Il disperserait l 'énergie\":*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(xargs grep:*)",
+      "Bash(cat /c/Users/abrah/challengerslab-v2/app/ressources/[slug]/page.tsx)",
+      "Bash(npx tsc:*)",
+      "Bash(npm ls:*)",
+      "Bash(bash \"C:\\\\Users\\\\abrah\\\\.claude\\\\plugins\\\\cache\\\\claude-plugins-official\\\\superpowers\\\\5.0.2\\\\scripts\\\\start-server.sh\" --project-dir \"C:\\\\Users\\\\abrah\\\\CLsettingclosing\")",
+      "Bash(bash \"C:/Users/abrah/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.2/skills/brainstorming/scripts/start-server.sh\" --project-dir \"C:/Users/abrah/CLsettingclosing\")",
+      "WebFetch(domain:openclaw.ai)"
     ]
   }
 }

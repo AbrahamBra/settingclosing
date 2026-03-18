@@ -3,18 +3,16 @@ import { Inter, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 import './globals.css'
 
-const instrumentSerif = Instrument_Serif({
-  weight: ['400'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-serif',
-})
-
-const ibmPlexSans = IBM_Plex_Sans({
-  weight: ['400', '500', '600'],
+const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-sans',
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-mono',
 })
 
 export const metadata: Metadata = {
@@ -94,7 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="fr"
-      className={`${instrumentSerif.variable} ${ibmPlexSans.variable}`}
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
     >
       <head>
         <script
@@ -103,26 +101,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <svg
+        {/* Cosmic star background */}
+        <div
           aria-hidden="true"
           style={{
             position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
+            inset: 0,
             pointerEvents: 'none',
-            zIndex: 9998,
-            opacity: 0.03,
-            transform: 'translateZ(0)',
-            willChange: 'transform',
+            zIndex: 0,
+            background: [
+              'radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.15), transparent)',
+              'radial-gradient(1px 1px at 40% 70%, rgba(255,255,255,0.1), transparent)',
+              'radial-gradient(1px 1px at 60% 20%, rgba(255,255,255,0.12), transparent)',
+              'radial-gradient(1px 1px at 80% 50%, rgba(255,255,255,0.08), transparent)',
+              'radial-gradient(1.5px 1.5px at 10% 80%, rgba(255,255,255,0.15), transparent)',
+              'radial-gradient(1px 1px at 70% 90%, rgba(255,255,255,0.1), transparent)',
+              'radial-gradient(1px 1px at 90% 10%, rgba(255,255,255,0.12), transparent)',
+              'radial-gradient(1.5px 1.5px at 50% 50%, rgba(255,255,255,0.08), transparent)',
+              'radial-gradient(1px 1px at 15% 45%, rgba(255,255,255,0.1), transparent)',
+              'radial-gradient(1px 1px at 85% 75%, rgba(255,255,255,0.12), transparent)',
+              'radial-gradient(1.5px 1.5px at 35% 15%, rgba(255,255,255,0.08), transparent)',
+              'radial-gradient(1px 1px at 55% 85%, rgba(255,255,255,0.1), transparent)',
+              'radial-gradient(1px 1px at 75% 35%, rgba(255,255,255,0.15), transparent)',
+              'radial-gradient(1px 1px at 25% 65%, rgba(255,255,255,0.08), transparent)',
+            ].join(', '),
           }}
-        >
-          <filter id="grain">
-            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" />
-          </filter>
-          <rect width="100%" height="100%" filter="url(#grain)" />
-        </svg>
+        />
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"
