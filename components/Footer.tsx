@@ -25,7 +25,7 @@ export function Footer() {
                 contact@challengerslab.fr
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/challengerslab"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-text-primary transition-colors"

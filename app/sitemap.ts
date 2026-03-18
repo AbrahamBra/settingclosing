@@ -146,5 +146,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: 'https://challengerslab.fr/ressources/devenir-business-developer',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://challengerslab.fr/mentions-legales',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
+    {
+      url: 'https://challengerslab.fr/politique-confidentialite',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'yearly',
+      priority: 0.3,
+    },
   ]
 }
