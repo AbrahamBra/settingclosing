@@ -79,6 +79,16 @@ const faqItems = [
     answer:
       "Dès que votre offre dépasse 1 500 à 2 000 € et que vous réalisez plusieurs appels par semaine. Exemple concret : si vous signez 2 clients de plus par mois grâce à un meilleur taux de closing sur une offre à 3 000 €, le gain est de 6 000 € mensuels. Un coaching à 2 000 € par mois est amorti par un seul contrat supplémentaire.",
   },
+  {
+    question: "Combien de temps faut-il pour voir des résultats avec un programme de coaching closing ?",
+    answer:
+      "Les premiers changements arrivent dès la deuxième ou troisième semaine — le moment où vous restructurez votre discovery et que vous commencez à l'utiliser sur des appels réels. Le taux de closing monte progressivement sur 5 à 8 semaines. Le plateau — là où le taux se stabilise entre 25 et 35 % sur des leads qualifiés — s'atteint généralement entre le 2e et le 3e mois. Le mois 3 est là pour travailler les cas difficiles : les deals lents, les prospects hésitants, les relances qui ne répondent plus.",
+  },
+  {
+    question: "Peut-on améliorer son closing sans setter ?",
+    answer:
+      "Oui, mais les résultats sont limités par la qualité des leads. Un closeur qui génère lui-même ses RDV passe 30 à 40 % de son temps sur de la prospection mal qualifiée. Son taux de closing s'améliore avec le coaching, mais il plafonne parce que les leads entrants restent hétérogènes. Le vrai levier — taux de closing × volume de leads qualifiés — ne se débloque qu'avec un setter dédié.",
+  },
 ]
 
 const faqSchema = {
@@ -145,14 +155,14 @@ export default function ClosingB2BPage() {
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
               Le closing est la phase de vente où un commercial transforme un prospect qualifié en
-              client signé. Ce guide couvre ce que ça implique vraiment — la discovery call, la gestion
-              des objections, la méthode Challenger Sale — et comment un programme de coaching closing
-              fonctionne en pratique.
+              client signé. Ce guide couvre ce que ça implique vraiment — la discovery call, la
+              gestion des objections, les erreurs les plus fréquentes, la méthode Challenger Sale —
+              et comment un programme de coaching closing fonctionne semaine par semaine.
             </p>
             <div className="flex items-center gap-3 font-sans text-xs text-text-muted">
               <time dateTime="2026-03-18">18 mars 2026</time>
               <span aria-hidden="true">·</span>
-              <span>15 min de lecture</span>
+              <span>25 min de lecture</span>
             </div>
           </header>
 
@@ -161,7 +171,7 @@ export default function ClosingB2BPage() {
             {[
               { stat: '20–35 %', label: 'taux de closing sur leads qualifiés par un setter' },
               { stat: '10 → 8', label: 'contrats signés après une session de coaching discovery' },
-              { stat: '1 500 €', label: "prix minimum d'offre pour que le closing coaching soit rentable" },
+              { stat: '1 500 €', label: "prix minimum d'offre pour que le coaching closing soit rentable" },
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-black/8">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
@@ -178,10 +188,14 @@ export default function ClosingB2BPage() {
             <ol className="space-y-2">
               {[
                 { id: 'definition', label: "Ce que le closing B2B est — et ce que ce n'est pas" },
-                { id: 'closeur', label: 'Ce que fait un closeur au quotidien' },
+                { id: 'journee', label: 'La journée type d\'un closeur' },
                 { id: 'discovery', label: "La discovery call : la phase que personne ne prépare assez" },
                 { id: 'objections', label: 'Les objections : les vraies et les fausses' },
                 { id: 'challenger', label: 'La méthode Challenger Sale' },
+                { id: 'erreurs', label: 'Les 5 erreurs qui détruisent le taux de closing' },
+                { id: 'programme', label: 'Programme de coaching closing : semaine par semaine' },
+                { id: 'resultats', label: 'La courbe de progression réelle' },
+                { id: 'cas-client', label: 'Cas client : de 0 signé sur 10 à 8 signés sur 10' },
                 { id: 'setting-closing', label: 'Setting et closing : la chaîne complète' },
                 { id: 'taux', label: 'Mesurer et améliorer son taux de closing' },
                 { id: 'pour-qui', label: 'Pour qui le coaching closing est fait — et pour qui non' },
@@ -213,69 +227,98 @@ export default function ClosingB2BPage() {
             </p>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
               Ce que le closing n&apos;est pas : un ensemble de techniques de manipulation pour forcer une
-              décision. Un closeur professionnel ne force rien. Il qualifie, il écoute, il explique — et
-              il sait reconnaître quand le prospect n&apos;est pas le bon client.
+              décision. Cette confusion vient en grande partie du vocabulaire — &ldquo;techniques de
+              closing&rdquo;, &ldquo;scripts de closing&rdquo; — qui laisse entendre qu&apos;il s&apos;agit
+              de trouver les bons mots pour contourner le jugement du prospect. Un closeur professionnel
+              ne force rien. Il qualifie, il écoute, il explique — et il sait reconnaître quand le
+              prospect n&apos;est pas le bon client.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-muted leading-relaxed mb-4">
               En B2B, le closing porte sur des offres à valeur élevée — généralement à partir de 1 500 à
               2 000 €. En dessous, le cycle de vente est trop court pour justifier un appel structuré.
-              Au-dessus, un appel bien conduit peut faire la différence entre 30 % et 60 % de taux de
-              transformation.
+              Au-dessus, un appel bien conduit peut faire la différence entre 20 % et 40 % de taux de
+              transformation. C&apos;est considérable sur un pipeline de 8 à 12 appels par mois.
             </p>
             <div className="border-l-2 border-accent/30 pl-5 mb-4">
               <p className="font-sans text-sm text-text-muted leading-relaxed">
                 La confusion fréquente : appeler &ldquo;closing&rdquo; tout le processus de vente.
                 Dans une organisation avec un setter et un closeur, le closing désigne spécifiquement
                 ce que fait le closeur — l&apos;appel de transformation. Le setting (prospection,
-                qualification, prise de RDV) est un rôle distinct.
+                qualification, prise de RDV) est un rôle distinct, avec ses propres outils, ses propres
+                métriques et ses propres compétences.
               </p>
             </div>
+            <p className="font-sans text-text-muted leading-relaxed">
+              Le cycle complet en 5 étapes : signal d&apos;achat détecté par le setter → message de
+              prospection → qualification → prise de RDV → appel de closing. Le closeur n&apos;intervient
+              qu&apos;à partir de la cinquième étape — mais c&apos;est lui qui décide si le chiffre
+              d&apos;affaires rentre.
+            </p>
           </section>
 
-          {/* Section 2 — Le closeur */}
-          <section id="closeur" className="mb-14 scroll-mt-24">
+          {/* Section 2 — Journée type */}
+          <section id="journee" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
-              Ce que fait un closeur au quotidien
+              La journée type d&apos;un closeur
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
-              Un closeur reçoit un agenda rempli de rendez-vous qualifiés par un setter. Il ne prospecte
-              pas. Sa journée tourne autour de la préparation des appels, des appels eux-mêmes, et du
-              suivi post-appel.
+            <p className="font-sans text-text-muted leading-relaxed mb-6">
+              Un closeur qui travaille avec un setter reçoit ses RDV la veille ou en début de journée.
+              Il ne prospecte pas. Sa journée est structurée autour de deux ou trois appels, avec
+              de la préparation en amont et de la documentation en aval.
             </p>
-            <div className="space-y-5 mb-6">
+            <div className="space-y-4 mb-6">
               {[
                 {
-                  step: '01',
-                  title: 'Préparation de l\'appel',
-                  desc: "Le setter transmet un brief : qui est le prospect, quel signal a déclenché le contact, ce qui a été dit dans les échanges, son niveau de qualification. Le closeur lit ce contexte avant chaque appel. Il ne repart jamais de zéro.",
+                  time: '8h45',
+                  title: 'Lecture des briefs setter',
+                  desc: "Le setter a transmis un brief pour chaque RDV du jour : qui est le prospect, quel signal a déclenché le contact, ce qui a été dit dans les échanges précédents, son niveau de qualification (sur 5 niveaux). La lecture prend 10 à 15 minutes par appel. Pas de brief = pas de préparation correcte.",
                 },
                 {
-                  step: '02',
-                  title: 'La discovery call',
-                  desc: "60 à 70 % du temps de l'appel est en questions. Le closeur cherche à comprendre le problème précis, le contexte, les tentatives précédentes, le coût du statu quo. Il ne présente pas l'offre avant d'avoir cette image claire.",
+                  time: '9h30',
+                  title: 'Premier appel closing (45–60 min)',
+                  desc: "20 minutes de discovery, 15 minutes de présentation calibrée sur ce qu'il vient d'entendre, 15 minutes d'objections et demande de décision. Pas d'improvisation — le plan de l'appel est préparé. Ce qui change d'un appel à l'autre, c'est l'adaptation en temps réel.",
                 },
                 {
-                  step: '03',
-                  title: 'Présentation de valeur',
-                  desc: "Il présente l'offre en l'ancrant sur ce qu'il vient d'entendre — pas un pitch générique. Ce que le prospect a décrit comme son problème principal devient le fil directeur de la présentation.",
+                  time: '10h45',
+                  title: 'Documentation post-appel (10 min)',
+                  desc: "Immédiatement après l'appel : résultat (signé, pas signé, relance), objections rencontrées, profil exact du prospect, ce qui a fonctionné ou pas. Ce retour est transmis au setter. Sans cette documentation, le système ne s'améliore jamais.",
                 },
                 {
-                  step: '04',
-                  title: 'Gestion des objections et décision',
-                  desc: "Il traite les objections, distingue les vraies résistances des prétextes, et demande explicitement une décision. Un closeur qui termine l'appel sans demander de décision ne close pas — il présente.",
+                  time: '14h00',
+                  title: 'Deuxième appel closing',
+                  desc: "Même structure. La préparation a été faite le matin ou en fin de matinée. Deux appels par jour est le rythme soutenable pour un closing de qualité — au-delà, la concentration baisse et les deals se perdent.",
                 },
                 {
-                  step: '05',
-                  title: 'Suivi et reporting',
-                  desc: "Après chaque appel, il documente ce qui s'est passé : objections rencontrées, niveau d'intérêt, relance prévue. Ce retour alimente la base de connaissance du setter et améliore la qualité des leads suivants.",
+                  time: '15h30',
+                  title: 'Retour setter + alignement pipeline',
+                  desc: "15 à 20 minutes avec le setter ou par message : quels leads arrivent cette semaine, quels profils convertissent mieux, ajustement des critères de qualification si nécessaire. C'est cette boucle setter-closeur qui fait que le système s'améliore semaine après semaine.",
                 },
-              ].map(({ step, title, desc }) => (
-                <div key={step} className="flex gap-5">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{step}</span>
+                {
+                  time: '16h30',
+                  title: 'Relances en cours',
+                  desc: "Les prospects qui ont dit 'je réfléchis' lors d'appels précédents. Une relance n'est pas un rappel de politesse — c'est un deuxième mini-appel commercial. Le closeur prépare une accroche spécifique au contexte de chaque prospect. Une relance générique ne génère pas de réponse.",
+                },
+              ].map(({ time, title, desc }) => (
+                <div key={time} className="flex gap-5">
+                  <span className="font-sans text-accent text-xs font-semibold tabular-nums shrink-0 w-12 pt-0.5">
+                    {time}
+                  </span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
                     <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
                   </div>
+                </div>
+              ))}
+            </div>
+            <div className="bg-bg-secondary rounded-xl p-5 border border-black/8 grid sm:grid-cols-3 gap-4 text-center">
+              {[
+                { chiffre: '2 appels / jour', detail: 'rythme soutenable pour un closing de qualité' },
+                { chiffre: '60–70 %', detail: "du temps d'un appel en questions (discovery)" },
+                { chiffre: '10 min', detail: 'de documentation post-appel minimum' },
+              ].map(({ chiffre, detail }) => (
+                <div key={chiffre}>
+                  <p className="font-serif text-lg text-accent mb-1">{chiffre}</p>
+                  <p className="font-sans text-xs text-text-muted leading-snug">{detail}</p>
                 </div>
               ))}
             </div>
@@ -296,10 +339,10 @@ export default function ClosingB2BPage() {
             </p>
             <div className="grid sm:grid-cols-2 gap-3 mb-6">
               {[
-                { q: "Quel est le problème exact ?", detail: "Pas le problème général. Le problème précis, dans leur contexte." },
-                { q: "Quel est le coût du statu quo ?", detail: "Ce qu'il en coûte de ne rien changer — en temps, argent, opportunités manquées." },
-                { q: "Qu'ont-ils déjà essayé ?", detail: "Les tentatives précédentes révèlent les critères de décision réels." },
-                { q: "Qui décide ?", detail: "Si la personne en face ne peut pas signer, la conversation doit l'amener vers le décideur." },
+                { q: "Quel est le problème exact ?", detail: "Pas le problème général. Le problème précis, dans leur contexte. 'Je n'arrive pas à prospecter régulièrement' n'est pas un problème — c'est un symptôme. Le problème, c'est ce que ce manque leur coûte." },
+                { q: "Quel est le coût du statu quo ?", detail: "Ce qu'il en coûte de ne rien changer — en temps, argent, opportunités manquées. Sans ce chiffre dans la tête du prospect, le prix de votre solution n'a pas de référentiel." },
+                { q: "Qu'ont-ils déjà essayé ?", detail: "Les tentatives précédentes révèlent les critères de décision réels, les biais, et ce qu'ils ne voudront plus jamais entendre comme argument." },
+                { q: "Qui décide ?", detail: "Si la personne en face ne peut pas signer, toute la discovery doit l'amener à vous mettre en contact avec le décideur — pas à promettre d'en parler." },
               ].map(({ q, detail }) => (
                 <div key={q} className="bg-bg-secondary rounded-xl p-4 border border-black/8">
                   <p className="font-sans text-sm font-semibold text-text-primary mb-1">{q}</p>
@@ -307,22 +350,29 @@ export default function ClosingB2BPage() {
                 </div>
               ))}
             </div>
+            <p className="font-sans text-text-muted leading-relaxed mb-4">
+              La structure en 4 phases d&apos;une discovery de 45 minutes : 5 min de contexte et
+              rapport (qui ils sont, d&apos;où ils viennent), 15 min sur le problème et son coût,
+              10 min sur les tentatives précédentes et les critères de décision, 5 min pour valider
+              la compréhension avant de passer au pitch. Le pitch lui-même prend 10 min — pas 30.
+            </p>
             <div className="border-l-2 border-accent/30 pl-5 mb-4">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                 Résultat concret — coaching closing
               </p>
               <p className="font-sans text-sm text-text-muted leading-relaxed">
-                10 RDV consécutifs, 0 contrat signé. En première session, on a retravaillé la structure
-                de la discovery — passer d&apos;une présentation de l&apos;offre à une exploration du
-                problème client. Le RDV suivant : signé. Les 7 d&apos;après aussi.
+                10 RDV consécutifs, 0 contrat signé. En première session de coaching, on a réécouté
+                un appel enregistré. En 8 minutes, le problème était visible : il pitchait l&apos;offre
+                avant d&apos;avoir compris le problème du prospect. Les prospects disaient
+                &ldquo;je vais réfléchir&rdquo; — en réalité &ldquo;tu ne m&apos;as pas encore
+                compris&rdquo;. Restructuration de la discovery, RDV suivant : signé. Les 7 d&apos;après
+                aussi.
               </p>
             </div>
             <p className="font-sans text-text-muted leading-relaxed mt-4">
               L&apos;article complet sur la discovery call est{' '}
               <a
                 href="/blog/discovery-call-b2b"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-accent hover:text-text-primary transition-colors"
               >
                 ici : structure, questions et erreurs à éviter
@@ -340,6 +390,8 @@ export default function ClosingB2BPage() {
               La première chose qu&apos;un closeur apprend : toutes les objections ne se traitent pas de
               la même façon. Il y a les objections réelles (le prospect a un doute légitime que vous devez
               lever) et les objections-prétextes (il cherche à mettre fin à la conversation sans conflit).
+              Les traiter de la même manière est une erreur majeure — elle fait perdre du temps sur les
+              prétextes et passer à côté des vraies résistances.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 mb-6">
               <div className="bg-bg-secondary rounded-xl p-5 border border-accent/20">
@@ -390,7 +442,14 @@ export default function ClosingB2BPage() {
               Pour les objections-prétextes, la méthode Challenger Sale recommande de clarifier directement
               plutôt que de relancer. &ldquo;Est-ce que c&apos;est le budget qui pose problème, ou c&apos;est
               que vous n&apos;êtes pas convaincu que c&apos;est la bonne solution ?&rdquo; La réponse dit
-              exactement où vous en êtes.
+              exactement où vous en êtes. L&apos;article complet :{' '}
+              <a
+                href="/blog/gestion-objections-b2b"
+                className="text-accent hover:text-text-primary transition-colors"
+              >
+                gérer les objections en vente B2B — méthode et exemples
+              </a>
+              .
             </p>
           </section>
 
@@ -402,7 +461,8 @@ export default function ClosingB2BPage() {
             <p className="font-sans text-text-muted leading-relaxed mb-4">
               Matthew Dixon et Brent Adamson ont étudié 6 000 commerciaux B2B pour comprendre ce qui
               différenciait les plus performants. Résultat : pas la relation client, pas la sympathie,
-              pas la persévérance. Les meilleurs vendeurs étaient ceux qui challengeaient le prospect.
+              pas la persévérance. Les meilleurs vendeurs étaient ceux qui challengeaient le prospect —
+              ceux qui apportaient une perspective que le prospect n&apos;avait pas.
             </p>
             <p className="font-sans text-text-muted leading-relaxed mb-5">
               Le Challenger Sale repose sur trois composantes :
@@ -412,17 +472,17 @@ export default function ClosingB2BPage() {
                 {
                   step: 'Teach',
                   title: 'Apporter un insight',
-                  desc: "Le closeur arrive avec une perspective que le prospect n'a pas. Pas un pitch produit — une information sur son secteur, ses concurrents, ou son problème qu'il n'a probablement pas considérée sous cet angle. Ça crée de la crédibilité avant même que l'offre soit mentionnée.",
+                  desc: "Le closeur arrive avec une perspective que le prospect n'a pas. Pas un pitch produit — une information sur son secteur, ses concurrents, ou son problème qu'il n'a probablement pas considérée sous cet angle. Ça crée de la crédibilité avant même que l'offre soit mentionnée. Exemple : 'La plupart des consultants que je vois en ce moment ont un taux de closing autour de 12 %. Vous, vous êtes à combien ?'",
                 },
                 {
                   step: 'Tailor',
                   title: 'Adapter au contexte',
-                  desc: "Le même insight présenté de la même façon à tous les prospects ne fonctionne pas. Le Challenger adapte son discours au rôle, aux priorités et aux contraintes spécifiques de la personne en face. Un directeur commercial et un solopreneur n'ont pas les mêmes problèmes.",
+                  desc: "Le même insight présenté de la même façon à tous les prospects ne fonctionne pas. Le Challenger adapte son discours au rôle, aux priorités et aux contraintes spécifiques de la personne en face. Un directeur commercial et un solopreneur n'ont pas les mêmes problèmes, les mêmes objections, ni le même vocabulaire.",
                 },
                 {
                   step: 'Take Control',
                   title: 'Conduire la décision',
-                  desc: "Les Challengers ne subissent pas la conversation. Ils la pilotent. Ils demandent explicitement une décision, ils recadrent quand la discussion dérive, et ils sont à l'aise avec un 'non' direct plutôt qu'un 'je réfléchis' sans fin.",
+                  desc: "Les Challengers ne subissent pas la conversation. Ils la pilotent. Ils demandent explicitement une décision, ils recadrent quand la discussion dérive, et ils sont à l'aise avec un 'non' direct plutôt qu'un 'je réfléchis' sans fin. Un closeur qui termine l'appel sans demander de décision ne close pas — il présente.",
                 },
               ].map(({ step, title, desc }) => (
                 <div key={step} className="flex gap-5">
@@ -435,20 +495,362 @@ export default function ClosingB2BPage() {
               ))}
             </div>
             <p className="font-sans text-text-muted leading-relaxed">
-              L&apos;article complet sur le Challenger Sale est{' '}
+              Pour les solopreneurs et infopreneurs, le Take Control est la composante la plus difficile
+              à intégrer — elle va contre l&apos;instinct de ne pas brusquer le prospect. C&apos;est
+              pourtant ce qui distingue un appel qui se termine par &ldquo;je réfléchis&rdquo; (deal
+              probablement perdu) d&apos;un appel qui se termine par une décision claire.{' '}
               <a
                 href="/blog/challenger-sale-definition"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-accent hover:text-text-primary transition-colors"
               >
-                ici
+                L&apos;article complet sur le Challenger Sale
               </a>
-              , avec l&apos;application pratique pour les solopreneurs et infopreneurs.
+              .
             </p>
           </section>
 
-          {/* Section 6 — Setting → Closing */}
+          {/* Section 6 — Les 5 erreurs */}
+          <section id="erreurs" className="mb-14 scroll-mt-24">
+            <h2 className="font-serif text-h2 text-text-primary mb-5">
+              Les 5 erreurs qui détruisent le taux de closing
+            </h2>
+            <p className="font-sans text-text-muted leading-relaxed mb-6">
+              Ces cinq erreurs reviennent dans presque tous les audits d&apos;appels que nous
+              réalisons. Elles ne sont pas des erreurs de débutant — on les retrouve chez des
+              commerciaux avec plusieurs années d&apos;expérience. La différence : les débutants
+              ne les voient pas, les expérimentés les rationalisent.
+            </p>
+            <div className="space-y-5">
+              {[
+                {
+                  num: '01',
+                  title: "Pitcher dans les 5 premières minutes",
+                  desc: "C'est l'erreur numéro un, et de loin. Le closeur a préparé son pitch, il est dans son contexte, il pense que le prospect a besoin d'entendre ce qu'il fait avant de répondre aux questions. Résultat : le prospect répond aux questions depuis le prisme de ce qu'il vient d'entendre, pas depuis son vrai problème. La discovery devient une validation du pitch plutôt qu'une exploration. Les deals se perdent 3 semaines plus tard quand le prospect réalise que ce qu'il a acheté ne correspond pas exactement à ce qu'il cherchait.",
+                },
+                {
+                  num: '02',
+                  title: "Traiter 'je réfléchis' comme une réponse",
+                  desc: "'Je vais réfléchir' n'est pas une décision — c'est une sortie polie. La quasi-totalité des prospects qui disent 'je réfléchis' sans date précise ne rappellent pas. Le closeur qui accepte cette réponse sans clarifier commet deux erreurs : il ne sait pas si c'est une objection réelle ou un prétexte, et il abandonne le contrôle de la conversation. La bonne réponse : 'Qu'est-ce qu'il vous manque pour prendre une décision aujourd'hui ?' La réponse à cette question dit tout.",
+                },
+                {
+                  num: '03',
+                  title: "Ne pas identifier le décideur dès le début",
+                  desc: "45 minutes de discovery, une belle présentation, une bonne gestion des objections — et en toute fin d'appel : 'Je dois en parler à mon associé.' Cette information aurait dû être obtenue dans les 10 premières minutes. La discovery doit qualifier trois choses : le problème, le budget, et qui décide. Si quelqu'un d'autre co-décide, l'objectif de l'appel change : il s'agit de faire un allié du prospect pour qu'il convainque son associé, pas de closer seul.",
+                },
+                {
+                  num: '04',
+                  title: "Argumenter sur le prix au lieu d'explorer la valeur",
+                  desc: "Quand le prospect dit 'c'est trop cher', l'instinct du closeur est de justifier le prix — expliquer ce qui est inclus, comparer avec la concurrence, proposer un paiement en plusieurs fois. Ça ne fonctionne pas parce que la résistance n'est pas sur le prix, elle est sur la valeur perçue. La seule réponse efficace : revenir sur le coût du problème. 'On a dit que ça vous coûtait environ X par mois de ne pas résoudre ça. Là on parle de Y. Comment vous voyez le rapport ?' Si la valeur du problème est réelle, la conversation change.",
+                },
+                {
+                  num: '05',
+                  title: "Ne pas documenter ce qui se passe après l'appel",
+                  desc: "Le closeur qui ne documente pas ses appels perd la mémoire institutionnelle de son pipeline. Il recommence les mêmes erreurs, ne repère pas les patterns d'objections, et n'a aucune donnée à transmettre au setter pour améliorer la qualification des leads. 10 minutes de documentation après chaque appel — résultat, objections, profil du prospect, ce qui a fonctionné — c'est ce qui permet au système setter-closeur de s'améliorer en continu.",
+                },
+              ].map(({ num, title, desc }) => (
+                <div key={num} className="flex gap-5">
+                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{num}</span>
+                  <div>
+                    <p className="font-sans font-semibold text-text-primary text-sm mb-2">{title}</p>
+                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Section 7 — Programme semaine par semaine */}
+          <section id="programme" className="mb-14 scroll-mt-24">
+            <h2 className="font-serif text-h2 text-text-primary mb-5">
+              Programme de coaching closing : semaine par semaine
+            </h2>
+            <p className="font-sans text-text-muted leading-relaxed mb-6">
+              Un programme de coaching closing ne ressemble pas à une formation commerciale classique.
+              Il n&apos;y a pas de modules à regarder, pas de quiz, pas de certification. C&apos;est
+              du travail sur vos appels réels, avec votre offre, sur vos prospects.
+            </p>
+
+            {/* Semaine 1 */}
+            <div className="mb-8">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
+                  Semaine 1
+                </span>
+                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+              </div>
+              <p className="font-sans text-sm font-semibold text-text-primary mb-2">
+                Audit de l&apos;existant
+              </p>
+              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                On commence par écouter. Si vous avez des enregistrements d&apos;appels, on les analyse
+                ensemble. Sinon, on reconstitue la structure de vos 3 derniers appels depuis mémoire.
+                L&apos;objectif : identifier le moment exact où les prospects se ferment. Pas
+                &ldquo;en général&rdquo; — à quelle minute, sur quelle question ou quelle phrase.
+              </p>
+              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+                <p className="font-sans text-text-muted leading-relaxed">
+                  Ce que la semaine 1 produit : un diagnostic précis — les 2 ou 3 points où vos
+                  appels perdent le prospect, et le plan de travail pour les 2 prochains mois.
+                </p>
+              </div>
+            </div>
+
+            {/* Semaines 2-3 */}
+            <div className="mb-8">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
+                  Semaines 2–3
+                </span>
+                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+              </div>
+              <p className="font-sans text-sm font-semibold text-text-primary mb-2">
+                Restructuration de la discovery
+              </p>
+              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                On réécrit la structure de votre appel. Ça commence par les questions : on travaille
+                l&apos;ordre (contexte → problème → coût → tentatives précédentes → décideur), les
+                formulations qui font parler et celles qui font se fermer. Vous testez cette nouvelle
+                structure sur des appels réels. On en reparle après chaque appel.
+              </p>
+              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+                <p className="font-sans text-text-muted leading-relaxed">
+                  Ce que les semaines 2-3 produisent : une structure de discovery adaptée à votre
+                  offre et à votre marché. La plupart des gens ressentent un changement dès
+                  le 2e appel avec la nouvelle structure.
+                </p>
+              </div>
+            </div>
+
+            {/* Semaines 4-6 */}
+            <div className="mb-8">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
+                  Semaines 4–6
+                </span>
+                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+              </div>
+              <p className="font-sans text-sm font-semibold text-text-primary mb-2">
+                Gestion des objections spécifiques à votre marché
+              </p>
+              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                On construit votre bibliothèque d&apos;objections — les 5 à 8 objections que vous
+                entendez systématiquement, avec la réponse calibrée pour chacune. Ce n&apos;est pas
+                un script à réciter. C&apos;est un cadre mental qui permet de répondre naturellement
+                parce que vous avez réfléchi à la réponse avant l&apos;appel.
+              </p>
+              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+                <p className="font-sans text-text-muted leading-relaxed">
+                  Ce que les semaines 4-6 produisent : un taux de closing qui monte. Pas encore
+                  à son plateau, mais la progression est visible. Les objections commencent à
+                  sembler prévisibles plutôt que surprenantes.
+                </p>
+              </div>
+            </div>
+
+            {/* Semaines 7-10 */}
+            <div className="mb-8">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
+                  Semaines 7–10
+                </span>
+                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+              </div>
+              <p className="font-sans text-sm font-semibold text-text-primary mb-2">
+                Demande de décision et relances
+              </p>
+              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                La partie la plus difficile à maîtriser : comment conclure sans forcer. On travaille
+                les formulations de demande de décision qui ne mettent pas le prospect en position
+                défensive. Et on construit le protocole de relance pour les prospects qui &ldquo;réfléchissent&rdquo;
+                — un message de relance n&apos;est pas un message de rappel. C&apos;est un deuxième
+                appel commercial compressé en 3 lignes.
+              </p>
+              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+                <p className="font-sans text-text-muted leading-relaxed">
+                  Ce que les semaines 7-10 produisent : votre taux de closing approche son plateau.
+                  Les deals &ldquo;je réfléchis&rdquo; commencent à se résoudre plus vite — dans
+                  un sens ou dans l&apos;autre.
+                </p>
+              </div>
+            </div>
+
+            {/* Mois 3 */}
+            <div className="mb-4">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
+                  Mois 3
+                </span>
+                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+              </div>
+              <p className="font-sans text-sm font-semibold text-text-primary mb-2">
+                Cas difficiles et consolidation
+              </p>
+              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                On travaille ce qui résiste encore : les profils atypiques, les deals à plusieurs
+                décideurs, les cycles longs. Et on met en place les outils de pilotage autonome —
+                comment vous mesurez votre taux, comment vous identifiez une dégradation avant
+                qu&apos;elle coûte, comment vous ajustez sans accompagnement.
+              </p>
+            </div>
+          </section>
+
+          {/* Section 8 — Courbe de résultats */}
+          <section id="resultats" className="mb-14 scroll-mt-24">
+            <h2 className="font-serif text-h2 text-text-primary mb-5">
+              La courbe de progression réelle
+            </h2>
+            <p className="font-sans text-text-muted leading-relaxed mb-6">
+              Ce que les gens imaginent avant de commencer : les résultats progressent de façon
+              linéaire dès la première semaine. Ce qui se passe vraiment : la progression est
+              non-linéaire, avec un creux autour de la semaine 3-4 quand on change les habitudes,
+              puis une montée plus franche à partir de la semaine 5-6.
+            </p>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full font-sans text-sm border-collapse">
+                <thead>
+                  <tr className="border-b border-black/8">
+                    <th className="text-left py-3 pr-4 text-xs font-semibold uppercase tracking-widest text-accent w-1/3">
+                      Étape
+                    </th>
+                    <th className="text-left py-3 text-xs font-semibold uppercase tracking-widest text-accent">
+                      Ce qui se passe
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-black/8">
+                  {[
+                    {
+                      etape: 'Semaine 1-2',
+                      desc: "Diagnostic. Vous voyez pour la première fois où vos appels perdent le prospect. Ça peut être inconfortable — la plupart des gens pensaient que le problème était ailleurs.",
+                    },
+                    {
+                      etape: 'Semaine 3-4',
+                      desc: "Transition. Vous utilisez la nouvelle structure de discovery mais elle n'est pas encore naturelle. Certains appels se sentent 'moins fluides' qu'avant. Le taux ne s'améliore pas encore, parfois baisse légèrement. C'est normal.",
+                    },
+                    {
+                      etape: 'Semaine 5-8',
+                      desc: "Montée. La nouvelle structure devient automatique. Le taux de closing commence à progresser : de 10-12 % vers 18-22 %. Les objections vous surprennent moins.",
+                    },
+                    {
+                      etape: 'Mois 3+',
+                      desc: "Plateau stable. Taux de 25-35 % sur leads qualifiés par un setter. Les deals difficiles — ceux qui nécessitaient 4 relances — se résolvent en 1 ou 2. L'autonomie est installée.",
+                    },
+                  ].map(({ etape, desc }) => (
+                    <tr key={etape}>
+                      <td className="py-4 pr-4 font-semibold text-text-primary align-top">{etape}</td>
+                      <td className="py-4 text-text-muted leading-relaxed">{desc}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="font-sans text-text-muted leading-relaxed">
+              La semaine 3-4 est celle où les gens abandonnent les formations classiques. La nouvelle
+              structure ne se sent pas encore naturelle, et le taux ne s&apos;est pas encore amélioré.
+              C&apos;est précisément là que l&apos;accompagnement fait la différence — quelqu&apos;un
+              qui regarde vos appels avec vous et confirme que vous êtes sur la bonne voie.
+            </p>
+          </section>
+
+          {/* Section 9 — Cas client */}
+          <section id="cas-client" className="mb-14 scroll-mt-24">
+            <h2 className="font-serif text-h2 text-text-primary mb-5">
+              Cas client : de 0 signé sur 10 à 8 signés sur 10
+            </h2>
+            <p className="font-sans text-text-muted leading-relaxed mb-6">
+              Consultant RH indépendant. Offre d&apos;accompagnement à 3 500 € sur 3 mois. Pipeline
+              régulier — un setter générait 3 à 4 RDV par semaine. Le problème : 10 RDV consécutifs,
+              0 contrat signé.
+            </p>
+
+            <div className="space-y-6 mb-6">
+              {/* Situation initiale */}
+              <div className="border-l-2 border-black/10 pl-5">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
+                  Situation initiale
+                </p>
+                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  Structure type de ses appels avant coaching : 5 min d&apos;introduction,
+                  15 min de présentation de l&apos;offre, 5 min de questions, annonce du prix,
+                  gestion des objections. Le problème était visible dès la première écoute :
+                  il présentait l&apos;offre avant d&apos;avoir compris le problème du prospect.
+                  Les prospects répondaient à ses questions depuis le prisme de ce qu&apos;ils
+                  venaient d&apos;entendre — pas depuis leur réalité. Les &ldquo;je vais
+                  réfléchir&rdquo; finaux n&apos;étaient pas des hésitations sur le prix,
+                  c&apos;étaient des signaux que quelque chose ne correspondait pas.
+                </p>
+              </div>
+
+              {/* Semaine 1 */}
+              <div className="border-l-2 border-accent/30 pl-5">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
+                  Séance 1 — Écoute et diagnostic
+                </p>
+                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  On a réécouté un appel enregistré ensemble. À la minute 7, le prospect avait dit
+                  une phrase importante sur son vrai problème — et il l&apos;avait ignorée pour
+                  continuer son pitch. On a identifié 3 points de rupture exacts dans la structure
+                  de l&apos;appel. À la fin de la séance, il avait une nouvelle structure en 4 phases
+                  à tester.
+                </p>
+              </div>
+
+              {/* Semaine 2 */}
+              <div className="border-l-2 border-accent/30 pl-5">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
+                  Semaine 2 — Premier appel avec la nouvelle structure
+                </p>
+                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  Nouvelle discovery : 20 min de questions sur le contexte, le problème, le coût
+                  du statu quo, les tentatives précédentes. Présentation de l&apos;offre ensuite —
+                  ancrée sur ce qu&apos;il avait entendu. Le prospect lui a dit en fin d&apos;appel :
+                  &ldquo;J&apos;ai l&apos;impression qu&apos;on a parlé de mon problème, pas de ta
+                  solution.&rdquo; Premier contrat signé.
+                </p>
+              </div>
+
+              {/* Semaines 3-6 */}
+              <div className="border-l-2 border-accent/30 pl-5">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
+                  Semaines 3–6 — Consolidation
+                </p>
+                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  Les 7 appels suivants : signés. Pas parce que chaque prospect était idéal —
+                  l&apos;un d&apos;eux avait des objections réelles sur le budget. On a travaillé
+                  la réponse en temps réel après l&apos;appel. Le suivant, même profil : signé.
+                  On a construit sa bibliothèque d&apos;objections sur 4 semaines.
+                </p>
+              </div>
+
+              {/* 4 mois après */}
+              <div className="border-l-2 border-accent/30 pl-5">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
+                  4 mois plus tard
+                </p>
+                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  Taux de closing stabilisé à 38 % sur 4 à 6 appels par semaine. Soit en moyenne
+                  2 clients supplémentaires par mois par rapport à la situation initiale. Sur une
+                  offre à 3 500 €, c&apos;est +7 000 €/mois. Le coaching lui a coûté 2 000 €/mois
+                  pendant 3 mois — amorti par le premier mois de résultats.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-bg-secondary rounded-xl p-5 border border-black/8 grid sm:grid-cols-3 gap-4 text-center">
+              {[
+                { chiffre: '0 → 38 %', detail: 'taux de closing en 10 semaines' },
+                { chiffre: '+2 clients/mois', detail: 'sur une offre à 3 500 €' },
+                { chiffre: '+7 000 €/mois', detail: 'chiffre d\'affaires additionnel stabilisé' },
+              ].map(({ chiffre, detail }) => (
+                <div key={chiffre}>
+                  <p className="font-serif text-lg text-accent mb-1">{chiffre}</p>
+                  <p className="font-sans text-xs text-text-muted leading-snug">{detail}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Section 10 — Setting → Closing */}
           <section id="setting-closing" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Setting et closing : la chaîne complète
@@ -456,13 +858,14 @@ export default function ClosingB2BPage() {
             <p className="font-sans text-text-muted leading-relaxed mb-5">
               Un closeur sans setter passe 50 % de son temps à prospecter — ce qui n&apos;est pas sa
               compétence principale. Un setter sans closeur génère des RDV que personne ne transforme.
-              Les deux rôles fonctionnent en système.
+              Les deux rôles fonctionnent en système, et la qualité du système dépend de la qualité
+              de la boucle entre les deux.
             </p>
             <div className="space-y-3 mb-6">
               {[
-                { phase: 'Setter', detail: "Détecte les signaux d'achat, prospecte sur LinkedIn, qualifie les leads sur 5 niveaux, prend les RDV, transmet le brief au closeur." },
-                { phase: 'Closeur', detail: "Reçoit le brief, prépare l'appel, conduit la discovery, présente l'offre, gère les objections, demande la décision, documente le résultat." },
-                { phase: 'Boucle', detail: "Le retour du closeur (objections rencontrées, profil du prospect qui signe) alimente la qualification du setter. Le système s'améliore à chaque semaine." },
+                { phase: 'Setter', detail: "Détecte les signaux d'achat sur LinkedIn, prospecte les profils qualifiés, reçoit les réponses, qualifie les leads sur 5 niveaux, prend les RDV, transmet le brief au closeur avant chaque appel." },
+                { phase: 'Closeur', detail: "Reçoit le brief, prépare l'appel en 10-15 min, conduit la discovery, adapte la présentation à ce qu'il a entendu, gère les objections, demande une décision, documente le résultat et le transmet au setter." },
+                { phase: 'Boucle', detail: "Le retour du closeur (objections rencontrées, profil du prospect qui signe, deals perdus et pourquoi) alimente la qualification du setter. Le setter ajuste ses critères. Le système s'améliore à chaque semaine de façon mesurable." },
               ].map(({ phase, detail }) => (
                 <div key={phase} className="border-l-2 border-accent/30 pl-5">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-1">
@@ -473,11 +876,10 @@ export default function ClosingB2BPage() {
               ))}
             </div>
             <p className="font-sans text-text-muted leading-relaxed">
-              La différence détaillée entre les deux rôles est dans cet article :{' '}
+              La différence détaillée entre les deux rôles, les compétences respectives, et dans
+              quel ordre investir est dans cet article :{' '}
               <a
                 href="/blog/difference-setting-closing"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-accent hover:text-text-primary transition-colors"
               >
                 Setting vs closing — rôles, compétences, ordre d&apos;investissement
@@ -486,7 +888,7 @@ export default function ClosingB2BPage() {
             </p>
           </section>
 
-          {/* Section 7 — Taux */}
+          {/* Section 11 — Taux */}
           <section id="taux" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Mesurer et améliorer son taux de closing
@@ -516,13 +918,20 @@ export default function ClosingB2BPage() {
               ou la structure de l&apos;appel est défaillante (pitch trop tôt, pas de discovery,
               pas de demande de décision explicite).
             </p>
+            <p className="font-sans text-text-muted leading-relaxed mb-4">
+              Comment diagnostiquer : enregistrez vos 3 prochains appels et répondez à ces trois
+              questions après écoute. Est-ce que vous avez passé plus de 15 minutes en questions
+              avant de mentionner le prix ? Est-ce que vous savez ce que ça coûte au prospect de
+              ne rien changer ? Est-ce que vous avez demandé explicitement une décision en fin
+              d&apos;appel ?
+            </p>
             <p className="font-sans text-text-muted leading-relaxed">
-              La première chose à regarder : est-ce que le closeur pose des questions pendant au moins
-              15 minutes avant de mentionner le prix ? Si non, la discovery est incomplète.
+              Si la réponse à l&apos;une de ces trois questions est non, vous avez trouvé votre
+              premier axe de travail.
             </p>
           </section>
 
-          {/* Section 8 — Pour qui */}
+          {/* Section 12 — Pour qui */}
           <section id="pour-qui" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Pour qui le coaching closing est fait — et pour qui non
@@ -538,6 +947,7 @@ export default function ClosingB2BPage() {
                     "Consultants qui font plusieurs appels par semaine",
                     "Infopreneurs qui closent leurs programmes haute valeur",
                     "Closeurs qui ont un setter mais pas de méthode structurée",
+                    "Ceux qui ont des leads mais un taux de closing en dessous de 20 %",
                   ].map((item) => (
                     <li key={item} className="flex gap-2">
                       <span className="text-accent shrink-0">→</span>
@@ -556,6 +966,7 @@ export default function ClosingB2BPage() {
                     "Activités sans appel commercial (e-commerce, SaaS self-serve)",
                     "Offres en dessous de 500 € — la marge ne justifie pas un appel structuré",
                     "Ceux qui n'ont pas encore de leads réguliers à closer",
+                    "Ceux qui cherchent des 'techniques' plutôt qu'une méthode de fond",
                   ].map((item) => (
                     <li key={item} className="flex gap-2">
                       <span className="text-text-muted/40 shrink-0">→</span>
@@ -565,6 +976,18 @@ export default function ClosingB2BPage() {
                 </ul>
               </div>
             </div>
+            <p className="font-sans text-text-muted leading-relaxed">
+              Le coaching closing fonctionne quand le problème est dans la structure de l&apos;appel,
+              pas dans le volume de leads. Si vous n&apos;avez pas encore de pipeline régulier,
+              commencer par le{' '}
+              <a
+                href="/blog/setting-commercial-b2b"
+                className="text-accent hover:text-text-primary transition-colors"
+              >
+                setting commercial B2B
+              </a>
+              {' '}est plus adapté à votre situation.
+            </p>
           </section>
 
           {/* FAQ */}
@@ -601,8 +1024,6 @@ export default function ClosingB2BPage() {
                 <a
                   key={href}
                   href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
