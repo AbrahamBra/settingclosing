@@ -12,7 +12,7 @@ const featured = {
 const articles = [
   {
     category: 'Setting',
-    categoryColor: '#818CF8',
+    categoryColor: '#A78BFA',
     title: 'Le Setter B2B : architecte de la prise de RDV qualifié',
     meta: '8 min',
   },

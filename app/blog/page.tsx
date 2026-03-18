@@ -57,7 +57,7 @@ export default function BlogIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
       />
-      <main className="bg-[#06080F] pt-28 pb-24">
+      <main className="bg-[#0A0908] pt-28 pb-24">
         <BlogContent />
       </main>
       <Footer />

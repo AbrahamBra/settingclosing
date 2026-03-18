@@ -14,7 +14,7 @@ export function DarkCard({ accent = false, hover = false, className = '', childr
       style={{
         background: 'rgba(255,255,255,0.03)',
         border: accent
-          ? '1px solid rgba(248, 113, 113, 0.4)'
+          ? '1px solid rgba(200, 117, 51, 0.4)'
           : '1px solid rgba(255, 255, 255, 0.06)',
       }}
       {...props}

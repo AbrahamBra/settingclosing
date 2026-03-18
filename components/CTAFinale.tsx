@@ -134,7 +134,7 @@ export function CTAFinale() {
                       minLength={2}
                       value={form.firstName}
                       onChange={handleChange}
-                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-[#1C1A16] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="Jean"
                     />
                   </div>
@@ -150,7 +150,7 @@ export function CTAFinale() {
                       required
                       value={form.email}
                       onChange={handleChange}
-                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-[#1C1A16] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="jean@example.com"
                     />
                   </div>
@@ -165,7 +165,7 @@ export function CTAFinale() {
                       type="tel"
                       value={form.phone}
                       onChange={handleChange}
-                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
+                      className="w-full bg-[#1C1A16] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="+33 6 00 00 00 00"
                     />
                   </div>
@@ -210,7 +210,7 @@ export function CTAFinale() {
                       maxLength={1000}
                       value={form.message}
                       onChange={handleChange}
-                      className="w-full bg-[#111627] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
+                      className="w-full bg-[#1C1A16] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
                       placeholder="Décrivez votre situation..."
                     />
                   </div>

@@ -24,7 +24,7 @@ export function Hero() {
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none select-none"
         style={{
           background:
-            'radial-gradient(ellipse at 50% 0%, rgba(248,113,113,0.09) 0%, transparent 60%)',
+            'radial-gradient(ellipse at 50% 0%, rgba(200,117,51,0.12) 0%, transparent 60%)',
         }}
       />
 
@@ -34,9 +34,9 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#38BDF8]/20 bg-[#38BDF8]/10 font-sans text-xs font-semibold uppercase tracking-widest text-[#38BDF8] mb-8"
+          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#D4956A]/20 bg-[#D4956A]/10 font-sans text-xs font-semibold uppercase tracking-widest text-[#D4956A] mb-8"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8] inline-block" />
+          <span className="w-1.5 h-1.5 rounded-full bg-[#D4956A] inline-block" />
           Setting &amp; Closing B2B
         </motion.div>
 
@@ -114,7 +114,7 @@ export function Hero() {
             { num: '14j', label: 'premiers résultats' },
           ].map((s) => (
             <div key={s.label} className="text-center">
-              <div className="font-mono text-2xl font-extrabold text-[#38BDF8]">{s.num}</div>
+              <div className="font-mono text-2xl font-extrabold text-[#D4956A]">{s.num}</div>
               <div className="text-text-muted text-xs uppercase tracking-wider mt-1">{s.label}</div>
             </div>
           ))}

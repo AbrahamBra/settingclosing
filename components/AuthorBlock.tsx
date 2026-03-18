@@ -19,14 +19,14 @@ export function AuthorBlock({ date, readTime, dateLabel }: AuthorBlockProps) {
     <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
       {/* Avatar initiale */}
       <div className="shrink-0 w-8 h-8 rounded-full bg-bg-secondary border border-white/[0.06] flex items-center justify-center">
-        <span className="font-sans font-bold text-sm text-[#F87171]">A</span>
+        <span className="font-sans font-bold text-sm text-[#C87533]">A</span>
       </div>
 
       <div className="flex flex-col gap-0.5">
         <div className="flex items-center gap-1.5">
           <a
             href="/a-propos"
-            className="font-semibold text-white hover:text-[#F87171] transition-colors text-xs"
+            className="font-semibold text-white hover:text-[#C87533] transition-colors text-xs"
           >
             Abraham
           </a>

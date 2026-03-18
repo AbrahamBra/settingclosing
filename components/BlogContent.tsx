@@ -27,7 +27,7 @@ interface PillarGuide {
 // ─── Category config ─────────────────────────────────────────────────────────
 
 const categoryConfig: Record<Category, { label: string; color: string; bgTint: string }> = {
-  setting: { label: 'Setting', color: '#818CF8', bgTint: 'rgba(129, 140, 248, 0.04)' },
+  setting: { label: 'Setting', color: '#A78BFA', bgTint: 'rgba(129, 140, 248, 0.04)' },
   closing: { label: 'Closing', color: '#34D399', bgTint: 'rgba(52, 211, 153, 0.04)' },
   methode: { label: 'Méthode', color: '#FBBF24', bgTint: 'rgba(251, 191, 36, 0.04)' },
 }
@@ -35,8 +35,8 @@ const categoryConfig: Record<Category, { label: string; color: string; bgTint: s
 type FilterKey = 'all' | Category | 'ia'
 
 const filterPills: { key: FilterKey; label: string; color: string }[] = [
-  { key: 'all', label: 'Tous', color: '#F87171' },
-  { key: 'setting', label: 'Setting', color: '#818CF8' },
+  { key: 'all', label: 'Tous', color: '#C87533' },
+  { key: 'setting', label: 'Setting', color: '#A78BFA' },
   { key: 'closing', label: 'Closing', color: '#34D399' },
   { key: 'methode', label: 'Méthode', color: '#FBBF24' },
   { key: 'ia', label: 'IA + Outils', color: '#C084FC' },
@@ -50,8 +50,8 @@ const pillarGuides: PillarGuide[] = [
     title: 'Setting commercial B2B : définition et méthode',
     label: 'Guide Setting',
     readTime: '14 min',
-    color: '#818CF8',
-    borderClass: 'border-l-4 border-[#818CF8]',
+    color: '#A78BFA',
+    borderClass: 'border-l-4 border-[#A78BFA]',
   },
   {
     slug: 'closing-b2b',
@@ -142,7 +142,7 @@ export function BlogContent() {
                 >
                   {guide.label} &middot; {guide.readTime}
                 </p>
-                <h2 className="font-sans font-semibold text-lg text-white mb-4 group-hover:text-[#F87171] transition-colors leading-snug flex-1">
+                <h2 className="font-sans font-semibold text-lg text-white mb-4 group-hover:text-[#C87533] transition-colors leading-snug flex-1">
                   {guide.title}
                 </h2>
                 <span
@@ -202,7 +202,7 @@ export function BlogContent() {
                   </div>
 
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="font-sans font-semibold text-white text-sm leading-snug mb-3 group-hover:text-[#F87171] transition-colors flex-1">
+                    <h3 className="font-sans font-semibold text-white text-sm leading-snug mb-3 group-hover:text-[#C87533] transition-colors flex-1">
                       {article.title}
                     </h3>
                     <div className="flex items-center justify-between">

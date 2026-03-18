@@ -98,12 +98,12 @@ export function PricingComparison() {
           <ScrollReveal>
             <DarkCard className="p-0 h-full flex flex-col">
               {/* Indigo top border */}
-              <div className="h-1 bg-[#818CF8]" />
+              <div className="h-1 bg-[#A78BFA]" />
 
               <div className="p-8 flex flex-col gap-6 flex-1">
                 {/* Eyebrow + headline */}
                 <div>
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#818CF8' }}>
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#A78BFA' }}>
                     Setting
                   </p>
                   <h3 className="font-serif text-h3 text-white">
@@ -112,7 +112,7 @@ export function PricingComparison() {
                 </div>
 
                 {/* Timeline */}
-                <Timeline phases={settingPhases} accentColor="#818CF8" />
+                <Timeline phases={settingPhases} accentColor="#A78BFA" />
 
                 {/* Pricing */}
                 <div className="border-t border-white/[0.06] pt-5">

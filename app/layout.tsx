@@ -101,32 +101,43 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        {/* Cosmic star background */}
+        {/* Video background — desktop only, blurred + desaturated texture */}
         <div
           aria-hidden="true"
+          className="hidden md:block"
           style={{
             position: 'fixed',
             inset: 0,
             pointerEvents: 'none',
             zIndex: 0,
-            background: [
-              'radial-gradient(1px 1px at 20% 30%, rgba(255,255,255,0.15), transparent)',
-              'radial-gradient(1px 1px at 40% 70%, rgba(255,255,255,0.1), transparent)',
-              'radial-gradient(1px 1px at 60% 20%, rgba(255,255,255,0.12), transparent)',
-              'radial-gradient(1px 1px at 80% 50%, rgba(255,255,255,0.08), transparent)',
-              'radial-gradient(1.5px 1.5px at 10% 80%, rgba(255,255,255,0.15), transparent)',
-              'radial-gradient(1px 1px at 70% 90%, rgba(255,255,255,0.1), transparent)',
-              'radial-gradient(1px 1px at 90% 10%, rgba(255,255,255,0.12), transparent)',
-              'radial-gradient(1.5px 1.5px at 50% 50%, rgba(255,255,255,0.08), transparent)',
-              'radial-gradient(1px 1px at 15% 45%, rgba(255,255,255,0.1), transparent)',
-              'radial-gradient(1px 1px at 85% 75%, rgba(255,255,255,0.12), transparent)',
-              'radial-gradient(1.5px 1.5px at 35% 15%, rgba(255,255,255,0.08), transparent)',
-              'radial-gradient(1px 1px at 55% 85%, rgba(255,255,255,0.1), transparent)',
-              'radial-gradient(1px 1px at 75% 35%, rgba(255,255,255,0.15), transparent)',
-              'radial-gradient(1px 1px at 25% 65%, rgba(255,255,255,0.08), transparent)',
-            ].join(', '),
           }}
-        />
+        >
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              filter: 'blur(2px) saturate(0.3) brightness(0.6)',
+              opacity: 0.18,
+              mixBlendMode: 'luminosity',
+            }}
+          >
+            <source src="/bg-video.mp4" type="video/mp4" />
+          </video>
+          {/* Top gradient fade for hero readability */}
+          <div
+            style={{
+              position: 'absolute',
+              inset: 0,
+              background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 40%, transparent 80%, rgba(0,0,0,0.5) 100%)',
+              pointerEvents: 'none',
+            }}
+          />
+        </div>
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"

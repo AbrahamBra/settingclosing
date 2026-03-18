@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 const variantColors = {
-  ia: { border: 'border-[#818CF8]/[0.2]', bg: 'bg-[#818CF8]/[0.04]', text: 'text-[#818CF8]' },
+  ia: { border: 'border-[#A78BFA]/[0.2]', bg: 'bg-[#A78BFA]/[0.04]', text: 'text-[#A78BFA]' },
   methode: { border: 'border-[#FBBF24]/[0.2]', bg: 'bg-[#FBBF24]/[0.04]', text: 'text-[#FBBF24]' },
   humain: { border: 'border-[#34D399]/[0.2]', bg: 'bg-[#34D399]/[0.04]', text: 'text-[#34D399]' },
   hybrid: { border: 'border-[#C084FC]/[0.2]', bg: 'bg-[#C084FC]/[0.04]', text: 'text-[#C084FC]' },
