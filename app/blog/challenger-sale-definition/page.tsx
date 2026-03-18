@@ -109,7 +109,7 @@ const breadcrumbSchema = {
 const profiles = [
   {
     name: 'Le Hard Worker',
-    desc: "Travaille dur, ne compte pas ses heures, se forme continuellement. Présent dans tous les marchés, performant mais pas différenciant. Déterminé mais sans insight particulier sur le business du client.",
+    desc: "Travaille dur, ne compte pas ses heures, se forme continuellement. Présent dans tous les marchés, régulièrement dans la moyenne haute. Déterminé mais sans insight particulier sur le business du client.",
     top: false,
   },
   {
@@ -230,7 +230,7 @@ export default function ChallengerSalePage() {
               des attitudes ou des approches spécifiques — ou s&apos;agit-il juste de talent brut ?
             </p>
             <p className="font-sans text-text-muted leading-relaxed">
-              La réponse est sans appel : oui, il existe un profil distinctif. Et ce profil
+              Résultat : oui, il existe un profil distinctif. Et ce profil
               n&apos;est pas celui que la plupart des managers auraient recruté en premier.
             </p>
 
@@ -286,8 +286,8 @@ export default function ChallengerSalePage() {
               Les 3 composantes du Challenger Sale
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-8">
-              Le profil Challenger se définit par 3 comportements distincts. Chacun peut s&apos;apprendre
-              et se pratiquer — ce n&apos;est pas inné.
+              Le profil Challenger se définit par 3 comportements distincts. Chacun s&apos;apprend
+              et se pratique.
             </p>
             <div className="space-y-10">
               {components.map((comp, i) => (

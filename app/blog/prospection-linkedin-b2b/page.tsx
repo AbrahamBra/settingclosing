@@ -603,15 +603,15 @@ export default function ProspectionLinkedInB2BPage() {
               Construire un système, pas juste une tactique
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
-              La différence entre &ldquo;envoyer des messages LinkedIn&rdquo; et &ldquo;opérer
-              un système de prospection&rdquo; est visible dans les résultats au bout de deux mois.
-              Le premier plateaue rapidement. Le second s&apos;améliore semaine après semaine.
+              Envoyer des messages LinkedIn n&apos;est pas opérer un système de prospection.
+              Au bout de deux mois, la différence est nette dans les chiffres.
+              L&apos;un plafonne. L&apos;autre monte.
             </p>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
               Un système a quatre composantes : une source de signaux (inbound ou tiers),
-              un CRM minimal pour tracker chaque prospect et son statut, un journal de bord
-              hebdomadaire pour noter ce qui fonctionne et ce qui ne fonctionne pas,
-              et un flux de nurturing pour les leads tièdes qui ne sont pas encore en phase d&apos;achat.
+              un CRM minimal pour tracker chaque prospect et son statut, un journal hebdomadaire
+              des taux de réponse par message et par segment, et un flux de nurturing
+              pour les leads qui ne sont pas encore en phase d&apos;achat.
             </p>
             <p className="font-sans text-text-muted leading-relaxed mb-4">
               En phase de calibration (mois 1 à 2), l&apos;objectif n&apos;est pas le volume.
@@ -623,8 +623,8 @@ export default function ProspectionLinkedInB2BPage() {
             <p className="font-sans text-text-muted leading-relaxed">
               En phase de scaling (mois 3 et au-delà), le système tourne sur des bases connues.
               50 à 100 messages par semaine, taux de réponse stable au-dessus de 15 %,
-              pipeline prévisible. Ce n&apos;est pas de la magie — c&apos;est le résultat
-              de deux mois de calibration rigoureuse. La plupart abandonnent avant d&apos;y arriver.
+              pipeline prévisible. C&apos;est le résultat direct des deux mois de calibration.
+              La plupart abandonnent avant d&apos;y arriver.
             </p>
 
             <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">

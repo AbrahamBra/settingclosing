@@ -52,12 +52,12 @@ const faqItems = [
   {
     question: "Qu'est-ce que le setting commercial ?",
     answer:
-      "Le setting commercial est la phase de prospection qui précède le closing dans un cycle de vente B2B. Le setter identifie les prospects qualifiés, analyse leurs profils, rédige et envoie les premiers messages, gère les conversations jusqu'à la prise de rendez-vous, et qualifie les leads avant de les transmettre au closeur. En B2B moderne, le setting se fait principalement via LinkedIn avec une approche signal-based : on contacte en priorité les prospects qui ont déjà montré un signe d'intérêt.",
+      "Le setting commercial est la phase de prospection qui précède le closing dans un cycle de vente B2B. Le setter identifie les prospects qualifiés, analyse leurs profils, rédige et envoie les premiers messages, gère les conversations jusqu'à la prise de rendez-vous, et qualifie les leads avant de les transmettre au closeur. En B2B, le setting se déploie principalement sur LinkedIn via une approche signal-based : on contacte en priorité les prospects qui ont déjà montré un signe d'intérêt.",
   },
   {
     question: "Quelle est la différence entre un setter et un closeur ?",
     answer:
-      "Le setter génère les rendez-vous qualifiés. Le closeur les convertit en clients. Le setter travaille en amont : détection des signaux, analyse des profils, prospection, qualification. Le closeur travaille sur les appels : discovery, présentation de valeur, gestion des objections, signature. Séparer les deux rôles permet d'optimiser chacun. Forcer un closeur à faire son propre setting lui fait perdre son temps sur ce qui n'est pas son levier.",
+      "Le setter génère les rendez-vous qualifiés. Le closeur les convertit en clients. Le setter travaille en amont : détection des signaux, analyse des profils, prospection, qualification. Le closeur travaille sur les appels : discovery, présentation de valeur, gestion des objections, signature. Séparer les deux rôles permet d'optimiser chacun. Forcer un closeur à faire son propre setting lui fait perdre son temps sur ce qui n'est pas sa compétence centrale.",
   },
   {
     question: "Le setting LinkedIn fonctionne-t-il vraiment pour les solopreneurs ?",
@@ -282,9 +282,8 @@ export default function SettingCommercialPage() {
                 Setting LinkedIn : pourquoi ce canal a changé la prospection B2B
               </h2>
               <p className="mb-4">
-                LinkedIn est devenu le canal dominant du setting commercial B2B pour les solopreneurs
-                et infopreneurs. Pas parce que c&apos;est plus facile qu&apos;avant — parce que c&apos;est là que
-                les acheteurs B2B se montrent.
+                LinkedIn est le canal principal du setting commercial B2B pour les solopreneurs
+                et infopreneurs, parce que c&apos;est là que les acheteurs B2B se montrent.
               </p>
               <p className="mb-4">
                 Un acheteur B2B qui like un post sur les marges, qui commente une question sur
@@ -333,7 +332,7 @@ export default function SettingCommercialPage() {
                 définir des filtres précis (fonctions, industries, taille d&apos;entreprise, signaux
                 récents de type &ldquo;changement de poste&rdquo; ou &ldquo;dans l&apos;actualité&rdquo;) et de construire
                 des listes de prospects qui correspondent exactement à l&apos;ICP. Ces listes alimentent
-                Spyer pour le monitoring continu. C&apos;est la couche stratégique avant la couche opérationnelle.
+                Spyer pour le monitoring continu. Sales Navigator définit qui surveiller. Spyer surveille.
               </p>
             </section>
 
@@ -399,7 +398,7 @@ export default function SettingCommercialPage() {
               <p>
                 Un bon closeur est à l&apos;aise à l&apos;oral, capable de gérer des objections complexes,
                 maîtrise la discovery. Forcer un closeur à faire son propre setting, c&apos;est lui faire
-                perdre son temps sur ce qui n&apos;est pas son levier — et souvent brûler des leads avec
+                perdre son temps sur ce qui n&apos;est pas sa compétence centrale — et souvent brûler des leads avec
                 des messages mal construits.
               </p>
             </section>
@@ -478,11 +477,7 @@ export default function SettingCommercialPage() {
                 L&apos;IA dans le setting commercial moderne
               </h2>
               <p className="mb-4">
-                L&apos;IA a changé ce qu&apos;il est possible de faire en setting — pas de la façon
-                dont la plupart l&apos;imaginent.
-              </p>
-              <p className="mb-4">
-                Ce qui ne fonctionne pas : coller un profil dans ChatGPT et demander un message.
+                Coller un profil dans ChatGPT et demander un message ne fonctionne pas.
                 Le résultat est toujours le même — formel, bien structuré, clairement automatique.
                 Taux de réponse proche de zéro. Les prospects détectent ce style à la première phrase.
               </p>
@@ -515,8 +510,7 @@ export default function SettingCommercialPage() {
                 Pourquoi déléguer son setting plutôt que le faire soi-même
               </h2>
               <p className="mb-4">
-                La question n&apos;est pas &ldquo;est-ce que le setting fonctionne ?&rdquo;
-                La question est &ldquo;quel est le coût réel de le faire soi-même ?&rdquo;
+                Le setting fonctionne. La vraie question, c&apos;est le coût réel de le faire soi-même.
               </p>
 
               <div className="space-y-4 my-6">
@@ -603,10 +597,10 @@ export default function SettingCommercialPage() {
               </div>
 
               <p>
-                La vraie question n&apos;est pas le budget. C&apos;est le retour.
+                Le vrai calcul, c&apos;est le retour.
                 Un programme à 3 000 € par mois qui génère 10 RDV qualifiés par mois,
                 dont 3 se transforment en clients à 5 000 € chacun, rapporte 15 000 €
-                pour 3 000 € investis. La prospection n&apos;est pas un coût — c&apos;est un levier.
+                pour 3 000 € investis.
               </p>
             </section>
 

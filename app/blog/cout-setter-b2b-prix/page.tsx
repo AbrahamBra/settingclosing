@@ -260,7 +260,7 @@ export default function CoutSetterB2BPage() {
                     profil tièdement intéressé.
                   </p>
                   <p className="font-sans text-accent text-xs font-semibold">
-                    Le meilleur alignement des intérêts des deux côtés.
+                    Les intérêts du setter et du client pointent dans la même direction.
                   </p>
                 </div>
               </div>
@@ -328,8 +328,8 @@ export default function CoutSetterB2BPage() {
                 Comment calculer le ROI d&apos;un programme de setting
               </h2>
               <p className="mb-4">
-                Avant de comparer les prix, calculez la valeur que chaque RDV représente pour vous.
-                Le budget programme devient alors une évidence.
+                Avant de comparer les prix, calculez ce que chaque RDV vous rapporte concrètement.
+                Le reste suit.
               </p>
 
               <div className="bg-bg-secondary rounded-xl p-6 my-6 border border-black/8">
@@ -413,10 +413,9 @@ export default function CoutSetterB2BPage() {
               </div>
 
               <p>
-                Le vrai coût d&apos;un programme mal exécuté est trois fois le coût visible.
-                Ce n&apos;est pas une hyperbole : leads brûlés + temps perdu + réputation abîmée + turnover
-                s&apos;additionnent vite. Évaluer un programme uniquement sur le prix affiché, c&apos;est se tromper
-                d&apos;indicateur.
+                Le coût réel d&apos;un programme mal exécuté dépasse largement ce qui est facturé.
+                Leads brûlés + temps perdu + réputation abîmée + turnover s&apos;additionnent vite.
+                Évaluer un programme uniquement sur le prix affiché, c&apos;est se tromper d&apos;indicateur.
               </p>
             </section>
 

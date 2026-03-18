@@ -289,8 +289,7 @@ export default function CommentDevenirSetterB2BPage() {
               Les outils du setter LinkedIn en 2026
             </h2>
             <p className="font-sans text-text-muted leading-relaxed mb-6">
-              Un bon setter sans les bons outils perd un temps considérable sur des tâches qui peuvent
-              être accélérées. Voici ce qui est utilisé dans un programme actif.
+              Voici les outils utilisés dans un programme actif — et pourquoi chacun est là.
             </p>
 
             <div className="space-y-4">
@@ -455,7 +454,7 @@ export default function CommentDevenirSetterB2BPage() {
               confirmé, avec les informations clés dans la description de l&apos;événement.
             </p>
             <p className="font-sans text-text-muted leading-relaxed">
-              La valeur d&apos;un bon setter pour un solopreneur, c&apos;est zéro friction sur la prospection.
+              Un bon setter, pour un solopreneur, c&apos;est zéro friction sur la prospection.
               Vous ne pensez plus à &ldquo;qui contacter cette semaine&rdquo;. Vous arrivez à vos appels préparés,
               face à des prospects qui vous connaissent déjà un peu. Le reste de votre énergie va
               à ce que vous faites vraiment bien : délivrer votre offre.

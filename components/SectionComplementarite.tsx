@@ -12,13 +12,13 @@ const differentiants = [
   {
     icon: '⟡',
     title: 'Pipeline complet, un seul toit',
-    desc: "Du premier message au deal signé : signal, scoring, setting, closing. Pas deux prestataires à coordonner — une seule méthode bout en bout, calibrée pour votre marché.",
+    desc: "Du premier message au deal signé : signal, scoring, setting, closing. Un seul interlocuteur, une seule méthode, pensée pour votre offre.",
     accent: true,
   },
   {
     icon: '⟡',
     title: 'Alignés sur vos résultats',
-    desc: "500 €/mois fixe + prime par RDV livré. On n'est rémunérés sur la performance que si vous avez des rendez-vous. Nos intérêts sont les mêmes que les vôtres.",
+    desc: "500 €/mois fixe + prime par RDV livré. On ne touche de variable que sur les rendez-vous qui arrivent réellement dans votre agenda.",
     accent: false,
   },
 ]

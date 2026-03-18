@@ -6,11 +6,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 export const metadata: Metadata = {
   title: 'Setting vs Closing : quelle est la différence en B2B ? | ChallengersLab',
   description:
-    'Setting et closing sont deux phases distinctes d\'un cycle de vente B2B. Comprendre la différence vous aide à identifier votre vrai levier de croissance et dans quel ordre investir.',
+    'Setting et closing sont deux phases distinctes d\'un cycle de vente B2B. Comprendre la différence vous aide à identifier ce qui bloque réellement votre pipeline et dans quel ordre investir.',
   openGraph: {
     title: 'Setting vs Closing : quelle est la différence en B2B ?',
     description:
-      'Deux rôles distincts, deux leviers différents. Savoir lequel travailler en premier change tout à votre croissance.',
+      'Deux rôles distincts. Savoir lequel travailler en premier change tout à votre croissance.',
     locale: 'fr_FR',
     type: 'article',
   },
@@ -52,7 +52,7 @@ const faqItems = [
   {
     question: 'Faut-il absolument séparer setting et closing ?',
     answer:
-      "Pas forcément dès le départ. Quand vous commencez, vous faites tout. La séparation devient pertinente quand vous avez validé que votre offre se vend et que vous êtes limité soit par le nombre de RDV, soit par votre taux de conversion. C'est à ce moment que déléguer l'un des deux devient un vrai levier de croissance.",
+      "Pas forcément dès le départ. Quand vous commencez, vous faites tout. La séparation devient pertinente quand vous avez validé que votre offre se vend et que vous êtes limité soit par le nombre de RDV, soit par votre taux de conversion. C'est à ce moment que déléguer l'un des deux libère vraiment du volume.",
   },
   {
     question: 'Un setter peut-il apprendre à closer ?',
@@ -187,7 +187,7 @@ export default function DifferenceSettingClosingPage() {
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
               Deux rôles distincts dans un cycle de vente B2B. Comprendre lequel travailler
-              en premier change tout à votre trajectoire de croissance.
+              en premier change tout à ce que vous signez chaque mois.
             </p>
             <div className="flex items-center gap-4 font-sans text-xs text-text-muted">
               <span>Par ChallengersLab</span>
@@ -347,10 +347,10 @@ export default function DifferenceSettingClosingPage() {
               ))}
             </div>
             <p className="font-sans text-text-muted text-sm leading-relaxed mt-6">
-              Le point commun à ces 3 situations : le vrai problème est rarement là où on croit.
+              Dans les 3 cas, le vrai problème est rarement là où on croit.
               Les solopreneurs qui pensent avoir un problème de setting ont souvent un problème de
               message (Mois 2). Ceux qui pensent avoir un problème de closing ont souvent un problème
-              de discovery (Mois 1 du closing). Identifier la vraie cause évite de traiter le mauvais symptôme.
+              de discovery (Mois 1 du closing). Poser le bon diagnostic avant d&apos;investir évite de traiter le mauvais symptôme.
             </p>
           </section>
 
@@ -441,7 +441,7 @@ export default function DifferenceSettingClosingPage() {
               Setting, closing ou les deux ?
             </h3>
             <p className="font-sans text-text-muted leading-relaxed mb-6">
-              Un appel de 30 minutes suffit à identifier où se trouve votre vrai levier.
+              Un appel de 30 minutes suffit à identifier ce qui bloque réellement.
               On repart avec un plan d&apos;action concret.
             </p>
             <ButtonGlow as="a" href="/#contact">

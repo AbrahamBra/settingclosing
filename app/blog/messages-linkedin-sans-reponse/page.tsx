@@ -569,7 +569,7 @@ export default function MessagesLinkedInSansReponsePage() {
             <p className="font-sans text-text-muted leading-relaxed">
               La règle de vérification finale reste la même : lisez à voix haute.
               Si vous entendez le LLM, réécrivez.
-              C&apos;est vous qui validez — pas l&apos;algorithme. Ce principe s&apos;inscrit dans l&apos;architecture d&apos;un <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">programme de setting commercial B2B</a> structuré : IA, méthode, validation humaine.
+              C&apos;est vous qui validez — pas l&apos;algorithme. C&apos;est le principe de base d&apos;un <a href="/blog/setting-commercial-b2b" className="text-accent hover:underline transition-colors">programme de setting commercial B2B</a> : IA co-rédige, setter valide, prospect reçoit quelque chose de vrai.
             </p>
             <p className="font-sans text-text-muted leading-relaxed mt-4">
               Pour comprendre comment les trois couches s&apos;articulent — détection des signaux, scoring, phases de calibration et de scaling — voir <a href="/blog/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn</a>.

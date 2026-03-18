@@ -23,7 +23,7 @@ const steps = [
     num: '04',
     label: 'Closing',
     title: 'Convertir sans baisser le prix',
-    desc: 'Discovery structurée, valeur perçue augmentée, méthode Challenger Sale appliquée à votre activité. Vous closez plus — ou vous déléguez à des closers formés.',
+    desc: 'Discovery structurée, méthode Challenger Sale appliquée à votre activité. Vous closez plus — ou vous déléguez à des closers formés sur votre offre.',
   },
 ]
 

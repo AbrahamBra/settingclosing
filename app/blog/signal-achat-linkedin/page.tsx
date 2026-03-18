@@ -288,7 +288,7 @@ export default function SignalAchatLinkedInPage() {
                   <p className="font-sans text-text-muted leading-relaxed mb-4">
                     Le prospect a interagi avec <strong className="text-text-primary font-semibold">le contenu d&apos;un autre compte</strong> que vous surveillez —
                     un créateur, un expert, un concurrent — sur un sujet lié à votre offre.
-                    Il ne vous connaît pas encore. Mais il a montré, ailleurs, qu&apos;il cherche une réponse à votre problème.
+                    Il ne vous connaît pas encore. Mais il a montré, ailleurs, qu&apos;il cherche une réponse au problème que vous résolvez.
                   </p>
                   <p className="font-sans text-sm text-text-muted leading-relaxed mb-3">
                     <strong className="text-text-primary font-semibold">Comment le détecter :</strong>{' '}

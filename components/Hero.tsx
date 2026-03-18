@@ -82,7 +82,7 @@ export function Hero() {
               </motion.span>
             </AnimatePresence>
           </span>
-          <span>qui veulent scaler.</span>
+          <span>qui veulent plus de clients.</span>
         </motion.div>
 
         <motion.div

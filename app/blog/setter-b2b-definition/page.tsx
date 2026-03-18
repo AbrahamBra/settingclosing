@@ -52,7 +52,7 @@ const faqItems = [
   {
     question: 'Quelle est la différence entre un setter et un SDR ?',
     answer:
-      "SDR (Sales Development Representative) est le terme anglais pour setter. Les deux désignent un commercial chargé de la prospection sortante et de la prise de rendez-vous. En France, le terme 'setter' est plus courant dans l'écosystème solopreneur et infopreneur, tandis que SDR est davantage utilisé dans les startups et grands groupes.",
+      "SDR (Sales Development Representative) est le terme anglais pour setter. Les deux désignent un commercial chargé de la prospection sortante et de la prise de rendez-vous. En France, le terme 'setter' est plus courant chez les solopreneurs et infopreneurs, tandis que SDR est davantage utilisé dans les startups et grands groupes.",
   },
   {
     question: 'En combien de temps voit-on les premiers RDV avec un setter ?',
@@ -264,9 +264,8 @@ export default function SetterDefinitionPage() {
               et réduit les performances des deux.
             </p>
             <p className="font-sans text-text-muted leading-relaxed">
-              La séparation des rôles permet aussi d&apos;optimiser chacun indépendamment : vous pouvez
+              La séparation des rôles permet aussi d&apos;ajuster chaque partie sans tout casser : vous pouvez
               améliorer les messages de prospection sans toucher à l&apos;appel de vente, et vice versa.
-              C&apos;est ce qu&apos;on appelle piloter par la donnée.
             </p>
           </section>
 

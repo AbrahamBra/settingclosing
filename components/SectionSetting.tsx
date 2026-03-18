@@ -5,7 +5,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 const phases = [
   {
     title: 'Prospection assistée par IA',
-    desc: "Ciblage, Sales Navigator, messages orientés bénéfice client. L'IA génère et affine les approches en continu.",
+    desc: "Ciblage ICP, Sales Navigator, messages adaptés au contexte du prospect. L'IA affine chaque séquence au fil des retours.",
   },
   {
     title: 'Base de connaissance',
@@ -92,7 +92,7 @@ export function SectionSetting() {
                   Garantie : minimum 5 RDV qualifiés / mois
                 </p>
                 <p className="font-sans text-text-muted text-sm">
-                  En pratique : 2 à 4 RDV par semaine. Avec lead magnet, le volume monte encore — les leads remontés sont priorisés pour maximiser le closing.
+                  En pratique : 2 à 4 RDV par semaine. Avec lead magnet, le volume monte — les leads remontés sont traités en priorité.
                 </p>
               </div>
 
