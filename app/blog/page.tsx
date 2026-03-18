@@ -269,7 +269,7 @@ export default function BlogIndexPage() {
               Setting, closing et vente B2B
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed">
-              Méthodes et définitions pour solopreneurs qui veulent prospecter mieux et signer plus.
+              Méthodes et définitions pour fondateurs et freelances B2B qui veulent prospecter mieux et signer plus.
             </p>
             <p className="font-sans text-text-muted text-sm mt-3">
               {settingArticles.length + closingArticles.length + methodeArticles.length} articles · 3 guides piliers

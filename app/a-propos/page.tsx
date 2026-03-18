@@ -146,7 +146,7 @@ export default function AProposPage() {
 
             <div className="grid sm:grid-cols-3 gap-4 mb-8">
               {[
-                { stat: '10+', label: 'clients actifs en 2026' },
+                { stat: '20+', label: 'clients accompagnés en 2026' },
                 { stat: '2–4', label: 'RDV qualifiés par semaine en régime de croisière' },
                 { stat: '> 20 %', label: 'taux de réponse sur signal vs 3% sans méthode' },
               ].map(({ stat, label }) => (

@@ -343,7 +343,7 @@ export default function SetterDefinitionPage() {
               </table>
             </div>
             <p className="font-sans text-text-muted text-sm mt-4 leading-relaxed">
-              Pour un solopreneur ou un infopreneur qui structure son pipeline, l&apos;externalisation
+              Pour un fondateur ou un freelance B2B qui structure son pipeline, l&apos;externalisation
               est l&apos;option la plus réaliste. Un recrutement en CDI à ce stade représente un risque
               opérationnel et financier difficile à absorber avant d&apos;avoir validé le volume.
             </p>
