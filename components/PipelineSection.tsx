@@ -67,28 +67,30 @@ const settingSteps = [
   },
 ]
 
-const closingSteps = [
+const closingTiers = [
   {
-    num: '10',
+    level: 'Niveau 1',
     label: 'Closer la discovery',
+    threshold: '2k – 5k€',
     layers: ['methode', 'humain'] as const,
-    desc: "Seuil : deals entre 2k et 5k€. On vous forme à vendre correctement. Poser les bonnes questions avant de parler prix. Discovery structurée : comprendre le problème du prospect, qualifier son urgence, et ne pitcher qu'au bon moment. La base que 80% des fondateurs n'ont jamais apprise.",
-    tools: ['Challenger Sale', 'Discovery', '2-5k€'],
+    desc: "On vous forme à vendre correctement. Discovery structurée : comprendre le problème du prospect, qualifier son urgence, ne pitcher qu'au bon moment. La base que 80% des fondateurs n'ont jamais apprise.",
+    tools: ['Challenger Sale', 'Discovery'],
   },
   {
-    num: '11',
+    level: 'Niveau 2',
     label: 'Challenger le pricing',
+    threshold: '5k – 10k€',
     layers: ['methode', 'humain'] as const,
-    desc: "Seuil : deals entre 5k et 10k€. À ce niveau, le prospect compare et négocie. On vous forme à augmenter la valeur perçue de votre offre pour que le prix ne soit plus le critère de décision. Structurer une offre qui se vend d'elle-même. Vous signez plus — sans baisser le tarif.",
-    tools: ['Valeur perçue', 'Pricing', '5-10k€'],
+    desc: "Le prospect compare et négocie. On vous forme à augmenter la valeur perçue pour que le prix ne soit plus le critère de décision. Structurer une offre qui se vend d'elle-même.",
+    tools: ['Valeur perçue', 'Pricing'],
   },
   {
-    num: '12',
+    level: 'Niveau 3',
     label: 'Déléguer le closing',
+    threshold: '10k€+',
     layers: ['humain'] as const,
-    desc: "Seuil : deals à 10k€ et plus. Cycle de vente long, multi-interlocuteurs. Le fondateur ne peut plus tout faire seul. On recrute, forme et manage des closers dédiés sur votre offre. Vous n'êtes plus dans le pipe — vous le gérez.",
-    tools: ['Closers formés', 'Management', '10k€+'],
-    isLast: true,
+    desc: "Cycle de vente long, multi-interlocuteurs. Le fondateur ne peut plus tout faire seul. On recrute, forme et manage des closers dédiés sur votre offre. Vous n'êtes plus dans le pipe — vous le gérez.",
+    tools: ['Closers formés', 'Management'],
   },
 ]
 
@@ -141,11 +143,61 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        {/* Closing steps 10-12 */}
-        <div className="max-w-2xl mx-auto">
-          {closingSteps.map((step, i) => (
-            <ScrollReveal key={step.num} delay={(settingSteps.length + i) * 50}>
-              <PipelineStep {...step} />
+        {/* Closing tiers — horizontal cards, not a funnel */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {closingTiers.map((tier, i) => (
+            <ScrollReveal key={tier.level} delay={i * 100}>
+              <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-5 h-full">
+                {/* Top accent bar */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#34D399]" />
+
+                {/* Level + threshold */}
+                <div className="flex items-center justify-between mb-3 mt-1">
+                  <span className="text-[#34D399] text-xs font-semibold uppercase tracking-widest">
+                    {tier.level}
+                  </span>
+                  <span className="font-mono text-xs font-bold text-[#38BDF8] bg-[#38BDF8]/10 px-2 py-0.5 rounded">
+                    {tier.threshold}
+                  </span>
+                </div>
+
+                {/* Title */}
+                <h3 className="text-white font-semibold text-base mb-2">{tier.label}</h3>
+
+                {/* Layer tags */}
+                <div className="flex gap-1.5 mb-3">
+                  {tier.layers.map((layer) => {
+                    const colors = {
+                      methode: 'text-[#FBBF24] bg-[#FBBF24]/10 border-[#FBBF24]/20',
+                      humain: 'text-[#34D399] bg-[#34D399]/10 border-[#34D399]/20',
+                    }
+                    const labels = { methode: 'Méthode', humain: 'Humain' }
+                    return (
+                      <span
+                        key={layer}
+                        className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded border ${colors[layer]}`}
+                      >
+                        {labels[layer]}
+                      </span>
+                    )
+                  })}
+                </div>
+
+                {/* Description */}
+                <p className="text-text-secondary text-sm leading-relaxed mb-4">{tier.desc}</p>
+
+                {/* Tool pills */}
+                <div className="flex flex-wrap gap-1.5">
+                  {tier.tools.map((tool) => (
+                    <span
+                      key={tool}
+                      className="font-mono text-[10px] px-2 py-0.5 rounded border text-[#34D399] bg-[#34D399]/10 border-[#34D399]/20"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </ScrollReveal>
           ))}
         </div>
