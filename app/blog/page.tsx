@@ -181,6 +181,26 @@ const methodeArticles = [
   },
 ]
 
+// ─── Structured Data ──────────────────────────────────────────────────────────
+
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': 'https://challengerslab.fr/blog',
+  name: 'Blog — Setting, Closing et vente B2B',
+  description:
+    'Méthodes, définitions et stratégies pour solopreneurs et infopreneurs qui veulent mieux prospecter et mieux closer en B2B.',
+  url: 'https://challengerslab.fr/blog',
+  isPartOf: { '@id': 'https://challengerslab.fr/#website' },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://challengerslab.fr/blog' },
+    ],
+  },
+}
+
 // ─── Composant article ─────────────────────────────────────────────────────────
 
 function ArticleCard({
@@ -224,8 +244,21 @@ export default function BlogIndexPage() {
   return (
     <>
       <NavbarBlog />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <main className="bg-bg-primary pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
+
+          {/* Breadcrumb */}
+          <nav aria-label="Fil d'Ariane" className="mb-8">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+              <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
+              <li aria-hidden="true" className="select-none">›</li>
+              <li className="text-text-primary">Blog</li>
+            </ol>
+          </nav>
 
           {/* Header */}
           <header className="mb-14">
@@ -238,10 +271,31 @@ export default function BlogIndexPage() {
             <p className="font-sans text-text-muted text-lg leading-relaxed">
               Méthodes et définitions pour solopreneurs qui veulent prospecter mieux et signer plus.
             </p>
+            <p className="font-sans text-text-muted text-sm mt-3">
+              {settingArticles.length + closingArticles.length + methodeArticles.length} articles · 3 guides piliers
+            </p>
           </header>
 
-          {/* Deux guides piliers */}
-          <div className="grid sm:grid-cols-2 gap-4 mb-16">
+          {/* Navigation par catégorie */}
+          <nav aria-label="Catégories" className="flex flex-wrap gap-2 mb-12">
+            {[
+              { href: '#section-setting', label: 'Setting', count: settingArticles.length },
+              { href: '#section-closing', label: 'Closing', count: closingArticles.length },
+              { href: '#section-methode', label: 'Méthode', count: methodeArticles.length },
+            ].map(({ href, label, count }) => (
+              <a
+                key={href}
+                href={href}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/8 font-sans text-sm text-text-muted hover:text-accent hover:border-accent/30 transition-colors"
+              >
+                {label}
+                <span className="text-xs bg-black/5 rounded-full px-2 py-0.5">{count}</span>
+              </a>
+            ))}
+          </nav>
+
+          {/* Trois guides piliers */}
+          <div className="grid sm:grid-cols-3 gap-4 mb-16">
             <a
               href="/blog/setting-commercial-b2b"
               className="group flex flex-col bg-bg-secondary rounded-2xl p-6 border border-accent/20 hover:border-accent/40 transition-colors"
@@ -250,7 +304,7 @@ export default function BlogIndexPage() {
                 Guide Setting · 14 min
               </p>
               <h2 className="font-serif text-h3 text-text-primary mb-4 group-hover:text-accent transition-colors leading-snug flex-1">
-                Setting commercial B2B : définition, méthode et programme complet
+                Setting commercial B2B : définition et méthode
               </h2>
               <span className="font-sans text-sm text-accent group-hover:translate-x-1 transition-transform inline-block">
                 Lire le guide →
@@ -264,7 +318,21 @@ export default function BlogIndexPage() {
                 Guide Closing · 15 min
               </p>
               <h2 className="font-serif text-h3 text-text-primary mb-4 group-hover:text-accent transition-colors leading-snug flex-1">
-                Closing B2B : définition, méthode et programme complet
+                Closing B2B : définition et méthode
+              </h2>
+              <span className="font-sans text-sm text-accent group-hover:translate-x-1 transition-transform inline-block">
+                Lire le guide →
+              </span>
+            </a>
+            <a
+              href="/blog/methodes-vente-b2b"
+              className="group flex flex-col bg-bg-secondary rounded-2xl p-6 border border-black/8 hover:border-accent/30 transition-colors"
+            >
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
+                Guide Méthodes · 10 min
+              </p>
+              <h2 className="font-serif text-h3 text-text-primary mb-4 group-hover:text-accent transition-colors leading-snug flex-1">
+                Méthodes de vente B2B : Challenger, SPIN, SONCAS
               </h2>
               <span className="font-sans text-sm text-accent group-hover:translate-x-1 transition-transform inline-block">
                 Lire le guide →
