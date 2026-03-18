@@ -17,7 +17,28 @@
       "Bash(npm install:*)",
       "Bash(git -C /c/Users/abrah/CLsettingclosing status)",
       "Bash(git -C /c/Users/abrah/CLsettingclosing add -A)",
-      "Bash(git -C /c/Users/abrah/CLsettingclosing commit -m \"feat: scaffold Next.js project\")"
+      "Bash(git -C /c/Users/abrah/CLsettingclosing commit -m \"feat: scaffold Next.js project\")",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing add package.json package-lock.json)",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing commit -m \"feat: install all runtime and dev dependencies\")",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing add tailwind.config.ts app/globals.css)",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing commit -m \"feat: configure Tailwind tokens and CSS variables\")",
+      "Bash(npm run:*)",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing add app/layout.tsx app/page.tsx)",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing commit -m \"feat: setup layout with fonts, metadata, JSON-LD, and grain overlay\")",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing add vitest.config.ts)",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing commit -m \"feat: add Vitest config\")",
+      "Bash(npx vitest:*)",
+      "Bash(grep -l \"onMouseEnter\\\\|onMouseLeave\\\\|onClick\\\\|onChange\" /c/Users/abrah/CLsettingclosing/components/*.tsx /c/Users/abrah/CLsettingclosing/components/ui/*.tsx)",
+      "Bash(git -C /c/Users/abrah/CLsettingclosing add app/page.tsx components/LenisProvider.tsx components/CursorGlowClient.tsx components/ui/ButtonGlow.tsx)",
+      "Bash(git -C:*)",
+      "Bash(curl -s http://localhost:3000)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(findstr \":3000\")",
+      "Bash(where npm:*)",
+      "Bash(where node:*)",
+      "Bash(npx vercel:*)",
+      "Bash(niveau de maturité\" → formulation directe et imagée ; \"Il disperserait l 'énergie\":*)",
+      "Bash(git reset:*)"
     ]
   }
 }

@@ -672,6 +672,9 @@ export default function SettingCommercialPage() {
                 { href: '/blog/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : méthode complète en 2026' },
                 { href: '/blog/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
                 { href: '/blog/cout-setter-b2b-prix', label: "Coût d'un setter B2B en 2026 : les vrais chiffres" },
+                { href: '/blog/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
+                { href: '/blog/relance-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
+                { href: '/blog/closer-b2b', label: 'Closer B2B : définition, compétences et comment en recruter un' },
               ].map(({ href, label }) => (
                 <a
                   key={href}

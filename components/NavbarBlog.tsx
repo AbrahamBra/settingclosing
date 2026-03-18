@@ -44,6 +44,12 @@ export function NavbarBlog() {
         >
           Blog
         </a>
+        <a
+          href="/a-propos"
+          className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+        >
+          À propos
+        </a>
       </div>
       <div className="hidden md:block">
         <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">

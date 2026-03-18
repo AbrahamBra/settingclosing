@@ -74,5 +74,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: 'https://challengerslab.fr/blog/script-setting-linkedin',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/blog/relance-linkedin-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/blog/closer-b2b',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/a-propos',
+      lastModified: new Date('2026-03-18'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ]
 }

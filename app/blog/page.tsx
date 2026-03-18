@@ -20,6 +20,36 @@ export const metadata: Metadata = {
 
 const articles = [
   {
+    slug: 'script-setting-linkedin',
+    category: 'Setting',
+    title: 'Scripts de setting LinkedIn B2B : exemples et cadre complet',
+    description:
+      "L'anatomie d'un message LinkedIn qui obtient des réponses, 6 scripts concrets (inbound + outbound) et les 4 erreurs qui tuent le taux de réponse.",
+    readTime: '11 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
+    slug: 'relance-linkedin-b2b',
+    category: 'Setting',
+    title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur',
+    description:
+      "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois. Le cadre complet pour des follow-ups qui fonctionnent.",
+    readTime: '9 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
+    slug: 'closer-b2b',
+    category: 'Closing',
+    title: 'Closer B2B : définition, compétences et comment en recruter un',
+    description:
+      "Le closer B2B signe les deals que le setter a qualifiés. Définition exacte, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.",
+    readTime: '11 min',
+    date: '18 mars 2026',
+    dateTime: '2026-03-18',
+  },
+  {
     slug: 'prospection-linkedin-b2b',
     category: 'Setting',
     title: 'Prospection LinkedIn B2B : méthode complète en 2026',

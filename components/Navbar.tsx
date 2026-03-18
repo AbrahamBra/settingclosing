@@ -23,6 +23,7 @@ export function Navbar() {
     { label: 'Setting', href: '#setting' },
     { label: 'Closing', href: '#closing' },
     { label: 'Blog', href: '/blog' },
+    { label: 'À propos', href: '/a-propos' },
   ]
 
   return (
