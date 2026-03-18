@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
 import { PipelineSection } from '@/components/PipelineSection'
-import { ProofGrid } from '@/components/ProofGrid'
 import { PricingComparison } from '@/components/PricingComparison'
 import { BlogTeaser } from '@/components/BlogTeaser'
 import { CTAFinale } from '@/components/CTAFinale'
@@ -26,7 +25,6 @@ export default function Home() {
       <main>
         <Hero />
         <PipelineSection />
-        <ProofGrid />
         <PricingComparison />
         <BlogTeaser />
         <CTAFinale />

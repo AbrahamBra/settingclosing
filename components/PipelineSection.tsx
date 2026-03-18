@@ -216,6 +216,54 @@ export function PipelineSection() {
           ))}
         </div>
 
+        {/* Closing showcase — "Concrètement" */}
+        <ScrollReveal delay={100}>
+          <div className="mt-12 max-w-4xl mx-auto">
+            <h3 className="text-text-primary font-semibold text-lg mb-6 text-center">
+              Concrètement, ça ressemble à quoi&nbsp;?
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Card 1 — Appel enregistré */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  {/* Placeholder — remplacer par <Image> quand les screenshots sont prêts */}
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">🎥</span>
+                    <span className="text-text-muted text-sm">Screenshot appel à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    Appel enregistré et analysé
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    Chaque appel est enregistré. On le reprend ensemble pour identifier ce qui a fonctionné et ce qu&apos;on ajuste au prochain.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2 — Brief PDF */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  {/* Placeholder — remplacer par <Image> quand les screenshots sont prêts */}
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">📄</span>
+                    <span className="text-text-muted text-sm">Screenshot brief à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    Brief personnalisé après chaque session
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    Un document de debrief avec les points clés, les objections rencontrées et les axes d&apos;amélioration pour le prochain appel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+
         {/* Bottom note */}
         <ScrollReveal delay={100}>
           <p className="text-center text-text-muted text-sm mt-12 max-w-xl mx-auto">
