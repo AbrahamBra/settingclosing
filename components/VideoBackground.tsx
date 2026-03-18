@@ -1,35 +1,31 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 export function VideoBackground() {
-  const videoRef = useRef<HTMLVideoElement>(null)
+  const [videoEl, setVideoEl] = useState<HTMLVideoElement | null>(null)
+
+  // Callback ref — guaranteed to fire when the element mounts
+  const videoCallback = useCallback((node: HTMLVideoElement | null) => {
+    setVideoEl(node)
+  }, [])
 
   useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
+    if (!videoEl) return
 
-    let ticking = false
     const onScroll = () => {
-      if (ticking) return
-      ticking = true
-      requestAnimationFrame(() => {
-        const scrollY = window.scrollY
-        const maxScroll = document.documentElement.scrollHeight - window.innerHeight
-        if (maxScroll <= 0) { ticking = false; return }
-
-        // Map scroll to vertical position: top of page = 20%, bottom = 80%
-        const progress = Math.min(scrollY / maxScroll, 1)
-        const yPos = 20 + progress * 60
-        video.style.objectPosition = `center ${yPos}%`
-        ticking = false
-      })
+      const maxScroll = document.documentElement.scrollHeight - window.innerHeight
+      if (maxScroll <= 0) return
+      const progress = Math.min(window.scrollY / maxScroll, 1)
+      // Shift from top (15%) to bottom (85%) of video frame as user scrolls
+      const yPos = 15 + progress * 70
+      videoEl.style.objectPosition = `center ${yPos}%`
     }
 
     window.addEventListener('scroll', onScroll, { passive: true })
-    onScroll()
+    onScroll() // set initial position
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [videoEl])
 
   return (
     <div
@@ -43,7 +39,7 @@ export function VideoBackground() {
       }}
     >
       <video
-        ref={videoRef}
+        ref={videoCallback}
         autoPlay
         muted
         loop
@@ -52,9 +48,9 @@ export function VideoBackground() {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          objectPosition: 'center 20%',
-          filter: 'blur(1px) saturate(0.4) brightness(0.7)',
-          opacity: 0.25,
+          objectPosition: 'center 15%',
+          filter: 'saturate(0.35) brightness(0.65)',
+          opacity: 0.3,
           mixBlendMode: 'luminosity',
         }}
       >
@@ -66,7 +62,7 @@ export function VideoBackground() {
           position: 'absolute',
           inset: 0,
           background:
-            'linear-gradient(to bottom, rgba(10,9,8,0.5) 0%, transparent 15%, transparent 85%, rgba(10,9,8,0.5) 100%)',
+            'linear-gradient(to bottom, rgba(10,9,8,0.4) 0%, transparent 12%, transparent 88%, rgba(10,9,8,0.4) 100%)',
           pointerEvents: 'none',
         }}
       />
