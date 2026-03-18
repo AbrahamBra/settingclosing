@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
+import { VideoBackground } from '@/components/VideoBackground'
 import './globals.css'
 
 const inter = Inter({
@@ -101,43 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        {/* Video background — desktop only, blurred + desaturated texture */}
-        <div
-          aria-hidden="true"
-          className="hidden md:block"
-          style={{
-            position: 'fixed',
-            inset: 0,
-            pointerEvents: 'none',
-            zIndex: 0,
-          }}
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              filter: 'blur(2px) saturate(0.3) brightness(0.6)',
-              opacity: 0.18,
-              mixBlendMode: 'luminosity',
-            }}
-          >
-            <source src="/bg-video.mp4" type="video/mp4" />
-          </video>
-          {/* Top gradient fade for hero readability */}
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              background: 'linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, transparent 40%, transparent 80%, rgba(0,0,0,0.5) 100%)',
-              pointerEvents: 'none',
-            }}
-          />
-        </div>
+        <VideoBackground />
         {children}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-PLACEHOLDER"

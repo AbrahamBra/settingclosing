@@ -18,7 +18,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative overflow-hidden section-padding flex flex-col items-center text-center min-h-screen justify-center">
+    <section className="relative overflow-hidden section-padding pt-32 lg:pt-40 flex flex-col items-center text-center">
       {/* Radial glow */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] pointer-events-none select-none"
