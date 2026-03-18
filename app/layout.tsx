@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://challengerslab.fr/og-default.png',
+        url: 'https://challengerslab.fr/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'ChallengersLab — Setting commercial B2B externalisé',

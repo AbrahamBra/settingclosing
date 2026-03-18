@@ -12,6 +12,14 @@ export const metadata: Metadata = {
       'Méthodes, définitions et stratégies pour solopreneurs et infopreneurs qui veulent mieux prospecter et mieux closer en B2B.',
     locale: 'fr_FR',
     type: 'website',
+    images: [
+      {
+        url: 'https://challengerslab.fr/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Blog ChallengersLab — Setting, Closing et vente B2B',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://challengerslab.fr/blog',
