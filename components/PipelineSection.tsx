@@ -286,11 +286,10 @@ export function PipelineSection() {
             <h3 className="text-text-primary font-semibold text-lg mb-6 text-center">
               Concrètement, ça ressemble à quoi&nbsp;?
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Card 1 — Appel enregistré */}
               <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
                 <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  {/* Placeholder — remplacer par <Image> quand les screenshots sont prêts */}
                   <div className="text-center px-6">
                     <span className="text-4xl block mb-3">🎥</span>
                     <span className="text-text-muted text-sm">Screenshot appel à venir</span>
@@ -309,7 +308,6 @@ export function PipelineSection() {
               {/* Card 2 — Brief PDF */}
               <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
                 <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  {/* Placeholder — remplacer par <Image> quand les screenshots sont prêts */}
                   <div className="text-center px-6">
                     <span className="text-4xl block mb-3">📄</span>
                     <span className="text-text-muted text-sm">Screenshot brief à venir</span>
@@ -321,6 +319,24 @@ export function PipelineSection() {
                   </p>
                   <p className="text-text-secondary text-xs leading-relaxed">
                     Un document de debrief avec les points clés, les objections rencontrées et les axes d&apos;amélioration pour le prochain appel.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 — Abdelhay fait le RDV */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">🤝</span>
+                    <span className="text-text-muted text-sm">Screenshot RDV à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    Abdelhay prend le RDV à votre place
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    Il fait l&apos;appel avec votre prospect et applique la méthode en situation réelle. Vous observez, vous apprenez, vous progressez.
                   </p>
                 </div>
               </div>
