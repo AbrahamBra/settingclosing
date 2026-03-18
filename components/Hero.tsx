@@ -102,23 +102,6 @@ export function Hero() {
           </a>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="flex justify-center gap-12 mt-16 pt-6 border-t border-white/[0.06]"
-        >
-          {[
-            { num: '5+', label: 'RDV/mois garantis' },
-            { num: '500€', label: '/mois' },
-            { num: '14j', label: 'premiers résultats' },
-          ].map((s) => (
-            <div key={s.label} className="text-center">
-              <div className="font-mono text-2xl font-extrabold text-[#D4956A]">{s.num}</div>
-              <div className="text-text-muted text-xs uppercase tracking-wider mt-1">{s.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   )

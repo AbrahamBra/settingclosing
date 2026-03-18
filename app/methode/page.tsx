@@ -52,7 +52,7 @@ const phases = [
     accentText: 'text-semantic-ia',
     steps: settingSteps.slice(0, 3),
     bg: 'bg-bg-secondary',
-    gradient: 'from-[#818CF8]/[0.02]',
+    gradient: 'from-[#A78BFA]/[0.02]',
   },
   {
     id: 'qualification',
