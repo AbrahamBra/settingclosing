@@ -35,7 +35,6 @@ describe('POST /api/contact', () => {
     const res = await callRoute({
       firstName: 'Jean',
       email: 'jean@example.com',
-      interest: 'setting',
     })
     expect(res.status).toBe(200)
     const json = await res.json()
@@ -46,7 +45,6 @@ describe('POST /api/contact', () => {
     const res = await callRoute({
       firstName: 'Jean',
       email: 'not-an-email',
-      interest: 'setting',
     })
     expect(res.status).toBe(422)
   })

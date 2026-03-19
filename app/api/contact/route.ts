@@ -5,7 +5,6 @@ interface ContactPayload {
   firstName: string
   email: string
   phone?: string
-  interest: 'setting' | 'closing' | 'les_deux'
   message?: string
 }
 
@@ -19,9 +18,6 @@ function validate(data: Partial<ContactPayload>): string | null {
   }
   if (!data.email || !isValidEmail(data.email)) {
     return 'Adresse email invalide'
-  }
-  if (!data.interest || !['setting', 'closing', 'les_deux'].includes(data.interest)) {
-    return 'Veuillez sélectionner un service'
   }
   if (data.message && data.message.length > 1000) {
     return 'Message trop long (maximum 1000 caractères)'
@@ -50,12 +46,12 @@ export async function POST(request: Request) {
     await resend.emails.send({
       from: 'ChallengersLab <noreply@challengerslab.fr>',
       to: process.env.CONTACT_EMAIL!,
-      subject: `Nouvelle demande — ${payload.interest} — ${payload.firstName}`,
+      subject: `Nouvelle demande — setting — ${payload.firstName}`,
       text: [
         `Prénom : ${payload.firstName}`,
         `Email : ${payload.email}`,
         `Téléphone : ${payload.phone ?? 'Non renseigné'}`,
-        `Service : ${payload.interest}`,
+        `Service : setting`,
         `Message : ${payload.message ?? 'Aucun message'}`,
       ].join('\n'),
     })
