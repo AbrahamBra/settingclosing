@@ -22,6 +22,9 @@ export function VideoBackground() {
       videoEl.style.objectPosition = `center ${yPos}%`
     }
 
+    // Slow the video down so it doesn't compete with text
+    videoEl.playbackRate = 0.4
+
     window.addEventListener('scroll', onScroll, { passive: true })
     onScroll() // set initial position
     return () => window.removeEventListener('scroll', onScroll)
@@ -50,7 +53,7 @@ export function VideoBackground() {
           objectFit: 'cover',
           objectPosition: 'center 15%',
           filter: 'saturate(0.35) brightness(0.65)',
-          opacity: 0.3,
+          opacity: 0.18,
           mixBlendMode: 'luminosity',
         }}
       >
