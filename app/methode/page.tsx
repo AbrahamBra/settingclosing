@@ -103,7 +103,7 @@ export default function MethodePage() {
                 9 étapes. 3 couches. Zéro message sans validation humaine.
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                Chaque étape du pipeline combine trois couches distinctes : l&apos;IA détecte et co-rédige,
+                Chaque étape du pipeline combine trois couches : l&apos;IA détecte et co-rédige,
                 la méthode filtre et calibre, l&apos;humain valide et décide. Aucun message ne part sans
                 avoir traversé les trois.
               </p>

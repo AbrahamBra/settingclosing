@@ -41,7 +41,7 @@ export const settingSteps = [
     num: '01',
     label: 'Stratégie & ciblage',
     layers: ['hybrid'] as const,
-    desc: "ICP défini avec l'IA. Comptes à monitorer sélectionnés (concurrents, complémentaires). Filtres Sales Navigator configurés : fonctions, industrie, taille, triggers récents. On valide chaque cible — c'est la fondation du reste.",
+    desc: "ICP défini avec l'IA. Comptes à monitorer sélectionnés (concurrents, complémentaires). Filtres Sales Navigator configurés : fonctions, industrie, taille, triggers récents. On valide chaque cible — c'est la base de tout le reste.",
     tools: ['Sales Navigator', 'ICP'],
     pedagogy: {
       mistake: 'Importer 10 000 profils depuis Sales Navigator avec des filtres larges ("directeur", "France", "SaaS") et lancer une séquence automatisée dessus. Le volume rassure. Le taux de réponse, non.',
@@ -52,7 +52,7 @@ export const settingSteps = [
     num: '02',
     label: 'Signaux inbound',
     layers: ['ia'] as const,
-    desc: "Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel type de contenu. On traque aussi les lead magnets à succès pour maximiser la prise de RDV — c'est là que le scoring devient clé : LinkedIn limite les demandes d'ajout par semaine et la messagerie devient vite ingérable sans priorisation.",
+    desc: "Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel type de contenu. On traque aussi les lead magnets à succès pour maximiser la prise de RDV — le scoring fait toute la différence : LinkedIn limite les demandes d'ajout par semaine et la messagerie devient vite ingérable sans priorisation.",
     tools: ['Reactin', 'Lead magnets', 'Scoring'],
     pedagogy: {
       mistake: "Installer un outil de tracking qui notifie à chaque like sur vos posts. Résultat : 45 notifications par jour, aucune priorisation. Un CEO qui like un post et un étudiant en marketing reçoivent le même traitement.",
@@ -133,7 +133,7 @@ export const settingSteps = [
     tools: ['Setter', 'Nurturing'],
     pedagogy: {
       mistake: "Pousser au rendez-vous dès le deuxième message. \"Seriez-vous disponible pour un call de 15 min ?\" Le prospect n'a encore rien demandé. Ça ressemble à ce que c'est : de la prospection déguisée en conversation.",
-      arbitrage: "On convertit la conversation en rendez-vous quand le timing est bon. Pas de pitch — une ouverture. Les leads qui ne sont pas prêts rentrent en nurturing vers la newsletter. Forcer un RDV tiède, c'est perdre un client chaud de dans 3 mois.",
+      arbitrage: "On convertit la conversation en rendez-vous quand le timing est bon. Pas de pitch — une ouverture. Les leads qui ne sont pas prêts rentrent en nurturing vers la newsletter. Forcer un RDV tiède, c'est perdre un client chaud dans 3 mois.",
     },
   },
 ] as const
