@@ -140,30 +140,31 @@ export function PipelineSection() {
               </h3>
 
               <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
-                On construit un formulaire de lead magnet conçu pour capter les signaux d&apos;achat dès la première interaction.
-                Chaque question score le prospect en temps réel. Les leads chauds passent en setting téléphonique — zéro invitation LinkedIn, zéro limite.
+                L&apos;outbound plafonne à 100 invitations par semaine. Pour dépasser cette limite, on active l&apos;inbound&nbsp;: posts LinkedIn, lead magnets, formulaire de scoring.
+                On conseille sur les sujets et les formats de lead magnet. On travaille avec des clients qui ont déjà une stratégie de contenu active — et on a des partenaires pour ceux qui démarrent.
+                Résultat&nbsp;: les leads chauds arrivent en setting téléphonique sans passer par l&apos;invitation.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div className="flex items-start gap-3">
                   <span className="text-semantic-methode text-sm mt-0.5">→</span>
                   <div>
-                    <p className="text-text-primary text-sm font-semibold">Scoring by design</p>
-                    <p className="text-text-secondary text-xs">Le formulaire qualifie avant vous</p>
+                    <p className="text-text-primary text-sm font-semibold">Conseil lead magnet</p>
+                    <p className="text-text-secondary text-xs">Sujets, formats, angles&nbsp;: on cadre avec vous</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-semantic-methode text-sm mt-0.5">→</span>
                   <div>
-                    <p className="text-text-primary text-sm font-semibold">Setting téléphonique</p>
-                    <p className="text-text-secondary text-xs">Pas d&apos;invitation, pas de limite</p>
+                    <p className="text-text-primary text-sm font-semibold">Scoring intégré</p>
+                    <p className="text-text-secondary text-xs">Le formulaire qualifie en temps réel</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-semantic-methode text-sm mt-0.5">→</span>
                   <div>
-                    <p className="text-text-primary text-sm font-semibold">Itératif</p>
-                    <p className="text-text-secondary text-xs">On améliore le formulaire en continu</p>
+                    <p className="text-text-primary text-sm font-semibold">Setting direct</p>
+                    <p className="text-text-secondary text-xs">Zéro invitation, zéro plafond</p>
                   </div>
                 </div>
               </div>
