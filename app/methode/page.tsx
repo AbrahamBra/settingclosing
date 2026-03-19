@@ -93,7 +93,7 @@ export default function MethodePage() {
       <main className="pt-20">
 
         {/* ── Hero ─────────────────────────────────────────────────────────── */}
-        <section className="bg-bg-primary section-padding">
+        <section id="methode-hero" className="bg-bg-primary section-padding">
           <div className="container-max max-w-3xl mx-auto text-center">
             <ScrollReveal>
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
@@ -123,10 +123,6 @@ export default function MethodePage() {
                 })}
               </div>
 
-              {/* Pedagogy intro */}
-              <p className="text-text-secondary text-base leading-relaxed italic max-w-xl mx-auto">
-                Vous avez les outils. Tout le monde les a. Le vrai avantage, c&apos;est de savoir quand l&apos;IA suffit, quand elle doit être entraînée sur votre métier, et quand seul un humain peut débloquer le deal.
-              </p>
             </ScrollReveal>
           </div>
         </section>
@@ -135,11 +131,12 @@ export default function MethodePage() {
         {phases.map((phase) => (
           <section
             key={phase.id}
-            className={`${phase.bg} section-padding bg-gradient-to-b ${phase.gradient} to-transparent`}
+            id={phase.id}
+            className={`${phase.bg} section-padding bg-gradient-to-b ${phase.gradient} to-transparent scroll-mt-28`}
           >
             <div className="container-max">
               <ScrollReveal>
-                <div className="flex items-center gap-3 mb-10">
+                <div className="flex items-center gap-3 mb-12">
                   <span className={`font-sans text-xs font-semibold uppercase tracking-widest ${phase.accentText}`}>
                     {phase.phaseLabel}
                   </span>
@@ -152,7 +149,7 @@ export default function MethodePage() {
 
               <div className="max-w-2xl mx-auto">
                 {phase.steps.map((step, i) => (
-                  <ScrollReveal key={step.num} delay={i * 80}>
+                  <ScrollReveal key={step.num} delay={i * 60}>
                     <PipelineStep
                       num={step.num}
                       label={step.label}
