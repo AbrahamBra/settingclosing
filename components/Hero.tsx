@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { ButtonGlow } from './ui/ButtonGlow'
 
-const personas = ['fondateurs', 'freelances', 'solopreneurs']
+const personas = ['consultants', 'fondateurs', 'indépendants B2B']
 
 export function Hero() {
   const [index, setIndex] = useState(0)
@@ -57,7 +57,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-secondary mb-4 max-w-xl mx-auto"
         >
-          Votre équipe setting externalisée. Des RDV qualifiés dans votre agenda, chaque semaine.
+          On prospecte sur LinkedIn pour vous. Premiers RDV dès la première semaine.
         </motion.p>
 
         <motion.div
@@ -67,7 +67,7 @@ export function Hero() {
           className="flex items-center justify-center gap-2 text-text-muted font-sans text-base mb-12"
         >
           <span>Pour les</span>
-          <span className="relative inline-block w-[165px] h-6">
+          <span className="relative inline-block w-[195px] h-6">
             <AnimatePresence mode="wait">
               <motion.span
                 key={personas[index]}
@@ -81,7 +81,7 @@ export function Hero() {
               </motion.span>
             </AnimatePresence>
           </span>
-          <span>qui veulent plus de clients.</span>
+          <span>qui ont une offre qui marche — et veulent remplir leur agenda.</span>
         </motion.div>
 
         <motion.div
