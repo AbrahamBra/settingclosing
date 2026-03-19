@@ -17,10 +17,10 @@ const articles = [
     meta: '8 min',
   },
   {
-    category: 'Closing',
-    categoryColor: '#34D399',
-    title: 'Closer avec la méthode Challenger Sale',
-    meta: '10 min',
+    category: 'Setting',
+    categoryColor: '#A78BFA',
+    title: 'Comment qualifier un prospect LinkedIn en 3 messages',
+    meta: '9 min',
   },
 ]
 
