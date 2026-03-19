@@ -8,7 +8,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 const loopSteps = [
   { label: 'IA détecte', detail: 'Signaux, timing, intent', color: 'border-semantic-ia/20 bg-semantic-ia/10 text-semantic-ia' },
   { label: 'Méthode qualifie', detail: 'Scoring, filtres, séquence', color: 'border-semantic-methode/20 bg-semantic-methode/10 text-semantic-methode' },
-  { label: 'Humain décide', detail: 'Validation, ton, closing', color: 'border-semantic-humain/20 bg-semantic-humain/10 text-semantic-humain' },
+  { label: 'Humain décide', detail: 'Validation, ton, ajustement', color: 'border-semantic-humain/20 bg-semantic-humain/10 text-semantic-humain' },
   { label: '↻ Skill encodé', detail: 'Apprentissage capitalisé', color: 'border-semantic-methode/30 bg-semantic-methode/[0.12] text-semantic-methode font-semibold' },
 ]
 
@@ -24,20 +24,20 @@ interface Phase {
 const phases: Phase[] = [
   {
     title: 'Mois 1',
-    subtitle: 'Calibrage',
+    subtitle: 'Lancement & premiers RDV',
     borderColor: 'border-semantic-methode/[0.12]',
     titleColor: 'text-semantic-methode',
     description:
-      "L\u2019humain explore votre march\u00e9, teste les angles, pose les fondations. Chaque ajustement est pris en compte et enrichit la base de connaissance.",
+      "On ne commence pas par un audit de 30 jours. D\u00e8s la premi\u00e8re semaine, votre setter envoie des messages, g\u00e9n\u00e8re des conversations et pose des RDV. En parall\u00e8le, chaque interaction enrichit la connaissance de votre march\u00e9.",
     details: [
-      'Le setter apprend votre ICP',
-      "L\u2019IA cartographie les signaux",
-      'Premiers messages test\u00e9s et ajust\u00e9s',
+      'Premiers messages envoy\u00e9s d\u00e8s la semaine 1',
+      'Le setter apprend votre ICP en conditions r\u00e9elles',
+      'Chaque retour affine le ciblage pour la suite',
     ],
   },
   {
     title: 'Mois 2',
-    subtitle: 'Acc\u00e9l\u00e9ration',
+    subtitle: 'Mont\u00e9e en puissance',
     borderColor: 'border-white/[0.06]',
     titleColor: 'text-text-primary',
     description:
@@ -50,15 +50,15 @@ const phases: Phase[] = [
   },
   {
     title: 'Mois 3+',
-    subtitle: 'La machine tourne',
+    subtitle: 'R\u00e9gime de croisi\u00e8re',
     borderColor: 'border-semantic-humain/[0.15]',
     titleColor: 'text-semantic-humain',
     description:
-      "La machinerie est rod\u00e9e. Le setter se concentre sur le closing et les pivots strat\u00e9giques.",
+      "Le pipeline est rod\u00e9. Le setter se concentre sur l\u2019optimisation et les pivots strat\u00e9giques.",
     details: [
       'Setting quasi-autonome',
       'Pivot de march\u00e9 en 3 jours',
-      'Closing = 100\u00a0% humain, toujours',
+      'Le setter optimise en continu',
     ],
   },
 ]
@@ -76,11 +76,11 @@ export function MethodBlock() {
               Notre m&eacute;thode
             </p>
             <h2 className="font-sans text-h2 text-text-primary mb-3">
-              Chaque semaine, la machine s&apos;affine.
+              R&eacute;sultats d&egrave;s la semaine 1. Chaque semaine, &ccedil;a s&apos;acc&eacute;l&egrave;re.
             </h2>
             <p className="text-sm text-text-secondary leading-relaxed">
-              L&apos;IA d&eacute;tecte, la m&eacute;thode structure, l&apos;humain d&eacute;cide.
-              Chaque d&eacute;cision enrichit le tour suivant.
+              L&apos;IA d&eacute;tecte et pr&eacute;pare. L&apos;humain valide et envoie.
+              Chaque semaine, le syst&egrave;me apprend de vos r&eacute;sultats.
             </p>
           </div>
         </ScrollReveal>
