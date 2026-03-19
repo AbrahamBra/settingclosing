@@ -6,6 +6,7 @@ import { PricingComparison } from '@/components/PricingComparison'
 import { BlogTeaser } from '@/components/BlogTeaser'
 import { SocialProof } from '@/components/SocialProof'
 import { CTAFinale } from '@/components/CTAFinale'
+import { PainPoint } from '@/components/PainPoint'
 import { Footer } from '@/components/Footer'
 import { CursorGlowClient } from '@/components/CursorGlowClient'
 
@@ -26,6 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
+        <PainPoint />
         <PipelineSection />
         <PricingComparison />
         <CTAFinale />
