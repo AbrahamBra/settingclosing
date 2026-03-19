@@ -38,7 +38,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-18',
-  dateModified: '2026-03-18',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/comment-devenir-setter-b2b',
   mainEntityOfPage: {
@@ -88,6 +88,46 @@ const faqSchema = {
   })),
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment devenir setter B2B',
+  description:
+    "Les étapes concrètes pour devenir setter B2B en 2026 : comprendre le métier, développer les compétences clés, maîtriser les outils et se former sur le terrain.",
+  step: [
+    {
+      '@type': 'HowToStep',
+      name: 'Comprendre le quotidien du setter',
+      text: "Le setter analyse les signaux inbound, rédige des messages personnalisés (5 phrases max), gère les réponses et les relances, et tient un journal de bord quotidien.",
+      position: 1,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Développer les 3 compétences clés',
+      text: "Apprenez à lire un profil LinkedIn en 2 minutes, à écrire des messages courts et précis, et à maintenir la discipline de relance sur 5 à 6 points de contact.",
+      position: 2,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Maîtriser les outils de prospection',
+      text: "Installez Sales Navigator pour le ciblage, Reactin pour les signaux inbound, Spyer pour les comptes tiers, un CRM pour le suivi, et une IA pour la co-rédaction.",
+      position: 3,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Choisir un modèle de rémunération',
+      text: "Le modèle hybride (fixe bas + prime par RDV) est recommandé. Il aligne les intérêts sur la qualité des rendez-vous, pas seulement le volume.",
+      position: 4,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Se former sur le terrain',
+      text: "Envoyez de vrais messages sur de vrais profils dès la première semaine. Tenez un journal de bord, itérez avec du feedback sur chaque campagne. Comptez 4 à 8 semaines pour être opérationnel.",
+      position: 5,
+    },
+  ],
+}
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -114,8 +154,12 @@ export default function CommentDevenirSetterB2BPage() {
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -141,7 +185,7 @@ export default function CommentDevenirSetterB2BPage() {
               Les compétences réelles, les outils, la rémunération et les étapes pour démarrer.
               Ce que personne ne vous dit dans les formations à 3 000 €.
             </p>
-            <AuthorBlock date="2026-03-18" readTime="11 min de lecture" dateLabel="18 mars 2026" />
+            <AuthorBlock date="2026-03-18" readTime="11 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Bloc Définition */}

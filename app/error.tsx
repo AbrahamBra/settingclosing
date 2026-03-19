@@ -7,7 +7,7 @@ export default function Error({
   reset: () => void
 }) {
   return (
-    <main className="bg-bg-primary min-h-screen flex items-center">
+    <main className="min-h-screen flex items-center">
       <div className="container-max max-w-2xl px-6 md:px-8 text-center py-28">
         <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
           Erreur

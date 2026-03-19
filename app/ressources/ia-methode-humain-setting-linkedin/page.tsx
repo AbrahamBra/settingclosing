@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-17',
-  dateModified: '2026-03-17',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/ia-methode-humain-setting-linkedin',
   mainEntityOfPage: {
@@ -125,7 +125,7 @@ export default function Page() {
 
       <NavbarBlog />
 
-      <main className="bg-bg-primary min-h-screen">
+      <main className="min-h-screen">
         <div className="container-max max-w-2xl py-16 px-4">
 
           {/* Breadcrumb */}
@@ -151,7 +151,7 @@ export default function Page() {
               Le taux de réponse reste à 3%. La conclusion rapide : LinkedIn ne marche pas pour eux.
               La vraie raison : le modèle n&apos;a aucun contexte sur leur marché.
             </p>
-            <AuthorBlock date="2026-03-17" readTime="12 min de lecture" dateLabel="17 mars 2026" />
+            <AuthorBlock date="2026-03-17" readTime="12 min de lecture" dateLabel="17 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Definition block — GEO */}

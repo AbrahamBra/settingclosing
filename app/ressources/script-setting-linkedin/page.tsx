@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-18',
-  dateModified: '2026-03-18',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/script-setting-linkedin',
   mainEntityOfPage: {
@@ -90,6 +90,52 @@ const faqSchema = {
   })),
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment rédiger un script de setting LinkedIn B2B',
+  description:
+    'Structure en 5 positions pour écrire des messages LinkedIn B2B qui obtiennent des réponses, avec exemples inbound et outbound.',
+  step: [
+    {
+      '@type': 'HowToStep',
+      name: "Rédiger l'accroche sur le signal",
+      text: "Commencez par une observation précise sur un événement récent du prospect : un post, un changement de poste, une actualité de leur secteur.",
+      position: 1,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Ancrer un fait précis sur le prospect',
+      text: "Ajoutez un élément concret tiré de leur profil ou activité récente pour prouver que vous avez fait le travail de recherche.",
+      position: 2,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Créer le pont vers ce que vous faites',
+      text: "Connectez leur situation à votre domaine sans pitcher votre offre. Montrez que vous comprenez leur contexte pour générer de la curiosité.",
+      position: 3,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Poser une question ouverte',
+      text: "Terminez par une question courte qui invite à la conversation sans engagement fort, comme « Est-ce que c'est un sujet pour vous en ce moment ? ».",
+      position: 4,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Ajouter une preuve courte (optionnel)',
+      text: "Si pertinent, ajoutez une ligne de preuve : un résultat concret, un client similaire ou une statistique qui renforce votre message.",
+      position: 5,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Gérer le suivi si pas de réponse',
+      text: "Relancez à J+3 avec un angle différent, puis à J+7 avec un breakup message. Deux relances maximum, chacune apportant un angle nouveau.",
+      position: 6,
+    },
+  ],
+}
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -126,8 +172,12 @@ export default function ScriptSettingLinkedinPage() {
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -153,7 +203,7 @@ export default function ScriptSettingLinkedinPage() {
               Pas de templates à copier-coller. Un cadre pour écrire des messages qui obtiennent
               vraiment des réponses, avec 6 scripts concrets pour les situations les plus courantes.
             </p>
-            <AuthorBlock date="2026-03-18" readTime="11 min de lecture" dateLabel="18 mars 2026" />
+            <AuthorBlock date="2026-03-18" readTime="11 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Definition Block */}

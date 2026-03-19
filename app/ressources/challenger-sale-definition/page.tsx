@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-16',
-  dateModified: '2026-03-16',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/challenger-sale-definition',
   mainEntityOfPage: {
@@ -166,7 +166,7 @@ export default function ChallengerSalePage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -192,7 +192,7 @@ export default function ChallengerSalePage() {
               La méthode de vente B2B issue d&apos;une étude sur 6 000 commerciaux — et pourquoi
               le profil qui surperforme n&apos;est pas celui qu&apos;on attendait.
             </p>
-            <AuthorBlock date="2026-03-16" readTime="9 min de lecture" dateLabel="16 mars 2026" />
+            <AuthorBlock date="2026-03-16" readTime="9 min de lecture" dateLabel="16 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Definition Block */}

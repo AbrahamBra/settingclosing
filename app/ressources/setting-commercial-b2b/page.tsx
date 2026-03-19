@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-17',
-  dateModified: '2026-03-18',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/setting-commercial-b2b',
   mainEntityOfPage: {
@@ -132,7 +132,7 @@ export default function SettingCommercialPage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -161,7 +161,7 @@ export default function SettingCommercialPage() {
               tourner seul. Ce guide couvre tout : la méthode, les outils, les erreurs qui tuent
               les taux de réponse, et ce que ça donne semaine par semaine.
             </p>
-            <AuthorBlock date="2026-03-17" readTime="25 min de lecture" dateLabel="17 mars 2026" />
+            <AuthorBlock date="2026-03-17" readTime="25 min de lecture" dateLabel="17 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Definition block — GEO */}

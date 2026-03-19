@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-02-26',
-  dateModified: '2026-02-26',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/devenir-business-developer',
   mainEntityOfPage: {
@@ -117,7 +117,7 @@ export default function DevenirBusinessDeveloperPage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -144,7 +144,7 @@ export default function DevenirBusinessDeveloperPage() {
               explique le quotidien réel et comment vous pouvez vous y former en alternance depuis Chartres,
               en étant rémunéré.
             </p>
-            <AuthorBlock date="2026-02-26" readTime="7 min de lecture" dateLabel="26 février 2026" />
+            <AuthorBlock date="2026-02-26" readTime="7 min de lecture" dateLabel="26 février 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Stats */}

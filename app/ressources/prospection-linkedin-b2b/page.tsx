@@ -38,7 +38,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-18',
-  dateModified: '2026-03-18',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/prospection-linkedin-b2b',
   mainEntityOfPage: {
@@ -88,6 +88,52 @@ const faqSchema = {
   })),
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment prospecter sur LinkedIn en B2B',
+  description:
+    "Méthode complète de prospection LinkedIn B2B signal-based : détecter les signaux, cibler avec Sales Navigator, rédiger des messages calibrés et construire un système.",
+  step: [
+    {
+      '@type': 'HowToStep',
+      name: 'Identifier les sources de signaux (inbound et tiers)',
+      text: "Détectez les prospects chauds via deux flux : les signaux inbound (réactions à vos posts) et les signaux tiers (interactions sur des comptes surveillés).",
+      position: 1,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Cibler avec Sales Navigator',
+      text: "Utilisez Sales Navigator pour filtrer par poste, secteur et taille d'entreprise. Créez des listes de comptes à monitorer et activez les alertes de changement de poste.",
+      position: 2,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Rédiger un message de prospection calibré',
+      text: "Respectez la règle des 5 phrases maximum. Ancrez un fait précis en deuxième phrase. Pas de pitch au premier DM. Testez le message à voix haute avant envoi.",
+      position: 3,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Mettre en place la séquence de relances',
+      text: "Relancez à J+3, J+7, J+14 et J+21 avec un angle différent à chaque fois. Ne mentionnez jamais l'absence de réponse. Fermez proprement au dernier message.",
+      position: 4,
+    },
+    {
+      '@type': 'HowToStep',
+      name: "Utiliser l'IA comme co-rédacteur",
+      text: "Fournissez le profil LinkedIn, les règles de rédaction et deux exemples au modèle IA. Relisez et validez chaque draft avant envoi.",
+      position: 5,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Construire un système de prospection',
+      text: "Calibrez pendant 8 semaines avec 20 à 40 messages par semaine. Mesurez les taux de réponse par signal et segment. Puis scalez à 50-100 messages avec un taux stable au-dessus de 15 %.",
+      position: 6,
+    },
+  ],
+}
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -114,8 +160,12 @@ export default function ProspectionLinkedInB2BPage() {
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -143,7 +193,7 @@ export default function ProspectionLinkedInB2BPage() {
               c&apos;est le contexte. Voici comment construire un système qui livre des RDV qualifiés
               semaine après semaine.
             </p>
-            <AuthorBlock date="2026-03-18" readTime="13 min de lecture" dateLabel="18 mars 2026" />
+            <AuthorBlock date="2026-03-18" readTime="13 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Bloc Définition */}

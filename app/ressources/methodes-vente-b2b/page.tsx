@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-18',
-  dateModified: '2026-03-18',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/methodes-vente-b2b',
   mainEntityOfPage: {
@@ -251,7 +251,7 @@ export default function MethodesVenteB2BPage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -279,7 +279,7 @@ export default function MethodesVenteB2BPage() {
               approches les plus efficaces en B2B, quand les utiliser, et comment les combiner dans un
               pipeline concret.
             </p>
-            <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" />
+            <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Key Insight */}

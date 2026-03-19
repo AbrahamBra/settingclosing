@@ -65,6 +65,16 @@ const orgSchema = {
   ],
   areaServed: 'FR',
   serviceType: 'Setting commercial B2B externalisé',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'contact@challengerslab.fr',
+    contactType: 'customer service',
+    availableLanguage: 'French',
+    url: 'https://www.linkedin.com/company/challengerslab',
+  },
+  sameAs: [
+    'https://www.linkedin.com/company/challengerslab',
+  ],
 }
 
 const breadcrumbSchema = {
@@ -116,7 +126,7 @@ export default function AProposPage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}

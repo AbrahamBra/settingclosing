@@ -57,7 +57,7 @@ export default function ResourcesIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesSchema) }}
       />
-      <main className="bg-[#0A0908] pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <BlogContent />
       </main>
       <Footer />

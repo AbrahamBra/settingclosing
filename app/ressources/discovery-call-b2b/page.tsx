@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-18',
-  dateModified: '2026-03-18',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/discovery-call-b2b',
   mainEntityOfPage: {
@@ -90,6 +90,40 @@ const faqSchema = {
   })),
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment conduire une discovery call B2B',
+  description:
+    "Structure en 4 phases pour conduire une discovery call B2B efficace : ouverture, exploration du problème, qualification du décideur et synthèse.",
+  step: [
+    {
+      '@type': 'HowToStep',
+      name: 'Ouverture et cadrage',
+      text: "Posez le cadre de l'appel dès le début : expliquez que vous voulez comprendre la situation du prospect avant de parler de votre offre. Sécurisez 20 à 25 minutes pour la discovery.",
+      position: 1,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Exploration du problème',
+      text: "Posez des questions ouvertes pour comprendre le problème précis, depuis quand il existe, ce qu'il coûte concrètement et ce qui a déjà été essayé. Creusez chaque réponse intéressante.",
+      position: 2,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Qualification du décideur et du timing',
+      text: "Identifiez si la personne en face peut prendre la décision d'achat. Demandez s'il y a un co-décideur à impliquer et évaluez l'urgence réelle du besoin.",
+      position: 3,
+    },
+    {
+      '@type': 'HowToStep',
+      name: 'Synthèse et transition vers le pitch',
+      text: "Résumez ce que vous avez compris dans vos propres mots et obtenez la confirmation du prospect. Cette validation crée l'ouverture naturelle pour présenter votre offre.",
+      position: 4,
+    },
+  ],
+}
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -116,8 +150,12 @@ export default function DiscoveryCallPage() {
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -144,7 +182,7 @@ export default function DiscoveryCallPage() {
               que le closeur a pitché sans vraiment comprendre ce que le prospect voulait. La discovery
               call est la phase qui évite ça — et la plupart des gens la bâclent.
             </p>
-            <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" />
+            <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Résultat concret */}

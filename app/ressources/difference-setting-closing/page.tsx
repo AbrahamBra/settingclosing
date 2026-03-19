@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-16',
-  dateModified: '2026-03-16',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/difference-setting-closing',
   mainEntityOfPage: {
@@ -164,7 +164,7 @@ export default function DifferenceSettingClosingPage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -190,7 +190,7 @@ export default function DifferenceSettingClosingPage() {
               Deux rôles distincts dans un cycle de vente B2B. Comprendre lequel travailler
               en premier change tout à ce que vous signez chaque mois.
             </p>
-            <AuthorBlock date="2026-03-16" readTime="7 min de lecture" dateLabel="16 mars 2026" />
+            <AuthorBlock date="2026-03-16" readTime="7 min de lecture" dateLabel="16 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Two Definition Blocks */}

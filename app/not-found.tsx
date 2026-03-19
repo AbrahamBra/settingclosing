@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <>
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24 min-h-[60vh] flex items-center">
+      <main className="pt-28 pb-24 min-h-[60vh] flex items-center">
         <div className="container-max max-w-2xl px-6 md:px-8 text-center">
           <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
             Erreur 404

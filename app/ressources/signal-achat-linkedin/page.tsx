@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-17',
-  dateModified: '2026-03-17',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/signal-achat-linkedin',
   mainEntityOfPage: {
@@ -155,7 +155,7 @@ export default function SignalAchatLinkedInPage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -181,7 +181,7 @@ export default function SignalAchatLinkedInPage() {
               La plupart des solopreneurs pensent que prospecter sur LinkedIn, c&apos;est contacter des inconnus à froid.
               Un signal d&apos;achat, c&apos;est l&apos;opposé : le prospect a déjà levé la main — vous n&apos;avez plus qu&apos;à le voir.
             </p>
-            <AuthorBlock date="2026-03-17" readTime="7 min de lecture" dateLabel="17 mars 2026" />
+            <AuthorBlock date="2026-03-17" readTime="7 min de lecture" dateLabel="17 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Definition Block */}

@@ -40,7 +40,7 @@ const articleSchema = {
     url: 'https://challengerslab.fr',
   },
   datePublished: '2026-03-16',
-  dateModified: '2026-03-16',
+  dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
   url: 'https://challengerslab.fr/ressources/setter-b2b-definition',
   mainEntityOfPage: {
@@ -158,7 +158,7 @@ export default function SetterDefinitionPage() {
         }}
       />
       <NavbarBlog />
-      <main className="bg-bg-primary pt-28 pb-24">
+      <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">
 
           {/* Breadcrumb */}
@@ -183,7 +183,7 @@ export default function SetterDefinitionPage() {
             <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Définition complète, rôle au quotidien, coût réel et les 3 phases du setting expliquées simplement.
             </p>
-            <AuthorBlock date="2026-03-16" readTime="8 min de lecture" dateLabel="16 mars 2026" />
+            <AuthorBlock date="2026-03-16" readTime="8 min de lecture" dateLabel="16 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Definition Block — auto-extractable par les IA */}
