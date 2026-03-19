@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
-import { PipelineSummary } from '@/components/PipelineSummary'
 import { PipelineSection } from '@/components/PipelineSection'
 import { PricingComparison } from '@/components/PricingComparison'
 import { BlogTeaser } from '@/components/BlogTeaser'
@@ -26,7 +25,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <PipelineSummary />
         <PipelineSection />
         <PricingComparison />
         <BlogTeaser />
