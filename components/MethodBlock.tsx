@@ -5,22 +5,22 @@ import { ScrollReveal } from './ui/ScrollReveal'
 
 const levels = [
   {
-    label: 'Je me lance',
-    description: 'Pas encore d\u2019audience, peu de contenu. Il faut g\u00e9n\u00e9rer des RDV et construire le r\u00e9seau en m\u00eame temps.',
-    arrow: 'Setting outbound',
-    href: '#outbound',
+    label: 'Je n\u2019ai pas de leads',
+    description: 'Pas encore d\u2019audience. Il faut aller chercher les prospects l\u00e0 o\u00f9 ils sont.',
+    arrow: 'Setting LinkedIn',
+    href: '#setting-linkedin',
     color: '#A78BFA',
   },
   {
-    label: 'J\u2019ai du contenu qui performe',
-    description: 'Lead magnets actifs, posts r\u00e9guliers. Les leads entrent, mais personne ne les qualifie.',
-    arrow: 'Setting inbound + outbound',
-    href: '#inbound',
-    color: '#A78BFA',
+    label: 'J\u2019ai des leads mais personne pour les qualifier',
+    description: 'Les lead magnets performent, les formulaires se remplissent. Mais personne ne d\u00e9croche pour qualifier et router.',
+    arrow: 'Setting t\u00e9l\u00e9phonique',
+    href: '#setting-telephone',
+    color: '#FBBF24',
   },
   {
     label: 'J\u2019ai une base \u00e9norme',
-    description: 'Des milliers de contacts, des mois de contenu. Mais z\u00e9ro syst\u00e8me pour scorer, nourrir et convertir.',
+    description: 'Des milliers de contacts, actifs ou dormants. Mais z\u00e9ro syst\u00e8me pour scorer, nourrir et convertir.',
     arrow: 'Setup nurturing',
     href: '#nurturing',
     color: '#C87533',

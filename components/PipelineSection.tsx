@@ -3,12 +3,12 @@ import { ButtonGlow } from './ui/ButtonGlow'
 
 const pipelines = [
   {
-    id: 'outbound',
-    eyebrow: 'Outbound',
+    id: 'setting-linkedin',
+    eyebrow: 'Setting LinkedIn',
     color: '#A78BFA',
-    headline: 'Vous partez de zéro. On remplit l\u2019agenda.',
+    headline: 'Vous partez de z\u00e9ro. On remplit l\u2019agenda.',
     description:
-      'Pas encore d\u2019audience\u00a0? On prospecte pour vous sur LinkedIn avec un ciblage par signaux d\u2019achat. M\u00eame quota d\u2019invitations, 10x plus de r\u00e9sultats.',
+      'Pas encore de leads\u00a0? On prospecte pour vous sur LinkedIn avec un ciblage par signaux d\u2019achat. M\u00eame quota d\u2019invitations, 10x plus de r\u00e9sultats.',
     features: [
       { title: 'Ciblage signal-based', detail: 'Intent, timing, changement de poste\u00a0: on cible ceux qui sont pr\u00eats' },
       { title: '\u22483 RDV / semaine', detail: 'Avec les m\u00eames 100 invitations LinkedIn' },
@@ -16,16 +16,16 @@ const pipelines = [
     ],
   },
   {
-    id: 'inbound',
-    eyebrow: 'Inbound',
+    id: 'setting-telephone',
+    eyebrow: 'Setting t\u00e9l\u00e9phonique',
     color: '#FBBF24',
-    headline: 'Vos leads entrent. Personne ne les qualifie.',
+    headline: 'Vos leads entrent. Personne ne d\u00e9croche.',
     description:
-      'Vous postez, vos lead magnets performent, les leads arrivent. On les score en temps r\u00e9el et le setter les contacte directement \u2014 sans passer par l\u2019invitation.',
+      'Vos lead magnets g\u00e9n\u00e8rent des leads, vos formulaires se remplissent. Le sales appelle, qualifie, et route\u00a0: RDV si chaud, newsletter si ti\u00e8de, boucle nurturing si froid.',
     features: [
-      { title: 'Conseil lead magnet', detail: 'Sujets, formats, angles\u00a0: on cadre avec vous' },
-      { title: 'Scoring int\u00e9gr\u00e9', detail: 'Chaque lead entrant est qualifi\u00e9 automatiquement' },
-      { title: 'Setting direct', detail: 'Z\u00e9ro invitation, z\u00e9ro plafond LinkedIn' },
+      { title: 'Qualification t\u00e9l\u00e9phonique', detail: 'Un sales d\u00e9di\u00e9 appelle chaque lead entrant' },
+      { title: 'Tri intelligent', detail: 'Chaud \u2192 RDV, ti\u00e8de \u2192 newsletter, froid \u2192 nurturing' },
+      { title: 'Z\u00e9ro lead perdu', detail: 'Chaque contact est rout\u00e9, rien ne tombe dans l\u2019oubli' },
     ],
   },
   {
@@ -34,7 +34,7 @@ const pipelines = [
     color: '#C87533',
     headline: 'Des milliers de contacts. Z\u00e9ro syst\u00e8me.',
     description:
-      'Newsletter, webinars, t\u00e9l\u00e9chargements \u2014 tout dort dans un CRM. On construit le workflow qui score, nourrit et route vos contacts vers des RDV.',
+      'Base dormante ou active \u2014 newsletter, webinars, t\u00e9l\u00e9chargements. On construit le workflow qui score, nourrit et route vos contacts vers des RDV.',
     features: [
       { title: 'Scoring comportemental', detail: 'Engagement, r\u00e9cence, intent\u00a0: chaque lead a un score' },
       { title: 'S\u00e9quences personnalis\u00e9es', detail: 'Contenu adapt\u00e9 au niveau de maturit\u00e9 du lead' },

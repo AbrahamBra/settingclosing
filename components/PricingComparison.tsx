@@ -17,9 +17,9 @@ export function PricingComparison() {
         </div>
 
         {/* Cards grid */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
 
-          {/* Setting card */}
+          {/* Setting LinkedIn card */}
           <ScrollReveal>
             <DarkCard className="p-0 h-full">
               <div className="h-1 bg-[#A78BFA]" />
@@ -28,7 +28,7 @@ export function PricingComparison() {
                 {/* Eyebrow + headline */}
                 <div>
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#A78BFA' }}>
-                    Setting
+                    Setting LinkedIn
                   </p>
                   <h3 className="font-sans text-xl font-bold text-text-primary">
                     Des RDV qualifiés dans votre agenda, chaque semaine.
@@ -104,22 +104,57 @@ export function PricingComparison() {
             </DarkCard>
           </ScrollReveal>
 
-        </div>
+          {/* Setting téléphonique card */}
+          <ScrollReveal>
+            <DarkCard className="p-0 h-full">
+              <div className="h-1 bg-[#FBBF24]" />
 
-        {/* ROI context */}
-        <div className="max-w-2xl mx-auto mt-6 space-y-3">
-          <div className="rounded-lg border border-white/[0.06] bg-white/[0.02] p-4">
-            <p className="font-sans text-text-secondary text-sm leading-relaxed">
-              <span className="text-text-primary font-semibold">Exemple&nbsp;:</span> un consultant à 2&nbsp;000&nbsp;€/mission qui close 1 prospect sur 5 RDV. Avec 5 RDV/mois dès le mois 1 → 1 nouveau client → 2&nbsp;000&nbsp;€ de CA pour 500&nbsp;€ investis.
-            </p>
-          </div>
-          <p className="font-sans text-text-muted text-xs text-center">
-            Un commercial freelance coûte 2&nbsp;000-3&nbsp;000&nbsp;€/mois. Notre formule&nbsp;: résultats dès la semaine 1, sans recrutement.
-          </p>
-        </div>
+              <div className="p-8 flex flex-col gap-6">
+                {/* Eyebrow + headline */}
+                <div>
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#FBBF24' }}>
+                    Setting t&eacute;l&eacute;phonique
+                  </p>
+                  <h3 className="font-sans text-xl font-bold text-text-primary">
+                    Vos leads entrent. Un sales les qualifie.
+                  </h3>
+                </div>
 
-        {/* Cards grid — Setup Nurturing */}
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-start mt-6">
+                {/* Pricing */}
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-sans text-text-muted text-sm mb-1">Sur devis</p>
+                    <p className="font-sans text-text-secondary text-xs mt-1">
+                      Tarif adapt&eacute; au volume de leads entrants et &agrave; la complexit&eacute; de qualification.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Livrables */}
+                <div className="border-t border-white/[0.06] pt-4 space-y-2.5">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">Inclus</p>
+                  {[
+                    'Sales d\u00e9di\u00e9 qui appelle chaque lead entrant',
+                    'Qualification et routing\u00a0: RDV, newsletter ou nurturing',
+                    'Int\u00e9gration sur votre CRM et vos outils',
+                    'Reporting et optimisation continue',
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-2">
+                      <span className="text-[#FBBF24] shrink-0 mt-0.5">&check;</span>
+                      <p className="font-sans text-text-primary text-sm">{item}</p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* CTA */}
+                <div className="pt-2 mt-auto">
+                  <ButtonGlow as="a" href="#contact" className="w-full text-center">
+                    Discuter de mon volume &rarr;
+                  </ButtonGlow>
+                </div>
+              </div>
+            </DarkCard>
+          </ScrollReveal>
 
           {/* Setup Nurturing card */}
           <ScrollReveal>
@@ -133,61 +168,48 @@ export function PricingComparison() {
                     Setup Nurturing
                   </p>
                   <h3 className="font-sans text-xl font-bold text-text-primary">
-                    Votre base de leads dort. On la réveille.
+                    Votre base de leads. Notre syst&egrave;me.
                   </h3>
                 </div>
 
-                {/* Description */}
-                <p className="font-sans text-text-secondary text-sm">
-                  Pour ceux qui ont une audience, des contacts, des inscrits — mais zéro système pour scorer, nourrir et convertir.
-                  On construit avec vous, sur vos outils, le workflow qui transforme vos leads en RDV qualifiés.
-                </p>
-
-                {/* Cyclical messaging */}
-                <p className="font-sans text-text-muted text-sm italic">
-                  Un système qui s&apos;affine à chaque cycle&nbsp;: les règles de scoring se précisent avec les données réelles,
-                  les séquences s&apos;adaptent aux retours de conversion, le routing s&apos;optimise.
-                  Plus le temps passe, plus la machine est efficace.
-                </p>
+                {/* Pricing */}
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-sans text-text-muted text-sm mb-1">Mise en place</p>
+                    <div className="flex items-baseline gap-2">
+                      <p className="font-sans text-2xl text-text-primary font-bold">1&nbsp;500&nbsp;&euro;</p>
+                    </div>
+                    <p className="font-sans text-text-secondary text-xs mt-1">
+                      Construction du syst&egrave;me avec vous, sur votre stack existante. Puis prime par RDV livr&eacute;.
+                    </p>
+                  </div>
+                </div>
 
                 {/* Livrables */}
-                <div className="space-y-2.5">
+                <div className="border-t border-white/[0.06] pt-4 space-y-2.5">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">Inclus</p>
                   {[
                     'Scoring des leads selon signaux d\u2019engagement',
-                    'Séquences de nurturing personnalisées',
+                    'S\u00e9quences de nurturing personnalis\u00e9es',
                     'Routing automatique vers appel commercial',
                     'Construit sur-mesure sur votre stack existante',
                   ].map((item) => (
                     <div key={item} className="flex items-start gap-2">
-                      <span className="text-[#C87533] shrink-0 mt-0.5">✓</span>
+                      <span className="text-[#C87533] shrink-0 mt-0.5">&check;</span>
                       <p className="font-sans text-text-primary text-sm">{item}</p>
                     </div>
                   ))}
                 </div>
 
-                {/* Pricing */}
-                <div className="border-t border-white/[0.06] pt-4 space-y-3">
-                  <div>
-                    <p className="font-sans text-text-muted text-sm mb-1">Mise en place</p>
-                    <p className="font-sans text-2xl text-text-primary font-bold">1&nbsp;500&nbsp;€</p>
-                    <p className="font-sans text-text-secondary text-xs mt-1">
-                      Construction du système avec vous, sur votre stack existante.
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-sans text-text-muted text-sm mb-1">Puis</p>
-                    <p className="font-sans text-lg text-text-primary font-bold">Prime par RDV livré</p>
-                    <p className="font-sans text-text-secondary text-xs mt-1">
-                      Pendant toute la durée de l&apos;accompagnement.
-                    </p>
-                  </div>
-                </div>
+                {/* Cyclical */}
+                <p className="font-sans text-text-muted text-xs italic">
+                  Un syst&egrave;me qui s&apos;affine &agrave; chaque cycle. Plus le temps passe, plus la machine est efficace.
+                </p>
 
                 {/* CTA */}
-                <div className="pt-2">
+                <div className="pt-2 mt-auto">
                   <ButtonGlow as="a" href="#contact" className="w-full text-center">
-                    Construire mon système →
+                    Construire mon syst&egrave;me &rarr;
                   </ButtonGlow>
                 </div>
               </div>
