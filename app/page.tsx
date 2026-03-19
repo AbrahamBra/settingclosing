@@ -25,10 +25,10 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <SocialProof />
         <PipelineSection />
         <PricingComparison />
         <BlogTeaser />
-        <SocialProof />
         <CTAFinale />
       </main>
       <Footer />
