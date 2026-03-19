@@ -171,70 +171,6 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        {/* Setting showcase — "En pratique" */}
-        <ScrollReveal delay={100}>
-          <div className="mt-12 max-w-4xl mx-auto">
-            <h3 className="text-text-primary font-semibold text-lg mb-6 text-center">
-              En pratique, c&ocirc;té setting
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1 — Ciblage Sales Navigator */}
-              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
-                <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">🎯</span>
-                    <span className="text-text-muted text-sm">Screenshot Sales Navigator à venir</span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-text-primary font-semibold text-sm mb-1">
-                    Ciblage Sales Navigator
-                  </p>
-                  <p className="text-text-secondary text-xs leading-relaxed">
-                    On configure vos filtres pour capter les signaux d&apos;achat : changements de poste, interactions concurrents, levées de fonds.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 2 — Scoring Google Sheet */}
-              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
-                <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">📊</span>
-                    <span className="text-text-muted text-sm">Screenshot scoring à venir</span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-text-primary font-semibold text-sm mb-1">
-                    Scoring automatisé sur Google Sheet
-                  </p>
-                  <p className="text-text-secondary text-xs leading-relaxed">
-                    Chaque prospect est scoré sur 5 niveaux de maturité. Le scoring s&apos;appuie sur une base de connaissance qu&apos;on enrichit en continu avec vos retours terrain.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 3 — Messages qui convertissent */}
-              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
-                <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">💬</span>
-                    <span className="text-text-muted text-sm">Screenshot messages à venir</span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-text-primary font-semibold text-sm mb-1">
-                    Des messages qui prennent des RDV
-                  </p>
-                  <p className="text-text-secondary text-xs leading-relaxed">
-                    5 phrases max, jamais de pitch en premier DM. Chaque message s&apos;appuie sur une base de connaissance qui s&apos;affine avec chaque retour. Validés avant envoi.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
         {/* ── Bloc 3 : Légende 3 couches + lien /methode ── */}
         <ScrollReveal delay={100}>
           <div className="mt-12 mb-16">
@@ -349,66 +285,15 @@ export function PipelineSection() {
           ))}
         </div>
 
-        {/* Closing showcase — "En pratique" */}
+        {/* Encodage compétence */}
         <ScrollReveal delay={100}>
-          <div className="mt-12 max-w-4xl mx-auto">
-            <h3 className="text-text-primary font-semibold text-lg mb-6 text-center">
-              En pratique, c&ocirc;té closing
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1 — On assiste au RDV */}
-              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
-                <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">🎥</span>
-                    <span className="text-text-muted text-sm">Screenshot appel à venir</span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-text-primary font-semibold text-sm mb-1">
-                    On assiste à votre appel
-                  </p>
-                  <p className="text-text-secondary text-xs leading-relaxed">
-                    On observe votre discovery en direct, ou on mène l&apos;appel de A à Z pendant que vous êtes en second. Débrief juste après pour ajuster.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 2 — Coaching en visio */}
-              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
-                <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">🖥️</span>
-                    <span className="text-text-muted text-sm">Extrait vidéo coaching à venir</span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-text-primary font-semibold text-sm mb-1">
-                    Coaching en visio, chaque semaine
-                  </p>
-                  <p className="text-text-secondary text-xs leading-relaxed">
-                    1h en face à face. On décortique vos appels, on travaille le pricing, on répète jusqu&apos;à ce que ça devienne naturel.
-                  </p>
-                </div>
-              </div>
-
-              {/* Card 3 — On forme vos closers */}
-              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
-                <div className="aspect-video bg-surface-hover flex items-center justify-center">
-                  <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">🎓</span>
-                    <span className="text-text-muted text-sm">Vidéo formation closers à venir</span>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <p className="text-text-primary font-semibold text-sm mb-1">
-                    On forme vos closers
-                  </p>
-                  <p className="text-text-secondary text-xs leading-relaxed">
-                    Une fois la discovery et le pricing maîtrisés, on forme des closers dans votre équipe pour prendre le relais.
-                  </p>
-                </div>
-              </div>
+          <div className="max-w-4xl mx-auto mt-8">
+            <div className="flex items-start gap-3 rounded-xl border border-semantic-methode/15 bg-semantic-methode/5 p-4">
+              <span className="text-semantic-methode text-sm mt-0.5">→</span>
+              <p className="text-text-secondary text-sm leading-relaxed">
+                <span className="text-text-primary font-semibold">Encodage de la compétence en skill</span> tout au long de la collaboration.
+                Chaque apprentissage, chaque ajustement est documenté et structuré pour que votre équipe monte en autonomie.
+              </p>
             </div>
           </div>
         </ScrollReveal>
