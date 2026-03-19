@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: 'https://challengerslab.fr/methode',
+      lastModified: new Date('2026-03-19'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
       url: 'https://challengerslab.fr/ressources',
       lastModified: new Date(),
       changeFrequency: 'weekly',

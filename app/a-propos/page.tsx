@@ -4,11 +4,11 @@ import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'À propos de ChallengersLab | Setting, closing et automatisation B2B',
+  title: 'Notre équipe setting et closing | ChallengersLab',
   description:
-    "Trois expertises, un pipeline. Abdelhay (closing), Brahim (setting), Abraham (automatisation & IA). Comment ChallengersLab structure la prospection B2B autour de trois métiers distincts.",
+    "Trois expertises, un pipeline. Abdelhay (closing), Brahim (setting), Abraham (IA). ChallengersLab structure la prospection B2B autour de trois métiers.",
   openGraph: {
-    title: 'À propos de ChallengersLab',
+    title: 'Notre équipe setting et closing | ChallengersLab',
     description:
       "Trois expertises, un pipeline. Comment ChallengersLab structure la prospection B2B autour de trois métiers distincts.",
     locale: 'fr_FR',

@@ -9,14 +9,14 @@ import { layerConfig, closingTiers, settingSteps } from '@/lib/pipeline-data'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Notre méthode de prospection LinkedIn en 9 étapes | ChallengersLab',
+  title: 'Prospection LinkedIn en 9 étapes | ChallengersLab',
   description:
     'Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d\'achat au RDV qualifié. IA, méthode et validation humaine.',
   alternates: {
     canonical: 'https://challengerslab.fr/methode',
   },
   openGraph: {
-    title: 'Notre méthode de prospection LinkedIn en 9 étapes | ChallengersLab',
+    title: 'Prospection LinkedIn en 9 étapes | ChallengersLab',
     description:
       "Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d'achat au RDV qualifié. IA, méthode et validation humaine.",
     locale: 'fr_FR',
