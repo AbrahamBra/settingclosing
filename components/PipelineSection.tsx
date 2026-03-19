@@ -22,7 +22,8 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        {/* ── Bloc 2 : Avant / Après ── */}
+        {/* ── Bloc 2 : Outbound — Avant / Après ── */}
+        <div id="outbound" className="scroll-mt-24" />
         <ScrollReveal>
           <div className="flex items-center gap-3 mb-8">
             <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-semantic-ia/20 bg-semantic-ia/10 font-sans text-xs font-semibold uppercase tracking-widest text-semantic-ia">
@@ -117,7 +118,8 @@ export function PipelineSection() {
           </p>
         </ScrollReveal>
 
-        {/* ── Bloc 2b : Lead Magnets — accélérateur ── */}
+        {/* ── Bloc 2b : Inbound — Lead Magnets ── */}
+        <div id="inbound" className="scroll-mt-24" />
         <ScrollReveal delay={200}>
           <div className="mt-12 max-w-4xl mx-auto">
             <div
@@ -162,6 +164,60 @@ export function PipelineSection() {
                   <div>
                     <p className="text-text-primary text-sm font-semibold">Setting direct</p>
                     <p className="text-text-secondary text-xs">Zéro invitation, zéro plafond</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+
+        {/* ── Bloc 2c : Nurturing — Base dormante ── */}
+        <div id="nurturing" className="scroll-mt-24" />
+        <ScrollReveal delay={200}>
+          <div className="mt-12 max-w-4xl mx-auto">
+            <div
+              className="relative rounded-xl overflow-hidden border border-[#C87533]/20 p-6 md:p-8"
+              style={{
+                background: 'linear-gradient(135deg, rgba(200,117,51,0.06) 0%, rgba(200,117,51,0.02) 100%)',
+              }}
+            >
+              <div className="flex items-center gap-2 mb-4">
+                <span className="w-2 h-2 rounded-full bg-[#C87533]" />
+                <span className="font-mono text-xs font-semibold uppercase tracking-widest text-[#C87533]">
+                  Nurturing
+                </span>
+              </div>
+
+              <h3 className="text-text-primary font-semibold text-lg mb-3">
+                Des milliers de contacts. Z&eacute;ro syst&egrave;me pour les activer.
+              </h3>
+
+              <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
+                Vous avez une newsletter, des participants &agrave; vos webinars, des t&eacute;l&eacute;chargements de lead magnets &mdash; mais tout dort dans un CRM.
+                On construit avec vous le workflow qui score, nourrit et route ces contacts vers des RDV qualifi&eacute;s.
+                <span className="text-[#C87533] font-medium"> Un syst&egrave;me qui s&apos;affine &agrave; chaque cycle.</span>
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="flex items-start gap-3">
+                  <span className="text-[#C87533] text-sm mt-0.5">&rarr;</span>
+                  <div>
+                    <p className="text-text-primary text-sm font-semibold">Scoring comportemental</p>
+                    <p className="text-text-secondary text-xs">Engagement, r&eacute;cence, intent&nbsp;: chaque lead a un score</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-[#C87533] text-sm mt-0.5">&rarr;</span>
+                  <div>
+                    <p className="text-text-primary text-sm font-semibold">S&eacute;quences personnalis&eacute;es</p>
+                    <p className="text-text-secondary text-xs">Contenu adapt&eacute; au niveau de maturit&eacute; du lead</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-[#C87533] text-sm mt-0.5">&rarr;</span>
+                  <div>
+                    <p className="text-text-primary text-sm font-semibold">Routing vers appel</p>
+                    <p className="text-text-secondary text-xs">Les leads chauds sont rout&eacute;s automatiquement vers un cr&eacute;neau</p>
                   </div>
                 </div>
               </div>
