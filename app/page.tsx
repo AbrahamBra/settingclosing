@@ -28,8 +28,8 @@ export default function Home() {
         <SocialProof />
         <PipelineSection />
         <PricingComparison />
-        <BlogTeaser />
         <CTAFinale />
+        <BlogTeaser />
       </main>
       <Footer />
     </>

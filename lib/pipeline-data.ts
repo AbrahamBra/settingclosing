@@ -31,7 +31,7 @@ export const closingTiers = [
     label: 'Déléguer le closing',
     threshold: '10k€+',
     layers: ['humain'] as const,
-    desc: "Cycle de vente long, multi-interlocuteurs. Le fondateur ne peut plus tout faire seul. On recrute, forme et manage des closers dédiés sur votre offre. Vous n'êtes plus dans le pipe — vous le gérez.",
+    desc: "Cycle de vente long, multi-interlocuteurs. Vous ne pouvez plus tout faire seul. On recrute, forme et manage des closers dédiés sur votre offre. Vous n'êtes plus dans le pipe — vous le gérez.",
     tools: ['Closers formés', 'Management'],
   },
 ] as const
@@ -41,7 +41,7 @@ export const settingSteps = [
     num: '01',
     label: 'Stratégie & ciblage',
     layers: ['hybrid'] as const,
-    desc: "ICP défini avec l'IA. Comptes à monitorer sélectionnés (concurrents, complémentaires). Filtres Sales Navigator configurés : fonctions, industrie, taille, triggers récents. L'humain valide les cibles — c'est la fondation du reste.",
+    desc: "ICP défini avec l'IA. Comptes à monitorer sélectionnés (concurrents, complémentaires). Filtres Sales Navigator configurés : fonctions, industrie, taille, triggers récents. On valide chaque cible — c'est la fondation du reste.",
     tools: ['Sales Navigator', 'ICP'],
   },
   {
@@ -69,14 +69,14 @@ export const settingSteps = [
     num: '05',
     label: 'Scoring & ajustement',
     layers: ['methode'] as const,
-    desc: "5 niveaux de maturité d'achat. L'œil humain valide chaque profil et ajuste les critères de ciblage au fil des retours terrain. Ce jugement recalibre Sales Navigator et Spyer en continu.",
+    desc: "5 niveaux de maturité d'achat. On valide chaque profil et on ajuste les critères de ciblage au fil des retours terrain. Ce jugement recalibre Sales Navigator et Spyer en continu.",
     tools: ['Scoring', 'Feedback loop'],
   },
   {
     num: '06',
     label: 'Skill maison',
     layers: ['hybrid'] as const,
-    desc: "Pour les clients qui le souhaitent : un skill Claude encodé sur leur expertise — jargon métier, objections connues, exemples de messages qui ont décroché des réponses. S'affine à chaque itération via le journal de bord du setter.",
+    desc: "Si vous le souhaitez : un skill Claude encodé sur votre expertise — jargon métier, objections connues, exemples de messages qui ont décroché des réponses. Il s'affine à chaque itération via le journal de bord.",
     tools: ['Claude Skill', 'Journal de bord'],
   },
   {
@@ -97,7 +97,7 @@ export const settingSteps = [
     num: '09',
     label: 'RDV qualifié',
     layers: ['humain'] as const,
-    desc: "Le setter convertit la conversation en rendez-vous. Pas de pitch — une ouverture. Les leads tièdes qui ne sont pas prêts rentrent en nurturing vers la newsletter.",
+    desc: "On convertit la conversation en rendez-vous. Pas de pitch — une ouverture. Les leads tièdes qui ne sont pas prêts rentrent en nurturing vers la newsletter.",
     tools: ['Setter', 'Nurturing'],
   },
 ] as const
