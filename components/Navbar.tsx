@@ -22,8 +22,7 @@ export function Navbar() {
   const navLinks = [
     { label: 'Méthode', href: '/methode' },
     { label: 'Offres', href: '#pricing' },
-    { label: 'Blog', href: '/blog' },
-    { label: 'Ressources', href: '/ressources/devenir-business-developer' },
+    { label: 'Ressources', href: '/ressources' },
     { label: 'À propos', href: '/a-propos' },
   ]
 

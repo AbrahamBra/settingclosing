@@ -22,7 +22,7 @@ export function NavbarBlog() {
   const navLinks = [
     { label: 'Setting', href: '/#setting' },
     { label: 'Closing', href: '/#closing' },
-    { label: 'Blog', href: '/blog', active: true },
+    { label: 'Ressources', href: '/ressources', active: true },
     { label: 'À propos', href: '/a-propos' },
   ]
 

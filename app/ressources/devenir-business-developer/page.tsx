@@ -540,7 +540,7 @@ export default function DevenirBusinessDeveloperPage() {
                   des indicateurs clairs.
                 </p>
                 <a
-                  href="/blog/setter-b2b-definition"
+                  href="/ressources/setter-b2b-definition"
                   className="font-sans text-xs text-accent hover:underline"
                 >
                   Comprendre le rôle du setter →
@@ -555,7 +555,7 @@ export default function DevenirBusinessDeveloperPage() {
                   directement liée au chiffre d&apos;affaires.
                 </p>
                 <a
-                  href="/blog/closing-b2b"
+                  href="/ressources/closing-b2b"
                   className="font-sans text-xs text-accent hover:underline"
                 >
                   Comprendre le rôle du closer →
@@ -591,9 +591,9 @@ export default function DevenirBusinessDeveloperPage() {
               </p>
               <ul className="space-y-2">
                 {[
-                  { href: '/blog/difference-setting-closing', label: 'Setting vs Closing : quelle est la différence ?' },
-                  { href: '/blog/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
-                  { href: '/blog/setting-commercial-b2b', label: 'Le setting commercial B2B : guide complet' },
+                  { href: '/ressources/difference-setting-closing', label: 'Setting vs Closing : quelle est la différence ?' },
+                  { href: '/ressources/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
+                  { href: '/ressources/setting-commercial-b2b', label: 'Le setting commercial B2B : guide complet' },
                 ].map(({ href, label }) => (
                   <li key={href}>
                     <a

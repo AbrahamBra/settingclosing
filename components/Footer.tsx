@@ -12,7 +12,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row gap-8 text-sm font-sans text-text-muted">
             <div className="flex flex-col gap-2">
               <p className="text-white font-semibold mb-1">Ressources</p>
-              <a href="/blog" className="hover:text-text-primary transition-colors">Blog</a>
+              <a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a>
               <a href="/glossaire" className="hover:text-text-primary transition-colors">Glossaire</a>
               <a href="/a-propos" className="hover:text-text-primary transition-colors">À propos</a>
             </div>

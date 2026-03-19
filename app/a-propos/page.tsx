@@ -317,11 +317,11 @@ export default function AProposPage() {
             </h2>
             <div className="space-y-3">
               {[
-                { href: '/blog/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/blog/setter-b2b-definition', label: "C'est quoi un setter en B2B ? Rôle, missions et coût" },
-                { href: '/blog/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/blog/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting" },
-                { href: '/blog/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
+                { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
+                { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ? Rôle, missions et coût" },
+                { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
+                { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting" },
+                { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/glossaire', label: 'Glossaire setting & closing B2B : setter, closer, signal d\'achat, ICP…' },
               ].map(({ href, label }) => (
                 <a

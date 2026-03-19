@@ -24,10 +24,10 @@ export default function NotFound() {
               Retour à l'accueil
             </a>
             <a
-              href="/blog"
+              href="/ressources"
               className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
             >
-              Voir le blog →
+              Voir les ressources →
             </a>
           </div>
         </div>

@@ -114,7 +114,7 @@ export function BlogContent() {
         <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
           <li><a href="/" className="hover:text-white transition-colors">Accueil</a></li>
           <li aria-hidden="true" className="select-none">&rsaquo;</li>
-          <li className="text-white">Blog</li>
+          <li className="text-white">Ressources</li>
         </ol>
       </nav>
 
@@ -122,7 +122,7 @@ export function BlogContent() {
       <ScrollReveal>
         <header className="mb-16 max-w-2xl">
           <h1 className="font-sans font-extrabold text-4xl md:text-5xl text-white mb-4 tracking-tight">
-            Blog
+            Ressources
           </h1>
           <p className="font-sans text-text-muted text-lg leading-relaxed">
             Méthode, outils et retours terrain sur la prospection B2B.
@@ -134,7 +134,7 @@ export function BlogContent() {
       <ScrollReveal delay={100}>
         <div className="grid sm:grid-cols-3 gap-4 mb-16">
           {pillarGuides.map((guide) => (
-            <a key={guide.slug} href={`/blog/${guide.slug}`} className="group block">
+            <a key={guide.slug} href={`/ressources/${guide.slug}`} className="group block">
               <DarkCard hover className={`p-6 h-full flex flex-col ${guide.borderClass}`}>
                 <p
                   className="font-sans text-xs font-semibold uppercase tracking-widest mb-3"
@@ -183,7 +183,7 @@ export function BlogContent() {
           const cat = categoryConfig[article.category]
           return (
             <ScrollReveal key={article.slug} delay={50 + (i % 6) * 50}>
-              <a href={`/blog/${article.slug}`} className="group block h-full">
+              <a href={`/ressources/${article.slug}`} className="group block h-full">
                 <DarkCard hover className="h-full flex flex-col">
                   {/* Tinted top area */}
                   <div

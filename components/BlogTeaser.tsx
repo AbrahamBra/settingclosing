@@ -33,7 +33,7 @@ export function BlogTeaser() {
           <div className="flex items-center justify-between mb-10">
             <h2 className="font-serif text-h2 text-white">Derniers articles</h2>
             <Link
-              href="/blog"
+              href="/ressources"
               className="font-sans text-accent hover:underline text-sm font-semibold"
             >
               Tout voir →

@@ -1,9 +1,6 @@
-'use client'
-
-import { useState } from 'react'
 import Link from 'next/link'
 import { ScrollReveal } from './ui/ScrollReveal'
-import { layerConfig, closingTiers } from '@/lib/pipeline-data'
+import { closingTiers } from '@/lib/pipeline-data'
 
 const settingPhases = [
   {
@@ -15,7 +12,7 @@ const settingPhases = [
     summary:
       "L'IA et Sales Navigator repèrent les signaux d'achat — inbound (réactions à vos posts et ceux des concurrents) et outbound (changements de poste, prises de fonction). On valide chaque cible : c'est la fondation du reste.",
     tools: ['Sales Navigator', 'Reactin', 'Spyer', 'ICP', 'Lead magnets', 'Scoring'],
-    layers: ['ia', 'hybrid'] as const,
+
     accentText: 'text-semantic-ia',
     accentBg: 'bg-semantic-ia/10',
     accentBorder: 'border-semantic-ia/20',
@@ -30,7 +27,7 @@ const settingPhases = [
     summary:
       "Claude analyse chaque profil (titre, bio, posts récents). 5 niveaux de maturité d'achat scorés. On recalibre en continu. Si vous le souhaitez : un skill Claude encodé sur votre expertise — jargon métier, objections connues, messages qui ont marché.",
     tools: ['Claude', 'Google Sheet', 'Scoring', 'Feedback loop', 'Claude Skill', 'Journal de bord'],
-    layers: ['hybrid', 'methode'] as const,
+
     accentText: 'text-semantic-methode',
     accentBg: 'bg-semantic-methode/10',
     accentBorder: 'border-semantic-methode/20',
@@ -45,7 +42,7 @@ const settingPhases = [
     summary:
       "Claude propose un draft ancré dans le skill. 5 phrases max, jamais de pitch dans le premier DM. Test du téléphone : si ça ne sonne pas naturel à voix haute, on réécrit. Aucun message ne part sans validation. On convertit la conversation en RDV.",
     tools: ['Claude', 'Règles méthode', 'Validation humaine', 'Setter', 'Nurturing'],
-    layers: ['hybrid', 'humain'] as const,
+
     accentText: 'text-semantic-humain',
     accentBg: 'bg-semantic-humain/10',
     accentBorder: 'border-semantic-humain/20',
@@ -54,8 +51,6 @@ const settingPhases = [
 ]
 
 export function PipelineSection() {
-  const [openPhase, setOpenPhase] = useState<number | null>(0)
-
   return (
     <section id="pipeline" className="section-padding">
       <div className="container-max">
@@ -85,97 +80,53 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        {/* 3 phase accordion cards */}
+        {/* 3 phase cards — always visible */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          {settingPhases.map((phase, i) => {
-            const isOpen = openPhase === i
-            return (
-              <ScrollReveal key={phase.phase} delay={i * 100}>
-                <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] h-full">
-                  {/* Top accent bar */}
-                  <div className={`absolute top-0 left-0 right-0 h-1 ${phase.accentBar}`} />
+          {settingPhases.map((phase, i) => (
+            <ScrollReveal key={phase.phase} delay={i * 100}>
+              <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-5 h-full">
+                {/* Top accent bar */}
+                <div className={`absolute top-0 left-0 right-0 h-1 ${phase.accentBar}`} />
 
-                  {/* Clickable header — always visible */}
-                  <button
-                    type="button"
-                    onClick={() => setOpenPhase(isOpen ? null : i)}
-                    className="w-full text-left p-5 pb-3 cursor-pointer"
-                  >
-                    {/* Phase label + step numbers */}
-                    <div className="flex items-center justify-between mb-3 mt-1">
-                      <span className={`text-xs font-semibold uppercase tracking-widest ${phase.accentText}`}>
-                        {phase.phaseLabel}
-                      </span>
-                      <div className="flex items-center gap-2">
-                        <span className={`font-mono text-xs font-bold ${phase.accentText} ${phase.accentBg} px-2 py-0.5 rounded`}>
-                          {phase.stepNums}
-                        </span>
-                        <span
-                          className={`text-text-muted text-xs transition-transform duration-300 ${
-                            isOpen ? 'rotate-180' : ''
-                          }`}
-                        >
-                          ▼
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="text-white font-semibold text-base mb-2">{phase.title}</h3>
-
-                    {/* Layer tags */}
-                    <div className="flex flex-wrap gap-1.5 mb-3">
-                      {phase.layers.map((layer) => {
-                        const cfg = layerConfig[layer]
-                        return (
-                          <span
-                            key={layer}
-                            className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded border ${cfg.bg} ${cfg.border} ${cfg.text}`}
-                          >
-                            {cfg.label}
-                          </span>
-                        )
-                      })}
-                    </div>
-
-                    {/* Step names — always visible */}
-                    <ul className="space-y-1">
-                      {phase.steps.map((step) => (
-                        <li key={step} className={`text-xs font-mono ${phase.accentText}`}>
-                          {step}
-                        </li>
-                      ))}
-                    </ul>
-                  </button>
-
-                  {/* Expandable content — summary + tools */}
-                  <div
-                    className="grid transition-[grid-template-rows] duration-300 ease-in-out"
-                    style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
-                  >
-                    <div className="overflow-hidden">
-                      <div className="px-5 pb-5">
-                        {/* Summary */}
-                        <p className="text-text-secondary text-sm leading-relaxed mb-4">{phase.summary}</p>
-
-                        {/* Tool pills */}
-                        <div className="flex flex-wrap gap-1.5">
-                          {phase.tools.map((tool) => (
-                            <span
-                              key={tool}
-                              className={`font-mono text-[10px] px-2 py-0.5 rounded border ${phase.accentText} ${phase.accentBg} ${phase.accentBorder}`}
-                            >
-                              {tool}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                {/* Phase label + step numbers */}
+                <div className="flex items-center justify-between mb-3 mt-1">
+                  <span className={`text-xs font-semibold uppercase tracking-widest ${phase.accentText}`}>
+                    {phase.phaseLabel}
+                  </span>
+                  <span className={`font-mono text-xs font-bold ${phase.accentText} ${phase.accentBg} px-2 py-0.5 rounded`}>
+                    {phase.stepNums}
+                  </span>
                 </div>
-              </ScrollReveal>
-            )
-          })}
+
+                {/* Title */}
+                <h3 className="text-white font-semibold text-base mb-2">{phase.title}</h3>
+
+                {/* Step names */}
+                <ul className="space-y-1 mb-4">
+                  {phase.steps.map((step) => (
+                    <li key={step} className={`text-xs font-mono ${phase.accentText}`}>
+                      {step}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Summary */}
+                <p className="text-text-secondary text-sm leading-relaxed mb-4">{phase.summary}</p>
+
+                {/* Tool pills */}
+                <div className="flex flex-wrap gap-1.5">
+                  {phase.tools.map((tool) => (
+                    <span
+                      key={tool}
+                      className={`font-mono text-[10px] px-2 py-0.5 rounded border ${phase.accentText} ${phase.accentBg} ${phase.accentBorder}`}
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
 
         {/* Setting showcase — "Concrètement" */}
@@ -216,7 +167,7 @@ export function PipelineSection() {
                     Scoring automatisé sur Google Sheet
                   </p>
                   <p className="text-text-secondary text-xs leading-relaxed">
-                    Chaque prospect est scoré automatiquement sur 5 niveaux de maturité. On recalibre en continu via Cowork.
+                    Chaque prospect est scoré sur 5 niveaux de maturité. Le scoring s&apos;appuie sur une base de connaissance qu&apos;on enrichit en continu avec vos retours terrain.
                   </p>
                 </div>
               </div>
@@ -234,7 +185,7 @@ export function PipelineSection() {
                     Des messages qui prennent des RDV
                   </p>
                   <p className="text-text-secondary text-xs leading-relaxed">
-                    5 phrases max, jamais de pitch en premier DM. Co-rédigés par Claude, validés avant envoi. Des conversations qui débouchent sur des appels.
+                    5 phrases max, jamais de pitch en premier DM. Chaque message s&apos;appuie sur une base de connaissance qui s&apos;affine avec chaque retour. Validés avant envoi.
                   </p>
                 </div>
               </div>
@@ -279,21 +230,6 @@ export function PipelineSection() {
 
                 {/* Title */}
                 <h3 className="text-white font-semibold text-base mb-2">{tier.label}</h3>
-
-                {/* Layer tags */}
-                <div className="flex gap-1.5 mb-3">
-                  {tier.layers.map((layer) => {
-                    const cfg = layerConfig[layer]
-                    return (
-                      <span
-                        key={layer}
-                        className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded border ${cfg.bg} ${cfg.border} ${cfg.text}`}
-                      >
-                        {cfg.label}
-                      </span>
-                    )
-                  })}
-                </div>
 
                 {/* Description */}
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">{tier.desc}</p>
