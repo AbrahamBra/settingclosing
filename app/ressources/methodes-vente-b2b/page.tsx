@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS | ChallengersLab',
+  title: 'Méthodes de vente B2B comparées | ChallengersLab',
   description:
-    'Challenger Sale, SPIN Selling, SONCAS : les 3 méthodes de vente B2B qui structurent un cycle de vente. Comparatif, cas d\'usage et guide pour choisir la bonne approche selon votre contexte.',
+    'Challenger Sale, SPIN Selling, SONCAS : comparatif des 3 méthodes de vente B2B. Cas d\'usage et guide pour choisir la bonne.',
   openGraph: {
-    title: 'Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS',
+    title: 'Méthodes de vente B2B comparées | ChallengersLab',
     description:
       'Challenger Sale, SPIN Selling, SONCAS : les 3 méthodes de vente B2B qui structurent un cycle de vente. Comparatif, cas d\'usage et guide pour choisir la bonne approche.',
     locale: 'fr_FR',
@@ -256,7 +256,7 @@ export default function MethodesVenteB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">&rsaquo;</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -273,7 +273,7 @@ export default function MethodesVenteB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               M&eacute;thodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Une m&eacute;thode de vente n&apos;est pas un script. C&apos;est un cadre de r&eacute;flexion
               qui structure la fa&ccedil;on dont vous menez une conversation commerciale. Voici les trois
               approches les plus efficaces en B2B, quand les utiliser, et comment les combiner dans un
@@ -332,7 +332,7 @@ export default function MethodesVenteB2BPage() {
               ].map(({ num, label, anchor }) => (
                 <li key={anchor} className="flex items-start gap-3 font-sans text-sm">
                   <span className="text-accent font-semibold shrink-0 w-6">{num}</span>
-                  <a href={`#${anchor}`} className="text-text-muted hover:text-text-primary transition-colors">
+                  <a href={`#${anchor}`} className="text-text-secondary hover:text-text-primary transition-colors">
                     {label}
                   </a>
                 </li>
@@ -345,19 +345,19 @@ export default function MethodesVenteB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Pourquoi adopter une m&eacute;thode de vente en B2B
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Un commercial qui improvise chaque appel finit par reproduire les m&ecirc;mes erreurs
               sans les identifier. Il pitche trop t&ocirc;t, ne creuse pas assez les objections,
               et perd des deals qu&apos;il aurait pu signer avec une structure.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Une m&eacute;thode de vente ne dicte pas ce que vous devez dire mot pour mot. Elle
               d&eacute;finit un ordre logique pour mener la conversation : quand poser des questions,
               quand pr&eacute;senter la valeur, quand g&eacute;rer les objections, quand conclure.
               C&apos;est la diff&eacute;rence entre un cuisinier qui suit une recette et un qui
               improvise &mdash; les deux peuvent r&eacute;ussir, mais le premier est reproductible.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               En B2B, les enjeux sont plus &eacute;lev&eacute;s : les cycles de vente sont longs,
               les montants sont significatifs, et chaque prospect perdu repr&eacute;sente des semaines
               de travail gaspill&eacute;es. Trois m&eacute;thodes dominent le paysage commercial
@@ -375,7 +375,7 @@ export default function MethodesVenteB2BPage() {
               <p className="font-sans text-accent font-semibold text-sm mb-5">
                 {m.sousTitre}
               </p>
-              <p className="font-sans text-text-muted leading-relaxed mb-6">
+              <p className="font-sans text-text-secondary leading-relaxed mb-6">
                 {m.description}
               </p>
 
@@ -387,7 +387,7 @@ export default function MethodesVenteB2BPage() {
                   {m.quandUtiliser.map((item, i) => (
                     <li key={i} className="flex gap-3 font-sans text-sm">
                       <span className="text-accent shrink-0">&mdash;</span>
-                      <span className="text-text-muted leading-relaxed">{item}</span>
+                      <span className="text-text-secondary leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -402,7 +402,7 @@ export default function MethodesVenteB2BPage() {
                   {m.pointsForts.map((item, i) => (
                     <li key={i} className="flex gap-3 font-sans text-sm">
                       <span className="text-accent shrink-0">&rarr;</span>
-                      <span className="text-text-muted leading-relaxed">{item}</span>
+                      <span className="text-text-secondary leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -423,7 +423,7 @@ export default function MethodesVenteB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Comment choisir sa m&eacute;thode de vente B2B
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Le choix ne se fait pas au hasard. Il d&eacute;pend de votre cycle de vente, de la
               valeur de votre offre, de la maturit&eacute; de vos prospects et de la phase du
               pipeline sur laquelle vous avez le plus besoin de progresser.
@@ -444,9 +444,9 @@ export default function MethodesVenteB2BPage() {
                   {comparatif.map((row, i) => (
                     <tr key={i} className="border-b border-white/[0.06]">
                       <td className="py-3 pr-4 text-text-primary font-medium">{row.critere}</td>
-                      <td className="py-3 px-4 text-text-muted">{row.challenger}</td>
-                      <td className="py-3 px-4 text-text-muted">{row.spin}</td>
-                      <td className="py-3 pl-4 text-text-muted">{row.soncas}</td>
+                      <td className="py-3 px-4 text-text-secondary">{row.challenger}</td>
+                      <td className="py-3 px-4 text-text-secondary">{row.spin}</td>
+                      <td className="py-3 pl-4 text-text-secondary">{row.soncas}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -458,7 +458,7 @@ export default function MethodesVenteB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 R&egrave;gle pratique
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Si vous ne savez pas par o&ugrave; commencer, partez du SPIN Selling. C&apos;est la
                 m&eacute;thode la plus polyvalente et la plus facile &agrave; int&eacute;grer dans
                 des{' '}
@@ -480,12 +480,12 @@ export default function MethodesVenteB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Combiner les m&eacute;thodes dans un pipeline B2B
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Les trois m&eacute;thodes ne se concurrencent pas &mdash; elles couvrent des
               moments diff&eacute;rents du cycle de vente. Un pipeline B2B bien structur&eacute;
               utilise chaque m&eacute;thode l&agrave; o&ugrave; elle est la plus forte.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Voici comment articuler les trois approches dans un cycle de vente r&eacute;el, du
               premier contact &agrave; la signature.
             </p>
@@ -499,13 +499,13 @@ export default function MethodesVenteB2BPage() {
                       {step.methode}
                     </span>
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{step.detail}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{step.detail}</p>
                 </div>
               ))}
             </div>
 
             <div className="border-l-2 border-white/[0.06] pl-4 mb-6">
-              <p className="font-sans text-text-muted text-sm italic leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm italic leading-relaxed">
                 Ce cadre n&apos;est pas rigide. Sur un cycle court (une seule conversation), vous
                 compressez les quatre &eacute;tapes en un seul appel. Sur un cycle long, chaque
                 &eacute;tape peut correspondre &agrave; un rendez-vous distinct. L&apos;important
@@ -513,7 +513,7 @@ export default function MethodesVenteB2BPage() {
               </p>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La{' '}
               <a
                 href="/ressources/qualification-leads-b2b"
@@ -540,7 +540,7 @@ export default function MethodesVenteB2BPage() {
               finalise ce que les m&eacute;thodes ont construit.
             </p>
 
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La{' '}
               <a
                 href="/ressources/gestion-objections-b2b"
@@ -566,7 +566,7 @@ export default function MethodesVenteB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -593,7 +593,7 @@ export default function MethodesVenteB2BPage() {
                 <a
                   key={href}
                   href={href}
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">&rarr;</span>
                   <span>{label}</span>
@@ -610,7 +610,7 @@ export default function MethodesVenteB2BPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Structurer votre m&eacute;thode de vente B2B
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Choisir la bonne m&eacute;thode ne suffit pas &mdash; il faut l&apos;int&eacute;grer
               dans un pipeline qui fonctionne. Discovery, qualification, closing : on construit
               avec vous le processus commercial qui transforme vos leads en clients.

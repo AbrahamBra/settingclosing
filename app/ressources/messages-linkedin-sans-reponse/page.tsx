@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses | ChallengersLab",
+  title: "Messages LinkedIn sans réponse | ChallengersLab",
   description:
-    "5 erreurs qui tuent vos taux de réponse LinkedIn — et comment les corriger. Avec des exemples réels de mauvais drafts, leur analyse, et les versions corrigées.",
+    "5 erreurs qui tuent vos taux de réponse LinkedIn et comment les corriger. Exemples réels de mauvais messages et versions corrigées.",
   openGraph: {
-    title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses",
+    title: "Messages LinkedIn sans réponse | ChallengersLab",
     description:
       "Pitch trop tôt, deuxième phrase générique, test du téléphone raté. Les 5 erreurs de prospection LinkedIn les plus courantes — avec corrections.",
     locale: 'fr_FR',
@@ -157,7 +157,7 @@ export default function MessagesLinkedInSansReponsePage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -174,7 +174,7 @@ export default function MessagesLinkedInSansReponsePage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Pourquoi vos messages LinkedIn n&apos;obtiennent pas de réponses
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Ce n&apos;est pas LinkedIn qui ne fonctionne pas. Ce sont 5 erreurs précises
               qui tuent les taux de réponse — et qui se corrigent avec une règle simple à chaque fois.
             </p>
@@ -187,7 +187,7 @@ export default function MessagesLinkedInSansReponsePage() {
             <p className="font-sans font-semibold text-text-primary mb-1">
               Le taux de réponse moyen sur les messages LinkedIn non personnalisés est inférieur à 3&nbsp;%.
             </p>
-            <p className="font-sans text-text-muted text-sm leading-relaxed">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed">
               Sur des messages construits sur signal d&apos;achat, avec une deuxième phrase personnalisée
               et le bon niveau d&apos;intensité selon le signal — ce taux dépasse régulièrement 20&nbsp;%.
               La différence n&apos;est pas la plateforme. C&apos;est la méthode.
@@ -211,7 +211,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   </div>
                   <div>
                     <h3 className="font-sans font-semibold text-text-primary mb-2">{e.title}</h3>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">{e.body}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">{e.body}</p>
                     <div className="flex gap-2 items-start">
                       <span className="text-accent shrink-0 mt-0.5 text-xs font-semibold font-sans">→</span>
                       <p className="font-sans text-sm font-semibold text-text-primary">{e.rule}</p>
@@ -227,17 +227,17 @@ export default function MessagesLinkedInSansReponsePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               En pratique : mauvais draft vs version corrigée
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Ces exemples sont anonymisés et généralisés depuis des situations réelles.
               Même structure, même secteur fictif. Ce qui change : l&apos;application des règles.
             </p>
 
             {/* Exemple 1 */}
             <div className="mb-10">
-              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-4">
                 Contexte
               </p>
-              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-white/[0.06] mb-6 font-sans text-sm text-text-muted leading-relaxed">
+              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-white/[0.06] mb-6 font-sans text-sm text-text-secondary leading-relaxed">
                 <strong className="text-text-primary font-semibold">Profil :</strong> Directrice d&apos;agence digitale, 12 personnes, clients PME.
                 Post récent : &quot;Nos clients nous posent de plus en plus de questions sur la visibilité IA. On réfléchit à structurer une offre.&quot;
                 Signal : commentaire public → signal moyen/fort.
@@ -252,7 +252,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                     &quot;Bonjour Sophie, j&apos;espère que vous allez bien. Je travaille avec des agences digitales
                     pour les aider à développer leurs offres autour de l&apos;IA. Notre solution permet de mesurer
                     la visibilité de vos clients sur ChatGPT, Claude et Perplexity, avec un setup en 5 minutes
@@ -264,7 +264,7 @@ export default function MessagesLinkedInSansReponsePage() {
 
               {/* Analyse */}
               <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5 mb-4">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-3">
                   Pourquoi c&apos;est faux
                 </p>
                 <ul className="space-y-2">
@@ -274,7 +274,7 @@ export default function MessagesLinkedInSansReponsePage() {
                     "Pitch complet dans le premier message → trop tôt, le prospect n'a pas encore exprimé de besoin",
                     "Test du téléphone : non. Personne n'écrit comme ça depuis son téléphone un mardi matin",
                   ].map((item, i) => (
-                    <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                    <li key={i} className="flex gap-2 font-sans text-sm text-text-secondary">
                       <span className="text-red-400 shrink-0 mt-0.5">✗</span>
                       <span className="leading-relaxed">{item}</span>
                     </li>
@@ -291,7 +291,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                     &quot;Bonjour Sophie, j&apos;ai vu votre post sur l&apos;offre visibilité IA en construction.
                     Ce qui manque souvent à ce stade : une métrique pour prouver que ça marche côté client.
                     Vous avez déjà trouvé comment mesurer ça concrètement ?&quot;
@@ -302,10 +302,10 @@ export default function MessagesLinkedInSansReponsePage() {
 
             {/* Exemple 2 */}
             <div>
-              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-4">
                 Contexte
               </p>
-              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-white/[0.06] mb-6 font-sans text-sm text-text-muted leading-relaxed">
+              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-white/[0.06] mb-6 font-sans text-sm text-text-secondary leading-relaxed">
                 <strong className="text-text-primary font-semibold">Profil :</strong> Consultant indépendant, spécialisé B2B.
                 Post récent liké : question sur les LLC et la structuration juridique à l&apos;international.
                 Connexion commune avec un client existant.
@@ -321,7 +321,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                     &quot;Bonjour Nicolas, je me permets de vous contacter car je travaille avec des consultants
                     indépendants B2B. Mon programme aide à structurer un pipeline de prospection efficace,
                     avec un système de setting et closing éprouvé. Rendement garanti : 5 RDV qualifiés
@@ -332,7 +332,7 @@ export default function MessagesLinkedInSansReponsePage() {
 
               {/* Analyse */}
               <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5 mb-4">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-3">
                   Pourquoi c&apos;est faux
                 </p>
                 <ul className="space-y-2">
@@ -342,7 +342,7 @@ export default function MessagesLinkedInSansReponsePage() {
                     "Chiffre mis en avant (5 RDV) sans contexte → sonne comme une promesse commerciale, pas un échange",
                     "La connexion commune n'est pas mentionnée → signal social ignoré, accroché manqué",
                   ].map((item, i) => (
-                    <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                    <li key={i} className="flex gap-2 font-sans text-sm text-text-secondary">
                       <span className="text-red-400 shrink-0 mt-0.5">✗</span>
                       <span className="leading-relaxed">{item}</span>
                     </li>
@@ -359,7 +359,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                     &quot;Bonjour Nicolas, j&apos;ai vu votre question sur la structuration juridique à l&apos;international.
                     On a un contact en commun : Thomas travaille avec moi depuis quelques mois sur exactement
                     ce sujet. Ce que je fais est différent du coaching classique — vous avez 20 min
@@ -375,7 +375,7 @@ export default function MessagesLinkedInSansReponsePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Deux modes de message selon le signal
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Un signal fort et un signal faible n&apos;appellent pas la même approche.
               Appliquer la même structure à tout le monde revient à traiter un prospect chaud
               comme un contact froid — et à brûler les meilleures opportunités.
@@ -393,19 +393,19 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-5 py-5">
-                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                     <strong className="text-text-primary font-semibold">Signal fort :</strong>{' '}
                     commentaire direct sur votre sujet, question publique liée à votre offre,
                     interaction répétée sur plusieurs posts, a mentionné un problème que vous résolvez.
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                     <strong className="text-text-primary font-semibold">Objectif :</strong>{' '}
                     décrocher un rendez-vous dans le premier échange. Pas de nurturing,
                     pas de phase de découverte en DM. Un message, une question de qualification directe,
                     un appel proposé.
                   </p>
                   <div className="rounded-lg border border-blue-500/15 bg-white/[0.03] px-4 py-4">
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-2">
                       Structure
                     </p>
                     <ol className="space-y-1.5">
@@ -414,7 +414,7 @@ export default function MessagesLinkedInSansReponsePage() {
                         'Ce que ce signal dit de leur situation (1 phrase)',
                         'Question de qualification directe ou proposition d\'appel',
                       ].map((s, i) => (
-                        <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                        <li key={i} className="flex gap-2 font-sans text-sm text-text-secondary">
                           <span className="text-blue-400 font-semibold shrink-0">{i + 1}.</span>
                           <span className="leading-relaxed">{s}</span>
                         </li>
@@ -433,19 +433,19 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-5 py-5">
-                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                     <strong className="text-text-primary font-semibold">Signal faible ou indirect :</strong>{' '}
                     like passif, commentaire hors-sujet, vue de profil, demande de connexion sans message,
                     monitoring de compte concurrent ou complémentaire.
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                     <strong className="text-text-primary font-semibold">Objectif :</strong>{' '}
                     ouvrir la conversation, qualifier sur 2 à 3 échanges. Pas de rendez-vous
                     dans le premier message — ce serait aller trop vite. On teste l&apos;intérêt
                     avant de proposer quoi que ce soit.
                   </p>
                   <div className="rounded-lg border border-amber-500/15 bg-white/[0.03] px-4 py-4">
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-2">
                       Structure
                     </p>
                     <ol className="space-y-1.5">
@@ -454,7 +454,7 @@ export default function MessagesLinkedInSansReponsePage() {
                         'Micro-question ouverte — pas de pitch (1 phrase)',
                         'Attendre la réponse → qualifier en étape 2',
                       ].map((s, i) => (
-                        <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                        <li key={i} className="flex gap-2 font-sans text-sm text-text-secondary">
                           <span className="text-amber-400 font-semibold shrink-0">{i + 1}.</span>
                           <span className="leading-relaxed">{s}</span>
                         </li>
@@ -466,7 +466,7 @@ export default function MessagesLinkedInSansReponsePage() {
             </div>
 
             {/* Exemples des deux modes */}
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-5">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-5">
               Même profil, deux intensités de signal — deux messages différents
             </p>
 
@@ -480,7 +480,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-5 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                     &quot;Bonjour Marc, votre commentaire sur le post de Jean — &quot;on cherche exactement ça&quot; —
                     c&apos;est le signe que vous avez déjà identifié le problème. La question c&apos;est si vous avez
                     encore la bande passante pour construire le système vous-même.
@@ -498,7 +498,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   </p>
                 </div>
                 <div className="px-5 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                     &quot;Bonjour Marc, j&apos;ai vu que vous avez liké le post sur la prospection outbound
                     sans outil tiers. Curieux de savoir si c&apos;est un sujet actif pour vous en ce moment
                     ou plutôt une veille ?&quot;
@@ -512,7 +512,7 @@ export default function MessagesLinkedInSansReponsePage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Le mode détermine aussi la suite de la conversation.
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 En mode One Shot, si pas de réponse au bout de 5 jours, une seule relance courte.
                 En mode Conversation, chaque échange affine le scoring : tier 2 peut monter en tier 1
                 après deux réponses qualitatives. Les leads qui ne qualifient pas dans les 3 échanges
@@ -538,7 +538,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   <span className="text-accent shrink-0 mt-0.5 font-semibold">→</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-0.5">{item.rule}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{item.detail}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{item.detail}</p>
                   </div>
                 </div>
               ))}
@@ -550,23 +550,23 @@ export default function MessagesLinkedInSansReponsePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               L&apos;IA comme co-rédacteur, pas comme générateur
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               La plupart des solopreneurs qui utilisent ChatGPT ou Claude pour rédiger leurs messages
               obtiennent exactement le type de texte décrit ci-dessus : formel, structuré, clairement automatique.
               Le problème n&apos;est pas l&apos;outil — c&apos;est l&apos;usage.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               L&apos;IA utilisée correctement ne génère pas le message. Elle l&apos;analyse.
               Vous collez le profil LinkedIn du prospect — titre, bio, posts récents, connexions communes.
               Le modèle identifie le segment probable, repère 1 à 3 signaux précis, et propose un premier draft.
               Vous lisez. Vous corrigez. Vous envoyez.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La règle de vérification finale reste la même : lisez à voix haute.
               Si vous entendez le LLM, réécrivez.
               C&apos;est vous qui validez — pas l&apos;algorithme. C&apos;est le principe de base d&apos;un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">programme de setting commercial B2B</a> : IA co-rédige, setter valide, prospect reçoit quelque chose de vrai.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mt-4">
+            <p className="font-sans text-text-secondary leading-relaxed mt-4">
               Pour comprendre comment les trois couches s&apos;articulent — détection des signaux, scoring, phases de calibration et de scaling — voir <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn</a>.
             </p>
 
@@ -576,7 +576,7 @@ export default function MessagesLinkedInSansReponsePage() {
                 Les équipes qui utilisent l&apos;IA comme co-rédacteur (avec validation humaine)
                 ont des taux de réponse 3× supérieurs à ceux qui génèrent sans relire.
               </p>
-              <p className="font-sans text-text-muted text-sm">
+              <p className="font-sans text-text-secondary text-sm">
                 Source : données terrain ChallengersLab, analyse de 1 200+ messages envoyés, 2025–2026
               </p>
             </div>
@@ -593,7 +593,7 @@ export default function MessagesLinkedInSansReponsePage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -611,7 +611,7 @@ export default function MessagesLinkedInSansReponsePage() {
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -627,7 +627,7 @@ export default function MessagesLinkedInSansReponsePage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez des messages qui décrochent des RDV qualifiés ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               ChallengersLab construit et opère le système complet : signaux, rédaction assistée par IA,
               relances calibrées. Vous recevez les RDV. Garantie 5 minimum par mois.
             </p>

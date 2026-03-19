@@ -5,10 +5,10 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Prospection LinkedIn B2B : méthode complète en 2026 | ChallengersLab",
-  description: "Comment prospecter sur LinkedIn en B2B en 2026 : signaux d'achat, messages qui obtiennent des réponses, Sales Navigator, IA comme co-rédacteur. La méthode terrain.",
+  title: "Prospection LinkedIn B2B en 2026 | ChallengersLab",
+  description: "Prospecter sur LinkedIn en B2B en 2026 : signaux d'achat, messages qui obtiennent des réponses, Sales Navigator et IA co-rédacteur.",
   openGraph: {
-    title: "Prospection LinkedIn B2B : méthode complète en 2026",
+    title: "Prospection LinkedIn B2B en 2026 | ChallengersLab",
     description: "Signaux inbound et outbound, rédaction des messages, relances, qualification. Comment construire un système de prospection LinkedIn qui livre des RDV qualifiés semaine après semaine.",
     locale: 'fr_FR',
     type: 'article',
@@ -120,7 +120,7 @@ export default function ProspectionLinkedInB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -137,7 +137,7 @@ export default function ProspectionLinkedInB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Prospection LinkedIn B2B : méthode complète en 2026
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La boîte de réception LinkedIn est saturée. Les décideurs reçoivent 15 messages
               de prospection par semaine. Ce qui fait la différence n&apos;est pas le talent rédactionnel —
               c&apos;est le contexte. Voici comment construire un système qui livre des RDV qualifiés
@@ -164,19 +164,19 @@ export default function ProspectionLinkedInB2BPage() {
           <div className="grid grid-cols-3 gap-4 mb-14">
             <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-white/[0.06] text-center">
               <p className="font-serif text-3xl font-semibold text-accent mb-1">&lt;&nbsp;3&nbsp;%</p>
-              <p className="font-sans text-xs text-text-muted leading-snug">
+              <p className="font-sans text-xs text-text-secondary leading-snug">
                 Taux de réponse sans méthode
               </p>
             </div>
             <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-white/[0.06] text-center">
               <p className="font-serif text-3xl font-semibold text-accent mb-1">&gt;&nbsp;20&nbsp;%</p>
-              <p className="font-sans text-xs text-text-muted leading-snug">
+              <p className="font-sans text-xs text-text-secondary leading-snug">
                 Avec signal + message calibré
               </p>
             </div>
             <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-white/[0.06] text-center">
               <p className="font-serif text-3xl font-semibold text-accent mb-1">Sem.&nbsp;1</p>
-              <p className="font-sans text-xs text-text-muted leading-snug">
+              <p className="font-sans text-xs text-text-secondary leading-snug">
                 Premiers RDV dès la semaine 1
               </p>
             </div>
@@ -187,24 +187,24 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Pourquoi la prospection LinkedIn à froid ne fonctionne plus
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Il y a cinq ans, envoyer 50 messages LinkedIn par semaine était une tactique viable.
               Les boîtes de réception étaient peu encombrées. Un message personnalisé avec le prénom
               et une phrase sur le poste obtenait facilement 8 à 10 % de réponse.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce n&apos;est plus le cas. Les décideurs B2B reçoivent en moyenne 15 messages de prospection
               par semaine. Ils ont développé un réflexe de filtre : dès les deux premières lignes,
               ils savent si le message a été envoyé à mille personnes ou réellement écrit pour eux.
               Et ils agissent en conséquence.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le plafond de la prospection froide sans signal est bas. Vous pouvez écrire les meilleurs
               messages du monde, peaufiner chaque phrase, tester dix variables — vous resterez autour
               de 2 à 3 % de taux de réponse. Pas parce que vos messages sont mauvais. Parce que
               le problème n&apos;est pas rédactionnel.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Ce qui différencie un message qui obtient une réponse, c&apos;est le contexte. Le prospect
               a posté quelque chose sur le sujet il y a trois jours. Il a commenté un post d&apos;un concurrent.
               Il vient de changer de poste et son profil indique qu&apos;il recrute. Ces éléments créent
@@ -218,7 +218,7 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les deux sources de prospects chauds sur LinkedIn
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Un prospect chaud n&apos;est pas nécessairement quelqu&apos;un qui vous connaît.
               C&apos;est quelqu&apos;un qui explore activement un sujet lié à votre offre.
               Sur LinkedIn, ces signaux d&apos;intérêt viennent de deux endroits distincts.
@@ -235,13 +235,13 @@ export default function ProspectionLinkedInB2BPage() {
                   </span>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-text-secondary leading-relaxed mb-4">
                     Le prospect a réagi à un de vos posts. Il a liké, commenté, ou partagé.
                     Il vous connaît au moins de vue. La relation de confiance est déjà amorcée.
                     Ce type de signal est le plus facile à exploiter — le contexte est explicite,
                     la fenêtre d&apos;attention est ouverte.
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">
                     <strong className="text-text-primary font-semibold">Outil :</strong>{' '}
                     Des outils comme Reactin surveillent automatiquement chaque interaction
                     sur vos posts et les classent par type de signal. Vous obtenez une liste
@@ -259,20 +259,20 @@ export default function ProspectionLinkedInB2BPage() {
                   </span>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-text-secondary leading-relaxed mb-4">
                     Le prospect ne vous connaît pas encore. Mais il a interagi avec le contenu
                     d&apos;un autre compte que vous surveillez — un concurrent, un expert complémentaire,
                     un créateur de contenu sur votre sujet. Il a montré, ailleurs, qu&apos;il
                     cherche une réponse à un problème que vous résolvez.
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                     <strong className="text-text-primary font-semibold">Exemple concret :</strong>{' '}
                     Vous vendez une formation au closing B2B. Vous surveillez 5 créateurs de contenu
                     qui publient sur la vente et la prospection. Un directeur commercial qui commente
                     &ldquo;on a exactement ce problème en ce moment&rdquo; sous un post sur les pipelines vides
                     est un prospect chaud — même s&apos;il ne vous suit pas.
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">
                     <strong className="text-text-primary font-semibold">Outil :</strong>{' '}
                     Des outils comme Spyer automatisent la surveillance des comptes tiers
                     et vous remontent les interactions pertinentes. Sans outil, vous en manquerez
@@ -288,7 +288,7 @@ export default function ProspectionLinkedInB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les deux flux se complètent. Aucun ne suffit seul.
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 L&apos;inbound dépend de votre volume de publication — si vous ne postez pas,
                 il se tarit. Le signal tiers fonctionne même sans contenu propre, mais nécessite
                 une curation précise des comptes à surveiller. Un système mature utilise les deux.
@@ -301,11 +301,11 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Sales Navigator : comment cibler efficacement
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Sales Navigator n&apos;est pas un outil de prospection à froid. C&apos;est un outil de ciblage.
               La nuance est importante — elle détermine comment vous l&apos;utilisez.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Ce que Sales Navigator permet : filtrer par poste, secteur, taille d&apos;entreprise,
               zone géographique. Créer des listes de comptes à monitorer. Recevoir des alertes
               de changement de poste sur vos prospects prioritaires — l&apos;un des signaux d&apos;achat
@@ -324,7 +324,7 @@ export default function ProspectionLinkedInB2BPage() {
                     "Profils hors réseau accessibles",
                     "Historique des contacts et notes",
                   ].map((item, i) => (
-                    <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                    <li key={i} className="flex gap-2 font-sans text-sm text-text-secondary">
                       <span className="text-accent shrink-0 mt-0.5">→</span>
                       <span className="leading-relaxed">{item}</span>
                     </li>
@@ -341,8 +341,8 @@ export default function ProspectionLinkedInB2BPage() {
                     "Qualifier la chaleur du prospect",
                     "Gérer les relances et le nurturing",
                   ].map((item, i) => (
-                    <li key={i} className="flex gap-2 font-sans text-sm text-text-muted">
-                      <span className="text-text-muted/40 shrink-0 mt-0.5">–</span>
+                    <li key={i} className="flex gap-2 font-sans text-sm text-text-secondary">
+                      <span className="text-text-secondary/40 shrink-0 mt-0.5">–</span>
                       <span className="leading-relaxed">{item}</span>
                     </li>
                   ))}
@@ -350,7 +350,7 @@ export default function ProspectionLinkedInB2BPage() {
               </div>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La combinaison qui fonctionne : Sales Navigator pour construire une liste
               de profils qualifiés selon l&apos;ICP, puis les outils de signaux pour identifier
               lesquels sont actifs en ce moment. Vous n&apos;envoyez plus des messages à une liste —
@@ -364,7 +364,7 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Rédiger un message de prospection qui obtient une réponse
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Le signal crée le contexte. Le message l&apos;active. Les deux sont nécessaires :
               un bon signal avec un mauvais message, c&apos;est une opportunité gâchée.
               Voici les cinq règles non-négociables.
@@ -397,13 +397,13 @@ export default function ProspectionLinkedInB2BPage() {
                   <span className="text-accent shrink-0 mt-0.5 font-semibold">→</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-0.5">{item.rule}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{item.detail}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{item.detail}</p>
                   </div>
                 </div>
               ))}
             </div>
 
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-4">
               Mauvais message vs bon message — même profil, même signal
             </p>
 
@@ -416,7 +416,7 @@ export default function ProspectionLinkedInB2BPage() {
                 </p>
               </div>
               <div className="px-6 py-5">
-                <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                   &ldquo;Bonjour Thomas, j&apos;espère que vous allez bien. Je travaille avec des
                   dirigeants de PME pour les aider à développer leur pipeline commercial. Notre
                   programme combine setting, closing et IA pour générer des RDV qualifiés.
@@ -435,7 +435,7 @@ export default function ProspectionLinkedInB2BPage() {
                 </p>
               </div>
               <div className="px-6 py-5">
-                <p className="font-sans text-sm text-text-muted italic leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
                   &ldquo;Bonjour Thomas, j&apos;ai vu votre post sur les difficultés à remplir l&apos;agenda
                   de vos commerciaux en ce moment. Ce que vous décrivez ressemble exactement à ce
                   qu&apos;on voit chez nos clients avant de structurer le premier flux. Vous avez
@@ -445,7 +445,7 @@ export default function ProspectionLinkedInB2BPage() {
             </div>
 
             {/* Deux modes */}
-            <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
               La structure exacte dépend aussi de la chaleur du signal.
               On distingue deux modes selon l&apos;intensité de l&apos;interaction détectée.
             </p>
@@ -455,7 +455,7 @@ export default function ProspectionLinkedInB2BPage() {
                 <p className="font-sans text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">
                   Mode One Shot — Signal fort
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Commentaire précis, question directe sur le sujet, interaction répétée.
                   Objectif : proposer un call dans le premier message. Pas de phase
                   de nurturing — la fenêtre est ouverte, profitez-en.
@@ -465,7 +465,7 @@ export default function ProspectionLinkedInB2BPage() {
                 <p className="font-sans text-xs font-semibold text-amber-400 uppercase tracking-widest mb-2">
                   Mode Conversation — Signal faible
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Like passif, vue de profil, interaction hors-sujet.
                   Objectif : ouvrir l&apos;échange, qualifier sur 2 à 3 messages.
                   Ne proposez pas le call avant d&apos;avoir une réponse qualitative.
@@ -479,12 +479,12 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La logique des relances
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               80 % des commerciaux abandonnent après le premier ou deuxième message.
               Et pourtant, en moyenne, il faut 8 points de contact pour décrocher un RDV B2B.
               Ce décalage explique à lui seul une large partie des résultats médiocres en prospection.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Une relance n&apos;est pas un rappel. Ce n&apos;est pas &ldquo;je reviens vers vous&rdquo;.
               Chaque relance est un nouveau message avec un angle différent — une information
               récente, une question directe, un changement de registre. Jamais une copie du
@@ -501,22 +501,22 @@ export default function ProspectionLinkedInB2BPage() {
                 {
                   label: 'Relance J+3',
                   sub: 'Angle différent — nouvelle observation, autre fait tiré du profil',
-                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-secondary',
                 },
                 {
                   label: 'Relance J+7',
                   sub: 'Nouvelle information — actu du secteur, déclencheur récent, cas similaire',
-                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-secondary',
                 },
                 {
                   label: 'Relance J+14',
                   sub: 'Question directe — êtes-vous la bonne personne ? est-ce le bon moment ?',
-                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-secondary',
                 },
                 {
                   label: 'Relance J+21',
                   sub: 'Fermeture propre — dernier message, porte laissée ouverte, pas de pression',
-                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-secondary',
                 },
               ].map((step, i) => (
                 <div key={i} className="flex gap-4">
@@ -530,7 +530,7 @@ export default function ProspectionLinkedInB2BPage() {
                   </div>
                   <div className="pb-5">
                     <p className="font-sans font-semibold text-text-primary text-sm mb-0.5">{step.label}</p>
-                    <p className="font-sans text-text-muted text-xs">{step.sub}</p>
+                    <p className="font-sans text-text-secondary text-xs">{step.sub}</p>
                   </div>
                 </div>
               ))}
@@ -541,7 +541,7 @@ export default function ProspectionLinkedInB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les prospects qui ne répondent pas à 4 relances entrent en nurturing newsletter.
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Pas de DM supplémentaire. Ils ne sont pas désintéressés — ils ne sont peut-être
                 pas en phase d&apos;achat maintenant. Le nurturing maintient le contact sans
                 harceler. Dans 30 à 90 jours, une partie de ces leads redeviendra active.
@@ -554,26 +554,26 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               L&apos;IA comme co-rédacteur dans la prospection LinkedIn
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               L&apos;IA utilisée sans contexte produit des messages génériques. C&apos;est
               précisément le type de messages que les décideurs filtrent en deux secondes.
               Le problème n&apos;est pas l&apos;outil — c&apos;est l&apos;usage.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               L&apos;IA avec le bon contexte produit des messages personnalisés. Le flux correct :
               vous copiez le profil LinkedIn du prospect dans le modèle — titre, bio, posts récents,
               connexions communes. Vous ajoutez les règles de rédaction et deux exemples de bons messages.
               Le modèle analyse, identifie les signaux, propose un premier draft. Vous relisez.
               Vous corrigez si nécessaire. Vous envoyez.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce n&apos;est pas de la génération automatique. C&apos;est de la co-rédaction assistée.
               L&apos;IA fait le travail d&apos;analyse et de premier draft. Le jugement humain
               valide avant envoi. Cette distinction est importante — les équipes qui envoient
               les drafts sans relire ont des taux de réponse inférieurs à ceux qui valident
               systématiquement.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La règle finale reste la même quelle que soit la méthode : lisez le message
               à voix haute. Si vous entendez le LLM, réécrivez. Si ça sonne comme un humain
               qui connaît le prospect, envoyez.
@@ -584,7 +584,7 @@ export default function ProspectionLinkedInB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Le flux : profil → règles + exemples → draft → test voix haute → envoi.
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Chaque étape est obligatoire. Sauter le test voix haute revient à déléguer
                 le jugement à l&apos;algorithme. Le taux de réponse chute, et vous ne savez
                 pas pourquoi — parce que les messages semblent bons à l&apos;écrit.
@@ -597,25 +597,25 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Construire un système, pas juste une tactique
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Envoyer des messages LinkedIn n&apos;est pas opérer un système de prospection.
               Au bout de deux mois, la différence est nette dans les chiffres.
               L&apos;un plafonne. L&apos;autre monte.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Un système a quatre composantes : une source de signaux (inbound ou tiers),
               un CRM minimal pour tracker chaque prospect et son statut, un journal hebdomadaire
               des taux de réponse par message et par segment, et un flux de nurturing
               pour les leads qui ne sont pas encore en phase d&apos;achat.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               En phase de calibration (mois 1 à 2), l&apos;objectif n&apos;est pas le volume.
               C&apos;est la référence. Vous envoyez 20 à 40 messages par semaine, vous mesurez
               les taux de réponse par type de signal, par structure de message, par segment.
               Vous affinez les critères ICP à partir des profils qui répondent le mieux.
               Vous construisez les templates qui survivent au terrain.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               En phase de scaling (mois 3 et au-delà), le système tourne sur des bases connues.
               50 à 100 messages par semaine, taux de réponse stable au-dessus de 15 %,
               pipeline prévisible. C&apos;est le résultat direct des deux mois de calibration.
@@ -627,7 +627,7 @@ export default function ProspectionLinkedInB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Un système se calibre en 8 semaines. Il tourne seul ensuite.
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Les premières semaines sont les plus chronophages — sourcing manuel,
                 messages validés un par un, feedback loop serré. Passé la calibration,
                 le système peut être délégué ou assisté par IA avec un taux d&apos;erreur
@@ -647,7 +647,7 @@ export default function ProspectionLinkedInB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -667,7 +667,7 @@ export default function ProspectionLinkedInB2BPage() {
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -683,7 +683,7 @@ export default function ProspectionLinkedInB2BPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Un système de prospection LinkedIn opéré pour vous
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Signaux détectés, messages rédigés et validés, RDV livrés dans votre agenda.
               Garantie 5 RDV qualifiés minimum par mois. On démarre en 2 semaines.
             </p>

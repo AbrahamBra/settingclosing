@@ -5,11 +5,11 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer | ChallengersLab',
+  title: 'SPIN Selling : méthode de vente B2B | ChallengersLab',
   description:
-    'Le SPIN Selling de Neil Rackham est la méthode de vente B2B la plus validée empiriquement. Situation, Problème, Implication, Need-payoff : définition, questions et exemples concrets.',
+    'SPIN Selling : la méthode de vente B2B de Neil Rackham. Situation, Problème, Implication, Need-payoff avec exemples concrets.',
   openGraph: {
-    title: 'SPIN Selling 2026 : vendre en B2B sans forcer',
+    title: 'SPIN Selling : méthode de vente B2B | ChallengersLab',
     description:
       'SPIN Selling : les 4 types de questions qui font avancer un deal B2B. Méthode, exemples et lien avec la discovery call et le closing.',
     locale: 'fr_FR',
@@ -157,7 +157,7 @@ export default function MethodeSpinSellingPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -174,7 +174,7 @@ export default function MethodeSpinSellingPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Neil Rackham a analysé 35 000 appels commerciaux sur 12 ans pour comprendre ce qui
               différenciait les meilleurs vendeurs B2B. Résultat : pas les techniques de closing
               agressives. Les meilleurs posaient de meilleures questions. SPIN Selling est le cadre
@@ -188,7 +188,7 @@ export default function MethodeSpinSellingPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               À l&apos;origine de la méthode
             </p>
-            <p className="font-sans text-sm text-text-muted leading-relaxed">
+            <p className="font-sans text-sm text-text-secondary leading-relaxed">
               L&apos;étude Huthwaite (Neil Rackham, 1988) a analysé <strong className="text-text-primary">35 000 appels commerciaux</strong>{' '}
               dans 23 pays sur 12 ans. Principale conclusion : les techniques de closing traditionnelles
               (assumptive close, urgence artificielle) fonctionnent sur les petites ventes mais
@@ -209,10 +209,10 @@ export default function MethodeSpinSellingPage() {
                 { id: 'erreurs', label: 'Les 3 erreurs d\'application fréquentes' },
               ].map(({ id, label }, i) => (
                 <li key={id} className="flex gap-3 items-baseline">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-5 text-right">
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-5 text-right">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <a href={`#${id}`} className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors leading-snug">
+                  <a href={`#${id}`} className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors leading-snug">
                     {label}
                   </a>
                 </li>
@@ -225,7 +225,7 @@ export default function MethodeSpinSellingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Qu&apos;est-ce que le SPIN Selling ?
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               SPIN Selling est une méthode de vente publiée par Neil Rackham en 1988, issue de la
               plus grande étude empirique jamais conduite sur la performance commerciale. L&apos;acronyme
               désigne 4 catégories de questions :{' '}
@@ -234,14 +234,14 @@ export default function MethodeSpinSellingPage() {
               <strong className="text-text-primary">I</strong>mplication,{' '}
               <strong className="text-text-primary">N</strong>eed-payoff.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La logique centrale : dans les ventes complexes (offres à valeur élevée, plusieurs
               décideurs, cycle long), les prospects n&apos;achètent pas quand on leur dit quoi faire.
               Ils achètent quand ils comprennent eux-mêmes l&apos;ampleur de leur problème et la
               valeur d&apos;une solution. Le rôle du commercial est de faciliter cette prise de
               conscience — pas de pousser.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Ce que SPIN n&apos;est pas : un script à dérouler dans l&apos;ordre S→P→I→N sur
               chaque appel. C&apos;est un cadre de pensée qui guide l&apos;ordre de priorité des
               questions. Les meilleurs commerciaux n&apos;y pensent plus consciemment — ils ont
@@ -261,22 +261,22 @@ export default function MethodeSpinSellingPage() {
                     <span className="font-serif text-2xl text-accent leading-none">{lettre}</span>
                     <h3 className="font-sans font-semibold text-text-primary text-base">{type}</h3>
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed mb-4">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mb-4">
                     <strong className="text-text-primary">Objectif :</strong> {objectif}
                   </p>
                   <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] mb-3">
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                       Piège fréquent
                     </p>
-                    <p className="font-sans text-xs text-text-muted leading-relaxed">{piege}</p>
+                    <p className="font-sans text-xs text-text-secondary leading-relaxed">{piege}</p>
                   </div>
                   <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-2">
                       Exemples de questions
                     </p>
                     <ul className="space-y-1">
                       {exemples.map((ex) => (
-                        <li key={ex} className="font-sans text-xs text-text-muted flex gap-2">
+                        <li key={ex} className="font-sans text-xs text-text-secondary flex gap-2">
                           <span className="text-accent shrink-0 mt-0.5">→</span>
                           <span className="italic">{ex}</span>
                         </li>
@@ -293,7 +293,7 @@ export default function MethodeSpinSellingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Appliquer SPIN en discovery call
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Une discovery call de 45 minutes avec SPIN se découpe en 4 phases :
             </p>
             <div className="overflow-x-auto mb-6">
@@ -314,14 +314,14 @@ export default function MethodeSpinSellingPage() {
                   ].map(({ phase, duree, desc }) => (
                     <tr key={phase}>
                       <td className="py-4 pr-4 font-semibold text-text-primary align-top">{phase}</td>
-                      <td className="py-4 pr-4 text-text-muted align-top whitespace-nowrap">{duree}</td>
-                      <td className="py-4 text-text-muted leading-relaxed">{desc}</td>
+                      <td className="py-4 pr-4 text-text-secondary align-top whitespace-nowrap">{duree}</td>
+                      <td className="py-4 text-text-secondary leading-relaxed">{desc}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               L&apos;article complet sur la structure d&apos;une discovery call :{' '}
               <a href="/ressources/discovery-call-b2b" className="text-accent hover:text-text-primary transition-colors">
                 discovery call B2B — structure, questions et erreurs à éviter
@@ -338,7 +338,7 @@ export default function MethodeSpinSellingPage() {
             <div className="grid sm:grid-cols-2 gap-4 mb-5">
               <div className="bg-bg-secondary rounded-xl p-5 border border-accent/20">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">SPIN Selling</p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     'Posture d\'écoute et de questionnement',
                     'Le prospect formule lui-même son problème',
@@ -353,8 +353,8 @@ export default function MethodeSpinSellingPage() {
                 </ul>
               </div>
               <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">Challenger Sale</p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-3">Challenger Sale</p>
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     'Posture d\'apport d\'insight',
                     'Le commercial challenge les hypothèses du prospect',
@@ -363,13 +363,13 @@ export default function MethodeSpinSellingPage() {
                     'Plus adapté aux marchés matures où le prospect compare',
                   ].map((item) => (
                     <li key={item} className="flex gap-2">
-                      <span className="text-text-muted/40 shrink-0">→</span><span>{item}</span>
+                      <span className="text-text-secondary/40 shrink-0">→</span><span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Les deux méthodes sont complémentaires. SPIN structure la discovery. Le Challenger Sale
               fournit les insights à apporter pendant les questions Implication. En pratique :
               utilisez SPIN pour la structure de l&apos;appel, Challenger Sale pour vous donner
@@ -405,10 +405,10 @@ export default function MethodeSpinSellingPage() {
                 },
               ].map(({ num, title, desc }) => (
                 <div key={num} className="flex gap-5">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{num}</span>
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{num}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -422,7 +422,7 @@ export default function MethodeSpinSellingPage() {
               {faqItems.map(({ question, answer }) => (
                 <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>
               ))}
             </div>
@@ -440,7 +440,7 @@ export default function MethodeSpinSellingPage() {
                 { href: '/ressources/methode-soncas', label: 'Méthode SONCAS : 6 leviers de motivation d\'achat' },
                 { href: '/glossaire', label: 'Glossaire setting & closing B2B' },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -452,7 +452,7 @@ export default function MethodeSpinSellingPage() {
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">ChallengersLab</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Vous voulez améliorer votre taux de closing ?</h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour regarder votre structure d&apos;appel, identifier les
               questions manquantes et ce qui changerait dans votre cas. Gratuit. Sans engagement.
             </p>
@@ -460,7 +460,7 @@ export default function MethodeSpinSellingPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <a href="/ressources" className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors">← Retour au blog</a>
+            <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">← Retour au blog</a>
           </div>
 
         </div>

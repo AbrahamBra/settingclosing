@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Gérer les objections en vente B2B : méthode et exemples | ChallengersLab",
+  title: "Objections B2B : méthode et exemples | ChallengersLab",
   description:
-    "Les objections en vente B2B ne se traitent pas toutes pareil. Vraies objections vs prétextes, les 5 plus fréquentes avec réponses concrètes, et pourquoi l'objection prix arrive quand la valeur n'a pas été établie.",
+    "Vraies objections vs prétextes : les 5 objections B2B les plus fréquentes avec réponses concrètes et méthode de traitement.",
   openGraph: {
-    title: "Gérer les objections en vente B2B : méthode et exemples",
+    title: "Objections B2B : méthode et exemples | ChallengersLab",
     description:
       "Les 5 objections B2B les plus fréquentes — avec les bonnes et mauvaises réponses. Ce que 'c'est trop cher' veut dire en réalité.",
     locale: 'fr_FR',
@@ -122,7 +122,7 @@ export default function GestionObjectionsPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -139,7 +139,7 @@ export default function GestionObjectionsPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Gérer les objections en vente B2B : méthode et exemples
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Toutes les objections ne se traitent pas de la même façon. Il y a celles qui méritent une réponse
               et celles qui signalent que la décision est non. Confondre les deux vous fait passer du temps
               à argumenter avec des gens qui ne signeront pas.
@@ -152,12 +152,12 @@ export default function GestionObjectionsPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Vraies objections et objections-prétextes
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Une vraie objection est un doute légitime. Le prospect a une raison concrète de ne pas
               signer maintenant — un budget bloqué jusqu&apos;au trimestre suivant, un co-décideur à
               impliquer, un contrat en cours avec un concurrent. Ces objections méritent une réponse.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Une objection-prétexte est une sortie de secours. Le prospect n&apos;est pas convaincu
               mais il ne veut pas le dire directement. Il dit &ldquo;je vais réfléchir&rdquo;, &ldquo;envoyez-moi
               une plaquette&rdquo;, &ldquo;ce n&apos;est pas le bon moment&rdquo;. Traiter ces objections
@@ -168,7 +168,7 @@ export default function GestionObjectionsPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Objections réelles — à traiter
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     "Budget bloqué jusqu'au T3",
                     "Besoin de valider avec mon associé",
@@ -184,10 +184,10 @@ export default function GestionObjectionsPage() {
                 </ul>
               </div>
               <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-3">
                   Prétextes — à clarifier, pas à traiter
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     "Je vais réfléchir (sans date)",
                     "Envoyez-moi une plaquette",
@@ -196,14 +196,14 @@ export default function GestionObjectionsPage() {
                     "Je reviens vers vous",
                   ].map((item) => (
                     <li key={item} className="flex gap-2">
-                      <span className="text-text-muted/40 shrink-0">→</span>
+                      <span className="text-text-secondary/40 shrink-0">→</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La distinction se fait en posant une question directe : &ldquo;Est-ce que c&apos;est
               une question de timing ou c&apos;est que vous n&apos;êtes pas encore convaincu que
               c&apos;est la bonne solution ?&rdquo; La réponse dit exactement dans quelle situation
@@ -252,20 +252,20 @@ export default function GestionObjectionsPage() {
                 <div key={objection} className="border border-white/[0.06] rounded-xl overflow-hidden">
                   <div className="bg-bg-secondary px-5 py-4 border-b border-white/[0.06]">
                     <p className="font-sans font-semibold text-text-primary text-sm">{objection}</p>
-                    <p className="font-sans text-xs text-text-muted mt-1">{diagnostic}</p>
+                    <p className="font-sans text-xs text-text-secondary mt-1">{diagnostic}</p>
                   </div>
                   <div className="grid sm:grid-cols-2">
                     <div className="px-5 py-4 border-b sm:border-b-0 sm:border-r border-white/[0.06]">
-                      <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/50 mb-2">
+                      <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/50 mb-2">
                         Mauvaise réponse
                       </p>
-                      <p className="font-sans text-xs text-text-muted leading-relaxed italic">{mauvaise}</p>
+                      <p className="font-sans text-xs text-text-secondary leading-relaxed italic">{mauvaise}</p>
                     </div>
                     <div className="px-5 py-4">
                       <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                         Bonne réponse
                       </p>
-                      <p className="font-sans text-xs text-text-muted leading-relaxed italic">{bonne}</p>
+                      <p className="font-sans text-xs text-text-secondary leading-relaxed italic">{bonne}</p>
                     </div>
                   </div>
                 </div>
@@ -278,7 +278,7 @@ export default function GestionObjectionsPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Prévenir plutôt que traiter
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La plupart des objections courantes sont évitables si la discovery call a bien été conduite.
             </p>
             <div className="space-y-3">
@@ -290,10 +290,10 @@ export default function GestionObjectionsPage() {
               ].map(({ objection, cause, prevention }) => (
                 <div key={objection} className="flex gap-4 py-3 border-b border-white/[0.06] last:border-0">
                   <div className="shrink-0 w-36">
-                    <p className="font-sans text-xs font-semibold text-text-muted/60">{objection}</p>
+                    <p className="font-sans text-xs font-semibold text-text-secondary/60">{objection}</p>
                   </div>
                   <div className="flex-1">
-                    <p className="font-sans text-xs text-text-muted mb-1">Cause : {cause}</p>
+                    <p className="font-sans text-xs text-text-secondary mb-1">Cause : {cause}</p>
                     <p className="font-sans text-xs text-accent">Prévention : {prevention}</p>
                   </div>
                 </div>
@@ -310,7 +310,7 @@ export default function GestionObjectionsPage() {
               {faqItems.map(({ question, answer }) => (
                 <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>
               ))}
             </div>
@@ -334,7 +334,7 @@ export default function GestionObjectionsPage() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
@@ -351,7 +351,7 @@ export default function GestionObjectionsPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous perdez des deals sur des objections que vous pourriez éviter ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour regarder où vos deals se perdent et ce qui changerait
               dans votre cas. Gratuit. Sans engagement.
             </p>
@@ -361,7 +361,7 @@ export default function GestionObjectionsPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <a href="/ressources" className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors">
+            <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">
               ← Retour au blog
             </a>
           </div>

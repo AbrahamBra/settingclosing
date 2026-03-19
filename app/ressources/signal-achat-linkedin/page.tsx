@@ -111,7 +111,7 @@ const signalTypes = [
   {
     level: 'Faible',
     label: 'Like passif',
-    color: 'text-text-muted',
+    color: 'text-text-secondary',
     dot: 'bg-text-muted/40',
     desc: "Le prospect a liké un post sur un sujet lié à votre offre. L'intérêt existe, mais il n'est pas encore verbalié. Objectif du DM : qualifier avant de pitcher. Message court, question ouverte.",
     rule: 'Template générique envoyé. Court et ouvert.',
@@ -160,7 +160,7 @@ export default function SignalAchatLinkedInPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -177,7 +177,7 @@ export default function SignalAchatLinkedInPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               C&apos;est quoi un signal d&apos;achat LinkedIn ?
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La plupart des solopreneurs pensent que prospecter sur LinkedIn, c&apos;est contacter des inconnus à froid.
               Un signal d&apos;achat, c&apos;est l&apos;opposé : le prospect a déjà levé la main — vous n&apos;avez plus qu&apos;à le voir.
             </p>
@@ -202,17 +202,17 @@ export default function SignalAchatLinkedInPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Pourquoi le signal change tout
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Un message envoyé sans signal est une interruption. Un message envoyé après un signal est
               une continuation. La différence n&apos;est pas stylistique — elle est structurelle.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Quand un prospect a liké un post sur la prospection B2B, commenté un article sur les rendements alternatifs,
               ou posé une question sur les techniques de closing : il est en train de chercher. Pas nécessairement
               votre offre spécifiquement — mais une réponse à un problème qui correspond exactement
               à ce que vous résolvez.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Votre message arrive alors dans un contexte d&apos;intérêt actif, pas de disruption.
               C&apos;est pourquoi les taux de réponse sur signaux sont structurellement plus élevés
               que sur la prospection purement froide.
@@ -224,7 +224,7 @@ export default function SignalAchatLinkedInPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Il faut en moyenne 8 points de contact pour décrocher un rendez-vous B2B.
               </p>
-              <p className="font-sans text-text-muted text-sm">
+              <p className="font-sans text-text-secondary text-sm">
                 Un signal d&apos;achat ne remplace pas ces 8 contacts — il rend chacun d&apos;eux plus pertinent.
                 Le prospect répond parce que vous parlez d&apos;un sujet qu&apos;il explore déjà.
                 (Source : Marketing Donut)
@@ -237,7 +237,7 @@ export default function SignalAchatLinkedInPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 2 sources de signaux
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Tous les signaux ne viennent pas du même endroit. Dans un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">système de setting B2B</a> structuré,
               on distingue deux flux d&apos;acquisition distincts — avec des outils et des approches différentes.
             </p>
@@ -255,12 +255,12 @@ export default function SignalAchatLinkedInPage() {
                   </div>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-text-secondary leading-relaxed mb-4">
                     Le prospect a interagi avec <strong className="text-text-primary font-semibold">un de vos posts</strong>.
                     Il vous connaît, au moins de nom. Il a vu votre contenu, il a montré un intérêt.
                     La relation de confiance est déjà amorcée d&apos;un côté.
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">
                     <strong className="text-text-primary font-semibold">Comment le détecter :</strong>{' '}
                     Les outils de surveillance inbound (type Reactin) trackent automatiquement chaque
                     interaction sur vos posts et déclenchent un DM selon le type de post.
@@ -280,19 +280,19 @@ export default function SignalAchatLinkedInPage() {
                   </div>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-text-muted leading-relaxed mb-4">
+                  <p className="font-sans text-text-secondary leading-relaxed mb-4">
                     Le prospect a interagi avec <strong className="text-text-primary font-semibold">le contenu d&apos;un autre compte</strong> que vous surveillez —
                     un créateur, un expert, un concurrent — sur un sujet lié à votre offre.
                     Il ne vous connaît pas encore. Mais il a montré, ailleurs, qu&apos;il cherche une réponse au problème que vous résolvez.
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed mb-3">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed mb-3">
                     <strong className="text-text-primary font-semibold">Comment le détecter :</strong>{' '}
                     Les outils de surveillance tiers (type Spyer) détectent les interactions sur les comptes que vous avez
                     identifiés comme pertinents. Vous accédez ainsi à une audience qui ne vous suit pas encore,
                     mais qui s&apos;intéresse activement à votre sujet.
                   </p>
                   <div className="bg-bg-primary rounded-lg px-4 py-3 border border-white/[0.06]">
-                    <p className="font-sans text-xs text-text-muted leading-relaxed">
+                    <p className="font-sans text-xs text-text-secondary leading-relaxed">
                       <strong className="text-text-primary font-semibold">Règle clé :</strong>{' '}
                       le message sur signal tiers ne mentionne jamais la surveillance directement
                       si le signal est ancien ou le profil sur-sollicité. On part du sujet métier,
@@ -310,7 +310,7 @@ export default function SignalAchatLinkedInPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 3 niveaux de signal — et comment adapter votre réponse
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Tous les signaux n&apos;ont pas la même intensité. La qualité de l&apos;interaction
               détermine l&apos;approche. Envoyer le même template à un like passif et à un commentaire
               détaillé, c&apos;est rater 80&nbsp;% de la conversion.
@@ -322,11 +322,11 @@ export default function SignalAchatLinkedInPage() {
                   <div className="px-6 py-4 flex items-center gap-3 border-b border-white/[0.06]">
                     <span className={`w-2 h-2 rounded-full shrink-0 ${s.dot}`} />
                     <p className={`font-sans font-semibold ${s.color}`}>{s.label}</p>
-                    <span className="font-sans text-xs text-text-muted ml-auto">{s.level}</span>
+                    <span className="font-sans text-xs text-text-secondary ml-auto">{s.level}</span>
                   </div>
                   <div className="px-6 py-5">
-                    <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">{s.desc}</p>
-                    <p className="font-sans text-xs text-text-muted">
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">{s.desc}</p>
+                    <p className="font-sans text-xs text-text-secondary">
                       <strong className="text-text-primary font-semibold">Règle terrain :</strong> {s.rule}
                     </p>
                   </div>
@@ -340,7 +340,7 @@ export default function SignalAchatLinkedInPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Du signal au call : le flux complet
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Un signal seul ne génère pas de RDV. C&apos;est ce qui suit le signal — la qualité
               du message, la logique de qualification, le timing des relances — qui détermine
               si le signal se convertit en rendez-vous qualifié.
@@ -359,7 +359,7 @@ export default function SignalAchatLinkedInPage() {
                   </div>
                   <div className="pb-5">
                     <p className="font-sans font-semibold text-text-primary text-sm mb-0.5">{s.label}</p>
-                    <p className="font-sans text-text-muted text-xs">{s.sub}</p>
+                    <p className="font-sans text-text-secondary text-xs">{s.sub}</p>
                   </div>
                 </div>
               ))}
@@ -370,7 +370,7 @@ export default function SignalAchatLinkedInPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 L&apos;erreur la plus courante : pitcher au premier DM.
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Le premier message n&apos;a qu&apos;un objectif : ouvrir la conversation.
                 Pas vendre. Pas présenter l&apos;offre. Pas mentionner les prix.
                 Un seul objectif : créer un échange. La qualification vient après. Le pitch vient encore après.
@@ -383,7 +383,7 @@ export default function SignalAchatLinkedInPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Version directe ou indirecte : comment choisir
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Sur signal tiers, deux approches existent. Le choix dépend de l&apos;ancienneté
               du signal et du profil du prospect.
             </p>
@@ -391,27 +391,27 @@ export default function SignalAchatLinkedInPage() {
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5">
                 <p className="font-sans font-semibold text-text-primary mb-2">Version directe</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                   Référence explicitement l&apos;interaction sur le contenu tiers.
                   Convertit mieux quand le signal est récent (moins de 2 semaines).
                 </p>
-                <p className="font-sans text-xs text-text-muted italic">
+                <p className="font-sans text-xs text-text-secondary italic">
                   &quot;J&apos;ai vu votre réaction sur un post autour de [sujet]. C&apos;est quelque chose que vous avez déjà creusé ?&quot;
                 </p>
               </div>
               <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5">
                 <p className="font-sans font-semibold text-text-primary mb-2">Version indirecte</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                   Part du sujet métier, pas de la surveillance. Préférable sur les profils sur-sollicités
                   ou quand le signal est ancien.
                 </p>
-                <p className="font-sans text-xs text-text-muted italic">
+                <p className="font-sans text-xs text-text-secondary italic">
                   &quot;Je tombe sur votre profil en travaillant avec des [profil]. [Sujet], c&apos;est quelque chose que vous avez déjà exploré ?&quot;
                 </p>
               </div>
             </div>
 
-            <p className="font-sans text-sm text-text-muted mt-4 leading-relaxed">
+            <p className="font-sans text-sm text-text-secondary mt-4 leading-relaxed">
               La règle absolue dans les deux cas :{' '}
               <strong className="text-text-primary font-semibold">qualifier avant de pitcher.</strong>{' '}
               Le signal indique un intérêt — pas encore une intention d&apos;achat. C&apos;est la conversation
@@ -430,7 +430,7 @@ export default function SignalAchatLinkedInPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -449,7 +449,7 @@ export default function SignalAchatLinkedInPage() {
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -465,7 +465,7 @@ export default function SignalAchatLinkedInPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un système qui détecte et convertit les signaux pour vous ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               ChallengersLab met en place le flux complet : surveillance des signaux, rédaction assistée
               par IA, suivi des conversations, RDV qualifiés livrés. Garantie 5 RDV minimum par mois.
             </p>

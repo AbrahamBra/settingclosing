@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Closing LinkedIn : définition, méthode et programme complet | ChallengersLab',
+  title: 'Closing B2B : définition et méthode | ChallengersLab',
   description:
-    "Le closing B2B est la phase de vente où un commercial transforme un prospect qualifié en client signé. Définition exacte, rôle du closeur, discovery call, gestion des objections et programme complet.",
+    "Le closing B2B transforme un prospect qualifié en client signé. Définition, rôle du closeur, discovery call, objections et programme complet.",
   openGraph: {
-    title: 'Closing LinkedIn : définition et méthode complète',
+    title: 'Closing B2B : définition et méthode | ChallengersLab',
     description:
       "Closeur, discovery call, objections, Challenger Sale : tout sur le closing commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart signent moins qu'ils ne devraient.",
     locale: 'fr_FR',
@@ -137,7 +137,7 @@ export default function ClosingB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -154,7 +154,7 @@ export default function ClosingB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Closing B2B : définition, méthode et programme complet
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Le closing est la phase de vente où un commercial transforme un prospect qualifié en
               client signé. Ce guide couvre ce que ça implique vraiment — la discovery call, la
               gestion des objections, les erreurs les plus fréquentes, la méthode Challenger Sale —
@@ -172,7 +172,7 @@ export default function ClosingB2BPage() {
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-white/[0.06]">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
-                <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
+                <p className="font-sans text-xs text-text-secondary leading-snug">{label}</p>
               </div>
             ))}
           </div>
@@ -198,12 +198,12 @@ export default function ClosingB2BPage() {
                 { id: 'pour-qui', label: 'Pour qui le coaching closing est fait — et pour qui non' },
               ].map(({ id, label }, i) => (
                 <li key={id} className="flex gap-3 items-baseline">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-5 text-right">
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-5 text-right">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <a
                     href={`#${id}`}
-                    className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors leading-snug"
+                    className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors leading-snug"
                   >
                     {label}
                   </a>
@@ -217,12 +217,12 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Ce que le closing B2B est — et ce que ce n&apos;est pas
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le closing est la phase finale d&apos;un cycle de vente B2B : le moment où un prospect
               qualifié devient client signé. Le closeur conduit un ou plusieurs appels commerciaux, explore
               le problème, présente la valeur de l&apos;offre et obtient une décision.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce que le closing n&apos;est pas : un ensemble de techniques de manipulation pour forcer une
               décision. Cette confusion vient en grande partie du vocabulaire — &ldquo;techniques de
               closing&rdquo;, &ldquo;scripts de closing&rdquo; — qui laisse entendre qu&apos;il s&apos;agit
@@ -230,14 +230,14 @@ export default function ClosingB2BPage() {
               ne force rien. Il qualifie, il écoute, il explique — et il sait reconnaître quand le
               prospect n&apos;est pas le bon client.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               En B2B, le closing porte sur des offres à valeur élevée — généralement à partir de 1 500 à
               2 000 €. En dessous, le cycle de vente est trop court pour justifier un appel structuré.
               Au-dessus, un appel bien conduit peut faire la différence entre 20 % et 40 % de taux de
               transformation. C&apos;est considérable sur un pipeline de 8 à 12 appels par mois.
             </p>
             <div className="border-l-2 border-accent/30 pl-5 mb-4">
-              <p className="font-sans text-sm text-text-muted leading-relaxed">
+              <p className="font-sans text-sm text-text-secondary leading-relaxed">
                 La confusion fréquente : appeler &ldquo;closing&rdquo; tout le processus de vente.
                 Dans une organisation avec un setter et un closeur, le closing désigne spécifiquement
                 ce que fait le closeur — l&apos;appel de transformation. Le setting (prospection,
@@ -245,7 +245,7 @@ export default function ClosingB2BPage() {
                 métriques et ses propres compétences.
               </p>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Le cycle complet en 5 étapes : signal d&apos;achat détecté par le setter → message de
               prospection → qualification → prise de RDV → appel de closing. Le closeur n&apos;intervient
               qu&apos;à partir de la cinquième étape — mais c&apos;est lui qui décide si le chiffre
@@ -258,7 +258,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La journée type d&apos;un closeur
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un closeur qui travaille avec un setter reçoit ses RDV la veille ou en début de journée.
               Il ne prospecte pas. Sa journée est structurée autour de deux ou trois appels, avec
               de la préparation en amont et de la documentation en aval.
@@ -302,7 +302,7 @@ export default function ClosingB2BPage() {
                   </span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -315,7 +315,7 @@ export default function ClosingB2BPage() {
               ].map(({ chiffre, detail }) => (
                 <div key={chiffre}>
                   <p className="font-serif text-lg text-accent mb-1">{chiffre}</p>
-                  <p className="font-sans text-xs text-text-muted leading-snug">{detail}</p>
+                  <p className="font-sans text-xs text-text-secondary leading-snug">{detail}</p>
                 </div>
               ))}
             </div>
@@ -326,12 +326,12 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La discovery call : la phase que personne ne prépare assez
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La majorité des deals perdus en B2B ne se perdent pas sur les objections. Ils se perdent
               parce que le closeur a présenté son offre sans comprendre ce que le prospect voulait
               vraiment. La discovery call est là pour éviter ça.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Une discovery bien conduite répond à quatre questions avant tout pitch :
             </p>
             <div className="grid sm:grid-cols-2 gap-3 mb-6">
@@ -343,11 +343,11 @@ export default function ClosingB2BPage() {
               ].map(({ q, detail }) => (
                 <div key={q} className="bg-bg-secondary rounded-xl p-4 border border-white/[0.06]">
                   <p className="font-sans text-sm font-semibold text-text-primary mb-1">{q}</p>
-                  <p className="font-sans text-xs text-text-muted leading-relaxed">{detail}</p>
+                  <p className="font-sans text-xs text-text-secondary leading-relaxed">{detail}</p>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La structure en 4 phases d&apos;une discovery de 45 minutes : 5 min de contexte et
               rapport (qui ils sont, d&apos;où ils viennent), 15 min sur le problème et son coût,
               10 min sur les tentatives précédentes et les critères de décision, 5 min pour valider
@@ -357,7 +357,7 @@ export default function ClosingB2BPage() {
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                 Résultat concret — coaching closing
               </p>
-              <p className="font-sans text-sm text-text-muted leading-relaxed">
+              <p className="font-sans text-sm text-text-secondary leading-relaxed">
                 10 RDV consécutifs, 0 contrat signé. En première session de coaching, on a réécouté
                 un appel enregistré. En 8 minutes, le problème était visible : il pitchait l&apos;offre
                 avant d&apos;avoir compris le problème du prospect. Les prospects disaient
@@ -366,7 +366,7 @@ export default function ClosingB2BPage() {
                 aussi.
               </p>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed mt-4">
+            <p className="font-sans text-text-secondary leading-relaxed mt-4">
               L&apos;article complet sur la discovery call est{' '}
               <a
                 href="/ressources/discovery-call-b2b"
@@ -383,7 +383,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les objections : les vraies et les fausses
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               La première chose qu&apos;un closeur apprend : toutes les objections ne se traitent pas de
               la même façon. Il y a les objections réelles (le prospect a un doute légitime que vous devez
               lever) et les objections-prétextes (il cherche à mettre fin à la conversation sans conflit).
@@ -395,7 +395,7 @@ export default function ClosingB2BPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Objections réelles
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     "Je n'ai pas le budget pour les 3 prochains mois",
                     "Je dois en parler à mon associé qui co-décide",
@@ -410,10 +410,10 @@ export default function ClosingB2BPage() {
                 </ul>
               </div>
               <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-3">
                   Objections-prétextes
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     "C'est trop cher (sans avoir exploré la valeur)",
                     "Je vais réfléchir (sans date de retour)",
@@ -421,21 +421,21 @@ export default function ClosingB2BPage() {
                     "Ce n'est pas le bon moment (sans contexte)",
                   ].map((item) => (
                     <li key={item} className="flex gap-2">
-                      <span className="text-text-muted/40 shrink-0">→</span>
+                      <span className="text-text-secondary/40 shrink-0">→</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               L&apos;objection &ldquo;c&apos;est trop cher&rdquo; intervenant en fin d&apos;appel est
               presque toujours un signal que la valeur n&apos;a pas été établie pendant la discovery.
               La réponse n&apos;est pas d&apos;argumenter sur le prix — c&apos;est de revenir sur le
               coût du problème. &ldquo;Si on ne résout pas ça dans les 6 prochains mois, qu&apos;est-ce
               que ça vous coûte concrètement ?&rdquo;
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Pour les objections-prétextes, la méthode Challenger Sale recommande de clarifier directement
               plutôt que de relancer. &ldquo;Est-ce que c&apos;est le budget qui pose problème, ou c&apos;est
               que vous n&apos;êtes pas convaincu que c&apos;est la bonne solution ?&rdquo; La réponse dit
@@ -455,13 +455,13 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La méthode Challenger Sale
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Matthew Dixon et Brent Adamson ont étudié 6 000 commerciaux B2B pour comprendre ce qui
               différenciait les plus performants. Résultat : pas la relation client, pas la sympathie,
               pas la persévérance. Les meilleurs vendeurs étaient ceux qui challengeaient le prospect —
               ceux qui apportaient une perspective que le prospect n&apos;avait pas.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Le Challenger Sale repose sur trois composantes :
             </p>
             <div className="space-y-5 mb-6">
@@ -486,12 +486,12 @@ export default function ClosingB2BPage() {
                   <span className="font-sans text-accent text-xs font-semibold tabular-nums shrink-0 w-12 pt-0.5 uppercase tracking-widest">{step}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Pour les fondateurs, freelances et solopreneurs B2B, le Take Control est la composante la plus difficile
               à intégrer — elle va contre l&apos;instinct de ne pas brusquer le prospect. C&apos;est
               pourtant ce qui distingue un appel qui se termine par &ldquo;je réfléchis&rdquo; (deal
@@ -511,7 +511,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 5 erreurs qui détruisent le taux de closing
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Ces cinq erreurs reviennent dans presque tous les audits d&apos;appels que nous
               réalisons. Elles ne sont pas des erreurs de débutant — on les retrouve chez des
               commerciaux avec plusieurs années d&apos;expérience. La différence : les débutants
@@ -546,10 +546,10 @@ export default function ClosingB2BPage() {
                 },
               ].map(({ num, title, desc }) => (
                 <div key={num} className="flex gap-5">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{num}</span>
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{num}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-2">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -561,7 +561,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Programme de coaching closing : semaine par semaine
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un programme de coaching closing ne ressemble pas à une formation commerciale classique.
               Il n&apos;y a pas de modules à regarder, pas de quiz, pas de certification. C&apos;est
               du travail sur vos appels réels, avec votre offre, sur vos prospects.
@@ -578,14 +578,14 @@ export default function ClosingB2BPage() {
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Audit de l&apos;existant
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                 On commence par écouter. Si vous avez des enregistrements d&apos;appels, on les analyse
                 ensemble. Sinon, on reconstitue la structure de vos 3 derniers appels depuis mémoire.
                 L&apos;objectif : identifier le moment exact où les prospects se ferment. Pas
                 &ldquo;en général&rdquo; — à quelle minute, sur quelle question ou quelle phrase.
               </p>
               <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
-                <p className="font-sans text-text-muted leading-relaxed">
+                <p className="font-sans text-text-secondary leading-relaxed">
                   Ce que la semaine 1 produit : un diagnostic précis — les 2 ou 3 points où vos
                   appels perdent le prospect, et le plan de travail pour les 2 prochains mois.
                 </p>
@@ -603,14 +603,14 @@ export default function ClosingB2BPage() {
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Restructuration de la discovery
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                 On réécrit la structure de votre appel. Ça commence par les questions : on travaille
                 l&apos;ordre (contexte → problème → coût → tentatives précédentes → décideur), les
                 formulations qui font parler et celles qui font se fermer. Vous testez cette nouvelle
                 structure sur des appels réels. On en reparle après chaque appel.
               </p>
               <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
-                <p className="font-sans text-text-muted leading-relaxed">
+                <p className="font-sans text-text-secondary leading-relaxed">
                   Ce que les semaines 2-3 produisent : une structure de discovery adaptée à votre
                   offre et à votre marché. La plupart des gens ressentent un changement dès
                   le 2e appel avec la nouvelle structure.
@@ -629,14 +629,14 @@ export default function ClosingB2BPage() {
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Gestion des objections spécifiques à votre marché
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                 On construit votre bibliothèque d&apos;objections — les 5 à 8 objections que vous
                 entendez systématiquement, avec la réponse calibrée pour chacune. Ce n&apos;est pas
                 un script à réciter. C&apos;est un cadre mental qui permet de répondre naturellement
                 parce que vous avez réfléchi à la réponse avant l&apos;appel.
               </p>
               <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
-                <p className="font-sans text-text-muted leading-relaxed">
+                <p className="font-sans text-text-secondary leading-relaxed">
                   Ce que les semaines 4-6 produisent : un taux de closing qui monte. Pas encore
                   à son plateau, mais la progression est visible. Les objections commencent à
                   sembler prévisibles plutôt que surprenantes.
@@ -655,7 +655,7 @@ export default function ClosingB2BPage() {
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Demande de décision et relances
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                 La partie la plus difficile à maîtriser : comment conclure sans forcer. On travaille
                 les formulations de demande de décision qui ne mettent pas le prospect en position
                 défensive. Et on construit le protocole de relance pour les prospects qui &ldquo;réfléchissent&rdquo;
@@ -663,7 +663,7 @@ export default function ClosingB2BPage() {
                 appel commercial compressé en 3 lignes.
               </p>
               <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
-                <p className="font-sans text-text-muted leading-relaxed">
+                <p className="font-sans text-text-secondary leading-relaxed">
                   Ce que les semaines 7-10 produisent : votre taux de closing approche son plateau.
                   Les deals &ldquo;je réfléchis&rdquo; commencent à se résoudre plus vite — dans
                   un sens ou dans l&apos;autre.
@@ -682,7 +682,7 @@ export default function ClosingB2BPage() {
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Cas difficiles et consolidation
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                 On travaille ce qui résiste encore : les profils atypiques, les deals à plusieurs
                 décideurs, les cycles longs. Et on met en place les outils de pilotage autonome —
                 comment vous mesurez votre taux, comment vous identifiez une dégradation avant
@@ -696,7 +696,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La courbe de progression réelle
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Ce que les gens imaginent avant de commencer : les résultats progressent de façon
               linéaire dès la première semaine. Ce qui se passe vraiment : la progression est
               non-linéaire, avec un creux autour de la semaine 3-4 quand on change les habitudes,
@@ -735,13 +735,13 @@ export default function ClosingB2BPage() {
                   ].map(({ etape, desc }) => (
                     <tr key={etape}>
                       <td className="py-4 pr-4 font-semibold text-text-primary align-top">{etape}</td>
-                      <td className="py-4 text-text-muted leading-relaxed">{desc}</td>
+                      <td className="py-4 text-text-secondary leading-relaxed">{desc}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La semaine 3-4 est celle où les gens abandonnent les formations classiques. La nouvelle
               structure ne se sent pas encore naturelle, et le taux ne s&apos;est pas encore amélioré.
               C&apos;est précisément là que l&apos;accompagnement fait la différence — quelqu&apos;un
@@ -754,7 +754,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Cas client : de 0 signé sur 10 à 8 signés sur 10
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Consultant RH indépendant. Offre d&apos;accompagnement à 3 500 € sur 3 mois. Pipeline
               régulier — un setter générait 3 à 4 RDV par semaine. Le problème : 10 RDV consécutifs,
               0 contrat signé.
@@ -763,10 +763,10 @@ export default function ClosingB2BPage() {
             <div className="space-y-6 mb-6">
               {/* Situation initiale */}
               <div className="border-l-2 border-white/[0.06] pl-5">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-2">
                   Situation initiale
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Structure type de ses appels avant coaching : 5 min d&apos;introduction,
                   15 min de présentation de l&apos;offre, 5 min de questions, annonce du prix,
                   gestion des objections. Le problème était visible dès la première écoute :
@@ -783,7 +783,7 @@ export default function ClosingB2BPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                   Séance 1 — Écoute et diagnostic
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   On a réécouté un appel enregistré ensemble. À la minute 7, le prospect avait dit
                   une phrase importante sur son vrai problème — et il l&apos;avait ignorée pour
                   continuer son pitch. On a identifié 3 points de rupture exacts dans la structure
@@ -797,7 +797,7 @@ export default function ClosingB2BPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                   Semaine 2 — Premier appel avec la nouvelle structure
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Nouvelle discovery : 20 min de questions sur le contexte, le problème, le coût
                   du statu quo, les tentatives précédentes. Présentation de l&apos;offre ensuite —
                   ancrée sur ce qu&apos;il avait entendu. Le prospect lui a dit en fin d&apos;appel :
@@ -811,7 +811,7 @@ export default function ClosingB2BPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                   Semaines 3–6 — Consolidation
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Les 7 appels suivants : signés. Pas parce que chaque prospect était idéal —
                   l&apos;un d&apos;eux avait des objections réelles sur le budget. On a travaillé
                   la réponse en temps réel après l&apos;appel. Le suivant, même profil : signé.
@@ -824,7 +824,7 @@ export default function ClosingB2BPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                   4 mois plus tard
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Taux de closing stabilisé à 38 % sur 4 à 6 appels par semaine. Soit en moyenne
                   2 clients supplémentaires par mois par rapport à la situation initiale. Sur une
                   offre à 3 500 €, c&apos;est +7 000 €/mois. Le coaching lui a coûté 2 000 €/mois
@@ -841,7 +841,7 @@ export default function ClosingB2BPage() {
               ].map(({ chiffre, detail }) => (
                 <div key={chiffre}>
                   <p className="font-serif text-lg text-accent mb-1">{chiffre}</p>
-                  <p className="font-sans text-xs text-text-muted leading-snug">{detail}</p>
+                  <p className="font-sans text-xs text-text-secondary leading-snug">{detail}</p>
                 </div>
               ))}
             </div>
@@ -852,7 +852,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Setting et closing : la chaîne complète
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Un closeur sans setter passe 50 % de son temps à prospecter — ce qui n&apos;est pas sa
               compétence principale. Un setter sans closeur génère des RDV que personne ne transforme.
               Les deux rôles fonctionnent en système, et la qualité du système dépend de la qualité
@@ -868,11 +868,11 @@ export default function ClosingB2BPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-1">
                     {phase}
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">{detail}</p>
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">{detail}</p>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La différence détaillée entre les deux rôles, les compétences respectives, et dans
               quel ordre investir est dans cet article :{' '}
               <a
@@ -890,7 +890,7 @@ export default function ClosingB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Mesurer et améliorer son taux de closing
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le taux de closing se calcule simplement : contrats signés / rendez-vous réalisés. Mais
               ce ratio seul ne dit pas grand chose. Il faut le croiser avec la source des leads pour
               comprendre d&apos;où vient le problème.
@@ -903,26 +903,26 @@ export default function ClosingB2BPage() {
                 { label: 'Leads sur référence', taux: '40–60 %', context: "La confiance est pré-établie. La discovery est plus courte, les objections moins nombreuses." },
               ].map(({ label, taux, context }) => (
                 <div key={label} className="bg-bg-secondary rounded-xl p-4 border border-white/[0.06]">
-                  <p className="font-sans text-xs text-text-muted mb-1">{label}</p>
+                  <p className="font-sans text-xs text-text-secondary mb-1">{label}</p>
                   <p className="font-serif text-xl text-accent mb-2">{taux}</p>
-                  <p className="font-sans text-xs text-text-muted leading-relaxed">{context}</p>
+                  <p className="font-sans text-xs text-text-secondary leading-relaxed">{context}</p>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Un taux en dessous de 10 % sur des leads supposément qualifiés indique deux problèmes
               possibles : la qualification du setter est trop laxiste (il envoie des leads pas prêts),
               ou la structure de l&apos;appel est défaillante (pitch trop tôt, pas de discovery,
               pas de demande de décision explicite).
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Comment diagnostiquer : enregistrez vos 3 prochains appels et répondez à ces trois
               questions après écoute. Est-ce que vous avez passé plus de 15 minutes en questions
               avant de mentionner le prix ? Est-ce que vous savez ce que ça coûte au prospect de
               ne rien changer ? Est-ce que vous avez demandé explicitement une décision en fin
               d&apos;appel ?
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Si la réponse à l&apos;une de ces trois questions est non, vous avez trouvé votre
               premier axe de travail.
             </p>
@@ -938,7 +938,7 @@ export default function ClosingB2BPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Ça marche pour
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     "Solopreneurs avec une offre B2B à 1 500 € ou plus",
                     "Consultants qui font plusieurs appels par semaine",
@@ -954,10 +954,10 @@ export default function ClosingB2BPage() {
                 </ul>
               </div>
               <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-3">
                   Ça ne marche pas pour
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
+                <ul className="space-y-2 font-sans text-sm text-text-secondary">
                   {[
                     "Offres B2C ou grand public",
                     "Activités sans appel commercial (e-commerce, SaaS self-serve)",
@@ -966,14 +966,14 @@ export default function ClosingB2BPage() {
                     "Ceux qui cherchent des 'techniques' plutôt qu'une méthode de fond",
                   ].map((item) => (
                     <li key={item} className="flex gap-2">
-                      <span className="text-text-muted/40 shrink-0">→</span>
+                      <span className="text-text-secondary/40 shrink-0">→</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Le coaching closing fonctionne quand le problème est dans la structure de l&apos;appel,
               pas dans le volume de leads. Si vous n&apos;avez pas encore de pipeline régulier,
               commencer par le{' '}
@@ -996,7 +996,7 @@ export default function ClosingB2BPage() {
               {faqItems.map(({ question, answer }) => (
                 <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>
               ))}
             </div>
@@ -1021,7 +1021,7 @@ export default function ClosingB2BPage() {
                 <a
                   key={href}
                   href={href}
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
@@ -1038,7 +1038,7 @@ export default function ClosingB2BPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez améliorer votre taux de closing ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour regarder votre structure d&apos;appel actuelle, identifier
               où les deals se perdent et ce qui changerait dans votre cas. Gratuit. Sans engagement.
             </p>
@@ -1051,7 +1051,7 @@ export default function ClosingB2BPage() {
           <div className="mt-8 text-center">
             <a
               href="/ressources"
-              className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+              className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors"
             >
               ← Retour au blog
             </a>

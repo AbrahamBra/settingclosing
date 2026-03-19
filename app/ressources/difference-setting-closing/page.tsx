@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting vs Closing : quelle est la différence en B2B ? | ChallengersLab',
+  title: 'Setting vs Closing : la différence | ChallengersLab',
   description:
-    'Setting et closing sont deux phases distinctes d\'un cycle de vente B2B. Comprendre la différence vous aide à identifier ce qui bloque réellement votre pipeline et dans quel ordre investir.',
+    'Setting et closing : deux phases distinctes du cycle de vente B2B. Comprenez la différence pour identifier ce qui bloque votre pipeline.',
   openGraph: {
-    title: 'Setting vs Closing : quelle est la différence en B2B ?',
+    title: 'Setting vs Closing : la différence | ChallengersLab',
     description:
       'Deux rôles distincts. Savoir lequel travailler en premier change tout à votre croissance.',
     locale: 'fr_FR',
@@ -169,7 +169,7 @@ export default function DifferenceSettingClosingPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -186,7 +186,7 @@ export default function DifferenceSettingClosingPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Quelle est la différence entre setting et closing en B2B ?
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Deux rôles distincts dans un cycle de vente B2B. Comprendre lequel travailler
               en premier change tout à ce que vous signez chaque mois.
             </p>
@@ -207,7 +207,7 @@ export default function DifferenceSettingClosingPage() {
               </p>
             </div>
             <div className="border-l-4 border-white/[0.12] bg-bg-secondary rounded-r-xl px-6 py-5">
-              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-2">
                 Closing
               </p>
               <p className="font-sans text-text-primary leading-relaxed text-sm">
@@ -223,7 +223,7 @@ export default function DifferenceSettingClosingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Le cycle de vente B2B complet
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Un cycle de vente B2B complet comprend 8 étapes. Le <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting commercial B2B</a> couvre les 4 premières.
               Le closing couvre les 4 dernières.
             </p>
@@ -237,7 +237,7 @@ export default function DifferenceSettingClosingPage() {
                         className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold font-sans ${
                           isSetting
                             ? 'border border-accent/40 bg-accent/10 text-accent'
-                            : 'border border-white/[0.08] bg-bg-secondary text-text-muted'
+                            : 'border border-white/[0.08] bg-bg-secondary text-text-secondary'
                         }`}
                       >
                         {i + 1}
@@ -258,13 +258,13 @@ export default function DifferenceSettingClosingPage() {
                           className={`font-sans text-[10px] font-semibold uppercase tracking-widest px-2 py-0.5 rounded-full ${
                             isSetting
                               ? 'text-accent bg-accent/10'
-                              : 'text-text-muted bg-bg-secondary'
+                              : 'text-text-secondary bg-bg-secondary'
                           }`}
                         >
                           {step.owner}
                         </span>
                       </div>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">
                         {step.detail}
                       </p>
                     </div>
@@ -279,7 +279,7 @@ export default function DifferenceSettingClosingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Pourquoi les séparer — et ce qui se passe quand on ne le fait pas
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               La plupart des solopreneurs font les deux eux-mêmes sans s&apos;en rendre compte.
               Ce mélange crée 3 problèmes structurels.
             </p>
@@ -287,10 +287,10 @@ export default function DifferenceSettingClosingPage() {
               {mistakeItems.map((item, i) => (
                 <div key={i} className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="font-sans text-xs font-semibold text-text-muted">0{i + 1}</span>
+                    <span className="font-sans text-xs font-semibold text-text-secondary">0{i + 1}</span>
                     <p className="font-sans font-semibold text-text-primary">{item.title}</p>
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -301,7 +301,7 @@ export default function DifferenceSettingClosingPage() {
                 Les commerciaux qui passent plus de 46 % du temps d&apos;un appel à écouter
                 ont un taux de closing 3x supérieur à la moyenne.
               </p>
-              <p className="font-sans text-text-muted text-sm">
+              <p className="font-sans text-text-secondary text-sm">
                 Une discovery bien conduite commence par l&apos;écoute — pas par le pitch.
                 (Source : Gong.io)
               </p>
@@ -313,7 +313,7 @@ export default function DifferenceSettingClosingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Dans quel ordre investir selon votre situation
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Il n&apos;y a pas de réponse universelle — ça dépend de votre niveau de maturité
               commerciale. Voici 3 situations types.
             </p>
@@ -328,7 +328,7 @@ export default function DifferenceSettingClosingPage() {
                   <p className="font-sans font-semibold text-text-primary mb-1">
                     {scenario.situation}
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed mb-2">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mb-2">
                     {scenario.symptom}
                   </p>
                   <p
@@ -341,7 +341,7 @@ export default function DifferenceSettingClosingPage() {
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted text-sm leading-relaxed mt-6">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed mt-6">
               Dans les 3 cas, le vrai problème est rarement là où on croit.
               Les solopreneurs qui pensent avoir un problème de setting ont souvent un problème de
               message (Mois 2). Ceux qui pensent avoir un problème de closing ont souvent un problème
@@ -359,15 +359,15 @@ export default function DifferenceSettingClosingPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Setting externalisé
                 </p>
-                <p className="font-serif text-h3 text-text-primary mb-1">500 €<span className="font-sans text-text-muted text-base font-normal">/mois</span></p>
-                <p className="font-sans text-text-muted text-sm">Fixe + prime à la performance par RDV livré. Garantie minimum 5 RDV qualifiés.</p>
+                <p className="font-serif text-h3 text-text-primary mb-1">500 €<span className="font-sans text-text-secondary text-base font-normal">/mois</span></p>
+                <p className="font-sans text-text-secondary text-sm">Fixe + prime à la performance par RDV livré. Garantie minimum 5 RDV qualifiés.</p>
               </div>
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-3">
                   Coaching closing
                 </p>
-                <p className="font-serif text-h3 text-text-primary mb-1">1 000 €<span className="font-sans text-text-muted text-base font-normal">/mois</span></p>
-                <p className="font-sans text-text-muted text-sm">Programme sur 3 mois. 2h de coaching par semaine dont une heure en situation réelle.</p>
+                <p className="font-serif text-h3 text-text-primary mb-1">1 000 €<span className="font-sans text-text-secondary text-base font-normal">/mois</span></p>
+                <p className="font-sans text-text-secondary text-sm">Programme sur 3 mois. 2h de coaching par semaine dont une heure en situation réelle.</p>
               </div>
             </div>
           </section>
@@ -383,7 +383,7 @@ export default function DifferenceSettingClosingPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -419,7 +419,7 @@ export default function DifferenceSettingClosingPage() {
                 href="/ressources/challenger-sale-definition"
                 className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
               >
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">Closing</p>
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-2">Closing</p>
                 <p className="font-sans font-semibold text-text-primary group-hover:text-accent transition-colors">
                   Qu&apos;est-ce que le Challenger Sale ? →
                 </p>
@@ -435,7 +435,7 @@ export default function DifferenceSettingClosingPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Setting, closing ou les deux ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes suffit à identifier ce qui bloque réellement.
               On repart avec un plan d&apos;action concret.
             </p>

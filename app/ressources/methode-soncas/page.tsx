@@ -5,11 +5,11 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples | ChallengersLab',
+  title: 'Méthode SONCAS : 6 leviers B2B | ChallengersLab',
   description:
-    'La méthode SONCAS permet de comprendre les motivations d\'achat d\'un prospect en B2B : Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie. Définition, leviers et exemples concrets.',
+    'Méthode SONCAS en B2B : Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie. Définition des 6 leviers et exemples concrets.',
   openGraph: {
-    title: 'Méthode SONCAS en B2B 2026 : 6 leviers et exemples',
+    title: 'Méthode SONCAS : 6 leviers B2B | ChallengersLab',
     description:
       'SONCAS : comment utiliser les 6 motivations d\'achat pour améliorer sa discovery call et son taux de closing en B2B.',
     locale: 'fr_FR',
@@ -161,7 +161,7 @@ export default function MethodeSoncasPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -178,7 +178,7 @@ export default function MethodeSoncasPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples concrets
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               SONCAS est un cadre pour comprendre pourquoi un prospect achète — ou n&apos;achète pas.
               Six motivations universelles : Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie.
               En les identifiant pendant la discovery call, vous adaptez votre discours à ce qui
@@ -192,7 +192,7 @@ export default function MethodeSoncasPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Chiffre clé
             </p>
-            <p className="font-sans text-sm text-text-muted leading-relaxed">
+            <p className="font-sans text-sm text-text-secondary leading-relaxed">
               Selon une étude Gartner (2023), <strong className="text-text-primary">77 % des acheteurs B2B</strong> décrivent leur dernier
               achat comme &ldquo;complexe ou difficile&rdquo;. Comprendre les motivations individuelles
               du décideur est l&apos;un des leviers les plus efficaces pour réduire cette friction.
@@ -213,12 +213,12 @@ export default function MethodeSoncasPage() {
                 { id: 'erreurs', label: 'Les erreurs à éviter' },
               ].map(({ id, label }, i) => (
                 <li key={id} className="flex gap-3 items-baseline">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-5 text-right">
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-5 text-right">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <a
                     href={`#${id}`}
-                    className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors leading-snug"
+                    className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors leading-snug"
                   >
                     {label}
                   </a>
@@ -232,7 +232,7 @@ export default function MethodeSoncasPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Qu&apos;est-ce que la méthode SONCAS ?
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               SONCAS est un acronyme commercial né dans les années 1990 qui liste six motivations
               d&apos;achat universelles : <strong className="text-text-primary">S</strong>écurité,{' '}
               <strong className="text-text-primary">O</strong>rgueil,{' '}
@@ -241,20 +241,20 @@ export default function MethodeSoncasPage() {
               <strong className="text-text-primary">A</strong>rgent,{' '}
               <strong className="text-text-primary">S</strong>ympathie.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               L&apos;idée centrale : les prospects n&apos;achètent pas tous pour les mêmes raisons.
               Présenter les mêmes arguments dans le même ordre à tout le monde est une des causes
               majeures de closing raté. Un prospect motivé par la Sécurité veut des garanties
               et des références — pas votre liste de fonctionnalités. Un prospect motivé par
               l&apos;Argent veut un ROI chiffré — pas une promesse de confort.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               En pratique, chaque prospect a 2 ou 3 motivations dominantes. Votre rôle pendant
               la discovery call : les identifier, puis construire votre présentation autour de
               ces leviers-là.
             </p>
             <div className="border-l-2 border-accent/30 pl-5">
-              <p className="font-sans text-sm text-text-muted leading-relaxed">
+              <p className="font-sans text-sm text-text-secondary leading-relaxed">
                 SONCASE est une version étendue qui ajoute un 7e levier : <strong className="text-text-primary">E</strong>nvironnement/Éthique.
                 Pertinent dans les secteurs où la RSE pèse dans la décision. En B2B
                 services/conseil, les 6 leviers de SONCAS couvrent la grande majorité des situations.
@@ -267,7 +267,7 @@ export default function MethodeSoncasPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 6 leviers SONCAS : définition + exemples
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Pour chaque levier : ce que ça signifie, comment le détecter pendant un appel,
               et comment adapter son discours.
             </p>
@@ -278,16 +278,16 @@ export default function MethodeSoncasPage() {
                     <span className="font-serif text-2xl text-accent leading-none">{lettre}</span>
                     <h3 className="font-sans font-semibold text-text-primary text-base">{nom}</h3>
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed mb-4">{def}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mb-4">{def}</p>
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-4">
                     <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
-                      <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
+                      <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-2">
                         Signaux pendant l&apos;appel
                       </p>
                       <ul className="space-y-1">
                         {signaux.map((s) => (
-                          <li key={s} className="font-sans text-xs text-text-muted flex gap-2">
+                          <li key={s} className="font-sans text-xs text-text-secondary flex gap-2">
                             <span className="text-accent shrink-0">→</span>
                             <span>{s}</span>
                           </li>
@@ -298,15 +298,15 @@ export default function MethodeSoncasPage() {
                       <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                         Comment adapter son discours
                       </p>
-                      <p className="font-sans text-xs text-text-muted leading-relaxed">{discours}</p>
+                      <p className="font-sans text-xs text-text-secondary leading-relaxed">{discours}</p>
                     </div>
                   </div>
 
                   <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-2">
                       Exemple de formulation
                     </p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed italic">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed italic">
                       {exemple}
                     </p>
                   </div>
@@ -320,7 +320,7 @@ export default function MethodeSoncasPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Comment appliquer SONCAS en discovery call
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               SONCAS ne s&apos;applique pas après la discovery — il guide la discovery.
               L&apos;objectif des premières 15 minutes d&apos;un appel : comprendre le contexte du
               prospect ET identifier ses 2 ou 3 motivations dominantes.
@@ -349,10 +349,10 @@ export default function MethodeSoncasPage() {
                 },
               ].map(({ step, title, desc }) => (
                 <div key={step} className="flex gap-5">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{step}</span>
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{step}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -364,7 +364,7 @@ export default function MethodeSoncasPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               SONCAS dans un système setter-closeur
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Dans un système avec un setter dédié, SONCAS intervient à deux niveaux.
             </p>
             <div className="space-y-3 mb-5">
@@ -384,11 +384,11 @@ export default function MethodeSoncasPage() {
               ].map(({ phase, detail }) => (
                 <div key={phase} className="border-l-2 border-accent/30 pl-5">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-1">{phase}</p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">{detail}</p>
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">{detail}</p>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Pour aller plus loin sur le rôle du setter dans la qualification :{' '}
               <a href="/ressources/setting-commercial-b2b" className="text-accent hover:text-text-primary transition-colors">
                 setting commercial B2B — définition, méthode et programme complet
@@ -430,10 +430,10 @@ export default function MethodeSoncasPage() {
                 },
               ].map(({ num, title, desc }) => (
                 <div key={num} className="flex gap-5">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{num}</span>
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{num}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -449,7 +449,7 @@ export default function MethodeSoncasPage() {
               {faqItems.map(({ question, answer }) => (
                 <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>
               ))}
             </div>
@@ -469,7 +469,7 @@ export default function MethodeSoncasPage() {
                 { href: '/ressources/challenger-sale-definition', label: 'La méthode Challenger Sale expliquée' },
                 { href: '/glossaire', label: 'Glossaire : closer, discovery, objection, pipeline' },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -483,7 +483,7 @@ export default function MethodeSoncasPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez améliorer votre taux de closing ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour regarder votre structure d&apos;appel actuelle — discovery,
               adaptation du discours, gestion des objections. Gratuit. Sans engagement.
             </p>
@@ -491,7 +491,7 @@ export default function MethodeSoncasPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <a href="/ressources" className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors">← Retour au blog</a>
+            <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">← Retour au blog</a>
           </div>
 
         </div>

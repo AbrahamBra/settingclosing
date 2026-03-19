@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur | ChallengersLab",
+  title: "Relance LinkedIn B2B : quand et comment | ChallengersLab",
   description:
-    "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois : le cadre complet pour des follow-ups qui obtiennent des réponses.",
+    "Pas de réponse sur LinkedIn ? Quand relancer, quel message envoyer et combien de fois. Le cadre complet pour des follow-ups efficaces.",
   openGraph: {
-    title: "Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur",
+    title: "Relance LinkedIn B2B : quand et comment | ChallengersLab",
     description:
       "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois : le cadre complet pour des follow-ups qui obtiennent des réponses.",
     locale: 'fr_FR',
@@ -139,7 +139,7 @@ export default function RelanceLinkedInB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -156,7 +156,7 @@ export default function RelanceLinkedInB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Vous avez envoyé un premier message. Pas de réponse. Que faire maintenant — relancer, attendre,
               ou classer le prospect comme perdu ? Ce guide répond à ces trois questions avec des exemples
               de messages réels et un cadre applicable dès aujourd&apos;hui.
@@ -170,7 +170,7 @@ export default function RelanceLinkedInB2BPage() {
             <p className="font-sans font-semibold text-text-primary mb-1">
               Entre 70 et 80&nbsp;% des réponses obtenues sur LinkedIn arrivent après une relance — pas après le premier message.
             </p>
-            <p className="font-sans text-text-muted text-sm leading-relaxed">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed">
               Ce n&apos;est pas que le premier message ne fonctionne pas. C&apos;est que la relance fait partie du processus normal.
               Le problème n&apos;est pas de relancer. C&apos;est comment on le fait.
               (Source : données terrain ChallengersLab, 2025–2026)
@@ -179,7 +179,7 @@ export default function RelanceLinkedInB2BPage() {
 
           {/* TOC */}
           <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-4">
               Sommaire
             </p>
             <ol className="space-y-2">
@@ -193,7 +193,7 @@ export default function RelanceLinkedInB2BPage() {
               ].map(({ href, label }, i) => (
                 <li key={href} className="flex gap-2.5">
                   <span className="font-sans text-sm text-accent font-semibold shrink-0">{i + 1}.</span>
-                  <a href={href} className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors leading-relaxed">
+                  <a href={href} className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors leading-relaxed">
                     {label}
                   </a>
                 </li>
@@ -206,7 +206,7 @@ export default function RelanceLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Ce que &quot;pas de réponse&quot; signifie vraiment
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Avant de décider quoi faire, il faut comprendre ce qui s&apos;est passé. &quot;Pas de réponse&quot; n&apos;est pas un signal uniforme.
               Il y a trois situations distinctes, et elles n&apos;appellent pas la même réaction.
             </p>
@@ -214,7 +214,7 @@ export default function RelanceLinkedInB2BPage() {
             <div className="space-y-4 mb-8">
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2">Cas 1 — Le message n&apos;a pas été vu</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   LinkedIn ne notifie pas toujours immédiatement. Si le prospect n&apos;est pas très actif sur la plateforme,
                   votre message peut attendre 5 à 10 jours dans sa boîte avant d&apos;être ouvert.
                   Dans ce cas, il n&apos;y a pas de rejet — il n&apos;y a pas eu de contact.
@@ -224,7 +224,7 @@ export default function RelanceLinkedInB2BPage() {
 
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2">Cas 2 — Vu, mais l&apos;accroche n&apos;a pas convaincu</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Le prospect a lu, n&apos;a pas répondu, et a passé à autre chose. Répéter le même message ne changera rien.
                   Ce qu&apos;il faut : changer l&apos;angle, apporter quelque chose de nouveau.
                   La relance doit ressembler à un deuxième essai — pas à un rappel que vous existez.
@@ -233,7 +233,7 @@ export default function RelanceLinkedInB2BPage() {
 
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2">Cas 3 — Vu, intéressé, mais pas le bon moment</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   C&apos;est le cas le plus fréquent et le plus sous-estimé. Le prospect a lu, le sujet l&apos;intéresse,
                   mais il a autre chose en tête ce jour-là. Il s&apos;est dit &quot;je répondrai plus tard&quot; — et plus tard n&apos;est jamais venu.
                   Une relance bien placée à J+21 ou J+30 peut rouvrir la conversation au bon moment.
@@ -241,11 +241,11 @@ export default function RelanceLinkedInB2BPage() {
               </div>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La majorité des non-réponses rentrent dans le cas 3. Ce n&apos;est pas un rejet — c&apos;est un mauvais timing.
               C&apos;est pourquoi relancer n&apos;est pas du harcèlement : c&apos;est de la présence au bon moment.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La frontière entre relance utile et spam tient à deux choses : la fréquence et le contenu.
               Deux relances espacées, avec un angle différent à chaque fois, ne sont jamais du spam.
               Cinq messages identiques en quinze jours, oui. La différence est dans la méthode, pas dans le principe de relancer.
@@ -261,7 +261,7 @@ export default function RelanceLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Quand relancer : les fenêtres qui fonctionnent
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Le timing de la relance n&apos;est pas une préférence personnelle. Il y a des fenêtres qui produisent des résultats,
               et des délais qui signalent soit de l&apos;impatience, soit de la négligence.
             </p>
@@ -274,7 +274,7 @@ export default function RelanceLinkedInB2BPage() {
                 </div>
                 <div>
                   <h3 className="font-sans font-semibold text-text-primary mb-2">La fenêtre courte — si le message a été vu</h3>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Si vous savez (via les indicateurs de lecture LinkedIn) que le message a été ouvert mais n&apos;a pas obtenu de réponse,
                     trois jours est un délai raisonnable. Assez court pour rester dans la fenêtre d&apos;attention du prospect,
                     assez long pour ne pas sembler pressé. Cette relance doit être courte — 2 phrases maximum —
@@ -290,7 +290,7 @@ export default function RelanceLinkedInB2BPage() {
                 </div>
                 <div>
                   <h3 className="font-sans font-semibold text-text-primary mb-2">La fenêtre standard — dans la majorité des cas</h3>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Sept jours est le délai par défaut quand vous n&apos;avez pas d&apos;information sur la lecture du message.
                     Une semaine est une unité de temps naturelle pour les décideurs B2B : les sujets s&apos;organisent par semaine,
                     les priorités changent à la semaine. Relancer au bout d&apos;une semaine s&apos;inscrit dans ce rythme
@@ -306,7 +306,7 @@ export default function RelanceLinkedInB2BPage() {
                 </div>
                 <div>
                   <h3 className="font-sans font-semibold text-text-primary mb-2">La relance longue — le contexte a peut-être changé</h3>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Trois à quatre semaines après le premier message, la situation du prospect a pu évoluer.
                     Un projet qui n&apos;était pas prioritaire est peut-être devenu urgent. Un budget s&apos;est libéré.
                     Une contrainte a sauté. Cette relance longue fonctionne mieux si elle est accompagnée d&apos;un nouveau signal :
@@ -327,7 +327,7 @@ export default function RelanceLinkedInB2BPage() {
                   "Faire 4 relances sur 3 semaines : au bout de la troisième, le prospect associe votre nom à du spam, pas à une offre.",
                   "Relancer le vendredi après-midi ou le lundi matin : deux moments où les boîtes de réception sont au pic.",
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-2 font-sans text-sm text-text-muted">
+                  <div key={i} className="flex gap-2 font-sans text-sm text-text-secondary">
                     <span className="text-accent shrink-0 mt-0.5">→</span>
                     <span className="leading-relaxed">{item}</span>
                   </div>
@@ -341,7 +341,7 @@ export default function RelanceLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Comment relancer : les 3 approches
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Il n&apos;y a pas une façon unique de relancer. Le bon angle dépend du profil du prospect,
               de ce qui s&apos;est passé depuis le premier message, et du délai écoulé.
               Voici les trois approches qui fonctionnent — avec un exemple de message pour chacune.
@@ -353,7 +353,7 @@ export default function RelanceLinkedInB2BPage() {
                 <span className="font-serif text-xl text-accent/40 font-semibold">01</span>
                 <h3 className="font-sans font-semibold text-text-primary">Angle différent — on change le cadre, pas juste la formulation</h3>
               </div>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-5">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-5">
                 Le prospect n&apos;a pas répondu au premier angle. Répéter la même chose avec d&apos;autres mots ne changera pas le résultat.
                 Cette approche consiste à entrer par une autre porte : une question différente, un aspect de leur activité
                 que vous n&apos;aviez pas mentionné, ou une formulation qui s&apos;adresse directement à leur situation actuelle plutôt
@@ -365,19 +365,19 @@ export default function RelanceLinkedInB2BPage() {
               </p>
               <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
                 <div className="px-6 py-3 border-b border-white/[0.06]">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary">
                     Exemple — Relance angle différent (J+7)
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed mb-4">
                     &quot;Bonjour Camille, je vous ai écrit la semaine dernière sur votre processus de qualification leads.
                     Question différente : est-ce que le problème pour vous c&apos;est plutôt le volume de contacts
                     ou la conversion une fois qu&apos;ils sont dans le pipe ?&quot;
                   </p>
                   <div className="flex gap-2 items-start">
                     <span className="text-accent shrink-0 mt-0.5 text-xs font-semibold font-sans">→</span>
-                    <p className="font-sans text-xs text-text-muted leading-relaxed">
+                    <p className="font-sans text-xs text-text-secondary leading-relaxed">
                       On mentionne le premier message sans s&apos;en excuser. On bascule vers une question de diagnostic — pas un pitch.
                       La réponse, quelle qu&apos;elle soit, ouvre la qualification.
                     </p>
@@ -392,7 +392,7 @@ export default function RelanceLinkedInB2BPage() {
                 <span className="font-serif text-xl text-accent/40 font-semibold">02</span>
                 <h3 className="font-sans font-semibold text-text-primary">Nouveau signal — il a posté ou interagi depuis le premier message</h3>
               </div>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-5">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-5">
                 Si le prospect a publié un post, commenté quelque chose, ou changé son titre entre le premier message et la relance,
                 vous avez une raison naturelle de revenir. Cette approche transforme la relance en réaction à un événement récent —
                 elle ne ressemble plus à une relance.
@@ -404,19 +404,19 @@ export default function RelanceLinkedInB2BPage() {
               </p>
               <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
                 <div className="px-6 py-3 border-b border-white/[0.06]">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary">
                     Exemple — Relance sur nouveau signal (J+21)
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed mb-4">
                     &quot;Bonjour Romain, j&apos;ai vu votre post d&apos;hier sur le recrutement commercial — vous cherchez quelqu&apos;un
                     pour structurer la prospection outbound. C&apos;est exactement ce sur quoi je vous avais écrit il y a trois semaines.
                     Ça vaut le coup qu&apos;on se parle ?&quot;
                   </p>
                   <div className="flex gap-2 items-start">
                     <span className="text-accent shrink-0 mt-0.5 text-xs font-semibold font-sans">→</span>
-                    <p className="font-sans text-xs text-text-muted leading-relaxed">
+                    <p className="font-sans text-xs text-text-secondary leading-relaxed">
                       Le premier message est mentionné comme preuve de cohérence, pas comme reproche.
                       La relance est motivée par un événement réel — elle n&apos;arrive pas par hasard.
                     </p>
@@ -431,7 +431,7 @@ export default function RelanceLinkedInB2BPage() {
                 <span className="font-serif text-xl text-accent/40 font-semibold">03</span>
                 <h3 className="font-sans font-semibold text-text-primary">Fin de séquence — la dernière prise de contact sur ce sujet</h3>
               </div>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-5">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-5">
                 C&apos;est la seule relance où vous mentionnez explicitement que c&apos;est la dernière.
                 Cette formulation fonctionne parce qu&apos;elle lève la pression : le prospect sait que vous ne reviendrez pas,
                 ce qui réduit le sentiment de dette. Paradoxalement, certains prospects répondent à cette relance
@@ -444,19 +444,19 @@ export default function RelanceLinkedInB2BPage() {
               </p>
               <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
                 <div className="px-6 py-3 border-b border-white/[0.06]">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary">
                     Exemple — Relance fin de séquence (J+28)
                   </p>
                 </div>
                 <div className="px-6 py-5">
-                  <p className="font-sans text-sm text-text-muted italic leading-relaxed mb-4">
+                  <p className="font-sans text-sm text-text-secondary italic leading-relaxed mb-4">
                     &quot;Bonjour Élise, c&apos;est la dernière fois que je vous contacte sur ce sujet.
                     Si ça n&apos;est pas le bon moment, pas de problème — je comprends.
                     Si ça redevient d&apos;actualité, je suis joignable ici.&quot;
                   </p>
                   <div className="flex gap-2 items-start">
                     <span className="text-accent shrink-0 mt-0.5 text-xs font-semibold font-sans">→</span>
-                    <p className="font-sans text-xs text-text-muted leading-relaxed">
+                    <p className="font-sans text-xs text-text-secondary leading-relaxed">
                       Pas d&apos;explication, pas de bénéfice rappelé, pas de CTA direct. La porte est laissée ouverte sans pression.
                       C&apos;est la seule relance où &quot;pas de réponse&quot; est une réponse acceptable.
                     </p>
@@ -471,7 +471,7 @@ export default function RelanceLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Ce que la plupart font — et qui ne fonctionne pas
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Ces erreurs ne sont pas des caricatures. Ce sont des messages réels, envoyés par des gens sérieux
               qui prospectent avec de bonnes intentions. Le problème n&apos;est pas la volonté — c&apos;est la formulation,
               qui envoie exactement le mauvais signal.
@@ -487,12 +487,12 @@ export default function RelanceLinkedInB2BPage() {
                     </p>
                   </div>
                   <div className="px-6 py-5">
-                    <p className="font-sans text-sm text-text-muted italic leading-relaxed mb-4">
+                    <p className="font-sans text-sm text-text-secondary italic leading-relaxed mb-4">
                       {item.text}
                     </p>
                     <div className="flex gap-2 items-start">
                       <span className="text-red-400 shrink-0 mt-0.5 text-xs font-semibold font-sans">✗</span>
-                      <p className="font-sans text-xs text-text-muted leading-relaxed">{item.annotation}</p>
+                      <p className="font-sans text-xs text-text-secondary leading-relaxed">{item.annotation}</p>
                     </div>
                   </div>
                 </div>
@@ -504,7 +504,7 @@ export default function RelanceLinkedInB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 La relance qui fonctionne ne parle pas du silence — elle apporte quelque chose de nouveau.
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Le prospect sait qu&apos;il n&apos;a pas répondu. Lui rappeler ne sert à rien et crée un sentiment négatif.
                 La bonne relance arrive comme si le premier message n&apos;avait pas existé — avec un contenu différent,
                 un angle différent, une raison de répondre qui n&apos;était pas là avant.
@@ -517,14 +517,14 @@ export default function RelanceLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Organiser ses relances sans perdre la tête
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               La relance isolée se gère seule. Mais dès qu&apos;on prospecte 20 à 30 personnes par semaine,
               sans système de suivi, les relances tombent à l&apos;eau ou arrivent en double.
               Voici comment poser un cadre minimal sans passer sa vie dans un tableur.
             </p>
 
             <h3 className="font-sans font-semibold text-text-primary mb-3">Suivre ses relances — pourquoi et avec quoi</h3>
-            <p className="font-sans text-text-muted text-sm leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed mb-6">
               BreakCold est l&apos;outil de référence pour les setters LinkedIn : il centralise les conversations,
               permet de planifier les relances et de suivre où en est chaque prospect dans la séquence.
               Mais un tableau simple avec quatre colonnes — Nom / Date du premier message / Date relance prévue / Statut —
@@ -532,14 +532,14 @@ export default function RelanceLinkedInB2BPage() {
             </p>
 
             <h3 className="font-sans font-semibold text-text-primary mb-3">La règle des 2 relances maximum par séquence initiale</h3>
-            <p className="font-sans text-text-muted text-sm leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed mb-6">
               Premier message + 2 relances = 3 prises de contact maximum sur une fenêtre de 30 jours.
               C&apos;est assez pour qu&apos;un prospect prêt réagisse. C&apos;est peu assez pour ne pas brûler la relation.
               Si trois contacts espacés sur un mois n&apos;ont pas produit de réponse, la séquence est terminée pour ce cycle.
             </p>
 
             <h3 className="font-sans font-semibold text-text-primary mb-3">Dormant vs perdu — une distinction qui compte</h3>
-            <p className="font-sans text-text-muted text-sm leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed mb-6">
               Un prospect qui ne répond pas après 3 prises de contact n&apos;est pas perdu — il n&apos;est pas prêt maintenant.
               Le mettre en &quot;perdu&quot; dans votre CRM, c&apos;est le fermer définitivement. Le mettre en &quot;dormant&quot;,
               c&apos;est prévoir de revenir dans 60 à 90 jours si vous observez un nouveau signal sur son profil.
@@ -560,7 +560,7 @@ export default function RelanceLinkedInB2BPage() {
                 ].map((s, i) => (
                   <div key={i} className="flex gap-3 py-2 border-b border-white/[0.06] last:border-0">
                     <span className="font-sans text-xs font-semibold text-accent shrink-0 mt-0.5 w-28">{s.label}</span>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">{s.detail}</p>
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">{s.detail}</p>
                   </div>
                 ))}
               </div>
@@ -578,7 +578,7 @@ export default function RelanceLinkedInB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -603,7 +603,7 @@ export default function RelanceLinkedInB2BPage() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
@@ -620,7 +620,7 @@ export default function RelanceLinkedInB2BPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un système de relances qui tourne sans y penser ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               ChallengersLab opère le système complet : premier message, relances calibrées, gestion du pipeline.
               Vous vous concentrez sur les RDV qualifiés. Garantie 5 minimum par mois.
             </p>

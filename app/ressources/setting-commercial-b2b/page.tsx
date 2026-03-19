@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting commercial LinkedIn : définition, méthode et programme complet | ChallengersLab',
+  title: 'Setting commercial LinkedIn : méthode | ChallengersLab',
   description:
-    "Le setting commercial est la phase de prospection qui précède le closing en B2B. Définition exacte, rôle du setter au quotidien, méthode LinkedIn signal-based, les 5 erreurs qui tuent le setting, et programme des 3 mois en détail.",
+    "Le setting commercial précède le closing en B2B. Définition, rôle du setter, méthode LinkedIn signal-based, erreurs fréquentes et programme de 3 mois.",
   openGraph: {
-    title: 'Setting commercial LinkedIn : définition et méthode complète',
+    title: 'Setting commercial LinkedIn : méthode | ChallengersLab',
     description:
       "Setter, setting LinkedIn, signal-based : tout sur le setting commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart le font mal.",
     locale: 'fr_FR',
@@ -137,7 +137,7 @@ export default function SettingCommercialPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -154,7 +154,7 @@ export default function SettingCommercialPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Setting commercial B2B : définition, méthode et programme complet
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La plupart des solopreneurs confondent le setting avec &ldquo;envoyer des messages LinkedIn&rdquo;.
               Ce n&apos;est pas la même chose. Le setting commercial est un processus structuré — de la
               détection du signal à la qualification du lead — qui se déploie sur 3 mois avant de
@@ -172,7 +172,7 @@ export default function SettingCommercialPage() {
             <p className="font-sans text-text-primary font-semibold mb-2">
               Setting commercial
             </p>
-            <p className="font-sans text-text-muted text-sm leading-relaxed">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed">
               Processus de prospection B2B qui consiste à identifier des prospects qualifiés,
               à initier le contact, à gérer la conversation jusqu&apos;à la prise de rendez-vous
               et à qualifier le lead avant de le transmettre au closeur. En B2B moderne, il se déploie
@@ -190,7 +190,7 @@ export default function SettingCommercialPage() {
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
-                <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
+                <p className="font-sans text-xs text-text-secondary leading-snug">{label}</p>
               </div>
             ))}
           </div>
@@ -216,12 +216,12 @@ export default function SettingCommercialPage() {
                 { id: 'faq', label: 'Questions fréquentes' },
               ].map(({ id, label }, i) => (
                 <li key={id} className="flex gap-3 items-baseline">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-5 text-right">
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-5 text-right">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                   <a
                     href={`#${id}`}
-                    className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors leading-snug"
+                    className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors leading-snug"
                   >
                     {label}
                   </a>
@@ -231,7 +231,7 @@ export default function SettingCommercialPage() {
           </nav>
 
           {/* Article body */}
-          <article className="font-sans text-text-muted leading-relaxed space-y-14">
+          <article className="font-sans text-text-secondary leading-relaxed space-y-14">
 
             {/* Section 1 — Définition */}
             <section id="definition" className="scroll-mt-24">
@@ -261,7 +261,7 @@ export default function SettingCommercialPage() {
                   ].map(({ num, text }) => (
                     <div key={num} className="flex gap-3">
                       <span className="font-serif text-accent/40 text-base leading-snug shrink-0 w-4">{num}.</span>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">{text}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{text}</p>
                     </div>
                   ))}
                 </div>
@@ -316,7 +316,7 @@ export default function SettingCommercialPage() {
                 ].map(({ time, content }) => (
                   <div key={time} className="flex gap-4">
                     <span className="font-sans font-semibold text-accent text-xs tabular-nums shrink-0 w-12 pt-0.5">{time}</span>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{content}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{content}</p>
                   </div>
                 ))}
               </div>
@@ -325,7 +325,7 @@ export default function SettingCommercialPage() {
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">
                   Ce que ça donne en chiffres
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Une journée de setting efficace en phase 2 : 20 à 30 profils analysés,
                   8 à 15 messages envoyés ou gérés, 1 à 2 RDV posés.
                   Temps total : 2 à 3 heures. Pendant la phase 1 (calibration), plus —
@@ -375,7 +375,7 @@ export default function SettingCommercialPage() {
                       <p className="font-sans text-xs text-accent">{role}</p>
                     </div>
                     <div className="px-5 py-4">
-                      <p className="font-sans text-sm text-text-muted leading-relaxed">{detail}</p>
+                      <p className="font-sans text-sm text-text-secondary leading-relaxed">{detail}</p>
                     </div>
                   </div>
                 ))}
@@ -386,7 +386,7 @@ export default function SettingCommercialPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-blue-400 mb-3">
                     Flux inbound
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Votre contenu génère des interactions → Reactin les capture →
                     l&apos;ICP filtre les profils pertinents → message ancré sur le signal.
                     Taux de réponse moyen : 20 à 35 % sur les profils bien filtrés.
@@ -396,7 +396,7 @@ export default function SettingCommercialPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-amber-400 mb-3">
                     Flux outbound
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Sales Navigator filtre → Spyer surveille l&apos;activité →
                     signal capturé sur un compte tiers → message ancré sur cet engagement.
                     Taux de réponse moyen : 10 à 20 % selon la chaleur du signal.
@@ -433,7 +433,7 @@ export default function SettingCommercialPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                     Le setter
                   </p>
-                  <ul className="space-y-2 font-sans text-sm text-text-muted">
+                  <ul className="space-y-2 font-sans text-sm text-text-secondary">
                     {[
                       'Détecte et filtre les signaux',
                       'Analyse les profils manuellement',
@@ -453,7 +453,7 @@ export default function SettingCommercialPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-3">
                     Le closeur
                   </p>
-                  <ul className="space-y-2 font-sans text-sm text-text-muted">
+                  <ul className="space-y-2 font-sans text-sm text-text-secondary">
                     {[
                       'Lit le brief du setter avant l\'appel',
                       'Conduit la discovery call',
@@ -528,7 +528,7 @@ export default function SettingCommercialPage() {
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                       Erreur {num} — {titre}
                     </p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">{texte}</p>
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">{texte}</p>
                   </div>
                 ))}
               </div>
@@ -549,12 +549,12 @@ export default function SettingCommercialPage() {
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">Phase 0</span>
-                  <span className="font-sans text-xs text-text-muted">Semaine 1 — Stratégie et infrastructure</span>
+                  <span className="font-sans text-xs text-text-secondary">Semaine 1 — Stratégie et infrastructure</span>
                 </div>
                 <div className="border-l-2 border-accent pl-5 space-y-4">
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">ICP précis, pas générique</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       On ne définit pas &ldquo;solopreneurs B2B&rdquo;. On définit : directeurs commerciaux
                       indépendants dans le secteur SaaS B2B en France, 5 à 50 salariés, qui publient
                       régulièrement sur LinkedIn sur des sujets liés à la prospection ou à la performance
@@ -563,7 +563,7 @@ export default function SettingCommercialPage() {
                   </div>
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">Comptes monitorés et filtres Sales Navigator</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       10 à 20 comptes concurrents ou complémentaires sélectionnés pour Spyer.
                       Les filtres Sales Navigator configurés avec les triggers actifs (changement de poste,
                       prise de fonction, entreprise dans l&apos;actualité). On ne commence pas à prospecter
@@ -572,7 +572,7 @@ export default function SettingCommercialPage() {
                   </div>
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">Skill Claude initialisé</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       Le skill maison est construit sur les informations disponibles : l&apos;offre,
                       le marché, les objections anticipées, les règles de style non-négociables.
                       Il sera enrichi chaque semaine. C&apos;est le point de départ, pas le produit fini.
@@ -585,12 +585,12 @@ export default function SettingCommercialPage() {
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">Phase 1</span>
-                  <span className="font-sans text-xs text-text-muted">Semaines 2 à 8 — Calibration</span>
+                  <span className="font-sans text-xs text-text-secondary">Semaines 2 à 8 — Calibration</span>
                 </div>
                 <div className="border-l-2 border-accent pl-5 space-y-5">
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">Semaines 2–3 : premiers messages, premiers retours</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       Volume intentionnellement bas : 5 à 8 messages par jour maximum.
                       L&apos;objectif n&apos;est pas de remplir l&apos;agenda. C&apos;est de comprendre
                       quels signaux déclenchent des réponses dans ce marché précis, et quels angles
@@ -600,7 +600,7 @@ export default function SettingCommercialPage() {
                   </div>
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">Semaines 4–6 : les patterns émergent</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       Après 3 à 4 semaines, on commence à voir ce qui revient. Certains types de
                       signaux génèrent systématiquement des réponses. Certaines formulations déclenchent
                       &ldquo;intéressant&rdquo;. D&apos;autres génèrent du silence. Ces patterns sont codifiés
@@ -610,7 +610,7 @@ export default function SettingCommercialPage() {
                   </div>
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">Semaines 7–8 : stabilisation du flux</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       Le volume monte à 10–15 messages par jour. Le taux de réponse commence à se
                       stabiliser autour des benchmarks du marché (15–25 % sur inbound, 8–15 % sur
                       outbound signal). Le flux de RDV devient plus prévisible. À ce stade, la majorité
@@ -623,21 +623,21 @@ export default function SettingCommercialPage() {
               {/* Phase 2 */}
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60">Phase 2</span>
-                  <span className="font-sans text-xs text-text-muted">Mois 3 et au-delà — Régime de croisière</span>
+                  <span className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60">Phase 2</span>
+                  <span className="font-sans text-xs text-text-secondary">Mois 3 et au-delà — Régime de croisière</span>
                 </div>
                 <div className="border-l-2 border-text-muted/20 pl-5 space-y-4">
                   <div>
-                    <p className="font-sans text-sm font-semibold text-text-muted mb-1">Le système tourne sans intervention quotidienne lourde</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm font-semibold text-text-secondary mb-1">Le système tourne sans intervention quotidienne lourde</p>
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       Le setter intervient 2 à 3 heures par jour. Les signaux sont traités systématiquement.
                       Le skill Claude produit des drafts proches de la cible. Le volume est régulier :
                       2 à 4 RDV qualifiés par semaine en continu, pas en pic.
                     </p>
                   </div>
                   <div>
-                    <p className="font-sans text-sm font-semibold text-text-muted mb-1">Le nurturing s&apos;active</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">
+                    <p className="font-sans text-sm font-semibold text-text-secondary mb-1">Le nurturing s&apos;active</p>
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
                       Les prospects des niveaux 2–3 — intéressés mais pas prêts — entrent dans
                       une newsletter mensuelle. Ils reviennent quand leur contexte change. C&apos;est
                       un flux passif qui génère des RDV supplémentaires 3 à 6 mois plus tard,
@@ -652,7 +652,7 @@ export default function SettingCommercialPage() {
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">
                   Le nurturing ne s&apos;active qu&apos;en phase 2.
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Construire un système de nurturing avant d&apos;avoir un flux de RDV stable, c&apos;est
                   ajouter de la complexité sans résoudre le vrai problème. La priorité en phase 1 :
                   remplir l&apos;agenda. Le nurturing vient après.
@@ -701,19 +701,19 @@ export default function SettingCommercialPage() {
                 ].map(({ periode, titre, rdv, contexte }) => (
                   <div key={periode} className="flex gap-4 py-4 border-b border-white/[0.06] last:border-0">
                     <div className="shrink-0 w-28">
-                      <p className="font-sans text-xs text-text-muted/50 mb-1">{periode}</p>
+                      <p className="font-sans text-xs text-text-secondary/50 mb-1">{periode}</p>
                       <p className="font-sans text-sm font-semibold text-accent">{rdv}</p>
                     </div>
                     <div>
                       <p className="font-sans text-sm font-semibold text-text-primary mb-1">{titre}</p>
-                      <p className="font-sans text-xs text-text-muted leading-relaxed">{contexte}</p>
+                      <p className="font-sans text-xs text-text-secondary leading-relaxed">{contexte}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Ces chiffres varient selon la densité des signaux dans le marché, la qualité
                   de l&apos;ICP et la régularité du contenu publié. Un client qui publie 3 fois par semaine
                   sur LinkedIn génère plus de signaux inbound qu&apos;un client qui ne publie pas.
@@ -732,7 +732,7 @@ export default function SettingCommercialPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                   Profil
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed">
                   Consultant indépendant en stratégie commerciale, offre à 4 500 € pour un accompagnement
                   de 3 mois. Prospectait lui-même sur LinkedIn depuis 18 mois : 1 à 2 RDV par semaine
                   en période active, 0 les mois où il était chargé en mission. Aucun système structuré,
@@ -767,7 +767,7 @@ export default function SettingCommercialPage() {
                     <span className="font-sans text-accent text-xs font-semibold tabular-nums shrink-0 w-20 pt-0.5 uppercase tracking-widest">{phase}</span>
                     <div>
                       <p className="font-sans font-semibold text-text-primary text-sm mb-1">{titre}</p>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">{detail}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{detail}</p>
                     </div>
                   </div>
                 ))}
@@ -782,7 +782,7 @@ export default function SettingCommercialPage() {
                   <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-white/[0.06]">
                     <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
                     <p className="font-sans text-xs text-text-primary font-semibold mb-0.5">{label}</p>
-                    <p className="font-sans text-xs text-text-muted">{sub}</p>
+                    <p className="font-sans text-xs text-text-secondary">{sub}</p>
                   </div>
                 ))}
               </div>
@@ -817,10 +817,10 @@ export default function SettingCommercialPage() {
 
               <div className="grid sm:grid-cols-2 gap-4 mb-5">
                 <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary/60 mb-3">
                     Ce que l&apos;IA fait
                   </p>
-                  <ul className="space-y-2 font-sans text-xs text-text-muted">
+                  <ul className="space-y-2 font-sans text-xs text-text-secondary">
                     {[
                       "Propose un premier draft en 30 secondes",
                       "Applique les règles de style codifiées",
@@ -828,7 +828,7 @@ export default function SettingCommercialPage() {
                       "Respecte la longueur maximum automatiquement",
                     ].map((item) => (
                       <li key={item} className="flex gap-2">
-                        <span className="text-text-muted/40 shrink-0">→</span>
+                        <span className="text-text-secondary/40 shrink-0">→</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -838,7 +838,7 @@ export default function SettingCommercialPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                     Ce que l&apos;humain fait
                   </p>
-                  <ul className="space-y-2 font-sans text-xs text-text-muted">
+                  <ul className="space-y-2 font-sans text-xs text-text-secondary">
                     {[
                       "Lit le profil et identifie le signal",
                       "Valide ou ajuste le draft",
@@ -895,7 +895,7 @@ export default function SettingCommercialPage() {
                     <span className="text-accent shrink-0 mt-0.5 font-semibold text-sm">→</span>
                     <div>
                       <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}
@@ -953,14 +953,14 @@ export default function SettingCommercialPage() {
                     className={`rounded-xl p-5 border ${highlight ? 'border-accent/30 bg-accent/5' : 'border-white/[0.06] bg-bg-secondary'}`}
                   >
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
-                      <p className={`font-sans font-semibold text-sm ${highlight ? 'text-text-primary' : 'text-text-muted'}`}>
+                      <p className={`font-sans font-semibold text-sm ${highlight ? 'text-text-primary' : 'text-text-secondary'}`}>
                         {option}
                       </p>
-                      <p className={`font-sans text-sm font-semibold ${highlight ? 'text-accent' : 'text-text-muted'}`}>
+                      <p className={`font-sans text-sm font-semibold ${highlight ? 'text-accent' : 'text-text-secondary'}`}>
                         {cost}
                       </p>
                     </div>
-                    <p className="font-sans text-text-muted text-xs leading-relaxed">{note}</p>
+                    <p className="font-sans text-text-secondary text-xs leading-relaxed">{note}</p>
                   </div>
                 ))}
               </div>
@@ -969,11 +969,11 @@ export default function SettingCommercialPage() {
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">
                   Le calcul de retour sur investissement
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                   Programme à 3 000 € / mois → 10 RDV qualifiés par mois → taux de closing
                   de 30 % → 3 clients signés → offre à 4 000 € → 12 000 € de CA généré.
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Le programme est amorti par un seul client supplémentaire. Les deux autres sont
                   du gain net. Ce calcul suppose une offre à 4 000 € — sur des offres plus élevées,
                   le ROI est encore plus rapide.
@@ -992,7 +992,7 @@ export default function SettingCommercialPage() {
                     <p className="font-sans font-semibold text-text-primary mb-2">
                       {item.question}
                     </p>
-                    <p className="font-sans text-text-muted leading-relaxed text-sm">
+                    <p className="font-sans text-text-secondary leading-relaxed text-sm">
                       {item.answer}
                     </p>
                   </div>
@@ -1027,7 +1027,7 @@ export default function SettingCommercialPage() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
@@ -1044,7 +1044,7 @@ export default function SettingCommercialPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un programme de setting qui tourne ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               On construit le système complet : stratégie, ciblage, skill maison,
               setter dédié, coaching closing. Premiers RDV qualifiés dès la semaine 1.
               Un appel de 30 minutes pour voir si ça correspond à votre situation.
@@ -1058,7 +1058,7 @@ export default function SettingCommercialPage() {
           <div className="mt-8 text-center">
             <a
               href="/ressources"
-              className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+              className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors"
             >
               ← Retour au blog
             </a>

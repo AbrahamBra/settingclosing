@@ -50,7 +50,7 @@ export function PricingComparison() {
                       <p className="font-sans text-xl text-text-primary font-bold">De 25 à 200 €</p>
                       <span className="font-sans text-text-muted text-sm">/ RDV livré</span>
                     </div>
-                    <p className="font-sans text-text-muted text-xs mt-1">
+                    <p className="font-sans text-text-secondary text-xs mt-1">
                       Vous ne payez que sur les RDV qui arrivent
                     </p>
                   </div>
@@ -100,7 +100,7 @@ export function PricingComparison() {
                       <p className="font-sans text-2xl text-text-primary font-bold">À partir de 1 000 €</p>
                       <span className="font-sans text-text-muted text-sm">/ mois × 3 mois</span>
                     </div>
-                    <p className="font-sans text-text-muted text-xs mt-1">
+                    <p className="font-sans text-text-secondary text-xs mt-1">
                       Un mois par phase : discovery, pricing, délégation
                     </p>
                   </div>
@@ -110,11 +110,11 @@ export function PricingComparison() {
                     <p className="font-sans text-text-primary font-semibold text-sm mb-2">
                       À partir de 2h de coaching par semaine
                     </p>
-                    <div className="flex gap-2 font-sans text-text-muted text-xs mb-1.5">
+                    <div className="flex gap-2 font-sans text-text-secondary text-xs mb-1.5">
                       <span style={{ color: '#34D399' }} className="shrink-0">→</span>
                       <span>1h en visio — debriefs, stratégie, cas concrets</span>
                     </div>
-                    <div className="flex gap-2 font-sans text-text-muted text-xs">
+                    <div className="flex gap-2 font-sans text-text-secondary text-xs">
                       <span style={{ color: '#34D399' }} className="shrink-0">→</span>
                       <span>1h en situation réelle — coaching en direct sur un appel</span>
                     </div>

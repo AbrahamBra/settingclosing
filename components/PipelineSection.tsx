@@ -114,7 +114,7 @@ export function PipelineSection() {
 
         {/* Note outbound seul */}
         <ScrollReveal delay={150}>
-          <p className="text-center text-text-muted text-sm mt-6 max-w-2xl mx-auto">
+          <p className="text-center text-text-secondary text-sm mt-6 max-w-2xl mx-auto">
             Ces résultats, c&apos;est l&apos;outbound seul.
           </p>
         </ScrollReveal>
@@ -149,21 +149,21 @@ export function PipelineSection() {
                   <span className="text-semantic-methode text-sm mt-0.5">→</span>
                   <div>
                     <p className="text-text-primary text-sm font-semibold">Scoring by design</p>
-                    <p className="text-text-muted text-xs">Le formulaire qualifie avant vous</p>
+                    <p className="text-text-secondary text-xs">Le formulaire qualifie avant vous</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-semantic-methode text-sm mt-0.5">→</span>
                   <div>
                     <p className="text-text-primary text-sm font-semibold">Setting téléphonique</p>
-                    <p className="text-text-muted text-xs">Pas d&apos;invitation, pas de limite</p>
+                    <p className="text-text-secondary text-xs">Pas d&apos;invitation, pas de limite</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="text-semantic-methode text-sm mt-0.5">→</span>
                   <div>
                     <p className="text-text-primary text-sm font-semibold">Itératif</p>
-                    <p className="text-text-muted text-xs">On améliore le formulaire en continu</p>
+                    <p className="text-text-secondary text-xs">On améliore le formulaire en continu</p>
                   </div>
                 </div>
               </div>

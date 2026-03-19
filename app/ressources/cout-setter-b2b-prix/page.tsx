@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Coût d'un setter B2B en 2026 : prix, modèles et ce qu'on évite | ChallengersLab",
+  title: "Prix d'un setter B2B en 2026 | ChallengersLab",
   description:
-    "Combien coûte un setter B2B ? Fixe mensuel, prime par RDV, modèle hybride : les vrais chiffres, les pièges à éviter et comment calculer le ROI réel d&apos;un programme de setting.",
+    "Combien coûte un setter B2B ? Fixe, prime par RDV, hybride : vrais chiffres du marché, pièges à éviter et calcul du ROI réel.",
   openGraph: {
-    title: "Coût d'un setter B2B : les vrais chiffres en 2026",
+    title: "Prix d'un setter B2B en 2026 | ChallengersLab",
     description:
       "Fixe seul vs prime seule vs modèle hybride : les chiffres du marché, comment comparer les offres, et ce que ça coûte vraiment d'après les données terrain.",
     locale: 'fr_FR',
@@ -122,7 +122,7 @@ export default function CoutSetterB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d&apos;Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -139,7 +139,7 @@ export default function CoutSetterB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Coût d&apos;un setter B2B en 2026 : les vrais chiffres
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Fixe, prime, hybride : ce que le marché pratique et comment ne pas se faire avoir.
               Avant de signer quoi que ce soit, posez ces questions et comprenez ce que vous payez vraiment.
             </p>
@@ -154,7 +154,7 @@ export default function CoutSetterB2BPage() {
             <p className="font-sans text-text-primary font-semibold mb-2">
               Les modèles de rémunération d&apos;un setter B2B
             </p>
-            <p className="font-sans text-text-muted text-sm leading-relaxed">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed">
               Un setter B2B est rémunéré selon trois modèles distincts. Le choix du modèle détermine
               l&apos;alignement des intérêts — et la qualité des RDV livrés.
             </p>
@@ -169,13 +169,13 @@ export default function CoutSetterB2BPage() {
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
-                <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
+                <p className="font-sans text-xs text-text-secondary leading-snug">{label}</p>
               </div>
             ))}
           </div>
 
           {/* Article body */}
-          <article className="font-sans text-text-muted leading-relaxed space-y-12">
+          <article className="font-sans text-text-secondary leading-relaxed space-y-12">
 
             {/* Section 1 */}
             <section>
@@ -195,15 +195,15 @@ export default function CoutSetterB2BPage() {
                     <p className="font-sans font-semibold text-text-primary text-sm">
                       Modèle 1 — Fixe seul
                     </p>
-                    <p className="font-sans text-sm font-semibold text-text-muted">
+                    <p className="font-sans text-sm font-semibold text-text-secondary">
                       800–1 500 €/mois
                     </p>
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed mb-2">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mb-2">
                     Vous payez chaque mois, que le setter livre des RDV ou non. Aucune incitation
                     à performer. Si les résultats ne viennent pas, la facture tombe quand même.
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Ce modèle est courant chez les freelances qui veulent sécuriser un revenu fixe.
                     Il fonctionne si vous avez une relation de confiance établie et des KPIs clairs dès
                     le départ. Sans ça, vous financez la présence plutôt que la performance.
@@ -216,16 +216,16 @@ export default function CoutSetterB2BPage() {
                     <p className="font-sans font-semibold text-text-primary text-sm">
                       Modèle 2 — Prime seule par RDV
                     </p>
-                    <p className="font-sans text-sm font-semibold text-text-muted">
+                    <p className="font-sans text-sm font-semibold text-text-secondary">
                       50–200 €/RDV
                     </p>
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed mb-2">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mb-2">
                     Vous ne payez que pour les RDV livrés. L&apos;incentive est alignée en surface —
                     mais ce modèle favorise la quantité sur la qualité. Un setter rémunéré uniquement
                     à la prime a intérêt à livrer des RDV, même mal qualifiés.
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Résultat : des appels avec des prospects qui ne correspondent pas à votre ICP,
                     qui ne sont pas décideurs, ou qui n&apos;ont pas de budget. Votre agenda se remplit.
                     Votre pipeline, non.
@@ -242,13 +242,13 @@ export default function CoutSetterB2BPage() {
                       Recommandé
                     </p>
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed mb-2">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mb-2">
                     Un fixe bas couvre la présence et la continuité du programme. La prime par RDV
                     aligne les intérêts sur les résultats qualifiés. Le setter a intérêt à bien
                     qualifier — parce que des RDV mal qualifiés feront remonter les objections et
                     réduire le fixe futur.
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                     C&apos;est le modèle utilisé par ChallengersLab : 500 €/mois de fixe
                     + 25 à 150 €/RDV selon le niveau de qualification. Un RDV avec un décideur
                     confirmé, budget validé et contexte favorable vaut plus qu&apos;un RDV avec un
@@ -297,7 +297,7 @@ export default function CoutSetterB2BPage() {
                     <span className="text-accent shrink-0 mt-0.5 font-semibold text-sm">→</span>
                     <div>
                       <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}
@@ -308,7 +308,7 @@ export default function CoutSetterB2BPage() {
                 <p className="font-sans font-semibold text-text-primary mb-1">
                   Cheap sans méthode vs. structuré avec système
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Un setter à 400 €/mois sans méthode ni outils va livrer peu et brûler des leads.
                   Un setter à 800 €/mois avec infrastructure, skill IA et journal de bord va livrer
                   des RDV qualifiés dès le premier mois. La comparaison de prix sans comparer le
@@ -342,7 +342,7 @@ export default function CoutSetterB2BPage() {
                   ].map(({ label, value, highlight }) => (
                     <div key={label} className="flex items-center justify-between gap-4">
                       <p
-                        className="font-sans text-sm text-text-muted leading-snug"
+                        className="font-sans text-sm text-text-secondary leading-snug"
                         dangerouslySetInnerHTML={{ __html: label }}
                       />
                       <p className={`font-sans text-sm font-semibold shrink-0 ${highlight ? 'text-accent' : 'text-text-primary'}`}>
@@ -401,7 +401,7 @@ export default function CoutSetterB2BPage() {
                     <span className="text-accent shrink-0 mt-0.5 font-semibold text-sm">→</span>
                     <div>
                       <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                     </div>
                   </div>
                 ))}
@@ -457,7 +457,7 @@ export default function CoutSetterB2BPage() {
                     <span className="font-serif text-accent/40 text-base leading-snug shrink-0 w-4 pt-0.5">{num}.</span>
                     <div>
                       <p className="font-sans font-semibold text-text-primary text-sm mb-1">{question}</p>
-                      <p className="font-sans text-text-muted text-sm leading-relaxed">{detail}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{detail}</p>
                     </div>
                   </div>
                 ))}
@@ -475,7 +475,7 @@ export default function CoutSetterB2BPage() {
                     <p className="font-sans font-semibold text-text-primary mb-2">
                       {item.question}
                     </p>
-                    <p className="font-sans text-text-muted leading-relaxed text-sm">
+                    <p className="font-sans text-text-secondary leading-relaxed text-sm">
                       {item.answer}
                     </p>
                   </div>
@@ -495,7 +495,7 @@ export default function CoutSetterB2BPage() {
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -511,7 +511,7 @@ export default function CoutSetterB2BPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Voir les tarifs et la garantie résultats
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Fixe mensuel + prime par RDV livré. Garantie 5 RDV qualifiés minimum par mois.
               Pas de paiement si l&apos;objectif n&apos;est pas atteint. On démarre en 2 semaines.
             </p>
@@ -524,7 +524,7 @@ export default function CoutSetterB2BPage() {
           <div className="mt-8 text-center">
             <a
               href="/ressources"
-              className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+              className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors"
             >
               ← Retour au blog
             </a>

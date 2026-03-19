@@ -5,13 +5,13 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Closer B2B : définition, compétences et comment en recruter un | ChallengersLab',
+  title: 'Closer B2B : définition et compétences | ChallengersLab',
   description:
-    'Le closer B2B signe les deals que le setter a qualifiés. Définition exacte, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.',
+    'Closer B2B : définition, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.',
   openGraph: {
-    title: 'Closer B2B : définition, compétences et comment en recruter un',
+    title: 'Closer B2B : définition et compétences | ChallengersLab',
     description:
-      'Le closer B2B signe les deals que le setter a qualifiés. Définition exacte, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.',
+      'Closer B2B : définition, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.',
     locale: 'fr_FR',
     type: 'article',
   },
@@ -145,7 +145,7 @@ export default function CloserB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -162,7 +162,7 @@ export default function CloserB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Closer B2B : ce que c&apos;est vraiment, ce que ça demande, comment en recruter un
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Le closer B2B n&apos;est pas un commercial qui prospecte. C&apos;est quelqu&apos;un
               qui prend un appel sur un lead qualifié et en sort avec une signature — ou sans. Voici
               ce que ça implique vraiment.
@@ -208,7 +208,7 @@ export default function CloserB2BPage() {
               ].map(({ num, label, anchor }) => (
                 <li key={anchor} className="flex items-start gap-3 font-sans text-sm">
                   <span className="text-accent font-semibold shrink-0 w-6">{num}</span>
-                  <a href={`#${anchor}`} className="text-text-muted hover:text-text-primary transition-colors">
+                  <a href={`#${anchor}`} className="text-text-secondary hover:text-text-primary transition-colors">
                     {label}
                   </a>
                 </li>
@@ -221,14 +221,14 @@ export default function CloserB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Ce que fait un closer B2B — et ce qu&apos;il ne fait pas
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La confusion la plus fréquente : appeler &laquo; closer &raquo; un commercial classique
               qui fait tout, de la prospection à la signature. Ce n&apos;est pas ça. Un closer B2B
               au sens strict ne prospecte pas. Il ne cherche pas de contacts, ne construit pas de
               listes, ne fait pas de cold outreach. Il reçoit des appels sur des leads qui ont déjà
               dit oui à une conversation commerciale.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce que fait concrètement un closer sur un appel :
             </p>
             <ul className="space-y-3 mb-6">
@@ -240,11 +240,11 @@ export default function CloserB2BPage() {
               ].map((item, i) => (
                 <li key={i} className="flex gap-3 font-sans">
                   <span className="text-accent font-semibold shrink-0">{item.label}</span>
-                  <p className="text-text-muted leading-relaxed text-sm">{item.desc}</p>
+                  <p className="text-text-secondary leading-relaxed text-sm">{item.desc}</p>
                 </li>
               ))}
             </ul>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce qu&apos;il ne fait <strong>pas</strong> : le{' '}
               <a
                 href="/ressources/setting-commercial-b2b"
@@ -262,7 +262,7 @@ export default function CloserB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 La distinction qui compte : commercial vs closer
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Un commercial classique est généraliste : il gère tout le cycle. Un closer est
                 spécialiste : il gère uniquement la conversion. Cette spécialisation change tout
                 à la posture, aux métriques de performance et à la façon de le recruter.
@@ -275,7 +275,7 @@ export default function CloserB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les compétences d&apos;un bon closer B2B
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Ce n&apos;est pas inné. Aucune de ces compétences ne s&apos;improvise sur un premier
               appel — elles se construisent par la pratique, l&apos;écoute de ses propres
               enregistrements, et le travail sur ses angles morts. Voici ce qui sépare un closer
@@ -285,11 +285,11 @@ export default function CloserB2BPage() {
               {competences.map((comp, i) => (
                 <div key={i} className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5">
                   <p className="font-sans font-semibold text-text-primary mb-3">{comp.titre}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{comp.corps}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{comp.corps}</p>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed mt-6">
+            <p className="font-sans text-text-secondary leading-relaxed mt-6">
               La{' '}
               <a
                 href="/ressources/challenger-sale-definition"
@@ -309,14 +309,14 @@ export default function CloserB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Closer et setter : pourquoi les deux vont ensemble
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Un closer sans setter qualifié perd du temps. Il se retrouve sur des appels avec des
               prospects qui n&apos;ont pas été bien préparés — ils ne savent pas précisément ce
               qu&apos;ils vont entendre, ils comparent encore avec des alternatives, leur budget
               n&apos;a pas été validé. Le taux de transformation chute, et le closer commence à
               ajuster son pitch alors que le vrai problème est en amont.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               À l&apos;inverse, un{' '}
               <a
                 href="/ressources/setter-b2b-definition"
@@ -345,19 +345,19 @@ export default function CloserB2BPage() {
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3 font-sans text-sm">
                     <span className="text-accent shrink-0">—</span>
-                    <span className="text-text-muted leading-relaxed">{item}</span>
+                    <span className="text-text-secondary leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Quand les deux rôles sont tenus correctement et que la transmission est complète, le
               closer arrive sur l&apos;appel avec un avantage réel : il sait déjà ce qui fait mal
               chez ce prospect, il sait ce que le setter a dit pour créer l&apos;envie, et il peut
               conduire sa discovery à partir d&apos;une base solide plutôt que de repartir de zéro.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La{' '}
               <a
                 href="/ressources/difference-setting-closing"
@@ -376,7 +376,7 @@ export default function CloserB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Closer B2B en freelance : comment ça fonctionne
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               La majorité des closers B2B en France travaillent en freelance ou en portage salarial,
               sur une ou plusieurs offres en parallèle. Le modèle est simple en théorie, mais il y a
               des questions à poser avant de signer.
@@ -387,14 +387,14 @@ export default function CloserB2BPage() {
                 <p className="font-sans font-semibold text-text-primary mb-2">
                   Les modèles de rémunération
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                   En 2026, la commission standard en France se situe entre 8 % et 15 % du montant
                   du deal. Sur des offres à 3 000–5 000 € (accompagnements, formations B2B, SaaS),
                   un closer qui signe 5 à 8 deals par mois tourne entre 2 500 € et 6 000 €.
                   Certains clients proposent un fixe bas (400–600 €) + variable — c&apos;est
                   intéressant si les leads sont peu nombreux mais très qualifiés.
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Le modèle 100 % à la performance est le plus fréquent pour un closer qui débute
                   avec un nouveau client : il porte moins de risque pour le client, et permet au
                   closer de prouver ses résultats sur 30 jours avant de renégocier.
@@ -405,7 +405,7 @@ export default function CloserB2BPage() {
                 <p className="font-sans font-semibold text-text-primary mb-2">
                   Ce que les clients attendent
                 </p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Des résultats dans les deux premières semaines. Une disponibilité sur des créneaux
                   imposés — souvent le soir ou le samedi matin pour les offres grand public B2B.
                   Un reporting simple : nombre d&apos;appels, taux de signature, objections les plus
@@ -428,14 +428,14 @@ export default function CloserB2BPage() {
                   ].map((q, i) => (
                     <li key={i} className="flex gap-3 font-sans text-sm">
                       <span className="text-accent shrink-0">—</span>
-                      <span className="text-text-muted leading-relaxed">{q}</span>
+                      <span className="text-text-secondary leading-relaxed">{q}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
               <div className="border-l-2 border-white/[0.06] pl-4">
-                <p className="font-sans text-text-muted text-sm italic leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm italic leading-relaxed">
                   Un bon brief closer décrit l&apos;offre en détail, les objections les plus
                   fréquentes avec les réponses attendues, le profil type du prospect, et le contexte
                   de ce qui a été dit pendant le setting. Un mauvais brief ressemble à une fiche
@@ -450,7 +450,7 @@ export default function CloserB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Recruter un closer B2B : ce qu&apos;il faut évaluer
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un CV de closer ne dit rien d&apos;utile. Les chiffres sont invérifiables, les
               contextes sont incomparables, et le vrai problème est ailleurs : est-ce que cette
               personne sait mener une discovery sans pitcher trop tôt ? Est-ce qu&apos;elle sait
@@ -462,7 +462,7 @@ export default function CloserB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-3">
                 Comment tester un closer sérieusement
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
                 Le jeu de rôle sur votre offre réelle est non-négociable. Vous jouez le prospect
                 avec votre vraie objection principale — &laquo; je vais y réfléchir &raquo;,
                 &laquo; c&apos;est trop cher &raquo;, &laquo; j&apos;ai déjà essayé quelque chose
@@ -476,13 +476,13 @@ export default function CloserB2BPage() {
                 ].map((item, i) => (
                   <li key={i} className="flex gap-3 font-sans text-sm">
                     <span className="text-accent shrink-0">→</span>
-                    <span className="text-text-muted leading-relaxed">{item}</span>
+                    <span className="text-text-secondary leading-relaxed">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Les red flags à prendre au sérieux :
             </p>
             <ul className="space-y-3 mb-6">
@@ -494,7 +494,7 @@ export default function CloserB2BPage() {
               ].map((item, i) => (
                 <li key={i} className="font-sans text-sm">
                   <span className="font-semibold text-text-primary">{item.flag} — </span>
-                  <span className="text-text-muted leading-relaxed">{item.detail}</span>
+                  <span className="text-text-secondary leading-relaxed">{item.detail}</span>
                 </li>
               ))}
             </ul>
@@ -504,7 +504,7 @@ export default function CloserB2BPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Commission standard marché FR 2026
               </p>
-              <p className="font-sans text-text-muted text-sm leading-relaxed">
+              <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 8–12 % pour des offres B2B entre 1 500 € et 5 000 €. 10–15 % pour des offres à
                 plus de 5 000 € avec un cycle de vente en un appel. En dessous de 8 %, le closer
                 freelance aura du mal à rester motivé sur des volumes faibles. Au-dessus de 15 %,
@@ -524,7 +524,7 @@ export default function CloserB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -547,7 +547,7 @@ export default function CloserB2BPage() {
                 <a
                   key={href}
                   href={href}
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
@@ -564,7 +564,7 @@ export default function CloserB2BPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Structurer votre pipeline setting + closing
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un closer performant sur des leads mal qualifiés ne sauvera pas votre taux de
               conversion. On travaille les deux rôles : qualification en amont, conversion sur
               l&apos;appel. 2 à 4 rendez-vous par semaine, leads chauds, suivi sur chaque deal.

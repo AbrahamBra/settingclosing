@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setter B2B : définition, rôle et comment en trouver un | ChallengersLab',
+  title: 'Setter B2B : définition et rôle | ChallengersLab',
   description:
-    'Un setter B2B est le commercial qui prospecte pour vous. Définition exacte, rôle au quotidien, coût réel et les 3 phases du setting — tout ce qu\'il faut savoir avant d\'externaliser.',
+    'Un setter B2B est le commercial qui prospecte pour vous. Définition, rôle, coût réel et les 3 phases du setting expliquées.',
   openGraph: {
-    title: 'Setter B2B : définition, rôle et comment en trouver un',
+    title: 'Setter B2B : définition et rôle | ChallengersLab',
     description:
       'Un setter B2B est le commercial qui prospecte pour vous. Définition, rôle, coût et les 3 phases du setting expliqués pour les solopreneurs.',
     locale: 'fr_FR',
@@ -163,7 +163,7 @@ export default function SetterDefinitionPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -180,7 +180,7 @@ export default function SetterDefinitionPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               C&apos;est quoi un setter en B2B ?
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Définition complète, rôle au quotidien, coût réel et les 3 phases du setting expliquées simplement.
             </p>
             <AuthorBlock date="2026-03-16" readTime="8 min de lecture" dateLabel="16 mars 2026" />
@@ -204,7 +204,7 @@ export default function SetterDefinitionPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Le rôle du setter au quotidien
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Le setter prend en charge tout ce qui précède un appel de vente.
               Concrètement, voilà ce qu&apos;il fait chaque semaine :
             </p>
@@ -217,13 +217,13 @@ export default function SetterDefinitionPage() {
                 "Qualifier les réponses entrantes avec 2 à 3 questions de pré-qualification",
                 "Fixer le rendez-vous dans votre agenda avec le contexte complet sur le prospect",
               ].map((item, i) => (
-                <li key={i} className="flex gap-3 font-sans text-text-muted">
+                <li key={i} className="flex gap-3 font-sans text-text-secondary">
                   <span className="text-accent shrink-0 mt-0.5">→</span>
                   <span className="leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Ce que le setter ne fait <strong className="text-text-primary font-semibold">pas</strong> :
               il ne conduit pas l&apos;appel de vente, ne négocie pas le prix, ne présente pas l&apos;offre en détail.
               Cette partie appartient au closer.
@@ -235,7 +235,7 @@ export default function SetterDefinitionPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Il faut en moyenne 8 points de contact avant qu&apos;un prospect accepte un rendez-vous commercial.
               </p>
-              <p className="font-sans text-text-muted text-sm">
+              <p className="font-sans text-text-secondary text-sm">
                 80 % des solopreneurs abandonnent après 2 ou 3 tentatives. C&apos;est pour ça que
                 la majorité des opportunités ne sont jamais exploitées. (Source : Marketing Donut)
               </p>
@@ -247,18 +247,18 @@ export default function SetterDefinitionPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Setter ≠ Closer : pourquoi la distinction est importante
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Mélanger les deux rôles est l&apos;une des erreurs les plus courantes en B2B.
               Un solopreneur qui prospecte ET close dans la même journée fait deux choses mal
               plutôt qu&apos;une seule bien.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               L&apos;état d&apos;esprit n&apos;est pas le même. Le setter optimise le volume et la qualité
               des entrées dans le pipeline. Le closer optimise la conversion une fois face à un
               prospect qualifié. Passer de l&apos;un à l&apos;autre en continu crée de la friction mentale
               et réduit les performances des deux.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La séparation des rôles permet aussi d&apos;ajuster chaque partie sans tout casser : vous pouvez
               améliorer les messages de prospection sans toucher à l&apos;appel de vente, et vice versa.
             </p>
@@ -269,7 +269,7 @@ export default function SetterDefinitionPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 3 phases d&apos;un programme de setting
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Le <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting commercial B2B</a> ne se résume pas à envoyer des messages LinkedIn en masse. Une vraie
               infrastructure se construit en 3 phases — chacune conditionne l&apos;efficacité de la suivante.
             </p>
@@ -295,7 +295,7 @@ export default function SetterDefinitionPage() {
                     <p className="font-sans font-semibold text-text-primary mb-1.5">
                       {phase.title}
                     </p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">
                       {phase.body}
                     </p>
                   </div>
@@ -308,7 +308,7 @@ export default function SetterDefinitionPage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les équipes qui utilisent le scoring de leads convertissent 77 % plus que celles qui ne le font pas.
               </p>
-              <p className="font-sans text-text-muted text-sm">
+              <p className="font-sans text-text-secondary text-sm">
                 Source : HubSpot State of Marketing Report
               </p>
             </div>
@@ -319,7 +319,7 @@ export default function SetterDefinitionPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Setter interne ou setter externalisé ?
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Deux options s&apos;offrent à vous. Voici une comparaison honnête :
             </p>
             <div className="overflow-x-auto">
@@ -335,14 +335,14 @@ export default function SetterDefinitionPage() {
                   {comparisonRows.map(([label, intern, extern], i) => (
                     <tr key={i} className="border-b border-white/[0.06]">
                       <td className="py-3 pr-6 font-medium text-text-primary">{label}</td>
-                      <td className="py-3 pr-6 text-text-muted">{intern}</td>
-                      <td className="py-3 text-text-muted">{extern}</td>
+                      <td className="py-3 pr-6 text-text-secondary">{intern}</td>
+                      <td className="py-3 text-text-secondary">{extern}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="font-sans text-text-muted text-sm mt-4 leading-relaxed">
+            <p className="font-sans text-text-secondary text-sm mt-4 leading-relaxed">
               Pour un fondateur ou un freelance B2B qui structure son pipeline, l&apos;externalisation
               est l&apos;option la plus réaliste. Un recrutement en CDI à ce stade représente un risque
               opérationnel et financier difficile à absorber avant d&apos;avoir validé le volume.
@@ -354,7 +354,7 @@ export default function SetterDefinitionPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Combien coûte un setter B2B ?
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Il existe 3 modèles de tarification sur le marché. Le modèle choisi détermine
               l&apos;alignement des intérêts entre vous et votre setter.
             </p>
@@ -364,7 +364,7 @@ export default function SetterDefinitionPage() {
                   <span className="text-accent font-semibold shrink-0 font-sans mt-0.5">{i + 1}.</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary mb-1">{item.label}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{item.desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -382,7 +382,7 @@ export default function SetterDefinitionPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -401,7 +401,7 @@ export default function SetterDefinitionPage() {
                 { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -417,7 +417,7 @@ export default function SetterDefinitionPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Prêt à déléguer votre setting ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Garantie 5 RDV qualifiés minimum par mois. Fixe mensuel + prime à la performance.
               On démarre en 2 semaines.
             </p>

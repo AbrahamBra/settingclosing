@@ -124,7 +124,7 @@ export function BlogContent() {
           <h1 className="font-sans font-extrabold text-4xl md:text-5xl text-text-primary mb-4 tracking-tight">
             Ressources
           </h1>
-          <p className="font-sans text-text-muted text-lg leading-relaxed">
+          <p className="font-sans text-text-secondary text-lg leading-relaxed">
             Méthode, outils et retours terrain sur la prospection B2B.
           </p>
         </header>
@@ -142,7 +142,7 @@ export function BlogContent() {
                 <h2 className="font-sans font-extrabold text-2xl md:text-3xl text-text-primary mb-3 group-hover:text-[#C87533] transition-colors leading-tight">
                   Devenir Business Developer en 2026
                 </h2>
-                <p className="font-sans text-text-muted leading-relaxed text-sm md:text-base max-w-xl">
+                <p className="font-sans text-text-secondary leading-relaxed text-sm md:text-base max-w-xl">
                   Reconversion, alternance, salaire, compétences : tout ce qu&apos;il faut savoir sur le métier de business developer et comment s&apos;y former.
                 </p>
               </div>

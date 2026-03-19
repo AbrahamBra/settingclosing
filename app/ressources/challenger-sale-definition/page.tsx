@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Challenger Sale : définition, méthode et application en B2B | ChallengersLab',
+  title: 'Challenger Sale : définition et méthode | ChallengersLab',
   description:
-    "Le Challenger Sale est une méthode de vente B2B issue d'une étude sur 6 000 commerciaux. Ses 3 composantes — Teach, Tailor, Take Control — et comment l'appliquer quand on est solopreneur.",
+    "Challenger Sale : méthode B2B issue d'une étude sur 6 000 commerciaux. Teach, Tailor, Take Control et application concrète.",
   openGraph: {
-    title: 'Challenger Sale : définition, méthode et application en B2B',
+    title: 'Challenger Sale : définition et méthode | ChallengersLab',
     description:
       "Issue d'une étude sur 6 000 commerciaux, la méthode Challenger Sale identifie le profil qui surperforme et ses 3 composantes clés.",
     locale: 'fr_FR',
@@ -171,7 +171,7 @@ export default function ChallengerSalePage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -188,7 +188,7 @@ export default function ChallengerSalePage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Qu&apos;est-ce que le Challenger Sale ?
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La méthode de vente B2B issue d&apos;une étude sur 6 000 commerciaux — et pourquoi
               le profil qui surperforme n&apos;est pas celui qu&apos;on attendait.
             </p>
@@ -215,16 +215,16 @@ export default function ChallengerSalePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               L&apos;étude à l&apos;origine de la méthode
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               En 2009, le Corporate Executive Board (CEB) lance une étude massive pour comprendre
               ce qui différencie les meilleurs commerciaux des autres. 6 000 commerciaux.
               90 entreprises. Plusieurs secteurs B2B.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La question de départ : est-ce que les top performers ont des comportements,
               des attitudes ou des approches spécifiques — ou s&apos;agit-il juste de talent brut ?
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Résultat : oui, il existe un profil distinctif. Et ce profil
               n&apos;est pas celui que la plupart des managers auraient recruté en premier.
             </p>
@@ -234,7 +234,7 @@ export default function ChallengerSalePage() {
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Le profil Challenger représente 40 % des top performers commerciaux.
               </p>
-              <p className="font-sans text-text-muted text-sm">
+              <p className="font-sans text-text-secondary text-sm">
                 Le Relationship Builder — le profil le plus répandu et le plus recruté — n&apos;en
                 représente que 7 % sur les ventes complexes. (Source : The Challenger Sale,
                 Dixon &amp; Adamson, CEB 2011)
@@ -247,7 +247,7 @@ export default function ChallengerSalePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 5 profils de vendeurs
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               L&apos;étude CEB classe tous les commerciaux dans l&apos;un de ces 5 profils.
               Un vendeur peut avoir des traits de plusieurs profils, mais l&apos;un d&apos;eux domine toujours.
             </p>
@@ -269,7 +269,7 @@ export default function ChallengerSalePage() {
                       </span>
                     )}
                   </div>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{profile.desc}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{profile.desc}</p>
                 </div>
               ))}
             </div>
@@ -280,7 +280,7 @@ export default function ChallengerSalePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 3 composantes du Challenger Sale
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-8">
+            <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Le profil Challenger se définit par 3 comportements distincts. Chacun s&apos;apprend
               et se pratique.
             </p>
@@ -295,9 +295,9 @@ export default function ChallengerSalePage() {
                   <h3 className="font-sans font-semibold text-h3 text-text-primary mb-3">
                     {comp.title}
                   </h3>
-                  <p className="font-sans text-text-muted leading-relaxed mb-4">{comp.body}</p>
+                  <p className="font-sans text-text-secondary leading-relaxed mb-4">{comp.body}</p>
                   <div className="border-l-2 border-white/[0.06] pl-4">
-                    <p className="font-sans text-text-muted text-sm italic leading-relaxed">
+                    <p className="font-sans text-text-secondary text-sm italic leading-relaxed">
                       {comp.example}
                     </p>
                   </div>
@@ -311,7 +311,7 @@ export default function ChallengerSalePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Comment l&apos;appliquer quand on est solopreneur
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La méthode Challenger Sale a été conçue pour les grandes équipes commerciales.
               Mais ses principes s&apos;appliquent directement aux solopreneurs B2B — à condition
               d&apos;adapter le format à la réalité d&apos;un one-to-one.
@@ -333,15 +333,15 @@ export default function ChallengerSalePage() {
               ].map((item, i) => (
                 <li key={i} className="flex gap-3 font-sans">
                   <span className="text-accent font-semibold shrink-0">{item.label}</span>
-                  <p className="text-text-muted leading-relaxed text-sm">{item.desc}</p>
+                  <p className="text-text-secondary leading-relaxed text-sm">{item.desc}</p>
                 </li>
               ))}
             </ul>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               ChallengersLab applique cette méthode dans le programme Closing : un mois par composante,
               avec 2h de coaching par semaine dont une heure en situation réelle sur un appel prospect.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mt-4">
+            <p className="font-sans text-text-secondary leading-relaxed mt-4">
               La méthode Challenger Sale couvre la conversion — en amont, c&apos;est le <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting commercial B2B</a> qui génère les rendez-vous qualifiés sur lesquels vous l&apos;appliquez.
             </p>
           </section>
@@ -357,7 +357,7 @@ export default function ChallengerSalePage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -375,7 +375,7 @@ export default function ChallengerSalePage() {
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -391,7 +391,7 @@ export default function ChallengerSalePage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Appliquer la méthode Challenger à votre activité
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               3 mois. Un mois par composante. 2h de coaching par semaine dont une heure
               sur un vrai appel prospect. Vous sortez avec une méthode, pas juste des notes.
             </p>

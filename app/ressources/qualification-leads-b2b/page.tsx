@@ -5,11 +5,11 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples | ChallengersLab',
+  title: 'Qualification de leads B2B en 2026 | ChallengersLab',
   description:
-    'Qualifier un lead en B2B signifie évaluer sa probabilité de devenir client avant de lui accorder du temps commercial. BANT, MEDDIC, qualification en 5 niveaux : méthodes et exemples.',
+    'Qualification de leads B2B : BANT, MEDDIC et qualification en 5 niveaux. Méthodes, critères et exemples pour évaluer vos prospects.',
   openGraph: {
-    title: 'Qualifier un lead en B2B 2026 : méthodes et critères',
+    title: 'Qualification de leads B2B en 2026 | ChallengersLab',
     description:
       'BANT, MEDDIC, qualification signal-based : comment évaluer un prospect B2B avant d\'allouer du temps commercial. Méthodes comparées et exemples concrets.',
     locale: 'fr_FR',
@@ -118,7 +118,7 @@ export default function QualificationLeadsB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -135,7 +135,7 @@ export default function QualificationLeadsB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Qualifier un lead en B2B 2026 : méthodes, critères et exemples
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Un lead non qualifié qui arrive dans l&apos;agenda du closeur, c&apos;est du temps
               perdu — et parfois un deal raté qui aurait pu attendre. Qualifier un lead en B2B
               signifie évaluer sa probabilité de devenir client avant de lui consacrer du temps
@@ -149,7 +149,7 @@ export default function QualificationLeadsB2BPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Chiffre clé
             </p>
-            <p className="font-sans text-sm text-text-muted leading-relaxed">
+            <p className="font-sans text-sm text-text-secondary leading-relaxed">
               Selon HubSpot State of Sales (2024),{' '}
               <strong className="text-text-primary">seuls 27 % des leads transmis aux commerciaux sont réellement qualifiés</strong>.
               Les entreprises qui structurent une phase de qualification en amont constatent
@@ -169,10 +169,10 @@ export default function QualificationLeadsB2BPage() {
                 { id: 'setting-closeur', label: 'La qualification dans un système setter-closeur' },
               ].map(({ id, label }, i) => (
                 <li key={id} className="flex gap-3 items-baseline">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-5 text-right">
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-5 text-right">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <a href={`#${id}`} className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors leading-snug">
+                  <a href={`#${id}`} className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors leading-snug">
                     {label}
                   </a>
                 </li>
@@ -185,13 +185,13 @@ export default function QualificationLeadsB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Pourquoi qualifier un lead avant de l&apos;appeler
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Un appel de discovery dure entre 30 et 60 minutes. Multiplié par tous les leads
               non qualifiés qui passent dans l&apos;agenda d&apos;un closeur, le coût du temps
               perdu est considérable. La qualification sert à ne faire passer en appel que les
               prospects qui ont une probabilité réelle de devenir clients.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce qu&apos;un lead qualifié en B2B doit présenter :
             </p>
             <div className="grid sm:grid-cols-2 gap-3 mb-5">
@@ -203,11 +203,11 @@ export default function QualificationLeadsB2BPage() {
               ].map(({ label, detail }) => (
                 <div key={label} className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
                   <p className="font-sans text-sm font-semibold text-text-primary mb-1">{label}</p>
-                  <p className="font-sans text-xs text-text-muted leading-relaxed">{detail}</p>
+                  <p className="font-sans text-xs text-text-secondary leading-relaxed">{detail}</p>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Un lead qui coche 3 des 4 critères peut valoir un appel. Un lead qui en coche 1 ou 2
               est prématuré — il peut être gardé en nurturing pour être recontacté dans 4 à 8 semaines.
             </p>
@@ -218,7 +218,7 @@ export default function QualificationLeadsB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La méthode BANT
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               BANT (Budget, Authority, Need, Timeline) est le cadre de qualification le plus ancien
               et le plus utilisé. Créé par IBM dans les années 1960, il reste une bonne checklist
               pour les leads entrants.
@@ -234,14 +234,14 @@ export default function QualificationLeadsB2BPage() {
                   <span className="font-serif text-xl text-accent shrink-0 leading-none pt-0.5">{lettre}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm">{nom}</p>
-                    <p className="font-sans text-xs text-text-muted mb-1">{question}</p>
-                    <p className="font-sans text-xs text-text-muted/70 italic">{limite}</p>
+                    <p className="font-sans text-xs text-text-secondary mb-1">{question}</p>
+                    <p className="font-sans text-xs text-text-secondary/70 italic">{limite}</p>
                   </div>
                 </div>
               ))}
             </div>
             <div className="border-l-2 border-accent/30 pl-5">
-              <p className="font-sans text-sm text-text-muted leading-relaxed">
+              <p className="font-sans text-sm text-text-secondary leading-relaxed">
                 <strong className="text-text-primary">Limite de BANT :</strong> il suppose que le prospect
                 a déjà défini son budget et son besoin. En prospection outbound signal-based, le prospect
                 n&apos;a souvent pas encore formalisé tout ça. BANT est plus utile pour les leads
@@ -255,7 +255,7 @@ export default function QualificationLeadsB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La méthode MEDDIC
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               MEDDIC est un cadre de qualification plus complet, adapté aux cycles de vente longs
               avec plusieurs décideurs. Il qualifie non seulement le prospect mais le{' '}
               <em>processus de décision</em> dans lequel il s&apos;inscrit.
@@ -273,12 +273,12 @@ export default function QualificationLeadsB2BPage() {
                   <span className="font-serif text-xl text-accent shrink-0 leading-none pt-0.5">{lettre}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm">{nom}</p>
-                    <p className="font-sans text-xs text-text-muted leading-relaxed">{desc}</p>
+                    <p className="font-sans text-xs text-text-secondary leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               MEDDIC s&apos;applique principalement pendant la discovery call et les appels suivants.
               Pour les fondateurs, freelances et solopreneurs B2B avec des cycles courts (1 à 2 appels), les critères
               les plus utiles sont : Identify Pain, Economic Buyer, et Decision Process.
@@ -290,7 +290,7 @@ export default function QualificationLeadsB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Qualification en 5 niveaux par signal LinkedIn
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Dans un système de setting signal-based, la qualification commence avant le premier message.
               Le setter attribue un niveau de 1 à 5 à chaque prospect selon la nature du signal
               et la qualité des échanges. Seuls les leads N4 et N5 sont envoyés en appel de closing.
@@ -308,18 +308,18 @@ export default function QualificationLeadsB2BPage() {
                   {niveauxQualif.map(({ niveau, label, desc }) => (
                     <tr key={niveau}>
                       <td className="py-4 pr-4">
-                        <span className={`font-serif text-base ${['N4', 'N5'].includes(niveau) ? 'text-accent' : 'text-text-muted/50'}`}>
+                        <span className={`font-serif text-base ${['N4', 'N5'].includes(niveau) ? 'text-accent' : 'text-text-secondary/50'}`}>
                           {niveau}
                         </span>
                       </td>
                       <td className="py-4 pr-4 font-semibold text-text-primary align-top whitespace-nowrap">{label}</td>
-                      <td className="py-4 text-text-muted leading-relaxed">{desc}</td>
+                      <td className="py-4 text-text-secondary leading-relaxed">{desc}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Les leads N1 et N2 restent dans la base de suivi — ils peuvent évoluer avec du nurturing
               (contenu, relances espacées). Les leads N3 passent en qualification approfondie par
               message. Seuls les N4 et N5 sont proposés pour un appel.
@@ -331,7 +331,7 @@ export default function QualificationLeadsB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               La qualification dans un système setter-closeur
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               La qualification en deux temps est le principal avantage d&apos;un système setter-closeur.
               Sans setter, le closeur reçoit des leads dont il ne sait pas grand chose — et
               doit requalifier pendant l&apos;appel lui-même, ce qui consomme du temps et crée
@@ -345,11 +345,11 @@ export default function QualificationLeadsB2BPage() {
               ].map(({ role, action }) => (
                 <div key={role} className="border-l-2 border-accent/30 pl-5">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-1">{role}</p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">{action}</p>
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">{action}</p>
                 </div>
               ))}
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Pour comprendre en détail le rôle du setter dans la qualification :{' '}
               <a href="/ressources/setting-commercial-b2b" className="text-accent hover:text-text-primary transition-colors">
                 setting commercial B2B — définition, méthode et programme complet
@@ -365,7 +365,7 @@ export default function QualificationLeadsB2BPage() {
               {faqItems.map(({ question, answer }) => (
                 <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>
               ))}
             </div>
@@ -384,7 +384,7 @@ export default function QualificationLeadsB2BPage() {
                 { href: '/ressources/methode-spin-selling', label: 'SPIN Selling : vendre sans forcer' },
                 { href: '/glossaire', label: 'Glossaire : ICP, qualification, pipeline…' },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -396,7 +396,7 @@ export default function QualificationLeadsB2BPage() {
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">ChallengersLab</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Vos leads sont-ils vraiment qualifiés ?</h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour comprendre comment vous qualifiez aujourd&apos;hui, identifier
               ce qui se perd dans le pipeline et ce qu&apos;un setter dédié changerait. Gratuit. Sans engagement.
             </p>
@@ -404,7 +404,7 @@ export default function QualificationLeadsB2BPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <a href="/ressources" className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors">← Retour au blog</a>
+            <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">← Retour au blog</a>
           </div>
 
         </div>

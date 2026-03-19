@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Discovery call B2B : structure, questions et erreurs à éviter | ChallengersLab",
+  title: "Discovery call B2B : guide complet | ChallengersLab",
   description:
-    "La discovery call est le premier appel commercial du closeur. Structure en 4 phases, les 10 meilleures questions à poser, les 3 erreurs qui font perdre des deals avant le pitch.",
+    "La discovery call est le premier appel du closeur. Structure en 4 phases, 10 questions clés et 3 erreurs qui font perdre des deals.",
   openGraph: {
-    title: "Discovery call B2B : structure, questions et erreurs",
+    title: "Discovery call B2B : guide complet | ChallengersLab",
     description:
       "Comment conduire une discovery call B2B qui mène au closing : structure, questions, erreurs à éviter. Le guide terrain.",
     locale: 'fr_FR',
@@ -122,7 +122,7 @@ export default function DiscoveryCallPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -139,7 +139,7 @@ export default function DiscoveryCallPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Discovery call B2B : structure, questions et erreurs à éviter
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La majority des deals perdus ne se perdent pas sur les objections. Ils se perdent parce
               que le closeur a pitché sans vraiment comprendre ce que le prospect voulait. La discovery
               call est la phase qui évite ça — et la plupart des gens la bâclent.
@@ -152,7 +152,7 @@ export default function DiscoveryCallPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Résultat concret
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               10 RDV consécutifs, 0 contrat signé. En première session de coaching, on a retravaillé
               la structure de la discovery — passer d&apos;une présentation de l&apos;offre à une
               exploration du problème client. Le RDV suivant : signé. Les 7 d&apos;après aussi.
@@ -165,17 +165,17 @@ export default function DiscoveryCallPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Ce qu&apos;est une discovery call — et ce que ce n&apos;est pas
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Une discovery call est le premier appel commercial conduit par le closeur avec un
               prospect qualifié. Son objectif n&apos;est pas de vendre. C&apos;est de comprendre
               le problème, le contexte et les enjeux du prospect avant de présenter quoi que ce soit.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce n&apos;est pas un pitch déguisé. Ce n&apos;est pas une démonstration produit. Et ce
               n&apos;est pas un interrogatoire. C&apos;est une conversation structurée où le closeur
               pose des questions, écoute les réponses et creuse ce qui est important.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Une discovery bien conduite mobilise 60 à 70 % du temps de l&apos;appel en questions
               et écoute. Le pitch, s&apos;il a lieu dans le même appel, arrive après. Souvent,
               les meilleurs closeurs séparent la discovery du pitch en deux appels distincts
@@ -212,10 +212,10 @@ export default function DiscoveryCallPage() {
                 },
               ].map(({ step, title, desc }) => (
                 <div key={step} className="flex gap-5">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{step}</span>
+                  <span className="font-sans text-text-secondary/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{step}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -227,7 +227,7 @@ export default function DiscoveryCallPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les questions qui font avancer une discovery
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Pas toutes les questions se valent. Les questions fermées (réponse oui/non) ferment
               la conversation. Les questions ouvertes l&apos;ouvrent. Et les questions de
               conséquence — celles qui font réfléchir le prospect au coût de son problème — sont
@@ -272,7 +272,7 @@ export default function DiscoveryCallPage() {
                   </p>
                   <ul className="space-y-2">
                     {questions.map((q) => (
-                      <li key={q} className="flex gap-2 font-sans text-sm text-text-muted">
+                      <li key={q} className="flex gap-2 font-sans text-sm text-text-secondary">
                         <span className="text-accent/50 shrink-0 mt-0.5">→</span>
                         <span className="italic">{q}</span>
                       </li>
@@ -310,7 +310,7 @@ export default function DiscoveryCallPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                     Erreur {num} — {titre}
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">{texte}</p>
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">{texte}</p>
                 </div>
               ))}
             </div>
@@ -330,10 +330,10 @@ export default function DiscoveryCallPage() {
                 { temps: '27–30 min', etape: "Prochaine étape", detail: "Proposez une suite concrète — pas 'je vous envoie une plaquette'. Un deuxième appel avec le co-décideur, un devis, ou une décision directe selon le niveau de maturité." },
               ].map(({ temps, etape, detail }) => (
                 <div key={temps} className="flex gap-4 py-3 border-b border-white/[0.06] last:border-0">
-                  <span className="font-sans text-xs text-text-muted/50 tabular-nums shrink-0 w-16 pt-0.5">{temps}</span>
+                  <span className="font-sans text-xs text-text-secondary/50 tabular-nums shrink-0 w-16 pt-0.5">{temps}</span>
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">{etape}</p>
-                    <p className="font-sans text-sm text-text-muted leading-relaxed">{detail}</p>
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">{detail}</p>
                   </div>
                 </div>
               ))}
@@ -349,7 +349,7 @@ export default function DiscoveryCallPage() {
               {faqItems.map(({ question, answer }) => (
                 <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>
               ))}
             </div>
@@ -373,7 +373,7 @@ export default function DiscoveryCallPage() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
@@ -390,7 +390,7 @@ export default function DiscoveryCallPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez travailler la structure de vos appels ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour regarder comment vous conduisez vos discoveries actuellement
               et identifier ce qui changerait votre taux de closing. Gratuit. Sans engagement.
             </p>
@@ -400,7 +400,7 @@ export default function DiscoveryCallPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <a href="/ressources" className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors">
+            <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">
               ← Retour au blog
             </a>
           </div>

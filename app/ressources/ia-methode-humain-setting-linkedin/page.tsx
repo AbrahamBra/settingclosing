@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "IA, méthode et humain : les 3 couches d'une machine à RDV LinkedIn | ChallengersLab",
+  title: "IA et humain : système de setting LinkedIn | ChallengersLab",
   description:
-    "Comment construire un système de setting LinkedIn qui combine détection IA des signaux, scoring humain de la maturité d'achat, et co-rédaction Claude. Deux phases, deux modes de message, exemples concrets.",
+    "Système de setting LinkedIn : détection IA des signaux, scoring humain et co-rédaction Claude. Deux phases, deux modes de message, exemples concrets.",
   openGraph: {
-    title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn",
+    title: "IA et humain : système de setting LinkedIn | ChallengersLab",
     description:
       "L'IA détecte. La méthode filtre. L'humain valide. Pourquoi les 3 couches sont nécessaires, et comment les calibrer pour tenir sur la durée.",
     locale: 'fr_FR',
@@ -129,7 +129,7 @@ export default function Page() {
         <div className="container-max max-w-2xl py-16 px-4">
 
           {/* Breadcrumb */}
-          <nav className="font-sans text-xs text-text-muted mb-8" aria-label="Breadcrumb">
+          <nav className="font-sans text-xs text-text-secondary mb-8" aria-label="Breadcrumb">
             <a href="/" className="hover:text-text-primary transition-colors">Accueil</a>
             <span className="mx-2">/</span>
             <a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a>
@@ -145,7 +145,7 @@ export default function Page() {
             <h1 className="font-serif text-[2rem] sm:text-[2.5rem] leading-[1.15] text-text-primary mb-6">
               IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn qui tient sur la durée
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Coller un profil dans Claude ou ChatGPT et demander un message de prospection
               donne presque toujours la même chose : formel, bien structuré, clairement automatique.
               Le taux de réponse reste à 3%. La conclusion rapide : LinkedIn ne marche pas pour eux.
@@ -162,7 +162,7 @@ export default function Page() {
             <p className="font-sans text-text-primary font-semibold mb-2">
               Setting LinkedIn signal-based avec co-rédaction IA
             </p>
-            <p className="font-sans text-text-muted text-sm leading-relaxed">
+            <p className="font-sans text-text-secondary text-sm leading-relaxed">
               Un système de setting LinkedIn signal-based combine trois couches distinctes :
               l&apos;IA pour détecter les interactions et co-rédiger les messages, la méthode
               pour scorer les leads par maturité d&apos;achat et imposer les règles de rédaction,
@@ -180,13 +180,13 @@ export default function Page() {
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
-                <p className="font-sans text-xs text-text-muted">{label}</p>
+                <p className="font-sans text-xs text-text-secondary">{label}</p>
               </div>
             ))}
           </div>
 
           {/* Article body */}
-          <article className="font-sans text-text-muted leading-relaxed space-y-10">
+          <article className="font-sans text-text-secondary leading-relaxed space-y-10">
 
             {/* Section 1 */}
             <section>
@@ -249,7 +249,7 @@ export default function Page() {
                     </span>
                     <div>
                       <p className="font-sans font-semibold text-text-primary text-sm">{label}</p>
-                      <p className="font-sans text-text-muted text-sm">{desc}</p>
+                      <p className="font-sans text-text-secondary text-sm">{desc}</p>
                     </div>
                   </div>
                 ))}
@@ -332,7 +332,7 @@ export default function Page() {
                     'Jamais pitcher dans les 2 premiers messages.',
                     'Test du téléphone avant envoi. Si non : réécrire.',
                   ].map((rule) => (
-                    <li key={rule} className="flex gap-3 font-sans text-sm text-text-muted">
+                    <li key={rule} className="flex gap-3 font-sans text-sm text-text-secondary">
                       <span className="text-accent shrink-0">→</span>
                       <span>{rule}</span>
                     </li>
@@ -374,7 +374,7 @@ export default function Page() {
                 <p className="font-sans text-text-primary font-semibold mb-2 text-sm">
                   Quand l&apos;utiliser
                 </p>
-                <p className="font-sans text-text-muted text-sm mb-4">
+                <p className="font-sans text-text-secondary text-sm mb-4">
                   Signal récent (moins de 2 semaines), interaction forte — commentaire précis,
                   question publique, partage avec avis. Ou lead tier 1 : connexion commune solide,
                   profil correspondant exactement à l&apos;ICP prioritaire. La fenêtre est courte.
@@ -382,7 +382,7 @@ export default function Page() {
                 <p className="font-sans text-text-primary font-semibold mb-2 text-sm">
                   Structure
                 </p>
-                <ul className="space-y-1.5 font-sans text-sm text-text-muted">
+                <ul className="space-y-1.5 font-sans text-sm text-text-secondary">
                   {[
                     'Phrase 1 : Bonjour Prénom + référence directe au signal',
                     'Phrase 2 : Fait précis qui montre que vous avez lu (connexion commune, question spécifique)',
@@ -395,20 +395,20 @@ export default function Page() {
                     </li>
                   ))}
                 </ul>
-                <p className="font-sans text-text-muted text-xs mt-4 italic">
+                <p className="font-sans text-text-secondary text-xs mt-4 italic">
                   Objectif : call direct dans les 48h. Ne pas passer en mode conversation si le signal est fort.
                 </p>
               </div>
 
               {/* Mode 2 */}
               <div className="bg-bg-secondary rounded-xl p-6 border-l-2 border-text-muted/30">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-3">
                   Mode Conversation — Signal faible ou profil froid
                 </p>
                 <p className="font-sans text-text-primary font-semibold mb-2 text-sm">
                   Quand l&apos;utiliser
                 </p>
-                <p className="font-sans text-text-muted text-sm mb-4">
+                <p className="font-sans text-text-secondary text-sm mb-4">
                   Like passif, signal ancien (plus de 2 semaines), prospect sur-sollicité,
                   lead tiers sans interaction directe récente. La fenêtre n&apos;est pas fermée,
                   mais elle n&apos;est pas ouverte non plus.
@@ -416,7 +416,7 @@ export default function Page() {
                 <p className="font-sans text-text-primary font-semibold mb-2 text-sm">
                   Structure séquentielle
                 </p>
-                <ul className="space-y-1.5 font-sans text-sm text-text-muted">
+                <ul className="space-y-1.5 font-sans text-sm text-text-secondary">
                   {[
                     'DM 1 : court, question ouverte pour qualifier. Pas de pitch.',
                     'Si réponse : prompt Claude inbound → qualifier → call si niveau 4–5',
@@ -425,12 +425,12 @@ export default function Page() {
                     'J+21 à J+28 : fermeture propre. Pas de pression.',
                   ].map((p) => (
                     <li key={p} className="flex gap-2">
-                      <span className="text-text-muted/50 shrink-0">→</span>
+                      <span className="text-text-secondary/50 shrink-0">→</span>
                       <span>{p}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="font-sans text-text-muted text-xs mt-4 italic">
+                <p className="font-sans text-text-secondary text-xs mt-4 italic">
                   Jamais mentionner l&apos;absence de réponse. Apporter quelque chose de nouveau à chaque étape.
                 </p>
               </div>
@@ -453,8 +453,8 @@ export default function Page() {
                   Exemple 1 — SaaS B2B, cible agence digitale
                 </p>
                 <div className="bg-bg-secondary rounded-xl p-5 mb-1">
-                  <p className="font-sans text-xs text-text-muted mb-2 uppercase tracking-wider">Contexte</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-xs text-text-secondary mb-2 uppercase tracking-wider">Contexte</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Profil : Camille D., fondatrice agence digitale, 12 personnes, clients PME régionaux.
                     Post récent : <em>&ldquo;Nos clients nous posent de plus en plus de questions sur la visibilité IA.
                     On réfléchit à structurer une offre.&rdquo;</em> Signal : commentaire public → mode one shot justifié.
@@ -465,7 +465,7 @@ export default function Page() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-red-400 mb-3">
                     Premier draft — à ne pas envoyer
                   </p>
-                  <p className="font-sans text-text-muted text-sm italic leading-relaxed mb-4">
+                  <p className="font-sans text-text-secondary text-sm italic leading-relaxed mb-4">
                     &ldquo;Bonjour Camille, j&apos;espère que vous allez bien. Je travaille avec des agences digitales
                     pour les aider à proposer des offres IA à leurs clients. Notre solution mesure la
                     visibilité de vos clients sur ChatGPT et les LLM. Setup en 5 minutes, rapports automatiques.
@@ -487,7 +487,7 @@ export default function Page() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-3">
                     Version corrigée — mode one shot
                   </p>
-                  <p className="font-sans text-text-muted text-sm italic leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm italic leading-relaxed">
                     &ldquo;Bonjour Camille, j&apos;ai vu votre post sur l&apos;offre GEO en construction.
                     Ce qui manque souvent à ce stade : une métrique pour prouver à vos clients que ça fonctionne.
                     Vous avez déjà trouvé comment mesurer la visibilité sur les LLM concrètement ?&rdquo;
@@ -501,8 +501,8 @@ export default function Page() {
                   Exemple 2 — Finance alternative, cible dirigeant
                 </p>
                 <div className="bg-bg-secondary rounded-xl p-5 mb-1">
-                  <p className="font-sans text-xs text-text-muted mb-2 uppercase tracking-wider">Contexte</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-xs text-text-secondary mb-2 uppercase tracking-wider">Contexte</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Profil : Thomas M., directeur financier, startup parisienne. Posts récents :
                     questions sur les structures d&apos;investissement alternatif, fiscalité internationale.
                     Connexion commune avec un client existant. Signal : like + connexion commune → mode conversation.
@@ -513,7 +513,7 @@ export default function Page() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-red-400 mb-3">
                     Premier draft — à ne pas envoyer
                   </p>
-                  <p className="font-sans text-text-muted text-sm italic leading-relaxed mb-4">
+                  <p className="font-sans text-text-secondary text-sm italic leading-relaxed mb-4">
                     &ldquo;Bonjour Thomas, je me permets de vous contacter car je travaille avec des dirigeants
                     qui cherchent des placements à fort rendement. Mon approche combine sélection d&apos;actifs
                     et structure juridique optimisée. Rendement cible : 15% annuel. Vous seriez disponible
@@ -535,7 +535,7 @@ export default function Page() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-3">
                     Version corrigée — mode conversation (DM 1 de qualification)
                   </p>
-                  <p className="font-sans text-text-muted text-sm italic leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm italic leading-relaxed">
                     &ldquo;Bonjour Thomas, j&apos;ai vu votre question sur les structures d&apos;investissement
                     à l&apos;international. On a un contact en commun : Marc travaille avec moi depuis quelques
                     mois sur un sujet assez proche. Ce que je fais est différent du classique —
@@ -556,10 +556,10 @@ export default function Page() {
               </p>
               <div className="bg-bg-secondary rounded-xl p-6 my-6 grid sm:grid-cols-2 gap-6">
                 <div>
-                  <p className="font-sans font-semibold text-text-muted text-sm mb-2">
+                  <p className="font-sans font-semibold text-text-secondary text-sm mb-2">
                     Avant le nurturing (phase 1)
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">
                     Le problème : pas assez de RDV. La solution : setting direct,
                     signal + message + qualification. À ce stade, le nurturing ajoute
                     de la complexité sans ajouter de rendez-vous.
@@ -569,7 +569,7 @@ export default function Page() {
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">
                     Quand le nurturing s&apos;active (phase 2)
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">
                     Le problème : trop de leads, comment trier. Les leads chauds (niveaux 4–5)
                     sont priorisés pour le call. Les leads tièdes (niveaux 2–3) entrent dans
                     une newsletter. Ils reviennent quand leur contexte change.
@@ -615,7 +615,7 @@ export default function Page() {
                 ].map(({ title, desc }) => (
                   <div key={title} className="flex gap-4">
                     <span className="font-sans font-semibold text-accent text-sm shrink-0 w-16">{title}</span>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 ))}
               </div>
@@ -632,7 +632,7 @@ export default function Page() {
                     <h3 className="font-sans font-semibold text-text-primary mb-2 text-base">
                       {question}
                     </h3>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">
                       {answer}
                     </p>
                   </div>
@@ -652,7 +652,7 @@ export default function Page() {
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -665,7 +665,7 @@ export default function Page() {
             <p className="font-serif text-xl text-text-primary mb-3">
               Vous voulez que ce système tourne pour vous ?
             </p>
-            <p className="font-sans text-text-muted text-sm mb-6">
+            <p className="font-sans text-text-secondary text-sm mb-6">
               On calibre, on construit la base de connaissance, on lance. Premiers RDV dès la première semaine.
             </p>
             <ButtonGlow as="a" href="/#contact">
@@ -677,7 +677,7 @@ export default function Page() {
           <div className="mt-10 text-center">
             <a
               href="/ressources"
-              className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+              className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors"
             >
               ← Retour au blog
             </a>

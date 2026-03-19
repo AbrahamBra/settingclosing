@@ -120,7 +120,7 @@ export default function CommentDevenirSetterB2BPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -137,7 +137,7 @@ export default function CommentDevenirSetterB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Comment devenir setter B2B en 2026
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Les compétences réelles, les outils, la rémunération et les étapes pour démarrer.
               Ce que personne ne vous dit dans les formations à 3 000 €.
             </p>
@@ -166,7 +166,7 @@ export default function CommentDevenirSetterB2BPage() {
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
-                <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
+                <p className="font-sans text-xs text-text-secondary leading-snug">{label}</p>
               </div>
             ))}
           </div>
@@ -176,28 +176,28 @@ export default function CommentDevenirSetterB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Ce que fait vraiment un setter au quotidien
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La réalité du métier est moins glamour que ce que les posts LinkedIn veulent bien montrer.
               Un setter passe la majorité de son temps dans un CRM, dans Sales Navigator, et dans sa boîte
               de messages. Pas en train de &ldquo;closer des deals à distance&rdquo;.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Concrètement, voici ce que ressemble une journée active. Le matin : vérifier les signaux
               inbound de la veille. Qui a réagi à un post lié au secteur du client ? Qui correspond à l&apos;ICP ?
               Chaque profil est ouvert, les derniers posts lus, une décision prise — contacter, attendre,
               ou passer. Sur 30 signaux analysés, 8 à 12 méritent un message.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ensuite : rédiger. Un message par profil. Cinq phrases maximum. La deuxième phrase ancre
               toujours un fait précis tiré du profil ou du signal. Aucun pitch. Aucune liste de bénéfices.
               Le message a un seul objectif : créer une ouverture pour une conversation.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               L&apos;après-midi, c&apos;est la gestion des réponses. Qualifier ce qui rentre.
               Planifier les relances. Mettre à jour le journal de bord avec ce qui a fonctionné,
               ce qui a raté, les objections nouvelles. Ce journal, c&apos;est la mémoire du système.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Le setter n&apos;est pas le closeur. Il n&apos;est pas là pour pitcher l&apos;offre dans le premier DM,
               négocier le prix ou gérer les objections post-appel. Ces rôles demandent des compétences
               différentes. Un bon setter qui essaie de closer brûle des leads. Un bon closeur qui fait
@@ -210,7 +210,7 @@ export default function CommentDevenirSetterB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les 3 compétences qui comptent vraiment
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Pas le charisme. Pas la &ldquo;fibre commerciale&rdquo;. Pas la capacité à parler pendant 20 minutes.
               Le setting demande trois choses précises — et elles s&apos;apprennent toutes.
             </p>
@@ -224,7 +224,7 @@ export default function CommentDevenirSetterB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     Lire un profil vite — et bien
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     Un setter qui prend 10 minutes par profil ne scale pas. Il faut apprendre à extraire
                     l&apos;information utile en 2 minutes : titre actuel, ancienneté, posts récents, interactions
                     sur des sujets proches de l&apos;offre. La question à laquelle on répond n&apos;est pas
@@ -242,7 +242,7 @@ export default function CommentDevenirSetterB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     Écrire court et précis
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     La majorité des messages de prospection LinkedIn échouent parce qu&apos;ils sont trop longs
                     ou trop génériques. Cinq phrases, c&apos;est la règle. La première phrase montre qu&apos;on a
                     regardé le profil. La deuxième ancre un signal précis. Les trois suivantes créent
@@ -260,7 +260,7 @@ export default function CommentDevenirSetterB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     Ne pas abandonner au 3e message
                   </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
                     C&apos;est la compétence la plus sous-estimée. La discipline. Un prospect qui ne répond pas
                     après 2 messages n&apos;est pas forcément désintéressé — il est peut-être occupé, il n&apos;a pas
                     vu le message, ou le timing était mauvais. Les setters qui tiennent 5 à 6 points de contact
@@ -271,7 +271,7 @@ export default function CommentDevenirSetterB2BPage() {
               </div>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed mt-6">
+            <p className="font-sans text-text-secondary leading-relaxed mt-6">
               Ces trois compétences n&apos;ont rien à voir avec le fait d&apos;être &ldquo;commercial dans l&apos;âme&rdquo;.
               Des profils issus de la rédaction, du marketing ou même de métiers techniques s&apos;y adaptent
               souvent mieux que d&apos;anciens vendeurs habitués à pitcher fort.
@@ -283,7 +283,7 @@ export default function CommentDevenirSetterB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Les outils du setter LinkedIn en 2026
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Voici les outils utilisés dans un programme actif — et pourquoi chacun est là.
             </p>
 
@@ -314,7 +314,7 @@ export default function CommentDevenirSetterB2BPage() {
                   <span className="text-accent shrink-0 mt-0.5 font-semibold font-sans">→</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary mb-1">{name}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
               ))}
@@ -326,7 +326,7 @@ export default function CommentDevenirSetterB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Combien gagne un setter B2B ?
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Trois modèles coexistent sur le marché. Le choix n&apos;est pas anodin — il détermine
               si les intérêts du setter et du client sont alignés ou non.
             </p>
@@ -335,7 +335,7 @@ export default function CommentDevenirSetterB2BPage() {
               <div className="rounded-xl p-5 border border-white/[0.06] bg-bg-secondary">
                 <p className="font-sans font-semibold text-text-primary mb-1">Fixe mensuel uniquement</p>
                 <p className="font-sans text-accent text-sm font-semibold mb-2">800 – 1 500 € / mois</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Simple. Prévisible. Mais le setter est payé que les RDV arrivent ou non.
                   Sans incentive sur les résultats, le risque de décrochage progressif est réel.
                   Ce modèle fonctionne si le setter est motivé par autre chose que la rémunération variable —
@@ -346,7 +346,7 @@ export default function CommentDevenirSetterB2BPage() {
               <div className="rounded-xl p-5 border border-white/[0.06] bg-bg-secondary">
                 <p className="font-sans font-semibold text-text-primary mb-1">Prime à la performance uniquement</p>
                 <p className="font-sans text-accent text-sm font-semibold mb-2">50 – 200 € / RDV</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   L&apos;incentive est bien aligné sur les résultats. Problème : sans fixe, le setter priorise
                   naturellement la quantité sur la qualité. Des RDV mal qualifiés passent parce qu&apos;ils
                   font monter le compteur. Résultat : l&apos;agenda se remplit de calls qui ne convertissent pas.
@@ -356,7 +356,7 @@ export default function CommentDevenirSetterB2BPage() {
               <div className="rounded-xl p-5 border border-accent/30 bg-accent/5">
                 <p className="font-sans font-semibold text-text-primary mb-1">Hybride : fixe bas + prime par RDV</p>
                 <p className="font-sans text-accent text-sm font-semibold mb-2">Recommandé</p>
-                <p className="font-sans text-text-muted text-sm leading-relaxed">
+                <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Le fixe couvre l&apos;infrastructure et le travail de fond — le temps passé à analyser
                   des profils qui ne convertissent pas toujours. La prime aligne les intérêts sur
                   les résultats réels. C&apos;est le modèle ChallengersLab : fixe modéré + 25 à 150 € par RDV
@@ -366,7 +366,7 @@ export default function CommentDevenirSetterB2BPage() {
               </div>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Pour un setter freelance expérimenté avec plusieurs clients, le revenu mensuel oscille
               entre 2 000 et 4 500 € selon le volume et la qualité des programmes. Ce n&apos;est pas
               un métier qui rend riche du jour au lendemain — c&apos;est un métier qui monte en charge
@@ -379,12 +379,12 @@ export default function CommentDevenirSetterB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Comment se former : ce qui marche, ce qui ne marche pas
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Il y a beaucoup de formations &ldquo;setting&rdquo; et &ldquo;closing&rdquo; sur le marché. Certaines à 2 000 €,
               d&apos;autres à 4 000 €, beaucoup sans terrain réel. Le problème n&apos;est pas le prix.
               Le problème, c&apos;est le format.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Regarder des vidéos sur des techniques de prospection et envoyer des messages modèles
               sur de vrais profils, c&apos;est deux choses complètement différentes. Le setting se calibre
               dans le réel. Ce qui vous forme vraiment, c&apos;est d&apos;envoyer des centaines de vrais messages,
@@ -406,20 +406,20 @@ export default function CommentDevenirSetterB2BPage() {
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3">
                     <span className="text-accent shrink-0 mt-0.5">→</span>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{item}</p>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed">{item}</p>
                   </div>
                 ))}
               </div>
             </div>
 
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le programme ChallengersLab est construit sur ce principe. Les setters qui rejoignent
               le programme travaillent sur des profils réels dès la première semaine, dans le secteur
               du client. Pas de simulation. Pas de slides sur &ldquo;les 7 étapes du closing&rdquo;.
               Un onboarding en 3 phases, un journal de bord structuré, et un feedback sur chaque
               campagne active.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               La différence entre un setter qui décolle en 6 semaines et un qui galère pendant 6 mois
               n&apos;est pas l&apos;intelligence ni la motivation. C&apos;est la structure de feedback.
               Sans quelqu&apos;un pour lire vos messages et vous dire ce qui ne va pas, vous répétez
@@ -432,23 +432,23 @@ export default function CommentDevenirSetterB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Ce que les solopreneurs attendent d&apos;un setter
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Si vous êtes solopreneur et que vous cherchez à déléguer votre prospection, voici
               ce que vous devriez vraiment demander à un setter — pas seulement &ldquo;combien de RDV
               par mois ?&rdquo;.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Des RDV qualifiés, avec contexte. Pas un prospect qui a dit &ldquo;OK&rdquo; à un message générique
               sans vraiment comprendre ce que vous faites. Un RDV qualifié, c&apos;est un prospect qui
               correspond à votre ICP, qui a exprimé un problème précis en lien avec votre offre,
               et qui arrive à l&apos;appel avec le contexte — ce qui a été dit dans la conversation,
               ce qui l&apos;a intéressé, ce qui a résisté.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed mb-4">
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Planifiés dans votre agenda. Pas &ldquo;il sera disponible, appelez-le&rdquo;. Un RDV posé,
               confirmé, avec les informations clés dans la description de l&apos;événement.
             </p>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Un bon setter, pour un solopreneur, c&apos;est zéro friction sur la prospection.
               Vous ne pensez plus à &ldquo;qui contacter cette semaine&rdquo;. Vous arrivez à vos appels préparés,
               face à des prospects qui vous connaissent déjà un peu. Le reste de votre énergie va
@@ -467,7 +467,7 @@ export default function CommentDevenirSetterB2BPage() {
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>
-                  <p className="font-sans text-text-muted leading-relaxed text-sm">
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm">
                     {item.answer}
                   </p>
                 </div>
@@ -486,7 +486,7 @@ export default function CommentDevenirSetterB2BPage() {
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
               ].map(({ href, label }) => (
-                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group">
+                <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
                 </a>
@@ -502,7 +502,7 @@ export default function CommentDevenirSetterB2BPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Rejoindre le programme Setting
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Vous apprenez sur des profils réels dans votre secteur — pas sur des slides.
               Programme structuré en 3 phases, accompagnement terrain.
             </p>

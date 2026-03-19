@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Scripts et phrases de closing B2B : cadre et exemples | ChallengersLab",
+  title: "Scripts de closing B2B : exemples | ChallengersLab",
   description:
-    "Les scripts de closing B2B ne sont pas des textes à réciter. Ce sont des cadres : ouverture discovery, transition vers le pitch, demande de décision, réponse aux objections courantes.",
+    "Scripts de closing B2B : cadres pour l'ouverture, la discovery, le pitch et la demande de décision. Avec exemples et erreurs courantes.",
   openGraph: {
-    title: "Scripts et phrases de closing B2B : cadre et exemples",
+    title: "Scripts de closing B2B : exemples | ChallengersLab",
     description:
       "Ouverture, discovery, pitch, demande de décision : les scripts de closing B2B avec exemples avant/après et les erreurs qui coûtent des deals.",
     locale: 'fr_FR',
@@ -122,7 +122,7 @@ export default function ScriptClosingPage() {
 
           {/* Breadcrumb */}
           <nav aria-label="Fil d'Ariane" className="mb-8">
-            <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
+            <ol className="flex items-center gap-2 font-sans text-xs text-text-secondary">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
               <li aria-hidden="true" className="select-none">›</li>
               <li><a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a></li>
@@ -139,7 +139,7 @@ export default function ScriptClosingPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Scripts et phrases de closing B2B : cadre et exemples
             </h1>
-            <p className="font-sans text-text-muted text-lg leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Un script de closing n&apos;est pas un texte à réciter. C&apos;est un cadre : les phases
               de l&apos;appel, les objectifs de chaque moment, les questions qui font avancer. Les mots
               changent selon le prospect. La structure, non.
@@ -152,7 +152,7 @@ export default function ScriptClosingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">
               Script vs template : la différence qui compte
             </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-5">
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Un template est un texte figé : vous changez le prénom, vous envoyez. Un script est
               un cadre : il définit la structure, les questions clés, les transitions — mais les
               mots s&apos;adaptent à chaque appel.
@@ -160,12 +160,12 @@ export default function ScriptClosingPage() {
             <div className="grid sm:grid-cols-2 gap-4 mb-5">
               <div className="rounded-xl border border-white/[0.06] overflow-hidden">
                 <div className="bg-red-500/5 px-4 py-2 border-b border-white/[0.06]">
-                  <p className="font-sans text-xs font-semibold text-text-muted/60 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-text-secondary/60 uppercase tracking-widest">
                     Template — à éviter
                   </p>
                 </div>
                 <div className="px-4 py-4">
-                  <p className="font-sans text-sm text-text-muted leading-relaxed italic">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed italic">
                     &ldquo;Bonjour [Prénom], merci d&apos;avoir accepté ce rendez-vous. Je vais vous
                     présenter notre offre qui comprend A, B et C, et je suis sûr que vous allez
                     être intéressé par...&rdquo;
@@ -179,7 +179,7 @@ export default function ScriptClosingPage() {
                   </p>
                 </div>
                 <div className="px-4 py-4">
-                  <p className="font-sans text-sm text-text-muted leading-relaxed italic">
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed italic">
                     &ldquo;Avant qu&apos;on rentre dans les détails de notre offre, je voudrais
                     d&apos;abord comprendre votre situation. Ça nous prend 15-20 minutes. Qu&apos;est-ce
                     qui vous a amené à regarder ce sujet maintenant ?&rdquo;
@@ -187,7 +187,7 @@ export default function ScriptClosingPage() {
                 </div>
               </div>
             </div>
-            <p className="font-sans text-text-muted leading-relaxed">
+            <p className="font-sans text-text-secondary leading-relaxed">
               Le template annonce d&apos;emblée que vous allez parler de vous. Le script ouvre
               une vraie conversation. Sur des offres à 2 000 € ou plus, les gens perçoivent
               immédiatement la différence.
@@ -207,7 +207,7 @@ export default function ScriptClosingPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Script 01 — Ouverture et cadrage de l&apos;appel
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                   Objectif : poser le format de l&apos;appel et sécuriser le temps pour la discovery
                   avant tout pitch.
                 </p>
@@ -219,7 +219,7 @@ export default function ScriptClosingPage() {
                     a du sens, je vous explique comment on travaille. Ça vous convient ?&rdquo;
                   </p>
                 </div>
-                <p className="font-sans text-xs text-text-muted mt-3 leading-relaxed">
+                <p className="font-sans text-xs text-text-secondary mt-3 leading-relaxed">
                   Pourquoi ça fonctionne : vous signifiez que vous n&apos;êtes pas là pour pitcher
                   à tout prix. Ça met le prospect à l&apos;aise et crée une confiance immédiate.
                 </p>
@@ -230,7 +230,7 @@ export default function ScriptClosingPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Script 02 — Question de coût du statu quo
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                   Objectif : ancrer la valeur du problème dans la tête du prospect avant de parler du prix.
                 </p>
                 <div className="rounded-xl border border-accent/20 bg-accent/5 p-5">
@@ -241,7 +241,7 @@ export default function ScriptClosingPage() {
                     temps perdu ?&rdquo;
                   </p>
                 </div>
-                <p className="font-sans text-xs text-text-muted mt-3 leading-relaxed">
+                <p className="font-sans text-xs text-text-secondary mt-3 leading-relaxed">
                   Après cette question, le prix de votre offre sera comparé à ce chiffre —
                   pas à zéro.
                 </p>
@@ -252,7 +252,7 @@ export default function ScriptClosingPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Script 03 — Synthèse avant le pitch
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                   Objectif : montrer que vous avez écouté et créer l&apos;ouverture pour la présentation.
                 </p>
                 <div className="rounded-xl border border-accent/20 bg-accent/5 p-5">
@@ -264,7 +264,7 @@ export default function ScriptClosingPage() {
                     situation, et spécifiquement sur [X]...&rdquo;
                   </p>
                 </div>
-                <p className="font-sans text-xs text-text-muted mt-3 leading-relaxed">
+                <p className="font-sans text-xs text-text-secondary mt-3 leading-relaxed">
                   La confirmation du prospect avant le pitch lui fait sentir qu&apos;il va entendre
                   quelque chose de pertinent pour lui — pas un pitch générique.
                 </p>
@@ -275,16 +275,16 @@ export default function ScriptClosingPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Script 04 — Demande de décision
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                   Objectif : obtenir une réponse directe après le pitch, sans ambiguïté.
                 </p>
                 <div className="space-y-3">
                   <div className="rounded-xl border border-white/[0.06] overflow-hidden">
                     <div className="px-4 py-2 border-b border-white/[0.06]">
-                      <p className="font-sans text-xs text-text-muted/60 uppercase tracking-widest font-semibold">Éviter</p>
+                      <p className="font-sans text-xs text-text-secondary/60 uppercase tracking-widest font-semibold">Éviter</p>
                     </div>
                     <div className="px-4 py-3">
-                      <p className="font-sans text-sm text-text-muted italic">
+                      <p className="font-sans text-sm text-text-secondary italic">
                         &ldquo;Est-ce que vous avez des questions ? Je vous laisse réfléchir et
                         vous me dites...&rdquo;
                       </p>
@@ -303,7 +303,7 @@ export default function ScriptClosingPage() {
                     </div>
                   </div>
                 </div>
-                <p className="font-sans text-xs text-text-muted mt-3 leading-relaxed">
+                <p className="font-sans text-xs text-text-secondary mt-3 leading-relaxed">
                   Un closeur qui ne demande pas de décision ne close pas — il présente.
                   La question directe n&apos;est pas de la pression si la discovery a bien
                   été conduite.
@@ -315,7 +315,7 @@ export default function ScriptClosingPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Script 05 — Réponse à &ldquo;je vais réfléchir&rdquo;
                 </p>
-                <p className="font-sans text-sm text-text-muted leading-relaxed mb-4">
+                <p className="font-sans text-sm text-text-secondary leading-relaxed mb-4">
                   Objectif : clarifier si c&apos;est une vraie hésitation ou un non poli,
                   sans forcer.
                 </p>
@@ -327,7 +327,7 @@ export default function ScriptClosingPage() {
                     c&apos;est la bonne solution pour votre situation ?&rdquo;
                   </p>
                 </div>
-                <p className="font-sans text-xs text-text-muted mt-3 leading-relaxed">
+                <p className="font-sans text-xs text-text-secondary mt-3 leading-relaxed">
                   Si la réponse est &ldquo;il y a un point flou&rdquo; : traitez-le.
                   Si la réponse est &ldquo;je ne suis pas convaincu&rdquo; : demandez ce
                   qui manque. Si la réponse est vague : le deal est probablement perdu,
@@ -365,7 +365,7 @@ export default function ScriptClosingPage() {
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                     Erreur {num} — {titre}
                   </p>
-                  <p className="font-sans text-sm text-text-muted leading-relaxed">{texte}</p>
+                  <p className="font-sans text-sm text-text-secondary leading-relaxed">{texte}</p>
                 </div>
               ))}
             </div>
@@ -380,7 +380,7 @@ export default function ScriptClosingPage() {
               {faqItems.map(({ question, answer }) => (
                 <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>
               ))}
             </div>
@@ -404,7 +404,7 @@ export default function ScriptClosingPage() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
+                  className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group"
                 >
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
                   <span>{label}</span>
@@ -421,7 +421,7 @@ export default function ScriptClosingPage() {
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez travailler vos scripts d&apos;appel ?
             </h3>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour revoir la structure de vos appels de vente et identifier
               ce qui bloque vos closes. Gratuit. Sans engagement.
             </p>
@@ -431,7 +431,7 @@ export default function ScriptClosingPage() {
           </div>
 
           <div className="mt-8 text-center">
-            <a href="/ressources" className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors">
+            <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">
               ← Retour au blog
             </a>
           </div>
