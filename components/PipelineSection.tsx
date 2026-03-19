@@ -1,6 +1,5 @@
 import { ScrollReveal } from './ui/ScrollReveal'
 import { ButtonGlow } from './ui/ButtonGlow'
-import { closingTiers } from '@/lib/pipeline-data'
 
 export function PipelineSection() {
   const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '#contact'
@@ -135,13 +134,11 @@ export function PipelineSection() {
               </div>
 
               <h3 className="text-text-primary font-semibold text-lg mb-3">
-                Et si on n&apos;attendait plus les invitations LinkedIn&nbsp;?
+                Quand l&apos;outbound tourne, on ouvre l&apos;inbound.
               </h3>
 
               <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
-                L&apos;outbound plafonne à 100 invitations par semaine. Pour dépasser cette limite, on active l&apos;inbound&nbsp;: posts LinkedIn, lead magnets, formulaire de scoring.
-                On conseille sur les sujets et les formats de lead magnet. On travaille avec des clients qui ont déjà une stratégie de contenu active — et on a des partenaires pour ceux qui démarrent.
-                Résultat&nbsp;: les leads chauds arrivent en setting adapté — message LinkedIn, appel, ou les deux — sans passer par l&apos;invitation.
+                L&apos;outbound plafonne à 100 invitations par semaine. Une fois le pipeline calibré, on vous aide à attirer des leads qui viennent à vous&nbsp;: conseil sur les sujets de posts et formats de lead magnet, scoring des leads entrants, setting direct sans passer par l&apos;invitation.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -171,104 +168,11 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        {/* ── Bloc 4 : Closing ── */}
-        <ScrollReveal>
-          <div className="flex items-center gap-3 mb-8">
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-semantic-humain/20 bg-semantic-humain/10 font-sans text-xs font-semibold uppercase tracking-widest text-semantic-humain">
-              🤝 Pipeline Closing
-            </span>
-            <div className="flex-1 h-px bg-white/[0.06]" />
-          </div>
-        </ScrollReveal>
-
-        {/* Sans méthode closing */}
-        <ScrollReveal>
-          <div className="max-w-4xl mx-auto mb-6">
-            <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-6">
-              <span className="inline-block font-mono text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
-                Sans méthode de closing
-              </span>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-                <div className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="text-sm text-text-secondary">Vous pitchez dès le premier appel</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="text-sm text-text-secondary">Le prospect négocie, vous baissez le prix</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="text-sm text-text-secondary">Le prospect dicte le prix, pas vous</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="text-sm text-text-secondary">Taux de closing ~10-15%</span>
-                </div>
-              </div>
-
-              <p className="text-text-muted text-xs italic leading-relaxed border-t border-white/[0.06] pt-4 mt-4">
-                &laquo;&nbsp;On fait un tarif si vous signez cette semaine...&nbsp;&raquo;
-              </p>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* Avec méthode — 3 niveaux */}
-        <ScrollReveal>
-          <div className="max-w-4xl mx-auto mb-4">
-            <span className="inline-block font-mono text-xs font-semibold uppercase tracking-widest text-semantic-humain mb-4">
-              Avec notre méthode
-            </span>
-          </div>
-        </ScrollReveal>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-          {closingTiers.map((tier, i) => (
-            <ScrollReveal key={tier.level} delay={i * 100}>
-              <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-5 h-full">
-                {/* Top accent bar */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-semantic-humain" />
-
-                {/* Level + threshold */}
-                <div className="flex items-center justify-between mb-3 mt-1">
-                  <span className="text-semantic-humain text-xs font-semibold uppercase tracking-widest">
-                    {tier.level}
-                  </span>
-                  <span className="font-mono text-xs font-bold text-semantic-info bg-semantic-info/10 px-2 py-0.5 rounded">
-                    {tier.threshold}
-                  </span>
-                </div>
-
-                {/* Title */}
-                <h3 className="text-text-primary font-semibold text-base mb-2">{tier.label}</h3>
-
-                {/* Description */}
-                <p className="text-text-secondary text-sm leading-relaxed">{tier.desc}</p>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
-
-        {/* Encodage compétence */}
-        <ScrollReveal delay={100}>
-          <div className="max-w-4xl mx-auto mt-8">
-            <div className="flex items-start gap-3 rounded-xl border border-semantic-methode/15 bg-semantic-methode/5 p-4">
-              <span className="text-semantic-methode text-sm mt-0.5">→</span>
-              <p className="text-text-secondary text-sm leading-relaxed">
-                <span className="text-text-primary font-semibold">Encodage de la compétence en skill</span> tout au long de la collaboration.
-                Chaque apprentissage, chaque ajustement est documenté et structuré pour que votre équipe monte en autonomie.
-              </p>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* ── Bloc 5 : CTA unifié ── */}
+        {/* ── CTA unifié ── */}
         <ScrollReveal delay={100}>
           <div className="text-center mt-16">
             <p className="text-text-secondary text-sm mb-6 max-w-xl mx-auto">
-              Ce pipeline se calibre en deux mois. Après&nbsp;: vous closez, on prospecte.
+              Ce pipeline se calibre en deux mois. Après, les RDV arrivent chaque semaine.
             </p>
             <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
               Réserver un appel découverte
