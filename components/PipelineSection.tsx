@@ -287,7 +287,7 @@ export function PipelineSection() {
               Concrètement, ça ressemble à quoi&nbsp;?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Card 1 — Appel enregistré */}
+              {/* Card 1 — Abdelhay assiste au RDV */}
               <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
                 <div className="aspect-video bg-surface-hover flex items-center justify-center">
                   <div className="text-center px-6">
@@ -297,46 +297,46 @@ export function PipelineSection() {
                 </div>
                 <div className="p-4">
                   <p className="text-text-primary font-semibold text-sm mb-1">
-                    Appel enregistré et analysé
+                    Abdelhay assiste à votre appel
                   </p>
                   <p className="text-text-secondary text-xs leading-relaxed">
-                    Chaque appel est enregistré. On le reprend ensemble pour identifier ce qui a fonctionné et ce qu&apos;on ajuste au prochain.
+                    Il observe votre discovery en direct — ou mène l&apos;appel de A à Z pendant que vous êtes en second. Débrief juste après pour ajuster.
                   </p>
                 </div>
               </div>
 
-              {/* Card 2 — Brief PDF */}
+              {/* Card 2 — Formation en visio */}
               <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
                 <div className="aspect-video bg-surface-hover flex items-center justify-center">
                   <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">📄</span>
-                    <span className="text-text-muted text-sm">Screenshot brief à venir</span>
+                    <span className="text-4xl block mb-3">🖥️</span>
+                    <span className="text-text-muted text-sm">Extrait vidéo coaching à venir</span>
                   </div>
                 </div>
                 <div className="p-4">
                   <p className="text-text-primary font-semibold text-sm mb-1">
-                    Brief personnalisé après chaque session
+                    Abdelhay vous forme en visio
                   </p>
                   <p className="text-text-secondary text-xs leading-relaxed">
-                    Un document de debrief avec les points clés, les objections rencontrées et les axes d&apos;amélioration pour le prochain appel.
+                    1h par semaine en face à face. On décortique vos appels, on travaille le pricing, on répète jusqu&apos;à ce que ça devienne naturel.
                   </p>
                 </div>
               </div>
 
-              {/* Card 3 — Abdelhay fait le RDV */}
+              {/* Card 3 — Abdelhay forme vos closers */}
               <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
                 <div className="aspect-video bg-surface-hover flex items-center justify-center">
                   <div className="text-center px-6">
-                    <span className="text-4xl block mb-3">🤝</span>
-                    <span className="text-text-muted text-sm">Screenshot RDV à venir</span>
+                    <span className="text-4xl block mb-3">🎓</span>
+                    <span className="text-text-muted text-sm">Vidéo formation closers à venir</span>
                   </div>
                 </div>
                 <div className="p-4">
                   <p className="text-text-primary font-semibold text-sm mb-1">
-                    Abdelhay prend le RDV à votre place
+                    Abdelhay forme vos closers
                   </p>
                   <p className="text-text-secondary text-xs leading-relaxed">
-                    Il fait l&apos;appel avec votre prospect et applique la méthode en situation réelle. Vous observez, vous apprenez, vous progressez.
+                    Une fois la discovery et le pricing maîtrisés, il forme des closers dans votre équipe pour prendre le relais et scaler.
                   </p>
                 </div>
               </div>
