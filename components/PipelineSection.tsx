@@ -1,238 +1,114 @@
 import { ScrollReveal } from './ui/ScrollReveal'
 import { ButtonGlow } from './ui/ButtonGlow'
 
+const pipelines = [
+  {
+    id: 'outbound',
+    eyebrow: 'Outbound',
+    color: '#A78BFA',
+    headline: 'Vous partez de zéro. On remplit l\u2019agenda.',
+    description:
+      'Pas encore d\u2019audience\u00a0? On prospecte pour vous sur LinkedIn avec un ciblage par signaux d\u2019achat. M\u00eame quota d\u2019invitations, 10x plus de r\u00e9sultats.',
+    features: [
+      { title: 'Ciblage signal-based', detail: 'Intent, timing, changement de poste\u00a0: on cible ceux qui sont pr\u00eats' },
+      { title: '\u22483 RDV / semaine', detail: 'Avec les m\u00eames 100 invitations LinkedIn' },
+      { title: 'Skill IA sur-mesure', detail: 'Messages calibr\u00e9s sur votre march\u00e9, pas du template' },
+    ],
+  },
+  {
+    id: 'inbound',
+    eyebrow: 'Inbound',
+    color: '#FBBF24',
+    headline: 'Vos leads entrent. Personne ne les qualifie.',
+    description:
+      'Vous postez, vos lead magnets performent, les leads arrivent. On les score en temps r\u00e9el et le setter les contacte directement \u2014 sans passer par l\u2019invitation.',
+    features: [
+      { title: 'Conseil lead magnet', detail: 'Sujets, formats, angles\u00a0: on cadre avec vous' },
+      { title: 'Scoring int\u00e9gr\u00e9', detail: 'Chaque lead entrant est qualifi\u00e9 automatiquement' },
+      { title: 'Setting direct', detail: 'Z\u00e9ro invitation, z\u00e9ro plafond LinkedIn' },
+    ],
+  },
+  {
+    id: 'nurturing',
+    eyebrow: 'Nurturing',
+    color: '#C87533',
+    headline: 'Des milliers de contacts. Z\u00e9ro syst\u00e8me.',
+    description:
+      'Newsletter, webinars, t\u00e9l\u00e9chargements \u2014 tout dort dans un CRM. On construit le workflow qui score, nourrit et route vos contacts vers des RDV.',
+    features: [
+      { title: 'Scoring comportemental', detail: 'Engagement, r\u00e9cence, intent\u00a0: chaque lead a un score' },
+      { title: 'S\u00e9quences personnalis\u00e9es', detail: 'Contenu adapt\u00e9 au niveau de maturit\u00e9 du lead' },
+      { title: 'Routing vers appel', detail: 'Les leads chauds arrivent directement dans l\u2019agenda' },
+    ],
+  },
+]
+
 export function PipelineSection() {
   const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '#contact'
 
   return (
     <section id="pipeline" className="section-padding">
       <div className="container-max">
-        {/* ── Bloc 1 : Section header ── */}
-        <ScrollReveal>
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
-              Notre approche
-            </p>
-            <h2 className="font-sans text-h2 text-text-primary mb-4">
-              On combine IA, méthode structurée et validation humaine.
-            </h2>
-            <p className="font-sans text-text-secondary text-base leading-relaxed">
-              Même quota LinkedIn. Résultats&nbsp;x10.
-            </p>
-          </div>
-        </ScrollReveal>
 
-        {/* ── Bloc 2 : Outbound — Avant / Après ── */}
-        <div id="outbound" className="scroll-mt-24" />
-        <ScrollReveal>
-          <div className="flex items-center gap-3 mb-8">
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-semantic-ia/20 bg-semantic-ia/10 font-sans text-xs font-semibold uppercase tracking-widest text-semantic-ia">
-              ⚡ Pipeline Setting
-            </span>
-            <div className="flex-1 h-px bg-white/[0.06]" />
-          </div>
-        </ScrollReveal>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {/* Card gauche — Sans méthode */}
-          <ScrollReveal>
-            <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-6 h-full">
-              <span className="inline-block font-mono text-xs font-semibold uppercase tracking-widest text-text-muted mb-5">
-                Sans méthode
-              </span>
-
-              <ul className="space-y-4 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <div>
-                    <span className="font-mono text-sm text-text-muted">100 invitations / semaine</span>
-                    <span className="block text-xs text-text-muted mt-0.5">Contrainte LinkedIn</span>
+        {/* 3-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {pipelines.map((p, i) => (
+            <ScrollReveal key={p.id} delay={i * 80}>
+              <div id={p.id} className="scroll-mt-24 h-full">
+                <div
+                  className="relative rounded-xl overflow-hidden border p-6 h-full flex flex-col"
+                  style={{
+                    borderColor: `${p.color}33`,
+                    background: `linear-gradient(135deg, ${p.color}0F 0%, ${p.color}05 100%)`,
+                  }}
+                >
+                  {/* Eyebrow */}
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="w-2 h-2 rounded-full" style={{ backgroundColor: p.color }} />
+                    <span
+                      className="font-mono text-xs font-semibold uppercase tracking-widest"
+                      style={{ color: p.color }}
+                    >
+                      {p.eyebrow}
+                    </span>
                   </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="text-sm text-text-secondary">Ciblage au feeling</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="text-sm text-text-secondary">~3% de réponses</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="font-semibold text-sm text-text-secondary">≈ 1 RDV / mois</span>
-                </li>
-              </ul>
 
-              <p className="text-text-muted text-xs italic leading-relaxed border-t border-white/[0.06] pt-4">
-                &laquo;&nbsp;Bonjour, j&apos;ai vu votre profil et j&apos;aimerais échanger avec vous...&nbsp;&raquo;
-              </p>
-            </div>
-          </ScrollReveal>
+                  {/* Headline */}
+                  <h3 className="text-text-primary font-semibold text-lg mb-3">
+                    {p.headline}
+                  </h3>
 
-          {/* Card droite — Avec pipeline */}
-          <ScrollReveal delay={100}>
-            <div
-              className="relative rounded-xl overflow-hidden border border-accent/30 p-6 h-full"
-              style={{
-                background: 'linear-gradient(135deg, rgba(200,117,51,0.06) 0%, rgba(200,117,51,0.02) 100%)',
-                boxShadow: '0 0 40px -12px rgba(200,117,51,0.15)',
-              }}
-            >
-              <span className="inline-block font-mono text-xs font-semibold uppercase tracking-widest text-accent mb-5">
-                Avec notre pipeline
-              </span>
+                  {/* Description */}
+                  <p className="text-text-secondary text-sm leading-relaxed mb-5">
+                    {p.description}
+                  </p>
 
-              <ul className="space-y-4 mb-6">
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <div>
-                    <span className="font-mono text-sm text-text-muted">100 invitations / semaine</span>
-                    <span className="block text-xs text-text-muted mt-0.5">Même contrainte</span>
+                  {/* Features */}
+                  <div className="flex flex-col gap-3 mt-auto">
+                    {p.features.map((f) => (
+                      <div key={f.title} className="flex items-start gap-2.5">
+                        <span className="text-sm mt-0.5 shrink-0" style={{ color: p.color }}>&rarr;</span>
+                        <div>
+                          <p className="text-text-primary text-sm font-semibold">{f.title}</p>
+                          <p className="text-text-secondary text-xs">{f.detail}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-accent text-sm">→</span>
-                  <span className="text-sm text-text-primary">Ciblage par signaux d&apos;achat</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-accent text-sm">→</span>
-                  <span className="text-sm text-text-primary">~25% de réponses</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="mt-0.5 text-accent text-sm">→</span>
-                  <span className="font-semibold text-sm text-accent">≈ 3 RDV / semaine</span>
-                </li>
-              </ul>
-
-              <p className="text-text-secondary text-xs italic leading-relaxed border-t border-accent/20 pt-4">
-                &laquo;&nbsp;Bonjour, j&apos;ai vu que vous lanciez [offre concrète]. On a aidé [persona similaire] à passer de 2 à 8 RDV/semaine en 3 semaines.&nbsp;&raquo;
-              </p>
-            </div>
-          </ScrollReveal>
+                </div>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
 
-        {/* Note outbound seul */}
-        <ScrollReveal delay={150}>
-          <p className="text-center text-text-secondary text-sm mt-6 max-w-2xl mx-auto">
-            Ces résultats, c&apos;est l&apos;outbound seul.
-          </p>
-        </ScrollReveal>
-
-        {/* ── Bloc 2b : Inbound — Lead Magnets ── */}
-        <div id="inbound" className="scroll-mt-24" />
-        <ScrollReveal delay={200}>
-          <div className="mt-12 max-w-4xl mx-auto">
-            <div
-              className="relative rounded-xl overflow-hidden border border-semantic-methode/20 p-6 md:p-8"
-              style={{
-                background: 'linear-gradient(135deg, rgba(251,191,36,0.06) 0%, rgba(251,191,36,0.02) 100%)',
-              }}
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-2 h-2 rounded-full bg-semantic-methode" />
-                <span className="font-mono text-xs font-semibold uppercase tracking-widest text-semantic-methode">
-                  Accélérateur
-                </span>
-              </div>
-
-              <h3 className="text-text-primary font-semibold text-lg mb-3">
-                Quand l&apos;outbound tourne, on ouvre l&apos;inbound.
-              </h3>
-
-              <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
-                L&apos;outbound plafonne à 100 invitations par semaine. Une fois le pipeline calibré, on vous aide à attirer des leads qui viennent à vous&nbsp;: conseil sur les sujets de posts et formats de lead magnet, scoring des leads entrants, setting direct sans passer par l&apos;invitation.
-                <span className="text-semantic-methode font-medium"> Inclus dans votre abonnement.</span>
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="flex items-start gap-3">
-                  <span className="text-semantic-methode text-sm mt-0.5">→</span>
-                  <div>
-                    <p className="text-text-primary text-sm font-semibold">Conseil lead magnet</p>
-                    <p className="text-text-secondary text-xs">Sujets, formats, angles&nbsp;: on cadre avec vous</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-semantic-methode text-sm mt-0.5">→</span>
-                  <div>
-                    <p className="text-text-primary text-sm font-semibold">Scoring intégré</p>
-                    <p className="text-text-secondary text-xs">Le formulaire qualifie en temps réel</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-semantic-methode text-sm mt-0.5">→</span>
-                  <div>
-                    <p className="text-text-primary text-sm font-semibold">Setting direct</p>
-                    <p className="text-text-secondary text-xs">Zéro invitation, zéro plafond</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* ── Bloc 2c : Nurturing — Base dormante ── */}
-        <div id="nurturing" className="scroll-mt-24" />
-        <ScrollReveal delay={200}>
-          <div className="mt-12 max-w-4xl mx-auto">
-            <div
-              className="relative rounded-xl overflow-hidden border border-[#C87533]/20 p-6 md:p-8"
-              style={{
-                background: 'linear-gradient(135deg, rgba(200,117,51,0.06) 0%, rgba(200,117,51,0.02) 100%)',
-              }}
-            >
-              <div className="flex items-center gap-2 mb-4">
-                <span className="w-2 h-2 rounded-full bg-[#C87533]" />
-                <span className="font-mono text-xs font-semibold uppercase tracking-widest text-[#C87533]">
-                  Nurturing
-                </span>
-              </div>
-
-              <h3 className="text-text-primary font-semibold text-lg mb-3">
-                Des milliers de contacts. Z&eacute;ro syst&egrave;me pour les activer.
-              </h3>
-
-              <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
-                Vous avez une newsletter, des participants &agrave; vos webinars, des t&eacute;l&eacute;chargements de lead magnets &mdash; mais tout dort dans un CRM.
-                On construit avec vous le workflow qui score, nourrit et route ces contacts vers des RDV qualifi&eacute;s.
-                <span className="text-[#C87533] font-medium"> Un syst&egrave;me qui s&apos;affine &agrave; chaque cycle.</span>
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="flex items-start gap-3">
-                  <span className="text-[#C87533] text-sm mt-0.5">&rarr;</span>
-                  <div>
-                    <p className="text-text-primary text-sm font-semibold">Scoring comportemental</p>
-                    <p className="text-text-secondary text-xs">Engagement, r&eacute;cence, intent&nbsp;: chaque lead a un score</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-[#C87533] text-sm mt-0.5">&rarr;</span>
-                  <div>
-                    <p className="text-text-primary text-sm font-semibold">S&eacute;quences personnalis&eacute;es</p>
-                    <p className="text-text-secondary text-xs">Contenu adapt&eacute; au niveau de maturit&eacute; du lead</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <span className="text-[#C87533] text-sm mt-0.5">&rarr;</span>
-                  <div>
-                    <p className="text-text-primary text-sm font-semibold">Routing vers appel</p>
-                    <p className="text-text-secondary text-xs">Les leads chauds sont rout&eacute;s automatiquement vers un cr&eacute;neau</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* ── CTA unifié ── */}
+        {/* CTA */}
         <ScrollReveal delay={100}>
           <div className="text-center mt-16">
             <p className="text-text-secondary text-sm mb-6 max-w-xl mx-auto">
-              Premiers RDV dès la première semaine. Au mois 2, le pipeline tourne à plein régime.
+              Quel que soit votre niveau, les premiers RDV arrivent d&egrave;s la premi&egrave;re semaine.
             </p>
             <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
-              Réserver un appel découverte
+              R&eacute;server un appel d&eacute;couverte
             </ButtonGlow>
           </div>
         </ScrollReveal>
