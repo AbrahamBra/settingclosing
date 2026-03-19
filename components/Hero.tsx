@@ -37,7 +37,7 @@ export function Hero() {
           className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#D4956A]/20 bg-[#D4956A]/10 font-sans text-xs font-semibold uppercase tracking-widest text-[#D4956A] mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#D4956A] inline-block" />
-          Setting &amp; Closing B2B
+          Setting commercial B2B
         </motion.div>
 
         <motion.h1
@@ -57,7 +57,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-secondary mb-4 max-w-xl mx-auto"
         >
-          Votre équipe sales externalisée. Du premier message au deal signé.
+          Votre équipe setting externalisée. Des RDV qualifiés dans votre agenda, chaque semaine.
         </motion.p>
 
         <motion.div
