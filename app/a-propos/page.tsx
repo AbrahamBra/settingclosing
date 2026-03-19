@@ -4,13 +4,13 @@ import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'À propos de ChallengersLab | Setting et closing LinkedIn',
+  title: 'À propos de ChallengersLab | Setting, closing et automatisation B2B',
   description:
-    "ChallengersLab aide les fondateurs, freelances et solopreneurs B2B à remplir leur agenda de RDV qualifiés via une méthode de setting LinkedIn signal-based. Qui on est, d'où ça vient, et comment ça marche.",
+    "Trois expertises, un pipeline. Abdelhay (closing), Brahim (setting), Abraham (automatisation & IA). Comment ChallengersLab structure la prospection B2B autour de trois métiers distincts.",
   openGraph: {
     title: 'À propos de ChallengersLab',
     description:
-      "ChallengersLab aide les fondateurs, freelances et solopreneurs B2B à remplir leur agenda de RDV qualifiés via une méthode de setting LinkedIn signal-based.",
+      "Trois expertises, un pipeline. Comment ChallengersLab structure la prospection B2B autour de trois métiers distincts.",
     locale: 'fr_FR',
     type: 'profile',
   },
@@ -21,25 +21,35 @@ export const metadata: Metadata = {
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
 
-const personSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Abraham',
-  jobTitle: 'Fondateur ChallengersLab',
-  url: 'https://challengerslab.fr/a-propos',
-  worksFor: {
-    '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+const foundersSchema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Abdelhay',
+    jobTitle: 'Performance commerciale & Closing, ChallengersLab',
+    url: 'https://challengerslab.fr/a-propos',
+    worksFor: { '@type': 'Organization', name: 'ChallengersLab', url: 'https://challengerslab.fr' },
+    knowsAbout: ['Closing B2B', 'Négociation commerciale', 'Performance commerciale'],
   },
-  knowsAbout: [
-    'Setting commercial B2B',
-    'Prospection LinkedIn',
-    'Closing B2B',
-    'Signaux d\'achat LinkedIn',
-    'Vente pour solopreneurs',
-  ],
-}
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Brahim',
+    jobTitle: 'Setting, ChallengersLab',
+    url: 'https://challengerslab.fr/a-propos',
+    worksFor: { '@type': 'Organization', name: 'ChallengersLab', url: 'https://challengerslab.fr' },
+    knowsAbout: ['Setting commercial B2B', 'Prospection LinkedIn', 'Signaux d\'achat LinkedIn'],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Abraham',
+    jobTitle: 'Automatisation & IA, ChallengersLab',
+    url: 'https://challengerslab.fr/a-propos',
+    worksFor: { '@type': 'Organization', name: 'ChallengersLab', url: 'https://challengerslab.fr' },
+    knowsAbout: ['Automatisation B2B', 'IA pour la prospection', 'Systèmes de setting', 'Prospection LinkedIn'],
+  },
+]
 
 const orgSchema = {
   '@context': 'https://schema.org',
@@ -71,6 +81,29 @@ const breadcrumbSchema = {
   ],
 }
 
+// ─── Data ─────────────────────────────────────────────────────────────────────
+
+const founders = [
+  {
+    initials: 'AH',
+    name: 'Abdelhay',
+    role: 'Performance commerciale & Closing',
+    bio: "Abdelhay gère le closing. Son parcours, ce qui l'a amené là, comment il aborde un deal — c'est lui qui complète cette partie. En attendant, ce qu'il faut savoir\u00a0: c'est le dernier maillon avant la signature.",
+  },
+  {
+    initials: 'B',
+    name: 'Brahim',
+    role: 'Setting',
+    bio: "Brahim fait le setting. Comment il détecte les bons signaux, pourquoi il contacte ces gens-là et pas d'autres, sa logique de qualification — à lui de raconter. Ce qu'on peut dire\u00a0: aucun message ne part sans son regard.",
+  },
+  {
+    initials: 'A',
+    name: 'Abraham',
+    role: 'Automatisation & IA',
+    bio: "Abraham construit le système. Les outils, les automatisations, l'IA qui trie et priorise — il branche tout ça ensemble. Son parcours et sa vision, il les posera ici. En attendant\u00a0: c'est lui qui fait tourner la machine.",
+  },
+]
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function AProposPage() {
@@ -79,7 +112,7 @@ export default function AProposPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([personSchema, orgSchema, breadcrumbSchema]),
+          __html: JSON.stringify([...foundersSchema, orgSchema, breadcrumbSchema]),
         }}
       />
       <NavbarBlog />
@@ -101,238 +134,93 @@ export default function AProposPage() {
               ChallengersLab
             </p>
             <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-              Ce qu&apos;on fait, pourquoi, et comment
+              Trois expertises, un pipeline
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed">
-              ChallengersLab aide les fondateurs, freelances et solopreneurs B2B à remplir leur agenda de RDV qualifiés
-              sans passer leurs matinées sur LinkedIn. Setter dédié, méthode signal-based, IA comme
-              co-rédacteur, coaching closing selon la formule.
+              Un setter qui ouvre les portes, un closer qui signe, un système qui fait
+              tourner le tout. C&apos;est comme ça qu&apos;on remplit des agendas.
             </p>
           </header>
 
           {/* Fondateurs */}
           <section className="mb-16">
             <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-8">
-              Les fondateurs
+              L&apos;équipe
             </h2>
 
             <div className="grid sm:grid-cols-3 gap-6">
-              {/* Abdelhay — Closing */}
-              <div className="bg-bg-secondary rounded-2xl p-6 border border-white/[0.06]">
-                <div className="flex flex-col items-center text-center gap-3 mb-5">
-                  <div className="shrink-0 w-16 h-16 rounded-xl bg-bg-primary border border-accent/20 flex items-center justify-center">
-                    <span className="font-sans font-extrabold text-2xl text-accent">AH</span>
+              {founders.map(({ initials, name, role, bio }) => (
+                <div key={name} className="bg-bg-secondary rounded-2xl p-6 border border-white/[0.06]">
+                  <div className="flex flex-col items-center text-center gap-3 mb-5">
+                    <div className="shrink-0 w-16 h-16 rounded-xl bg-bg-primary border border-accent/20 flex items-center justify-center">
+                      <span className="font-sans font-extrabold text-2xl text-accent">{initials}</span>
+                    </div>
+                    <div>
+                      <h3 className="font-sans font-extrabold text-lg text-text-primary">{name}</h3>
+                      <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
+                        {role}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-sans font-extrabold text-lg text-text-primary">Abdelhay</h3>
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
-                      Performance commerciale &amp; Closing
+                  <div className="rounded-lg border border-dashed border-accent/30 bg-bg-primary p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-accent text-sm">&#9998;</span>
+                      <span className="font-sans text-xs font-semibold text-accent">À compléter</span>
+                    </div>
+                    <p className="font-sans text-text-muted text-sm leading-relaxed">
+                      {bio}
                     </p>
                   </div>
                 </div>
-                <p className="font-sans text-text-muted leading-relaxed text-sm">
-                  {/* TODO: Ajouter la description d'Abdelhay */}
-                  Description à venir.
-                </p>
-              </div>
-
-              {/* Brahim — Setting */}
-              <div className="bg-bg-secondary rounded-2xl p-6 border border-white/[0.06]">
-                <div className="flex flex-col items-center text-center gap-3 mb-5">
-                  <div className="shrink-0 w-16 h-16 rounded-xl bg-bg-primary border border-accent/20 flex items-center justify-center">
-                    <span className="font-sans font-extrabold text-2xl text-accent">B</span>
-                  </div>
-                  <div>
-                    <h3 className="font-sans font-extrabold text-lg text-text-primary">Brahim</h3>
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
-                      Setting
-                    </p>
-                  </div>
-                </div>
-                <p className="font-sans text-text-muted leading-relaxed text-sm">
-                  {/* TODO: Ajouter la description de Brahim */}
-                  Description à venir.
-                </p>
-              </div>
-
-              {/* Abraham — Méthode & Système */}
-              <div className="bg-bg-secondary rounded-2xl p-6 border border-white/[0.06]">
-                <div className="flex flex-col items-center text-center gap-3 mb-5">
-                  <div className="shrink-0 w-16 h-16 rounded-xl bg-bg-primary border border-accent/20 flex items-center justify-center">
-                    <span className="font-sans font-extrabold text-2xl text-accent">A</span>
-                  </div>
-                  <div>
-                    <h3 className="font-sans font-extrabold text-lg text-text-primary">Abraham</h3>
-                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
-                      Méthode &amp; Système
-                    </p>
-                  </div>
-                </div>
-                <p className="font-sans text-text-muted leading-relaxed text-sm">
-                  {/* TODO: Ajouter la description d'Abraham */}
-                  Description à venir.
-                </p>
-              </div>
+              ))}
             </div>
           </section>
 
-          {/* Résultats */}
+          {/* Complémentarité */}
           <section className="mb-16">
-            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6">
-              Ce que ça donne en pratique
-            </h2>
-
-            <div className="grid sm:grid-cols-3 gap-4 mb-8">
-              {[
-                { stat: '20+', label: 'clients accompagnés en 2026' },
-                { stat: '2–4', label: 'RDV qualifiés par semaine en régime de croisière' },
-                { stat: '> 20 %', label: 'taux de réponse sur signal vs 3% sans méthode' },
-              ].map(({ stat, label }) => (
-                <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-white/[0.06]">
-                  <p className="font-sans font-extrabold text-2xl text-accent mb-1">{stat}</p>
-                  <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
-                </div>
-              ))}
-            </div>
-
-            <div className="space-y-5">
-              {[
-                {
-                  profil: 'Infopreneur · formation vente B2B',
-                  resultat: '3 RDV qualifiés dès la première semaine, 2 signés dans le mois. Avant le programme : 0 à 1 RDV par semaine en prospectant lui-même.',
-                },
-                {
-                  profil: 'Consultant indépendant · accompagnement RH',
-                  resultat: "Agenda rempli à 80% en 6 semaines. Le client a arrêté de prospecter lui-même pour se concentrer sur les missions. Le setter gère l'intégralité du pipeline en amont.",
-                },
-                {
-                  profil: 'Solopreneur · conseil en stratégie digitale',
-                  resultat: "Premier RDV à J+4. 4 clients signés sur les 3 premiers mois. Avant : prospection irrégulière, pipeline à sec les mois sans contenu viral.",
-                },
-              ].map(({ profil, resultat }) => (
-                <div key={profil} className="border-l-2 border-accent/30 pl-5">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
-                    {profil}
-                  </p>
-                  <p className="font-sans text-text-muted text-sm leading-relaxed">{resultat}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Méthode */}
-          <section className="mb-16">
-            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6">
-              La méthode, concrètement
-            </h2>
-            <p className="font-sans text-text-muted leading-relaxed mb-6">
-              Ce n&apos;est pas du cold email. Ce n&apos;est pas de l&apos;automatisation. Ce n&apos;est pas
-              &ldquo;envoyer 200 messages par jour et voir ce qui répond&rdquo;.
-            </p>
-
-            <div className="space-y-5">
-              {[
-                {
-                  step: '01',
-                  title: 'Détection des signaux',
-                  desc: "Reactin capture qui a interagi avec votre contenu. Spyer surveille les comptes de votre secteur. Sales Navigator remonte les changements de poste et signaux récents. L'IA trie et priorise. On contacte les prospects qui ont déjà levé la main, pas une liste froide.",
-                },
-                {
-                  step: '02',
-                  title: 'Messages ancrés sur un fait',
-                  desc: "Chaque message est construit sur un signal précis tiré du profil ou d'un post récent. 5 phrases max. Pas de pitch. Pas de copier-coller. Claude propose un draft, le setter valide avant envoi. Aucun message ne part sans ce regard humain.",
-                },
-                {
-                  step: '03',
-                  title: 'Qualification et passage au closeur',
-                  desc: "Les leads sont qualifiés sur 5 niveaux de maturité. Les niveaux 4–5 sont traités en priorité pour un appel. Le closeur reçoit le contexte complet : ce qui a été dit, ce qui a intéressé, ce qui a résisté.",
-                },
-                {
-                  step: '04',
-                  title: 'Amélioration continue',
-                  desc: "Le journal de bord du setter alimente la base de connaissance Claude. Ce qui fonctionne est codifié. Ce qui rate est compris. Le système devient plus précis chaque semaine — il apprend votre marché.",
-                },
-              ].map(({ step, title, desc }) => (
-                <div key={step} className="flex gap-5">
-                  <span className="font-sans text-text-muted/30 text-xs tabular-nums shrink-0 w-6 pt-0.5">{step}</span>
-                  <div>
-                    <p className="font-sans font-semibold text-text-primary text-sm mb-1">{title}</p>
-                    <p className="font-sans text-text-muted text-sm leading-relaxed">{desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Pour qui */}
-          <section className="mb-16">
-            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
-              Pour qui c&apos;est fait — et pour qui ce ne l&apos;est pas
-            </h2>
-
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="bg-bg-secondary rounded-xl p-5 border border-accent/20">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-                  Ça marche pour
+            <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
+                Pourquoi nous trois
+              </p>
+              <div className="space-y-4 font-sans text-text-muted text-sm leading-relaxed">
+                <p>
+                  En B2B, la prospection ça se fait encore souvent au feeling. Un fondateur
+                  qui envoie des messages quand il a le temps, un CRM à moitié rempli, des
+                  relances qui partent quand on y pense.
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
-                  {[
-                    'Fondateurs de startups avec une offre B2B à 2 000 € ou plus',
-                    'Freelances et consultants B2B qui n\'ont plus de temps pour prospecter',
-                    'Créateurs de micro-SaaS qui lancent leur acquisition',
-                    'Solopreneurs qui ont un closeur mais pas de setter',
-                  ].map((item) => (
-                    <li key={item} className="flex gap-2">
-                      <span className="text-accent shrink-0">→</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
-                  Ça ne marche pas pour
+                <p>
+                  Ça marchait il y a cinq ans. Aujourd&apos;hui les boîtes d&apos;arrivée
+                  sont saturées. Les gens ignorent les messages génériques. Et les signaux
+                  d&apos;achat, un changement de poste, une interaction avec un post, une
+                  levée de fonds, passent sous le radar parce que personne ne les surveille.
                 </p>
-                <ul className="space-y-2 font-sans text-sm text-text-muted">
-                  {[
-                    'Offres B2C ou grand public',
-                    'Activités qui démarrent sans offre définie',
-                    'Ceux qui veulent de l\'automatisation complète sans contact humain',
-                    'Secteurs où LinkedIn n\'est pas le canal des acheteurs',
-                  ].map((item) => (
-                    <li key={item} className="flex gap-2">
-                      <span className="text-text-muted/40 shrink-0">→</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p>
+                  C&apos;est pour ça qu&apos;on a structuré ChallengersLab autour de trois
+                  métiers distincts.
+                </p>
+                <p>
+                  Le setting, c&apos;est le travail en amont&nbsp;: repérer les bons
+                  signaux, contacter les bonnes personnes au bon moment, qualifier avant de
+                  passer la main. Pas de volume pour le volume. Chaque message est ancré
+                  sur un fait précis.
+                </p>
+                <p>
+                  Le closing, c&apos;est ce qui se passe une fois que le prospect est
+                  qualifié. Un appel, un contexte complet sur ce qui a été dit, ce qui a
+                  intéressé, ce qui a coincé. Le closer ne découvre pas le lead à froid.
+                </p>
+                <p>
+                  Et entre les deux, l&apos;automatisation et l&apos;IA. Pas pour remplacer
+                  le setter ou le closer, pour leur donner les bons inputs au bon moment.
+                  Trier les signaux, prioriser les profils, proposer des drafts de messages
+                  que l&apos;humain valide avant envoi.
+                </p>
+                <p className="text-text-primary font-semibold">
+                  Trois rôles, un pipeline. Chacun fait ce qu&apos;il sait faire. Le
+                  système tourne parce que les pièces s&apos;emboîtent, pas parce
+                  qu&apos;une seule personne essaie de tout gérer.
+                </p>
               </div>
-            </div>
-          </section>
-
-          {/* Ressources */}
-          <section className="mb-14">
-            <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
-              Pour comprendre la méthode en détail
-            </h2>
-            <div className="space-y-3">
-              {[
-                { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ? Rôle, missions et coût" },
-                { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting" },
-                { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
-                { href: '/glossaire', label: 'Glossaire setting & closing B2B : setter, closer, signal d\'achat, ICP…' },
-              ].map(({ href, label }) => (
-                <a
-                  key={href}
-                  href={href}
-                  className="flex items-center gap-2 font-sans text-sm text-text-muted hover:text-text-primary transition-colors group"
-                >
-                  <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
-                  <span>{label}</span>
-                </a>
-              ))}
             </div>
           </section>
 
