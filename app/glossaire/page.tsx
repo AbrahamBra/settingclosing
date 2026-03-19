@@ -3,13 +3,13 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Glossaire Setting & Closing LinkedIn | ChallengersLab',
+  title: 'Glossaire Setting & Prospection LinkedIn | ChallengersLab',
   description:
-    'Définitions précises des termes clés du setting et closing LinkedIn : setter, closer, signal d\'achat, ICP, discovery, pipeline, qualification. Le lexique de référence.',
+    'Définitions précises des termes clés du setting et de la prospection LinkedIn : setter, signal d\'achat, ICP, discovery, pipeline, qualification. Le lexique de référence.',
   openGraph: {
-    title: 'Glossaire Setting & Closing LinkedIn | ChallengersLab',
+    title: 'Glossaire Setting & Prospection LinkedIn | ChallengersLab',
     description:
-      "Les définitions exactes des termes du setting et closing LinkedIn — setter, closer, signal d'achat, ICP, pipeline, qualification et plus.",
+      "Les définitions exactes des termes du setting et de la prospection LinkedIn — setter, signal d'achat, ICP, pipeline, qualification et plus.",
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: 'https://challengerslab.fr/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'Glossaire Setting & Closing LinkedIn — ChallengersLab',
+        alt: 'Glossaire Setting & Prospection LinkedIn — ChallengersLab',
       },
     ],
   },
@@ -202,7 +202,7 @@ const definedTermSchemas = terms.map((t) => ({
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
     '@id': 'https://challengerslab.fr/glossaire',
-    name: 'Glossaire Setting & Closing B2B — ChallengersLab',
+    name: 'Glossaire Setting & Prospection B2B — ChallengersLab',
   },
 }))
 
@@ -245,10 +245,10 @@ export default function GlossairePage() {
               Référence
             </p>
             <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-              Glossaire Setting &amp; Closing B2B
+              Glossaire Setting &amp; Prospection B2B
             </h1>
             <p className="font-sans text-text-muted text-lg leading-relaxed">
-              Les définitions exactes des termes qu&apos;on utilise dans le setting et le closing B2B.
+              Les définitions exactes des termes qu&apos;on utilise dans le setting et la prospection B2B.
               Pas de jargon pour le jargon — chaque entrée explique ce que le mot veut dire en pratique,
               dans un contexte de vente B2B pour fondateurs, freelances et solopreneurs B2B.
             </p>
