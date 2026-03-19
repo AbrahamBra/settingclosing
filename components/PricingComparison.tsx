@@ -181,10 +181,6 @@ export function PricingComparison() {
 
         </div>
 
-        {/* Closing mention */}
-        <p className="text-center text-text-muted text-sm mt-8">
-          Besoin d&apos;un accompagnement sur le closing&nbsp;? On en parle en call.
-        </p>
       </div>
     </section>
   )
