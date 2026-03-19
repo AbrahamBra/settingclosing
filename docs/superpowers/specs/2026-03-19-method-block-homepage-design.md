@@ -6,10 +6,12 @@ Nouveau composant homepage placé entre `SocialProof` et `PipelineSection`. Mont
 
 ## Positionnement page
 
+Sections `<main>` uniquement (Navbar et CursorGlow omis) :
+
 ```
 Hero
 SocialProof
-→ MethodBlock (nouveau)
+→ MethodBlock (nouveau, id="methode")
 PipelineSection
 PricingComparison
 CTAFinale
@@ -28,7 +30,7 @@ Footer
 - Un texte pédagogique court (1-2 phrases)
 - 4 barres de progression (Détection, Qualification, Rédaction, Closing)
 
-Les barres s'allongent de colonne en colonne (sauf Closing, qui reste ancré côté humain).
+Les barres s'allongent de colonne en colonne (sauf Closing, qui reste fixe à ~5-8% — toujours humain).
 
 ## Contenu par colonne
 
@@ -57,12 +59,12 @@ Les barres s'allongent de colonne en colonne (sauf Closing, qui reste ancré cô
   - Détection → ~95% (IA)
   - Qualification → ~85% (IA + Méthode)
   - Rédaction → ~65% (IA + Méthode)
-  - Closing → ~10% (Humain)
+  - Closing → ~8% (Humain)
 
 ## Éléments visuels
 
 ### Structure
-- Eyebrow : `monospace`, `11px`, `#FBBF24`, uppercase, letter-spacing 0.1em
+- Eyebrow : `font-mono text-xs`, `#FBBF24`, uppercase, tracking-widest
 - Headline : `24px`, `font-weight: 700`, `#F0ECE4`
 - Sous-titre : `14px`, `#888`, centré, max-width ~560px
 - Grid : `grid-template-columns: 1fr 1fr 1fr`, gap 16px
@@ -78,10 +80,10 @@ Les barres s'allongent de colonne en colonne (sauf Closing, qui reste ancré cô
 - Track : `#1a1a1a`, hauteur 4px, border-radius 2px
 - Remplissage : gradient selon layer dominante
   - IA seule : `#A78BFA`
-  - Méthode : gradient `#A78BFA` → `#FBBF24`
-  - IA + Humain : gradient `#FBBF24` → `#34D399`
+  - IA + Méthode : gradient `#A78BFA` → `#FBBF24`
+  - Méthode + Humain : gradient `#FBBF24` → `#34D399`
   - Humain seul : `#34D399`
-- Label droit : layer dominante en couleur, monospace 11px
+- Label droit : layer dominante en couleur, `text-xs font-mono`
 
 ### Callout skill
 - Background : `rgba(251,191,36,0.04)`, border `rgba(251,191,36,0.1)`
@@ -96,7 +98,7 @@ Les barres s'allongent de colonne en colonne (sauf Closing, qui reste ancré cô
 
 - `ScrollReveal` sur le bloc entier (fade-in au scroll)
 - Staggered reveal sur les 3 colonnes (délai 80ms entre chaque)
-- Barres de progression : animation CSS `width` de 0 à valeur finale, durée ~800ms, ease-out, déclenchée au scroll (via `IntersectionObserver` ou intégrée dans ScrollReveal)
+- Barres de progression : chaque barre utilise un `ref` + `IntersectionObserver` interne pour animer `width` de 0 à valeur finale (CSS transition, ~800ms ease-out). L'observer se déclenche une seule fois (`{ once: true }`).
 
 ## Composant
 
@@ -104,7 +106,7 @@ Les barres s'allongent de colonne en colonne (sauf Closing, qui reste ancré cô
 
 - Composant React fonctionnel
 - Données des 3 phases en constante locale (pas de fichier data séparé — le contenu est spécifique à ce bloc)
-- Chaque phase : `{ month, label, description, borderColor, bars: [{ name, percent, gradient, layerLabel, layerColor }] }`
+- Chaque phase : `{ month: "Mois 1", keyword: "Calibrage", description: string, borderColor: string, bars: [{ name, percent, gradient, layerLabel, layerColor }] }`
 - Responsive : grid 3 colonnes desktop → stack mobile
 - Utilise `ScrollReveal` existant pour les animations d'entrée
 
@@ -119,6 +121,10 @@ Les barres s'allongent de colonne en colonne (sauf Closing, qui reste ancré cô
 - Ne montre pas de chiffres before/after (c'est le rôle de `PipelineSection`)
 - Ne parle pas de pricing (c'est le rôle de `PricingComparison`)
 - Pas d'interactivité (pas de tabs, pas de toggle) — les 3 colonnes sont visibles d'un coup
+
+## Chevauchement avec PipelineSection
+
+`PipelineSection` contient déjà une légende 3-layers (IA/Méthode/Humain) et un lien "Voir les 9 étapes". Avec `MethodBlock` en amont, cette légende devient redondante. À l'implémentation : supprimer le bloc légende + CTA `/methode` de `PipelineSection` puisque `MethodBlock` couvre ce rôle en amont.
 
 ## Mockup de référence
 
