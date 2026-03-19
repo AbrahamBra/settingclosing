@@ -8,6 +8,7 @@ import { SocialProof } from '@/components/SocialProof'
 import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
 import { CursorGlowClient } from '@/components/CursorGlowClient'
+import { MethodBlock } from '@/components/MethodBlock'
 
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
@@ -26,6 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
+        <MethodBlock />
         <PipelineSection />
         <PricingComparison />
         <CTAFinale />
