@@ -124,7 +124,7 @@ export function PipelineSection() {
                     <h3 className="text-white font-semibold text-base mb-2">{phase.title}</h3>
 
                     {/* Layer tags */}
-                    <div className="flex flex-wrap gap-1.5">
+                    <div className="flex flex-wrap gap-1.5 mb-3">
                       {phase.layers.map((layer) => {
                         const cfg = layerConfig[layer]
                         return (
@@ -137,24 +137,24 @@ export function PipelineSection() {
                         )
                       })}
                     </div>
+
+                    {/* Step names — always visible */}
+                    <ul className="space-y-1">
+                      {phase.steps.map((step) => (
+                        <li key={step} className={`text-xs font-mono ${phase.accentText}`}>
+                          {step}
+                        </li>
+                      ))}
+                    </ul>
                   </button>
 
-                  {/* Expandable content */}
+                  {/* Expandable content — summary + tools */}
                   <div
                     className="grid transition-[grid-template-rows] duration-300 ease-in-out"
                     style={{ gridTemplateRows: isOpen ? '1fr' : '0fr' }}
                   >
                     <div className="overflow-hidden">
                       <div className="px-5 pb-5">
-                        {/* Step names list */}
-                        <ul className="mb-3 space-y-1 mt-2">
-                          {phase.steps.map((step) => (
-                            <li key={step} className={`text-xs font-mono ${phase.accentText}`}>
-                              {step}
-                            </li>
-                          ))}
-                        </ul>
-
                         {/* Summary */}
                         <p className="text-text-secondary text-sm leading-relaxed mb-4">{phase.summary}</p>
 
