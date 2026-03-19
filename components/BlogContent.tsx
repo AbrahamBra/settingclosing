@@ -6,7 +6,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
-type Category = 'setting' | 'closing' | 'methode'
+type Category = 'setting' | 'methode'
 
 interface Article {
   slug: string
@@ -28,7 +28,6 @@ interface PillarGuide {
 
 const categoryConfig: Record<Category, { label: string; color: string; bgTint: string }> = {
   setting: { label: 'Setting', color: '#A78BFA', bgTint: 'rgba(129, 140, 248, 0.04)' },
-  closing: { label: 'Closing', color: '#34D399', bgTint: 'rgba(52, 211, 153, 0.04)' },
   methode: { label: 'Méthode', color: '#FBBF24', bgTint: 'rgba(251, 191, 36, 0.04)' },
 }
 
@@ -37,7 +36,6 @@ type FilterKey = 'all' | Category | 'ia'
 const filterPills: { key: FilterKey; label: string; color: string }[] = [
   { key: 'all', label: 'Tous', color: '#C87533' },
   { key: 'setting', label: 'Setting', color: '#A78BFA' },
-  { key: 'closing', label: 'Closing', color: '#34D399' },
   { key: 'methode', label: 'Méthode', color: '#FBBF24' },
   { key: 'ia', label: 'IA + Outils', color: '#C084FC' },
 ]
@@ -52,14 +50,6 @@ const pillarGuides: PillarGuide[] = [
     readTime: '14 min',
     color: '#A78BFA',
     borderClass: 'border-l-4 border-[#A78BFA]',
-  },
-  {
-    slug: 'closing-b2b',
-    title: 'Closing B2B : définition et méthode',
-    label: 'Guide Closing',
-    readTime: '15 min',
-    color: '#34D399',
-    borderClass: 'border-l-4 border-[#34D399]',
   },
   {
     slug: 'methodes-vente-b2b',
@@ -85,11 +75,11 @@ const articles: Article[] = [
   { slug: 'ia-methode-humain-setting-linkedin', title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn", readTime: '12 min', category: 'setting' },
   { slug: 'setter-b2b-definition', title: "C'est quoi un setter en B2B ?", readTime: '8 min', category: 'setting' },
   // Closing
-  { slug: 'discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min', category: 'closing' },
-  { slug: 'gestion-objections-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min', category: 'closing' },
-  { slug: 'script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min', category: 'closing' },
-  { slug: 'challenger-sale-definition', title: "Qu'est-ce que le Challenger Sale ?", readTime: '9 min', category: 'closing' },
-  { slug: 'closer-b2b', title: 'Closer B2B : définition, compétences et comment en recruter un', readTime: '11 min', category: 'closing' },
+  { slug: 'discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min', category: 'methode' },
+  { slug: 'gestion-objections-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min', category: 'methode' },
+  { slug: 'script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min', category: 'methode' },
+  { slug: 'challenger-sale-definition', title: "Qu'est-ce que le Challenger Sale ?", readTime: '9 min', category: 'methode' },
+  { slug: 'closer-b2b', title: 'Closer B2B : définition, compétences et comment en recruter un', readTime: '11 min', category: 'methode' },
   // Méthode
   { slug: 'qualification-leads-b2b', title: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples', readTime: '8 min', category: 'methode' },
   { slug: 'methode-soncas', title: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples concrets', readTime: '10 min', category: 'methode' },
