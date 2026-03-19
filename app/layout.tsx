@@ -59,11 +59,22 @@ const jsonLd = {
         itemListElement: [
           {
             '@type': 'Offer',
-            name: 'Setting commercial B2B',
-            description: 'Setting externalisé : setter dédié, méthode LinkedIn signal-based, RDV qualifiés dès la première semaine',
+            name: 'Setting commercial B2B — Lancement',
+            description: 'Mois 1 : setter dédié, setup outils, ciblage, premiers messages et RDV. Forfait tout inclus.',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              minPrice: 500,
+              price: 500,
+              priceCurrency: 'EUR',
+              valueAddedTaxIncluded: false,
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Setting commercial B2B — Abonnement',
+            description: 'Pipeline à plein régime : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés.',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 1000,
               priceCurrency: 'EUR',
               unitText: 'MONTH',
               valueAddedTaxIncluded: false,
@@ -82,6 +93,52 @@ const jsonLd = {
           },
         ],
       },
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': 'https://challengerslab.fr/#faq',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'Combien coûte le setting commercial externalisé ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: '500 € le premier mois (lancement), puis 1 000 €/mois + une prime par RDV livré. Sans engagement.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Quand voit-on les premiers RDV qualifiés ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Dès la première semaine. Le setter envoie des messages dès le démarrage, pas après un audit de 30 jours.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Les messages sont-ils envoyés sans validation ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Non. Chaque message est validé par un humain avant envoi. Aucune automatisation ne contacte vos prospects à votre place.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Que se passe-t-il si le service ne fonctionne pas ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Moins de 5 RDV qualifiés livrés dans le mois ? Le mois suivant est offert.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Quelle est la différence avec un freelance SDR ?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: "Un freelance SDR envoie des messages. ChallengersLab combine un setter dédié, un système IA qui détecte les signaux d'achat, et une méthode qui s'affine chaque semaine.",
+          },
+        },
+      ],
     },
   ],
 }
