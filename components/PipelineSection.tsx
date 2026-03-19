@@ -142,7 +142,7 @@ export function PipelineSection() {
               <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
                 L&apos;outbound plafonne à 100 invitations par semaine. Pour dépasser cette limite, on active l&apos;inbound&nbsp;: posts LinkedIn, lead magnets, formulaire de scoring.
                 On conseille sur les sujets et les formats de lead magnet. On travaille avec des clients qui ont déjà une stratégie de contenu active — et on a des partenaires pour ceux qui démarrent.
-                Résultat&nbsp;: les leads chauds arrivent en setting téléphonique sans passer par l&apos;invitation.
+                Résultat&nbsp;: les leads chauds arrivent en setting adapté — message LinkedIn, appel, ou les deux — sans passer par l&apos;invitation.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
