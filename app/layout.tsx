@@ -53,7 +53,7 @@ const jsonLd = {
       '@id': 'https://challengerslab.fr/#business',
       name: 'ChallengersLab',
       url: 'https://challengerslab.fr',
-      description: 'Setting et closing LinkedIn externalisés pour fondateurs, freelances et solopreneurs.',
+      description: 'Setting LinkedIn externalisé pour fondateurs, freelances et solopreneurs.',
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         itemListElement: [
@@ -63,21 +63,7 @@ const jsonLd = {
             description: 'Setting externalisé : setter dédié, méthode LinkedIn signal-based, RDV qualifiés dès la première semaine',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              minPrice: 2000,
-              maxPrice: 5000,
-              priceCurrency: 'EUR',
-              unitText: 'MONTH',
-              valueAddedTaxIncluded: false,
-            },
-          },
-          {
-            '@type': 'Offer',
-            name: 'Coaching Closing B2B',
-            description: 'Coaching closing 2h/semaine, méthode Challenger Sale, pour fondateurs, freelances et solopreneurs B2B',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              minPrice: 1500,
-              maxPrice: 3000,
+              minPrice: 500,
               priceCurrency: 'EUR',
               unitText: 'MONTH',
               valueAddedTaxIncluded: false,
