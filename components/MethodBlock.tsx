@@ -2,25 +2,23 @@
 
 import Link from 'next/link'
 import { ScrollReveal } from './ui/ScrollReveal'
-import { useInView } from './ui/useInView'
 
 /* ─── Data ──────────────────────────────────────────────────────── */
 
-interface Bar {
-  name: string
-  percent: number
-  layerLabel: string
-  color: string                    // tailwind class OR 'gradient-ia-methode' | 'gradient-methode-humain'
-  layerColor: string               // tailwind text class
-}
+const loopSteps = [
+  { label: 'IA détecte', detail: 'Signaux, timing, intent', color: 'border-semantic-ia/20 bg-semantic-ia/10 text-semantic-ia' },
+  { label: 'Méthode qualifie', detail: 'Scoring, filtres, séquence', color: 'border-semantic-methode/20 bg-semantic-methode/10 text-semantic-methode' },
+  { label: 'Humain décide', detail: 'Validation, ton, closing', color: 'border-semantic-humain/20 bg-semantic-humain/10 text-semantic-humain' },
+  { label: '↻ Skill encodé', detail: 'Apprentissage capitalisé', color: 'border-semantic-methode/30 bg-semantic-methode/[0.12] text-semantic-methode font-semibold' },
+]
 
 interface Phase {
   title: string
   subtitle: string
   borderColor: string
-  keywordColor: string
+  titleColor: string
   description: string
-  bars: Bar[]
+  details: string[]
 }
 
 const phases: Phase[] = [
@@ -28,82 +26,42 @@ const phases: Phase[] = [
     title: 'Mois 1',
     subtitle: 'Calibrage',
     borderColor: 'border-semantic-methode/[0.12]',
-    keywordColor: 'text-semantic-methode',
+    titleColor: 'text-semantic-methode',
     description:
-      "On apprend votre marché, votre ICP, votre ton. Beaucoup d'humain partout — c'est normal.",
-    bars: [
-      { name: 'Détection',     percent: 70, layerLabel: 'IA',     color: 'bg-semantic-ia',     layerColor: 'text-semantic-ia' },
-      { name: 'Qualification', percent: 25, layerLabel: 'Humain', color: 'bg-semantic-humain', layerColor: 'text-semantic-humain' },
-      { name: 'Rédaction',     percent: 15, layerLabel: 'Humain', color: 'bg-semantic-humain', layerColor: 'text-semantic-humain' },
-      { name: 'Closing',       percent: 5,  layerLabel: 'Humain', color: 'bg-semantic-humain', layerColor: 'text-semantic-humain' },
+      "L\u2019humain explore votre march\u00e9, teste les angles, pose les fondations. Chaque ajustement est pris en compte et enrichit la base de connaissance.",
+    details: [
+      'Le setter apprend votre ICP',
+      "L\u2019IA cartographie les signaux",
+      'Premiers messages test\u00e9s et ajust\u00e9s',
     ],
   },
   {
     title: 'Mois 2',
-    subtitle: 'La machine se rode',
+    subtitle: 'Acc\u00e9l\u00e9ration',
     borderColor: 'border-white/[0.06]',
-    keywordColor: 'text-text-secondary',
+    titleColor: 'text-text-primary',
     description:
-      'Notre savoir-faire est encodé. La détection et la qualification tournent. Le setting devient régulier.',
-    bars: [
-      { name: 'Détection',     percent: 88, layerLabel: 'IA',         color: 'bg-semantic-ia',          layerColor: 'text-semantic-ia' },
-      { name: 'Qualification', percent: 60, layerLabel: 'Méthode',    color: 'gradient-ia-methode',     layerColor: 'text-semantic-methode' },
-      { name: 'Rédaction',     percent: 40, layerLabel: 'IA+Humain',  color: 'gradient-methode-humain', layerColor: 'text-semantic-humain' },
-      { name: 'Closing',       percent: 8,  layerLabel: 'Humain',     color: 'bg-semantic-humain',      layerColor: 'text-semantic-humain' },
+      "Les patterns \u00e9mergent. Le scoring se pr\u00e9cise. La r\u00e9daction s\u2019affine gr\u00e2ce au skill maison sur-mesure pour le client.",
+    details: [
+      'Qualification plus rapide et plus juste',
+      'Nouveaux secteurs absorb\u00e9s en jours',
+      'Taux de r\u00e9ponse en hausse',
     ],
   },
   {
     title: 'Mois 3+',
     subtitle: 'La machine tourne',
     borderColor: 'border-semantic-humain/[0.15]',
-    keywordColor: 'text-semantic-humain',
+    titleColor: 'text-semantic-humain',
     description:
-      "Le setting est quasi-autonome. L'humain est concentré là où il compte : le closing et la relation.",
-    bars: [
-      { name: 'Détection',     percent: 95, layerLabel: 'IA',          color: 'bg-semantic-ia',      layerColor: 'text-semantic-ia' },
-      { name: 'Qualification', percent: 85, layerLabel: 'IA+Méthode',  color: 'gradient-ia-methode', layerColor: 'text-semantic-methode' },
-      { name: 'Rédaction',     percent: 65, layerLabel: 'IA+Méthode',  color: 'gradient-ia-methode', layerColor: 'text-semantic-methode' },
-      { name: 'Closing',       percent: 8,  layerLabel: 'Humain',      color: 'bg-semantic-humain',  layerColor: 'text-semantic-humain' },
+      "La machinerie est rod\u00e9e. Le setter se concentre sur le closing et les pivots strat\u00e9giques.",
+    details: [
+      'Setting quasi-autonome',
+      'Pivot de march\u00e9 en 3 jours',
+      'Closing = 100\u00a0% humain, toujours',
     ],
   },
 ]
-
-/* ─── AnimatedBar ───────────────────────────────────────────────── */
-
-function AnimatedBar({ bar }: { bar: Bar }) {
-  const [ref, isVisible] = useInView()
-
-  const isGradient = bar.color.startsWith('gradient-')
-
-  const fillStyle: React.CSSProperties = {
-    width: isVisible ? `${bar.percent}%` : '0%',
-    transition: 'width 0.8s ease-out',
-    ...(bar.color === 'gradient-ia-methode'
-      ? { background: 'linear-gradient(to right, #A78BFA, #FBBF24)' }
-      : bar.color === 'gradient-methode-humain'
-        ? { background: 'linear-gradient(to right, #FBBF24, #34D399)' }
-        : {}),
-  }
-
-  return (
-    <div ref={ref}>
-      {/* label row */}
-      <div className="flex items-center justify-between mb-1">
-        <span className="text-text-secondary text-xs">{bar.name}</span>
-        <span className={`font-mono text-xs ${bar.layerColor}`}>
-          {bar.percent}% {bar.layerLabel}
-        </span>
-      </div>
-      {/* track */}
-      <div className="h-1 bg-[#1a1a1a] rounded-sm overflow-hidden">
-        <div
-          className={`h-full rounded-sm ${!isGradient ? bar.color : ''}`}
-          style={fillStyle}
-        />
-      </div>
-    </div>
-  )
-}
 
 /* ─── MethodBlock ───────────────────────────────────────────────── */
 
@@ -113,16 +71,37 @@ export function MethodBlock() {
       <div className="container-max">
         {/* Header */}
         <ScrollReveal>
-          <p className="font-mono text-xs uppercase tracking-widest text-semantic-methode mb-3">
-            Notre méthode
-          </p>
-          <h2 className="font-sans text-h2 text-text-primary mb-3">
-            On sait où placer le curseur.
-          </h2>
-          <p className="text-text-secondary max-w-2xl mb-10">
-            Vous ne branchez pas un outil. Vous branchez une machine de setting
-            qui s&apos;affine jusqu&apos;à tourner seule.
-          </p>
+          <div className="text-center max-w-xl mx-auto mb-8">
+            <p className="font-mono text-xs uppercase tracking-widest text-semantic-methode mb-4">
+              Notre m&eacute;thode
+            </p>
+            <h2 className="font-sans text-h2 text-text-primary mb-3">
+              Chaque semaine, la machine s&apos;affine.
+            </h2>
+            <p className="text-sm text-text-secondary leading-relaxed">
+              L&apos;IA d&eacute;tecte, la m&eacute;thode structure, l&apos;humain d&eacute;cide.
+              Chaque d&eacute;cision enrichit le tour suivant.
+            </p>
+          </div>
+        </ScrollReveal>
+
+        {/* Loop visualization */}
+        <ScrollReveal>
+          <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+            {loopSteps.map((step, i) => (
+              <div key={step.label} className="flex items-center gap-2">
+                <span
+                  className={`inline-flex flex-col items-center px-4 py-2.5 rounded-xl border text-center ${step.color}`}
+                >
+                  <span className="text-xs font-semibold">{step.label}</span>
+                  <span className="text-[10px] opacity-60">{step.detail}</span>
+                </span>
+                {i < loopSteps.length - 1 && (
+                  <span className="text-text-muted text-xs">&rarr;</span>
+                )}
+              </div>
+            ))}
+          </div>
         </ScrollReveal>
 
         {/* 3-column grid */}
@@ -132,18 +111,15 @@ export function MethodBlock() {
               <div
                 className={`rounded-xl bg-white/[0.02] border ${phase.borderColor} p-5 h-full`}
               >
-                <p className={`font-mono text-xs uppercase tracking-wider ${phase.keywordColor} mb-1`}>
-                  {phase.title}
+                <p className={`text-sm font-bold ${phase.titleColor}`}>
+                  {phase.title} &mdash; {phase.subtitle}
                 </p>
-                <p className="text-text-primary text-sm font-semibold mb-2">
-                  {phase.subtitle}
-                </p>
-                <p className="text-text-muted text-xs leading-relaxed mb-4">
+                <p className="text-text-muted text-xs leading-relaxed mt-2 mb-3">
                   {phase.description}
                 </p>
-                <div className="flex flex-col gap-2.5">
-                  {phase.bars.map((bar) => (
-                    <AnimatedBar key={bar.name} bar={bar} />
+                <div className="border-t border-white/[0.06] pt-3 flex flex-col gap-1.5">
+                  {phase.details.map((d) => (
+                    <p key={d} className="text-text-muted text-xs">{d}</p>
                   ))}
                 </div>
               </div>
@@ -151,25 +127,15 @@ export function MethodBlock() {
           ))}
         </div>
 
-        {/* Callout */}
-        <ScrollReveal delay={300}>
-          <div className="text-center rounded-lg border border-semantic-methode/10 bg-semantic-methode/[0.04] px-4 py-3 max-w-2xl mx-auto mt-10">
-            <p className="text-text-secondary text-sm">
-              Chaque apprentissage est encodé en{' '}
-              <strong className="text-text-primary">skill</strong>. Le
-              savoir-faire s&apos;accumule — la machine accélère.
-            </p>
-          </div>
-        </ScrollReveal>
-
         {/* CTA */}
-        <ScrollReveal delay={400}>
-          <div className="text-center mt-6">
+        <ScrollReveal delay={200}>
+          <div className="text-center mt-8">
             <Link
               href="/methode"
-              className="text-accent hover:text-accent-hover text-sm font-medium transition-colors"
+              className="inline-flex items-center gap-2 text-accent hover:text-accent-light transition-colors font-semibold text-sm"
             >
-              Voir les 9 étapes en détail →
+              Voir les 9 &eacute;tapes en d&eacute;tail
+              <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>
         </ScrollReveal>
