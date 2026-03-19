@@ -11,8 +11,8 @@ const members = [
   },
   {
     name: 'Abdelhay',
-    role: 'Closing & Performance',
-    desc: 'Négociation, closing, conversion. Il signe les deals.',
+    role: 'Stratégie commerciale',
+    desc: 'Négociation, conversion, stratégie. Il structure les deals.',
   },
 ]
 
