@@ -171,6 +171,70 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
+        {/* Setting showcase — "En pratique" */}
+        <ScrollReveal delay={100}>
+          <div className="mt-12 max-w-4xl mx-auto">
+            <h3 className="text-text-primary font-semibold text-lg mb-6 text-center">
+              En pratique, c&ocirc;té setting
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Card 1 — Ciblage Sales Navigator */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">🎯</span>
+                    <span className="text-text-muted text-sm">Screenshot Sales Navigator à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    Ciblage Sales Navigator
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    On configure vos filtres pour capter les signaux d&apos;achat : changements de poste, interactions concurrents, levées de fonds.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2 — Scoring Google Sheet */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">📊</span>
+                    <span className="text-text-muted text-sm">Screenshot scoring à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    Scoring automatisé sur Google Sheet
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    Chaque prospect est scoré sur 5 niveaux de maturité. Le scoring s&apos;appuie sur une base de connaissance qu&apos;on enrichit en continu avec vos retours terrain.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 — Messages qui convertissent */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">💬</span>
+                    <span className="text-text-muted text-sm">Screenshot messages à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    Des messages qui prennent des RDV
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    5 phrases max, jamais de pitch en premier DM. Chaque message s&apos;appuie sur une base de connaissance qui s&apos;affine avec chaque retour. Validés avant envoi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+
         {/* ── Bloc 3 : Légende 3 couches + lien /methode ── */}
         <ScrollReveal delay={100}>
           <div className="mt-12 mb-16">
