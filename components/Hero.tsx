@@ -57,7 +57,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-secondary mb-4 max-w-xl mx-auto"
         >
-          On prospecte, vous vendez. Premiers rendez-vous qualifiés en 7 jours.
+          Votre équipe sales externalisée. Du premier message au deal signé.
         </motion.p>
 
         <motion.div
