@@ -109,7 +109,7 @@ export default function MethodePage() {
               </p>
 
               {/* Layer legend */}
-              <div className="flex flex-wrap justify-center gap-2">
+              <div className="flex flex-wrap justify-center gap-2 mb-8">
                 {legendLayers.map((layer) => {
                   const cfg = layerConfig[layer]
                   return (
@@ -122,6 +122,11 @@ export default function MethodePage() {
                   )
                 })}
               </div>
+
+              {/* Pedagogy intro */}
+              <p className="text-text-secondary text-base leading-relaxed italic max-w-xl mx-auto">
+                Vous avez les outils. Tout le monde les a. Le vrai avantage, c&apos;est de savoir quand l&apos;IA suffit, quand elle doit être entraînée sur votre métier, et quand seul un humain peut débloquer le deal.
+              </p>
             </ScrollReveal>
           </div>
         </section>
@@ -155,6 +160,7 @@ export default function MethodePage() {
                       desc={step.desc}
                       tools={[...step.tools]}
                       isLast={i === 2}
+                      pedagogy={step.pedagogy}
                     />
                   </ScrollReveal>
                 ))}

@@ -8,9 +8,10 @@ interface PipelineStepProps {
   desc: string
   tools: string[]
   isLast?: boolean
+  pedagogy?: { mistake: string; arbitrage: string }
 }
 
-export function PipelineStep({ num, label, layers, desc, tools, isLast = false }: PipelineStepProps) {
+export function PipelineStep({ num, label, layers, desc, tools, isLast = false, pedagogy }: PipelineStepProps) {
   const primary = layerConfig[layers[0]]
 
   return (
@@ -59,6 +60,20 @@ export function PipelineStep({ num, label, layers, desc, tools, isLast = false }
               </span>
             ))}
           </div>
+
+          {/* Pedagogy block */}
+          {pedagogy && (
+            <div className="mt-4 space-y-2">
+              <div className="flex gap-3 items-start rounded-lg bg-red-400/[0.04] border border-red-400/10 px-3.5 py-2.5">
+                <span className="shrink-0 mt-0.5 text-red-400/70 text-xs font-semibold uppercase tracking-wider">✕</span>
+                <p className="text-red-400/70 text-sm leading-relaxed">{pedagogy.mistake}</p>
+              </div>
+              <div className="flex gap-3 items-start rounded-lg bg-emerald-400/[0.04] border border-emerald-400/10 px-3.5 py-2.5">
+                <span className="shrink-0 mt-0.5 text-emerald-400/70 text-xs font-semibold uppercase tracking-wider">→</span>
+                <p className="text-emerald-400/70 text-sm leading-relaxed">{pedagogy.arbitrage}</p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
