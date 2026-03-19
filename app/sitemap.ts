@@ -124,9 +124,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://challengerslab.fr/a-propos',
-      lastModified: new Date('2026-03-18'),
+      lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+    {
+      url: 'https://challengerslab.fr/tarifs',
+      lastModified: new Date('2026-03-19'),
+      changeFrequency: 'monthly',
+      priority: 1.0,
+    },
+    {
+      url: 'https://challengerslab.fr/externaliser-prospection-linkedin',
+      lastModified: new Date('2026-03-19'),
+      changeFrequency: 'monthly',
+      priority: 1.0,
+    },
+    {
+      url: 'https://challengerslab.fr/resultats',
+      lastModified: new Date('2026-03-19'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
     {
       url: 'https://challengerslab.fr/glossaire',
@@ -163,6 +181,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date('2026-03-18'),
       changeFrequency: 'monthly',
       priority: 0.7,
+    },
+    {
+      url: 'https://challengerslab.fr/ressources/setting-humain-vs-automatisation-linkedin',
+      lastModified: new Date('2026-03-19'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/ressources/sdr-interne-vs-externalise',
+      lastModified: new Date('2026-03-19'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
     },
     {
       url: 'https://challengerslab.fr/mentions-legales',

@@ -303,8 +303,6 @@ export default function GlossairePage() {
                   <a
                     href={t.articleHref}
                     className="font-sans text-xs text-accent hover:text-text-primary transition-colors ml-auto"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     {t.articleLabel} →
                   </a>

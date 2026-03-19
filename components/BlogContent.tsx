@@ -85,6 +85,9 @@ const articles: Article[] = [
   { slug: 'methode-soncas', title: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples concrets', readTime: '10 min', category: 'methode' },
   { slug: 'methode-spin-selling', title: 'SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer', readTime: '9 min', category: 'methode' },
   { slug: 'difference-setting-closing', title: 'Quelle est la différence entre setting et closing ?', readTime: '7 min', category: 'methode' },
+  // Comparatifs
+  { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting' },
+  { slug: 'sdr-interne-vs-externalise', title: 'SDR interne vs externalisé : coût réel et ROI', readTime: '10 min', category: 'setting' },
 ]
 
 // ─── Component ───────────────────────────────────────────────────────────────

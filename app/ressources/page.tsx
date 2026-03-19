@@ -4,13 +4,13 @@ import { Footer } from '@/components/Footer'
 import { BlogContent } from '@/components/BlogContent'
 
 export const metadata: Metadata = {
-  title: 'Ressources — Setting et closing LinkedIn | ChallengersLab',
+  title: 'Ressources — Prospection et setting LinkedIn B2B | ChallengersLab',
   description:
-    'Méthodes, définitions et stratégies de setting et closing LinkedIn pour fondateurs et freelances qui veulent prospecter et closer sur LinkedIn.',
+    'Méthodes, scripts et stratégies de prospection LinkedIn B2B. Guides pour fondateurs, freelances et solopreneurs qui veulent des RDV qualifiés.',
   openGraph: {
-    title: 'Ressources — Setting et closing LinkedIn | ChallengersLab',
+    title: 'Ressources — Prospection et setting LinkedIn B2B | ChallengersLab',
     description:
-      'Méthodes, définitions et stratégies de setting et closing LinkedIn pour fondateurs et freelances qui veulent prospecter et closer sur LinkedIn.',
+      'Méthodes, scripts et stratégies de prospection LinkedIn B2B pour fondateurs et freelances.',
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: 'https://challengerslab.fr/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Ressources ChallengersLab — Setting et closing LinkedIn',
+        alt: 'Ressources ChallengersLab — Prospection LinkedIn B2B',
       },
     ],
   },
@@ -33,9 +33,9 @@ const resourcesSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   '@id': 'https://challengerslab.fr/ressources',
-  name: 'Ressources — Setting et closing LinkedIn',
+  name: 'Ressources — Prospection et setting LinkedIn B2B',
   description:
-    'Méthodes, définitions et stratégies de setting et closing LinkedIn pour fondateurs et freelances qui veulent prospecter et closer sur LinkedIn.',
+    'Méthodes, scripts et stratégies de prospection LinkedIn B2B pour fondateurs et freelances.',
   url: 'https://challengerslab.fr/ressources',
   isPartOf: { '@id': 'https://challengerslab.fr/#website' },
   breadcrumb: {

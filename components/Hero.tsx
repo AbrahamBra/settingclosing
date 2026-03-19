@@ -46,9 +46,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans font-extrabold tracking-tight text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] leading-[1.15] text-text-primary mb-6"
         >
-          Vous avez déjà l&apos;offre.{' '}
+          Setting commercial LinkedIn{' '}
           <br className="hidden sm:block" />
-          Nous avons la machine.
+          <span className="text-accent">externalis&eacute;.</span>
         </motion.h1>
 
         <motion.p
@@ -57,7 +57,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-lg text-text-secondary mb-4 max-w-xl mx-auto"
         >
-          On prospecte sur LinkedIn pour vous. Premiers RDV dès la première semaine.
+          Vous avez l&apos;offre, on a la machine. Premiers RDV qualifi&eacute;s d&egrave;s la premi&egrave;re semaine.
         </motion.p>
 
         <motion.div

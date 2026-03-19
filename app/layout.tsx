@@ -18,10 +18,10 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
-  description: 'ChallengersLab gère votre setting commercial LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour fondateurs, freelances et solopreneurs.',
+  description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. 500 € le premier mois.',
   openGraph: {
     title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
-    description: 'ChallengersLab gère votre setting commercial LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.',
+    description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
     images: [
