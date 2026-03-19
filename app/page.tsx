@@ -1,21 +1,19 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
-import { PipelineSection } from '@/components/PipelineSection'
-import { PricingComparison } from '@/components/PricingComparison'
+import { OfferLadder } from '@/components/OfferLadder'
 import { BlogTeaser } from '@/components/BlogTeaser'
 import { SocialProof } from '@/components/SocialProof'
 import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
 import { CursorGlowClient } from '@/components/CursorGlowClient'
-import { MethodBlock } from '@/components/MethodBlock'
 import { TeamBanner } from '@/components/TeamBanner'
 import { FAQ } from '@/components/FAQ'
 
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
   description:
-    'ChallengersLab gère votre setting commercial LinkedIn : setter dédié, méthode signal-based, RDV qualifiés dès la première semaine. Pour fondateurs, freelances et solopreneurs.',
+    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. 500 € le premier mois.',
   alternates: {
     canonical: 'https://challengerslab.fr',
   },
@@ -29,9 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
-        <MethodBlock />
-        <PipelineSection />
-        <PricingComparison />
+        <OfferLadder />
         <FAQ />
         <TeamBanner />
         <CTAFinale />

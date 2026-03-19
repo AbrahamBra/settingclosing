@@ -24,12 +24,13 @@ export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' 
 
   const navLinks = [
     { label: 'Méthode', href: '/methode' },
-    { label: 'Offres', href: '/#pricing' },
+    { label: 'Tarifs', href: '/tarifs' },
+    { label: 'Résultats', href: '/resultats' },
     { label: 'Ressources', href: '/ressources' },
   ]
 
   const isActive = (href: string) => {
-    if (href === '/#pricing') return false
+    if (href === '/#offres') return false
     if (href === '/ressources') return pathname === '/ressources' || pathname.startsWith('/ressources/')
     return pathname === href
   }
