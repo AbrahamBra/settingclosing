@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { PipelineStep } from '@/components/PipelineStep'
+import { PhaseNav } from '@/components/ui/PhaseNav'
 import { layerConfig, closingTiers, settingSteps } from '@/lib/pipeline-data'
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
@@ -127,6 +128,9 @@ export default function MethodePage() {
           </div>
         </section>
 
+        {/* ── Phase navigation ────────────────────────────────────────────── */}
+        <PhaseNav />
+
         {/* ── 3 Phase sections ─────────────────────────────────────────────── */}
         {phases.map((phase) => (
           <section
@@ -221,7 +225,7 @@ export default function MethodePage() {
                       {tier.tools.map((tool) => (
                         <span
                           key={tool}
-                          className="font-mono text-[10px] px-2 py-0.5 rounded border text-semantic-humain bg-semantic-humain/10 border-semantic-humain/20"
+                          className="font-mono text-[10px] px-2 py-0.5 rounded border transition-all duration-200 hover:scale-105 hover:border-semantic-humain/40 text-semantic-humain bg-semantic-humain/10 border-semantic-humain/20"
                         >
                           {tool}
                         </span>
