@@ -4,14 +4,12 @@ import { useState } from 'react'
 import { ButtonGlow } from './ui/ButtonGlow'
 import { ScrollReveal } from './ui/ScrollReveal'
 
-type Interest = 'setting' | 'closing' | 'les_deux'
 type FormState = 'idle' | 'loading' | 'success' | 'error'
 
 interface FormData {
   firstName: string
   email: string
   phone: string
-  interest: Interest | ''
   message: string
 }
 
@@ -19,7 +17,6 @@ const initialForm: FormData = {
   firstName: '',
   email: '',
   phone: '',
-  interest: '',
   message: '',
 }
 
@@ -60,10 +57,6 @@ export function CTAFinale() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleInterest = (value: Interest) => {
-    setForm((prev) => ({ ...prev, interest: value }))
-  }
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setState('loading')
@@ -89,7 +82,7 @@ export function CTAFinale() {
       if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
         ;(window as any).gtag('event', 'generate_lead', {
           event_category: 'contact',
-          lead_type: form.interest,
+          lead_type: 'setting',
           method: 'form',
         })
       }
@@ -168,35 +161,6 @@ export function CTAFinale() {
                       className="w-full bg-[#1C1A16] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
                       placeholder="+33 6 00 00 00 00"
                     />
-                  </div>
-
-                  <div>
-                    <p className="font-sans text-sm text-text-muted mb-3">Ce qui vous intéresse *</p>
-                    <div className="flex flex-wrap gap-3" role="radiogroup" aria-label="Service souhaité">
-                      {(['setting', 'closing', 'les_deux'] as Interest[]).map((value) => {
-                        const labels: Record<Interest, string> = {
-                          setting: 'Setting',
-                          closing: 'Closing',
-                          les_deux: 'Les deux',
-                        }
-                        return (
-                          <button
-                            key={value}
-                            type="button"
-                            role="radio"
-                            aria-checked={form.interest === value}
-                            onClick={() => handleInterest(value)}
-                            className={`px-4 py-2 rounded-lg font-sans text-sm border transition-colors ${
-                              form.interest === value
-                                ? 'border-accent text-accent bg-accent/10'
-                                : 'border-white/[0.06] text-text-muted hover:border-white/[0.12]'
-                            }`}
-                          >
-                            {labels[value]}
-                          </button>
-                        )
-                      })}
-                    </div>
                   </div>
 
                   <div>
