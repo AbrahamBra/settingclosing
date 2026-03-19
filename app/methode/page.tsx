@@ -193,7 +193,7 @@ export default function MethodePage() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-white font-semibold text-base mb-2">{tier.label}</h3>
+                    <h3 className="text-text-primary font-semibold text-base mb-2">{tier.label}</h3>
 
                     {/* Layer tags */}
                     <div className="flex flex-wrap gap-1.5 mb-3">

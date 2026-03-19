@@ -31,7 +31,7 @@ function CalendlySlot({ url }: { url: string }) {
     return (
       <div className="flex flex-col items-center justify-center gap-5 min-h-[260px]">
         <div className="text-center">
-          <p className="font-sans font-semibold text-white mb-2">
+          <p className="font-sans font-semibold text-text-primary mb-2">
             Vous préférez en parler directement ?
           </p>
           <p className="font-sans text-text-muted text-sm">
@@ -103,7 +103,7 @@ export function CTAFinale() {
     <section id="contact" className="section-padding bg-bg-secondary">
       <div className="container-max">
         <ScrollReveal>
-          <h2 className="font-sans text-h2 font-bold text-white text-center mb-16">
+          <h2 className="font-sans text-h2 font-bold text-text-primary text-center mb-16">
             Prêt à déléguer ?
           </h2>
         </ScrollReveal>
@@ -112,7 +112,7 @@ export function CTAFinale() {
           {/* Left — contact form */}
           <ScrollReveal>
             <div className="bg-bg-secondary p-10 border-b md:border-b-0 md:border-r border-black/8">
-              <h3 className="font-sans font-semibold text-h3 text-white mb-8">
+              <h3 className="font-sans font-semibold text-h3 text-text-primary mb-8">
                 Contactez-nous
               </h3>
 

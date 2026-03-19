@@ -43,7 +43,7 @@ export function PipelineStep({ num, label, layers, desc, tools, isLast = false }
           </div>
 
           {/* Title */}
-          <h3 className="font-sans text-h3 text-white mb-1.5">{label}</h3>
+          <h3 className="font-sans text-h3 text-text-primary mb-1.5">{label}</h3>
 
           {/* Description */}
           <p className="text-text-secondary text-sm leading-relaxed mb-3">{desc}</p>

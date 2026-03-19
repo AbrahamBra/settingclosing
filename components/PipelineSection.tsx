@@ -99,7 +99,7 @@ export function PipelineSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-white font-semibold text-base mb-2">{phase.title}</h3>
+                <h3 className="text-text-primary font-semibold text-base mb-2">{phase.title}</h3>
 
                 {/* Step names */}
                 <ul className="space-y-1 mb-4">
@@ -127,6 +127,13 @@ export function PipelineSection() {
               </div>
             </ScrollReveal>
           ))}
+        </div>
+
+        {/* Link to /methode */}
+        <div className="text-center mt-8 mb-4">
+          <Link href="/methode" className="text-text-muted hover:text-accent transition-colors">
+            Découvrir les 9 étapes en détail →
+          </Link>
         </div>
 
         {/* Setting showcase — "Concrètement" */}
@@ -193,13 +200,6 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        {/* Link to /methode */}
-        <div className="text-center mt-8 mb-4">
-          <Link href="/methode" className="text-text-muted hover:text-accent transition-colors">
-            Découvrir les 9 étapes en détail →
-          </Link>
-        </div>
-
         {/* Pipeline Closing zone label — static */}
         <ScrollReveal>
           <div className="flex items-center gap-3 mb-8 mt-4">
@@ -229,7 +229,7 @@ export function PipelineSection() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-white font-semibold text-base mb-2">{tier.label}</h3>
+                <h3 className="text-text-primary font-semibold text-base mb-2">{tier.label}</h3>
 
                 {/* Description */}
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">{tier.desc}</p>

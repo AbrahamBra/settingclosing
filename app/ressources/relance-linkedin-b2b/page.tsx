@@ -165,7 +165,7 @@ export default function RelanceLinkedInB2BPage() {
           </header>
 
           {/* Stat block */}
-          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-10 border border-black/8">
+          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-10 border border-white/[0.06]">
             <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
             <p className="font-sans font-semibold text-text-primary mb-1">
               Entre 70 et 80&nbsp;% des réponses obtenues sur LinkedIn arrivent après une relance — pas après le premier message.
@@ -178,7 +178,7 @@ export default function RelanceLinkedInB2BPage() {
           </div>
 
           {/* TOC */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
               Sommaire
             </p>
@@ -212,7 +212,7 @@ export default function RelanceLinkedInB2BPage() {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2">Cas 1 — Le message n&apos;a pas été vu</p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed">
                   LinkedIn ne notifie pas toujours immédiatement. Si le prospect n&apos;est pas très actif sur la plateforme,
@@ -222,7 +222,7 @@ export default function RelanceLinkedInB2BPage() {
                 </p>
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2">Cas 2 — Vu, mais l&apos;accroche n&apos;a pas convaincu</p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed">
                   Le prospect a lu, n&apos;a pas répondu, et a passé à autre chose. Répéter le même message ne changera rien.
@@ -231,7 +231,7 @@ export default function RelanceLinkedInB2BPage() {
                 </p>
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2">Cas 3 — Vu, intéressé, mais pas le bon moment</p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed">
                   C&apos;est le cas le plus fréquent et le plus sous-estimé. Le prospect a lu, le sujet l&apos;intéresse,
@@ -318,7 +318,7 @@ export default function RelanceLinkedInB2BPage() {
             </div>
 
             {/* Ce qu'il ne faut pas faire */}
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-3">Ce qu&apos;il ne faut pas faire</p>
               <div className="space-y-2">
@@ -363,8 +363,8 @@ export default function RelanceLinkedInB2BPage() {
                 </a>{' '}
                 place cette approche dans la phase de qualification : on ne cherche pas à vendre, on cherche à savoir si c&apos;est le bon moment.
               </p>
-              <div className="rounded-xl border border-black/10 bg-bg-secondary overflow-hidden">
-                <div className="px-6 py-3 border-b border-black/8">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                <div className="px-6 py-3 border-b border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted">
                     Exemple — Relance angle différent (J+7)
                   </p>
@@ -402,8 +402,8 @@ export default function RelanceLinkedInB2BPage() {
                 </a>{' '}
                 : on répond à quelque chose de concret, on n&apos;arrive pas dans le vide.
               </p>
-              <div className="rounded-xl border border-black/10 bg-bg-secondary overflow-hidden">
-                <div className="px-6 py-3 border-b border-black/8">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                <div className="px-6 py-3 border-b border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted">
                     Exemple — Relance sur nouveau signal (J+21)
                   </p>
@@ -442,8 +442,8 @@ export default function RelanceLinkedInB2BPage() {
                 </a>{' '}
                 couvre la structure complète du premier message jusqu&apos;à la sortie.
               </p>
-              <div className="rounded-xl border border-black/10 bg-bg-secondary overflow-hidden">
-                <div className="px-6 py-3 border-b border-black/8">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                <div className="px-6 py-3 border-b border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted">
                     Exemple — Relance fin de séquence (J+28)
                   </p>
@@ -479,10 +479,10 @@ export default function RelanceLinkedInB2BPage() {
 
             <div className="space-y-6">
               {badRelances.map((item, i) => (
-                <div key={i} className="rounded-xl overflow-hidden border border-red-200/70 bg-red-50/30">
-                  <div className="px-6 py-3 border-b border-red-200/60 flex items-center gap-2">
+                <div key={i} className="rounded-xl overflow-hidden border border-red-500/20 bg-red-500/5">
+                  <div className="px-6 py-3 border-b border-red-500/20 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-red-400 shrink-0" />
-                    <p className="font-sans text-xs font-semibold text-red-600 uppercase tracking-widest">
+                    <p className="font-sans text-xs font-semibold text-red-400 uppercase tracking-widest">
                       Message à ne pas envoyer — exemple {String(i + 1).padStart(2, '0')}
                     </p>
                   </div>
@@ -499,7 +499,7 @@ export default function RelanceLinkedInB2BPage() {
               ))}
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-8 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-8 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 La relance qui fonctionne ne parle pas du silence — elle apporte quelque chose de nouveau.
@@ -546,7 +546,7 @@ export default function RelanceLinkedInB2BPage() {
               Beaucoup de deals se concluent sur un deuxième cycle, 3 à 6 mois après le premier contact.
             </p>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-2">
                 Les 4 statuts à avoir dans son pipeline de relances
@@ -558,7 +558,7 @@ export default function RelanceLinkedInB2BPage() {
                   { label: 'Dormant', detail: 'Séquence terminée sans réponse — à réactiver sur nouveau signal dans 60–90 jours.' },
                   { label: 'Qualifié', detail: 'Réponse obtenue, prospect en conversation active.' },
                 ].map((s, i) => (
-                  <div key={i} className="flex gap-3 py-2 border-b border-black/6 last:border-0">
+                  <div key={i} className="flex gap-3 py-2 border-b border-white/[0.06] last:border-0">
                     <span className="font-sans text-xs font-semibold text-accent shrink-0 mt-0.5 w-28">{s.label}</span>
                     <p className="font-sans text-sm text-text-muted leading-relaxed">{s.detail}</p>
                   </div>
@@ -572,7 +572,7 @@ export default function RelanceLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -587,7 +587,7 @@ export default function RelanceLinkedInB2BPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8 mb-10">
+          <div className="mt-14 pt-8 border-t border-white/[0.06] mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -613,7 +613,7 @@ export default function RelanceLinkedInB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

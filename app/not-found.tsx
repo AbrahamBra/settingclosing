@@ -19,7 +19,7 @@ export default function NotFound() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-white font-sans font-semibold text-sm hover:bg-accent-hover transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-accent text-text-primary font-sans font-semibold text-sm hover:bg-accent-hover transition-colors"
             >
               Retour à l'accueil
             </a>

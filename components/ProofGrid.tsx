@@ -37,7 +37,7 @@ export function ProofGrid() {
           <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
             Preuves
           </p>
-          <h2 className="font-serif text-h2 text-white mb-4">
+          <h2 className="font-serif text-h2 text-text-primary mb-4">
             Ça ressemble à quoi concrètement ?
           </h2>
           <p className="font-sans text-text-muted text-lg max-w-2xl mx-auto">
@@ -54,7 +54,7 @@ export function ProofGrid() {
                   <span className="text-3xl">{proof.icon}</span>
                   <span className="text-text-muted text-sm">{proof.placeholder}</span>
                 </div>
-                <h4 className="text-white font-semibold mb-1">{proof.title}</h4>
+                <h4 className="text-text-primary font-semibold mb-1">{proof.title}</h4>
                 <p className="text-text-muted text-sm">{proof.desc}</p>
               </DarkCard>
             ))}

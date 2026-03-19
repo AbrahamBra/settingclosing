@@ -26,7 +26,7 @@ export function AuthorBlock({ date, readTime, dateLabel }: AuthorBlockProps) {
         <div className="flex items-center gap-1.5">
           <a
             href="/a-propos"
-            className="font-semibold text-white hover:text-[#C87533] transition-colors text-xs"
+            className="font-semibold text-text-primary hover:text-[#C87533] transition-colors text-xs"
           >
             Abraham
           </a>

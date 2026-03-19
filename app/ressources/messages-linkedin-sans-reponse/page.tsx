@@ -182,7 +182,7 @@ export default function MessagesLinkedInSansReponsePage() {
           </header>
 
           {/* Stat block */}
-          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-black/8">
+          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
             <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
             <p className="font-sans font-semibold text-text-primary mb-1">
               Le taux de réponse moyen sur les messages LinkedIn non personnalisés est inférieur à 3&nbsp;%.
@@ -237,17 +237,17 @@ export default function MessagesLinkedInSansReponsePage() {
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
                 Contexte
               </p>
-              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-black/8 mb-6 font-sans text-sm text-text-muted leading-relaxed">
+              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-white/[0.06] mb-6 font-sans text-sm text-text-muted leading-relaxed">
                 <strong className="text-text-primary font-semibold">Profil :</strong> Directrice d&apos;agence digitale, 12 personnes, clients PME.
                 Post récent : &quot;Nos clients nous posent de plus en plus de questions sur la visibilité IA. On réfléchit à structurer une offre.&quot;
                 Signal : commentaire public → signal moyen/fort.
               </div>
 
               {/* Mauvais draft */}
-              <div className="rounded-xl border border-red-200 bg-red-50/50 overflow-hidden mb-4">
-                <div className="px-6 py-3 border-b border-red-200 flex items-center gap-2">
+              <div className="rounded-xl border border-red-500/20 bg-red-500/5 overflow-hidden mb-4">
+                <div className="px-6 py-3 border-b border-red-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-red-400 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-red-600 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-red-400 uppercase tracking-widest">
                     Premier draft — à ne pas envoyer
                   </p>
                 </div>
@@ -263,7 +263,7 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
 
               {/* Analyse */}
-              <div className="rounded-xl border border-black/8 bg-bg-secondary px-6 py-5 mb-4">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5 mb-4">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">
                   Pourquoi c&apos;est faux
                 </p>
@@ -283,10 +283,10 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
 
               {/* Version corrigée */}
-              <div className="rounded-xl border border-green-200 bg-green-50/50 overflow-hidden">
-                <div className="px-6 py-3 border-b border-green-200 flex items-center gap-2">
+              <div className="rounded-xl border border-green-500/20 bg-green-500/5 overflow-hidden">
+                <div className="px-6 py-3 border-b border-green-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-green-700 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-green-400 uppercase tracking-widest">
                     Version corrigée — à envoyer
                   </p>
                 </div>
@@ -305,7 +305,7 @@ export default function MessagesLinkedInSansReponsePage() {
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
                 Contexte
               </p>
-              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-black/8 mb-6 font-sans text-sm text-text-muted leading-relaxed">
+              <div className="bg-bg-secondary rounded-xl px-6 py-4 border border-white/[0.06] mb-6 font-sans text-sm text-text-muted leading-relaxed">
                 <strong className="text-text-primary font-semibold">Profil :</strong> Consultant indépendant, spécialisé B2B.
                 Post récent liké : question sur les LLC et la structuration juridique à l&apos;international.
                 Connexion commune avec un client existant.
@@ -313,10 +313,10 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
 
               {/* Mauvais draft */}
-              <div className="rounded-xl border border-red-200 bg-red-50/50 overflow-hidden mb-4">
-                <div className="px-6 py-3 border-b border-red-200 flex items-center gap-2">
+              <div className="rounded-xl border border-red-500/20 bg-red-500/5 overflow-hidden mb-4">
+                <div className="px-6 py-3 border-b border-red-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-red-400 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-red-600 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-red-400 uppercase tracking-widest">
                     Premier draft — à ne pas envoyer
                   </p>
                 </div>
@@ -331,7 +331,7 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
 
               {/* Analyse */}
-              <div className="rounded-xl border border-black/8 bg-bg-secondary px-6 py-5 mb-4">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5 mb-4">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">
                   Pourquoi c&apos;est faux
                 </p>
@@ -351,10 +351,10 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
 
               {/* Version corrigée */}
-              <div className="rounded-xl border border-green-200 bg-green-50/50 overflow-hidden">
-                <div className="px-6 py-3 border-b border-green-200 flex items-center gap-2">
+              <div className="rounded-xl border border-green-500/20 bg-green-500/5 overflow-hidden">
+                <div className="px-6 py-3 border-b border-green-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-green-500 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-green-700 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-green-400 uppercase tracking-widest">
                     Version corrigée — à envoyer
                   </p>
                 </div>
@@ -385,10 +385,10 @@ export default function MessagesLinkedInSansReponsePage() {
             {/* Comparison cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
               {/* Mode One Shot */}
-              <div className="rounded-xl border border-blue-200/60 bg-blue-50/30 overflow-hidden">
-                <div className="px-5 py-3 border-b border-blue-200/60 flex items-center gap-2">
+              <div className="rounded-xl border border-blue-500/20 bg-blue-500/5 overflow-hidden">
+                <div className="px-5 py-3 border-b border-blue-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-blue-400 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-blue-600 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-blue-400 uppercase tracking-widest">
                     Mode One Shot — Tier 1
                   </p>
                 </div>
@@ -404,7 +404,7 @@ export default function MessagesLinkedInSansReponsePage() {
                     pas de phase de découverte en DM. Un message, une question de qualification directe,
                     un appel proposé.
                   </p>
-                  <div className="rounded-lg border border-blue-200/40 bg-white/60 px-4 py-4">
+                  <div className="rounded-lg border border-blue-500/15 bg-white/[0.03] px-4 py-4">
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
                       Structure
                     </p>
@@ -425,10 +425,10 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
 
               {/* Mode Conversation */}
-              <div className="rounded-xl border border-amber-200/60 bg-amber-50/30 overflow-hidden">
-                <div className="px-5 py-3 border-b border-amber-200/60 flex items-center gap-2">
+              <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 overflow-hidden">
+                <div className="px-5 py-3 border-b border-amber-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-amber-600 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-amber-400 uppercase tracking-widest">
                     Mode Conversation — Tier 2 / 3
                   </p>
                 </div>
@@ -444,7 +444,7 @@ export default function MessagesLinkedInSansReponsePage() {
                     dans le premier message — ce serait aller trop vite. On teste l&apos;intérêt
                     avant de proposer quoi que ce soit.
                   </p>
-                  <div className="rounded-lg border border-amber-200/40 bg-white/60 px-4 py-4">
+                  <div className="rounded-lg border border-amber-500/15 bg-white/[0.03] px-4 py-4">
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
                       Structure
                     </p>
@@ -472,10 +472,10 @@ export default function MessagesLinkedInSansReponsePage() {
 
             <div className="space-y-4 mb-6">
               {/* One Shot example */}
-              <div className="rounded-xl border border-blue-200/60 bg-blue-50/30 overflow-hidden">
-                <div className="px-5 py-3 border-b border-blue-200/60 flex items-center gap-2">
+              <div className="rounded-xl border border-blue-500/20 bg-blue-500/5 overflow-hidden">
+                <div className="px-5 py-3 border-b border-blue-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-blue-400 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-blue-600 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-blue-400 uppercase tracking-widest">
                     One Shot — Signal fort (a commenté : &quot;on cherche exactement ça&quot;)
                   </p>
                 </div>
@@ -490,10 +490,10 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
 
               {/* Conversation example */}
-              <div className="rounded-xl border border-amber-200/60 bg-amber-50/30 overflow-hidden">
-                <div className="px-5 py-3 border-b border-amber-200/60 flex items-center gap-2">
+              <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 overflow-hidden">
+                <div className="px-5 py-3 border-b border-amber-500/20 flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-400 shrink-0" />
-                  <p className="font-sans text-xs font-semibold text-amber-600 uppercase tracking-widest">
+                  <p className="font-sans text-xs font-semibold text-amber-400 uppercase tracking-widest">
                     Conversation — Signal faible (like sur un post, pas de commentaire)
                   </p>
                 </div>
@@ -507,7 +507,7 @@ export default function MessagesLinkedInSansReponsePage() {
               </div>
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Le mode détermine aussi la suite de la conversation.
@@ -534,7 +534,7 @@ export default function MessagesLinkedInSansReponsePage() {
                 { rule: '5 phrases max en outbound, 3 en inbound', detail: "Au-delà, le taux de réponse chute mécaniquement." },
                 { rule: 'Test du téléphone avant envoi', detail: "Ce message pourrait-il être envoyé depuis mon téléphone un mardi matin ? Si non, réécrivez." },
               ].map((item, i) => (
-                <div key={i} className="flex gap-3 py-3 border-b border-black/6 last:border-0">
+                <div key={i} className="flex gap-3 py-3 border-b border-white/[0.06] last:border-0">
                   <span className="text-accent shrink-0 mt-0.5 font-semibold">→</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-0.5">{item.rule}</p>
@@ -570,7 +570,7 @@ export default function MessagesLinkedInSansReponsePage() {
               Pour comprendre comment les trois couches s&apos;articulent — détection des signaux, scoring, phases de calibration et de scaling — voir <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn</a>.
             </p>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les équipes qui utilisent l&apos;IA comme co-rédacteur (avec validation humaine)
@@ -587,7 +587,7 @@ export default function MessagesLinkedInSansReponsePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -602,7 +602,7 @@ export default function MessagesLinkedInSansReponsePage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -620,7 +620,7 @@ export default function MessagesLinkedInSansReponsePage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

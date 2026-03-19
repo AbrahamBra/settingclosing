@@ -162,19 +162,19 @@ export default function ProspectionLinkedInB2BPage() {
 
           {/* Bloc stats */}
           <div className="grid grid-cols-3 gap-4 mb-14">
-            <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-black/8 text-center">
+            <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-white/[0.06] text-center">
               <p className="font-serif text-3xl font-semibold text-accent mb-1">&lt;&nbsp;3&nbsp;%</p>
               <p className="font-sans text-xs text-text-muted leading-snug">
                 Taux de réponse sans méthode
               </p>
             </div>
-            <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-black/8 text-center">
+            <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-white/[0.06] text-center">
               <p className="font-serif text-3xl font-semibold text-accent mb-1">&gt;&nbsp;20&nbsp;%</p>
               <p className="font-sans text-xs text-text-muted leading-snug">
                 Avec signal + message calibré
               </p>
             </div>
-            <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-black/8 text-center">
+            <div className="bg-bg-secondary rounded-xl px-5 py-5 border border-white/[0.06] text-center">
               <p className="font-serif text-3xl font-semibold text-accent mb-1">Sem.&nbsp;1</p>
               <p className="font-sans text-xs text-text-muted leading-snug">
                 Premiers RDV dès la semaine 1
@@ -227,8 +227,8 @@ export default function ProspectionLinkedInB2BPage() {
             <div className="space-y-6">
 
               {/* Signal inbound */}
-              <div className="rounded-xl border border-black/8 bg-bg-secondary overflow-hidden">
-                <div className="px-6 py-4 border-b border-black/8 flex items-center justify-between">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                <div className="px-6 py-4 border-b border-white/[0.06] flex items-center justify-between">
                   <p className="font-sans font-semibold text-text-primary">Signal inbound</p>
                   <span className="font-sans text-xs text-accent font-semibold uppercase tracking-widest">
                     Votre contenu
@@ -251,8 +251,8 @@ export default function ProspectionLinkedInB2BPage() {
               </div>
 
               {/* Signal outbound/tiers */}
-              <div className="rounded-xl border border-black/8 bg-bg-secondary overflow-hidden">
-                <div className="px-6 py-4 border-b border-black/8 flex items-center justify-between">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                <div className="px-6 py-4 border-b border-white/[0.06] flex items-center justify-between">
                   <p className="font-sans font-semibold text-text-primary">Signal tiers</p>
                   <span className="font-sans text-xs text-accent font-semibold uppercase tracking-widest">
                     Comptes surveillés
@@ -283,7 +283,7 @@ export default function ProspectionLinkedInB2BPage() {
 
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les deux flux se complètent. Aucun ne suffit seul.
@@ -314,7 +314,7 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4 mb-6">
-              <div className="rounded-xl border border-black/8 bg-bg-secondary px-5 py-5">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-5 py-5">
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">Ce que Sales Navigator fait</p>
                 <ul className="space-y-2">
                   {[
@@ -331,7 +331,7 @@ export default function ProspectionLinkedInB2BPage() {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-xl border border-black/8 bg-bg-secondary px-5 py-5">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-5 py-5">
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">Ce qu&apos;il ne fait pas seul</p>
                 <ul className="space-y-2">
                   {[
@@ -393,7 +393,7 @@ export default function ProspectionLinkedInB2BPage() {
                   detail: "\"J'espère que vous allez bien\", \"je me permets de vous contacter\" : ce sont des marqueurs d'email automatique. Le prospect les identifie en une seconde. L'effet de personnalisation disparaît immédiatement.",
                 },
               ].map((item, i) => (
-                <div key={i} className="flex gap-3 py-3 border-b border-black/6 last:border-0">
+                <div key={i} className="flex gap-3 py-3 border-b border-white/[0.06] last:border-0">
                   <span className="text-accent shrink-0 mt-0.5 font-semibold">→</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm mb-0.5">{item.rule}</p>
@@ -408,10 +408,10 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
 
             {/* Mauvais */}
-            <div className="rounded-xl border border-red-200 bg-red-50/50 overflow-hidden mb-4">
-              <div className="px-6 py-3 border-b border-red-200 flex items-center gap-2">
+            <div className="rounded-xl border border-red-500/20 bg-red-500/5 overflow-hidden mb-4">
+              <div className="px-6 py-3 border-b border-red-500/20 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-red-400 shrink-0" />
-                <p className="font-sans text-xs font-semibold text-red-600 uppercase tracking-widest">
+                <p className="font-sans text-xs font-semibold text-red-400 uppercase tracking-widest">
                   À ne pas envoyer
                 </p>
               </div>
@@ -427,10 +427,10 @@ export default function ProspectionLinkedInB2BPage() {
             </div>
 
             {/* Bon */}
-            <div className="rounded-xl border border-green-200 bg-green-50/50 overflow-hidden mb-8">
-              <div className="px-6 py-3 border-b border-green-200 flex items-center gap-2">
+            <div className="rounded-xl border border-green-500/20 bg-green-500/5 overflow-hidden mb-8">
+              <div className="px-6 py-3 border-b border-green-500/20 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500 shrink-0" />
-                <p className="font-sans text-xs font-semibold text-green-700 uppercase tracking-widest">
+                <p className="font-sans text-xs font-semibold text-green-400 uppercase tracking-widest">
                   Version calibrée
                 </p>
               </div>
@@ -451,8 +451,8 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="rounded-xl border border-blue-200/60 bg-blue-50/30 px-5 py-5">
-                <p className="font-sans text-xs font-semibold text-blue-600 uppercase tracking-widest mb-2">
+              <div className="rounded-xl border border-blue-500/20 bg-blue-500/5 px-5 py-5">
+                <p className="font-sans text-xs font-semibold text-blue-400 uppercase tracking-widest mb-2">
                   Mode One Shot — Signal fort
                 </p>
                 <p className="font-sans text-sm text-text-muted leading-relaxed">
@@ -461,8 +461,8 @@ export default function ProspectionLinkedInB2BPage() {
                   de nurturing — la fenêtre est ouverte, profitez-en.
                 </p>
               </div>
-              <div className="rounded-xl border border-amber-200/60 bg-amber-50/30 px-5 py-5">
-                <p className="font-sans text-xs font-semibold text-amber-600 uppercase tracking-widest mb-2">
+              <div className="rounded-xl border border-amber-500/20 bg-amber-500/5 px-5 py-5">
+                <p className="font-sans text-xs font-semibold text-amber-400 uppercase tracking-widest mb-2">
                   Mode Conversation — Signal faible
                 </p>
                 <p className="font-sans text-sm text-text-muted leading-relaxed">
@@ -501,22 +501,22 @@ export default function ProspectionLinkedInB2BPage() {
                 {
                   label: 'Relance J+3',
                   sub: 'Angle différent — nouvelle observation, autre fait tiré du profil',
-                  color: 'bg-bg-secondary border-black/10 text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
                 },
                 {
                   label: 'Relance J+7',
                   sub: 'Nouvelle information — actu du secteur, déclencheur récent, cas similaire',
-                  color: 'bg-bg-secondary border-black/10 text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
                 },
                 {
                   label: 'Relance J+14',
                   sub: 'Question directe — êtes-vous la bonne personne ? est-ce le bon moment ?',
-                  color: 'bg-bg-secondary border-black/10 text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
                 },
                 {
                   label: 'Relance J+21',
                   sub: 'Fermeture propre — dernier message, porte laissée ouverte, pas de pression',
-                  color: 'bg-bg-secondary border-black/10 text-text-muted',
+                  color: 'bg-bg-secondary border-white/[0.06] text-text-muted',
                 },
               ].map((step, i) => (
                 <div key={i} className="flex gap-4">
@@ -525,7 +525,7 @@ export default function ProspectionLinkedInB2BPage() {
                       {i + 1}
                     </div>
                     {i < 4 && (
-                      <div className="w-px flex-1 my-1.5 bg-black/10" style={{ minHeight: '20px' }} />
+                      <div className="w-px flex-1 my-1.5 bg-white/[0.06]" style={{ minHeight: '20px' }} />
                     )}
                   </div>
                   <div className="pb-5">
@@ -536,7 +536,7 @@ export default function ProspectionLinkedInB2BPage() {
               ))}
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-2 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-2 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les prospects qui ne répondent pas à 4 relances entrent en nurturing newsletter.
@@ -579,7 +579,7 @@ export default function ProspectionLinkedInB2BPage() {
               qui connaît le prospect, envoyez.
             </p>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Le flux : profil → règles + exemples → draft → test voix haute → envoi.
@@ -622,7 +622,7 @@ export default function ProspectionLinkedInB2BPage() {
               La plupart abandonnent avant d&apos;y arriver.
             </p>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Un système se calibre en 8 semaines. Il tourne seul ensuite.
@@ -641,7 +641,7 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -656,7 +656,7 @@ export default function ProspectionLinkedInB2BPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -676,7 +676,7 @@ export default function ProspectionLinkedInB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8 mt-14">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06] mt-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

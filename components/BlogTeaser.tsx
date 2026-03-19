@@ -31,7 +31,7 @@ export function BlogTeaser() {
         {/* Header */}
         <ScrollReveal>
           <div className="flex items-center justify-between mb-10">
-            <h2 className="font-serif text-h2 text-white">Derniers articles</h2>
+            <h2 className="font-serif text-h2 text-text-primary">Derniers articles</h2>
             <Link
               href="/ressources"
               className="font-sans text-accent hover:underline text-sm font-semibold"
@@ -65,7 +65,7 @@ export function BlogTeaser() {
                 {featured.category}
               </span>
 
-              <h3 className="font-serif text-xl text-white mb-2">{featured.title}</h3>
+              <h3 className="font-serif text-xl text-text-primary mb-2">{featured.title}</h3>
               <p className="font-sans text-text-muted text-sm mt-auto">{featured.meta}</p>
             </DarkCard>
           </ScrollReveal>
@@ -94,7 +94,7 @@ export function BlogTeaser() {
                     {article.category}
                   </span>
 
-                  <h4 className="font-sans font-semibold text-white text-sm mb-1.5">
+                  <h4 className="font-sans font-semibold text-text-primary text-sm mb-1.5">
                     {article.title}
                   </h4>
                   <p className="font-sans text-text-muted text-xs">{article.meta}</p>

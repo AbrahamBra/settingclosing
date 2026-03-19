@@ -114,14 +114,14 @@ export function BlogContent() {
         <ol className="flex items-center gap-2 font-sans text-xs text-text-muted">
           <li><a href="/" className="hover:text-white transition-colors">Accueil</a></li>
           <li aria-hidden="true" className="select-none">&rsaquo;</li>
-          <li className="text-white">Ressources</li>
+          <li className="text-text-primary">Ressources</li>
         </ol>
       </nav>
 
       {/* Page header */}
       <ScrollReveal>
         <header className="mb-16 max-w-2xl">
-          <h1 className="font-sans font-extrabold text-4xl md:text-5xl text-white mb-4 tracking-tight">
+          <h1 className="font-sans font-extrabold text-4xl md:text-5xl text-text-primary mb-4 tracking-tight">
             Ressources
           </h1>
           <p className="font-sans text-text-muted text-lg leading-relaxed">
@@ -139,7 +139,7 @@ export function BlogContent() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-[#C87533] mb-3">
                   À la une &middot; Formation &middot; 15 min
                 </p>
-                <h2 className="font-sans font-extrabold text-2xl md:text-3xl text-white mb-3 group-hover:text-[#C87533] transition-colors leading-tight">
+                <h2 className="font-sans font-extrabold text-2xl md:text-3xl text-text-primary mb-3 group-hover:text-[#C87533] transition-colors leading-tight">
                   Devenir Business Developer en 2026
                 </h2>
                 <p className="font-sans text-text-muted leading-relaxed text-sm md:text-base max-w-xl">
@@ -166,7 +166,7 @@ export function BlogContent() {
                 >
                   {guide.label} &middot; {guide.readTime}
                 </p>
-                <h2 className="font-sans font-semibold text-lg text-white mb-4 group-hover:text-[#C87533] transition-colors leading-snug flex-1">
+                <h2 className="font-sans font-semibold text-lg text-text-primary mb-4 group-hover:text-[#C87533] transition-colors leading-snug flex-1">
                   {guide.title}
                 </h2>
                 <span
@@ -226,7 +226,7 @@ export function BlogContent() {
                   </div>
 
                   <div className="p-5 flex flex-col flex-1">
-                    <h3 className="font-sans font-semibold text-white text-sm leading-snug mb-3 group-hover:text-[#C87533] transition-colors flex-1">
+                    <h3 className="font-sans font-semibold text-text-primary text-sm leading-snug mb-3 group-hover:text-[#C87533] transition-colors flex-1">
                       {article.title}
                     </h3>
                     <div className="flex items-center justify-between">
