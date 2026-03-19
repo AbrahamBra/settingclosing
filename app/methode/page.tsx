@@ -5,7 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { PipelineStep } from '@/components/PipelineStep'
 import { PhaseNav } from '@/components/ui/PhaseNav'
-import { layerConfig, closingTiers, settingSteps } from '@/lib/pipeline-data'
+import { layerConfig, settingSteps } from '@/lib/pipeline-data'
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
@@ -169,74 +169,6 @@ export default function MethodePage() {
             </div>
           </section>
         ))}
-
-        {/* ── Closing section ──────────────────────────────────────────────── */}
-        <section className="bg-bg-primary section-padding">
-          <div className="container-max">
-            <ScrollReveal>
-              <div className="flex items-center gap-3 mb-8">
-                <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-semantic-humain/20 bg-semantic-humain/10 font-sans text-xs font-semibold uppercase tracking-widest text-semantic-humain">
-                  🤝 Pipeline Closing
-                </span>
-                <div className="flex-1 h-px bg-white/[0.06]" />
-              </div>
-            </ScrollReveal>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-              {closingTiers.map((tier, i) => (
-                <ScrollReveal key={tier.level} delay={i * 100}>
-                  <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-5 h-full">
-                    {/* Top accent bar */}
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-semantic-humain" />
-
-                    {/* Level + threshold */}
-                    <div className="flex items-center justify-between mb-3 mt-1">
-                      <span className="text-semantic-humain text-xs font-semibold uppercase tracking-widest">
-                        {tier.level}
-                      </span>
-                      <span className="font-mono text-xs font-bold text-semantic-info bg-semantic-info/10 px-2 py-0.5 rounded">
-                        {tier.threshold}
-                      </span>
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="text-text-primary font-semibold text-base mb-2">{tier.label}</h3>
-
-                    {/* Layer tags */}
-                    <div className="flex flex-wrap gap-1.5 mb-3">
-                      {tier.layers.map((layer) => {
-                        const cfg = layerConfig[layer]
-                        return (
-                          <span
-                            key={layer}
-                            className={`text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded border ${cfg.bg} ${cfg.border} ${cfg.text}`}
-                          >
-                            {cfg.label}
-                          </span>
-                        )
-                      })}
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-text-secondary text-sm leading-relaxed mb-4">{tier.desc}</p>
-
-                    {/* Tool pills */}
-                    <div className="flex flex-wrap gap-1.5">
-                      {tier.tools.map((tool) => (
-                        <span
-                          key={tool}
-                          className="font-mono text-[10px] px-2 py-0.5 rounded border transition-all duration-200 hover:scale-105 hover:border-semantic-humain/40 text-semantic-humain bg-semantic-humain/10 border-semantic-humain/20"
-                        >
-                          {tool}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* ── CTA ─────────────────────────────────────────────────────────── */}
         <section className="bg-bg-secondary section-padding">
