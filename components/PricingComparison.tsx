@@ -108,7 +108,7 @@ export function PricingComparison() {
                   <div>
                     <p className="font-sans text-text-muted text-sm mb-1">Format</p>
                     <p className="font-sans text-text-primary font-semibold text-sm mb-2">
-                      2h de coaching par semaine
+                      À partir de 2h de coaching par semaine
                     </p>
                     <div className="flex gap-2 font-sans text-text-muted text-xs mb-1.5">
                       <span style={{ color: '#34D399' }} className="shrink-0">→</span>
