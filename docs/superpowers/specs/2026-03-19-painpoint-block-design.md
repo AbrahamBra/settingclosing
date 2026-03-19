@@ -24,7 +24,7 @@ Empathique-lucide. On reconnaît que le prospect est submergé d'outils et de pr
 
 ## Fichier
 
-`components/PainPoint.tsx` — composant `'use client'` (nécessaire pour Framer Motion)
+`components/PainPoint.tsx` — composant serveur (utilise uniquement `ScrollReveal`, pas de Framer Motion directe)
 
 ## Structure
 
@@ -56,7 +56,7 @@ Chaque pill :
 inline-flex items-center gap-1.5
 px-3 py-1.5 rounded-full
 border border-{color}/20
-bg-{color}/8
+bg-{color}/10
 font-sans text-xs font-semibold
 text-{color}
 ```
@@ -65,14 +65,13 @@ Avec un dot (span w-1.5 h-1.5 rounded-full bg-{color}) devant le texte.
 
 ## Animation
 
-- Bloc entier wrappé dans `ScrollReveal` pour apparition au scroll
-- Les 3 pills utilisent `motion.span` (Framer Motion) avec stagger :
-  - Pill 1 : delay 0.1s après entrée dans le viewport
-  - Pill 2 : delay 0.3s
-  - Pill 3 : delay 0.5s
-  - Transition : `opacity: 0 → 1`, `y: 8 → 0`
-  - Easing : `[0.16, 1, 0.3, 1]` (même courbe que le Hero)
-- Déclenché par `whileInView` avec `once: true`, `margin: "-80px"`
+- Eyebrow, H2, et sous-texte wrappés dans un `ScrollReveal` (pattern existant du projet)
+- Chaque pill wrappée dans son propre `ScrollReveal` avec delay staggeré :
+  - Pill 1 : `delay={100}`
+  - Pill 2 : `delay={300}`
+  - Pill 3 : `delay={500}`
+- Ce pattern est déjà utilisé dans PipelineSection (ex: `<ScrollReveal delay={100}>`)
+- Pas de `whileInView` Framer Motion — on reste sur le seul système d'animation scroll du projet
 
 ## Background
 
