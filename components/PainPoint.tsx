@@ -3,25 +3,25 @@ import { ScrollReveal } from './ui/ScrollReveal'
 const pills = [
   {
     label: 'IA suffit',
-    classes: 'border-semantic-ia/20 bg-semantic-ia/10 text-semantic-ia',
+    classes: 'border border-semantic-ia/20 bg-semantic-ia/10 text-semantic-ia',
     dot: 'bg-semantic-ia',
   },
   {
     label: 'IA à entraîner',
-    classes: 'border-semantic-methode/20 bg-semantic-methode/10 text-semantic-methode',
+    classes: 'border border-semantic-methode/20 bg-semantic-methode/10 text-semantic-methode',
     dot: 'bg-semantic-methode',
   },
   {
     label: "L'humain doit décider",
-    classes: 'border-semantic-humain/20 bg-semantic-humain/10 text-semantic-humain',
+    classes: 'border border-semantic-humain/20 bg-semantic-humain/10 text-semantic-humain',
     dot: 'bg-semantic-humain',
   },
 ]
 
 export function PainPoint() {
   return (
-    <section className="section-padding py-20 text-center">
-      <div className="container-max max-w-2xl mx-auto">
+    <section className="section-padding py-20 lg:py-20 text-center">
+      <div className="max-w-2xl mx-auto">
         <ScrollReveal>
           <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
             Le vrai problème
