@@ -142,6 +142,8 @@ export function PipelineSection() {
             <div className="text-center">
               <Link
                 href="/methode"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-accent hover:text-accent-light transition-colors font-semibold text-sm"
               >
                 Voir les 9 étapes en détail
@@ -161,73 +163,96 @@ export function PipelineSection() {
           </div>
         </ScrollReveal>
 
-        <div className="max-w-4xl mx-auto">
-          {/* Desktop: horizontal progression with arrows */}
-          <div className="hidden md:flex items-stretch gap-0">
-            {closingTiers.map((tier, i) => (
-              <ScrollReveal key={tier.level} delay={i * 100}>
-                <div className="flex items-stretch">
-                  <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-5 flex-1 min-w-[200px]">
-                    {/* Top accent bar */}
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-semantic-humain" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
+          {closingTiers.map((tier, i) => (
+            <ScrollReveal key={tier.level} delay={i * 100}>
+              <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-5 h-full">
+                {/* Top accent bar */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-semantic-humain" />
 
-                    <span className="text-semantic-humain text-xs font-semibold uppercase tracking-widest block mb-2 mt-1">
-                      {tier.level}
-                    </span>
-                    <h3 className="text-text-primary font-semibold text-base mb-1">
-                      {tier.label}
-                    </h3>
-                    <span className="font-mono text-xs font-bold text-semantic-info bg-semantic-info/10 px-2 py-0.5 rounded">
-                      {tier.threshold}
-                    </span>
-                  </div>
-
-                  {/* Arrow connector (not on last item) */}
-                  {i < closingTiers.length - 1 && (
-                    <div className="flex items-center px-3">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-text-muted">
-                        <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
-                  )}
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-
-          {/* Mobile: stacked cards */}
-          <div className="flex flex-col gap-4 md:hidden">
-            {closingTiers.map((tier, i) => (
-              <ScrollReveal key={tier.level} delay={i * 100}>
-                <div className="relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] p-5">
-                  {/* Top accent bar */}
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-semantic-humain" />
-
-                  <div className="flex items-center justify-between mt-1">
-                    <span className="text-semantic-humain text-xs font-semibold uppercase tracking-widest">
-                      {tier.level}
-                    </span>
-                    <span className="font-mono text-xs font-bold text-semantic-info bg-semantic-info/10 px-2 py-0.5 rounded">
-                      {tier.threshold}
-                    </span>
-                  </div>
-                  <h3 className="text-text-primary font-semibold text-base mt-2">
-                    {tier.label}
-                  </h3>
+                {/* Level + threshold */}
+                <div className="flex items-center justify-between mb-3 mt-1">
+                  <span className="text-semantic-humain text-xs font-semibold uppercase tracking-widest">
+                    {tier.level}
+                  </span>
+                  <span className="font-mono text-xs font-bold text-semantic-info bg-semantic-info/10 px-2 py-0.5 rounded">
+                    {tier.threshold}
+                  </span>
                 </div>
 
-                {/* Arrow between cards */}
-                {i < closingTiers.length - 1 && (
-                  <div className="flex justify-center py-2">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="text-text-muted rotate-90">
-                      <path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-                )}
-              </ScrollReveal>
-            ))}
-          </div>
+                {/* Title */}
+                <h3 className="text-text-primary font-semibold text-base mb-2">{tier.label}</h3>
+
+                {/* Description */}
+                <p className="text-text-secondary text-sm leading-relaxed">{tier.desc}</p>
+              </div>
+            </ScrollReveal>
+          ))}
         </div>
+
+        {/* Closing showcase — "En pratique" */}
+        <ScrollReveal delay={100}>
+          <div className="mt-12 max-w-4xl mx-auto">
+            <h3 className="text-text-primary font-semibold text-lg mb-6 text-center">
+              En pratique, c&ocirc;té closing
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Card 1 — On assiste au RDV */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">🎥</span>
+                    <span className="text-text-muted text-sm">Screenshot appel à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    On assiste à votre appel
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    On observe votre discovery en direct, ou on mène l&apos;appel de A à Z pendant que vous êtes en second. Débrief juste après pour ajuster.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 2 — Coaching en visio */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">🖥️</span>
+                    <span className="text-text-muted text-sm">Extrait vidéo coaching à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    Coaching en visio, chaque semaine
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    1h en face à face. On décortique vos appels, on travaille le pricing, on répète jusqu&apos;à ce que ça devienne naturel.
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 — On forme vos closers */}
+              <div className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03]">
+                <div className="aspect-video bg-surface-hover flex items-center justify-center">
+                  <div className="text-center px-6">
+                    <span className="text-4xl block mb-3">🎓</span>
+                    <span className="text-text-muted text-sm">Vidéo formation closers à venir</span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-text-primary font-semibold text-sm mb-1">
+                    On forme vos closers
+                  </p>
+                  <p className="text-text-secondary text-xs leading-relaxed">
+                    Une fois la discovery et le pricing maîtrisés, on forme des closers dans votre équipe pour prendre le relais.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
 
         {/* ── Bloc 5 : CTA unifié ── */}
         <ScrollReveal delay={100}>
