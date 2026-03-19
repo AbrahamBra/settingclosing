@@ -41,7 +41,7 @@ export function MethodBlock() {
               Vous en &ecirc;tes o&ugrave;&nbsp;?
             </h2>
             <p className="text-sm text-text-secondary leading-relaxed">
-              L&apos;IA d&eacute;tecte, la m&eacute;thode structure, l&apos;humain d&eacute;cide &mdash; quel que soit votre niveau.
+              On utilise l&apos;IA pour rep&eacute;rer les bons prospects. Mais c&apos;est toujours un humain qui valide et qui envoie.
             </p>
           </div>
         </ScrollReveal>

@@ -2,17 +2,17 @@ const members = [
   {
     name: 'Brahim',
     role: 'Setting',
-    desc: 'Premier contact, qualification, signaux d\u2019achat. Il ouvre les portes.',
+    desc: 'C\u2019est lui qui envoie les messages, qualifie les prospects et vous d\u00e9croche des RDV.',
   },
   {
     name: 'Abraham',
     role: 'IA & Automatisation',
-    desc: 'Systèmes, automatisations, IA. Il fait tourner la machine.',
+    desc: 'Il construit les outils de ciblage et les automatisations qui font gagner du temps au reste de l\u2019\u00e9quipe.',
   },
   {
     name: 'Abdelhay',
-    role: 'Stratégie commerciale',
-    desc: 'Négociation, conversion, stratégie. Il structure les deals.',
+    role: 'Strat\u00e9gie commerciale',
+    desc: 'Il d\u00e9finit l\u2019angle commercial, les scripts et la strat\u00e9gie de conversion.',
   },
 ]
 
@@ -24,7 +24,7 @@ export function TeamBanner() {
           L&apos;équipe
         </p>
         <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4 text-center">
-          Trois expertises, un pipeline
+          Qui fait quoi
         </h2>
         <p className="font-sans text-text-muted text-center max-w-xl mx-auto mb-14">
           Chacun fait ce qu&apos;il sait faire. Le système tourne parce que les

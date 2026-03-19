@@ -52,7 +52,7 @@ export const settingSteps = [
     num: '02',
     label: 'Signaux inbound',
     layers: ['ia'] as const,
-    desc: "Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel type de contenu. On traque aussi les lead magnets à succès pour maximiser la prise de RDV — le scoring fait toute la différence : LinkedIn limite les demandes d'ajout par semaine et la messagerie devient vite ingérable sans priorisation.",
+    desc: "Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel type de contenu. On traque aussi les lead magnets à succès pour maximiser la prise de RDV — sans scoring, la messagerie devient ing\u00e9rable en 48h. LinkedIn limite les demandes d\u2019ajout par semaine, donc chaque cr\u00e9neau compte.",
     tools: ['Reactin', 'Lead magnets', 'Scoring'],
     pedagogy: {
       mistake: "Scraper toutes les interactions sur vos posts LinkedIn et les exporter dans un tableur. 200 likes cette semaine. Et après ? Un like n'est pas un signal d'achat. Un commentaire qui décrit un problème concret, oui. Sans taxonomie de signaux — inbound (réactions à vos posts) vs tiers (réactions sur les posts de vos concurrents) — vous noyez les vrais signaux dans le bruit.",
@@ -100,7 +100,7 @@ export const settingSteps = [
     tools: ['Claude Skill', 'Journal de bord'],
     pedagogy: {
       mistake: "Demander à ChatGPT de rédiger \"en tant qu'expert cybersécurité.\" L'IA invente un jargon plausible mais faux. Elle ne sait pas que vos prospects disent \"stack\" et pas \"infrastructure\", qu'ils se plaignent de la \"dette technique\" et pas de la \"complexité opérationnelle.\" Le prospect du métier repère l'imposture en 3 secondes.",
-      arbitrage: "Le skill se construit dans le temps. Mois 1, il est générique. Mois 2, il a intégré les vrais mots de vos prospects, les objections qui reviennent (\"on a déjà un prestataire\", \"pas le bon timing\"), et les formulations qui ont décroché des réponses. C'est une base de connaissance vivante, pas un prompt figé.",
+      arbitrage: "Le skill se construit dans le temps. Mois 1, il est générique. Mois 2, il a intégré les vrais mots de vos prospects, les objections qui reviennent (\"on a déjà un prestataire\", \"pas le bon timing\"), et les formulations qui ont décroché des réponses. Apr\u00e8s 2 mois, le skill conna\u00eet vos prospects mieux qu\u2019un commercial qui d\u00e9barque.",
     },
   },
   {
@@ -111,7 +111,7 @@ export const settingSteps = [
     tools: ['Claude', 'Règles méthode'],
     pedagogy: {
       mistake: "Générer 50 variantes et A/B tester au volume. \"Bonjour [Prénom], j'ai vu votre profil et je pense que [proposition de valeur].\" Il en reçoit 12 par semaine. Le problème n'est pas le message en soi : 80% des commerciaux abandonnent après 2-3 contacts, alors qu'il en faut 8 en moyenne avant d'obtenir un RDV.",
-      arbitrage: "La méthode impose 5 phrases max, la 2e phrase cite un fait précis tiré du profil, jamais de pitch dans le premier DM. Mais surtout, on planifie la séquence complète : message 1 = ouverture, relance à J+5, interaction sur un post entre-temps, nouveau message à J+12. L'IA structure chaque étape, la méthode cadre la séquence.",
+      arbitrage: "La méthode impose 5 phrases max, la 2e phrase cite un fait précis tiré du profil, jamais de pitch dans le premier DM. Mais surtout, on planifie la séquence complète : message 1 = ouverture, relance à J+5, interaction sur un post entre-temps, nouveau message à J+12. L\u2019IA propose la s\u00e9quence, les r\u00e8gles de m\u00e9thode d\u00e9cident si elle tient la route.",
     },
   },
   {
@@ -122,7 +122,7 @@ export const settingSteps = [
     tools: ['Validation humaine'],
     pedagogy: {
       mistake: "Automatiser l'envoi. Le message part sans relecture. Un mauvais prénom, une référence à un post que la personne n'a pas écrit. La coquille se corrige. Le ton, non. Un message qui sent l'automatisation grille votre image auprès d'un décideur que vous mettrez 6 mois à recroiser.",
-      arbitrage: "Test du téléphone : si ça ne sonne pas naturel dit à voix haute, on réécrit. L'IA n'intervient plus ici. Un humain valide chaque envoi. La seule étape du pipeline qui est 100% manuelle, et celle qui protège tout le reste.",
+      arbitrage: "Test du téléphone : si ça ne sonne pas naturel dit à voix haute, on réécrit. L'IA n'intervient plus ici. Un humain valide chaque envoi. C\u2019est la seule \u00e9tape 100% manuelle. Si le message ne passe pas le test, il ne part pas.",
     },
   },
   {

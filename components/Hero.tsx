@@ -81,7 +81,7 @@ export function Hero() {
               </motion.span>
             </AnimatePresence>
           </span>
-          <span>qui ont une offre qui marche — et veulent remplir leur agenda.</span>
+          <span>qui ont une offre qui marche, et veulent remplir leur agenda.</span>
         </motion.div>
 
         <motion.div

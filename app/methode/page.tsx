@@ -101,12 +101,11 @@ export default function MethodePage() {
                 Notre méthode
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                9 étapes. 3 couches. Zéro message sans validation humaine.
+                9 &eacute;tapes pour remplir votre agenda. Aucun message ne part sans validation humaine.
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                Chaque étape du pipeline combine trois couches : l&apos;IA détecte et co-rédige,
-                la méthode filtre et calibre, l&apos;humain valide et décide. Aucun message ne part sans
-                avoir traversé les trois.
+                L&apos;IA rep&egrave;re les bons profils et propose des drafts. Nos r&egrave;gles de m&eacute;thode filtrent
+                ce qui est pertinent. Un humain relit et valide chaque envoi. Rien n&apos;est automatis&eacute; de bout en bout.
               </p>
 
               {/* Layer legend */}

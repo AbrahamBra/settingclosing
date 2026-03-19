@@ -42,7 +42,7 @@ export function FAQ() {
               Questions fréquentes
             </p>
             <h2 className="font-sans text-h2 text-text-primary">
-              Tout ce que vous devez savoir
+              On r&eacute;pond avant que vous demandiez
             </h2>
           </div>
         </ScrollReveal>

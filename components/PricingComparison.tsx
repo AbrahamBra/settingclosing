@@ -168,7 +168,7 @@ export function PricingComparison() {
                     Setup Nurturing
                   </p>
                   <h3 className="font-sans text-xl font-bold text-text-primary">
-                    Votre base de leads. Notre syst&egrave;me.
+                    On transforme vos contacts en RDV.
                   </h3>
                 </div>
 
@@ -203,7 +203,7 @@ export function PricingComparison() {
 
                 {/* Cyclical */}
                 <p className="font-sans text-text-muted text-xs italic">
-                  Un syst&egrave;me qui s&apos;affine &agrave; chaque cycle. Plus le temps passe, plus la machine est efficace.
+                  Le syst&egrave;me s&apos;affine avec vos donn&eacute;es. Au bout de 3 mois, le scoring est cal&eacute; sur votre march&eacute;.
                 </p>
 
                 {/* CTA */}
