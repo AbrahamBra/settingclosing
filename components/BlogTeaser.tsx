@@ -13,13 +13,13 @@ const articles = [
   {
     category: 'Setting',
     categoryColor: '#A78BFA',
-    title: 'Le Setter B2B : architecte de la prise de RDV qualifié',
+    title: 'Setter B2B : comment on prend des RDV pour nos clients',
     meta: '8 min',
   },
   {
     category: 'Closing',
     categoryColor: '#34D399',
-    title: 'Challenger Sale : transformer vos appels en closing',
+    title: 'Closer avec la méthode Challenger Sale',
     meta: '10 min',
   },
 ]

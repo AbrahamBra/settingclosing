@@ -2,7 +2,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 
 const stats = [
   { value: '20+', label: 'entrepreneurs accompagnés' },
-  { value: '400+', label: 'RDV qualifiés générés' },
+  { value: '400+', label: 'RDV qualifiés livrés' },
   { value: '<7j', label: 'avant les premiers résultats' },
 ]
 

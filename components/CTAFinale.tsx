@@ -113,7 +113,7 @@ export function CTAFinale() {
           <ScrollReveal>
             <div className="bg-bg-secondary p-10 border-b md:border-b-0 md:border-r border-black/8">
               <h3 className="font-sans font-semibold text-h3 text-white mb-8">
-                Nous contacter
+                Contactez-nous
               </h3>
 
               {state === 'success' ? (
@@ -171,7 +171,7 @@ export function CTAFinale() {
                   </div>
 
                   <div>
-                    <p className="font-sans text-sm text-text-muted mb-3">Vous intéresse * :</p>
+                    <p className="font-sans text-sm text-text-muted mb-3">Ce qui vous intéresse *</p>
                     <div className="flex flex-wrap gap-3" role="radiogroup" aria-label="Service souhaité">
                       {(['setting', 'closing', 'les_deux'] as Interest[]).map((value) => {
                         const labels: Record<Interest, string> = {
