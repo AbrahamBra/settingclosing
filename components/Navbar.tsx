@@ -26,7 +26,6 @@ export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' 
     { label: 'Méthode', href: '/methode' },
     { label: 'Offres', href: '/#pricing' },
     { label: 'Ressources', href: '/ressources' },
-    { label: 'À propos', href: '/a-propos' },
   ]
 
   const isActive = (href: string) => {

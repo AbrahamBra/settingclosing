@@ -15,7 +15,7 @@ export function Footer() {
               <a href="/ressources" className="hover:text-text-primary transition-colors">Ressources</a>
               <a href="/methode" className="hover:text-text-primary transition-colors">Notre méthode</a>
               <a href="/glossaire" className="hover:text-text-primary transition-colors">Glossaire</a>
-              <a href="/a-propos" className="hover:text-text-primary transition-colors">À propos</a>
+              <a href="/#equipe" className="hover:text-text-primary transition-colors">L&apos;équipe</a>
             </div>
             <div className="flex flex-col gap-2">
               <p className="text-text-primary font-semibold mb-1">Contact</p>

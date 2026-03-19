@@ -9,6 +9,7 @@ import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
 import { CursorGlowClient } from '@/components/CursorGlowClient'
 import { MethodBlock } from '@/components/MethodBlock'
+import { TeamBanner } from '@/components/TeamBanner'
 
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
@@ -30,6 +31,7 @@ export default function Home() {
         <MethodBlock />
         <PipelineSection />
         <PricingComparison />
+        <TeamBanner />
         <CTAFinale />
         <BlogTeaser />
       </main>
