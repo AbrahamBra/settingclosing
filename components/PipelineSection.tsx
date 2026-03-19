@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { ScrollReveal } from './ui/ScrollReveal'
 import { ButtonGlow } from './ui/ButtonGlow'
 import { closingTiers } from '@/lib/pipeline-data'
@@ -168,40 +167,6 @@ export function PipelineSection() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </ScrollReveal>
-
-        {/* ── Bloc 3 : Légende 3 couches + lien /methode ── */}
-        <ScrollReveal delay={100}>
-          <div className="mt-12 mb-16">
-            {/* Layer pills */}
-            <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-semantic-ia/20 bg-semantic-ia/10 font-mono text-xs text-semantic-ia">
-                <span className="w-2 h-2 rounded-full bg-semantic-ia" />
-                IA détecte
-              </span>
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-semantic-methode/20 bg-semantic-methode/10 font-mono text-xs text-semantic-methode">
-                <span className="w-2 h-2 rounded-full bg-semantic-methode" />
-                Méthode qualifie
-              </span>
-              <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-semantic-humain/20 bg-semantic-humain/10 font-mono text-xs text-semantic-humain">
-                <span className="w-2 h-2 rounded-full bg-semantic-humain" />
-                Humain valide
-              </span>
-            </div>
-
-            {/* Link to /methode */}
-            <div className="text-center">
-              <Link
-                href="/methode"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-accent hover:text-accent-light transition-colors font-semibold text-sm"
-              >
-                Voir les 9 étapes en détail
-                <span aria-hidden="true">→</span>
-              </Link>
             </div>
           </div>
         </ScrollReveal>
