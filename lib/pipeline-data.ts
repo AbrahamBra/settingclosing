@@ -1,4 +1,4 @@
-// Shared pipeline data used by PipelineSection (homepage) and /methode page
+// Shared pipeline data used by OfferLadder and /methode page
 
 export const layerConfig = {
   ia: { label: 'IA', text: 'text-semantic-ia', bg: 'bg-semantic-ia/10', border: 'border-semantic-ia/20' },
@@ -8,33 +8,6 @@ export const layerConfig = {
 } as const
 
 export type LayerKey = keyof typeof layerConfig
-
-export const closingTiers = [
-  {
-    level: 'Niveau 1',
-    label: 'Closer la discovery',
-    threshold: '2k – 5k€',
-    layers: ['methode', 'humain'] as const,
-    desc: "On vous forme à vendre correctement. Discovery structurée : comprendre le problème du prospect, qualifier son urgence, ne pitcher qu'au bon moment. La base que 80% des fondateurs n'ont jamais apprise.",
-    tools: ['Challenger Sale', 'Discovery'],
-  },
-  {
-    level: 'Niveau 2',
-    label: 'Challenger le pricing',
-    threshold: '5k – 10k€',
-    layers: ['methode', 'humain'] as const,
-    desc: "Le prospect compare et négocie. On vous forme à augmenter la valeur perçue pour que le prix ne soit plus le critère de décision. Structurer une offre qui se vend d'elle-même.",
-    tools: ['Valeur perçue', 'Pricing'],
-  },
-  {
-    level: 'Niveau 3',
-    label: 'Déléguer le closing',
-    threshold: '10k€+',
-    layers: ['humain'] as const,
-    desc: "Cycle de vente long, multi-interlocuteurs. Vous ne pouvez plus tout faire seul. On recrute, forme et manage des closers dédiés sur votre offre. Vous n'êtes plus dans le pipe — vous le gérez.",
-    tools: ['Closers formés', 'Management'],
-  },
-] as const
 
 export const settingSteps = [
   {
