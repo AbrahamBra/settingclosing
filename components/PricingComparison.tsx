@@ -39,7 +39,7 @@ export function PricingComparison() {
                   <div>
                     <p className="font-sans text-text-muted text-sm mb-1">Fixe mensuel</p>
                     <div className="flex items-baseline gap-2">
-                      <p className="font-sans text-2xl text-text-primary font-bold">500 €</p>
+                      <p className="font-sans text-2xl text-text-primary font-bold">À partir de 500 €</p>
                       <span className="font-sans text-text-muted text-sm">/ mois</span>
                     </div>
                   </div>
@@ -47,7 +47,7 @@ export function PricingComparison() {
                   <div>
                     <p className="font-sans text-text-muted text-sm mb-1">Prime à la performance</p>
                     <div className="flex items-baseline gap-2">
-                      <p className="font-sans text-xl text-text-primary font-bold">25 € – 150 €</p>
+                      <p className="font-sans text-xl text-text-primary font-bold">De 25 à 200 €</p>
                       <span className="font-sans text-text-muted text-sm">/ RDV livré</span>
                     </div>
                     <p className="font-sans text-text-muted text-xs mt-1">
@@ -97,7 +97,7 @@ export function PricingComparison() {
                   <div>
                     <p className="font-sans text-text-muted text-sm mb-1">Programme complet</p>
                     <div className="flex items-baseline gap-2">
-                      <p className="font-sans text-2xl text-text-primary font-bold">1 000 €</p>
+                      <p className="font-sans text-2xl text-text-primary font-bold">À partir de 1 000 €</p>
                       <span className="font-sans text-text-muted text-sm">/ mois × 3 mois</span>
                     </div>
                     <p className="font-sans text-text-muted text-xs mt-1">

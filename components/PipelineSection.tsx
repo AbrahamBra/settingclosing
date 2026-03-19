@@ -106,7 +106,7 @@ export function PipelineSection() {
               </ul>
 
               <p className="text-text-secondary text-xs italic leading-relaxed border-t border-accent/20 pt-4">
-                &laquo;&nbsp;J&apos;ai vu votre post sur [sujet]. On a eu le même défi chez [entreprise]...&nbsp;&raquo;
+                &laquo;&nbsp;Bonjour, j&apos;ai vu que vous lanciez [offre concrète]. On a aidé [persona similaire] à passer de 2 à 8 RDV/semaine en 3 semaines.&nbsp;&raquo;
               </p>
             </div>
           </ScrollReveal>
@@ -298,7 +298,7 @@ export function PipelineSection() {
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="mt-0.5 text-text-muted text-sm">→</span>
-                  <span className="text-sm text-text-secondary">Deals à 2k€ alors que l&apos;offre en vaut 10k</span>
+                  <span className="text-sm text-text-secondary">Le prospect dicte le prix, pas vous</span>
                 </div>
                 <div className="flex items-start gap-3">
                   <span className="mt-0.5 text-text-muted text-sm">→</span>
