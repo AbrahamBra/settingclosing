@@ -21,6 +21,8 @@
   --z-modal: 90;
   --z-cursor: 9999;
   --z-grain: 9998;
+  --navbar-height: 4rem;
+  --z-phase-nav: 40;
 }
 
 @layer base {
