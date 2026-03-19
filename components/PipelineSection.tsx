@@ -139,6 +139,7 @@ export function PipelineSection() {
 
               <p className="text-text-secondary text-sm leading-relaxed mb-5 max-w-2xl">
                 L&apos;outbound plafonne à 100 invitations par semaine. Une fois le pipeline calibré, on vous aide à attirer des leads qui viennent à vous&nbsp;: conseil sur les sujets de posts et formats de lead magnet, scoring des leads entrants, setting direct sans passer par l&apos;invitation.
+                <span className="text-semantic-methode font-medium"> Inclus dans votre abonnement.</span>
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -172,7 +173,7 @@ export function PipelineSection() {
         <ScrollReveal delay={100}>
           <div className="text-center mt-16">
             <p className="text-text-secondary text-sm mb-6 max-w-xl mx-auto">
-              Ce pipeline se calibre en deux mois. Après, les RDV arrivent chaque semaine.
+              Premiers RDV dès la première semaine. Au mois 2, le pipeline tourne à plein régime.
             </p>
             <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
               Réserver un appel découverte
