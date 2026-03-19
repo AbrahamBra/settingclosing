@@ -170,7 +170,7 @@ export default function ScriptSettingLinkedinPage() {
           </div>
 
           {/* Stats block */}
-          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-10 border border-black/8">
+          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-10 border border-white/[0.06]">
             <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
             <p className="font-sans font-semibold text-text-primary mb-1">
               Le taux de réponse moyen sur LinkedIn tourne autour de 10–15 %.
@@ -183,7 +183,7 @@ export default function ScriptSettingLinkedinPage() {
           </div>
 
           {/* TOC */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Sommaire
             </p>
@@ -301,7 +301,7 @@ export default function ScriptSettingLinkedinPage() {
               ))}
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Le test du téléphone
@@ -617,7 +617,7 @@ export default function ScriptSettingLinkedinPage() {
             </p>
 
             <div className="space-y-4 mb-8">
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">J+3</span>
                   <span className="font-sans text-sm font-semibold text-text-primary">Relance courte, angle différent</span>
@@ -634,7 +634,7 @@ export default function ScriptSettingLinkedinPage() {
                 </p>
               </div>
 
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">J+7</span>
                   <span className="font-sans text-sm font-semibold text-text-primary">Dernière tentative ou pivot</span>
@@ -671,7 +671,7 @@ export default function ScriptSettingLinkedinPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -686,7 +686,7 @@ export default function ScriptSettingLinkedinPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8 mb-10">
+          <div className="mt-14 pt-8 border-t border-white/[0.06] mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -706,7 +706,7 @@ export default function ScriptSettingLinkedinPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

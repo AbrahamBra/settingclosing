@@ -332,7 +332,7 @@ export default function CommentDevenirSetterB2BPage() {
             </p>
 
             <div className="space-y-5 mb-6">
-              <div className="rounded-xl p-5 border border-black/8 bg-bg-secondary">
+              <div className="rounded-xl p-5 border border-white/[0.06] bg-bg-secondary">
                 <p className="font-sans font-semibold text-text-primary mb-1">Fixe mensuel uniquement</p>
                 <p className="font-sans text-accent text-sm font-semibold mb-2">800 – 1 500 € / mois</p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed">
@@ -343,7 +343,7 @@ export default function CommentDevenirSetterB2BPage() {
                 </p>
               </div>
 
-              <div className="rounded-xl p-5 border border-black/8 bg-bg-secondary">
+              <div className="rounded-xl p-5 border border-white/[0.06] bg-bg-secondary">
                 <p className="font-sans font-semibold text-text-primary mb-1">Prime à la performance uniquement</p>
                 <p className="font-sans text-accent text-sm font-semibold mb-2">50 – 200 € / RDV</p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed">
@@ -392,7 +392,7 @@ export default function CommentDevenirSetterB2BPage() {
               Sans terrain, vous apprenez la théorie d&apos;un métier que vous ne pratiquez pas.
             </p>
 
-            <div className="bg-bg-secondary rounded-xl p-6 my-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl p-6 my-6 border border-white/[0.06]">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
                 Ce qui forme vraiment un setter
               </p>
@@ -461,7 +461,7 @@ export default function CommentDevenirSetterB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -476,7 +476,7 @@ export default function CommentDevenirSetterB2BPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -495,7 +495,7 @@ export default function CommentDevenirSetterB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

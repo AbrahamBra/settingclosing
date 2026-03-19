@@ -206,7 +206,7 @@ export default function DifferenceSettingClosingPage() {
                 présent pendant la négociation.
               </p>
             </div>
-            <div className="border-l-4 border-black/20 bg-bg-secondary rounded-r-xl px-6 py-5">
+            <div className="border-l-4 border-white/[0.12] bg-bg-secondary rounded-r-xl px-6 py-5">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">
                 Closing
               </p>
@@ -237,14 +237,14 @@ export default function DifferenceSettingClosingPage() {
                         className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold font-sans ${
                           isSetting
                             ? 'border border-accent/40 bg-accent/10 text-accent'
-                            : 'border border-black/15 bg-bg-secondary text-text-muted'
+                            : 'border border-white/[0.08] bg-bg-secondary text-text-muted'
                         }`}
                       >
                         {i + 1}
                       </div>
                       {i < cycleSteps.length - 1 && (
                         <div
-                          className={`w-px flex-1 my-1 ${isSetting ? 'bg-accent/20' : 'bg-black/8'}`}
+                          className={`w-px flex-1 my-1 ${isSetting ? 'bg-accent/20' : 'bg-white/[0.06]'}`}
                           style={{ minHeight: '20px' }}
                         />
                       )}
@@ -285,7 +285,7 @@ export default function DifferenceSettingClosingPage() {
             </p>
             <div className="space-y-4">
               {mistakeItems.map((item, i) => (
-                <div key={i} className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+                <div key={i} className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="font-sans text-xs font-semibold text-text-muted">0{i + 1}</span>
                     <p className="font-sans font-semibold text-text-primary">{item.title}</p>
@@ -295,7 +295,7 @@ export default function DifferenceSettingClosingPage() {
               ))}
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les commerciaux qui passent plus de 46 % du temps d&apos;un appel à écouter
@@ -322,7 +322,7 @@ export default function DifferenceSettingClosingPage() {
                 <div
                   key={i}
                   className={`rounded-xl px-6 py-5 border ${
-                    scenario.accentColor ? 'border-accent/30 bg-accent/5' : 'border-black/8 bg-bg-secondary'
+                    scenario.accentColor ? 'border-accent/30 bg-accent/5' : 'border-white/[0.06] bg-bg-secondary'
                   }`}
                 >
                   <p className="font-sans font-semibold text-text-primary mb-1">
@@ -355,14 +355,14 @@ export default function DifferenceSettingClosingPage() {
               Quel budget pour chaque partie ?
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Setting externalisé
                 </p>
                 <p className="font-serif text-h3 text-text-primary mb-1">500 €<span className="font-sans text-text-muted text-base font-normal">/mois</span></p>
                 <p className="font-sans text-text-muted text-sm">Fixe + prime à la performance par RDV livré. Garantie minimum 5 RDV qualifiés.</p>
               </div>
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-3">
                   Coaching closing
                 </p>
@@ -377,7 +377,7 @@ export default function DifferenceSettingClosingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -399,7 +399,7 @@ export default function DifferenceSettingClosingPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <a
                 href="/ressources/setting-commercial-b2b"
-                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-black/8 hover:border-accent/30 transition-colors"
+                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
               >
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">Guide pilier</p>
                 <p className="font-sans font-semibold text-text-primary group-hover:text-accent transition-colors">
@@ -408,7 +408,7 @@ export default function DifferenceSettingClosingPage() {
               </a>
               <a
                 href="/ressources/setter-b2b-definition"
-                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-black/8 hover:border-accent/30 transition-colors"
+                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
               >
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">Setting</p>
                 <p className="font-sans font-semibold text-text-primary group-hover:text-accent transition-colors">
@@ -417,7 +417,7 @@ export default function DifferenceSettingClosingPage() {
               </a>
               <a
                 href="/ressources/challenger-sale-definition"
-                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-black/8 hover:border-accent/30 transition-colors"
+                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
               >
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-2">Closing</p>
                 <p className="font-sans font-semibold text-text-primary group-hover:text-accent transition-colors">
@@ -428,7 +428,7 @@ export default function DifferenceSettingClosingPage() {
           </section>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

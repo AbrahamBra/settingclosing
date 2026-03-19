@@ -317,7 +317,7 @@ export default function MethodesVenteB2BPage() {
           </div>
 
           {/* TOC */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Sommaire
             </p>
@@ -379,7 +379,7 @@ export default function MethodesVenteB2BPage() {
                 {m.description}
               </p>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-6 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-6 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-3">
                   Quand utiliser {m.nom}
                 </p>
@@ -393,7 +393,7 @@ export default function MethodesVenteB2BPage() {
                 </ul>
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-6 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-6 border border-white/[0.06]">
                 <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
                 <p className="font-sans font-semibold text-text-primary mb-3">
                   Points forts
@@ -433,7 +433,7 @@ export default function MethodesVenteB2BPage() {
             <div className="overflow-x-auto mb-8">
               <table className="w-full border-collapse font-sans text-sm">
                 <thead>
-                  <tr className="border-b-2 border-black/10">
+                  <tr className="border-b-2 border-white/[0.06]">
                     <th className="text-left py-3 pr-4 text-text-primary font-semibold">Crit&egrave;re</th>
                     <th className="text-left py-3 px-4 text-text-primary font-semibold">Challenger Sale</th>
                     <th className="text-left py-3 px-4 text-text-primary font-semibold">SPIN Selling</th>
@@ -442,7 +442,7 @@ export default function MethodesVenteB2BPage() {
                 </thead>
                 <tbody>
                   {comparatif.map((row, i) => (
-                    <tr key={i} className="border-b border-black/5">
+                    <tr key={i} className="border-b border-white/[0.06]">
                       <td className="py-3 pr-4 text-text-primary font-medium">{row.critere}</td>
                       <td className="py-3 px-4 text-text-muted">{row.challenger}</td>
                       <td className="py-3 px-4 text-text-muted">{row.spin}</td>
@@ -453,7 +453,7 @@ export default function MethodesVenteB2BPage() {
               </table>
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 R&egrave;gle pratique
@@ -492,7 +492,7 @@ export default function MethodesVenteB2BPage() {
 
             <div className="space-y-6 mb-8">
               {pipelineSteps.map((step, i) => (
-                <div key={i} className="rounded-xl border border-black/8 bg-bg-secondary px-6 py-5">
+                <div key={i} className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="font-sans text-accent font-semibold text-sm">{step.etape}</span>
                     <span className="font-sans text-xs bg-accent/10 text-accent px-2 py-0.5 rounded-md font-medium">
@@ -504,7 +504,7 @@ export default function MethodesVenteB2BPage() {
               ))}
             </div>
 
-            <div className="border-l-2 border-black/10 pl-4 mb-6">
+            <div className="border-l-2 border-white/[0.06] pl-4 mb-6">
               <p className="font-sans text-text-muted text-sm italic leading-relaxed">
                 Ce cadre n&apos;est pas rigide. Sur un cycle court (une seule conversation), vous
                 compressez les quatre &eacute;tapes en un seul appel. Sur un cycle long, chaque
@@ -560,7 +560,7 @@ export default function MethodesVenteB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fr&eacute;quentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -575,7 +575,7 @@ export default function MethodesVenteB2BPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8 mb-10">
+          <div className="mt-14 pt-8 border-t border-white/[0.06] mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -603,7 +603,7 @@ export default function MethodesVenteB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

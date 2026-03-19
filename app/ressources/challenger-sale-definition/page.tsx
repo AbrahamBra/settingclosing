@@ -229,7 +229,7 @@ export default function ChallengerSalePage() {
               n&apos;est pas celui que la plupart des managers auraient recruté en premier.
             </p>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Le profil Challenger représente 40 % des top performers commerciaux.
@@ -258,7 +258,7 @@ export default function ChallengerSalePage() {
                   className={`rounded-xl px-6 py-5 border ${
                     profile.top
                       ? 'border-accent/30 bg-accent/5'
-                      : 'border-black/8 bg-bg-secondary'
+                      : 'border-white/[0.06] bg-bg-secondary'
                   }`}
                 >
                   <div className="flex items-start justify-between gap-3 mb-2">
@@ -296,7 +296,7 @@ export default function ChallengerSalePage() {
                     {comp.title}
                   </h3>
                   <p className="font-sans text-text-muted leading-relaxed mb-4">{comp.body}</p>
-                  <div className="border-l-2 border-black/10 pl-4">
+                  <div className="border-l-2 border-white/[0.06] pl-4">
                     <p className="font-sans text-text-muted text-sm italic leading-relaxed">
                       {comp.example}
                     </p>
@@ -351,7 +351,7 @@ export default function ChallengerSalePage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -366,7 +366,7 @@ export default function ChallengerSalePage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -384,7 +384,7 @@ export default function ChallengerSalePage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

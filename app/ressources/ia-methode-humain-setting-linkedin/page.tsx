@@ -643,7 +643,7 @@ export default function Page() {
           </article>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -661,7 +661,7 @@ export default function Page() {
           </div>
 
           {/* CTA */}
-          <div className="mt-16 pt-10 border-t border-black/8 text-center">
+          <div className="mt-16 pt-10 border-t border-white/[0.06] text-center">
             <p className="font-serif text-xl text-text-primary mb-3">
               Vous voulez que ce système tourne pour vous ?
             </p>

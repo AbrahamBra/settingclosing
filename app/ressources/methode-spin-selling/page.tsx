@@ -198,7 +198,7 @@ export default function MethodeSpinSellingPage() {
           </div>
 
           {/* Sommaire */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">Sommaire</p>
             <ol className="space-y-2">
               {[
@@ -256,7 +256,7 @@ export default function MethodeSpinSellingPage() {
             </h2>
             <div className="space-y-8">
               {spinQuestions.map(({ lettre, type, objectif, piege, exemples }) => (
-                <div key={type} className="border-l-2 border-black/10 pl-6">
+                <div key={type} className="border-l-2 border-white/[0.06] pl-6">
                   <div className="flex items-baseline gap-3 mb-3">
                     <span className="font-serif text-2xl text-accent leading-none">{lettre}</span>
                     <h3 className="font-sans font-semibold text-text-primary text-base">{type}</h3>
@@ -264,13 +264,13 @@ export default function MethodeSpinSellingPage() {
                   <p className="font-sans text-text-muted text-sm leading-relaxed mb-4">
                     <strong className="text-text-primary">Objectif :</strong> {objectif}
                   </p>
-                  <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 mb-3">
+                  <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] mb-3">
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                       Piège fréquent
                     </p>
                     <p className="font-sans text-xs text-text-muted leading-relaxed">{piege}</p>
                   </div>
-                  <div className="bg-bg-secondary rounded-lg p-4 border border-black/8">
+                  <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
                       Exemples de questions
                     </p>
@@ -299,13 +299,13 @@ export default function MethodeSpinSellingPage() {
             <div className="overflow-x-auto mb-6">
               <table className="w-full font-sans text-sm border-collapse">
                 <thead>
-                  <tr className="border-b border-black/8">
+                  <tr className="border-b border-white/[0.06]">
                     <th className="text-left py-3 pr-4 text-xs font-semibold uppercase tracking-widest text-accent w-1/4">Phase</th>
                     <th className="text-left py-3 pr-4 text-xs font-semibold uppercase tracking-widest text-accent w-1/6">Durée</th>
                     <th className="text-left py-3 text-xs font-semibold uppercase tracking-widest text-accent">Ce qu&apos;on fait</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-black/8">
+                <tbody className="divide-y divide-white/[0.06]">
                   {[
                     { phase: 'Ouverture', duree: '3–5 min', desc: 'Cadrer l\'appel, annoncer l\'agenda, créer un climat favorable. Ne pas commencer à questionner immédiatement.' },
                     { phase: 'S + P', duree: '15 min', desc: '2-3 questions Situation (le plus vite possible), puis transition vers les questions Problème. C\'est là que la vraie conversation commence.' },
@@ -352,7 +352,7 @@ export default function MethodeSpinSellingPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">Challenger Sale</p>
                 <ul className="space-y-2 font-sans text-sm text-text-muted">
                   {[
@@ -420,7 +420,7 @@ export default function MethodeSpinSellingPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">Questions fréquentes sur le SPIN Selling</h2>
             <div className="space-y-6">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-black/10 pl-5">
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>
@@ -429,7 +429,7 @@ export default function MethodeSpinSellingPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
@@ -449,7 +449,7 @@ export default function MethodeSpinSellingPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">ChallengersLab</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Vous voulez améliorer votre taux de closing ?</h3>
             <p className="font-sans text-text-muted leading-relaxed mb-6">

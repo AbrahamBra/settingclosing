@@ -266,7 +266,7 @@ export default function DiscoveryCallPage() {
                   ],
                 },
               ].map(({ categorie, questions }) => (
-                <div key={categorie} className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+                <div key={categorie} className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                     {categorie}
                   </p>
@@ -329,7 +329,7 @@ export default function DiscoveryCallPage() {
                 { temps: '24–27 min', etape: "Synthèse et ouverture", detail: "Résumez dans vos mots ce que vous avez compris. Validez. Puis : 'Voilà comment on travaille et pourquoi ça correspond à ce que vous décrivez.'" },
                 { temps: '27–30 min', etape: "Prochaine étape", detail: "Proposez une suite concrète — pas 'je vous envoie une plaquette'. Un deuxième appel avec le co-décideur, un devis, ou une décision directe selon le niveau de maturité." },
               ].map(({ temps, etape, detail }) => (
-                <div key={temps} className="flex gap-4 py-3 border-b border-black/6 last:border-0">
+                <div key={temps} className="flex gap-4 py-3 border-b border-white/[0.06] last:border-0">
                   <span className="font-sans text-xs text-text-muted/50 tabular-nums shrink-0 w-16 pt-0.5">{temps}</span>
                   <div>
                     <p className="font-sans text-sm font-semibold text-text-primary mb-1">{etape}</p>
@@ -347,7 +347,7 @@ export default function DiscoveryCallPage() {
             </h2>
             <div className="space-y-6">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-black/10 pl-5">
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>
@@ -356,7 +356,7 @@ export default function DiscoveryCallPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -383,7 +383,7 @@ export default function DiscoveryCallPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

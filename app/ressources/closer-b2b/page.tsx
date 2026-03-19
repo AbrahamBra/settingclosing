@@ -193,7 +193,7 @@ export default function CloserB2BPage() {
           </div>
 
           {/* TOC */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Sommaire
             </p>
@@ -257,7 +257,7 @@ export default function CloserB2BPage() {
               (qualifier les leads en amont), les relances après signature, la gestion des litiges
               clients, ou la prospection de nouveaux contacts.
             </p>
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 La distinction qui compte : commercial vs closer
@@ -283,7 +283,7 @@ export default function CloserB2BPage() {
             </p>
             <div className="space-y-8">
               {competences.map((comp, i) => (
-                <div key={i} className="rounded-xl border border-black/8 bg-bg-secondary px-6 py-5">
+                <div key={i} className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5">
                   <p className="font-sans font-semibold text-text-primary mb-3">{comp.titre}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{comp.corps}</p>
                 </div>
@@ -331,7 +331,7 @@ export default function CloserB2BPage() {
               — et tout ça se perd sur un appel mal conduit.
             </p>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 mb-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 mb-6 border border-white/[0.06]">
               <p className="font-sans font-semibold text-text-primary mb-3">
                 Ce que le setter doit passer au closer
               </p>
@@ -434,7 +434,7 @@ export default function CloserB2BPage() {
                 </ul>
               </div>
 
-              <div className="border-l-2 border-black/10 pl-4">
+              <div className="border-l-2 border-white/[0.06] pl-4">
                 <p className="font-sans text-text-muted text-sm italic leading-relaxed">
                   Un bon brief closer décrit l&apos;offre en détail, les objections les plus
                   fréquentes avec les réponses attendues, le profil type du prospect, et le contexte
@@ -458,7 +458,7 @@ export default function CloserB2BPage() {
               30 secondes ?
             </p>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-6 border border-white/[0.06]">
               <p className="font-sans font-semibold text-text-primary mb-3">
                 Comment tester un closer sérieusement
               </p>
@@ -499,7 +499,7 @@ export default function CloserB2BPage() {
               ))}
             </ul>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Commission standard marché FR 2026
@@ -518,7 +518,7 @@ export default function CloserB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -533,7 +533,7 @@ export default function CloserB2BPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8 mb-10">
+          <div className="mt-14 pt-8 border-t border-white/[0.06] mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -557,7 +557,7 @@ export default function CloserB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

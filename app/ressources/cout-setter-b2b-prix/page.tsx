@@ -190,7 +190,7 @@ export default function CoutSetterB2BPage() {
 
               <div className="space-y-4 mb-6">
                 {/* Model 1 */}
-                <div className="bg-bg-secondary rounded-xl p-6 border border-black/8">
+                <div className="bg-bg-secondary rounded-xl p-6 border border-white/[0.06]">
                   <div className="flex items-center justify-between mb-3">
                     <p className="font-sans font-semibold text-text-primary text-sm">
                       Modèle 1 — Fixe seul
@@ -211,7 +211,7 @@ export default function CoutSetterB2BPage() {
                 </div>
 
                 {/* Model 2 */}
-                <div className="bg-bg-secondary rounded-xl p-6 border border-black/8">
+                <div className="bg-bg-secondary rounded-xl p-6 border border-white/[0.06]">
                   <div className="flex items-center justify-between mb-3">
                     <p className="font-sans font-semibold text-text-primary text-sm">
                       Modèle 2 — Prime seule par RDV
@@ -303,7 +303,7 @@ export default function CoutSetterB2BPage() {
                 ))}
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
                 <p className="font-sans font-semibold text-text-primary mb-1">
                   Cheap sans méthode vs. structuré avec système
@@ -327,7 +327,7 @@ export default function CoutSetterB2BPage() {
                 Le reste suit.
               </p>
 
-              <div className="bg-bg-secondary rounded-xl p-6 my-6 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-6 my-6 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
                   Exemple de calcul
                 </p>
@@ -469,7 +469,7 @@ export default function CoutSetterB2BPage() {
               <h2 className="font-serif text-h2 text-text-primary mb-6">
                 Questions fréquentes sur le coût d&apos;un setter B2B
               </h2>
-              <div className="divide-y divide-black/8">
+              <div className="divide-y divide-white/[0.06]">
                 {faqItems.map((item, i) => (
                   <div key={i} className="py-5">
                     <p className="font-sans font-semibold text-text-primary mb-2">
@@ -486,7 +486,7 @@ export default function CoutSetterB2BPage() {
           </article>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -504,7 +504,7 @@ export default function CoutSetterB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

@@ -183,7 +183,7 @@ export default function GestionObjectionsPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
                   Prétextes — à clarifier, pas à traiter
                 </p>
@@ -249,13 +249,13 @@ export default function GestionObjectionsPage() {
                   bonne: "\"C'est bien. Qu'est-ce que vous faites avec eux actuellement ? Et est-ce qu'il y a des choses que vous aimeriez qu'ils fassent mieux ?\" Ça peut ouvrir une complémentarité ou révéler une insatisfaction.",
                 },
               ].map(({ objection, diagnostic, mauvaise, bonne }) => (
-                <div key={objection} className="border border-black/8 rounded-xl overflow-hidden">
-                  <div className="bg-bg-secondary px-5 py-4 border-b border-black/8">
+                <div key={objection} className="border border-white/[0.06] rounded-xl overflow-hidden">
+                  <div className="bg-bg-secondary px-5 py-4 border-b border-white/[0.06]">
                     <p className="font-sans font-semibold text-text-primary text-sm">{objection}</p>
                     <p className="font-sans text-xs text-text-muted mt-1">{diagnostic}</p>
                   </div>
                   <div className="grid sm:grid-cols-2">
-                    <div className="px-5 py-4 border-b sm:border-b-0 sm:border-r border-black/8">
+                    <div className="px-5 py-4 border-b sm:border-b-0 sm:border-r border-white/[0.06]">
                       <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/50 mb-2">
                         Mauvaise réponse
                       </p>
@@ -288,7 +288,7 @@ export default function GestionObjectionsPage() {
                 { objection: "Pas le bon moment", cause: "Urgence non créée pendant l'exploration", prevention: "Demander : 'Si on ne résout pas ça dans 3 mois, que se passe-t-il ?'" },
                 { objection: "Je vais réfléchir", cause: "Valeur floue + pas de demande de décision", prevention: "Synthèse du problème en fin de discovery + demande de décision explicite." },
               ].map(({ objection, cause, prevention }) => (
-                <div key={objection} className="flex gap-4 py-3 border-b border-black/6 last:border-0">
+                <div key={objection} className="flex gap-4 py-3 border-b border-white/[0.06] last:border-0">
                   <div className="shrink-0 w-36">
                     <p className="font-sans text-xs font-semibold text-text-muted/60">{objection}</p>
                   </div>
@@ -308,7 +308,7 @@ export default function GestionObjectionsPage() {
             </h2>
             <div className="space-y-6">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-black/10 pl-5">
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>
@@ -317,7 +317,7 @@ export default function GestionObjectionsPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -344,7 +344,7 @@ export default function GestionObjectionsPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

@@ -158,7 +158,7 @@ export default function QualificationLeadsB2BPage() {
           </div>
 
           {/* Sommaire */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">Sommaire</p>
             <ol className="space-y-2">
               {[
@@ -201,7 +201,7 @@ export default function QualificationLeadsB2BPage() {
                 { label: 'Les moyens d\'acheter', detail: 'Budget compatible avec votre offre, même approximativement.' },
                 { label: 'L\'autorité de décision', detail: 'Est décideur ou co-décideur. Sinon : peut vous mettre en relation avec celui qui l\'est.' },
               ].map(({ label, detail }) => (
-                <div key={label} className="bg-bg-secondary rounded-lg p-4 border border-black/8">
+                <div key={label} className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
                   <p className="font-sans text-sm font-semibold text-text-primary mb-1">{label}</p>
                   <p className="font-sans text-xs text-text-muted leading-relaxed">{detail}</p>
                 </div>
@@ -230,7 +230,7 @@ export default function QualificationLeadsB2BPage() {
                 { lettre: 'N', nom: 'Need', question: 'A-t-il un problème que vous résolvez ?', limite: 'Le critère le plus important et le plus facilement évaluable via les signaux LinkedIn.' },
                 { lettre: 'T', nom: 'Timeline', question: 'Dans quel délai décide-t-il ?', limite: 'Un prospect sans urgence immédiate peut devenir un deal dans 3 mois. Ne pas écarter trop vite.' },
               ].map(({ lettre, nom, question, limite }) => (
-                <div key={lettre} className="flex gap-4 border-l-2 border-black/10 pl-5">
+                <div key={lettre} className="flex gap-4 border-l-2 border-white/[0.06] pl-5">
                   <span className="font-serif text-xl text-accent shrink-0 leading-none pt-0.5">{lettre}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm">{nom}</p>
@@ -269,7 +269,7 @@ export default function QualificationLeadsB2BPage() {
                 { lettre: 'I', nom: 'Identify Pain', desc: 'Quel est le problème précis — pas général, précis — que vous résolvez pour cette personne ?' },
                 { lettre: 'C', nom: 'Champion', desc: 'Y a-t-il quelqu\'un en interne qui défend votre solution auprès des autres décideurs ?' },
               ].map(({ lettre, nom, desc }) => (
-                <div key={nom} className="flex gap-4 border-l-2 border-black/10 pl-5">
+                <div key={nom} className="flex gap-4 border-l-2 border-white/[0.06] pl-5">
                   <span className="font-serif text-xl text-accent shrink-0 leading-none pt-0.5">{lettre}</span>
                   <div>
                     <p className="font-sans font-semibold text-text-primary text-sm">{nom}</p>
@@ -298,13 +298,13 @@ export default function QualificationLeadsB2BPage() {
             <div className="overflow-x-auto mb-5">
               <table className="w-full font-sans text-sm border-collapse">
                 <thead>
-                  <tr className="border-b border-black/8">
+                  <tr className="border-b border-white/[0.06]">
                     <th className="text-left py-3 pr-4 text-xs font-semibold uppercase tracking-widest text-accent w-16">Niveau</th>
                     <th className="text-left py-3 pr-4 text-xs font-semibold uppercase tracking-widest text-accent">Label</th>
                     <th className="text-left py-3 text-xs font-semibold uppercase tracking-widest text-accent">Description</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-black/8">
+                <tbody className="divide-y divide-white/[0.06]">
                   {niveauxQualif.map(({ niveau, label, desc }) => (
                     <tr key={niveau}>
                       <td className="py-4 pr-4">
@@ -363,7 +363,7 @@ export default function QualificationLeadsB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">Questions fréquentes sur la qualification des leads B2B</h2>
             <div className="space-y-6">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-black/10 pl-5">
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>
@@ -372,7 +372,7 @@ export default function QualificationLeadsB2BPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
@@ -393,7 +393,7 @@ export default function QualificationLeadsB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">ChallengersLab</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Vos leads sont-ils vraiment qualifiés ?</h3>
             <p className="font-sans text-text-muted leading-relaxed mb-6">

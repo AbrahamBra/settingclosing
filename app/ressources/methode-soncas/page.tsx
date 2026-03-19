@@ -200,7 +200,7 @@ export default function MethodeSoncasPage() {
           </div>
 
           {/* Sommaire */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Sommaire
             </p>
@@ -273,7 +273,7 @@ export default function MethodeSoncasPage() {
             </p>
             <div className="space-y-10">
               {leviersData.map(({ lettre, nom, def, signaux, discours, exemple }) => (
-                <div key={nom} className="border-l-2 border-black/10 pl-6">
+                <div key={nom} className="border-l-2 border-white/[0.06] pl-6">
                   <div className="flex items-baseline gap-3 mb-3">
                     <span className="font-serif text-2xl text-accent leading-none">{lettre}</span>
                     <h3 className="font-sans font-semibold text-text-primary text-base">{nom}</h3>
@@ -281,7 +281,7 @@ export default function MethodeSoncasPage() {
                   <p className="font-sans text-text-muted text-sm leading-relaxed mb-4">{def}</p>
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-4">
-                    <div className="bg-bg-secondary rounded-lg p-4 border border-black/8">
+                    <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
                       <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
                         Signaux pendant l&apos;appel
                       </p>
@@ -294,7 +294,7 @@ export default function MethodeSoncasPage() {
                         ))}
                       </ul>
                     </div>
-                    <div className="bg-bg-secondary rounded-lg p-4 border border-black/8">
+                    <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
                       <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                         Comment adapter son discours
                       </p>
@@ -302,7 +302,7 @@ export default function MethodeSoncasPage() {
                     </div>
                   </div>
 
-                  <div className="bg-bg-secondary rounded-lg p-4 border border-black/8">
+                  <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06]">
                     <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
                       Exemple de formulation
                     </p>
@@ -447,7 +447,7 @@ export default function MethodeSoncasPage() {
             </h2>
             <div className="space-y-6">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-black/10 pl-5">
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>
@@ -456,7 +456,7 @@ export default function MethodeSoncasPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -478,7 +478,7 @@ export default function MethodeSoncasPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">ChallengersLab</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez améliorer votre taux de closing ?

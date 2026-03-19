@@ -230,7 +230,7 @@ export default function SetterDefinitionPage() {
             </p>
 
             {/* Stat block */}
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Il faut en moyenne 8 points de contact avant qu&apos;un prospect accepte un rendez-vous commercial.
@@ -283,7 +283,7 @@ export default function SetterDefinitionPage() {
                     </div>
                     {i < phases.length - 1 && (
                       <div
-                        className="w-px flex-1 my-1.5 bg-black/10"
+                        className="w-px flex-1 my-1.5 bg-white/[0.06]"
                         style={{ minHeight: '24px' }}
                       />
                     )}
@@ -303,7 +303,7 @@ export default function SetterDefinitionPage() {
               ))}
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-2 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-2 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Les équipes qui utilisent le scoring de leads convertissent 77 % plus que celles qui ne le font pas.
@@ -325,7 +325,7 @@ export default function SetterDefinitionPage() {
             <div className="overflow-x-auto">
               <table className="w-full font-sans text-sm border-collapse">
                 <thead>
-                  <tr className="border-b border-black/8">
+                  <tr className="border-b border-white/[0.06]">
                     <th className="text-left py-3 pr-6 font-semibold text-text-primary w-1/3" />
                     <th className="text-left py-3 pr-6 font-semibold text-text-primary">Setter interne</th>
                     <th className="text-left py-3 font-semibold text-text-primary">Setter externalisé</th>
@@ -333,7 +333,7 @@ export default function SetterDefinitionPage() {
                 </thead>
                 <tbody>
                   {comparisonRows.map(([label, intern, extern], i) => (
-                    <tr key={i} className="border-b border-black/5">
+                    <tr key={i} className="border-b border-white/[0.06]">
                       <td className="py-3 pr-6 font-medium text-text-primary">{label}</td>
                       <td className="py-3 pr-6 text-text-muted">{intern}</td>
                       <td className="py-3 text-text-muted">{extern}</td>
@@ -376,7 +376,7 @@ export default function SetterDefinitionPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -391,7 +391,7 @@ export default function SetterDefinitionPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -410,7 +410,7 @@ export default function SetterDefinitionPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

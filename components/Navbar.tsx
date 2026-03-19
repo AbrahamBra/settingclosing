@@ -1,18 +1,21 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import { ButtonGlow } from './ui/ButtonGlow'
 
-export function Navbar() {
+export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' }) {
   const [scrolled, setScrolled] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '#contact'
+  const pathname = usePathname()
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '/#contact'
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 80)
+    const threshold = variant === 'default' ? 80 : 20
+    const handleScroll = () => setScrolled(window.scrollY > threshold)
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [variant])
 
   useEffect(() => {
     document.body.style.overflow = drawerOpen ? 'hidden' : ''
@@ -21,20 +24,28 @@ export function Navbar() {
 
   const navLinks = [
     { label: 'Méthode', href: '/methode' },
-    { label: 'Offres', href: '#pricing' },
+    { label: 'Offres', href: '/#pricing' },
     { label: 'Ressources', href: '/ressources' },
     { label: 'À propos', href: '/a-propos' },
   ]
+
+  const isActive = (href: string) => {
+    if (href === '/#pricing') return false
+    if (href === '/ressources') return pathname === '/ressources' || pathname.startsWith('/ressources/')
+    return pathname === href
+  }
+
+  const bgClasses = variant === 'default'
+    ? (scrolled ? 'bg-bg-primary/95 backdrop-blur-md border-b border-white/[0.06]' : 'bg-transparent')
+    : (scrolled ? 'bg-bg-primary/95 backdrop-blur-md border-b border-white/[0.06]' : 'bg-bg-primary/90 backdrop-blur-sm')
 
   return (
     <>
       <nav
         style={{ zIndex: 50 }}
-        className={`fixed top-0 left-0 right-0 flex items-center justify-between px-6 md:px-12 h-16 transition-all duration-300 ${
-          scrolled ? 'bg-bg-primary/95 backdrop-blur-md border-b border-white/[0.06]' : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 flex items-center justify-between px-6 md:px-12 h-16 transition-all duration-300 ${bgClasses}`}
       >
-        <a href="#" className="font-sans font-extrabold text-xl text-text-primary">
+        <a href="/" className="font-sans font-extrabold text-xl text-text-primary">
           ChallengersLab
         </a>
         <div className="hidden md:flex items-center gap-8">
@@ -42,7 +53,11 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+              className={`font-sans text-sm transition-colors ${
+                isActive(link.href)
+                  ? 'text-text-primary font-medium'
+                  : 'text-text-muted hover:text-text-primary'
+              }`}
             >
               {link.label}
             </a>
@@ -94,7 +109,9 @@ export function Navbar() {
           <a
             key={link.href}
             href={link.href}
-            className="font-sans text-lg text-text-primary"
+            className={`font-sans text-lg ${
+              isActive(link.href) ? 'text-text-primary font-medium' : 'text-text-primary'
+            }`}
             onClick={() => setDrawerOpen(false)}
           >
             {link.label}

@@ -196,7 +196,7 @@ export default function SettingCommercialPage() {
           </div>
 
           {/* Sommaire */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Sommaire
             </p>
@@ -321,7 +321,7 @@ export default function SettingCommercialPage() {
                 ))}
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">
                   Ce que ça donne en chiffres
                 </p>
@@ -369,8 +369,8 @@ export default function SettingCommercialPage() {
                     detail: "Un skill construit sur le contexte spécifique du client : l'offre, le marché, les objections connues, les formulations qui ont fonctionné par le passé, les règles non-négociables sur le style. Ce skill propose un premier draft pour chaque message. Le setter lit, ajuste, valide. Ce n'est pas de l'automatisation — c'est une réduction du temps de rédaction avec un humain qui reste dans la boucle. Chaque semaine, le journal de bord enrichit le skill.",
                   },
                 ].map(({ tool, role, detail }) => (
-                  <div key={tool} className="border border-black/8 rounded-xl overflow-hidden">
-                    <div className="bg-bg-secondary px-5 py-3 border-b border-black/8 flex items-center justify-between gap-4">
+                  <div key={tool} className="border border-white/[0.06] rounded-xl overflow-hidden">
+                    <div className="bg-bg-secondary px-5 py-3 border-b border-white/[0.06] flex items-center justify-between gap-4">
                       <p className="font-sans font-semibold text-text-primary text-sm">{tool}</p>
                       <p className="font-sans text-xs text-accent">{role}</p>
                     </div>
@@ -382,7 +382,7 @@ export default function SettingCommercialPage() {
               </div>
 
               <div className="grid sm:grid-cols-2 gap-4">
-                <div className="bg-bg-secondary rounded-xl p-5 border border-black/5">
+                <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-blue-400 mb-3">
                     Flux inbound
                   </p>
@@ -392,7 +392,7 @@ export default function SettingCommercialPage() {
                     Taux de réponse moyen : 20 à 35 % sur les profils bien filtrés.
                   </p>
                 </div>
-                <div className="bg-bg-secondary rounded-xl p-5 border border-black/5">
+                <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-amber-400 mb-3">
                     Flux outbound
                   </p>
@@ -648,7 +648,7 @@ export default function SettingCommercialPage() {
                 </div>
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">
                   Le nurturing ne s&apos;active qu&apos;en phase 2.
                 </p>
@@ -699,7 +699,7 @@ export default function SettingCommercialPage() {
                     contexte: "Le système est calibré. Le setter travaille en mode maintenance — les patterns sont connus, le skill est précis, les taux de réponse sont stables. Le flux de RDV est prévisible. Les clients passent de 'je prospecte pour trouver des leads' à 'j'ai un agenda rempli et je choisis les leads que je veux'.  ",
                   },
                 ].map(({ periode, titre, rdv, contexte }) => (
-                  <div key={periode} className="flex gap-4 py-4 border-b border-black/6 last:border-0">
+                  <div key={periode} className="flex gap-4 py-4 border-b border-white/[0.06] last:border-0">
                     <div className="shrink-0 w-28">
                       <p className="font-sans text-xs text-text-muted/50 mb-1">{periode}</p>
                       <p className="font-sans text-sm font-semibold text-accent">{rdv}</p>
@@ -712,7 +712,7 @@ export default function SettingCommercialPage() {
                 ))}
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans text-sm text-text-muted leading-relaxed">
                   Ces chiffres varient selon la densité des signaux dans le marché, la qualité
                   de l&apos;ICP et la régularité du contenu publié. Un client qui publie 3 fois par semaine
@@ -779,7 +779,7 @@ export default function SettingCommercialPage() {
                   { stat: '12', label: 'RDV qualifiés en mois 2', sub: 'via setter dédié' },
                   { stat: '35 %', label: 'taux de closing', sub: 'sur leads qualifiés par le setter' },
                 ].map(({ stat, label, sub }) => (
-                  <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-black/8">
+                  <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-white/[0.06]">
                     <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
                     <p className="font-sans text-xs text-text-primary font-semibold mb-0.5">{label}</p>
                     <p className="font-sans text-xs text-text-muted">{sub}</p>
@@ -816,7 +816,7 @@ export default function SettingCommercialPage() {
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4 mb-5">
-                <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+                <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
                     Ce que l&apos;IA fait
                   </p>
@@ -950,7 +950,7 @@ export default function SettingCommercialPage() {
                 ].map(({ option, cost, note, highlight }) => (
                   <div
                     key={option}
-                    className={`rounded-xl p-5 border ${highlight ? 'border-accent/30 bg-accent/5' : 'border-black/8 bg-bg-secondary'}`}
+                    className={`rounded-xl p-5 border ${highlight ? 'border-accent/30 bg-accent/5' : 'border-white/[0.06] bg-bg-secondary'}`}
                   >
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
                       <p className={`font-sans font-semibold text-sm ${highlight ? 'text-text-primary' : 'text-text-muted'}`}>
@@ -965,7 +965,7 @@ export default function SettingCommercialPage() {
                 ))}
               </div>
 
-              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <p className="font-sans font-semibold text-text-primary mb-2 text-sm">
                   Le calcul de retour sur investissement
                 </p>
@@ -986,7 +986,7 @@ export default function SettingCommercialPage() {
               <h2 className="font-serif text-h2 text-text-primary mb-6">
                 Questions fréquentes sur le setting commercial
               </h2>
-              <div className="divide-y divide-black/8">
+              <div className="divide-y divide-white/[0.06]">
                 {faqItems.map((item, i) => (
                   <div key={i} className="py-5">
                     <p className="font-sans font-semibold text-text-primary mb-2">
@@ -1003,7 +1003,7 @@ export default function SettingCommercialPage() {
           </article>
 
           {/* Internal links block */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -1037,7 +1037,7 @@ export default function SettingCommercialPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

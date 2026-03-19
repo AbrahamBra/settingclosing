@@ -127,7 +127,7 @@ const signalTypes = [
   {
     level: 'Fort',
     label: 'Signal fort',
-    color: 'text-green-600',
+    color: 'text-green-400',
     dot: 'bg-green-500',
     desc: "Question détaillée, commentaire long, partage avec avis personnel. La fenêtre d'attention est ouverte — elle se refermera vite. Ignorez le template. Répondez directement au commentaire et proposez le call.",
     rule: 'Ignorer le template. Répondre dans les 24h.',
@@ -219,7 +219,7 @@ export default function SignalAchatLinkedInPage() {
             </p>
 
             {/* Stat */}
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 Il faut en moyenne 8 points de contact pour décrocher un rendez-vous B2B.
@@ -245,8 +245,8 @@ export default function SignalAchatLinkedInPage() {
             <div className="space-y-6">
 
               {/* Inbound */}
-              <div className="rounded-xl border border-black/8 bg-bg-secondary overflow-hidden">
-                <div className="px-6 py-4 border-b border-black/8">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                <div className="px-6 py-4 border-b border-white/[0.06]">
                   <div className="flex items-center justify-between">
                     <p className="font-sans font-semibold text-text-primary">Signal inbound</p>
                     <span className="font-sans text-xs text-accent font-semibold uppercase tracking-widest">
@@ -270,8 +270,8 @@ export default function SignalAchatLinkedInPage() {
               </div>
 
               {/* Signal tiers */}
-              <div className="rounded-xl border border-black/8 bg-bg-secondary overflow-hidden">
-                <div className="px-6 py-4 border-b border-black/8">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                <div className="px-6 py-4 border-b border-white/[0.06]">
                   <div className="flex items-center justify-between">
                     <p className="font-sans font-semibold text-text-primary">Signal tiers</p>
                     <span className="font-sans text-xs text-accent font-semibold uppercase tracking-widest">
@@ -291,7 +291,7 @@ export default function SignalAchatLinkedInPage() {
                     identifiés comme pertinents. Vous accédez ainsi à une audience qui ne vous suit pas encore,
                     mais qui s&apos;intéresse activement à votre sujet.
                   </p>
-                  <div className="bg-bg-primary rounded-lg px-4 py-3 border border-black/5">
+                  <div className="bg-bg-primary rounded-lg px-4 py-3 border border-white/[0.06]">
                     <p className="font-sans text-xs text-text-muted leading-relaxed">
                       <strong className="text-text-primary font-semibold">Règle clé :</strong>{' '}
                       le message sur signal tiers ne mentionne jamais la surveillance directement
@@ -318,8 +318,8 @@ export default function SignalAchatLinkedInPage() {
 
             <div className="space-y-4">
               {signalTypes.map((s, i) => (
-                <div key={i} className="rounded-xl border border-black/8 bg-bg-secondary overflow-hidden">
-                  <div className="px-6 py-4 flex items-center gap-3 border-b border-black/8">
+                <div key={i} className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
+                  <div className="px-6 py-4 flex items-center gap-3 border-b border-white/[0.06]">
                     <span className={`w-2 h-2 rounded-full shrink-0 ${s.dot}`} />
                     <p className={`font-sans font-semibold ${s.color}`}>{s.label}</p>
                     <span className="font-sans text-xs text-text-muted ml-auto">{s.level}</span>
@@ -354,7 +354,7 @@ export default function SignalAchatLinkedInPage() {
                       {s.step}
                     </div>
                     {i < fluxSteps.length - 1 && (
-                      <div className="w-px flex-1 my-1.5 bg-black/10" style={{ minHeight: '20px' }} />
+                      <div className="w-px flex-1 my-1.5 bg-white/[0.06]" style={{ minHeight: '20px' }} />
                     )}
                   </div>
                   <div className="pb-5">
@@ -365,7 +365,7 @@ export default function SignalAchatLinkedInPage() {
               ))}
             </div>
 
-            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-black/8">
+            <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">
                 L&apos;erreur la plus courante : pitcher au premier DM.
@@ -389,7 +389,7 @@ export default function SignalAchatLinkedInPage() {
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4">
-              <div className="rounded-xl border border-black/8 bg-bg-secondary px-6 py-5">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5">
                 <p className="font-sans font-semibold text-text-primary mb-2">Version directe</p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
                   Référence explicitement l&apos;interaction sur le contenu tiers.
@@ -399,7 +399,7 @@ export default function SignalAchatLinkedInPage() {
                   &quot;J&apos;ai vu votre réaction sur un post autour de [sujet]. C&apos;est quelque chose que vous avez déjà creusé ?&quot;
                 </p>
               </div>
-              <div className="rounded-xl border border-black/8 bg-bg-secondary px-6 py-5">
+              <div className="rounded-xl border border-white/[0.06] bg-bg-secondary px-6 py-5">
                 <p className="font-sans font-semibold text-text-primary mb-2">Version indirecte</p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
                   Part du sujet métier, pas de la surveillance. Préférable sur les profils sur-sollicités
@@ -424,7 +424,7 @@ export default function SignalAchatLinkedInPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-6">
               Questions fréquentes
             </h2>
-            <div className="divide-y divide-black/8">
+            <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
                 <div key={i} className="py-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
@@ -439,7 +439,7 @@ export default function SignalAchatLinkedInPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -458,7 +458,7 @@ export default function SignalAchatLinkedInPage() {
           </div>
 
           {/* CTA */}
-          <div className="bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

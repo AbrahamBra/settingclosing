@@ -170,7 +170,7 @@ export default function ClosingB2BPage() {
               { stat: '10 → 8', label: 'contrats signés après une session de coaching discovery' },
               { stat: '1 500 €', label: "prix minimum d'offre pour que le coaching closing soit rentable" },
             ].map(({ stat, label }) => (
-              <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-black/8">
+              <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center border border-white/[0.06]">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
                 <p className="font-sans text-xs text-text-muted leading-snug">{label}</p>
               </div>
@@ -178,7 +178,7 @@ export default function ClosingB2BPage() {
           </div>
 
           {/* Sommaire */}
-          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-black/8">
+          <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Sommaire
             </p>
@@ -307,7 +307,7 @@ export default function ClosingB2BPage() {
                 </div>
               ))}
             </div>
-            <div className="bg-bg-secondary rounded-xl p-5 border border-black/8 grid sm:grid-cols-3 gap-4 text-center">
+            <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06] grid sm:grid-cols-3 gap-4 text-center">
               {[
                 { chiffre: '2 appels / jour', detail: 'rythme soutenable pour un closing de qualité' },
                 { chiffre: '60–70 %', detail: "du temps d'un appel en questions (discovery)" },
@@ -341,7 +341,7 @@ export default function ClosingB2BPage() {
                 { q: "Qu'ont-ils déjà essayé ?", detail: "Les tentatives précédentes révèlent les critères de décision réels, les biais, et ce qu'ils ne voudront plus jamais entendre comme argument." },
                 { q: "Qui décide ?", detail: "Si la personne en face ne peut pas signer, toute la discovery doit l'amener à vous mettre en contact avec le décideur — pas à promettre d'en parler." },
               ].map(({ q, detail }) => (
-                <div key={q} className="bg-bg-secondary rounded-xl p-4 border border-black/8">
+                <div key={q} className="bg-bg-secondary rounded-xl p-4 border border-white/[0.06]">
                   <p className="font-sans text-sm font-semibold text-text-primary mb-1">{q}</p>
                   <p className="font-sans text-xs text-text-muted leading-relaxed">{detail}</p>
                 </div>
@@ -409,7 +409,7 @@ export default function ClosingB2BPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
                   Objections-prétextes
                 </p>
@@ -573,7 +573,7 @@ export default function ClosingB2BPage() {
                 <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
                   Semaine 1
                 </span>
-                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+                <div className="flex-1 h-px bg-white/[0.06]" aria-hidden="true" />
               </div>
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Audit de l&apos;existant
@@ -584,7 +584,7 @@ export default function ClosingB2BPage() {
                 L&apos;objectif : identifier le moment exact où les prospects se ferment. Pas
                 &ldquo;en général&rdquo; — à quelle minute, sur quelle question ou quelle phrase.
               </p>
-              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+              <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
                 <p className="font-sans text-text-muted leading-relaxed">
                   Ce que la semaine 1 produit : un diagnostic précis — les 2 ou 3 points où vos
                   appels perdent le prospect, et le plan de travail pour les 2 prochains mois.
@@ -598,7 +598,7 @@ export default function ClosingB2BPage() {
                 <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
                   Semaines 2–3
                 </span>
-                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+                <div className="flex-1 h-px bg-white/[0.06]" aria-hidden="true" />
               </div>
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Restructuration de la discovery
@@ -609,7 +609,7 @@ export default function ClosingB2BPage() {
                 formulations qui font parler et celles qui font se fermer. Vous testez cette nouvelle
                 structure sur des appels réels. On en reparle après chaque appel.
               </p>
-              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+              <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
                 <p className="font-sans text-text-muted leading-relaxed">
                   Ce que les semaines 2-3 produisent : une structure de discovery adaptée à votre
                   offre et à votre marché. La plupart des gens ressentent un changement dès
@@ -624,7 +624,7 @@ export default function ClosingB2BPage() {
                 <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
                   Semaines 4–6
                 </span>
-                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+                <div className="flex-1 h-px bg-white/[0.06]" aria-hidden="true" />
               </div>
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Gestion des objections spécifiques à votre marché
@@ -635,7 +635,7 @@ export default function ClosingB2BPage() {
                 un script à réciter. C&apos;est un cadre mental qui permet de répondre naturellement
                 parce que vous avez réfléchi à la réponse avant l&apos;appel.
               </p>
-              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+              <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
                 <p className="font-sans text-text-muted leading-relaxed">
                   Ce que les semaines 4-6 produisent : un taux de closing qui monte. Pas encore
                   à son plateau, mais la progression est visible. Les objections commencent à
@@ -650,7 +650,7 @@ export default function ClosingB2BPage() {
                 <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
                   Semaines 7–10
                 </span>
-                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+                <div className="flex-1 h-px bg-white/[0.06]" aria-hidden="true" />
               </div>
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Demande de décision et relances
@@ -662,7 +662,7 @@ export default function ClosingB2BPage() {
                 — un message de relance n&apos;est pas un message de rappel. C&apos;est un deuxième
                 appel commercial compressé en 3 lignes.
               </p>
-              <div className="bg-bg-secondary rounded-lg p-4 border border-black/8 text-sm">
+              <div className="bg-bg-secondary rounded-lg p-4 border border-white/[0.06] text-sm">
                 <p className="font-sans text-text-muted leading-relaxed">
                   Ce que les semaines 7-10 produisent : votre taux de closing approche son plateau.
                   Les deals &ldquo;je réfléchis&rdquo; commencent à se résoudre plus vite — dans
@@ -677,7 +677,7 @@ export default function ClosingB2BPage() {
                 <span className="font-sans text-xs font-semibold uppercase tracking-widest text-accent shrink-0">
                   Mois 3
                 </span>
-                <div className="flex-1 h-px bg-black/8" aria-hidden="true" />
+                <div className="flex-1 h-px bg-white/[0.06]" aria-hidden="true" />
               </div>
               <p className="font-sans text-sm font-semibold text-text-primary mb-2">
                 Cas difficiles et consolidation
@@ -705,7 +705,7 @@ export default function ClosingB2BPage() {
             <div className="overflow-x-auto mb-6">
               <table className="w-full font-sans text-sm border-collapse">
                 <thead>
-                  <tr className="border-b border-black/8">
+                  <tr className="border-b border-white/[0.06]">
                     <th className="text-left py-3 pr-4 text-xs font-semibold uppercase tracking-widest text-accent w-1/3">
                       Étape
                     </th>
@@ -714,7 +714,7 @@ export default function ClosingB2BPage() {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-black/8">
+                <tbody className="divide-y divide-white/[0.06]">
                   {[
                     {
                       etape: 'Semaine 1-2',
@@ -762,7 +762,7 @@ export default function ClosingB2BPage() {
 
             <div className="space-y-6 mb-6">
               {/* Situation initiale */}
-              <div className="border-l-2 border-black/10 pl-5">
+              <div className="border-l-2 border-white/[0.06] pl-5">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-2">
                   Situation initiale
                 </p>
@@ -833,7 +833,7 @@ export default function ClosingB2BPage() {
               </div>
             </div>
 
-            <div className="bg-bg-secondary rounded-xl p-5 border border-black/8 grid sm:grid-cols-3 gap-4 text-center">
+            <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06] grid sm:grid-cols-3 gap-4 text-center">
               {[
                 { chiffre: '0 → 38 %', detail: 'taux de closing en 10 semaines' },
                 { chiffre: '+2 clients/mois', detail: 'sur une offre à 3 500 €' },
@@ -902,7 +902,7 @@ export default function ClosingB2BPage() {
                 { label: 'Leads inbound froids', taux: '5–10 %', context: "Le prospect a rempli un formulaire sans qualification. Intention floue, décision lente." },
                 { label: 'Leads sur référence', taux: '40–60 %', context: "La confiance est pré-établie. La discovery est plus courte, les objections moins nombreuses." },
               ].map(({ label, taux, context }) => (
-                <div key={label} className="bg-bg-secondary rounded-xl p-4 border border-black/8">
+                <div key={label} className="bg-bg-secondary rounded-xl p-4 border border-white/[0.06]">
                   <p className="font-sans text-xs text-text-muted mb-1">{label}</p>
                   <p className="font-serif text-xl text-accent mb-2">{taux}</p>
                   <p className="font-sans text-xs text-text-muted leading-relaxed">{context}</p>
@@ -953,7 +953,7 @@ export default function ClosingB2BPage() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-bg-secondary rounded-xl p-5 border border-black/8">
+              <div className="bg-bg-secondary rounded-xl p-5 border border-white/[0.06]">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted/60 mb-3">
                   Ça ne marche pas pour
                 </p>
@@ -994,7 +994,7 @@ export default function ClosingB2BPage() {
             </h2>
             <div className="space-y-6">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-black/10 pl-5">
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>
@@ -1003,7 +1003,7 @@ export default function ClosingB2BPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -1031,7 +1031,7 @@ export default function ClosingB2BPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>

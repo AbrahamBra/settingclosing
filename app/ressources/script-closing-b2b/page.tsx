@@ -158,8 +158,8 @@ export default function ScriptClosingPage() {
               mots s&apos;adaptent à chaque appel.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 mb-5">
-              <div className="rounded-xl border border-black/10 overflow-hidden">
-                <div className="bg-red-50/30 px-4 py-2 border-b border-black/8">
+              <div className="rounded-xl border border-white/[0.06] overflow-hidden">
+                <div className="bg-red-500/5 px-4 py-2 border-b border-white/[0.06]">
                   <p className="font-sans text-xs font-semibold text-text-muted/60 uppercase tracking-widest">
                     Template — à éviter
                   </p>
@@ -279,8 +279,8 @@ export default function ScriptClosingPage() {
                   Objectif : obtenir une réponse directe après le pitch, sans ambiguïté.
                 </p>
                 <div className="space-y-3">
-                  <div className="rounded-xl border border-black/10 overflow-hidden">
-                    <div className="px-4 py-2 border-b border-black/8">
+                  <div className="rounded-xl border border-white/[0.06] overflow-hidden">
+                    <div className="px-4 py-2 border-b border-white/[0.06]">
                       <p className="font-sans text-xs text-text-muted/60 uppercase tracking-widest font-semibold">Éviter</p>
                     </div>
                     <div className="px-4 py-3">
@@ -378,7 +378,7 @@ export default function ScriptClosingPage() {
             </h2>
             <div className="space-y-6">
               {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-black/10 pl-5">
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-muted text-sm leading-relaxed">{answer}</p>
                 </div>
@@ -387,7 +387,7 @@ export default function ScriptClosingPage() {
           </section>
 
           {/* Pour aller plus loin */}
-          <div className="mt-14 pt-8 border-t border-black/8">
+          <div className="mt-14 pt-8 border-t border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">
               Pour aller plus loin
             </p>
@@ -414,7 +414,7 @@ export default function ScriptClosingPage() {
           </div>
 
           {/* CTA */}
-          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-black/8">
+          <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               ChallengersLab
             </p>
