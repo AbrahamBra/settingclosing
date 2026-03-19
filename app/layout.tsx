@@ -69,6 +69,17 @@ const jsonLd = {
               valueAddedTaxIncluded: false,
             },
           },
+          {
+            '@type': 'Offer',
+            name: 'Setup Nurturing',
+            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing pour transformer une base de leads existante en RDV qualifiés.',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 1500,
+              priceCurrency: 'EUR',
+              valueAddedTaxIncluded: false,
+            },
+          },
         ],
       },
     },

@@ -105,6 +105,72 @@ export function PricingComparison() {
           </ScrollReveal>
         </div>
 
+        {/* Setup Nurturing */}
+        <div className="max-w-2xl mx-auto mt-8">
+          <ScrollReveal>
+            <div className="border-l-[3px] border-[#C87533] bg-[#C87533]/[0.04] rounded-r-lg p-6 flex flex-col gap-4">
+              {/* Eyebrow + headline */}
+              <div>
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#C87533' }}>
+                  Setup Nurturing
+                </p>
+                <h3 className="font-sans text-lg font-bold text-text-primary">
+                  Votre base de leads dort. On la réveille.
+                </h3>
+              </div>
+
+              {/* Description */}
+              <p className="font-sans text-text-secondary text-sm">
+                Pour ceux qui ont une audience, des contacts, des inscrits — mais zéro système pour scorer, nourrir et convertir.
+                On construit avec vous, sur vos outils, le workflow qui transforme vos leads en RDV qualifiés.
+              </p>
+
+              {/* Cyclical messaging */}
+              <p className="font-sans text-text-muted text-sm italic">
+                Un système qui s&apos;affine à chaque cycle&nbsp;: les règles de scoring se précisent avec les données réelles,
+                les séquences s&apos;adaptent aux retours de conversion, le routing s&apos;optimise.
+                Plus le temps passe, plus la machine est efficace.
+              </p>
+
+              {/* Livrables */}
+              <div className="space-y-1.5">
+                {[
+                  'Scoring des leads selon signaux d\u2019engagement',
+                  'Séquences de nurturing personnalisées',
+                  'Routing automatique vers appel commercial',
+                  'Construit sur-mesure sur votre stack existante',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2">
+                    <span className="text-[#C87533] shrink-0 mt-0.5">✓</span>
+                    <p className="font-sans text-text-primary text-sm">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Pricing */}
+              <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6">
+                <div>
+                  <p className="font-sans text-text-muted text-xs mb-0.5">Mise en place</p>
+                  <p className="font-sans text-xl text-text-primary font-bold">1&nbsp;500&nbsp;€</p>
+                </div>
+                <div>
+                  <p className="font-sans text-text-muted text-xs mb-0.5">Puis</p>
+                  <p className="font-sans text-sm text-text-primary font-semibold">Prime par RDV livré</p>
+                </div>
+              </div>
+
+              {/* CTA */}
+              <a
+                href="#contact"
+                className="font-sans text-sm font-semibold transition-colors inline-flex items-center gap-1"
+                style={{ color: '#C87533' }}
+              >
+                Construire mon système →
+              </a>
+            </div>
+          </ScrollReveal>
+        </div>
+
         {/* Closing mention */}
         <p className="text-center text-text-muted text-sm mt-8">
           Besoin d&apos;un accompagnement sur le closing&nbsp;? On en parle en call.
