@@ -130,6 +130,30 @@ export function BlogContent() {
         </header>
       </ScrollReveal>
 
+      {/* Featured article */}
+      <ScrollReveal delay={50}>
+        <a href="/ressources/devenir-business-developer" className="group block mb-16">
+          <DarkCard hover className="relative overflow-hidden border-l-4 border-[#C87533]">
+            <div className="flex flex-col md:flex-row md:items-center gap-6 p-8">
+              <div className="flex-1">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-[#C87533] mb-3">
+                  À la une &middot; Formation &middot; 15 min
+                </p>
+                <h2 className="font-sans font-extrabold text-2xl md:text-3xl text-white mb-3 group-hover:text-[#C87533] transition-colors leading-tight">
+                  Devenir Business Developer en 2026
+                </h2>
+                <p className="font-sans text-text-muted leading-relaxed text-sm md:text-base max-w-xl">
+                  Reconversion, alternance, salaire, compétences : tout ce qu&apos;il faut savoir sur le métier de business developer et comment s&apos;y former.
+                </p>
+              </div>
+              <span className="font-sans text-sm text-[#C87533] group-hover:translate-x-1 transition-transform inline-block whitespace-nowrap">
+                Lire l&apos;article &rarr;
+              </span>
+            </div>
+          </DarkCard>
+        </a>
+      </ScrollReveal>
+
       {/* Pillar guides */}
       <ScrollReveal delay={100}>
         <div className="grid sm:grid-cols-3 gap-4 mb-16">
