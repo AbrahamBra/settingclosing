@@ -8,16 +8,16 @@ import { layerConfig } from '@/lib/pipeline-data'
 import { nurturingSteps } from '@/lib/methode-nurturing-data'
 
 export const metadata: Metadata = {
-  title: 'Nurturing — Scoring comportemental, seuils & funnel de maturité | ChallengersLab',
+  title: 'Nurturing B2B — Scoring & funnel de maturité | ChallengersLab',
   description:
-    'Notre système de nurturing : scoring comportemental vs démographique, seuils calibrés, séquences TOFU/MOFU/BOFU et routing automatique. Générez des RDV qualifiés à partir de votre base dormante.',
+    'Scoring comportemental vs démographique, seuils calibrés, séquences TOFU/MOFU/BOFU et routing automatique. Générez des RDV depuis votre base dormante.',
   alternates: {
     canonical: 'https://challengerslab.fr/methode/nurturing',
   },
   openGraph: {
-    title: 'Nurturing — Scoring comportemental, seuils & funnel de maturité | ChallengersLab',
+    title: 'Nurturing B2B — Scoring & funnel de maturité | ChallengersLab',
     description:
-      'Scoring comportemental vs démographique, seuils calibrés sur vos données, séquences par maturité et routing automatique vers vos commerciaux.',
+      'Scoring comportemental, seuils calibrés sur vos données, séquences par maturité et routing automatique vers vos commerciaux.',
     locale: 'fr_FR',
     type: 'website',
     url: 'https://challengerslab.fr/methode/nurturing',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Nurturing — Scoring comportemental, seuils & funnel de maturité',
+  name: 'Nurturing B2B — Scoring & funnel de maturité',
   description:
     'Notre système de nurturing : scoring comportemental vs démographique, seuils calibrés, séquences TOFU/MOFU/BOFU et routing automatique.',
   url: 'https://challengerslab.fr/methode/nurturing',
@@ -160,14 +160,12 @@ export default function NurturingPage() {
             <ScrollReveal>
               <div className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-6 mb-6">
                 <p className="text-text-secondary text-base leading-relaxed mb-4">
-                  Imaginez une salle de 500 personnes qui correspondent &agrave; votre client id&eacute;al.
-                  Statistiquement, <span className="text-text-primary font-semibold">3&nbsp;% sont pr&ecirc;tes &agrave; acheter aujourd&rsquo;hui</span>.
-                  Les 97&nbsp;% restantes ne sont pas pr&ecirc;tes — pas encore. Certaines le seront dans 2 semaines.
-                  D&rsquo;autres dans 6 mois. D&rsquo;autres jamais.
+                  Dans votre base, <span className="text-text-primary font-semibold">environ 3&nbsp;% des contacts sont pr&ecirc;ts &agrave; acheter maintenant</span>.
+                  Les 97&nbsp;% restants ont besoin de temps — quelques semaines pour certains, plusieurs mois pour d&rsquo;autres.
                 </p>
                 <p className="text-text-secondary text-base leading-relaxed mb-4">
-                  Le nurturing, c&rsquo;est rester dans la t&ecirc;te des 97&nbsp;% pour &ecirc;tre l&agrave; quand elles seront pr&ecirc;tes.
-                  Pas en les harcelant — en leur envoyant du contenu utile qui les aide &agrave; avancer dans leur r&eacute;flexion.
+                  Le nurturing, c&rsquo;est rester visible aupr&egrave;s des 97&nbsp;% jusqu&rsquo;&agrave; ce qu&rsquo;ils soient pr&ecirc;ts.
+                  On leur envoie du contenu utile, pas des relances commerciales.
                   Le jour o&ugrave; le besoin se pr&eacute;cise, vous &ecirc;tes d&eacute;j&agrave; dans la shortlist.
                 </p>
                 <p className="text-text-secondary text-base leading-relaxed">

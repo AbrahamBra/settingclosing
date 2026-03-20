@@ -8,16 +8,16 @@ import { layerConfig } from '@/lib/pipeline-data'
 import { telephoniqueSteps } from '@/lib/methode-telephonique-data'
 
 export const metadata: Metadata = {
-  title: 'Setting téléphonique — Qualification BANT & Challenger Sale | ChallengersLab',
+  title: 'Setting téléphonique — Qualification BANT | ChallengersLab',
   description:
-    'Notre méthode de qualification téléphonique : grille BANT co-construite, approche Challenger Sale, scoring pondéré et routing par maturité. Zéro lead perdu.',
+    'Qualification téléphonique B2B : grille BANT co-construite, Challenger Sale, scoring pondéré et routing par maturité. Zéro lead perdu.',
   alternates: {
     canonical: 'https://challengerslab.fr/methode/setting-telephonique',
   },
   openGraph: {
-    title: 'Setting téléphonique — Qualification BANT & Challenger Sale | ChallengersLab',
+    title: 'Setting téléphonique — Qualification BANT | ChallengersLab',
     description:
-      'Grille BANT co-construite, approche Challenger Sale, scoring pondéré et routing par maturité. Chaque lead entrant est qualifié, scoré et routé.',
+      'Grille BANT co-construite, Challenger Sale, scoring pondéré et routing par maturité. Chaque lead est qualifié, scoré et routé.',
     locale: 'fr_FR',
     type: 'website',
     url: 'https://challengerslab.fr/methode/setting-telephonique',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Setting téléphonique — Qualification BANT & Challenger Sale',
+  name: 'Setting téléphonique — Qualification BANT',
   description:
     'Notre méthode de qualification téléphonique : grille BANT co-construite, approche Challenger Sale, scoring pondéré et routing par maturité.',
   url: 'https://challengerslab.fr/methode/setting-telephonique',
@@ -218,7 +218,7 @@ export default function SettingTelephoniquePage() {
                   ne suffit pas. C&rsquo;est une grille de lecture, pas un interrogatoire.
                   Chaque crit&egrave;re est pond&eacute;r&eacute; selon votre march&eacute;&nbsp;: Authority compte triple
                   en vente grands comptes, Timeline compte triple pour un produit saisonnier.
-                  La grille est construite avec vous, pas plaqu&eacute;e depuis un template.
+                  La grille est construite avec vous. Pas de template.
                 </p>
               </div>
             </ScrollReveal>
@@ -258,8 +258,8 @@ export default function SettingTelephoniquePage() {
               <div className="bg-[#FBBF24]/[0.03] border border-[#FBBF24]/10 rounded-xl px-5 py-4">
                 <p className="text-text-secondary text-sm leading-relaxed">
                   <span className="font-semibold text-[#FBBF24]">En pratique&nbsp;:</span> les 90
-                  premi&egrave;res secondes de l&rsquo;appel posent le cadre. Le setter ne dit pas &laquo;&nbsp;Bonjour,
-                  je vous appelle pour&hellip;&nbsp;&raquo; — il ouvre avec un insight sectoriel.
+                  premi&egrave;res secondes de l&rsquo;appel posent le cadre. Le setter ouvre avec un insight sectoriel,
+                  pas avec &laquo;&nbsp;Bonjour, je vous appelle pour&hellip;&nbsp;&raquo;.
                   &laquo;&nbsp;On travaille avec des entreprises de votre secteur et on observe que [observation pr&eacute;cise].
                   Est-ce que &ccedil;a r&eacute;sonne avec votre situation&nbsp;?&nbsp;&raquo;
                   Le prospect &eacute;coute parce qu&rsquo;il apprend quelque chose.
