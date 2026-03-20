@@ -61,6 +61,7 @@ const jsonLd = {
             '@type': 'Offer',
             name: 'Setting commercial B2B — Lancement',
             description: 'Mois 1 : setter dédié, setup outils, ciblage, premiers messages et RDV. Forfait tout inclus.',
+            url: 'https://challengerslab.fr/methode/setting-linkedin',
             priceSpecification: {
               '@type': 'PriceSpecification',
               price: 500,
@@ -72,6 +73,7 @@ const jsonLd = {
             '@type': 'Offer',
             name: 'Setting commercial B2B — Abonnement',
             description: 'Pipeline à plein régime : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés.',
+            url: 'https://challengerslab.fr/methode/setting-linkedin',
             priceSpecification: {
               '@type': 'PriceSpecification',
               price: 1000,
@@ -82,8 +84,15 @@ const jsonLd = {
           },
           {
             '@type': 'Offer',
+            name: 'Setting téléphonique — Qualification de leads',
+            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé. Méthode Challenger Sale, zéro lead perdu.',
+            url: 'https://challengerslab.fr/methode/setting-telephonique',
+          },
+          {
+            '@type': 'Offer',
             name: 'Setup Nurturing',
             description: 'Construction sur-mesure du workflow de scoring, nurturing et routing pour transformer une base de leads existante en RDV qualifiés.',
+            url: 'https://challengerslab.fr/methode/nurturing',
             priceSpecification: {
               '@type': 'PriceSpecification',
               price: 1500,
