@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Relance LinkedIn B2B : quand et comment | ChallengersLab",
+  title: "Relance LinkedIn B2B : quand et comment | Setting.live",
   description:
     "Pas de réponse sur LinkedIn ? Quand relancer, quel message envoyer et combien de fois. Le cadre complet pour des follow-ups efficaces.",
   openGraph: {
-    title: "Relance LinkedIn B2B : quand et comment | ChallengersLab",
+    title: "Relance LinkedIn B2B : quand et comment | Setting.live",
     description:
       "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois : le cadre complet pour des follow-ups qui obtiennent des réponses.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/relance-linkedin-b2b',
+    canonical: 'https://www.setting.live/ressources/relance-linkedin-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/relance-linkedin-b2b',
+  '@id': 'https://www.setting.live/ressources/relance-linkedin-b2b',
   headline: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur',
   description:
     "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois : le cadre complet pour des follow-ups qui obtiennent des réponses.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/relance-linkedin-b2b',
+  url: 'https://www.setting.live/ressources/relance-linkedin-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/relance-linkedin-b2b',
+    '@id': 'https://www.setting.live/ressources/relance-linkedin-b2b',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Relance LinkedIn B2B',
-      item: 'https://setting.live/ressources/relance-linkedin-b2b',
+      item: 'https://www.setting.live/ressources/relance-linkedin-b2b',
     },
   ],
 }
@@ -151,7 +151,7 @@ export default function RelanceLinkedInB2BPage() {
           {/* Header */}
           <header className="mb-12">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-              Setting
+              <a href="/setting" className="hover:underline transition-colors">Setting</a>
             </p>
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur
@@ -173,7 +173,7 @@ export default function RelanceLinkedInB2BPage() {
             <p className="font-sans text-text-secondary text-sm leading-relaxed">
               Ce n&apos;est pas que le premier message ne fonctionne pas. C&apos;est que la relance fait partie du processus normal.
               Le problème n&apos;est pas de relancer. C&apos;est comment on le fait.
-              (Source : données terrain ChallengersLab, 2025–2026)
+              (Source : données terrain Setting.live, 2025–2026)
             </p>
           </div>
 
@@ -593,6 +593,7 @@ export default function RelanceLinkedInB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
                 { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn B2B : exemples et cadre complet' },
@@ -615,13 +616,13 @@ export default function RelanceLinkedInB2BPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un système de relances qui tourne sans y penser ?
             </h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              ChallengersLab opère le système complet : premier message, relances calibrées, gestion du pipeline.
+              Setting.live opère le système complet : premier message, relances calibrées, gestion du pipeline.
               Vous vous concentrez sur les RDV qualifiés. Garantie 5 minimum par mois.
             </p>
             <ButtonGlow as="a" href="/#contact">

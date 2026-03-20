@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting vs Closing : la différence | ChallengersLab',
+  title: 'Setting vs Closing : la différence | Setting.live',
   description:
     'Setting et closing : deux phases distinctes du cycle de vente B2B. Comprenez la différence pour identifier ce qui bloque votre pipeline.',
   openGraph: {
-    title: 'Setting vs Closing : la différence | ChallengersLab',
+    title: 'Setting vs Closing : la différence | Setting.live',
     description:
       'Deux rôles distincts. Savoir lequel travailler en premier change tout à votre croissance.',
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/difference-setting-closing',
+    canonical: 'https://www.setting.live/ressources/difference-setting-closing',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/difference-setting-closing',
+  '@id': 'https://www.setting.live/ressources/difference-setting-closing',
   headline: 'Quelle est la différence entre setting et closing en B2B ?',
   description:
     'Le setting désigne la phase de prospection commerciale B2B. Le closing désigne la phase de vente. Deux rôles distincts qui s\'optimisent indépendamment.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/difference-setting-closing',
+  url: 'https://www.setting.live/ressources/difference-setting-closing',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/difference-setting-closing',
+    '@id': 'https://www.setting.live/ressources/difference-setting-closing',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Différence setting vs closing',
-      item: 'https://setting.live/ressources/difference-setting-closing',
+      item: 'https://www.setting.live/ressources/difference-setting-closing',
     },
   ],
 }
@@ -343,7 +343,7 @@ export default function DifferenceSettingClosingPage() {
             </div>
             <p className="font-sans text-text-secondary text-sm leading-relaxed mt-6">
               Dans les 3 cas, le vrai problème est rarement là où on croit.
-              Les solopreneurs qui pensent avoir un problème de setting ont souvent un problème de
+              Les solopreneurs qui pensent avoir un problème de <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> ont souvent un problème de
               message (Mois 2). Ceux qui pensent avoir un problème de closing ont souvent un problème
               de discovery (Mois 1 du closing). Poser le bon diagnostic avant d&apos;investir évite de traiter le mauvais symptôme.
             </p>
@@ -398,6 +398,15 @@ export default function DifferenceSettingClosingPage() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <a
+                href="/setting"
+                className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
+              >
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">Page pilier</p>
+                <p className="font-sans font-semibold text-text-primary group-hover:text-accent transition-colors">
+                  Setting : le guide complet du setting commercial B2B →
+                </p>
+              </a>
+              <a
                 href="/ressources/setting-commercial-b2b"
                 className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
               >
@@ -430,7 +439,7 @@ export default function DifferenceSettingClosingPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Setting, closing ou les deux ?

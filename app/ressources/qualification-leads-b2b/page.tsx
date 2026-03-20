@@ -5,45 +5,45 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'Qualification de leads B2B en 2026 | ChallengersLab',
+  title: 'Qualification de leads B2B en 2026 | Setting.live',
   description:
     'Qualification de leads B2B : BANT, MEDDIC et qualification en 5 niveaux. Méthodes, critères et exemples pour évaluer vos prospects.',
   openGraph: {
-    title: 'Qualification de leads B2B en 2026 | ChallengersLab',
+    title: 'Qualification de leads B2B en 2026 | Setting.live',
     description:
       'BANT, MEDDIC, qualification signal-based : comment évaluer un prospect B2B avant d\'allouer du temps commercial. Méthodes comparées et exemples concrets.',
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/qualification-leads-b2b',
+    canonical: 'https://www.setting.live/ressources/qualification-leads-b2b',
   },
 }
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/qualification-leads-b2b',
+  '@id': 'https://www.setting.live/ressources/qualification-leads-b2b',
   headline: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples',
   description:
     'Qualifier un lead B2B : BANT, MEDDIC, et qualification en 5 niveaux par signal. Comment évaluer la maturité d\'un prospect avant de lui consacrer du temps.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/qualification-leads-b2b',
+  url: 'https://www.setting.live/ressources/qualification-leads-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/qualification-leads-b2b',
+    '@id': 'https://www.setting.live/ressources/qualification-leads-b2b',
   },
 }
 
@@ -129,9 +129,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
-    { '@type': 'ListItem', position: 3, name: 'Qualification leads B2B', item: 'https://setting.live/ressources/qualification-leads-b2b' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
+    { '@type': 'ListItem', position: 3, name: 'Qualification leads B2B', item: 'https://www.setting.live/ressources/qualification-leads-b2b' },
   ],
 }
 
@@ -335,7 +335,9 @@ export default function QualificationLeadsB2BPage() {
               Qualification en 5 niveaux par signal LinkedIn
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Dans un système de setting signal-based, la qualification commence avant le premier message.
+              Dans un système de{' '}
+              <a href="/setting" className="text-accent hover:underline transition-colors">setting</a>{' '}
+              signal-based, la qualification commence avant le premier message.
               Le setter attribue un niveau de 1 à 5 à chaque prospect selon la nature du signal
               et la qualité des échanges. Seuls les leads N4 et N5 sont envoyés en appel de closing.
             </p>
@@ -420,6 +422,7 @@ export default function QualificationLeadsB2BPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure et questions' },
@@ -439,7 +442,7 @@ export default function QualificationLeadsB2BPage() {
 
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">ChallengersLab</p>
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting.live</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Vos leads sont-ils vraiment qualifiés ?</h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour comprendre comment vous qualifiez aujourd&apos;hui, identifier

@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Prix d'un setter B2B en 2026 | ChallengersLab",
+  title: "Prix d'un setter B2B en 2026 | Setting.live",
   description:
     "Combien coûte un setter B2B ? Fixe, prime par RDV, hybride : vrais chiffres du marché, pièges à éviter et calcul du ROI réel.",
   openGraph: {
-    title: "Prix d'un setter B2B en 2026 | ChallengersLab",
+    title: "Prix d'un setter B2B en 2026 | Setting.live",
     description:
       "Fixe seul vs prime seule vs modèle hybride : les chiffres du marché, comment comparer les offres, et ce que ça coûte vraiment d'après les données terrain.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/cout-setter-b2b-prix',
+    canonical: 'https://www.setting.live/ressources/cout-setter-b2b-prix',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/cout-setter-b2b-prix',
+  '@id': 'https://www.setting.live/ressources/cout-setter-b2b-prix',
   headline: "Coût d'un setter B2B en 2026 : prix, modèles et comparatif",
   description:
     "Combien coûte un setter B2B ? Fixe mensuel, prime par RDV, modèle hybride : les vrais chiffres, les pièges à éviter et comment calculer le ROI réel d'un programme de setting.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/cout-setter-b2b-prix',
+  url: 'https://www.setting.live/ressources/cout-setter-b2b-prix',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/cout-setter-b2b-prix',
+    '@id': 'https://www.setting.live/ressources/cout-setter-b2b-prix',
   },
 }
 
@@ -68,12 +68,12 @@ const faqItems = [
   {
     question: "Quelle différence de coût entre un setter freelance et une agence de setting ?",
     answer:
-      "Un setter freelance facture généralement moins (pas de frais de structure), mais vous gérez l'onboarding, les outils, la méthode et le suivi seul. Une agence comme ChallengersLab inclut la méthode, le skill IA, les outils et l'accompagnement — ce qui représente un surcoût de 200 à 500 €/mois justifié par la vitesse de calibration et la garantie sur les résultats.",
+      "Un setter freelance facture généralement moins (pas de frais de structure), mais vous gérez l'onboarding, les outils, la méthode et le suivi seul. Une agence comme Setting.live inclut la méthode, le skill IA, les outils et l'accompagnement — ce qui représente un surcoût de 200 à 500 €/mois justifié par la vitesse de calibration et la garantie sur les résultats.",
   },
   {
     question: "Qu'est-ce qu'une garantie de RDV concrètement ?",
     answer:
-      "Une garantie sur le nombre de RDV livrés signifie que si le setter ne livre pas le minimum convenu sur un mois, le surplus est déduit de la prochaine facture ou remboursé. Chez ChallengersLab, la garantie est de 5 RDV qualifiés minimum par mois. Si ce seuil n'est pas atteint, on ne facture pas la différence.",
+      "Une garantie sur le nombre de RDV livrés signifie que si le setter ne livre pas le minimum convenu sur un mois, le surplus est déduit de la prochaine facture ou remboursé. Chez Setting.live, la garantie est de 5 RDV qualifiés minimum par mois. Si ce seuil n'est pas atteint, on ne facture pas la différence.",
   },
 ]
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "Coût d'un setter B2B",
-      item: 'https://setting.live/ressources/cout-setter-b2b-prix',
+      item: 'https://www.setting.live/ressources/cout-setter-b2b-prix',
     },
   ],
 }
@@ -165,7 +165,7 @@ export default function CoutSetterB2BPage() {
             {[
               { stat: '800–1 500 €', label: 'fixe mensuel moyen' },
               { stat: '50–200 €', label: 'par RDV livré' },
-              { stat: '500 €/mois', label: 'fixe dans le modèle hybride ChallengersLab' },
+              { stat: '500 €/mois', label: 'fixe dans le modèle hybride Setting.live' },
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
@@ -249,10 +249,10 @@ export default function CoutSetterB2BPage() {
                     réduire le fixe futur.
                   </p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
-                    C&apos;est le modèle utilisé par ChallengersLab : 500 €/mois de fixe
-                    + 25 à 150 €/RDV selon le niveau de qualification. Un RDV avec un décideur
-                    confirmé, budget validé et contexte favorable vaut plus qu&apos;un RDV avec un
-                    profil tièdement intéressé.
+                    C&apos;est le modèle utilisé par Setting.live : 500 €/mois de fixe
+                    + 50 à 250 €/RDV selon le ticket moyen du client. Le montant exact de la prime
+                    dépend aussi de la présence de lead magnets actifs et d&apos;une stratégie de contenu
+                    — un contexte favorable génère plus de volume et influence la fourchette.
                   </p>
                   <p className="font-sans text-accent text-xs font-semibold">
                     Les intérêts du setter et du client pointent dans la même direction.
@@ -374,7 +374,7 @@ export default function CoutSetterB2BPage() {
                 Ce qu&apos;on paye qu&apos;on ne voit pas
               </h2>
               <p className="mb-4">
-                Le coût affiché d&apos;un programme de setting n&apos;est pas le coût réel si le programme
+                Le coût affiché d&apos;un programme de <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> n&apos;est pas le coût réel si le programme
                 est mal exécuté. Les coûts cachés d&apos;un setter sans méthode s&apos;accumulent silencieusement.
               </p>
 
@@ -492,6 +492,7 @@ export default function CoutSetterB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
                 { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs SDR externalisé : le comparatif coût réel en 2026' },
@@ -507,7 +508,7 @@ export default function CoutSetterB2BPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Voir les tarifs et la garantie résultats

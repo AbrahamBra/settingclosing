@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Messages LinkedIn sans réponse | ChallengersLab",
+  title: "Messages LinkedIn sans réponse | Setting.live",
   description:
     "5 erreurs qui tuent vos taux de réponse LinkedIn et comment les corriger. Exemples réels de mauvais messages et versions corrigées.",
   openGraph: {
-    title: "Messages LinkedIn sans réponse | ChallengersLab",
+    title: "Messages LinkedIn sans réponse | Setting.live",
     description:
       "Pitch trop tôt, deuxième phrase générique, test du téléphone raté. Les 5 erreurs de prospection LinkedIn les plus courantes — avec corrections.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/messages-linkedin-sans-reponse',
+    canonical: 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/messages-linkedin-sans-reponse',
+  '@id': 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
   headline: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses",
   description:
     "Les 5 erreurs qui tuent les taux de réponse LinkedIn : pitch trop tôt, deuxième phrase générique, formules automatiques, longueur excessive et test du téléphone raté.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/messages-linkedin-sans-reponse',
+  url: 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/messages-linkedin-sans-reponse',
+    '@id': 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "Messages LinkedIn sans réponse",
-      item: 'https://setting.live/ressources/messages-linkedin-sans-reponse',
+      item: 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
     },
   ],
 }
@@ -169,7 +169,7 @@ export default function MessagesLinkedInSansReponsePage() {
           {/* Header */}
           <header className="mb-12">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-              Setting
+              <a href="/setting" className="hover:underline transition-colors">Setting</a>
             </p>
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Pourquoi vos messages LinkedIn n&apos;obtiennent pas de réponses
@@ -191,7 +191,7 @@ export default function MessagesLinkedInSansReponsePage() {
               Sur des messages construits sur signal d&apos;achat, avec une deuxième phrase personnalisée
               et le bon niveau d&apos;intensité selon le signal — ce taux dépasse régulièrement 20&nbsp;%.
               La différence n&apos;est pas la plateforme. C&apos;est la méthode.
-              (Source : données terrain ChallengersLab, 2025–2026)
+              (Source : données terrain Setting.live, 2025–2026)
             </p>
           </div>
 
@@ -577,7 +577,7 @@ export default function MessagesLinkedInSansReponsePage() {
                 ont des taux de réponse 3× supérieurs à ceux qui génèrent sans relire.
               </p>
               <p className="font-sans text-text-secondary text-sm">
-                Source : données terrain ChallengersLab, analyse de 1 200+ messages envoyés, 2025–2026
+                Source : données terrain Setting.live, analyse de 1 200+ messages envoyés, 2025–2026
               </p>
             </div>
           </section>
@@ -608,6 +608,7 @@ export default function MessagesLinkedInSansReponsePage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
               ].map(({ href, label }) => (
@@ -622,13 +623,13 @@ export default function MessagesLinkedInSansReponsePage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez des messages qui décrochent des RDV qualifiés ?
             </h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              ChallengersLab construit et opère le système complet : signaux, rédaction assistée par IA,
+              Setting.live construit et opère le système complet : signaux, rédaction assistée par IA,
               relances calibrées. Vous recevez les RDV. Garantie 5 minimum par mois.
             </p>
             <ButtonGlow as="a" href="/#contact">

@@ -7,14 +7,14 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Tarifs setting commercial externalisé | ChallengersLab',
+  title: 'Tarifs setting commercial externalisé | Setting.live',
   description:
-    'Prix du setting commercial externalisé : LinkedIn dès 490 € + 790 €/mois, téléphonique dès 690 €/mois, Nurturing 1 990 €. Sans engagement.',
+    'Prix du setting commercial externalisé : LinkedIn dès 490 € + 500 €/mois, téléphonique dès 690 €/mois, Nurturing 1 990 €. Sans engagement.',
   alternates: {
-    canonical: 'https://setting.live/tarifs',
+    canonical: 'https://www.setting.live/tarifs',
   },
   openGraph: {
-    title: 'Tarifs setting commercial externalisé | ChallengersLab',
+    title: 'Tarifs setting commercial externalisé | Setting.live',
     description: 'Prix du setting commercial externalisé : 3 offres adaptées à votre situation. Garantie 5 RDV minimum, sans engagement.',
     locale: 'fr_FR',
     type: 'website',
@@ -26,21 +26,21 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Tarifs setting commercial externalisé | ChallengersLab',
+  name: 'Tarifs setting commercial externalisé | Setting.live',
   description:
-    'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 790 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum.',
-  url: 'https://setting.live/tarifs',
+    'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 500 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum.',
+  url: 'https://www.setting.live/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-      { '@type': 'ListItem', position: 2, name: 'Tarifs', item: 'https://setting.live/tarifs' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+      { '@type': 'ListItem', position: 2, name: 'Tarifs', item: 'https://www.setting.live/tarifs' },
     ],
   },
   mainEntity: {
@@ -50,7 +50,7 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 1,
         name: 'Setting LinkedIn',
-        description: 'Votre pipeline LinkedIn, clé en main. Setter dédié, ciblage ICP, messages co-rédigés avec IA, validation humaine. Prime de +50 €/RDV au-delà de 8.',
+        description: 'Votre pipeline LinkedIn, clé en main. Setter dédié, ciblage ICP, messages co-rédigés avec IA, validation humaine. Prime de 50 à 250 €/RDV selon le ticket moyen.',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
@@ -60,17 +60,10 @@ const webPageSchema = {
           },
           {
             '@type': 'PriceSpecification',
-            price: '790',
+            price: '500',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
-            description: 'Mois 1-2 : phase de calibration',
-          },
-          {
-            '@type': 'PriceSpecification',
-            price: '1290',
-            priceCurrency: 'EUR',
-            unitText: 'MONTH',
-            description: 'Mois 3+ : pipeline à plein régime',
+            description: 'Mois 1 à 3 : même tarif sur toute la durée',
           },
         ],
       },
@@ -78,7 +71,7 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 2,
         name: 'Setting téléphonique',
-        description: 'Qualification téléphonique des leads entrants. Routing intelligent selon niveau de maturité. Prime de +35 €/RDV au-delà de 10.',
+        description: 'Qualification téléphonique des leads entrants. Routing intelligent selon niveau de maturité. Prime de 25 à 200 €/RDV selon le ticket moyen.',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
@@ -91,7 +84,7 @@ const webPageSchema = {
             price: '690',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
-            description: 'Standalone — ou 490 €/mois en complément du Setting LinkedIn',
+            description: 'Standalone — ou 490 €/mois en complément du Setting LinkedIn. Prime de 25 à 200 €/RDV selon le ticket moyen.',
           },
         ],
       },
@@ -99,7 +92,7 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 3,
         name: 'Setup Nurturing',
-        description: 'Faites remonter vos leads chauds et créez des revenus low ticket sur votre base existante. Scoring comportemental, séquences email/LinkedIn, workflow automatisé. Prime de 80-100 €/RDV généré.',
+        description: 'Faites remonter vos leads chauds et créez des revenus low ticket sur votre base existante. Scoring comportemental, séquences email/LinkedIn, workflow automatisé. Prime de 50 à 250 €/RDV généré selon le ticket moyen.',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
@@ -112,7 +105,7 @@ const webPageSchema = {
             price: '490',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
-            description: '3 mois d\'optimisation + prime par RDV généré',
+            description: '3 mois d\'optimisation + prime de 50 à 250 €/RDV généré selon le ticket moyen',
           },
         ],
       },
@@ -129,7 +122,7 @@ const faqSchema = {
       name: 'Combien coûte le Setting LinkedIn ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '490 € de setup initial, puis 790 €/mois les 2 premiers mois (calibration), et 1 290 €/mois ensuite. Un bonus de 50 €/RDV s\'applique au-delà de 8 RDV livrés. Sans engagement.',
+        text: '490 € de setup initial, puis 500 €/mois — le même tarif sur les 3 premiers mois, sans augmentation. Une prime de 50 à 250 €/RDV s\'applique selon votre ticket moyen. Sans engagement.',
       },
     },
     {
@@ -145,7 +138,7 @@ const faqSchema = {
       name: 'Le Setting téléphonique est-il moins cher en bundle ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. En standalone, le Setting téléphonique est à 690 €/mois. En complément du Setting LinkedIn, il passe à 490 €/mois. Le setup de 290 € s\'applique dans les deux cas. Une prime de 35 €/RDV s\'ajoute au-delà de 10 RDV qualifiés.',
+        text: 'Oui. En standalone, le Setting téléphonique est à 690 €/mois. En complément du Setting LinkedIn, il passe à 490 €/mois. Le setup de 290 € s\'applique dans les deux cas. Une prime de 25 à 200 €/RDV qualifié s\'ajoute selon votre ticket moyen.',
       },
     },
     {
@@ -153,7 +146,7 @@ const faqSchema = {
       name: 'Comment fonctionne le Setup Nurturing ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '1 990 € pour construire le système (scoring, séquences, workflows), puis 490 €/mois pendant 3 mois d\'optimisation avec une prime de 80-100 € par RDV généré. Après 3 mois, le système tourne en autonomie.',
+        text: '1 990 € pour construire le système (scoring, séquences, workflows), puis 490 €/mois pendant 3 mois d\'optimisation avec une prime de 50 à 250 € par RDV généré selon votre ticket moyen. Après 3 mois, le système tourne en autonomie.',
       },
     },
     {
@@ -186,10 +179,9 @@ const offers = [
     headline: 'Votre pipeline LinkedIn, cl\u00e9 en main',
     pricingPhases: [
       { label: 'Setup', amount: '490\u00a0\u20ac', suffix: 'one-shot', detail: 'Cadrage ICP, setup outils, r\u00e9daction s\u00e9quences' },
-      { label: 'Mois 1-2', amount: '790\u00a0\u20ac', suffix: '/ mois', detail: 'Phase de calibration' },
-      { label: 'Mois 3+', amount: '1\u00a0290\u00a0\u20ac', suffix: '/ mois', detail: 'Pipeline \u00e0 plein r\u00e9gime' },
+      { label: 'Mois 1 \u00e0 3', amount: '500\u00a0\u20ac', suffix: '/ mois', detail: 'M\u00eame tarif sur toute la dur\u00e9e' },
     ],
-    bonus: '+50\u00a0\u20ac par RDV au-del\u00e0 de 8',
+    bonus: 'Prime de 50 \u00e0 250\u00a0\u20ac/RDV selon le ticket moyen',
     features: [
       'Setter d\u00e9di\u00e9 \u00e0 votre compte',
       'Ciblage ICP + signaux d\u2019achat',
@@ -211,7 +203,7 @@ const offers = [
       { label: 'Setup', amount: '290\u00a0\u20ac', suffix: 'one-shot', detail: 'Script, formation, config CRM' },
       { label: 'Standalone', amount: '690\u00a0\u20ac', suffix: '/ mois', detail: 'Qualification de vos leads entrants. 490\u00a0\u20ac/mois en bundle.' },
     ],
-    bonus: '+35\u00a0\u20ac par RDV qualifi\u00e9 au-del\u00e0 de 10',
+    bonus: 'Prime de 25 \u00e0 200\u00a0\u20ac/RDV qualifi\u00e9 selon le ticket moyen',
     features: [
       'Qualification t\u00e9l\u00e9phonique de chaque lead',
       'Routing : chaud \u2192 RDV / ti\u00e8de \u2192 newsletter / froid \u2192 nurturing',
@@ -232,7 +224,7 @@ const offers = [
       { label: 'Construction', amount: '1\u00a0990\u00a0\u20ac', suffix: 'one-shot', detail: 'Scoring, s\u00e9quences, workflows. ~4 semaines.' },
       { label: 'Optimisation', amount: '490\u00a0\u20ac', suffix: '/ mois \u00d7 3', detail: 'Affinage continu, autonomie apr\u00e8s M3' },
     ],
-    bonus: '+80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9',
+    bonus: 'Prime de 50 \u00e0 250\u00a0\u20ac/RDV g\u00e9n\u00e9r\u00e9 selon le ticket moyen',
     features: [
       'Scoring comportemental de votre base',
       'S\u00e9quences email/LinkedIn personnalis\u00e9es',
@@ -250,7 +242,7 @@ const offers = [
 const faqs = [
   {
     q: 'Combien co\u00fbte le Setting LinkedIn\u00a0?',
-    a: '490\u00a0\u20ac de setup, puis 790\u00a0\u20ac/mois les 2 premiers mois (calibration), et 1\u00a0290\u00a0\u20ac/mois ensuite. Un bonus de 50\u00a0\u20ac/RDV s\u2019applique au-del\u00e0 de 8\u00a0RDV livr\u00e9s. Sans engagement.',
+    a: '490\u00a0\u20ac de setup, puis 500\u00a0\u20ac/mois \u2014 le m\u00eame tarif sur les 3 premiers mois, sans augmentation. Une prime de 50 \u00e0 250\u00a0\u20ac/RDV s\u2019applique selon votre ticket moyen. Sans engagement.',
   },
   {
     q: 'Pourquoi un setup fee\u00a0?',
@@ -258,11 +250,15 @@ const faqs = [
   },
   {
     q: 'Le Setting t\u00e9l\u00e9phonique est-il moins cher en bundle\u00a0?',
-    a: 'Oui. En standalone, il est \u00e0 690\u00a0\u20ac/mois. En compl\u00e9ment du Setting LinkedIn, il passe \u00e0 490\u00a0\u20ac/mois. Le setup de 290\u00a0\u20ac s\u2019applique dans les deux cas. Une prime de 35\u00a0\u20ac/RDV s\u2019ajoute au-del\u00e0 de 10 RDV qualifi\u00e9s.',
+    a: 'Oui. En standalone, il est \u00e0 690\u00a0\u20ac/mois. En compl\u00e9ment du Setting LinkedIn, il passe \u00e0 490\u00a0\u20ac/mois. Le setup de 290\u00a0\u20ac s\u2019applique dans les deux cas. Une prime de 25 \u00e0 200\u00a0\u20ac/RDV qualifi\u00e9 s\u2019ajoute selon votre ticket moyen.',
   },
   {
     q: 'Comment fonctionne le Setup Nurturing\u00a0?',
-    a: '1\u00a0990\u00a0\u20ac pour construire le syst\u00e8me (scoring, s\u00e9quences, workflows), puis 490\u00a0\u20ac/mois pendant 3 mois d\u2019optimisation avec une prime de 80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9. Apr\u00e8s 3 mois, le syst\u00e8me tourne en autonomie.',
+    a: '1\u00a0990\u00a0\u20ac pour construire le syst\u00e8me (scoring, s\u00e9quences, workflows), puis 490\u00a0\u20ac/mois pendant 3 mois d\u2019optimisation avec une prime de 50 \u00e0 250\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9 selon votre ticket moyen. Apr\u00e8s 3 mois, le syst\u00e8me tourne en autonomie.',
+  },
+  {
+    q: 'Comment est calcul\u00e9e la prime par RDV\u00a0?',
+    a: 'La prime d\u00e9pend de votre ticket moyen\u00a0: plus votre panier moyen est \u00e9lev\u00e9, plus la prime par RDV est haute. Le montant exact varie aussi selon la pr\u00e9sence de lead magnets actifs et d\u2019une strat\u00e9gie de contenu \u2014 un contexte favorable g\u00e9n\u00e8re plus de volume, ce qui influence la fourchette.',
   },
   {
     q: 'Y a-t-il un engagement\u00a0?',
@@ -325,8 +321,8 @@ export default function TarifsPage() {
                 Des prix progressifs, z&eacute;ro surprise
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
-                Setup fee transparent, tarif r&eacute;duit en phase de rodage, plein r&eacute;gime ensuite.
-                Vous payez moins tant que les r&eacute;sultats montent en puissance.
+                Setup fee transparent, tarif fixe identique sur toute la dur&eacute;e, prime variable selon votre ticket moyen.
+                Le montant de la prime d&eacute;pend aussi de la pr&eacute;sence de lead magnets actifs et d&apos;une strat&eacute;gie de contenu.
               </p>
             </ScrollReveal>
           </div>
@@ -504,7 +500,7 @@ export default function TarifsPage() {
                 </p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed">
                   Pas une clause en petits caract\u00e8res. C\u2019est notre engagement de base.
-                  Les prix montent progressivement parce que les r&eacute;sultats aussi.
+                  Le fixe reste identique &mdash; la prime par RDV est le seul variable.
                 </p>
               </div>
             </ScrollReveal>

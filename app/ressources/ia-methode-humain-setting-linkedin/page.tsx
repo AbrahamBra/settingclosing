@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "IA et humain : système de setting LinkedIn | ChallengersLab",
+  title: "IA et humain : système de setting LinkedIn | Setting.live",
   description:
     "Système de setting LinkedIn : détection IA des signaux, scoring humain et co-rédaction Claude. Deux phases, deux modes de message, exemples concrets.",
   openGraph: {
-    title: "IA et humain : système de setting LinkedIn | ChallengersLab",
+    title: "IA et humain : système de setting LinkedIn | Setting.live",
     description:
       "L'IA détecte. La méthode filtre. L'humain valide. Pourquoi les 3 couches sont nécessaires, et comment les calibrer pour tenir sur la durée.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/ia-methode-humain-setting-linkedin',
+    canonical: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/ia-methode-humain-setting-linkedin',
+  '@id': 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
   headline: "IA, méthode et humain : les 3 couches d'une machine à RDV LinkedIn",
   description:
     "Un système de setting LinkedIn qui tient combine trois couches distinctes : l'IA pour la détection et la co-rédaction, la méthode pour le scoring et les règles non-négociables, et l'humain pour la validation et la décision. Explications et exemples.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/ia-methode-humain-setting-linkedin',
+  url: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/ia-methode-humain-setting-linkedin',
+    '@id': 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'IA, méthode et humain : setting LinkedIn',
-      item: 'https://setting.live/ressources/ia-methode-humain-setting-linkedin',
+      item: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
     },
   ],
 }
@@ -163,7 +163,7 @@ export default function Page() {
               Setting LinkedIn signal-based avec co-rédaction IA
             </p>
             <p className="font-sans text-text-secondary text-sm leading-relaxed">
-              Un système de setting LinkedIn signal-based combine trois couches distinctes :
+              Un système de <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> LinkedIn signal-based combine trois couches distinctes :
               l&apos;IA pour détecter les interactions et co-rédiger les messages, la méthode
               pour scorer les leads par maturité d&apos;achat et imposer les règles de rédaction,
               et l&apos;humain pour valider chaque message avant envoi et prendre les décisions
@@ -649,6 +649,7 @@ export default function Page() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
                 { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },

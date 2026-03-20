@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Scripts de closing B2B : exemples | ChallengersLab",
+  title: "Scripts de closing B2B : exemples | Setting.live",
   description:
     "Scripts de closing B2B : cadres pour l'ouverture, la discovery, le pitch et la demande de décision. Avec exemples et erreurs courantes.",
   openGraph: {
-    title: "Scripts de closing B2B : exemples | ChallengersLab",
+    title: "Scripts de closing B2B : exemples | Setting.live",
     description:
       "Ouverture, discovery, pitch, demande de décision : les scripts de closing B2B avec exemples avant/après et les erreurs qui coûtent des deals.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/script-closing-b2b',
+    canonical: 'https://www.setting.live/ressources/script-closing-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/script-closing-b2b',
+  '@id': 'https://www.setting.live/ressources/script-closing-b2b',
   headline: "Scripts et phrases de closing B2B : cadre et exemples",
   description:
     "Les scripts de closing B2B ne sont pas des textes à réciter. Ouverture, discovery, pitch, demande de décision — les cadres avec exemples concrets.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/script-closing-b2b',
+  url: 'https://www.setting.live/ressources/script-closing-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/script-closing-b2b',
+    '@id': 'https://www.setting.live/ressources/script-closing-b2b',
   },
 }
 
@@ -134,13 +134,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Scripts de closing B2B',
-      item: 'https://setting.live/ressources/script-closing-b2b',
+      item: 'https://www.setting.live/ressources/script-closing-b2b',
     },
   ],
 }
@@ -437,6 +437,7 @@ export default function ScriptClosingPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition, méthode et programme complet' },
                 { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure et questions' },
                 { href: '/ressources/gestion-objections-b2b', label: 'Gérer les objections en vente B2B' },
@@ -460,7 +461,7 @@ export default function ScriptClosingPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez travailler vos scripts d&apos;appel ?

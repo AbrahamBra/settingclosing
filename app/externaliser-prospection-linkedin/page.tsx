@@ -9,14 +9,14 @@ import { DarkCard } from '@/components/ui/DarkCard'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Externaliser sa prospection LinkedIn B2B | ChallengersLab',
+  title: 'Externaliser sa prospection LinkedIn B2B | Setting.live',
   description:
     "Externalisez votre prospection LinkedIn à une équipe dédiée. Setter humain, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine.",
   alternates: {
-    canonical: 'https://setting.live/externaliser-prospection-linkedin',
+    canonical: 'https://www.setting.live/externaliser-prospection-linkedin',
   },
   openGraph: {
-    title: 'Externaliser sa prospection LinkedIn B2B | ChallengersLab',
+    title: 'Externaliser sa prospection LinkedIn B2B | Setting.live',
     description:
       'Externalisez votre prospection LinkedIn. Setter dédié + IA signal-based. RDV qualifiés dès la semaine 1.',
     locale: 'fr_FR',
@@ -34,8 +34,8 @@ const serviceSchema = {
     "Service d'externalisation de la prospection LinkedIn pour consultants, fondateurs et solopreneurs B2B. Setter dédié, détection IA des signaux d'achat, RDV qualifiés dès la première semaine.",
   provider: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   serviceType: 'Prospection commerciale LinkedIn externalisée',
   areaServed: {
@@ -110,13 +110,13 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: 1,
       name: 'Accueil',
-      item: 'https://setting.live',
+      item: 'https://www.setting.live',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Externaliser sa prospection LinkedIn',
-      item: 'https://setting.live/externaliser-prospection-linkedin',
+      item: 'https://www.setting.live/externaliser-prospection-linkedin',
     },
   ],
 }
@@ -526,7 +526,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 790\u00a0\u20ac/mois. Sans engagement.</p>
+                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 500\u00a0\u20ac/mois. Sans engagement.</p>
                 </a>
               </div>
             </ScrollReveal>

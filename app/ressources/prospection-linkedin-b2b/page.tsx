@@ -5,16 +5,16 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Prospection LinkedIn B2B en 2026 | ChallengersLab",
+  title: "Prospection LinkedIn B2B en 2026 | Setting.live",
   description: "Prospecter sur LinkedIn en B2B en 2026 : signaux d'achat, messages qui obtiennent des réponses, Sales Navigator et IA co-rédacteur.",
   openGraph: {
-    title: "Prospection LinkedIn B2B en 2026 | ChallengersLab",
+    title: "Prospection LinkedIn B2B en 2026 | Setting.live",
     description: "Signaux inbound et outbound, rédaction des messages, relances, qualification. Comment construire un système de prospection LinkedIn qui livre des RDV qualifiés semaine après semaine.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/prospection-linkedin-b2b',
+    canonical: 'https://www.setting.live/ressources/prospection-linkedin-b2b',
   },
 }
 
@@ -23,27 +23,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/prospection-linkedin-b2b',
+  '@id': 'https://www.setting.live/ressources/prospection-linkedin-b2b',
   headline: "Prospection LinkedIn B2B : méthode complète en 2026",
   description:
     "Comment prospecter sur LinkedIn en B2B en 2026 : signaux d'achat, messages qui obtiennent des réponses, Sales Navigator, IA comme co-rédacteur. La méthode terrain.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/prospection-linkedin-b2b',
+  url: 'https://www.setting.live/ressources/prospection-linkedin-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/prospection-linkedin-b2b',
+    '@id': 'https://www.setting.live/ressources/prospection-linkedin-b2b',
   },
 }
 
@@ -138,13 +138,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "Prospection LinkedIn B2B",
-      item: 'https://setting.live/ressources/prospection-linkedin-b2b',
+      item: 'https://www.setting.live/ressources/prospection-linkedin-b2b',
     },
   ],
 }
@@ -182,7 +182,7 @@ export default function ProspectionLinkedInB2BPage() {
           {/* Header */}
           <header className="mb-12">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-              Setting
+              <a href="/setting" className="hover:underline transition-colors">Setting</a>
             </p>
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Prospection LinkedIn B2B : méthode complète en 2026
@@ -246,7 +246,7 @@ export default function ProspectionLinkedInB2BPage() {
               Ce n&apos;est plus le cas. Les décideurs B2B reçoivent en moyenne 15 messages de prospection
               par semaine. Ils ont développé un réflexe de filtre : dès les deux premières lignes,
               ils savent si le message a été envoyé à mille personnes ou réellement écrit pour eux.
-              Et ils agissent en conséquence.
+              Et ils agissent en conséquence — c&apos;est l&apos;une des raisons pour lesquelles tant de <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline transition-colors">messages LinkedIn restent sans réponse</a>.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le plafond de la prospection froide sans signal est bas. Vous pouvez écrire les meilleurs
@@ -257,7 +257,7 @@ export default function ProspectionLinkedInB2BPage() {
             <p className="font-sans text-text-secondary leading-relaxed">
               Ce qui différencie un message qui obtient une réponse, c&apos;est le contexte. Le prospect
               a posté quelque chose sur le sujet il y a trois jours. Il a commenté un post d&apos;un concurrent.
-              Il vient de changer de poste et son profil indique qu&apos;il recrute. Ces éléments créent
+              Il vient de changer de poste et son profil indique qu&apos;il recrute. Ce sont des <a href="/ressources/signal-achat-linkedin" className="text-accent hover:underline transition-colors">signaux d&apos;achat LinkedIn</a> qui créent
               une fenêtre d&apos;attention. Un message qui entre par cette fenêtre n&apos;est plus une interruption —
               c&apos;est une continuation de quelque chose qu&apos;il a lui-même commencé.
             </p>
@@ -712,6 +712,7 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
@@ -728,7 +729,7 @@ export default function ProspectionLinkedInB2BPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06] mt-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Un système de prospection LinkedIn opéré pour vous

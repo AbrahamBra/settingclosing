@@ -5,45 +5,45 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'Méthode SONCAS : 6 leviers B2B | ChallengersLab',
+  title: 'Méthode SONCAS : 6 leviers B2B | Setting.live',
   description:
     'Méthode SONCAS en B2B : Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie. Définition des 6 leviers et exemples concrets.',
   openGraph: {
-    title: 'Méthode SONCAS : 6 leviers B2B | ChallengersLab',
+    title: 'Méthode SONCAS : 6 leviers B2B | Setting.live',
     description:
       'SONCAS : comment utiliser les 6 motivations d\'achat pour améliorer sa discovery call et son taux de closing en B2B.',
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/methode-soncas',
+    canonical: 'https://www.setting.live/ressources/methode-soncas',
   },
 }
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/methode-soncas',
+  '@id': 'https://www.setting.live/ressources/methode-soncas',
   headline: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples',
   description:
     'La méthode SONCAS permet d\'identifier les motivations d\'achat d\'un prospect B2B et d\'adapter son discours commercial en conséquence.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/methode-soncas',
+  url: 'https://www.setting.live/ressources/methode-soncas',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/methode-soncas',
+    '@id': 'https://www.setting.live/ressources/methode-soncas',
   },
 }
 
@@ -89,9 +89,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
-    { '@type': 'ListItem', position: 3, name: 'Méthode SONCAS', item: 'https://setting.live/ressources/methode-soncas' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
+    { '@type': 'ListItem', position: 3, name: 'Méthode SONCAS', item: 'https://www.setting.live/ressources/methode-soncas' },
   ],
 }
 
@@ -462,6 +462,7 @@ export default function MethodeSoncasPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition, méthode et programme complet' },
                 { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure, questions et erreurs à éviter' },
                 { href: '/ressources/gestion-objections-b2b', label: 'Gérer les objections en vente B2B' },
@@ -480,7 +481,7 @@ export default function MethodeSoncasPage() {
 
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">ChallengersLab</p>
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting.live</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez améliorer votre taux de closing ?
             </h3>

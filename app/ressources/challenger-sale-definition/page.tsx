@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Challenger Sale : définition et méthode | ChallengersLab',
+  title: 'Challenger Sale : définition et méthode | Setting.live',
   description:
     "Challenger Sale : méthode B2B issue d'une étude sur 6 000 commerciaux. Teach, Tailor, Take Control et application concrète.",
   openGraph: {
-    title: 'Challenger Sale : définition et méthode | ChallengersLab',
+    title: 'Challenger Sale : définition et méthode | Setting.live',
     description:
       "Issue d'une étude sur 6 000 commerciaux, la méthode Challenger Sale identifie le profil qui surperforme et ses 3 composantes clés.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/challenger-sale-definition',
+    canonical: 'https://www.setting.live/ressources/challenger-sale-definition',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/challenger-sale-definition',
+  '@id': 'https://www.setting.live/ressources/challenger-sale-definition',
   headline: "Qu'est-ce que le Challenger Sale ?",
   description:
     "Le Challenger Sale est une méthode de vente B2B développée par Matthew Dixon et Brent Adamson (CEB, 2011), basée sur une étude portant sur 6 000 commerciaux. Elle identifie 5 profils de vendeurs et démontre que les top performers challengent leurs prospects plutôt que de les accompagner.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/challenger-sale-definition',
+  url: 'https://www.setting.live/ressources/challenger-sale-definition',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/challenger-sale-definition',
+    '@id': 'https://www.setting.live/ressources/challenger-sale-definition',
   },
 }
 
@@ -58,7 +58,7 @@ const faqItems = [
   {
     question: 'Comment devient-on un Challenger ?',
     answer:
-      "Devenir un Challenger s'apprend — mais ça ne s'improvise pas. Il faut d'abord maîtriser la discovery (poser les bonnes questions avant de pitcher), ensuite structurer son pricing pour augmenter la valeur perçue, et enfin pratiquer la tension constructive sur les objections. C'est l'objet du programme Closing de ChallengersLab, structuré sur 3 mois.",
+      "Devenir un Challenger s'apprend — mais ça ne s'improvise pas. Il faut d'abord maîtriser la discovery (poser les bonnes questions avant de pitcher), ensuite structurer son pricing pour augmenter la valeur perçue, et enfin pratiquer la tension constructive sur les objections. C'est l'objet du programme Closing de Setting.live, structuré sur 3 mois.",
   },
   {
     question: 'Challenger Sale vs SPIN Selling : quelles différences ?',
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "Qu'est-ce que le Challenger Sale ?",
-      item: 'https://setting.live/ressources/challenger-sale-definition',
+      item: 'https://www.setting.live/ressources/challenger-sale-definition',
     },
   ],
 }
@@ -338,7 +338,7 @@ export default function ChallengerSalePage() {
               ))}
             </ul>
             <p className="font-sans text-text-secondary leading-relaxed">
-              ChallengersLab applique cette méthode dans le programme Closing : un mois par composante,
+              Setting.live applique cette méthode dans le programme Closing : un mois par composante,
               avec 2h de coaching par semaine dont une heure en situation réelle sur un appel prospect.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mt-4">
@@ -372,6 +372,7 @@ export default function ChallengerSalePage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS' },
@@ -387,7 +388,7 @@ export default function ChallengerSalePage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Appliquer la méthode Challenger à votre activité

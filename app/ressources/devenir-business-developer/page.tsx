@@ -4,18 +4,18 @@ import { Footer } from '@/components/Footer'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Devenir Business Developer en 2026 | ChallengersLab',
+  title: 'Devenir Business Developer en 2026 | Setting.live',
   description:
-    'Métier de business developer : quotidien, salaire, compétences et formation en alternance depuis Chartres avec Back School et ChallengersLab.',
+    'Métier de business developer : quotidien, salaire, compétences et formation en alternance depuis Chartres avec Back School et Setting.live.',
   openGraph: {
-    title: 'Devenir Business Developer en 2026 | ChallengersLab',
+    title: 'Devenir Business Developer en 2026 | Setting.live',
     description:
       'Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous explique le quotidien réel et comment vous y former en alternance.',
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/devenir-business-developer',
+    canonical: 'https://www.setting.live/ressources/devenir-business-developer',
   },
 }
 
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/devenir-business-developer',
+  '@id': 'https://www.setting.live/ressources/devenir-business-developer',
   headline:
     'Business developer : le métier que vous ne connaissiez pas (et qui recrute près de chez vous)',
   description:
@@ -32,20 +32,20 @@ const articleSchema = {
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-02-26',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/devenir-business-developer',
+  url: 'https://www.setting.live/ressources/devenir-business-developer',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/devenir-business-developer',
+    '@id': 'https://www.setting.live/ressources/devenir-business-developer',
   },
 }
 
@@ -89,18 +89,18 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Ressources',
-      item: 'https://setting.live/ressources',
+      item: 'https://www.setting.live/ressources',
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Devenir Business Developer',
-      item: 'https://setting.live/ressources/devenir-business-developer',
+      item: 'https://www.setting.live/ressources/devenir-business-developer',
     },
   ],
 }
@@ -173,7 +173,7 @@ export default function DevenirBusinessDeveloperPage() {
                 { id: 'recrutement', label: 'Pourquoi ce métier recrute autant' },
                 { id: 'reconversion', label: 'La reconversion est un atout, pas un handicap' },
                 { id: 'alternance', label: 'Se former en alternance : apprendre en faisant' },
-                { id: 'terrain', label: "Ce que ça donne sur le terrain : l'exemple ChallengersLab" },
+                { id: 'terrain', label: "Ce que ça donne sur le terrain : l'exemple Setting.live" },
                 { id: 'lancer', label: 'Comment se lancer' },
                 { id: 'setter-closer', label: 'Setter, closer : le business developer du solopreneur' },
               ].map(({ id, label }, i) => (
@@ -426,10 +426,10 @@ export default function DevenirBusinessDeveloperPage() {
           {/* Section 6 — Terrain */}
           <section id="terrain" className="mb-14 scroll-mt-24">
             <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
-              Ce que ça donne sur le terrain : l&apos;exemple ChallengersLab
+              Ce que ça donne sur le terrain : l&apos;exemple Setting.live
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              ChallengersLab est une agence basée à Paris qui aide les entreprises B2B à structurer leurs
+              Setting.live est une agence basée à Paris qui aide les entreprises B2B à structurer leurs
               ventes et à intégrer l&apos;intelligence artificielle dans leurs processus commerciaux. On
               combine vingt ans d&apos;expérience commerciale avec les outils les plus récents du marché.
             </p>
@@ -476,7 +476,7 @@ export default function DevenirBusinessDeveloperPage() {
                 },
                 {
                   num: '03',
-                  title: 'ChallengersLab',
+                  title: 'Setting.live',
                   desc: "Si vous voulez comprendre à quoi ressemble le quotidien d'un business developer dans une agence qui mêle commerce et intelligence artificielle, on est disponibles pour en parler.",
                 },
               ].map(({ num, title, desc }) => (
@@ -580,6 +580,7 @@ export default function DevenirBusinessDeveloperPage() {
               </p>
               <ul className="space-y-2">
                 {[
+                  { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                   { href: '/ressources/difference-setting-closing', label: 'Setting vs Closing : quelle est la différence ?' },
                   { href: '/ressources/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
                   { href: '/ressources/setting-commercial-b2b', label: 'Le setting commercial B2B : guide complet' },

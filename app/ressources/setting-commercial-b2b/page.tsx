@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting commercial B2B : définition et rôle du setter | ChallengersLab',
+  title: 'Setting commercial B2B : définition et rôle du setter | Setting.live',
   description:
     "Le setting commercial précède le closing en B2B. Rôle du setter, méthode LinkedIn signal-based et programme de 3 mois.",
   openGraph: {
-    title: 'Setting commercial B2B : définition et rôle du setter | ChallengersLab',
+    title: 'Setting commercial B2B : définition et rôle du setter | Setting.live',
     description:
       "Setter, setting LinkedIn, signal-based : tout sur le setting commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart le font mal.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/setting-commercial-b2b',
+    canonical: 'https://www.setting.live/ressources/setting-commercial-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/setting-commercial-b2b',
+  '@id': 'https://www.setting.live/ressources/setting-commercial-b2b',
   headline: 'Setting commercial B2B : définition, méthode et programme complet',
   description:
     "Le setting commercial est la phase de prospection qui précède le closing en B2B. Définition exacte, rôle du setter, méthode LinkedIn signal-based, les 5 erreurs et programme des 3 mois en détail.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/setting-commercial-b2b',
+  url: 'https://www.setting.live/ressources/setting-commercial-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/setting-commercial-b2b',
+    '@id': 'https://www.setting.live/ressources/setting-commercial-b2b',
   },
 }
 
@@ -109,13 +109,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Setting commercial B2B',
-      item: 'https://setting.live/ressources/setting-commercial-b2b',
+      item: 'https://www.setting.live/ressources/setting-commercial-b2b',
     },
   ],
 }
@@ -239,7 +239,7 @@ export default function SettingCommercialPage() {
                 Ce que le setting commercial est — et ce qu&apos;il n&apos;est pas
               </h2>
               <p className="mb-4">
-                Le setting commercial désigne l&apos;ensemble des actions qui transforment
+                Le <a href="/setting" className="text-accent hover:underline transition-colors">setting commercial</a> désigne l&apos;ensemble des actions qui transforment
                 un prospect inconnu en rendez-vous qualifié prêt pour un appel de vente.
                 Ce n&apos;est pas de la prospection en masse. Ce n&apos;est pas de l&apos;automatisation.
                 C&apos;est un processus en six étapes, conduit par un être humain, avec l&apos;IA
@@ -928,7 +928,7 @@ export default function SettingCommercialPage() {
               <div className="space-y-4 mb-6">
                 {[
                   {
-                    option: 'Programme setting externalisé ChallengersLab',
+                    option: 'Programme setting externalisé Setting.live',
                     cost: '2 000 – 5 000 € / mois',
                     note: 'Setter dédié, outils inclus, skill maison construit sur votre marché, coaching closing selon formule. Premiers RDV dès la semaine 1.',
                     highlight: true,
@@ -1013,6 +1013,7 @@ export default function SettingCommercialPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ? Rôle, missions et coût" },
                 { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
@@ -1043,7 +1044,7 @@ export default function SettingCommercialPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un programme de setting qui tourne ?

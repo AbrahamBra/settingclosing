@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Méthodes de vente B2B comparées | ChallengersLab',
+  title: 'Méthodes de vente B2B comparées | Setting.live',
   description:
     'Challenger Sale, SPIN Selling, SONCAS : comparatif des 3 méthodes de vente B2B. Cas d\'usage et guide pour choisir la bonne.',
   openGraph: {
-    title: 'Méthodes de vente B2B comparées | ChallengersLab',
+    title: 'Méthodes de vente B2B comparées | Setting.live',
     description:
       'Challenger Sale, SPIN Selling, SONCAS : les 3 méthodes de vente B2B qui structurent un cycle de vente. Comparatif, cas d\'usage et guide pour choisir la bonne approche.',
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/methodes-vente-b2b',
+    canonical: 'https://www.setting.live/ressources/methodes-vente-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/methodes-vente-b2b',
+  '@id': 'https://www.setting.live/ressources/methodes-vente-b2b',
   headline: 'Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS',
   description:
     'Comparatif des 3 méthodes de vente B2B les plus utilisées en France. Comment les choisir, les combiner et les appliquer selon votre cycle de vente.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/methodes-vente-b2b',
+  url: 'https://www.setting.live/ressources/methodes-vente-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/methodes-vente-b2b',
+    '@id': 'https://www.setting.live/ressources/methodes-vente-b2b',
   },
 }
 
@@ -99,13 +99,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Méthodes de vente B2B',
-      item: 'https://setting.live/ressources/methodes-vente-b2b',
+      item: 'https://www.setting.live/ressources/methodes-vente-b2b',
     },
   ],
 }
@@ -581,6 +581,7 @@ export default function MethodesVenteB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/challenger-sale-definition', label: 'Challenger Sale : d\u00e9finition, principes et mise en pratique' },
                 { href: '/ressources/methode-spin-selling', label: 'SPIN Selling : la m\u00e9thode pour structurer vos discovery calls' },
                 { href: '/ressources/methode-soncas', label: 'M\u00e9thode SONCAS : les 6 leviers de motivation en vente' },
@@ -605,7 +606,7 @@ export default function MethodesVenteB2BPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Structurer votre m&eacute;thode de vente B2B

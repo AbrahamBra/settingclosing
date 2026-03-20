@@ -10,19 +10,19 @@ import { layerConfig, settingSteps } from '@/lib/pipeline-data'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Setting LinkedIn — Méthode en 9 étapes | ChallengersLab',
+  title: 'Setting LinkedIn — Méthode en 9 étapes | Setting.live',
   description:
     'Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d\'achat au RDV qualifié. IA, méthode et validation humaine.',
   alternates: {
-    canonical: 'https://setting.live/methode/setting-linkedin',
+    canonical: 'https://www.setting.live/methode/setting-linkedin',
   },
   openGraph: {
-    title: 'Setting LinkedIn — Méthode en 9 étapes | ChallengersLab',
+    title: 'Setting LinkedIn — Méthode en 9 étapes | Setting.live',
     description:
       "Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d'achat au RDV qualifié. IA, méthode et validation humaine.",
     locale: 'fr_FR',
     type: 'website',
-    url: 'https://setting.live/methode/setting-linkedin',
+    url: 'https://www.setting.live/methode/setting-linkedin',
   },
 }
 
@@ -34,12 +34,12 @@ const webPageSchema = {
   name: 'Setting LinkedIn — Méthode en 9 étapes',
   description:
     "Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d'achat au RDV qualifié. IA, méthode et validation humaine.",
-  url: 'https://setting.live/methode/setting-linkedin',
+  url: 'https://www.setting.live/methode/setting-linkedin',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
 }
 
@@ -185,7 +185,7 @@ export default function SettingLinkedinMethodePage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 790\u00a0\u20ac/mois. Sans engagement.</p>
+                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 500\u00a0\u20ac/mois. Sans engagement.</p>
                 </a>
               </div>
             </ScrollReveal>

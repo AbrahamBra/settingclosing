@@ -5,7 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "C'est quoi un signal d'achat LinkedIn ? | ChallengersLab",
+  title: "C'est quoi un signal d'achat LinkedIn ? | Setting.live",
   description:
     "Signal d'achat LinkedIn : action détectable qui révèle l'intérêt d'un prospect. Définition, 3 types de signaux et comment les exploiter.",
   openGraph: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/signal-achat-linkedin',
+    canonical: 'https://www.setting.live/ressources/signal-achat-linkedin',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/signal-achat-linkedin',
+  '@id': 'https://www.setting.live/ressources/signal-achat-linkedin',
   headline: "C'est quoi un signal d'achat LinkedIn ?",
   description:
     "Un signal d'achat LinkedIn est une action détectable — like, commentaire, interaction sur un compte tiers — qui indique qu'un prospect s'intéresse activement à un sujet lié à votre offre.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/signal-achat-linkedin',
+  url: 'https://www.setting.live/ressources/signal-achat-linkedin',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/signal-achat-linkedin',
+    '@id': 'https://www.setting.live/ressources/signal-achat-linkedin',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "Signal d'achat LinkedIn",
-      item: 'https://setting.live/ressources/signal-achat-linkedin',
+      item: 'https://www.setting.live/ressources/signal-achat-linkedin',
     },
   ],
 }
@@ -172,7 +172,7 @@ export default function SignalAchatLinkedInPage() {
           {/* Header */}
           <header className="mb-12">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-              Setting
+              <a href="/setting" className="hover:underline transition-colors">Setting</a>
             </p>
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               C&apos;est quoi un signal d&apos;achat LinkedIn ?
@@ -445,6 +445,7 @@ export default function SignalAchatLinkedInPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
@@ -460,13 +461,13 @@ export default function SignalAchatLinkedInPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un système qui détecte et convertit les signaux pour vous ?
             </h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              ChallengersLab met en place le flux complet : surveillance des signaux, rédaction assistée
+              Setting.live met en place le flux complet : surveillance des signaux, rédaction assistée
               par IA, suivi des conversations, RDV qualifiés livrés. Garantie 5 RDV minimum par mois.
             </p>
             <ButtonGlow as="a" href="/#contact">

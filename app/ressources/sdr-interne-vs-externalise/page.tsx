@@ -5,14 +5,14 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'SDR interne vs externalisé : coût réel et ROI | ChallengersLab',
+  title: 'SDR interne vs externalisé : coût réel et ROI | Setting.live',
   description:
     'Recruter un SDR ou externaliser ? Salaire, charges, ramp-up, turnover : le comparatif honnête avec les vrais chiffres.',
   alternates: {
-    canonical: 'https://setting.live/ressources/sdr-interne-vs-externalise',
+    canonical: 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
   },
   openGraph: {
-    title: 'SDR interne vs SDR externalisé | ChallengersLab',
+    title: 'SDR interne vs SDR externalisé | Setting.live',
     description: 'Le comparatif coût réel entre recruter un SDR et externaliser sa prospection B2B.',
     locale: 'fr_FR',
     type: 'article',
@@ -24,27 +24,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/sdr-interne-vs-externalise',
+  '@id': 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
   headline: 'SDR interne vs SDR externalisé : le comparatif coût réel en 2026',
   description:
     'Recruter un SDR ou externaliser sa prospection B2B ? Salaire, charges patronales, ramp-up, turnover : les vrais chiffres côte à côte.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-19',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/sdr-interne-vs-externalise',
+  url: 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/sdr-interne-vs-externalise',
+    '@id': 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
   },
 }
 
@@ -88,13 +88,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'SDR interne vs externalisé',
-      item: 'https://setting.live/ressources/sdr-interne-vs-externalise',
+      item: 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
     },
   ],
 }
@@ -494,9 +494,10 @@ export default function SdrInterneVsExternalisePage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/cout-setter-b2b-prix', label: "Coût d'un setter B2B en 2026 : les vrais chiffres" },
-                { href: '/tarifs', label: 'Tarifs ChallengersLab : forfaits et garantie résultats' },
+                { href: '/tarifs', label: 'Tarifs Setting.live : forfaits et garantie résultats' },
                 { href: '/externaliser-prospection-linkedin', label: 'Externaliser sa prospection LinkedIn B2B' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
@@ -510,13 +511,13 @@ export default function SdrInterneVsExternalisePage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Tester l&apos;externalisé sans engagement long terme
             </h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Programme de setting LinkedIn externalisé. Opérationnel en 2 semaines.
+              Programme de <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> LinkedIn externalisé. Opérationnel en 2 semaines.
               Garantie 5 RDV qualifiés minimum par mois. Résiliation libre sans préavis.
             </p>
             <ButtonGlow as="a" href="/#contact">

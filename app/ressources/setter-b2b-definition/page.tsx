@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setter B2B : définition et rôle | ChallengersLab',
+  title: 'Setter B2B : définition et rôle | Setting.live',
   description:
     'Un setter B2B est le commercial qui prospecte pour vous. Définition, rôle, coût réel et les 3 phases du setting expliquées.',
   openGraph: {
-    title: 'Setter B2B : définition et rôle | ChallengersLab',
+    title: 'Setter B2B : définition et rôle | Setting.live',
     description:
       'Un setter B2B est le commercial qui prospecte pour vous. Définition, rôle, coût et les 3 phases du setting expliqués pour les solopreneurs.',
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/setter-b2b-definition',
+    canonical: 'https://www.setting.live/ressources/setter-b2b-definition',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/setter-b2b-definition',
+  '@id': 'https://www.setting.live/ressources/setter-b2b-definition',
   headline: "C'est quoi un setter en B2B ?",
   description:
     'Un setter B2B est un commercial spécialisé dans la prospection sortante. Il identifie des prospects pertinents, les contacte, qualifie leur intérêt et décroche des rendez-vous commerciaux qualifiés.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/setter-b2b-definition',
+  url: 'https://www.setting.live/ressources/setter-b2b-definition',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/setter-b2b-definition',
+    '@id': 'https://www.setting.live/ressources/setter-b2b-definition',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "C'est quoi un setter en B2B ?",
-      item: 'https://setting.live/ressources/setter-b2b-definition',
+      item: 'https://www.setting.live/ressources/setter-b2b-definition',
     },
   ],
 }
@@ -144,7 +144,7 @@ const pricingModels = [
   },
   {
     label: 'Hybride : fixe bas + prime par RDV (recommandé)',
-    desc: "Un fixe couvre l'infrastructure et le travail de fond. La prime aligne les intérêts sur les résultats réels. C'est le modèle ChallengersLab : 500 €/mois + 25 à 150 €/RDV livré selon la qualification.",
+    desc: "Un fixe couvre l'infrastructure et le travail de fond. La prime aligne les intérêts sur les résultats réels. C'est le modèle Setting.live : 500 €/mois + 25 à 150 €/RDV livré selon la qualification.",
   },
 ]
 
@@ -181,7 +181,7 @@ export default function SetterDefinitionPage() {
               C&apos;est quoi un setter en B2B ?
             </h1>
             <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
-              Définition complète, rôle au quotidien, coût réel et les 3 phases du setting expliquées simplement.
+              Définition complète, rôle au quotidien, coût réel et les 3 phases du <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> expliquées simplement.
             </p>
             <AuthorBlock date="2026-03-16" readTime="8 min de lecture" dateLabel="16 mars 2026" updatedDate="2026-03-19" />
           </header>
@@ -193,8 +193,8 @@ export default function SetterDefinitionPage() {
             </p>
             <p className="font-sans text-text-primary leading-relaxed">
               Un <strong>setter B2B</strong> est un commercial spécialisé dans la prospection sortante.
-              Son rôle : identifier des prospects pertinents, les contacter via LinkedIn ou email,
-              qualifier leur intérêt pour votre offre, et décrocher un rendez-vous avec votre closer
+              Son rôle : identifier des prospects pertinents, les contacter via <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">LinkedIn ou email</a>,
+              <a href="/ressources/qualification-leads-b2b" className="text-accent hover:underline transition-colors">qualifier leur intérêt</a> pour votre offre, et décrocher un rendez-vous avec votre closer
               ou vous-même. Le setter ne vend pas — il ouvre la porte.
             </p>
           </div>
@@ -397,6 +397,7 @@ export default function SetterDefinitionPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
@@ -414,7 +415,7 @@ export default function SetterDefinitionPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Prêt à déléguer votre setting ?

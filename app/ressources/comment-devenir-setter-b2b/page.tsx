@@ -5,7 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Comment devenir setter B2B en 2026 | ChallengersLab",
+  title: "Comment devenir setter B2B en 2026 | Setting.live",
   description: "Setter B2B en 2026 : compétences réelles, étapes pour démarrer et combien on peut gagner. Guide concret, sans bullshit formation.",
   openGraph: {
     title: "Comment devenir setter B2B en 2026",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/comment-devenir-setter-b2b',
+    canonical: 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
   },
 }
 
@@ -23,27 +23,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/comment-devenir-setter-b2b',
+  '@id': 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
   headline: 'Comment devenir setter B2B en 2026',
   description:
     'Le métier de setter B2B en 2026 : compétences réelles, outils, rémunération et étapes pour démarrer. Guide concret sans formation bullshit.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/comment-devenir-setter-b2b',
+  url: 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/comment-devenir-setter-b2b',
+    '@id': 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
   },
 }
 
@@ -61,7 +61,7 @@ const faqItems = [
   {
     question: "Setter freelance ou setter en agence : quelle différence ?",
     answer:
-      "Un setter freelance gère son propre portefeuille de clients, avec une flexibilité maximale mais sans structure. Un setter en agence (comme ChallengersLab) travaille dans un système déjà calibré — outils, méthode, skill IA — avec un onboarding structuré et des critères de performance définis.",
+      "Un setter freelance gère son propre portefeuille de clients, avec une flexibilité maximale mais sans structure. Un setter en agence (comme Setting.live) travaille dans un système déjà calibré — outils, méthode, skill IA — avec un onboarding structuré et des critères de performance définis.",
   },
   {
     question: "Peut-on faire du setting sans LinkedIn Sales Navigator ?",
@@ -132,13 +132,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Devenir setter B2B',
-      item: 'https://setting.live/ressources/comment-devenir-setter-b2b',
+      item: 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
     },
   ],
 }
@@ -256,7 +256,7 @@ export default function CommentDevenirSetterB2BPage() {
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Pas le charisme. Pas la &ldquo;fibre commerciale&rdquo;. Pas la capacité à parler pendant 20 minutes.
-              Le setting demande trois choses précises — et elles s&apos;apprennent toutes.
+              Le <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> demande trois choses précises — et elles s&apos;apprennent toutes.
             </p>
 
             <div className="space-y-6">
@@ -403,7 +403,7 @@ export default function CommentDevenirSetterB2BPage() {
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Le fixe couvre l&apos;infrastructure et le travail de fond — le temps passé à analyser
                   des profils qui ne convertissent pas toujours. La prime aligne les intérêts sur
-                  les résultats réels. C&apos;est le modèle ChallengersLab : fixe modéré + 25 à 150 € par RDV
+                  les résultats réels. C&apos;est le modèle Setting.live : fixe modéré + 25 à 150 € par RDV
                   livré selon le niveau de qualification. Le setter ne gagne pas en volume — il gagne
                   en qualité.
                 </p>
@@ -457,7 +457,7 @@ export default function CommentDevenirSetterB2BPage() {
             </div>
 
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Le programme ChallengersLab est construit sur ce principe. Les setters qui rejoignent
+              Le programme Setting.live est construit sur ce principe. Les setters qui rejoignent
               le programme travaillent sur des profils réels dès la première semaine, dans le secteur
               du client. Pas de simulation. Pas de slides sur &ldquo;les 7 étapes du closing&rdquo;.
               Un onboarding en 3 phases, un journal de bord structuré, et un feedback sur chaque
@@ -526,6 +526,7 @@ export default function CommentDevenirSetterB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
@@ -541,7 +542,7 @@ export default function CommentDevenirSetterB2BPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Rejoindre le programme Setting

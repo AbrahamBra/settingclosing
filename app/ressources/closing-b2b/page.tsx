@@ -5,18 +5,18 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Closing B2B : définition et méthode | ChallengersLab',
+  title: 'Closing B2B : définition et méthode | Setting.live',
   description:
     "Le closing B2B transforme un prospect qualifié en client signé. Définition, rôle du closeur, discovery call, objections et programme complet.",
   openGraph: {
-    title: 'Closing B2B : définition et méthode | ChallengersLab',
+    title: 'Closing B2B : définition et méthode | Setting.live',
     description:
       "Closeur, discovery call, objections, Challenger Sale : tout sur le closing commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart signent moins qu'ils ne devraient.",
     locale: 'fr_FR',
     type: 'article',
   },
   alternates: {
-    canonical: 'https://setting.live/ressources/closing-b2b',
+    canonical: 'https://www.setting.live/ressources/closing-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/closing-b2b',
+  '@id': 'https://www.setting.live/ressources/closing-b2b',
   headline: 'Closing B2B : définition, méthode et programme complet',
   description:
     "Le closing B2B est la phase de vente où un commercial transforme un prospect qualifié en client signé. Définition exacte, rôle du closeur, discovery call, gestion des objections et programme.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/closing-b2b',
+  url: 'https://www.setting.live/ressources/closing-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/closing-b2b',
+    '@id': 'https://www.setting.live/ressources/closing-b2b',
   },
 }
 
@@ -109,13 +109,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Closing B2B',
-      item: 'https://setting.live/ressources/closing-b2b',
+      item: 'https://www.setting.live/ressources/closing-b2b',
     },
   ],
 }
@@ -242,7 +242,9 @@ export default function ClosingB2BPage() {
               <p className="font-sans text-sm text-text-secondary leading-relaxed">
                 La confusion fréquente : appeler &ldquo;closing&rdquo; tout le processus de vente.
                 Dans une organisation avec un setter et un closeur, le closing désigne spécifiquement
-                ce que fait le closeur — l&apos;appel de transformation. Le setting (prospection,
+                ce que fait le closeur — l&apos;appel de transformation. Le{' '}
+                <a href="/setting" className="text-accent hover:underline transition-colors">setting</a>{' '}
+                (prospection,
                 qualification, prise de RDV) est un rôle distinct, avec ses propres outils, ses propres
                 métriques et ses propres compétences.
               </p>
@@ -1011,6 +1013,7 @@ export default function ClosingB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure, questions et erreurs à éviter' },
                 { href: '/ressources/gestion-objections-b2b', label: 'Gérer les objections en vente B2B : méthode et exemples' },
                 { href: '/ressources/script-closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
@@ -1035,7 +1038,7 @@ export default function ClosingB2BPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez améliorer votre taux de closing ?

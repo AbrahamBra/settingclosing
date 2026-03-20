@@ -5,14 +5,14 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Humain vs automatisation LinkedIn | ChallengersLab',
+  title: 'Humain vs automatisation LinkedIn | Setting.live',
   description:
     'Waalaxy, PhantomBuster ou setter humain ? Comparatif honnête : taux de réponse, risque ban, coût réel et scalabilité.',
   alternates: {
-    canonical: 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+    canonical: 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   },
   openGraph: {
-    title: 'Setting humain vs automatisation LinkedIn | ChallengersLab',
+    title: 'Setting humain vs automatisation LinkedIn | Setting.live',
     description: 'Automatisation vs setting humain sur LinkedIn. Comparatif des résultats réels.',
     locale: 'fr_FR',
     type: 'article',
@@ -24,27 +24,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+  '@id': 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   headline: 'Setting humain vs automatisation LinkedIn : le vrai comparatif',
   description:
     'Waalaxy, PhantomBuster ou setter humain ? Comparatif point par point : taux de réponse réels, risque de ban LinkedIn, coût mensuel vrai et scalabilité. Pour choisir en connaissance de cause.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://setting.live/a-propos',
+    url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting.live',
+    url: 'https://www.setting.live',
   },
   datePublished: '2026-03-19',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+  url: 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+    '@id': 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   },
 }
 
@@ -62,7 +62,7 @@ const faqItems = [
   {
     question: 'Combien coûte un setter LinkedIn par mois ?',
     answer:
-      "Un setter LinkedIn humain coûte entre 500 et 1 500 €/mois selon le modèle de rémunération (fixe seul, prime par RDV ou hybride). Chez ChallengersLab, le modèle est hybride : 500 €/mois de fixe + prime par RDV qualifié livré. Ce modèle aligne les intérêts : le setter n'est pas payé pour le volume mais pour la qualité des rendez-vous. Les tarifs détaillés sont disponibles sur la page /tarifs.",
+      "Un setter LinkedIn humain coûte entre 500 et 1 500 €/mois selon le modèle de rémunération (fixe seul, prime par RDV ou hybride). Chez Setting.live, le modèle est hybride : 500 €/mois de fixe + prime par RDV qualifié livré. Ce modèle aligne les intérêts : le setter n'est pas payé pour le volume mais pour la qualité des rendez-vous. Les tarifs détaillés sont disponibles sur la page /tarifs.",
   },
 ]
 
@@ -83,13 +83,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://www.setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Setting humain vs automatisation LinkedIn',
-      item: 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+      item: 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
     },
   ],
 }
@@ -143,7 +143,7 @@ export default function SettingHumainVsAutomatisationPage() {
               Ce qu&apos;on compare
             </p>
             <p className="font-sans text-text-primary font-semibold mb-2">
-              Automatisation LinkedIn vs setting humain
+              Automatisation LinkedIn vs <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> humain
             </p>
             <p className="font-sans text-text-secondary text-sm leading-relaxed">
               L&apos;automatisation utilise des outils (Waalaxy, PhantomBuster, Lemlist) pour envoyer des séquences de messages à grande échelle.
@@ -560,6 +560,7 @@ export default function SettingHumainVsAutomatisationPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: 'Détecter les signaux d\u2019achat LinkedIn pour prospecter au bon moment' },
                 { href: '/ressources/cout-setter-b2b-prix', label: "Prix d'un setter B2B en 2026 : les vrais chiffres" },
@@ -575,7 +576,7 @@ export default function SettingHumainVsAutomatisationPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting.live
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous préférez déléguer entièrement ?

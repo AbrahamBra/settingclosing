@@ -12,23 +12,23 @@ const SituationPicker = dynamic(() => import('@/components/SituationPicker').the
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
 export const metadata: Metadata = {
-  title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
+  title: 'Setting commercial LinkedIn externalisé | Setting.live',
   description:
-    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 790 €/mois.',
+    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 500 €/mois.',
   alternates: {
-    canonical: 'https://setting.live',
+    canonical: 'https://www.setting.live',
   },
   openGraph: {
-    title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
+    title: 'Setting commercial LinkedIn externalisé | Setting.live',
     description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
     images: [
       {
-        url: 'https://setting.live/opengraph-image',
+        url: 'https://www.setting.live/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'ChallengersLab — Setting commercial LinkedIn externalisé',
+        alt: 'Setting.live — Setting commercial LinkedIn externalisé',
       },
     ],
   },
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
 const homeFaqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  '@id': 'https://setting.live/#faq',
+  '@id': 'https://www.setting.live/#faq',
   mainEntity: [
     {
       '@type': 'Question',
       name: 'Combien coûte le setting commercial externalisé ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '490 € de setup, puis 790 €/mois les 2 premiers mois et 1 290 €/mois ensuite. Bonus de 50 €/RDV au-delà de 8. Sans engagement.',
+        text: '490 € de setup, puis 500 €/mois — même tarif sur les 3 premiers mois. Prime de 50 à 250 €/RDV selon le ticket moyen. Sans engagement.',
       },
     },
     {
@@ -76,7 +76,7 @@ const homeFaqSchema = {
       name: 'Quelle est la différence avec un freelance SDR ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un freelance SDR envoie des messages. ChallengersLab combine un setter dédié, un système IA qui détecte les signaux d'achat, et une méthode qui s'affine chaque semaine.",
+        text: "Un freelance SDR envoie des messages. Setting.live combine un setter dédié, un système IA qui détecte les signaux d'achat, et une méthode qui s'affine chaque semaine.",
       },
     },
   ],
