@@ -4,26 +4,26 @@ import { Footer } from '@/components/Footer'
 import { BlogContent } from '@/components/BlogContent'
 
 export const metadata: Metadata = {
-  title: 'Ressources — Prospection et setting LinkedIn B2B | ChallengersLab',
+  title: 'Ressources — Prospection et setting LinkedIn B2B | Setting',
   description:
     'Méthodes, scripts et stratégies de prospection LinkedIn B2B. Guides pour fondateurs, freelances et solopreneurs qui veulent des RDV qualifiés.',
   openGraph: {
-    title: 'Ressources — Prospection et setting LinkedIn B2B | ChallengersLab',
+    title: 'Ressources — Prospection et setting LinkedIn B2B | Setting',
     description:
       'Méthodes, scripts et stratégies de prospection LinkedIn B2B pour fondateurs et freelances.',
     locale: 'fr_FR',
     type: 'website',
     images: [
       {
-        url: 'https://setting.live/opengraph-image',
+        url: 'https://www.setting.live/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Ressources ChallengersLab — Prospection LinkedIn B2B',
+        alt: 'Ressources Setting — Prospection LinkedIn B2B',
       },
     ],
   },
   alternates: {
-    canonical: 'https://setting.live/ressources',
+    canonical: 'https://www.setting.live/ressources',
   },
 }
 
@@ -32,31 +32,31 @@ export const metadata: Metadata = {
 const resourcesSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': 'https://setting.live/ressources',
+  '@id': 'https://www.setting.live/ressources',
   name: 'Ressources — Prospection et setting LinkedIn B2B',
   description:
     'Méthodes, scripts et stratégies de prospection LinkedIn B2B pour fondateurs et freelances.',
-  url: 'https://setting.live/ressources',
-  isPartOf: { '@id': 'https://setting.live/#website' },
-  breadcrumb: { '@id': 'https://setting.live/ressources#breadcrumb' },
+  url: 'https://www.setting.live/ressources',
+  isPartOf: { '@id': 'https://www.setting.live/#website' },
+  breadcrumb: { '@id': 'https://www.setting.live/ressources#breadcrumb' },
 }
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
-  '@id': 'https://setting.live/ressources#breadcrumb',
+  '@id': 'https://www.setting.live/ressources#breadcrumb',
   itemListElement: [
     {
       '@type': 'ListItem',
       position: 1,
       name: 'Accueil',
-      item: 'https://setting.live',
+      item: 'https://www.setting.live',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Ressources',
-      item: 'https://setting.live/ressources',
+      item: 'https://www.setting.live/ressources',
     },
   ],
 }

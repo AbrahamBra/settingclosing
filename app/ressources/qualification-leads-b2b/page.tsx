@@ -5,11 +5,11 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'Qualification de leads B2B en 2026 | Setting.live',
+  title: 'Qualification de leads B2B en 2026 | Setting',
   description:
     'Qualification de leads B2B : BANT, MEDDIC et qualification en 5 niveaux. Méthodes, critères et exemples pour évaluer vos prospects.',
   openGraph: {
-    title: 'Qualification de leads B2B en 2026 | Setting.live',
+    title: 'Qualification de leads B2B en 2026 | Setting',
     description:
       'BANT, MEDDIC, qualification signal-based : comment évaluer un prospect B2B avant d\'allouer du temps commercial. Méthodes comparées et exemples concrets.',
     locale: 'fr_FR',
@@ -34,7 +34,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -442,7 +442,7 @@ export default function QualificationLeadsB2BPage() {
 
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting.live</p>
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Vos leads sont-ils vraiment qualifiés ?</h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour comprendre comment vous qualifiez aujourd&apos;hui, identifier

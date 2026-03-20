@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
-export const alt = 'ChallengersLab — Ressources'
+export const alt = 'Setting — Ressources'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -31,9 +31,10 @@ const titles: Record<string, { title: string; category: string }> = {
   'devenir-business-developer': { title: 'Devenir Business Developer', category: 'Guide carrière' },
 }
 
-export default function OGImage({ params }: { params: { slug: string } }) {
-  const entry = titles[params.slug]
-  const title = entry?.title ?? params.slug.replace(/-/g, ' ')
+export default async function OGImage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const entry = titles[slug]
+  const title = entry?.title ?? slug.replace(/-/g, ' ')
   const category = entry?.category ?? 'Ressource'
 
   return new ImageResponse(
@@ -96,7 +97,7 @@ export default function OGImage({ params }: { params: { slug: string } }) {
             letterSpacing: '0.05em',
           }}
         >
-          ChallengersLab
+          Setting
         </div>
       </div>
     ),

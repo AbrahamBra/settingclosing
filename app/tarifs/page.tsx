@@ -7,14 +7,14 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Tarifs setting commercial externalisé | Setting.live',
+  title: 'Tarifs setting commercial externalisé | Setting',
   description:
     'Prix du setting commercial externalisé : LinkedIn dès 490 € + 500 €/mois, téléphonique dès 690 €/mois, Nurturing 1 990 €. Sans engagement.',
   alternates: {
     canonical: 'https://www.setting.live/tarifs',
   },
   openGraph: {
-    title: 'Tarifs setting commercial externalisé | Setting.live',
+    title: 'Tarifs setting commercial externalisé | Setting',
     description: 'Prix du setting commercial externalisé : 3 offres adaptées à votre situation. Garantie 5 RDV minimum, sans engagement.',
     locale: 'fr_FR',
     type: 'website',
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Tarifs setting commercial externalisé | Setting.live',
+  name: 'Tarifs setting commercial externalisé | Setting',
   description:
     'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 500 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum.',
   url: 'https://www.setting.live/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   breadcrumb: {

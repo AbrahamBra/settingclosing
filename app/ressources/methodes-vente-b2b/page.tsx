@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Méthodes de vente B2B comparées | Setting.live',
+  title: 'Méthodes de vente B2B comparées | Setting',
   description:
     'Challenger Sale, SPIN Selling, SONCAS : comparatif des 3 méthodes de vente B2B. Cas d\'usage et guide pour choisir la bonne.',
   openGraph: {
-    title: 'Méthodes de vente B2B comparées | Setting.live',
+    title: 'Méthodes de vente B2B comparées | Setting',
     description:
       'Challenger Sale, SPIN Selling, SONCAS : les 3 méthodes de vente B2B qui structurent un cycle de vente. Comparatif, cas d\'usage et guide pour choisir la bonne approche.',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -606,7 +606,7 @@ export default function MethodesVenteB2BPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Structurer votre m&eacute;thode de vente B2B

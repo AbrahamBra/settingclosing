@@ -3,11 +3,11 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Mentions légales | ChallengersLab',
+  title: 'Mentions légales | Setting',
   description:
     'Mentions légales du site setting.live : éditeur, hébergeur, propriété intellectuelle et conditions d\'utilisation.',
   alternates: {
-    canonical: 'https://setting.live/mentions-legales',
+    canonical: 'https://www.setting.live/mentions-legales',
   },
   robots: { index: true, follow: true },
 }
@@ -46,7 +46,7 @@ export default function MentionsLegalesPage() {
                 Le site <strong>setting.live</strong> est édité par :
               </p>
               <ul className="list-none space-y-1 text-text-muted">
-                <li><strong>Raison sociale :</strong> ChallengersLab</li>
+                <li><strong>Raison sociale :</strong> Setting</li>
                 <li><strong>Forme juridique :</strong> Micro-entreprise</li>
                 <li><strong>Responsable de la publication :</strong> Abraham</li>
                 <li><strong>Email :</strong> contact@setting.live</li>
@@ -70,7 +70,7 @@ export default function MentionsLegalesPage() {
               <p className="text-text-muted">
                 L'ensemble des contenus présents sur le site setting.live (textes, images,
                 graphismes, logo, icônes, structure) est protégé par le droit d'auteur et reste
-                la propriété exclusive de ChallengersLab, sauf mention contraire. Toute
+                la propriété exclusive de Setting, sauf mention contraire. Toute
                 reproduction, représentation, modification, publication ou adaptation de tout ou
                 partie des éléments du site est interdite sans autorisation écrite préalable.
               </p>
@@ -104,8 +104,8 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Limitation de responsabilité</h2>
               <p className="text-text-muted">
-                ChallengersLab s'efforce d'assurer l'exactitude des informations publiées sur
-                ce site. Toutefois, ChallengersLab ne peut garantir l'exactitude, la
+                Setting s'efforce d'assurer l'exactitude des informations publiées sur
+                ce site. Toutefois, Setting ne peut garantir l'exactitude, la
                 complétude ou l'actualité des informations diffusées. L'utilisateur reconnaît
                 utiliser ces informations sous sa responsabilité exclusive.
               </p>

@@ -17,10 +17,10 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Setting commercial LinkedIn externalisé | Setting.live',
+  title: 'Setting commercial LinkedIn externalisé | Setting',
   description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 500 €/mois.',
   openGraph: {
-    title: 'Setting commercial LinkedIn externalisé | Setting.live',
+    title: 'Setting commercial LinkedIn externalisé | Setting',
     description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: 'https://www.setting.live/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Setting.live — Setting commercial LinkedIn externalisé',
+        alt: 'Setting — Setting commercial LinkedIn externalisé',
       },
     ],
   },
@@ -49,14 +49,14 @@ const jsonLd = {
       '@type': 'WebSite',
       '@id': 'https://www.setting.live/#website',
       url: 'https://www.setting.live',
-      name: 'Setting.live',
+      name: 'Setting',
       alternateName: 'ChallengersLab',
       inLanguage: 'fr-FR',
     },
     {
       '@type': 'ProfessionalService',
       '@id': 'https://www.setting.live/#business',
-      name: 'Setting.live',
+      name: 'Setting',
       alternateName: 'ChallengersLab',
       url: 'https://www.setting.live',
       description: 'Setting LinkedIn externalisé pour fondateurs, freelances et solopreneurs.',

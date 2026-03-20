@@ -5,7 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "C'est quoi un signal d'achat LinkedIn ? | Setting.live",
+  title: "C'est quoi un signal d'achat LinkedIn ? | Setting",
   description:
     "Signal d'achat LinkedIn : action détectable qui révèle l'intérêt d'un prospect. Définition, 3 types de signaux et comment les exploiter.",
   openGraph: {
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',
@@ -461,13 +461,13 @@ export default function SignalAchatLinkedInPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un système qui détecte et convertit les signaux pour vous ?
             </h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Setting.live met en place le flux complet : surveillance des signaux, rédaction assistée
+              Setting met en place le flux complet : surveillance des signaux, rédaction assistée
               par IA, suivi des conversations, RDV qualifiés livrés. Garantie 5 RDV minimum par mois.
             </p>
             <ButtonGlow as="a" href="/#contact">

@@ -10,14 +10,14 @@ import { layerConfig, settingSteps } from '@/lib/pipeline-data'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Setting LinkedIn — Méthode en 9 étapes | Setting.live',
+  title: 'Setting LinkedIn — Méthode en 9 étapes | Setting',
   description:
     'Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d\'achat au RDV qualifié. IA, méthode et validation humaine.',
   alternates: {
     canonical: 'https://www.setting.live/methode/setting-linkedin',
   },
   openGraph: {
-    title: 'Setting LinkedIn — Méthode en 9 étapes | Setting.live',
+    title: 'Setting LinkedIn — Méthode en 9 étapes | Setting',
     description:
       "Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d'achat au RDV qualifié. IA, méthode et validation humaine.",
     locale: 'fr_FR',
@@ -38,7 +38,7 @@ const webPageSchema = {
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
 }

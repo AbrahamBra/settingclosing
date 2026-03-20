@@ -7,15 +7,15 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'À propos de ChallengersLab | Setting LinkedIn B2B',
+  title: 'À propos de Setting | Setting LinkedIn B2B',
   description:
-    'ChallengersLab externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
+    'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
   alternates: {
-    canonical: 'https://setting.live/a-propos',
+    canonical: 'https://www.setting.live/a-propos',
   },
   openGraph: {
-    title: 'À propos de ChallengersLab | Setting LinkedIn B2B',
-    description: 'ChallengersLab externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
+    title: 'À propos de Setting | Setting LinkedIn B2B',
+    description: 'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
     locale: 'fr_FR',
     type: 'website',
   },
@@ -26,23 +26,23 @@ export const metadata: Metadata = {
 const aboutPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
-  name: 'À propos de ChallengersLab',
+  name: 'À propos de Setting',
   description:
-    'ChallengersLab externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B.',
-  url: 'https://setting.live/a-propos',
+    'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B.',
+  url: 'https://www.setting.live/a-propos',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting',
+    url: 'https://www.setting.live',
   },
 }
 
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'ChallengersLab',
-  url: 'https://setting.live',
+  name: 'Setting',
+  url: 'https://www.setting.live',
   description:
     'Service de prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B.',
   employee: [
@@ -175,7 +175,7 @@ export default function AProposPage() {
                 Notre mission
               </p>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6">
-                Pourquoi on a créé ChallengersLab
+                Pourquoi on a créé Setting
               </h2>
               <div className="font-sans text-text-secondary text-lg leading-relaxed space-y-4">
                 <p>
@@ -188,7 +188,7 @@ export default function AProposPage() {
                   profils mal ciblés. Un pipeline vide à la fin du mois. On a vu ça trop souvent.
                 </p>
                 <p>
-                  ChallengersLab prend cette tâche en charge. Pas avec des outils en self-service. Pas
+                  Setting prend cette tâche en charge. Pas avec des outils en self-service. Pas
                   avec de l&apos;automatisation à l&apos;aveugle. Avec une équipe qui gère votre prospection comme
                   si c&apos;était la sienne.
                 </p>

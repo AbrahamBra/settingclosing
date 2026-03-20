@@ -5,7 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Comment devenir setter B2B en 2026 | Setting.live",
+  title: "Comment devenir setter B2B en 2026 | Setting",
   description: "Setter B2B en 2026 : compétences réelles, étapes pour démarrer et combien on peut gagner. Guide concret, sans bullshit formation.",
   openGraph: {
     title: "Comment devenir setter B2B en 2026",
@@ -34,7 +34,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -61,7 +61,7 @@ const faqItems = [
   {
     question: "Setter freelance ou setter en agence : quelle différence ?",
     answer:
-      "Un setter freelance gère son propre portefeuille de clients, avec une flexibilité maximale mais sans structure. Un setter en agence (comme Setting.live) travaille dans un système déjà calibré — outils, méthode, skill IA — avec un onboarding structuré et des critères de performance définis.",
+      "Un setter freelance gère son propre portefeuille de clients, avec une flexibilité maximale mais sans structure. Un setter en agence (comme Setting) travaille dans un système déjà calibré — outils, méthode, skill IA — avec un onboarding structuré et des critères de performance définis.",
   },
   {
     question: "Peut-on faire du setting sans LinkedIn Sales Navigator ?",
@@ -403,7 +403,7 @@ export default function CommentDevenirSetterB2BPage() {
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Le fixe couvre l&apos;infrastructure et le travail de fond — le temps passé à analyser
                   des profils qui ne convertissent pas toujours. La prime aligne les intérêts sur
-                  les résultats réels. C&apos;est le modèle Setting.live : fixe modéré + 25 à 150 € par RDV
+                  les résultats réels. C&apos;est le modèle Setting : fixe modéré + 25 à 150 € par RDV
                   livré selon le niveau de qualification. Le setter ne gagne pas en volume — il gagne
                   en qualité.
                 </p>
@@ -457,7 +457,7 @@ export default function CommentDevenirSetterB2BPage() {
             </div>
 
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Le programme Setting.live est construit sur ce principe. Les setters qui rejoignent
+              Le programme Setting est construit sur ce principe. Les setters qui rejoignent
               le programme travaillent sur des profils réels dès la première semaine, dans le secteur
               du client. Pas de simulation. Pas de slides sur &ldquo;les 7 étapes du closing&rdquo;.
               Un onboarding en 3 phases, un journal de bord structuré, et un feedback sur chaque
@@ -542,7 +542,7 @@ export default function CommentDevenirSetterB2BPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Rejoindre le programme Setting

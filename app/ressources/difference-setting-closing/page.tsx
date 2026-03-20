@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting vs Closing : la différence | Setting.live',
+  title: 'Setting vs Closing : la différence | Setting',
   description:
     'Setting et closing : deux phases distinctes du cycle de vente B2B. Comprenez la différence pour identifier ce qui bloque votre pipeline.',
   openGraph: {
-    title: 'Setting vs Closing : la différence | Setting.live',
+    title: 'Setting vs Closing : la différence | Setting',
     description:
       'Deux rôles distincts. Savoir lequel travailler en premier change tout à votre croissance.',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-16',
@@ -439,7 +439,7 @@ export default function DifferenceSettingClosingPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Setting, closing ou les deux ?

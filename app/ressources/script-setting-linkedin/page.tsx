@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Scripts de setting LinkedIn : exemples | Setting.live',
+  title: 'Scripts de setting LinkedIn : exemples | Setting',
   description:
     'Scripts de setting LinkedIn : 6 exemples concrets (inbound + outbound) et les 4 erreurs qui tuent votre taux de réponse.',
   openGraph: {
-    title: 'Scripts de setting LinkedIn : exemples | Setting.live',
+    title: 'Scripts de setting LinkedIn : exemples | Setting',
     description:
       'Anatomie d\'un message qui obtient des réponses, 6 scripts concrets (inbound + outbound), les 4 erreurs qui tuent le taux de réponse.',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -759,7 +759,7 @@ export default function ScriptSettingLinkedinPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous avez le cadre. Maintenant, déléguez l&apos;exécution.

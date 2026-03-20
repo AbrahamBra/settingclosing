@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Closing B2B : définition et méthode | Setting.live',
+  title: 'Closing B2B : définition et méthode | Setting',
   description:
     "Le closing B2B transforme un prospect qualifié en client signé. Définition, rôle du closeur, discovery call, objections et programme complet.",
   openGraph: {
-    title: 'Closing B2B : définition et méthode | Setting.live',
+    title: 'Closing B2B : définition et méthode | Setting',
     description:
       "Closeur, discovery call, objections, Challenger Sale : tout sur le closing commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart signent moins qu'ils ne devraient.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -1038,7 +1038,7 @@ export default function ClosingB2BPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez améliorer votre taux de closing ?

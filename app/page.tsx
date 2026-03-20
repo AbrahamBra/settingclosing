@@ -12,14 +12,14 @@ const SituationPicker = dynamic(() => import('@/components/SituationPicker').the
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
 export const metadata: Metadata = {
-  title: 'Setting commercial LinkedIn externalisé | Setting.live',
+  title: 'Setting commercial LinkedIn externalisé | Setting',
   description:
     'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 500 €/mois.',
   alternates: {
     canonical: 'https://www.setting.live',
   },
   openGraph: {
-    title: 'Setting commercial LinkedIn externalisé | Setting.live',
+    title: 'Setting commercial LinkedIn externalisé | Setting',
     description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         url: 'https://www.setting.live/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Setting.live — Setting commercial LinkedIn externalisé',
+        alt: 'Setting — Setting commercial LinkedIn externalisé',
       },
     ],
   },
@@ -76,7 +76,7 @@ const homeFaqSchema = {
       name: 'Quelle est la différence avec un freelance SDR ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un freelance SDR envoie des messages. Setting.live combine un setter dédié, un système IA qui détecte les signaux d'achat, et une méthode qui s'affine chaque semaine.",
+        text: "Un freelance SDR envoie des messages. Setting combine un setter dédié, un système IA qui détecte les signaux d'achat, et une méthode qui s'affine chaque semaine.",
       },
     },
   ],

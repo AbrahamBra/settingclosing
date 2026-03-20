@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setter B2B : définition et rôle | Setting.live',
+  title: 'Setter B2B : définition et rôle | Setting',
   description:
     'Un setter B2B est le commercial qui prospecte pour vous. Définition, rôle, coût réel et les 3 phases du setting expliquées.',
   openGraph: {
-    title: 'Setter B2B : définition et rôle | Setting.live',
+    title: 'Setter B2B : définition et rôle | Setting',
     description:
       'Un setter B2B est le commercial qui prospecte pour vous. Définition, rôle, coût et les 3 phases du setting expliqués pour les solopreneurs.',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-16',
@@ -144,7 +144,7 @@ const pricingModels = [
   },
   {
     label: 'Hybride : fixe bas + prime par RDV (recommandé)',
-    desc: "Un fixe couvre l'infrastructure et le travail de fond. La prime aligne les intérêts sur les résultats réels. C'est le modèle Setting.live : 500 €/mois + 25 à 150 €/RDV livré selon la qualification.",
+    desc: "Un fixe couvre l'infrastructure et le travail de fond. La prime aligne les intérêts sur les résultats réels. C'est le modèle Setting : 500 €/mois + 25 à 150 €/RDV livré selon la qualification.",
   },
 ]
 
@@ -415,7 +415,7 @@ export default function SetterDefinitionPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Prêt à déléguer votre setting ?

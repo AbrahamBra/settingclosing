@@ -9,14 +9,14 @@ import { DarkCard } from '@/components/ui/DarkCard'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Externaliser sa prospection LinkedIn B2B | Setting.live',
+  title: 'Externaliser sa prospection LinkedIn B2B | Setting',
   description:
     "Externalisez votre prospection LinkedIn à une équipe dédiée. Setter humain, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine.",
   alternates: {
     canonical: 'https://www.setting.live/externaliser-prospection-linkedin',
   },
   openGraph: {
-    title: 'Externaliser sa prospection LinkedIn B2B | Setting.live',
+    title: 'Externaliser sa prospection LinkedIn B2B | Setting',
     description:
       'Externalisez votre prospection LinkedIn. Setter dédié + IA signal-based. RDV qualifiés dès la semaine 1.',
     locale: 'fr_FR',
@@ -34,7 +34,7 @@ const serviceSchema = {
     "Service d'externalisation de la prospection LinkedIn pour consultants, fondateurs et solopreneurs B2B. Setter dédié, détection IA des signaux d'achat, RDV qualifiés dès la première semaine.",
   provider: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   serviceType: 'Prospection commerciale LinkedIn externalisée',

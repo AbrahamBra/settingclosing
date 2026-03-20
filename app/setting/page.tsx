@@ -5,7 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting : le guide complet du setting commercial B2B | Setting.live',
+  title: 'Setting : le guide complet du setting commercial B2B | Setting',
   description:
     "Le setting est la phase de prospection B2B qui transforme un inconnu en rendez-vous qualifié. Définition, méthode, outils, coût, scripts et comparatif setting vs closing.",
   openGraph: {
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-20',
@@ -74,7 +74,7 @@ const faqItems = [
   {
     question: 'Combien coute un setter B2B ?',
     answer:
-      "Un setter B2B externalise coute entre 500 et 1 500 euros par mois selon la formule. Un SDR interne revient a 45 000 - 70 000 euros par an charges comprises. Le modele hybride (fixe + prime par RDV) aligne les interets : chez Setting.live, c'est 490 euros de setup + 500 euros par mois avec une prime de 50 a 250 euros par RDV selon le ticket moyen.",
+      "Un setter B2B externalise coute entre 500 et 1 500 euros par mois selon la formule. Un SDR interne revient a 45 000 - 70 000 euros par an charges comprises. Le modele hybride (fixe + prime par RDV) aligne les interets : chez Setting, c'est 490 euros de setup + 500 euros par mois avec une prime de 50 a 250 euros par RDV selon le ticket moyen.",
   },
   {
     question: 'Le setting LinkedIn fonctionne-t-il pour les solopreneurs ?',
@@ -576,7 +576,7 @@ export default function SettingPillarPage() {
                   </thead>
                   <tbody className="text-text-secondary">
                     {[
-                      ['Setting externalise (Setting.live)', '6 000 - 18 000 EUR', '2-3 semaines'],
+                      ['Setting externalise (Setting)', '6 000 - 18 000 EUR', '2-3 semaines'],
                       ['SDR interne (CDI)', '50 000 - 75 000 EUR', '3-6 mois'],
                       ['Faire soi-meme', '8 000 EUR+ en temps perdu', 'Immediat mais irregulier'],
                       ['Agence d\'automatisation', '6 000 - 24 000 EUR', '1 semaine (mais < 1% reponse)'],
@@ -899,7 +899,7 @@ export default function SettingPillarPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Pret a mettre en place votre programme de setting ?

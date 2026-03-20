@@ -3,26 +3,26 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Glossaire Setting & Prospection LinkedIn | ChallengersLab',
+  title: 'Glossaire Setting & Prospection LinkedIn | Setting',
   description:
     'Définitions des termes clés du setting et de la prospection LinkedIn : setter, signal d\'achat, ICP, discovery, pipeline, qualification.',
   openGraph: {
-    title: 'Glossaire Setting & Prospection LinkedIn | ChallengersLab',
+    title: 'Glossaire Setting & Prospection LinkedIn | Setting',
     description:
       "Les définitions exactes des termes du setting et de la prospection LinkedIn — setter, signal d'achat, ICP, pipeline, qualification et plus.",
     locale: 'fr_FR',
     type: 'website',
     images: [
       {
-        url: 'https://setting.live/og-default.png',
+        url: 'https://www.setting.live/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'Glossaire Setting & Prospection LinkedIn — ChallengersLab',
+        alt: 'Glossaire Setting & Prospection LinkedIn — Setting',
       },
     ],
   },
   alternates: {
-    canonical: 'https://setting.live/glossaire',
+    canonical: 'https://www.setting.live/glossaire',
   },
 }
 
@@ -196,13 +196,13 @@ const terms = [
 const definedTermSchemas = terms.map((t) => ({
   '@context': 'https://schema.org',
   '@type': 'DefinedTerm',
-  '@id': `https://setting.live/glossaire#${t.id}`,
+  '@id': `https://www.setting.live/glossaire#${t.id}`,
   name: t.term,
   description: t.definition,
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
-    '@id': 'https://setting.live/glossaire',
-    name: 'Glossaire Setting & Prospection B2B — ChallengersLab',
+    '@id': 'https://www.setting.live/glossaire',
+    name: 'Glossaire Setting & Prospection B2B — Setting',
   },
 }))
 
@@ -210,8 +210,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
-    { '@type': 'ListItem', position: 2, name: 'Glossaire', item: 'https://setting.live/glossaire' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Glossaire', item: 'https://www.setting.live/glossaire' },
   ],
 }
 
@@ -315,13 +315,13 @@ export default function GlossairePage() {
           {/* CTA */}
           <div className="mt-16 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              ChallengersLab
+              Setting
             </p>
             <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
               Vous voulez mettre tout ça en pratique ?
             </h3>
             <p className="font-sans text-text-muted leading-relaxed mb-6">
-              ChallengersLab prend en charge le setting commercial pour les fondateurs, freelances et solopreneurs B2B
+              Setting prend en charge le setting commercial pour les fondateurs, freelances et solopreneurs B2B
               en B2B. Setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.
             </p>
             <a

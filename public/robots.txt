@@ -20,4 +20,10 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://setting.live/sitemap.xml
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: https://www.setting.live/sitemap.xml

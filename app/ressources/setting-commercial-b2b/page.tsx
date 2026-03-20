@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting commercial B2B : définition et rôle du setter | Setting.live',
+  title: 'Setting commercial B2B : définition et rôle du setter | Setting',
   description:
     "Le setting commercial précède le closing en B2B. Rôle du setter, méthode LinkedIn signal-based et programme de 3 mois.",
   openGraph: {
-    title: 'Setting commercial B2B : définition et rôle du setter | Setting.live',
+    title: 'Setting commercial B2B : définition et rôle du setter | Setting',
     description:
       "Setter, setting LinkedIn, signal-based : tout sur le setting commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart le font mal.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',
@@ -928,7 +928,7 @@ export default function SettingCommercialPage() {
               <div className="space-y-4 mb-6">
                 {[
                   {
-                    option: 'Programme setting externalisé Setting.live',
+                    option: 'Programme setting externalisé Setting',
                     cost: '2 000 – 5 000 € / mois',
                     note: 'Setter dédié, outils inclus, skill maison construit sur votre marché, coaching closing selon formule. Premiers RDV dès la semaine 1.',
                     highlight: true,
@@ -1044,7 +1044,7 @@ export default function SettingCommercialPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un programme de setting qui tourne ?

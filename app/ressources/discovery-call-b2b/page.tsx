@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Discovery call B2B : guide complet | Setting.live",
+  title: "Discovery call B2B : guide complet | Setting",
   description:
     "La discovery call est le premier appel du closeur. Structure en 4 phases, 10 questions clés et 3 erreurs qui font perdre des deals.",
   openGraph: {
-    title: "Discovery call B2B : guide complet | Setting.live",
+    title: "Discovery call B2B : guide complet | Setting",
     description:
       "Comment conduire une discovery call B2B qui mène au closing : structure, questions, erreurs à éviter. Le guide terrain.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -424,7 +424,7 @@ export default function DiscoveryCallPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez travailler la structure de vos appels ?

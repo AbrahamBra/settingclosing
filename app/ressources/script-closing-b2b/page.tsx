@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Scripts de closing B2B : exemples | Setting.live",
+  title: "Scripts de closing B2B : exemples | Setting",
   description:
     "Scripts de closing B2B : cadres pour l'ouverture, la discovery, le pitch et la demande de décision. Avec exemples et erreurs courantes.",
   openGraph: {
-    title: "Scripts de closing B2B : exemples | Setting.live",
+    title: "Scripts de closing B2B : exemples | Setting",
     description:
       "Ouverture, discovery, pitch, demande de décision : les scripts de closing B2B avec exemples avant/après et les erreurs qui coûtent des deals.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -461,7 +461,7 @@ export default function ScriptClosingPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez travailler vos scripts d&apos;appel ?

@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Messages LinkedIn sans réponse | Setting.live",
+  title: "Messages LinkedIn sans réponse | Setting",
   description:
     "5 erreurs qui tuent vos taux de réponse LinkedIn et comment les corriger. Exemples réels de mauvais messages et versions corrigées.",
   openGraph: {
-    title: "Messages LinkedIn sans réponse | Setting.live",
+    title: "Messages LinkedIn sans réponse | Setting",
     description:
       "Pitch trop tôt, deuxième phrase générique, test du téléphone raté. Les 5 erreurs de prospection LinkedIn les plus courantes — avec corrections.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',
@@ -191,7 +191,7 @@ export default function MessagesLinkedInSansReponsePage() {
               Sur des messages construits sur signal d&apos;achat, avec une deuxième phrase personnalisée
               et le bon niveau d&apos;intensité selon le signal — ce taux dépasse régulièrement 20&nbsp;%.
               La différence n&apos;est pas la plateforme. C&apos;est la méthode.
-              (Source : données terrain Setting.live, 2025–2026)
+              (Source : données terrain Setting, 2025–2026)
             </p>
           </div>
 
@@ -577,7 +577,7 @@ export default function MessagesLinkedInSansReponsePage() {
                 ont des taux de réponse 3× supérieurs à ceux qui génèrent sans relire.
               </p>
               <p className="font-sans text-text-secondary text-sm">
-                Source : données terrain Setting.live, analyse de 1 200+ messages envoyés, 2025–2026
+                Source : données terrain Setting, analyse de 1 200+ messages envoyés, 2025–2026
               </p>
             </div>
           </section>
@@ -623,13 +623,13 @@ export default function MessagesLinkedInSansReponsePage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez des messages qui décrochent des RDV qualifiés ?
             </h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Setting.live construit et opère le système complet : signaux, rédaction assistée par IA,
+              Setting construit et opère le système complet : signaux, rédaction assistée par IA,
               relances calibrées. Vous recevez les RDV. Garantie 5 minimum par mois.
             </p>
             <ButtonGlow as="a" href="/#contact">

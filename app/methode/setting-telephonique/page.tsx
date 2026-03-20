@@ -8,19 +8,19 @@ import { layerConfig } from '@/lib/pipeline-data'
 import { telephoniqueSteps } from '@/lib/methode-telephonique-data'
 
 export const metadata: Metadata = {
-  title: 'Setting téléphonique — Qualification BANT | ChallengersLab',
+  title: 'Setting téléphonique — Qualification BANT | Setting',
   description:
     'Qualification téléphonique B2B : grille BANT co-construite, Challenger Sale, scoring pondéré et routing par maturité. Zéro lead perdu.',
   alternates: {
-    canonical: 'https://setting.live/methode/setting-telephonique',
+    canonical: 'https://www.setting.live/methode/setting-telephonique',
   },
   openGraph: {
-    title: 'Setting téléphonique — Qualification BANT | ChallengersLab',
+    title: 'Setting téléphonique — Qualification BANT | Setting',
     description:
       'Grille BANT co-construite, Challenger Sale, scoring pondéré et routing par maturité. Chaque lead est qualifié, scoré et routé.',
     locale: 'fr_FR',
     type: 'website',
-    url: 'https://setting.live/methode/setting-telephonique',
+    url: 'https://www.setting.live/methode/setting-telephonique',
   },
 }
 
@@ -30,12 +30,12 @@ const webPageSchema = {
   name: 'Setting téléphonique — Qualification BANT',
   description:
     'Notre méthode de qualification téléphonique : grille BANT co-construite, approche Challenger Sale, scoring pondéré et routing par maturité.',
-  url: 'https://setting.live/methode/setting-telephonique',
+  url: 'https://www.setting.live/methode/setting-telephonique',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting',
+    url: 'https://www.setting.live',
   },
 }
 

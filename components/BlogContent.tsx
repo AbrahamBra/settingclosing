@@ -88,6 +88,9 @@ const articles: Article[] = [
   // Comparatifs
   { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting' },
   { slug: 'sdr-interne-vs-externalise', title: 'SDR interne vs externalisé : coût réel et ROI', readTime: '10 min', category: 'setting' },
+  // Guides complets
+  { slug: 'closing-b2b', title: 'Closing B2B : le guide complet pour conclure en vente', readTime: '12 min', category: 'methode' },
+  { slug: 'devenir-business-developer', title: 'Devenir business developer : parcours, compétences et salaire', readTime: '10 min', category: 'methode' },
 ]
 
 // ─── Component ───────────────────────────────────────────────────────────────

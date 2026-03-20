@@ -7,19 +7,19 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { offers } from '@/lib/offers-data'
 
 export const metadata: Metadata = {
-  title: 'Notre méthode | ChallengersLab',
+  title: 'Notre méthode | Setting',
   description:
-    'Trois niveaux de maturité, trois méthodes. Découvrez comment ChallengersLab remplit votre agenda avec le Setting LinkedIn, le Setting téléphonique ou le Nurturing.',
+    'Trois niveaux de maturité, trois méthodes. Découvrez comment Setting remplit votre agenda avec le Setting LinkedIn, le Setting téléphonique ou le Nurturing.',
   alternates: {
-    canonical: 'https://setting.live/methode',
+    canonical: 'https://www.setting.live/methode',
   },
   openGraph: {
-    title: 'Notre méthode | ChallengersLab',
+    title: 'Notre méthode | Setting',
     description:
       'Trois niveaux de maturité, trois méthodes. Setting LinkedIn, Setting téléphonique, Nurturing.',
     locale: 'fr_FR',
     type: 'website',
-    url: 'https://setting.live/methode',
+    url: 'https://www.setting.live/methode',
   },
 }
 
@@ -29,12 +29,12 @@ const webPageSchema = {
   name: 'Notre méthode',
   description:
     'Trois niveaux de maturité, trois méthodes pour remplir votre agenda.',
-  url: 'https://setting.live/methode',
+  url: 'https://www.setting.live/methode',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting',
+    url: 'https://www.setting.live',
   },
 }
 

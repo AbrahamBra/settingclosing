@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Prix d'un setter B2B en 2026 | Setting.live",
+  title: "Prix d'un setter B2B en 2026 | Setting",
   description:
     "Combien coûte un setter B2B ? Fixe, prime par RDV, hybride : vrais chiffres du marché, pièges à éviter et calcul du ROI réel.",
   openGraph: {
-    title: "Prix d'un setter B2B en 2026 | Setting.live",
+    title: "Prix d'un setter B2B en 2026 | Setting",
     description:
       "Fixe seul vs prime seule vs modèle hybride : les chiffres du marché, comment comparer les offres, et ce que ça coûte vraiment d'après les données terrain.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -68,12 +68,12 @@ const faqItems = [
   {
     question: "Quelle différence de coût entre un setter freelance et une agence de setting ?",
     answer:
-      "Un setter freelance facture généralement moins (pas de frais de structure), mais vous gérez l'onboarding, les outils, la méthode et le suivi seul. Une agence comme Setting.live inclut la méthode, le skill IA, les outils et l'accompagnement — ce qui représente un surcoût de 200 à 500 €/mois justifié par la vitesse de calibration et la garantie sur les résultats.",
+      "Un setter freelance facture généralement moins (pas de frais de structure), mais vous gérez l'onboarding, les outils, la méthode et le suivi seul. Une agence comme Setting inclut la méthode, le skill IA, les outils et l'accompagnement — ce qui représente un surcoût de 200 à 500 €/mois justifié par la vitesse de calibration et la garantie sur les résultats.",
   },
   {
     question: "Qu'est-ce qu'une garantie de RDV concrètement ?",
     answer:
-      "Une garantie sur le nombre de RDV livrés signifie que si le setter ne livre pas le minimum convenu sur un mois, le surplus est déduit de la prochaine facture ou remboursé. Chez Setting.live, la garantie est de 5 RDV qualifiés minimum par mois. Si ce seuil n'est pas atteint, on ne facture pas la différence.",
+      "Une garantie sur le nombre de RDV livrés signifie que si le setter ne livre pas le minimum convenu sur un mois, le surplus est déduit de la prochaine facture ou remboursé. Chez Setting, la garantie est de 5 RDV qualifiés minimum par mois. Si ce seuil n'est pas atteint, on ne facture pas la différence.",
   },
 ]
 
@@ -165,7 +165,7 @@ export default function CoutSetterB2BPage() {
             {[
               { stat: '800–1 500 €', label: 'fixe mensuel moyen' },
               { stat: '50–200 €', label: 'par RDV livré' },
-              { stat: '500 €/mois', label: 'fixe dans le modèle hybride Setting.live' },
+              { stat: '500 €/mois', label: 'fixe dans le modèle hybride Setting' },
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
@@ -249,7 +249,7 @@ export default function CoutSetterB2BPage() {
                     réduire le fixe futur.
                   </p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
-                    C&apos;est le modèle utilisé par Setting.live : 500 €/mois de fixe
+                    C&apos;est le modèle utilisé par Setting : 500 €/mois de fixe
                     + 50 à 250 €/RDV selon le ticket moyen du client. Le montant exact de la prime
                     dépend aussi de la présence de lead magnets actifs et d&apos;une stratégie de contenu
                     — un contexte favorable génère plus de volume et influence la fourchette.
@@ -508,7 +508,7 @@ export default function CoutSetterB2BPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Voir les tarifs et la garantie résultats

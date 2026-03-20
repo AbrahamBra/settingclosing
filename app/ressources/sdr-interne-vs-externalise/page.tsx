@@ -5,14 +5,14 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'SDR interne vs externalisé : coût réel et ROI | Setting.live',
+  title: 'SDR interne vs externalisé : coût réel et ROI | Setting',
   description:
     'Recruter un SDR ou externaliser ? Salaire, charges, ramp-up, turnover : le comparatif honnête avec les vrais chiffres.',
   alternates: {
     canonical: 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
   },
   openGraph: {
-    title: 'SDR interne vs SDR externalisé | Setting.live',
+    title: 'SDR interne vs SDR externalisé | Setting',
     description: 'Le comparatif coût réel entre recruter un SDR et externaliser sa prospection B2B.',
     locale: 'fr_FR',
     type: 'article',
@@ -35,7 +35,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-19',
@@ -497,7 +497,7 @@ export default function SdrInterneVsExternalisePage() {
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/cout-setter-b2b-prix', label: "Coût d'un setter B2B en 2026 : les vrais chiffres" },
-                { href: '/tarifs', label: 'Tarifs Setting.live : forfaits et garantie résultats' },
+                { href: '/tarifs', label: 'Tarifs Setting : forfaits et garantie résultats' },
                 { href: '/externaliser-prospection-linkedin', label: 'Externaliser sa prospection LinkedIn B2B' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
@@ -511,7 +511,7 @@ export default function SdrInterneVsExternalisePage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Tester l&apos;externalisé sans engagement long terme

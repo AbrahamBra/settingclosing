@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Closer B2B : définition et compétences | Setting.live',
+  title: 'Closer B2B : définition et compétences | Setting',
   description:
     'Closer B2B : définition, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.',
   openGraph: {
-    title: 'Closer B2B : définition et compétences | Setting.live',
+    title: 'Closer B2B : définition et compétences | Setting',
     description:
       'Closer B2B : définition, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -561,7 +561,7 @@ export default function CloserB2BPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Structurer votre pipeline setting + closing

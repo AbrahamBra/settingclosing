@@ -7,14 +7,14 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | ChallengersLab',
+  title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',
   description:
     'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35%. Premiers r\u00e9sultats en 7 jours.',
   alternates: {
-    canonical: 'https://setting.live/resultats',
+    canonical: 'https://www.setting.live/resultats',
   },
   openGraph: {
-    title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | ChallengersLab',
+    title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',
     description:
       '3+ RDV qualifi\u00e9s par semaine, 20-35% de taux de r\u00e9ponse. R\u00e9sultats d\u00e8s la premi\u00e8re semaine.',
     locale: 'fr_FR',
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | ChallengersLab',
+  name: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',
   description:
     'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35%. Premiers r\u00e9sultats en 7 jours.',
-  url: 'https://setting.live/resultats',
+  url: 'https://www.setting.live/resultats',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
-    name: 'ChallengersLab',
-    url: 'https://setting.live',
+    name: 'Setting',
+    url: 'https://www.setting.live',
   },
 }
 
@@ -47,13 +47,13 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: 1,
       name: 'Accueil',
-      item: 'https://setting.live',
+      item: 'https://www.setting.live',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'R\u00e9sultats',
-      item: 'https://setting.live/resultats',
+      item: 'https://www.setting.live/resultats',
     },
   ],
 }
@@ -313,7 +313,7 @@ export default function ResultatsPage() {
                   <div className="p-5 border-l border-white/[0.06]"
                     style={{ background: 'rgba(167,139,250,0.04)' }}>
                     <p className="font-sans text-xs font-semibold uppercase tracking-wider text-accent text-center">
-                      Avec ChallengersLab
+                      Avec Setting
                     </p>
                   </div>
                 </div>

@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Relance LinkedIn B2B : quand et comment | Setting.live",
+  title: "Relance LinkedIn B2B : quand et comment | Setting",
   description:
     "Pas de réponse sur LinkedIn ? Quand relancer, quel message envoyer et combien de fois. Le cadre complet pour des follow-ups efficaces.",
   openGraph: {
-    title: "Relance LinkedIn B2B : quand et comment | Setting.live",
+    title: "Relance LinkedIn B2B : quand et comment | Setting",
     description:
       "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois : le cadre complet pour des follow-ups qui obtiennent des réponses.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -173,7 +173,7 @@ export default function RelanceLinkedInB2BPage() {
             <p className="font-sans text-text-secondary text-sm leading-relaxed">
               Ce n&apos;est pas que le premier message ne fonctionne pas. C&apos;est que la relance fait partie du processus normal.
               Le problème n&apos;est pas de relancer. C&apos;est comment on le fait.
-              (Source : données terrain Setting.live, 2025–2026)
+              (Source : données terrain Setting, 2025–2026)
             </p>
           </div>
 
@@ -616,13 +616,13 @@ export default function RelanceLinkedInB2BPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez un système de relances qui tourne sans y penser ?
             </h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Setting.live opère le système complet : premier message, relances calibrées, gestion du pipeline.
+              Setting opère le système complet : premier message, relances calibrées, gestion du pipeline.
               Vous vous concentrez sur les RDV qualifiés. Garantie 5 minimum par mois.
             </p>
             <ButtonGlow as="a" href="/#contact">

@@ -3,11 +3,11 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Politique de confidentialité | ChallengersLab',
+  title: 'Politique de confidentialité | Setting',
   description:
     'Politique de confidentialité de setting.live : collecte, utilisation et protection de vos données personnelles.',
   alternates: {
-    canonical: 'https://setting.live/politique-confidentialite',
+    canonical: 'https://www.setting.live/politique-confidentialite',
   },
   robots: { index: true, follow: true },
 }
@@ -44,7 +44,7 @@ export default function PolitiqueConfidentialitePage() {
               <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Responsable du traitement</h2>
               <p className="text-text-muted">
                 Le responsable du traitement des données personnelles collectées sur
-                setting.live est ChallengersLab, représenté par Abraham.
+                setting.live est Setting, représenté par Abraham.
               </p>
               <p className="text-text-muted mt-2">
                 Contact : <a href="mailto:contact@setting.live" className="text-accent hover:underline">contact@setting.live</a>

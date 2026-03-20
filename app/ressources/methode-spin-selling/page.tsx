@@ -5,11 +5,11 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'SPIN Selling : méthode de vente B2B | Setting.live',
+  title: 'SPIN Selling : méthode de vente B2B | Setting',
   description:
     'SPIN Selling : la méthode de vente B2B de Neil Rackham. Situation, Problème, Implication, Need-payoff avec exemples concrets.',
   openGraph: {
-    title: 'SPIN Selling : méthode de vente B2B | Setting.live',
+    title: 'SPIN Selling : méthode de vente B2B | Setting',
     description:
       'SPIN Selling : les 4 types de questions qui font avancer un deal B2B. Méthode, exemples et lien avec la discovery call et le closing.',
     locale: 'fr_FR',
@@ -34,7 +34,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -452,7 +452,7 @@ export default function MethodeSpinSellingPage() {
 
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting.live</p>
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Vous voulez améliorer votre taux de closing ?</h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Un appel de 30 minutes pour regarder votre structure d&apos;appel, identifier les

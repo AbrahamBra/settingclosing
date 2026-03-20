@@ -5,10 +5,10 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Prospection LinkedIn B2B en 2026 | Setting.live",
+  title: "Prospection LinkedIn B2B en 2026 | Setting",
   description: "Prospecter sur LinkedIn en B2B en 2026 : signaux d'achat, messages qui obtiennent des réponses, Sales Navigator et IA co-rédacteur.",
   openGraph: {
-    title: "Prospection LinkedIn B2B en 2026 | Setting.live",
+    title: "Prospection LinkedIn B2B en 2026 | Setting",
     description: "Signaux inbound et outbound, rédaction des messages, relances, qualification. Comment construire un système de prospection LinkedIn qui livre des RDV qualifiés semaine après semaine.",
     locale: 'fr_FR',
     type: 'article',
@@ -34,7 +34,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -729,7 +729,7 @@ export default function ProspectionLinkedInB2BPage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06] mt-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Un système de prospection LinkedIn opéré pour vous

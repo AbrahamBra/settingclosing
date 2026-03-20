@@ -5,14 +5,14 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Humain vs automatisation LinkedIn | Setting.live',
+  title: 'Humain vs automatisation LinkedIn | Setting',
   description:
     'Waalaxy, PhantomBuster ou setter humain ? Comparatif honnête : taux de réponse, risque ban, coût réel et scalabilité.',
   alternates: {
     canonical: 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   },
   openGraph: {
-    title: 'Setting humain vs automatisation LinkedIn | Setting.live',
+    title: 'Setting humain vs automatisation LinkedIn | Setting',
     description: 'Automatisation vs setting humain sur LinkedIn. Comparatif des résultats réels.',
     locale: 'fr_FR',
     type: 'article',
@@ -35,7 +35,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-19',
@@ -62,7 +62,7 @@ const faqItems = [
   {
     question: 'Combien coûte un setter LinkedIn par mois ?',
     answer:
-      "Un setter LinkedIn humain coûte entre 500 et 1 500 €/mois selon le modèle de rémunération (fixe seul, prime par RDV ou hybride). Chez Setting.live, le modèle est hybride : 500 €/mois de fixe + prime par RDV qualifié livré. Ce modèle aligne les intérêts : le setter n'est pas payé pour le volume mais pour la qualité des rendez-vous. Les tarifs détaillés sont disponibles sur la page /tarifs.",
+      "Un setter LinkedIn humain coûte entre 500 et 1 500 €/mois selon le modèle de rémunération (fixe seul, prime par RDV ou hybride). Chez Setting, le modèle est hybride : 500 €/mois de fixe + prime par RDV qualifié livré. Ce modèle aligne les intérêts : le setter n'est pas payé pour le volume mais pour la qualité des rendez-vous. Les tarifs détaillés sont disponibles sur la page /tarifs.",
   },
 ]
 
@@ -576,7 +576,7 @@ export default function SettingHumainVsAutomatisationPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous préférez déléguer entièrement ?

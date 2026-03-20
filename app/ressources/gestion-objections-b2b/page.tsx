@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "Objections B2B : méthode et exemples | Setting.live",
+  title: "Objections B2B : méthode et exemples | Setting",
   description:
     "Vraies objections vs prétextes : les 5 objections B2B les plus fréquentes avec réponses concrètes et méthode de traitement.",
   openGraph: {
-    title: "Objections B2B : méthode et exemples | Setting.live",
+    title: "Objections B2B : méthode et exemples | Setting",
     description:
       "Les 5 objections B2B les plus fréquentes — avec les bonnes et mauvaises réponses. Ce que 'c'est trop cher' veut dire en réalité.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -347,7 +347,7 @@ export default function GestionObjectionsPage() {
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous perdez des deals sur des objections que vous pourriez éviter ?

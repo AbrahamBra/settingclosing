@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: "IA et humain : système de setting LinkedIn | Setting.live",
+  title: "IA et humain : système de setting LinkedIn | Setting",
   description:
     "Système de setting LinkedIn : détection IA des signaux, scoring humain et co-rédaction Claude. Deux phases, deux modes de message, exemples concrets.",
   openGraph: {
-    title: "IA et humain : système de setting LinkedIn | Setting.live",
+    title: "IA et humain : système de setting LinkedIn | Setting",
     description:
       "L'IA détecte. La méthode filtre. L'humain valide. Pourquoi les 3 couches sont nécessaires, et comment les calibrer pour tenir sur la durée.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-17',

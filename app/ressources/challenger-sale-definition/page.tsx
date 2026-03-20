@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Challenger Sale : définition et méthode | Setting.live',
+  title: 'Challenger Sale : définition et méthode | Setting',
   description:
     "Challenger Sale : méthode B2B issue d'une étude sur 6 000 commerciaux. Teach, Tailor, Take Control et application concrète.",
   openGraph: {
-    title: 'Challenger Sale : définition et méthode | Setting.live',
+    title: 'Challenger Sale : définition et méthode | Setting',
     description:
       "Issue d'une étude sur 6 000 commerciaux, la méthode Challenger Sale identifie le profil qui surperforme et ses 3 composantes clés.",
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-16',
@@ -58,7 +58,7 @@ const faqItems = [
   {
     question: 'Comment devient-on un Challenger ?',
     answer:
-      "Devenir un Challenger s'apprend — mais ça ne s'improvise pas. Il faut d'abord maîtriser la discovery (poser les bonnes questions avant de pitcher), ensuite structurer son pricing pour augmenter la valeur perçue, et enfin pratiquer la tension constructive sur les objections. C'est l'objet du programme Closing de Setting.live, structuré sur 3 mois.",
+      "Devenir un Challenger s'apprend — mais ça ne s'improvise pas. Il faut d'abord maîtriser la discovery (poser les bonnes questions avant de pitcher), ensuite structurer son pricing pour augmenter la valeur perçue, et enfin pratiquer la tension constructive sur les objections. C'est l'objet du programme Closing de Setting, structuré sur 3 mois.",
   },
   {
     question: 'Challenger Sale vs SPIN Selling : quelles différences ?',
@@ -338,7 +338,7 @@ export default function ChallengerSalePage() {
               ))}
             </ul>
             <p className="font-sans text-text-secondary leading-relaxed">
-              Setting.live applique cette méthode dans le programme Closing : un mois par composante,
+              Setting applique cette méthode dans le programme Closing : un mois par composante,
               avec 2h de coaching par semaine dont une heure en situation réelle sur un appel prospect.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mt-4">
@@ -388,7 +388,7 @@ export default function ChallengerSalePage() {
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-              Setting.live
+              Setting
             </p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Appliquer la méthode Challenger à votre activité

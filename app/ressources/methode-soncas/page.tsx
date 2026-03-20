@@ -5,11 +5,11 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 
 export const metadata: Metadata = {
-  title: 'Méthode SONCAS : 6 leviers B2B | Setting.live',
+  title: 'Méthode SONCAS : 6 leviers B2B | Setting',
   description:
     'Méthode SONCAS en B2B : Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie. Définition des 6 leviers et exemples concrets.',
   openGraph: {
-    title: 'Méthode SONCAS : 6 leviers B2B | Setting.live',
+    title: 'Méthode SONCAS : 6 leviers B2B | Setting',
     description:
       'SONCAS : comment utiliser les 6 motivations d\'achat pour améliorer sa discovery call et son taux de closing en B2B.',
     locale: 'fr_FR',
@@ -34,7 +34,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-03-18',
@@ -481,7 +481,7 @@ export default function MethodeSoncasPage() {
 
           {/* CTA */}
           <div className="mt-14 bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
-            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting.live</p>
+            <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">
               Vous voulez améliorer votre taux de closing ?
             </h3>

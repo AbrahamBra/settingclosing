@@ -4,11 +4,11 @@ import { Footer } from '@/components/Footer'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Devenir Business Developer en 2026 | Setting.live',
+  title: 'Devenir Business Developer en 2026 | Setting',
   description:
-    'Métier de business developer : quotidien, salaire, compétences et formation en alternance depuis Chartres avec Back School et Setting.live.',
+    'Métier de business developer : quotidien, salaire, compétences et formation en alternance depuis Chartres avec Back School et Setting.',
   openGraph: {
-    title: 'Devenir Business Developer en 2026 | Setting.live',
+    title: 'Devenir Business Developer en 2026 | Setting',
     description:
       'Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous explique le quotidien réel et comment vous y former en alternance.',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Setting.live',
+    name: 'Setting',
     url: 'https://www.setting.live',
   },
   datePublished: '2026-02-26',
@@ -173,7 +173,7 @@ export default function DevenirBusinessDeveloperPage() {
                 { id: 'recrutement', label: 'Pourquoi ce métier recrute autant' },
                 { id: 'reconversion', label: 'La reconversion est un atout, pas un handicap' },
                 { id: 'alternance', label: 'Se former en alternance : apprendre en faisant' },
-                { id: 'terrain', label: "Ce que ça donne sur le terrain : l'exemple Setting.live" },
+                { id: 'terrain', label: "Ce que ça donne sur le terrain : l'exemple Setting" },
                 { id: 'lancer', label: 'Comment se lancer' },
                 { id: 'setter-closer', label: 'Setter, closer : le business developer du solopreneur' },
               ].map(({ id, label }, i) => (
@@ -426,10 +426,10 @@ export default function DevenirBusinessDeveloperPage() {
           {/* Section 6 — Terrain */}
           <section id="terrain" className="mb-14 scroll-mt-24">
             <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-5">
-              Ce que ça donne sur le terrain : l&apos;exemple Setting.live
+              Ce que ça donne sur le terrain : l&apos;exemple Setting
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Setting.live est une agence basée à Paris qui aide les entreprises B2B à structurer leurs
+              Setting est une agence basée à Paris qui aide les entreprises B2B à structurer leurs
               ventes et à intégrer l&apos;intelligence artificielle dans leurs processus commerciaux. On
               combine vingt ans d&apos;expérience commerciale avec les outils les plus récents du marché.
             </p>
@@ -476,7 +476,7 @@ export default function DevenirBusinessDeveloperPage() {
                 },
                 {
                   num: '03',
-                  title: 'Setting.live',
+                  title: 'Setting',
                   desc: "Si vous voulez comprendre à quoi ressemble le quotidien d'un business developer dans une agence qui mêle commerce et intelligence artificielle, on est disponibles pour en parler.",
                 },
               ].map(({ num, title, desc }) => (
