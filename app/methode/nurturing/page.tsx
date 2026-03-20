@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     'Scoring comportemental, routing automatique des leads chauds et création de revenus low ticket sur votre base existante. Exploitez enfin vos milliers de contacts.',
   alternates: {
     canonical: 'https://www.setting.live/methode/nurturing',
+    languages: {
+      'fr': 'https://www.setting.live/methode/nurturing',
+      'x-default': 'https://www.setting.live/methode/nurturing',
+    },
   },
   openGraph: {
     title: 'Nurturing B2B — Scoring & funnel de maturité | Setting',

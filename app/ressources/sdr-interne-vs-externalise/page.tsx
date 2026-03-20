@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     'Recruter un SDR ou externaliser ? Salaire, charges, ramp-up, turnover : le comparatif honnête avec les vrais chiffres.',
   alternates: {
     canonical: 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
+      'x-default': 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
+    },
   },
   openGraph: {
     title: 'SDR interne vs SDR externalisé | Setting',

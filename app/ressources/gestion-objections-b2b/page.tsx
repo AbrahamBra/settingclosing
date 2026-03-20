@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/gestion-objections-b2b',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/gestion-objections-b2b',
+      'x-default': 'https://www.setting.live/ressources/gestion-objections-b2b',
+    },
   },
 }
 

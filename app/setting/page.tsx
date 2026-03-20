@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/setting',
+    languages: {
+      'fr': 'https://www.setting.live/setting',
+      'x-default': 'https://www.setting.live/setting',
+    },
   },
 }
 

@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/setting-commercial-b2b',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/setting-commercial-b2b',
+      'x-default': 'https://www.setting.live/ressources/setting-commercial-b2b',
+    },
   },
 }
 

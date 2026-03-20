@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 500 €/mois.',
   alternates: {
     canonical: 'https://www.setting.live',
+    languages: {
+      'fr': 'https://www.setting.live',
+      'x-default': 'https://www.setting.live',
+    },
   },
   openGraph: {
     title: 'Setting commercial LinkedIn externalisé | Setting',

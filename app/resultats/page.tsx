@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35%. Premiers r\u00e9sultats en 7 jours.',
   alternates: {
     canonical: 'https://www.setting.live/resultats',
+    languages: {
+      'fr': 'https://www.setting.live/resultats',
+      'x-default': 'https://www.setting.live/resultats',
+    },
   },
   openGraph: {
     title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',

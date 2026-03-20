@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/challenger-sale-definition',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/challenger-sale-definition',
+      'x-default': 'https://www.setting.live/ressources/challenger-sale-definition',
+    },
   },
 }
 

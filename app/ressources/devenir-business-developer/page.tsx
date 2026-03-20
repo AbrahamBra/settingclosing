@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/devenir-business-developer',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/devenir-business-developer',
+      'x-default': 'https://www.setting.live/ressources/devenir-business-developer',
+    },
   },
 }
 

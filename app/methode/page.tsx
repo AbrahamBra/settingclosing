@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     'Trois niveaux de maturité, trois méthodes. Découvrez comment Setting remplit votre agenda avec le Setting LinkedIn, le Setting téléphonique ou le Nurturing.',
   alternates: {
     canonical: 'https://www.setting.live/methode',
+    languages: {
+      'fr': 'https://www.setting.live/methode',
+      'x-default': 'https://www.setting.live/methode',
+    },
   },
   openGraph: {
     title: 'Notre méthode | Setting',

@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     'Qualification téléphonique B2B : grille BANT co-construite, Challenger Sale, scoring pondéré et routing par maturité. Zéro lead perdu.',
   alternates: {
     canonical: 'https://www.setting.live/methode/setting-telephonique',
+    languages: {
+      'fr': 'https://www.setting.live/methode/setting-telephonique',
+      'x-default': 'https://www.setting.live/methode/setting-telephonique',
+    },
   },
   openGraph: {
     title: 'Setting téléphonique — Qualification BANT | Setting',
@@ -330,7 +334,7 @@ export default function SettingTelephoniquePage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">D\u00e8s 290\u00a0\u20ac de setup + 690\u00a0\u20ac/mois. Sans engagement.</p>
+                  <p className="font-sans text-sm text-text-muted">D\u00e8s 290\u00a0\u20ac de setup + 500\u00a0\u20ac/h consacr\u00e9e par jour.</p>
                 </a>
               </div>
             </ScrollReveal>

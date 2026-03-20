@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/methode-spin-selling',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/methode-spin-selling',
+      'x-default': 'https://www.setting.live/ressources/methode-spin-selling',
+    },
   },
 }
 

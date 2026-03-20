@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     'Waalaxy, PhantomBuster ou setter humain ? Comparatif honnête : taux de réponse, risque ban, coût réel et scalabilité.',
   alternates: {
     canonical: 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+      'x-default': 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
+    },
   },
   openGraph: {
     title: 'Setting humain vs automatisation LinkedIn | Setting',

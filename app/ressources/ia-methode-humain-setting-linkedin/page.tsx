@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
+      'x-default': 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
+    },
   },
 }
 

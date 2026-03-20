@@ -14,6 +14,10 @@ export const metadata: Metadata = {
     "Externalisez votre prospection LinkedIn à une équipe dédiée. Setter humain, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine.",
   alternates: {
     canonical: 'https://www.setting.live/externaliser-prospection-linkedin',
+    languages: {
+      'fr': 'https://www.setting.live/externaliser-prospection-linkedin',
+      'x-default': 'https://www.setting.live/externaliser-prospection-linkedin',
+    },
   },
   openGraph: {
     title: 'Externaliser sa prospection LinkedIn B2B | Setting',

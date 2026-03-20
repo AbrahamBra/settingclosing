@@ -29,6 +29,8 @@ const titles: Record<string, { title: string; category: string }> = {
   'methode-soncas': { title: 'Méthode SONCAS', category: 'Méthode' },
   'methode-spin-selling': { title: 'SPIN Selling', category: 'Méthode' },
   'devenir-business-developer': { title: 'Devenir Business Developer', category: 'Guide carrière' },
+  'sdr-interne-vs-externalise': { title: 'SDR interne vs externalisé', category: 'Comparaison' },
+  'setting-humain-vs-automatisation-linkedin': { title: 'Setting humain vs automatisation', category: 'Comparaison' },
 }
 
 export default async function OGImage({ params }: { params: Promise<{ slug: string }> }) {

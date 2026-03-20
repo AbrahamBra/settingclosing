@@ -9,12 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://www.setting.live/setting',
-      lastModified: new Date('2026-03-20'),
-      changeFrequency: 'weekly',
-      priority: 0.95,
-    },
-    {
       url: 'https://www.setting.live/methode',
       lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',

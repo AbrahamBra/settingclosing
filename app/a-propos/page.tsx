@@ -12,6 +12,10 @@ export const metadata: Metadata = {
     'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
   alternates: {
     canonical: 'https://www.setting.live/a-propos',
+    languages: {
+      'fr': 'https://www.setting.live/a-propos',
+      'x-default': 'https://www.setting.live/a-propos',
+    },
   },
   openGraph: {
     title: 'À propos de Setting | Setting LinkedIn B2B',

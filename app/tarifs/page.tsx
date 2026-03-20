@@ -9,9 +9,13 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 export const metadata: Metadata = {
   title: 'Tarifs setting commercial externalisé | Setting',
   description:
-    'Prix du setting commercial externalisé : LinkedIn dès 490 € + 500 €/mois, téléphonique dès 690 €/mois, Nurturing 1 990 €. Sans engagement.',
+    'Prix du setting commercial externalisé : LinkedIn dès 490 € + 500 €/mois, téléphonique dès 500 €/h consacrée/jour, Nurturing 1 990 €. Sans engagement.',
   alternates: {
     canonical: 'https://www.setting.live/tarifs',
+    languages: {
+      'fr': 'https://www.setting.live/tarifs',
+      'x-default': 'https://www.setting.live/tarifs',
+    },
   },
   openGraph: {
     title: 'Tarifs setting commercial externalisé | Setting',
@@ -28,7 +32,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   name: 'Tarifs setting commercial externalisé | Setting',
   description:
-    'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 500 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum.',
+    'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 500 €/mois, Setting téléphonique dès 500 €/h consacrée/jour, Setup Nurturing 1 990 €. Garantie 5 RDV minimum.',
   url: 'https://www.setting.live/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -81,10 +85,10 @@ const webPageSchema = {
           },
           {
             '@type': 'PriceSpecification',
-            price: '690',
+            price: '500',
             priceCurrency: 'EUR',
-            unitText: 'MONTH',
-            description: 'Standalone — ou 490 €/mois en complément du Setting LinkedIn. Prime de 25 à 200 €/RDV selon le ticket moyen.',
+            unitText: 'HUR',
+            description: '500 €/h consacrée par jour. Volume ajustable. Prime de 25 à 200 €/RDV selon le ticket moyen.',
           },
         ],
       },
@@ -135,10 +139,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Le Setting téléphonique est-il moins cher en bundle ?',
+      name: 'Comment fonctionne le tarif du Setting téléphonique ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. En standalone, le Setting téléphonique est à 690 €/mois. En complément du Setting LinkedIn, il passe à 490 €/mois. Le setup de 290 € s\'applique dans les deux cas. Une prime de 25 à 200 €/RDV qualifié s\'ajoute selon votre ticket moyen.',
+        text: 'Le Setting téléphonique est à 500 € par heure consacrée par jour. Le setup de 290 € s\'applique dans tous les cas. Vous choisissez le volume horaire adapté à votre flux de leads. Une prime de 25 à 200 €/RDV qualifié s\'ajoute selon votre ticket moyen.',
       },
     },
     {
@@ -162,7 +166,7 @@ const faqSchema = {
       name: 'Puis-je combiner plusieurs offres ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting téléphonique en bundle à tarif réduit, puis activent le Nurturing pour leur base existante. On construit le dispositif adapté à votre situation.",
+        text: "Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting téléphonique avec le volume horaire adapté à leur flux, puis activent le Nurturing pour leur base existante. On construit le dispositif adapté à votre situation.",
       },
     },
   ],
@@ -201,7 +205,7 @@ const offers = [
     headline: 'Vos leads qualifi\u00e9s par t\u00e9l\u00e9phone',
     pricingPhases: [
       { label: 'Setup', amount: '290\u00a0\u20ac', suffix: 'one-shot', detail: 'Script, formation, config CRM' },
-      { label: 'Standalone', amount: '690\u00a0\u20ac', suffix: '/ mois', detail: 'Qualification de vos leads entrants. 490\u00a0\u20ac/mois en bundle.' },
+      { label: 'Récurrent', amount: '500\u00a0\u20ac', suffix: '/ h / jour', detail: 'Par heure consacrée par jour. Volume ajustable.' },
     ],
     bonus: 'Prime de 25 \u00e0 200\u00a0\u20ac/RDV qualifi\u00e9 selon le ticket moyen',
     features: [
@@ -249,8 +253,8 @@ const faqs = [
     a: 'Le setup couvre le travail de cadrage avant le premier message\u00a0: d\u00e9finition de votre ICP, r\u00e9daction des s\u00e9quences, param\u00e9trage des outils et des signaux d\u2019achat. Ce travail est n\u00e9cessaire pour d\u00e9marrer vite et bien.',
   },
   {
-    q: 'Le Setting t\u00e9l\u00e9phonique est-il moins cher en bundle\u00a0?',
-    a: 'Oui. En standalone, il est \u00e0 690\u00a0\u20ac/mois. En compl\u00e9ment du Setting LinkedIn, il passe \u00e0 490\u00a0\u20ac/mois. Le setup de 290\u00a0\u20ac s\u2019applique dans les deux cas. Une prime de 25 \u00e0 200\u00a0\u20ac/RDV qualifi\u00e9 s\u2019ajoute selon votre ticket moyen.',
+    q: 'Comment fonctionne le tarif du Setting t\u00e9l\u00e9phonique\u00a0?',
+    a: 'Le Setting t\u00e9l\u00e9phonique est \u00e0 500\u00a0\u20ac par heure consacr\u00e9e par jour. Le setup de 290\u00a0\u20ac s\u2019applique dans tous les cas. Vous choisissez le volume horaire adapt\u00e9 \u00e0 votre flux de leads. Une prime de 25 \u00e0 200\u00a0\u20ac/RDV qualifi\u00e9 s\u2019ajoute selon votre ticket moyen.',
   },
   {
     q: 'Comment fonctionne le Setup Nurturing\u00a0?',

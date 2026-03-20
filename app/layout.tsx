@@ -100,13 +100,13 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Setting téléphonique — Qualification de leads',
-            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé. 690 €/mois standalone, 490 €/mois en bundle. Prime de 25 à 200 €/RDV selon le ticket moyen.',
+            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé. 500 € par heure consacrée par jour. Prime de 25 à 200 €/RDV selon le ticket moyen.',
             url: 'https://www.setting.live/methode/setting-telephonique',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 690,
+              price: 500,
               priceCurrency: 'EUR',
-              unitText: 'MONTH',
+              unitText: 'HUR',
               valueAddedTaxIncluded: false,
             },
           },

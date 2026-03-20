@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/glossaire',
+    languages: {
+      'fr': 'https://www.setting.live/glossaire',
+      'x-default': 'https://www.setting.live/glossaire',
+    },
   },
 }
 

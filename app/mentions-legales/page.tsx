@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     'Mentions légales du site setting.live : éditeur, hébergeur, propriété intellectuelle et conditions d\'utilisation.',
   alternates: {
     canonical: 'https://www.setting.live/mentions-legales',
+    languages: {
+      'fr': 'https://www.setting.live/mentions-legales',
+      'x-default': 'https://www.setting.live/mentions-legales',
+    },
   },
   robots: { index: true, follow: true },
 }

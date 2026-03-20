@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: '/ressources/:slug',
         permanent: true,
       },
+      {
+        source: '/setting',
+        destination: '/ressources/setting-commercial-b2b',
+        permanent: true,
+      },
     ]
   },
   async headers() {

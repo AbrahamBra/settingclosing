@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/qualification-leads-b2b',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/qualification-leads-b2b',
+      'x-default': 'https://www.setting.live/ressources/qualification-leads-b2b',
+    },
   },
 }
 

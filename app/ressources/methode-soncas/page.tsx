@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/methode-soncas',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/methode-soncas',
+      'x-default': 'https://www.setting.live/ressources/methode-soncas',
+    },
   },
 }
 

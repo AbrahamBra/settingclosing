@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     'Politique de confidentialité de setting.live : collecte, utilisation et protection de vos données personnelles.',
   alternates: {
     canonical: 'https://www.setting.live/politique-confidentialite',
+    languages: {
+      'fr': 'https://www.setting.live/politique-confidentialite',
+      'x-default': 'https://www.setting.live/politique-confidentialite',
+    },
   },
   robots: { index: true, follow: true },
 }

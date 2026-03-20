@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/difference-setting-closing',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/difference-setting-closing',
+      'x-default': 'https://www.setting.live/ressources/difference-setting-closing',
+    },
   },
 }
 

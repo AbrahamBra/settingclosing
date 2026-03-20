@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/cout-setter-b2b-prix',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/cout-setter-b2b-prix',
+      'x-default': 'https://www.setting.live/ressources/cout-setter-b2b-prix',
+    },
   },
 }
 

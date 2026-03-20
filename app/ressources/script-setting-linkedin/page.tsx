@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/script-setting-linkedin',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/script-setting-linkedin',
+      'x-default': 'https://www.setting.live/ressources/script-setting-linkedin',
+    },
   },
 }
 

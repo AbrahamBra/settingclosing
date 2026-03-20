@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
+    languages: {
+      'fr': 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
+      'x-default': 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
+    },
   },
 }
 

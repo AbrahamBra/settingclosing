@@ -15,6 +15,10 @@ export const metadata: Metadata = {
     'Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d\'achat au RDV qualifié. IA, méthode et validation humaine.',
   alternates: {
     canonical: 'https://www.setting.live/methode/setting-linkedin',
+    languages: {
+      'fr': 'https://www.setting.live/methode/setting-linkedin',
+      'x-default': 'https://www.setting.live/methode/setting-linkedin',
+    },
   },
   openGraph: {
     title: 'Setting LinkedIn — Méthode en 9 étapes | Setting',
