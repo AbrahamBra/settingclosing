@@ -1,17 +1,23 @@
 const members = [
   {
     name: 'Brahim',
+    initial: 'B',
     role: 'Setting',
+    color: '#A78BFA',
     desc: 'C\u2019est lui qui envoie les messages, qualifie les prospects et vous d\u00e9croche des RDV.',
   },
   {
     name: 'Abraham',
+    initial: 'A',
     role: 'IA & Automatisation',
+    color: '#C87533',
     desc: 'Il construit les outils de ciblage et les automatisations qui font gagner du temps au reste de l\u2019\u00e9quipe.',
   },
   {
     name: 'Abdelhay',
+    initial: 'A',
     role: 'Strat\u00e9gie commerciale',
+    color: '#FBBF24',
     desc: 'Il d\u00e9finit l\u2019angle commercial, les scripts et la strat\u00e9gie de conversion.',
   },
 ]
@@ -21,43 +27,44 @@ export function TeamBanner() {
     <section id="equipe" className="py-20 md:py-28">
       <div className="container-max px-6 md:px-12 lg:px-20">
         <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4 text-center">
-          L&apos;équipe
+          L&apos;&eacute;quipe
         </p>
         <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4 text-center">
           Qui fait quoi
         </h2>
         <p className="font-sans text-text-muted text-center max-w-xl mx-auto mb-14">
-          Chacun fait ce qu&apos;il sait faire. Le système tourne parce que les
-          pièces s&apos;emboîtent.
+          Chacun fait ce qu&apos;il sait faire. Le syst&egrave;me tourne parce que les
+          pi&egrave;ces s&apos;embo&icirc;tent.
         </p>
 
         <div className="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          {members.map(({ name, role, desc }) => (
+          {members.map(({ name, initial, role, color, desc }) => (
             <div
               key={name}
               className="bg-bg-secondary rounded-2xl border border-white/[0.06] p-6 flex flex-col items-center text-center"
             >
-              {/* Photo placeholder */}
-              <div className="w-28 h-28 rounded-2xl bg-bg-primary border-2 border-dashed border-accent/30 flex items-center justify-center mb-5">
-                <svg
-                  className="w-10 h-10 text-accent/30"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
+              <div
+                className="w-20 h-20 rounded-2xl flex items-center justify-center mb-5"
+                style={{
+                  backgroundColor: `${color}15`,
+                  border: `1px solid ${color}30`,
+                }}
+              >
+                <span
+                  className="font-sans font-extrabold text-2xl"
+                  style={{ color }}
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
-                  />
-                </svg>
+                  {initial}
+                </span>
               </div>
 
               <h3 className="font-sans font-extrabold text-lg text-text-primary">
                 {name}
               </h3>
-              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mt-1 mb-3">
+              <p
+                className="font-sans text-xs font-semibold uppercase tracking-widest mt-1 mb-3"
+                style={{ color }}
+              >
                 {role}
               </p>
               <p className="font-sans text-text-muted text-sm leading-relaxed">

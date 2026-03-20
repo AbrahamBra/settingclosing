@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://challengerslab.fr',
-      lastModified: new Date(),
+      lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
       priority: 1,
     },

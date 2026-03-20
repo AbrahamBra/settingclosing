@@ -94,7 +94,7 @@ export function Hero() {
             Réserver un appel gratuit
           </ButtonGlow>
           <a
-            href="#pipeline"
+            href="#offres"
             className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
           >
             Découvrir l&apos;offre ↓

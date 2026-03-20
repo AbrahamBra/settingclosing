@@ -5,7 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif | ChallengersLab',
+  title: 'Humain vs automatisation LinkedIn | ChallengersLab',
   description:
     'Waalaxy, PhantomBuster ou setter humain ? Comparatif honnête : taux de réponse, risque ban, coût réel et scalabilité.',
   alternates: {

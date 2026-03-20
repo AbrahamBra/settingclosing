@@ -5,7 +5,7 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Glossaire Setting & Prospection LinkedIn | ChallengersLab',
   description:
-    'Définitions précises des termes clés du setting et de la prospection LinkedIn : setter, signal d\'achat, ICP, discovery, pipeline, qualification. Le lexique de référence.',
+    'Définitions des termes clés du setting et de la prospection LinkedIn : setter, signal d\'achat, ICP, discovery, pipeline, qualification.',
   openGraph: {
     title: 'Glossaire Setting & Prospection LinkedIn | ChallengersLab',
     description:

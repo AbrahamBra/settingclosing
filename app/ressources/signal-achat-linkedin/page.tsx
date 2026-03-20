@@ -7,7 +7,7 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 export const metadata: Metadata = {
   title: "C'est quoi un signal d'achat LinkedIn ? | ChallengersLab",
   description:
-    "Un signal d'achat LinkedIn est une action détectable qui indique qu'un prospect s'intéresse à votre sujet — sans vous avoir contacté. Définition, 3 types de signaux et comment les exploiter.",
+    "Signal d'achat LinkedIn : action détectable qui révèle l'intérêt d'un prospect. Définition, 3 types de signaux et comment les exploiter.",
   openGraph: {
     title: "C'est quoi un signal d'achat LinkedIn ?",
     description:

@@ -6,7 +6,7 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
   title: "Comment devenir setter B2B en 2026 | ChallengersLab",
-  description: "Le métier de setter B2B en 2026 : ce que ça demande, les compétences réelles, les étapes pour démarrer et combien on peut gagner. Sans bullshit formation.",
+  description: "Setter B2B en 2026 : compétences réelles, étapes pour démarrer et combien on peut gagner. Guide concret, sans bullshit formation.",
   openGraph: {
     title: "Comment devenir setter B2B en 2026",
     description: "Compétences, parcours, outils, rémunération : le guide concret pour devenir setter B2B ou comprendre qui recruter.",

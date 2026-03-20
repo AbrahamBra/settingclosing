@@ -7,7 +7,7 @@ import { AuthorBlock } from '@/components/AuthorBlock'
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn : méthode | ChallengersLab',
   description:
-    "Le setting commercial précède le closing en B2B. Définition, rôle du setter, méthode LinkedIn signal-based, erreurs fréquentes et programme de 3 mois.",
+    "Le setting commercial précède le closing en B2B. Rôle du setter, méthode LinkedIn signal-based et programme de 3 mois.",
   openGraph: {
     title: 'Setting commercial LinkedIn : méthode | ChallengersLab',
     description:

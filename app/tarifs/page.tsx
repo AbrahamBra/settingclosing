@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Tarifs setting LinkedIn externalisé | ChallengersLab',
-    description: 'Setting LinkedIn à partir de 500 €/mois. Garantie RDV ou mois suivant offert.',
+    description: 'Prix du setting LinkedIn externalisé : 500 € le premier mois, 1 000 €/mois ensuite. Garantie 5 RDV minimum, sans engagement.',
     locale: 'fr_FR',
     type: 'website',
   },

@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
-import { OfferLadder } from '@/components/OfferLadder'
-import { BlogTeaser } from '@/components/BlogTeaser'
+import { SituationPicker } from '@/components/SituationPicker'
 import { SocialProof } from '@/components/SocialProof'
 import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
@@ -27,11 +26,10 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
-        <OfferLadder />
-        <FAQ />
+        <SituationPicker />
         <TeamBanner />
+        <FAQ />
         <CTAFinale />
-        <BlogTeaser />
       </main>
       <Footer />
     </>

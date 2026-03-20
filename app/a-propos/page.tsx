@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'À propos de ChallengersLab | Setting LinkedIn B2B',
-    description: 'L\'équipe derrière votre prospection LinkedIn externalisée.',
+    description: 'ChallengersLab externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
     locale: 'fr_FR',
     type: 'website',
   },
