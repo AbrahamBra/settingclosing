@@ -37,8 +37,8 @@ export const telephoniqueSteps: readonly {
     desc: "L\u2019approche Challenger Sale repose sur trois piliers\u00a0: Teach, Tailor, Take Control. Le setter n\u2019appelle pas pour « prendre la température » — il apporte un insight. Teach\u00a0: partager une observation que le prospect ne connaissait pas sur son marché. Tailor\u00a0: adapter cet insight au contexte spécifique du prospect. Take Control\u00a0: diriger la conversation vers un diagnostic, pas un pitch. Concrètement, les 90 premières secondes posent le cadre\u00a0: « On travaille avec des [profil similaire] et on observe que [insight sectoriel]. Est-ce que ça résonne avec votre situation\u00a0? »",
     tools: ['Challenger Sale', 'Script d\u2019ouverture'],
     pedagogy: {
-      mistake: "Ouvrir l\u2019appel comme 90\u00a0% des commerciaux\u00a0: « Bonjour, je suis X de la société Y, on propose des solutions de Z, est-ce que vous auriez 5 minutes\u00a0? » Le prospect a déjà décidé de raccrocher avant la fin de la phrase. Le setter n\u2019a rien apporté, rien appris, et a gaspillé un lead qualifié.",
-      arbitrage: "Le Challenger Sale inverse la dynamique. Au lieu de demander du temps, on en donne\u00a0: un insight, une donnée, une observation. « Les entreprises de votre secteur qui externalisent leur prospection génèrent en moyenne 3x plus de RDV que celles qui la gèrent en interne. C\u2019est contre-intuitif, mais la raison est simple\u2026 » Le prospect écoute parce qu\u2019il apprend quelque chose.",
+      mistake: "Ouvrir l\u2019appel comme 90\u00a0% des commerciaux\u00a0: « Bonjour, je suis X de la société Y, on propose des solutions de Z, est-ce que vous auriez 5 minutes\u00a0? » Le prospect a déjà décidé de raccrocher avant la fin de la phrase. Le setter a gaspillé un lead qualifié sans rien apprendre.",
+      arbitrage: "Le Challenger Sale inverse la dynamique. Au lieu de demander du temps, on en donne\u00a0: un insight sur le marché du prospect, pas un pitch produit. « Les entreprises de votre secteur qui externalisent leur prospection génèrent en moyenne 3x plus de RDV que celles qui la gèrent en interne. C\u2019est contre-intuitif, mais la raison est simple\u2026 » Le prospect écoute parce qu\u2019il apprend quelque chose.",
     },
   },
   {
@@ -70,7 +70,7 @@ export const telephoniqueSteps: readonly {
     desc: "Le CRM route automatiquement selon le score. Les leads chauds reçoivent un lien Calendly dans les 2 minutes suivant l\u2019appel — le momentum est clé. Les leads tièdes entrent dans une séquence de nurturing personnalisée selon le critère manquant\u00a0: contenu sur le ROI si c\u2019est le budget qui bloque, case studies du même secteur si c\u2019est la confiance, relance à date si c\u2019est le timing. Les leads froids reçoivent un email de courtoisie et rejoignent la newsletter. Zéro lead tombe entre les mailles.",
     tools: ['CRM', 'Routing automatique', 'Séquences email'],
     pedagogy: {
-      mistake: "Envoyer le même email de suivi à tous les leads\u00a0: « Merci pour notre échange, voici un lien pour prendre RDV. » Le lead chaud n\u2019a pas besoin de ce mail — il avait besoin du lien 30 secondes après avoir raccroché. Le lead tiède n\u2019est pas prêt pour un RDV — il avait besoin d\u2019un contenu qui lève son objection. Le lead froid n\u2019avait besoin de rien.",
+      mistake: "Envoyer le même email de suivi à tous les leads\u00a0: « Merci pour notre échange, voici un lien pour prendre RDV. » Le lead chaud avait besoin du lien Calendly 30 secondes après avoir raccroché, pas d\u2019un mail de suivi. Le tiède n\u2019est pas prêt pour un RDV — il lui faut du contenu qui lève son objection. Et le froid n\u2019avait besoin de rien.",
       arbitrage: "Le routing différencié respecte le rythme du prospect. Le lead chaud reçoit le Calendly avant d\u2019avoir ouvert LinkedIn. Le lead tiède « budget » reçoit un case study avec ROI chiffré. Le lead tiède « timing » reçoit une relance calée 2 semaines avant son prochain trimestre. Chaque lead avance à son rythme.",
     },
   },
@@ -78,7 +78,7 @@ export const telephoniqueSteps: readonly {
     num: '07',
     label: 'Feedback loop',
     layers: ['hybrid'] as const,
-    desc: "Chaque semaine, on analyse les données terrain. Quels critères prédisent vraiment un RDV qui signe\u00a0? Quels verbatims reviennent chez les leads chauds\u00a0? Quels signaux trompent — un lead enthousiaste au téléphone qui ne se présente pas au RDV\u00a0? Ces retours recalibrent trois choses\u00a0: la grille de scoring (les pondérations bougent), le script d\u2019ouverture (les insights s\u2019affinent), et les critères de routing (les seuils s\u2019ajustent). Après 4 semaines, le système qualifie mieux qu\u2019un commercial senior qui débute sur votre offre.",
+    desc: "Chaque semaine, on analyse les données terrain. Quels critères prédisent vraiment un RDV qui signe\u00a0? Quels verbatims reviennent chez les leads chauds\u00a0? Quels signaux trompent — un lead enthousiaste au téléphone qui ne se présente pas au RDV\u00a0? Ces retours recalibrent la grille de scoring, le script d\u2019ouverture et les seuils de routing. Après 4 semaines, le système qualifie mieux qu\u2019un commercial senior qui débute sur votre offre.",
     tools: ['Reporting hebdomadaire', 'Recalibrage', 'Optimisation continue'],
     pedagogy: {
       mistake: "Configurer le système et ne plus y toucher. 3 mois plus tard, le taux de conversion RDV\u2009→\u2009signature baisse de 30\u00a0% à 18\u00a0%. Personne ne sait pourquoi. Le marché a bougé, les objections ont changé, un concurrent a lancé une offre agressive — mais le scoring n\u2019a rien intégré.",

@@ -125,9 +125,9 @@ export default function NurturingPage() {
                 Votre base de leads dort. On la r&eacute;veille m&eacute;thodiquement.
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                Scoring comportemental et d&eacute;mographique, seuils calibr&eacute;s sur vos donn&eacute;es,
-                s&eacute;quences adapt&eacute;es par niveau de maturit&eacute;, routing automatique vers vos commerciaux.
-                On construit le syst&egrave;me qui transforme vos contacts dormants en RDV qualifi&eacute;s.
+                On pose un scoring sur votre base — qui est actif, qui dort, qui est pr&ecirc;t &agrave; acheter.
+                Les contacts m&ucirc;rs sont rout&eacute;s vers vos commerciaux.
+                Les autres re&ccedil;oivent du contenu jusqu&rsquo;&agrave; ce qu&rsquo;ils le soient.
               </p>
 
               {/* Layer legend */}
@@ -168,12 +168,12 @@ export default function NurturingPage() {
                 <p className="text-text-secondary text-base leading-relaxed mb-4">
                   Le nurturing, c&rsquo;est rester dans la t&ecirc;te des 97&nbsp;% pour &ecirc;tre l&agrave; quand elles seront pr&ecirc;tes.
                   Pas en les harcelant — en leur envoyant du contenu utile qui les aide &agrave; avancer dans leur r&eacute;flexion.
-                  Le jour o&ugrave; le besoin se cristallise, votre nom est d&eacute;j&agrave; associ&eacute; &agrave; la solution.
+                  Le jour o&ugrave; le besoin se pr&eacute;cise, vous &ecirc;tes d&eacute;j&agrave; dans la shortlist.
                 </p>
                 <p className="text-text-secondary text-base leading-relaxed">
                   Mais pour que &ccedil;a fonctionne, il faut savoir <span className="text-text-primary font-semibold">qui est o&ugrave; dans sa r&eacute;flexion</span>,
                   et <span className="text-text-primary font-semibold">quel contenu envoyer &agrave; quel moment</span>.
-                  C&rsquo;est l&agrave; qu&rsquo;interviennent le scoring, la segmentation et les s&eacute;quences automatis&eacute;es.
+                  D&rsquo;o&ugrave; le scoring, la segmentation et les s&eacute;quences.
                 </p>
               </div>
             </ScrollReveal>
@@ -336,11 +336,10 @@ export default function NurturingPage() {
               <div className="bg-[#C87533]/[0.03] border border-[#C87533]/10 rounded-xl px-5 py-4">
                 <p className="text-text-secondary text-sm leading-relaxed">
                   <span className="font-semibold" style={{ color: '#C87533' }}>L&rsquo;essentiel&nbsp;:</span>{' '}
-                  le nurturing ne s&rsquo;arr&ecirc;te qu&rsquo;&agrave; deux moments&nbsp;: quand le contact signe,
-                  ou quand il se d&eacute;sinscrit. Tant qu&rsquo;il reste actif, la boucle tourne.
-                  Un lead qui n&rsquo;a pas converti aujourd&rsquo;hui n&rsquo;est pas un &eacute;chec —
-                  c&rsquo;est un lead qui a besoin de plus de temps. Le syst&egrave;me lui donne ce temps,
-                  sans mobiliser vos commerciaux.
+                  le nurturing s&rsquo;arr&ecirc;te quand le contact signe ou se d&eacute;sinscrit.
+                  Tant qu&rsquo;il reste actif, la boucle tourne.
+                  Un lead qui n&rsquo;a pas converti aujourd&rsquo;hui a juste besoin de plus de temps.
+                  Le syst&egrave;me le lui donne, sans mobiliser vos commerciaux.
                 </p>
               </div>
             </ScrollReveal>
@@ -406,10 +405,10 @@ export default function NurturingPage() {
           <div className="container-max text-center max-w-2xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4">
-                Votre base a du potentiel. On le d&eacute;bloque.
+                Vous avez les contacts. Il manque le syst&egrave;me.
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                Construisons ensemble le syst&egrave;me qui transforme vos contacts en rendez-vous.
+                On regarde votre base et on vous dit ce qu&rsquo;on peut en tirer.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                 Construire mon syst&egrave;me

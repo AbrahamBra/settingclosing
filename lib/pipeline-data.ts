@@ -51,7 +51,7 @@ export const settingSteps = [
     tools: ['Claude', 'Google Sheet'],
     pedagogy: {
       mistake: "Laisser l'IA générer une fiche prospect à partir du titre LinkedIn et de la bio. \"CEO, passionné d'innovation\" — et on part là-dessus. La bio date de 2019, le poste a changé, et les 3 derniers posts parlent de tout autre chose que ce que l'IA a retenu.",
-      arbitrage: "Claude analyse le profil complet et identifie le levier d'achat dominant : ce prospect est motivé par la sécurité (peur du mauvais choix), le confort (simplifier sa vie), le ROI mesurable ? Ça change tout le message. Un profil \"Sécurité\" reçoit des preuves et des références. Un profil \"Nouveauté\" reçoit un angle sur ce qui a changé dans son marché.",
+      arbitrage: "Claude analyse le profil complet et identifie le levier d'achat dominant : est-ce que ce prospect cherche de la sécurité, du confort ou du ROI mesurable ? Le message change du tout au tout. Un profil \"Sécurité\" reçoit des preuves et des références. Un profil \"Nouveauté\" reçoit un angle sur ce qui a changé dans son marché.",
     },
   },
   {
@@ -106,7 +106,7 @@ export const settingSteps = [
     tools: ['Setter', 'Nurturing'],
     pedagogy: {
       mistake: "Pousser au rendez-vous dès le deuxième message. \"Seriez-vous disponible pour un call de 15 min ?\" Le prospect n'a encore rien demandé. Ça ressemble à ce que c'est : de la prospection déguisée en conversation.",
-      arbitrage: "On convertit la conversation en rendez-vous quand le timing est bon. Pas de pitch, une ouverture. Ce qui compte ensuite, c'est le reporting : quels messages ont décroché des réponses, quels angles ont converti, quels profils ont bloqué. Ce retour recalibre tout le pipe en amont.",
+      arbitrage: "On convertit la conversation en rendez-vous quand le timing est bon. Pas de pitch, une ouverture. Ce qui compte ensuite, c'est le reporting : quels messages ont décroché des réponses et quels profils ont bloqué. Ce retour recalibre tout le pipe.",
     },
   },
 ] as const

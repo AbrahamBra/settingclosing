@@ -73,7 +73,7 @@ const bantItems = [
 const challengerPillars = [
   {
     title: 'Teach',
-    desc: 'Apporter un insight que le prospect ne connaissait pas sur son marché. Pas une feature produit — une observation terrain qui change sa façon de voir son problème.',
+    desc: 'Apporter une observation terrain que le prospect ne connaissait pas sur son marché. Quelque chose qui change sa façon de voir son problème.',
   },
   {
     title: 'Tailor',
@@ -81,7 +81,7 @@ const challengerPillars = [
   },
   {
     title: 'Take Control',
-    desc: 'Diriger la conversation vers une décision. Pas un pitch, pas une démo — un diagnostic structuré qui amène le prospect à se positionner.',
+    desc: 'Diriger la conversation vers un diagnostic structuré. Le prospect se positionne parce qu\u2019on lui a posé les bonnes questions.',
   },
 ]
 
@@ -138,8 +138,8 @@ export default function SettingTelephoniquePage() {
                 Pourquoi qualifier par t&eacute;l&eacute;phone&nbsp;?
               </h2>
               <p className="text-text-secondary text-base leading-relaxed mb-10 max-w-2xl">
-                Un formulaire donne une d&eacute;claration d&rsquo;intention. Un email donne une r&eacute;ponse contr&ocirc;l&eacute;e.
-                Un appel donne la v&eacute;rit&eacute;.
+                Un formulaire donne une d&eacute;claration d&rsquo;intention. Un email, une r&eacute;ponse contr&ocirc;l&eacute;e.
+                Au t&eacute;l&eacute;phone, on entend ce que le prospect n&rsquo;aurait jamais &eacute;crit.
               </p>
             </ScrollReveal>
 
@@ -151,7 +151,7 @@ export default function SettingTelephoniquePage() {
                 },
                 {
                   title: 'Profondeur',
-                  text: 'Par \u00e9crit, on contr\u00f4le son image. Au t\u00e9l\u00e9phone, l\u2019h\u00e9sitation s\u2019entend. L\u2019enthousiasme aussi. Le non-verbal vocal r\u00e9v\u00e8le ce que le texte cache\u00a0: l\u2019urgence r\u00e9elle, les objections non formul\u00e9es, le niveau d\u2019int\u00e9r\u00eat.',
+                  text: 'Par \u00e9crit, on contr\u00f4le son image. Au t\u00e9l\u00e9phone, l\u2019h\u00e9sitation s\u2019entend. L\u2019enthousiasme aussi. Le non-verbal vocal r\u00e9v\u00e8le ce que le texte cache\u00a0: une h\u00e9sitation sur le prix, une objection que le prospect n\u2019aurait pas formul\u00e9e par \u00e9crit.',
                 },
                 {
                   title: 'Routing imm\u00e9diat',
@@ -181,8 +181,8 @@ export default function SettingTelephoniquePage() {
               <p className="text-text-secondary text-base leading-relaxed mb-4 max-w-3xl">
                 Le BANT (Budget, Authority, Need, Timeline) est un framework de qualification
                 invent&eacute; par IBM dans les ann&eacute;es 60. Il reste utile comme grille de lecture,
-                pas comme interrogatoire. La diff&eacute;rence entre une question BANT g&eacute;n&eacute;rique et une question BANT
-                adapt&eacute;e, c&rsquo;est la diff&eacute;rence entre un questionnaire et une conversation.
+                pas comme interrogatoire. Une question BANT g&eacute;n&eacute;rique remplit une case.
+                Une question BANT adapt&eacute;e ouvre une conversation.
               </p>
             </ScrollReveal>
 
@@ -234,9 +234,9 @@ export default function SettingTelephoniquePage() {
               </h2>
               <p className="text-text-secondary text-base leading-relaxed mb-4 max-w-3xl">
                 Issue de l&rsquo;&eacute;tude de Matthew Dixon et Brent Adamson sur 6&nbsp;000 commerciaux B2B,
-                la m&eacute;thode Challenger Sale a d&eacute;montr&eacute; que les meilleurs vendeurs ne sont pas les plus
-                relationnels — ce sont ceux qui apprennent quelque chose au prospect.
-                Nos setters t&eacute;l&eacute;phoniques sont form&eacute;s sur trois piliers.
+                la m&eacute;thode Challenger Sale a d&eacute;montr&eacute; que les commerciaux qui apprennent quelque chose
+                au prospect convertissent mieux que ceux qui cherchent &agrave; cr&eacute;er du lien.
+                Nos setters s&rsquo;appuient sur trois piliers.
               </p>
             </ScrollReveal>
 
@@ -331,7 +331,7 @@ export default function SettingTelephoniquePage() {
                 Des leads qui entrent, des RDV qui sortent.
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                Discutons de votre volume de leads et de la qualification adapt&eacute;e &agrave; votre offre.
+                Parlons de votre volume de leads et du routing qui manque.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                 Discuter de mon volume
