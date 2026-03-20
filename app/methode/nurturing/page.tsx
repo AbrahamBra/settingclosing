@@ -378,6 +378,29 @@ export default function NurturingPage() {
           </div>
         </section>
 
+        {/* ── Voir aussi ────────────────────────────────────────────────── */}
+        <section className="bg-bg-secondary section-padding">
+          <div className="container-max max-w-4xl mx-auto">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold tracking-widest text-text-muted uppercase mb-6">Voir aussi</p>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <a href="/methode/setting-linkedin" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting LinkedIn</p>
+                  <p className="font-sans text-sm text-text-muted">Prospection outbound par signaux d'achat en 9 étapes.</p>
+                </a>
+                <a href="/methode/setting-telephonique" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting téléphonique</p>
+                  <p className="font-sans text-sm text-text-muted">Qualification et routing de vos leads entrants.</p>
+                </a>
+                <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
+                  <p className="font-sans text-sm text-text-muted">500 € le premier mois, sans engagement.</p>
+                </a>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* ── CTA ──────────────────────────────────────────────────────────── */}
         <section className="bg-bg-primary section-padding">
           <div className="container-max text-center max-w-2xl mx-auto">

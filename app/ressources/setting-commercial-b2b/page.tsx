@@ -5,11 +5,11 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 
 export const metadata: Metadata = {
-  title: 'Setting commercial LinkedIn : méthode | ChallengersLab',
+  title: 'Setting commercial B2B : définition et rôle du setter | ChallengersLab',
   description:
     "Le setting commercial précède le closing en B2B. Rôle du setter, méthode LinkedIn signal-based et programme de 3 mois.",
   openGraph: {
-    title: 'Setting commercial LinkedIn : méthode | ChallengersLab',
+    title: 'Setting commercial B2B : définition et rôle du setter | ChallengersLab',
     description:
       "Setter, setting LinkedIn, signal-based : tout sur le setting commercial en B2B. Ce que c'est, comment ça fonctionne, et pourquoi la plupart le font mal.",
     locale: 'fr_FR',
@@ -1052,6 +1052,14 @@ export default function SettingCommercialPage() {
             <ButtonGlow as="a" href="/#contact">
               Réserver un appel gratuit →
             </ButtonGlow>
+          </div>
+
+          {/* Glossaire */}
+          <div className="mt-12 border border-white/[0.06] rounded-xl p-5">
+            <p className="font-sans text-sm text-text-muted">
+              Setter, ICP, signal d'achat, pipeline... Un terme vous échappe ?{' '}
+              <a href="/glossaire" className="text-accent hover:underline">Consultez le glossaire</a>.
+            </p>
           </div>
 
           {/* Back */}

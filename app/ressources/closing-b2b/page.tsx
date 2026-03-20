@@ -1047,6 +1047,14 @@ export default function ClosingB2BPage() {
             </ButtonGlow>
           </div>
 
+          {/* Glossaire */}
+          <div className="mt-12 border border-white/[0.06] rounded-xl p-5">
+            <p className="font-sans text-sm text-text-muted">
+              Discovery call, objection, closing... Un terme vous échappe ?{' '}
+              <a href="/glossaire" className="text-accent hover:underline">Consultez le glossaire</a>.
+            </p>
+          </div>
+
           {/* Back */}
           <div className="mt-8 text-center">
             <a

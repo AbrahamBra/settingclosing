@@ -519,6 +519,29 @@ export default function ExternaliserProspectionLinkedinPage() {
           </div>
         </section>
 
+        {/* ── Voir aussi ────────────────────────────────────────────────── */}
+        <section className="bg-bg-primary section-padding">
+          <div className="container-max max-w-4xl mx-auto">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold tracking-widest text-text-muted uppercase mb-6">Voir aussi</p>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <a href="/methode/setting-linkedin" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">La méthode en 9 étapes</p>
+                  <p className="font-sans text-sm text-text-muted">Du signal d'achat au RDV qualifié : le pipeline complet.</p>
+                </a>
+                <a href="/resultats" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Résultats clients</p>
+                  <p className="font-sans text-sm text-text-muted">3+ RDV qualifiés par semaine, premiers résultats en 7 jours.</p>
+                </a>
+                <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
+                  <p className="font-sans text-sm text-text-muted">500 € le premier mois, sans engagement.</p>
+                </a>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* ── CTA finale ───────────────────────────────────────────────────── */}
         <section id="cta" className="bg-bg-secondary section-padding">
           <div className="container-max max-w-2xl mx-auto text-center">
