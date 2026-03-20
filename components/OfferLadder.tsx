@@ -123,7 +123,7 @@ function OfferBlock({ offer, isLast }: { offer: Offer; isLast: boolean }) {
           {offer.guarantee && (
             <div className="mt-3 pt-3 border-t border-white/[0.06]">
               <div className="flex items-start gap-2">
-                <span style={{ color: offer.color }} className="shrink-0 mt-0.5">&check;</span>
+                <span style={{ color: offer.color }} className="shrink-0 mt-0.5">✓</span>
                 <p className="font-sans text-text-primary text-sm">
                   <span className="font-semibold">Garantie&nbsp;:</span> {offer.guarantee}
                 </p>
@@ -132,7 +132,7 @@ function OfferBlock({ offer, isLast }: { offer: Offer; isLast: boolean }) {
           )}
           {offer.noCommitment && (
             <div className="flex items-start gap-2 mt-2">
-              <span style={{ color: offer.color }} className="shrink-0 mt-0.5">&check;</span>
+              <span style={{ color: offer.color }} className="shrink-0 mt-0.5">✓</span>
               <p className="font-sans text-text-primary text-sm">
                 <span className="font-semibold">Sans engagement.</span> R&eacute;siliable &agrave; tout moment.
               </p>
