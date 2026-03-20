@@ -12,7 +12,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://challengerslab.fr/methode',
       lastModified: new Date('2026-03-19'),
       changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://challengerslab.fr/methode/setting-linkedin',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
       priority: 0.9,
+    },
+    {
+      url: 'https://challengerslab.fr/methode/setting-telephonique',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://challengerslab.fr/methode/nurturing',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
       url: 'https://challengerslab.fr/ressources',
