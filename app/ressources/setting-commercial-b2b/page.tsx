@@ -269,7 +269,9 @@ export default function SettingCommercialPage() {
 
               <p className="mb-4">
                 Ce que le setter ne fait pas : fermer des deals, envoyer des propositions commerciales,
-                pitcher l&apos;offre dans le premier DM, gérer les relances post-appel, créer du contenu.
+                pitcher l&apos;offre dans le premier DM, gérer les{' '}
+                <a href="/ressources/relance-linkedin-b2b" className="text-accent hover:text-text-primary transition-colors">relances</a>{' '}
+                post-appel, créer du contenu.
                 La séparation n&apos;est pas arbitraire — elle est fonctionnelle. Chaque rôle demande
                 un profil différent.
               </p>
@@ -405,7 +407,9 @@ export default function SettingCommercialPage() {
               </div>
 
               <p className="mt-5">
-                La différence avec la prospection à froid classique : le prospect n&apos;est pas froid.
+                La différence avec la{' '}
+                <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:text-text-primary transition-colors">prospection LinkedIn classique</a>{' '}
+                : le prospect n&apos;est pas froid.
                 Il a déjà montré quelque chose. Le message s&apos;ancre sur cette preuve — et le taux
                 de réponse change de nature. C&apos;est la raison pour laquelle{' '}
                 <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">

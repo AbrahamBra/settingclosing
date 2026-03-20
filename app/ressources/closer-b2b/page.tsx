@@ -543,6 +543,7 @@ export default function CloserB2BPage() {
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ? Rôle, missions et coût" },
                 { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/ressources/challenger-sale-definition', label: "Qu'est-ce que le Challenger Sale ?" },
+                { href: '/ressources/closing-b2b', label: 'Closing B2B : définition et méthode complète' },
               ].map(({ href, label }) => (
                 <a
                   key={href}

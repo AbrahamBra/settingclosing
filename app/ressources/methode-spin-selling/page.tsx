@@ -439,6 +439,7 @@ export default function MethodeSpinSellingPage() {
                 { href: '/ressources/gestion-objections-b2b', label: 'Gérer les objections en vente B2B' },
                 { href: '/ressources/methode-soncas', label: 'Méthode SONCAS : 6 leviers de motivation d\'achat' },
                 { href: '/glossaire', label: 'Glossaire setting & closing B2B' },
+                { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B comparées : Challenger Sale, SPIN, SONCAS' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>

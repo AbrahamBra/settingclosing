@@ -38,13 +38,27 @@ const resourcesSchema = {
     'Méthodes, scripts et stratégies de prospection LinkedIn B2B pour fondateurs et freelances.',
   url: 'https://challengerslab.fr/ressources',
   isPartOf: { '@id': 'https://challengerslab.fr/#website' },
-  breadcrumb: {
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-      { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
-    ],
-  },
+  breadcrumb: { '@id': 'https://challengerslab.fr/ressources#breadcrumb' },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  '@id': 'https://challengerslab.fr/ressources#breadcrumb',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Accueil',
+      item: 'https://challengerslab.fr',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Ressources',
+      item: 'https://challengerslab.fr/ressources',
+    },
+  ],
 }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
@@ -57,7 +71,34 @@ export default function ResourcesIndexPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(resourcesSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <main className="pt-28 pb-24">
+
+        {/* ── Breadcrumb ───────────────────────────────────────────────────── */}
+        <nav
+          aria-label="Fil d&apos;Ariane"
+          className="bg-bg-primary border-b border-white/[0.06]"
+        >
+          <div className="container-max py-3">
+            <ol className="flex items-center gap-2 font-sans text-sm text-text-muted">
+              <li>
+                <a href="/" className="hover:text-text-primary transition-colors">
+                  Accueil
+                </a>
+              </li>
+              <li aria-hidden="true" className="text-white/20">
+                /
+              </li>
+              <li className="text-text-primary font-medium" aria-current="page">
+                Ressources
+              </li>
+            </ol>
+          </div>
+        </nav>
+
         <BlogContent />
       </main>
       <Footer />

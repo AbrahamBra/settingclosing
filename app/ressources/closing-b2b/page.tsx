@@ -219,13 +219,15 @@ export default function ClosingB2BPage() {
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le closing est la phase finale d&apos;un cycle de vente B2B : le moment où un prospect
-              qualifié devient client signé. Le closeur conduit un ou plusieurs appels commerciaux, explore
+              qualifié devient client signé. Le{' '}
+              <a href="/ressources/closer-b2b" className="text-accent hover:text-text-primary transition-colors">closeur</a>{' '}
+              conduit un ou plusieurs appels commerciaux, explore
               le problème, présente la valeur de l&apos;offre et obtient une décision.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Ce que le closing n&apos;est pas : un ensemble de techniques de manipulation pour forcer une
               décision. Cette confusion vient en grande partie du vocabulaire — &ldquo;techniques de
-              closing&rdquo;, &ldquo;scripts de closing&rdquo; — qui laisse entendre qu&apos;il s&apos;agit
+              closing&rdquo;, &ldquo;<a href="/ressources/script-closing-b2b" className="text-accent hover:text-text-primary transition-colors">scripts de closing</a>&rdquo; — qui laisse entendre qu&apos;il s&apos;agit
               de trouver les bons mots pour contourner le jugement du prospect. Un closeur professionnel
               ne force rien. Il qualifie, il écoute, il explique — et il sait reconnaître quand le
               prospect n&apos;est pas le bon client.

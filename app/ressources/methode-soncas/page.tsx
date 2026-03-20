@@ -468,6 +468,7 @@ export default function MethodeSoncasPage() {
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition et méthode' },
                 { href: '/ressources/challenger-sale-definition', label: 'La méthode Challenger Sale expliquée' },
                 { href: '/glossaire', label: 'Glossaire : closer, discovery, objection, pipeline' },
+                { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B comparées : Challenger Sale, SPIN, SONCAS' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>

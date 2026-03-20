@@ -427,6 +427,7 @@ export default function QualificationLeadsB2BPage() {
                 { href: '/ressources/methode-soncas', label: 'Méthode SONCAS : 6 leviers de motivation' },
                 { href: '/ressources/methode-spin-selling', label: 'SPIN Selling : vendre sans forcer' },
                 { href: '/glossaire', label: 'Glossaire : ICP, qualification, pipeline…' },
+                { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B : quel framework choisir ?' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>

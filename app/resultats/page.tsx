@@ -354,14 +354,18 @@ export default function ResultatsPage() {
           <div className="container-max max-w-4xl mx-auto">
             <ScrollReveal>
               <p className="font-sans text-xs font-semibold tracking-widest text-text-muted uppercase mb-6">Voir aussi</p>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">500 € le premier mois, sans engagement. Garantie 5 RDV minimum.</p>
+                  <p className="font-sans text-sm text-text-muted">Des prix progressifs, sans engagement. Garantie 5 RDV minimum.</p>
                 </a>
                 <a href="/methode/setting-linkedin" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">La méthode en 9 étapes</p>
                   <p className="font-sans text-sm text-text-muted">Du signal d'achat au RDV qualifié : comment fonctionne le pipeline.</p>
+                </a>
+                <a href="/externaliser-prospection-linkedin" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Externaliser sa prospection</p>
+                  <p className="font-sans text-sm text-text-muted">Pour qui, quand et comment externaliser votre prospection LinkedIn.</p>
                 </a>
               </div>
             </ScrollReveal>

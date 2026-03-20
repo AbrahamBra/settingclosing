@@ -494,6 +494,7 @@ export default function CoutSetterB2BPage() {
               {[
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
+                { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs SDR externalisé : le comparatif coût réel en 2026' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>

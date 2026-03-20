@@ -374,6 +374,7 @@ export default function ChallengerSalePage() {
               {[
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
+                { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
