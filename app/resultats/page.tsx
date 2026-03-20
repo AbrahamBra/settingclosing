@@ -39,6 +39,46 @@ const webPageSchema = {
   },
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Setting commercial LinkedIn externalisé',
+  provider: {
+    '@type': 'Organization',
+    name: 'Setting',
+    url: 'https://www.setting.live',
+  },
+  areaServed: 'FR',
+  serviceType: 'Prospection LinkedIn B2B',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    bestRating: '5',
+    ratingCount: '20',
+    reviewCount: '3',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Consultant stratégie IT' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: '12 RDV qualifiés le premier mois. 3 contrats signés sur le trimestre. Le pipeline tourne maintenant en autonomie.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Fondateur agence marketing digital' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: '4 RDV par semaine en rythme de croisière. Le fondateur ne prospecte plus, il close uniquement.',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Coach business B2B' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: '8 RDV le premier mois à partir de la base existante. 2 contrats signés. Le système continue de produire des leads chaque semaine.',
+    },
+  ],
+}
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -138,6 +178,10 @@ export default function ResultatsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <Navbar />
       <main className="pt-20">

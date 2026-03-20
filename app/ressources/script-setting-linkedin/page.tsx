@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/script-setting-linkedin',
   },
+  image: 'https://www.setting.live/ressources/script-setting-linkedin/opengraph-image',
 }
 
 const faqItems = [

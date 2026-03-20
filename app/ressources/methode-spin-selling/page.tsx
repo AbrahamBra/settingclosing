@@ -45,6 +45,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/methode-spin-selling',
   },
+  image: 'https://www.setting.live/ressources/methode-spin-selling/opengraph-image',
 }
 
 const faqItems = [

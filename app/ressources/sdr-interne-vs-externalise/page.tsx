@@ -46,6 +46,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
   },
+  image: 'https://www.setting.live/ressources/sdr-interne-vs-externalise/opengraph-image',
 }
 
 const faqItems = [

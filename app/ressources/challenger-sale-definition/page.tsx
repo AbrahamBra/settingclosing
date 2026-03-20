@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/challenger-sale-definition',
   },
+  image: 'https://www.setting.live/ressources/challenger-sale-definition/opengraph-image',
 }
 
 const faqItems = [

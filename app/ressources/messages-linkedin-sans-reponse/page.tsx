@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
   },
+  image: 'https://www.setting.live/ressources/messages-linkedin-sans-reponse/opengraph-image',
 }
 
 const faqItems = [

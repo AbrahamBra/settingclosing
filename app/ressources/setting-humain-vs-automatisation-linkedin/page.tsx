@@ -46,6 +46,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   },
+  image: 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin/opengraph-image',
 }
 
 const faqItems = [

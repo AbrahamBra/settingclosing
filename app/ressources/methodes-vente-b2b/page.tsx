@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/methodes-vente-b2b',
   },
+  image: 'https://www.setting.live/ressources/methodes-vente-b2b/opengraph-image',
 }
 
 const faqItems = [

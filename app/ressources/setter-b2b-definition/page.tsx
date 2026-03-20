@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/setter-b2b-definition',
   },
+  image: 'https://www.setting.live/ressources/setter-b2b-definition/opengraph-image',
 }
 
 const faqItems = [

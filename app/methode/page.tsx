@@ -38,6 +38,15 @@ const webPageSchema = {
   },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Méthode', item: 'https://www.setting.live/methode' },
+  ],
+}
+
 export default function MethodeHubPage() {
   const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '#contact'
 
@@ -46,6 +55,10 @@ export default function MethodeHubPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Navbar />
       <main className="pt-20">

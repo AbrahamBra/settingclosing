@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
   },
+  image: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin/opengraph-image',
 }
 
 const faqItems = [

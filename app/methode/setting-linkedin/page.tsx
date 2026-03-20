@@ -43,6 +43,16 @@ const webPageSchema = {
   },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Méthode', item: 'https://www.setting.live/methode' },
+    { '@type': 'ListItem', position: 3, name: 'Setting LinkedIn', item: 'https://www.setting.live/methode/setting-linkedin' },
+  ],
+}
+
 // ─── Local Phase Definitions ──────────────────────────────────────────────────
 
 const phases = [
@@ -89,6 +99,10 @@ export default function SettingLinkedinMethodePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <Navbar />
       <main className="pt-20">

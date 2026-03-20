@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/cout-setter-b2b-prix',
   },
+  image: 'https://www.setting.live/ressources/cout-setter-b2b-prix/opengraph-image',
 }
 
 const faqItems = [

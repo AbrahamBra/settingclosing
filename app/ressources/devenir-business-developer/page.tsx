@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/devenir-business-developer',
   },
+  image: 'https://www.setting.live/ressources/devenir-business-developer/opengraph-image',
 }
 
 const faqItems = [

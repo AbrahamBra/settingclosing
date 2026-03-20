@@ -45,6 +45,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/qualification-leads-b2b',
   },
+  image: 'https://www.setting.live/ressources/qualification-leads-b2b/opengraph-image',
 }
 
 const faqItems = [

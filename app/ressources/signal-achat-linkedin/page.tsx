@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/signal-achat-linkedin',
   },
+  image: 'https://www.setting.live/ressources/signal-achat-linkedin/opengraph-image',
 }
 
 const faqItems = [

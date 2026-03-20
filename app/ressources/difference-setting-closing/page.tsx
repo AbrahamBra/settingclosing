@@ -47,6 +47,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/difference-setting-closing',
   },
+  image: 'https://www.setting.live/ressources/difference-setting-closing/opengraph-image',
 }
 
 const faqItems = [

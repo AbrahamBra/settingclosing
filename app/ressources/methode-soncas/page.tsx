@@ -45,6 +45,7 @@ const articleSchema = {
     '@type': 'WebPage',
     '@id': 'https://www.setting.live/ressources/methode-soncas',
   },
+  image: 'https://www.setting.live/ressources/methode-soncas/opengraph-image',
 }
 
 const faqItems = [
