@@ -6,7 +6,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 const faqs = [
   {
     q: 'Combien ça coûte au total ?',
-    a: "500\u00a0€ le premier mois, 1\u00a0000\u00a0€/mois ensuite + une prime par RDV livré dont le montant est défini ensemble. Sans engagement.",
+    a: "490\u00a0\u20ac de setup, puis 790\u00a0\u20ac/mois les 2 premiers mois et 1\u00a0290\u00a0\u20ac/mois ensuite. +50\u00a0\u20ac par RDV au-del\u00e0 de 8. Sans engagement.",
   },
   {
     q: 'Quand est-ce que je vois les premiers RDV ?',

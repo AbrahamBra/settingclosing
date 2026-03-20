@@ -526,7 +526,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">500 € le premier mois, sans engagement.</p>
+                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 790\u00a0\u20ac/mois. Sans engagement.</p>
                 </a>
               </div>
             </ScrollReveal>

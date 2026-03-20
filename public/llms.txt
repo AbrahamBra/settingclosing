@@ -8,9 +8,9 @@ ChallengersLab construit et opère des programmes de setting commercial B2B sur 
 
 ## Services
 
-- **Setting LinkedIn** : Setter dédié, prospection LinkedIn signal-based, IA comme co-rédacteur, 5 RDV qualifiés minimum par mois. Setup 490 € + 790 €/mois (calibration), puis 1 290 €/mois. Sans engagement.
-- **Setting téléphonique** : Qualification téléphonique des leads entrants, routing intelligent. 290 € setup + 690 €/mois (490 €/mois en bundle avec Setting LinkedIn).
-- **Setup Nurturing** : Scoring comportemental, séquences personnalisées, workflows automatisés. 1 990 € setup + 490 €/mois × 3 mois d'optimisation + prime par RDV.
+- **Setting LinkedIn** : Setter dédié, prospection LinkedIn signal-based, IA comme co-rédacteur, 5 RDV qualifiés minimum par mois. Setup 490 € + 790 €/mois (calibration), puis 1 290 €/mois. +50 €/RDV au-delà de 8. Sans engagement.
+- **Setting téléphonique** : Qualification téléphonique des leads entrants, routing intelligent. 290 € setup + 690 €/mois (490 €/mois en bundle avec Setting LinkedIn). +35 €/RDV qualifié au-delà de 10.
+- **Setup Nurturing** : Scoring comportemental, séquences personnalisées, workflows automatisés. 1 990 € setup + 490 €/mois × 3 mois d'optimisation. +80-100 €/RDV généré.
 
 ## Pour qui
 

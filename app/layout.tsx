@@ -72,7 +72,7 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Setting LinkedIn — Abonnement',
-            description: 'Pipeline à plein régime : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés. 790 €/mois les 2 premiers mois, puis 1 290 €/mois.',
+            description: 'Pipeline à plein régime : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés. 790 €/mois les 2 premiers mois, puis 1 290 €/mois. +50 €/RDV au-delà de 8.',
             url: 'https://challengerslab.fr/methode/setting-linkedin',
             priceSpecification: {
               '@type': 'PriceSpecification',
@@ -85,7 +85,7 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Setting téléphonique — Qualification de leads',
-            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé. 690 €/mois standalone, 490 €/mois en bundle.',
+            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé. 690 €/mois standalone, 490 €/mois en bundle. +35 €/RDV au-delà de 10.',
             url: 'https://challengerslab.fr/methode/setting-telephonique',
             priceSpecification: {
               '@type': 'PriceSpecification',
@@ -98,7 +98,7 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Setup Nurturing',
-            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing. 1 990 € setup + 490 €/mois pendant 3 mois d\'optimisation.',
+            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing. 1 990 € setup + 490 €/mois pendant 3 mois d\'optimisation. +80-100 €/RDV généré.',
             url: 'https://challengerslab.fr/methode/nurturing',
             priceSpecification: {
               '@type': 'PriceSpecification',
@@ -109,52 +109,6 @@ const jsonLd = {
           },
         ],
       },
-    },
-    {
-      '@type': 'FAQPage',
-      '@id': 'https://challengerslab.fr/#faq',
-      mainEntity: [
-        {
-          '@type': 'Question',
-          name: 'Combien coûte le setting commercial externalisé ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: '490 € de setup, puis 790 €/mois les 2 premiers mois et 1 290 €/mois ensuite. Bonus de 50 €/RDV au-delà de 15. Sans engagement.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Quand voit-on les premiers RDV qualifiés ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Dès la première semaine. Le setter envoie des messages dès le démarrage, pas après un audit de 30 jours.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Les messages sont-ils envoyés sans validation ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Non. Chaque message est validé par un humain avant envoi. Aucune automatisation ne contacte vos prospects à votre place.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Que se passe-t-il si le service ne fonctionne pas ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: 'Moins de 5 RDV qualifiés livrés dans le mois ? Le mois suivant est offert.',
-          },
-        },
-        {
-          '@type': 'Question',
-          name: 'Quelle est la différence avec un freelance SDR ?',
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: "Un freelance SDR envoie des messages. ChallengersLab combine un setter dédié, un système IA qui détecte les signaux d'achat, et une méthode qui s'affine chaque semaine.",
-          },
-        },
-      ],
     },
   ],
 }
