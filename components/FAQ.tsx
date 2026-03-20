@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "C'est quoi la différence avec un freelance SDR ?",
-    a: "Un freelance SDR envoie des messages. Nous, on combine un setter dédié, un système IA qui détecte les signaux d\u2019achat, et une méthode qui s\u2019affine chaque semaine. Même quota LinkedIn, résultats ×10.",
+    a: "Un freelance SDR envoie des messages. On ajoute le ciblage IA et une méthode qui s\u2019affine chaque semaine sur vos retours terrain. Même quota LinkedIn, résultats ×10.",
   },
   {
     q: "Mon offre n'est pas encore rodée, c'est pour moi ?",

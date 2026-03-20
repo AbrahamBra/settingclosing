@@ -82,7 +82,7 @@ export const offers: Offer[] = [
     color: '#C87533',
     situation: 'J\u2019ai une base \u00e9norme',
     description:
-      'Des milliers de contacts, actifs ou dormants. Z\u00e9ro syst\u00e8me pour scorer, nourrir et convertir.',
+      'Des milliers de contacts, actifs ou dormants. Z\u00e9ro syst\u00e8me pour les exploiter.',
     features: [
       { title: 'Scoring comportemental', detail: 'Engagement, r\u00e9cence, intent\u00a0: chaque lead a un score' },
       { title: 'S\u00e9quences personnalis\u00e9es', detail: 'Contenu adapt\u00e9 au niveau de maturit\u00e9 du lead' },

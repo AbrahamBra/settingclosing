@@ -175,7 +175,7 @@ export default function ResultatsPage() {
                 Ce que nos clients obtiennent
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
-                Pas de promesses vagues. Des chiffres, des timelines, des cas concrets.
+                Chiffres, timelines et cas concrets.
               </p>
             </ScrollReveal>
           </div>
@@ -296,7 +296,7 @@ export default function ResultatsPage() {
                 Nos benchmarks vs le march&eacute;
               </h2>
               <p className="font-sans text-text-muted text-base text-center mb-10">
-                Prospection classique contre setting externalis&eacute;. Les m&ecirc;mes ICP, pas les m&ecirc;mes r&eacute;sultats.
+                Prospection classique contre setting externalis&eacute;. M&ecirc;me cible. R&eacute;sultats tr&egrave;s diff&eacute;rents.
               </p>
             </ScrollReveal>
 

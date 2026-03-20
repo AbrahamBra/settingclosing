@@ -247,9 +247,6 @@ export default function ExternaliserProspectionLinkedinPage() {
             <div className="grid md:grid-cols-3 gap-6">
               <ScrollReveal delay={0}>
                 <DarkCard hover className="p-8 h-full">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-                    Profil 1
-                  </p>
                   <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
                     Consultants et freelances B2B
                   </h3>
@@ -261,9 +258,6 @@ export default function ExternaliserProspectionLinkedinPage() {
               </ScrollReveal>
               <ScrollReveal delay={80}>
                 <DarkCard hover className="p-8 h-full">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-                    Profil 2
-                  </p>
                   <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
                     Fondateurs de startups
                   </h3>
@@ -275,9 +269,6 @@ export default function ExternaliserProspectionLinkedinPage() {
               </ScrollReveal>
               <ScrollReveal delay={160}>
                 <DarkCard hover className="p-8 h-full">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
-                    Profil 3
-                  </p>
                   <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
                     Solopreneurs et coachs B2B
                   </h3>
