@@ -5,8 +5,10 @@ export interface OfferFeature {
 
 export interface OfferPricing {
   type: 'fixed' | 'custom'
+  setup?: { amount: number; label: string; detail: string }
   launch?: { amount: number; label: string; detail: string }
   subscription?: { amount: number; period: string; detail: string }
+  bonus?: string
   customLabel?: string
   customDetail?: string
 }
@@ -43,8 +45,10 @@ export const offers: Offer[] = [
     methodeLink: '/methode/setting-linkedin',
     pricing: {
       type: 'fixed',
-      launch: { amount: 500, label: 'Mois 1 \u2014 Lancement', detail: 'Tout inclus\u00a0: setter d\u00e9di\u00e9, setup outils, ciblage, premiers messages, premiers RDV.' },
-      subscription: { amount: 1000, period: '/ mois', detail: 'Pipeline \u00e0 plein r\u00e9gime + prime par RDV livr\u00e9.' },
+      setup: { amount: 490, label: 'Setup', detail: 'Cadrage ICP, setup outils, r\u00e9daction des s\u00e9quences.' },
+      launch: { amount: 790, label: 'Mois 1-2 \u2014 Calibration', detail: 'Phase de rodage\u00a0: ciblage, tests, premiers RDV.' },
+      subscription: { amount: 1290, period: '/ mois', detail: 'Pipeline \u00e0 plein r\u00e9gime d\u00e8s le mois 3.' },
+      bonus: '+50\u00a0\u20ac par RDV au-del\u00e0 de 15',
     },
     guarantee: 'Moins de 5 RDV qualifi\u00e9s livr\u00e9s dans le mois\u00a0? Le mois suivant est offert.',
     noCommitment: true,
@@ -65,11 +69,11 @@ export const offers: Offer[] = [
     ],
     methodeLink: '/methode/setting-telephonique',
     pricing: {
-      type: 'custom',
-      customLabel: 'Sur devis',
-      customDetail: 'Tarif adapt\u00e9 au volume de leads entrants et \u00e0 la complexit\u00e9 de qualification.',
+      type: 'fixed',
+      setup: { amount: 290, label: 'Setup', detail: 'Script, formation, configuration CRM et routing.' },
+      subscription: { amount: 690, period: '/ mois', detail: 'Qualification de vos leads entrants. 490\u00a0\u20ac/mois en compl\u00e9ment du Setting LinkedIn.' },
     },
-    cta: { label: 'Discuter de mon volume \u2192', href: '#contact' },
+    cta: { label: 'Obtenir un devis \u2192', href: '#contact' },
   },
   {
     id: 'nurturing',
@@ -87,7 +91,8 @@ export const offers: Offer[] = [
     methodeLink: '/methode/nurturing',
     pricing: {
       type: 'fixed',
-      launch: { amount: 1500, label: 'Mise en place', detail: 'Construction du syst\u00e8me sur votre stack existante. Puis prime par RDV livr\u00e9.' },
+      setup: { amount: 1990, label: 'Construction', detail: 'Scoring, s\u00e9quences, workflows automatis\u00e9s. ~4 semaines.' },
+      subscription: { amount: 490, period: '/ mois \u00d7 3', detail: 'Optimisation + 80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9. Autonomie apr\u00e8s M3.' },
     },
     cta: { label: 'Construire mon syst\u00e8me \u2192', href: '#contact' },
   },

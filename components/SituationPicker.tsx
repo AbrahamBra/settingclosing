@@ -55,6 +55,22 @@ function OfferPanel({ offer, calendlyUrl }: { offer: Offer; calendlyUrl: string 
         >
           {offer.pricing.type === 'fixed' ? (
             <div className="space-y-3">
+              {offer.pricing.setup && (
+                <div>
+                  <p className="font-sans text-[10px] font-semibold uppercase tracking-widest text-text-muted mb-1">
+                    {offer.pricing.setup.label}
+                  </p>
+                  <div className="flex items-baseline gap-2">
+                    <p className="font-sans text-2xl text-text-primary font-bold">
+                      {offer.pricing.setup.amount.toLocaleString('fr-FR')}&nbsp;&euro;
+                    </p>
+                    <span className="font-sans text-text-muted text-xs">one-shot</span>
+                  </div>
+                  <p className="font-sans text-text-secondary text-[11px] mt-1 leading-relaxed">
+                    {offer.pricing.setup.detail}
+                  </p>
+                </div>
+              )}
               {offer.pricing.launch && (
                 <div>
                   <p className="font-sans text-[10px] font-semibold uppercase tracking-widest text-text-muted mb-1">
@@ -64,9 +80,7 @@ function OfferPanel({ offer, calendlyUrl }: { offer: Offer; calendlyUrl: string 
                     <p className="font-sans text-2xl text-text-primary font-bold">
                       {offer.pricing.launch.amount.toLocaleString('fr-FR')}&nbsp;&euro;
                     </p>
-                    {!offer.pricing.subscription && (
-                      <span className="font-sans text-text-muted text-xs">forfait</span>
-                    )}
+                    <span className="font-sans text-text-muted text-xs">/ mois</span>
                   </div>
                   <p className="font-sans text-text-secondary text-[11px] mt-1 leading-relaxed">
                     {offer.pricing.launch.detail}
@@ -76,7 +90,7 @@ function OfferPanel({ offer, calendlyUrl }: { offer: Offer; calendlyUrl: string 
               {offer.pricing.subscription && (
                 <div>
                   <p className="font-sans text-[10px] font-semibold uppercase tracking-widest text-text-muted mb-1">
-                    Mois 2+ &mdash; Abonnement
+                    Ensuite
                   </p>
                   <div className="flex items-baseline gap-2">
                     <p className="font-sans text-2xl text-text-primary font-bold">
@@ -90,6 +104,11 @@ function OfferPanel({ offer, calendlyUrl }: { offer: Offer; calendlyUrl: string 
                     {offer.pricing.subscription.detail}
                   </p>
                 </div>
+              )}
+              {offer.pricing.bonus && (
+                <p className="font-sans text-[11px] font-semibold mt-1" style={{ color: offer.color }}>
+                  {offer.pricing.bonus}
+                </p>
               )}
             </div>
           ) : (

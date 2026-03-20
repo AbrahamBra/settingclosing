@@ -14,7 +14,7 @@ const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').t
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
   description:
-    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. 500 € le premier mois.',
+    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 790 €/mois.',
   alternates: {
     canonical: 'https://challengerslab.fr',
   },

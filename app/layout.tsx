@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
-  description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. 500 € le premier mois.',
+  description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 790 €/mois.',
   openGraph: {
     title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
     description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
@@ -59,24 +59,24 @@ const jsonLd = {
         itemListElement: [
           {
             '@type': 'Offer',
-            name: 'Setting commercial B2B — Lancement',
-            description: 'Mois 1 : setter dédié, setup outils, ciblage, premiers messages et RDV. Forfait tout inclus.',
+            name: 'Setting LinkedIn — Setup',
+            description: 'Cadrage ICP, setup outils, rédaction des séquences de prospection.',
             url: 'https://challengerslab.fr/methode/setting-linkedin',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 500,
+              price: 490,
               priceCurrency: 'EUR',
               valueAddedTaxIncluded: false,
             },
           },
           {
             '@type': 'Offer',
-            name: 'Setting commercial B2B — Abonnement',
-            description: 'Pipeline à plein régime : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés.',
+            name: 'Setting LinkedIn — Abonnement',
+            description: 'Pipeline à plein régime : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés. 790 €/mois les 2 premiers mois, puis 1 290 €/mois.',
             url: 'https://challengerslab.fr/methode/setting-linkedin',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 1000,
+              price: 790,
               priceCurrency: 'EUR',
               unitText: 'MONTH',
               valueAddedTaxIncluded: false,
@@ -85,17 +85,24 @@ const jsonLd = {
           {
             '@type': 'Offer',
             name: 'Setting téléphonique — Qualification de leads',
-            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé. Méthode Challenger Sale, zéro lead perdu.',
+            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé. 690 €/mois standalone, 490 €/mois en bundle.',
             url: 'https://challengerslab.fr/methode/setting-telephonique',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 690,
+              priceCurrency: 'EUR',
+              unitText: 'MONTH',
+              valueAddedTaxIncluded: false,
+            },
           },
           {
             '@type': 'Offer',
             name: 'Setup Nurturing',
-            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing pour transformer une base de leads existante en RDV qualifiés.',
+            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing. 1 990 € setup + 490 €/mois pendant 3 mois d\'optimisation.',
             url: 'https://challengerslab.fr/methode/nurturing',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 1500,
+              price: 1990,
               priceCurrency: 'EUR',
               valueAddedTaxIncluded: false,
             },
@@ -112,7 +119,7 @@ const jsonLd = {
           name: 'Combien coûte le setting commercial externalisé ?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: '500 € le premier mois (lancement), puis 1 000 €/mois + une prime par RDV livré. Sans engagement.',
+            text: '490 € de setup, puis 790 €/mois les 2 premiers mois et 1 290 €/mois ensuite. Bonus de 50 €/RDV au-delà de 15. Sans engagement.',
           },
         },
         {
