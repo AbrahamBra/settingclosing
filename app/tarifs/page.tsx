@@ -7,15 +7,15 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Tarifs setting LinkedIn externalisé | ChallengersLab',
+  title: 'Tarifs setting commercial externalisé | ChallengersLab',
   description:
-    'Prix du setting commercial LinkedIn externalisé : 500 € le premier mois, 1 000 €/mois ensuite. Garantie 5 RDV minimum. Sans engagement.',
+    'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 790 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum. Sans engagement.',
   alternates: {
     canonical: 'https://challengerslab.fr/tarifs',
   },
   openGraph: {
-    title: 'Tarifs setting LinkedIn externalisé | ChallengersLab',
-    description: 'Prix du setting LinkedIn externalisé : 500 € le premier mois, 1 000 €/mois ensuite. Garantie 5 RDV minimum, sans engagement.',
+    title: 'Tarifs setting commercial externalisé | ChallengersLab',
+    description: 'Prix du setting commercial externalisé : 3 offres adaptées à votre situation. Garantie 5 RDV minimum, sans engagement.',
     locale: 'fr_FR',
     type: 'website',
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Tarifs setting LinkedIn externalisé | ChallengersLab',
+  name: 'Tarifs setting commercial externalisé | ChallengersLab',
   description:
-    'Prix du setting commercial LinkedIn externalisé : 500 € le premier mois, 1 000 €/mois ensuite. Garantie 5 RDV minimum. Sans engagement.',
+    'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 790 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum.',
   url: 'https://challengerslab.fr/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -54,15 +54,23 @@ const webPageSchema = {
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
-            price: '500',
+            price: '490',
             priceCurrency: 'EUR',
-            description: 'Mois de lancement',
+            description: 'Setup : cadrage ICP, outils, séquences',
           },
           {
             '@type': 'PriceSpecification',
-            price: '1000',
+            price: '790',
             priceCurrency: 'EUR',
-            description: 'À partir du deuxième mois',
+            unitText: 'MONTH',
+            description: 'Mois 1-2 : phase de calibration',
+          },
+          {
+            '@type': 'PriceSpecification',
+            price: '1290',
+            priceCurrency: 'EUR',
+            unitText: 'MONTH',
+            description: 'Mois 3+ : pipeline à plein régime',
           },
         ],
       },
@@ -70,23 +78,43 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 2,
         name: 'Setting téléphonique',
-        description: 'Qualification téléphonique des leads LinkedIn. Routing intelligent selon niveau de maturité.',
-        priceSpecification: {
-          '@type': 'PriceSpecification',
-          description: 'Sur devis, adapté au volume de leads',
-        },
+        description: 'Qualification téléphonique des leads entrants. Routing intelligent selon niveau de maturité.',
+        priceSpecification: [
+          {
+            '@type': 'PriceSpecification',
+            price: '290',
+            priceCurrency: 'EUR',
+            description: 'Setup : script, formation, CRM',
+          },
+          {
+            '@type': 'PriceSpecification',
+            price: '690',
+            priceCurrency: 'EUR',
+            unitText: 'MONTH',
+            description: 'Standalone — ou 490 €/mois en complément du Setting LinkedIn',
+          },
+        ],
       },
       {
         '@type': 'Offer',
         position: 3,
         name: 'Setup Nurturing',
-        description: 'Transformez votre base existante en RDV. Scoring comportemental, séquences email/LinkedIn, workflow automatisé.',
-        priceSpecification: {
-          '@type': 'PriceSpecification',
-          price: '1500',
-          priceCurrency: 'EUR',
-          description: 'Setup unique + prime par RDV généré',
-        },
+        description: 'Générez des RDV à partir de votre base existante. Scoring comportemental, séquences email/LinkedIn, workflow automatisé.',
+        priceSpecification: [
+          {
+            '@type': 'PriceSpecification',
+            price: '1990',
+            priceCurrency: 'EUR',
+            description: 'Construction du système (~4 semaines)',
+          },
+          {
+            '@type': 'PriceSpecification',
+            price: '490',
+            priceCurrency: 'EUR',
+            unitText: 'MONTH',
+            description: '3 mois d\'optimisation + prime par RDV généré',
+          },
+        ],
       },
     ],
   },
@@ -98,10 +126,34 @@ const faqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Combien ça coûte au total ?',
+      name: 'Combien coûte le Setting LinkedIn ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le Setting LinkedIn commence à 500 € le premier mois, puis 1 000 €/mois à partir du deuxième. Pas de frais cachés, pas de setup supplémentaire. Le Setup Nurturing est facturé 1 500 € en une fois, plus une prime par RDV généré. Le Setting téléphonique est sur devis selon le volume.',
+        text: '490 € de setup initial, puis 790 €/mois les 2 premiers mois (calibration), et 1 290 €/mois ensuite. Un bonus de 50 €/RDV s\'applique au-delà de 15 RDV livrés. Sans engagement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Pourquoi un setup fee ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le setup couvre le travail de cadrage avant le premier message : définition de votre ICP, rédaction des séquences, paramétrage des outils et des signaux d\'achat. Ce travail est nécessaire pour démarrer vite et bien.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Le Setting téléphonique est-il moins cher en bundle ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui. En standalone, le Setting téléphonique est à 690 €/mois. En complément du Setting LinkedIn, il passe à 490 €/mois. Le setup de 290 € s\'applique dans les deux cas.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Comment fonctionne le Setup Nurturing ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '1 990 € pour construire le système (scoring, séquences, workflows), puis 490 €/mois pendant 3 mois d\'optimisation avec une prime de 80-100 € par RDV généré. Après 3 mois, le système tourne en autonomie.',
       },
     },
     {
@@ -109,31 +161,7 @@ const faqSchema = {
       name: "Y a-t-il un engagement ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Non. Le Setting LinkedIn est sans engagement. Vous pouvez arrêter à tout moment. Si nous n'atteignons pas 5 RDV qualifiés dans le mois, le mois suivant est offert.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Que comprend le premier mois à 500 € ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "Le premier mois couvre le cadrage : définition de votre ICP, co-rédaction des séquences de messages, paramétrage des signaux d'achat, et premiers envois. C'est le mois de calibration. On part plus vite dès le deuxième mois.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Que se passe-t-il après le premier mois ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "À partir du deuxième mois, le tarif passe à 1 000 €/mois. Le setter continue à prospecter sur votre compte, affine les messages selon les retours, et vous livre un reporting hebdomadaire.",
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Comment fonctionne la prime par RDV ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: "La prime par RDV s'applique uniquement au Setup Nurturing. Elle est définie à l'avance avec vous. Vous ne payez que pour les résultats concrets, pas pour l'activité.",
+        text: "Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Si nous n'atteignons pas 5 RDV qualifiés dans le mois, le mois suivant est offert.",
       },
     },
     {
@@ -141,7 +169,7 @@ const faqSchema = {
       name: 'Puis-je combiner plusieurs offres ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui. La plupart de nos clients commencent par le Setting LinkedIn, puis ajoutent le Setting téléphonique pour qualifier les leads chauds, et enfin le Setup Nurturing pour activer leur base existante. On construit le dispositif adapté à votre situation.",
+        text: "Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting téléphonique en bundle à tarif réduit, puis activent le Nurturing pour leur base existante. On construit le dispositif adapté à votre situation.",
       },
     },
   ],
@@ -156,9 +184,12 @@ const offers = [
     colorRgb: '167,139,250',
     eyebrow: 'Setting LinkedIn',
     headline: 'Votre pipeline LinkedIn, cl\u00e9 en main',
-    price: '500\u00a0\u20ac',
-    priceSuffix: 'le premier mois',
-    priceNote: 'puis 1\u00a0000\u00a0\u20ac\u002fmois',
+    pricingPhases: [
+      { label: 'Setup', amount: '490\u00a0\u20ac', suffix: 'one-shot', detail: 'Cadrage ICP, setup outils, r\u00e9daction s\u00e9quences' },
+      { label: 'Mois 1-2', amount: '790\u00a0\u20ac', suffix: '/ mois', detail: 'Phase de calibration' },
+      { label: 'Mois 3+', amount: '1\u00a0290\u00a0\u20ac', suffix: '/ mois', detail: 'Pipeline \u00e0 plein r\u00e9gime' },
+    ],
+    bonus: '+50\u00a0\u20ac par RDV au-del\u00e0 de 15',
     features: [
       'Setter d\u00e9di\u00e9 \u00e0 votre compte',
       'Ciblage ICP + signaux d\u2019achat',
@@ -175,12 +206,14 @@ const offers = [
     color: '#FBBF24',
     colorRgb: '251,191,36',
     eyebrow: 'Setting t\u00e9l\u00e9phonique',
-    headline: 'Vos leads LinkedIn qualifi\u00e9s par t\u00e9l\u00e9phone',
-    price: 'Sur devis',
-    priceSuffix: null,
-    priceNote: 'adapt\u00e9 au volume de leads',
+    headline: 'Vos leads qualifi\u00e9s par t\u00e9l\u00e9phone',
+    pricingPhases: [
+      { label: 'Setup', amount: '290\u00a0\u20ac', suffix: 'one-shot', detail: 'Script, formation, config CRM' },
+      { label: 'Standalone', amount: '690\u00a0\u20ac', suffix: '/ mois', detail: 'Qualification de vos leads entrants' },
+    ],
+    bonus: '490\u00a0\u20ac/mois en bundle avec le Setting LinkedIn',
     features: [
-      'Qualification t\u00e9l\u00e9phonique des leads LinkedIn',
+      'Qualification t\u00e9l\u00e9phonique de chaque lead',
       'Routing : chaud \u2192 RDV / ti\u00e8de \u2192 newsletter / froid \u2192 nurturing',
       'Script co-construit avec votre \u00e9quipe',
       'Reporting par lead avec scoring',
@@ -194,10 +227,12 @@ const offers = [
     color: '#C87533',
     colorRgb: '200,117,51',
     eyebrow: 'Setup Nurturing',
-    headline: 'Transformez votre base existante en RDV',
-    price: '1\u00a0500\u00a0\u20ac',
-    priceSuffix: 'setup unique',
-    priceNote: '+ prime par RDV g\u00e9n\u00e9r\u00e9',
+    headline: 'Des RDV à partir de votre base existante',
+    pricingPhases: [
+      { label: 'Construction', amount: '1\u00a0990\u00a0\u20ac', suffix: 'one-shot', detail: 'Scoring, s\u00e9quences, workflows. ~4 semaines.' },
+      { label: 'Optimisation', amount: '490\u00a0\u20ac', suffix: '/ mois \u00d7 3', detail: '+ 80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9' },
+    ],
+    bonus: 'Autonomie totale apr\u00e8s 3 mois',
     features: [
       'Scoring comportemental de votre base',
       'S\u00e9quences email/LinkedIn personnalis\u00e9es',
@@ -205,7 +240,7 @@ const offers = [
       'Le syst\u00e8me s\u2019affine sur 3 mois',
     ],
     guarantee: null,
-    cta: 'En savoir plus',
+    cta: 'Construire mon syst\u00e8me',
     highlight: false,
   },
 ]
@@ -214,28 +249,28 @@ const offers = [
 
 const faqs = [
   {
-    q: 'Combien \u00e7a co\u00fbte au total\u00a0?',
-    a: 'Le Setting LinkedIn commence \u00e0 500\u00a0\u20ac le premier mois, puis 1\u00a0000\u00a0\u20ac/mois \u00e0 partir du deuxi\u00e8me. Pas de frais cach\u00e9s, pas de setup suppl\u00e9mentaire. Le Setup Nurturing est factur\u00e9 1\u00a0500\u00a0\u20ac en une fois, plus une prime par RDV g\u00e9n\u00e9r\u00e9. Le Setting t\u00e9l\u00e9phonique est sur devis selon le volume.',
+    q: 'Combien co\u00fbte le Setting LinkedIn\u00a0?',
+    a: '490\u00a0\u20ac de setup, puis 790\u00a0\u20ac/mois les 2 premiers mois (calibration), et 1\u00a0290\u00a0\u20ac/mois ensuite. Un bonus de 50\u00a0\u20ac/RDV s\u2019applique au-del\u00e0 de 15\u00a0RDV livr\u00e9s. Sans engagement.',
+  },
+  {
+    q: 'Pourquoi un setup fee\u00a0?',
+    a: 'Le setup couvre le travail de cadrage avant le premier message\u00a0: d\u00e9finition de votre ICP, r\u00e9daction des s\u00e9quences, param\u00e9trage des outils et des signaux d\u2019achat. Ce travail est n\u00e9cessaire pour d\u00e9marrer vite et bien.',
+  },
+  {
+    q: 'Le Setting t\u00e9l\u00e9phonique est-il moins cher en bundle\u00a0?',
+    a: 'Oui. En standalone, il est \u00e0 690\u00a0\u20ac/mois. En compl\u00e9ment du Setting LinkedIn, il passe \u00e0 490\u00a0\u20ac/mois. Le setup de 290\u00a0\u20ac s\u2019applique dans les deux cas.',
+  },
+  {
+    q: 'Comment fonctionne le Setup Nurturing\u00a0?',
+    a: '1\u00a0990\u00a0\u20ac pour construire le syst\u00e8me (scoring, s\u00e9quences, workflows), puis 490\u00a0\u20ac/mois pendant 3 mois d\u2019optimisation avec une prime de 80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9. Apr\u00e8s 3 mois, le syst\u00e8me tourne en autonomie.',
   },
   {
     q: 'Y a-t-il un engagement\u00a0?',
-    a: "Non. Le Setting LinkedIn est sans engagement. Vous pouvez arr\u00eater \u00e0 tout moment. Si nous n\u2019atteignons pas 5\u00a0RDV qualifi\u00e9s dans le mois, le mois suivant est offert.",
-  },
-  {
-    q: 'Que comprend le premier mois \u00e0 500\u00a0\u20ac\u00a0?',
-    a: "Le premier mois couvre le cadrage : d\u00e9finition de votre ICP, co-r\u00e9daction des s\u00e9quences de messages, param\u00e9trage des signaux d\u2019achat, et premiers envois. C\u2019est le mois de calibration. On part plus vite d\u00e8s le deuxi\u00e8me mois.",
-  },
-  {
-    q: 'Que se passe-t-il apr\u00e8s le premier mois\u00a0?',
-    a: '\u00c0 partir du deuxi\u00e8me mois, le tarif passe \u00e0 1\u00a0000\u00a0\u20ac/mois. Le setter continue \u00e0 prospecter sur votre compte, affine les messages selon les retours, et vous livre un reporting hebdomadaire.',
-  },
-  {
-    q: 'Comment fonctionne la prime par RDV\u00a0?',
-    a: 'La prime par RDV s\u2019applique uniquement au Setup Nurturing. Elle est d\u00e9finie \u00e0 l\u2019avance avec vous. Vous ne payez que pour les r\u00e9sultats concrets, pas pour l\u2019activit\u00e9.',
+    a: 'Non. Le Setting LinkedIn est sans engagement, r\u00e9siliable \u00e0 tout moment. Si nous n\u2019atteignons pas 5\u00a0RDV qualifi\u00e9s dans le mois, le mois suivant est offert.',
   },
   {
     q: 'Puis-je combiner plusieurs offres\u00a0?',
-    a: 'Oui. La plupart de nos clients commencent par le Setting LinkedIn, puis ajoutent le Setting t\u00e9l\u00e9phonique pour qualifier les leads chauds, et enfin le Setup Nurturing pour activer leur base existante. On construit le dispositif adapt\u00e9 \u00e0 votre situation.',
+    a: 'Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting t\u00e9l\u00e9phonique en bundle \u00e0 tarif r\u00e9duit, puis activent le Nurturing pour leur base existante.',
   },
 ]
 
@@ -287,11 +322,11 @@ export default function TarifsPage() {
                 Tarifs
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                Des prix simples, un engagement clair
+                Des prix progressifs, z&eacute;ro surprise
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
-                Pas de frais cach&eacute;s. Pas de forfait annuel. Vous savez ce que vous payez et ce que vous
-                obtenez. Si les r&eacute;sultats ne sont pas l&agrave;, vous ne payez pas.
+                Setup fee transparent, tarif r&eacute;duit en phase de rodage, plein r&eacute;gime ensuite.
+                Vous payez moins tant que les r&eacute;sultats montent en puissance.
               </p>
             </ScrollReveal>
           </div>
@@ -334,24 +369,35 @@ export default function TarifsPage() {
                       {offer.headline}
                     </h2>
 
-                    {/* Price */}
-                    <div className="mb-6">
-                      <div className="flex items-baseline gap-2 flex-wrap">
-                        <span
-                          className="font-sans font-extrabold text-3xl"
+                    {/* Pricing phases */}
+                    <div className="mb-6 space-y-3">
+                      {offer.pricingPhases.map((phase, pi) => (
+                        <div key={pi}>
+                          <p className="font-sans text-[10px] font-semibold uppercase tracking-widest text-text-muted mb-0.5">
+                            {phase.label}
+                          </p>
+                          <div className="flex items-baseline gap-2">
+                            <span
+                              className={`font-sans font-extrabold ${pi === 0 ? 'text-2xl' : 'text-xl'}`}
+                              style={{ color: offer.color }}
+                            >
+                              {phase.amount}
+                            </span>
+                            <span className="font-sans text-text-muted text-xs">
+                              {phase.suffix}
+                            </span>
+                          </div>
+                          <p className="font-sans text-text-muted text-[11px] mt-0.5">
+                            {phase.detail}
+                          </p>
+                        </div>
+                      ))}
+                      {offer.bonus && (
+                        <p
+                          className="font-sans text-xs font-semibold"
                           style={{ color: offer.color }}
                         >
-                          {offer.price}
-                        </span>
-                        {offer.priceSuffix && (
-                          <span className="font-sans text-text-muted text-sm">
-                            {offer.priceSuffix}
-                          </span>
-                        )}
-                      </div>
-                      {offer.priceNote && (
-                        <p className="font-sans text-text-muted text-xs mt-1">
-                          {offer.priceNote}
+                          {offer.bonus}
                         </p>
                       )}
                     </div>
@@ -416,7 +462,7 @@ export default function TarifsPage() {
             {/* No commitment note */}
             <ScrollReveal delay={240}>
               <p className="font-sans text-text-muted text-sm text-center mt-8">
-                Sans engagement &bull; R&eacute;siliable \u00e0 tout moment &bull; Premier mois \u00e0 500\u00a0\u20ac
+                Sans engagement &bull; R&eacute;siliable \u00e0 tout moment &bull; Tarif r&eacute;duit en bundle
               </p>
             </ScrollReveal>
           </div>
@@ -457,8 +503,8 @@ export default function TarifsPage() {
                   Le mois suivant est offert.
                 </p>
                 <p className="font-sans text-text-muted text-sm leading-relaxed">
-                  Ce n&apos;est pas une clause en petits caract\u00e8res. C\u2019est notre engagement de base.
-                  Vous payez pour des r&eacute;sultats, pas pour de l&apos;activit&eacute;.
+                  Pas une clause en petits caract\u00e8res. C\u2019est notre engagement de base.
+                  Les prix montent progressivement parce que les r&eacute;sultats aussi.
                 </p>
               </div>
             </ScrollReveal>

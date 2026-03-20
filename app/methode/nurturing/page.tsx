@@ -10,7 +10,7 @@ import { nurturingSteps } from '@/lib/methode-nurturing-data'
 export const metadata: Metadata = {
   title: 'Nurturing — Scoring comportemental, seuils & funnel de maturité | ChallengersLab',
   description:
-    'Notre système de nurturing : scoring comportemental vs démographique, seuils calibrés, séquences TOFU/MOFU/BOFU et routing automatique. Transformez votre base dormante en RDV qualifiés.',
+    'Notre système de nurturing : scoring comportemental vs démographique, seuils calibrés, séquences TOFU/MOFU/BOFU et routing automatique. Générez des RDV qualifiés à partir de votre base dormante.',
   alternates: {
     canonical: 'https://challengerslab.fr/methode/nurturing',
   },
@@ -96,7 +96,7 @@ const funnelLevels = [
     label: 'BOFU',
     name: 'Bottom of Funnel',
     score: '50+ pts',
-    desc: 'Le contact est pr\u00eat \u00e0 d\u00e9cider. Il conna\u00eet les options, il a besoin d\u2019un dernier \u00e9l\u00e9ment pour passer \u00e0 l\u2019action. C\u2019est l\u00e0 que le routing vers un commercial se d\u00e9clenche.',
+    desc: 'Le contact est pr\u00eat \u00e0 d\u00e9cider. Il conna\u00eet les options, il a besoin d\u2019un dernier \u00e9l\u00e9ment pour passer \u00e0 l\u2019action. Le routing vers un commercial se d\u00e9clenche \u00e0 ce stade.',
     content: 'Offres sp\u00e9cifiques, t\u00e9moignages clients, appel d\u00e9couverte',
     color: 'border-[#C87533]/40 bg-[#C87533]/[0.07]',
   },
