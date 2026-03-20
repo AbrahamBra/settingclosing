@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/setting-commercial-b2b',
+    canonical: 'https://setting.live/ressources/setting-commercial-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/setting-commercial-b2b',
+  '@id': 'https://setting.live/ressources/setting-commercial-b2b',
   headline: 'Setting commercial B2B : définition, méthode et programme complet',
   description:
     "Le setting commercial est la phase de prospection qui précède le closing en B2B. Définition exacte, rôle du setter, méthode LinkedIn signal-based, les 5 erreurs et programme des 3 mois en détail.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-17',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/setting-commercial-b2b',
+  url: 'https://setting.live/ressources/setting-commercial-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/setting-commercial-b2b',
+    '@id': 'https://setting.live/ressources/setting-commercial-b2b',
   },
 }
 
@@ -109,13 +109,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Setting commercial B2B',
-      item: 'https://challengerslab.fr/ressources/setting-commercial-b2b',
+      item: 'https://setting.live/ressources/setting-commercial-b2b',
     },
   ],
 }

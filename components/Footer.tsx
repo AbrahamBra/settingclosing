@@ -23,10 +23,10 @@ export function Footer() {
             <div className="flex flex-col gap-2">
               <p className="text-text-primary font-semibold mb-1">Contact</p>
               <a
-                href="mailto:contact@challengerslab.fr"
+                href="mailto:contact@setting.live"
                 className="hover:text-text-primary transition-colors"
               >
-                contact@challengerslab.fr
+                contact@setting.live
               </a>
               <a
                 href="https://www.linkedin.com/company/challengerslab"

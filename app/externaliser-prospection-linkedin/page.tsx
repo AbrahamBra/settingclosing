@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "Externalisez votre prospection LinkedIn à une équipe dédiée. Setter humain, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine.",
   alternates: {
-    canonical: 'https://challengerslab.fr/externaliser-prospection-linkedin',
+    canonical: 'https://setting.live/externaliser-prospection-linkedin',
   },
   openGraph: {
     title: 'Externaliser sa prospection LinkedIn B2B | ChallengersLab',
@@ -35,7 +35,7 @@ const serviceSchema = {
   provider: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   serviceType: 'Prospection commerciale LinkedIn externalisée',
   areaServed: {
@@ -110,13 +110,13 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: 1,
       name: 'Accueil',
-      item: 'https://challengerslab.fr',
+      item: 'https://setting.live',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Externaliser sa prospection LinkedIn',
-      item: 'https://challengerslab.fr/externaliser-prospection-linkedin',
+      item: 'https://setting.live/externaliser-prospection-linkedin',
     },
   ],
 }

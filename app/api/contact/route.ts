@@ -44,7 +44,7 @@ export async function POST(request: Request) {
   try {
     const resend = new Resend(process.env.RESEND_API_KEY)
     await resend.emails.send({
-      from: 'ChallengersLab <noreply@challengerslab.fr>',
+      from: 'ChallengersLab <noreply@setting.live>',
       to: process.env.CONTACT_EMAIL!,
       subject: `Nouvelle demande — setting — ${payload.firstName}`,
       text: [

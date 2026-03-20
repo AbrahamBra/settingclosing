@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 790 €/mois.',
   alternates: {
-    canonical: 'https://challengerslab.fr',
+    canonical: 'https://setting.live',
   },
   openGraph: {
     title: 'Setting commercial LinkedIn externalisé | ChallengersLab',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://challengerslab.fr/opengraph-image',
+        url: 'https://setting.live/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'ChallengersLab — Setting commercial LinkedIn externalisé',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const homeFaqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  '@id': 'https://challengerslab.fr/#faq',
+  '@id': 'https://setting.live/#faq',
   mainEntity: [
     {
       '@type': 'Question',

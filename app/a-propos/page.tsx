@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'ChallengersLab externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
   alternates: {
-    canonical: 'https://challengerslab.fr/a-propos',
+    canonical: 'https://setting.live/a-propos',
   },
   openGraph: {
     title: 'À propos de ChallengersLab | Setting LinkedIn B2B',
@@ -29,12 +29,12 @@ const aboutPageSchema = {
   name: 'À propos de ChallengersLab',
   description:
     'ChallengersLab externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B.',
-  url: 'https://challengerslab.fr/a-propos',
+  url: 'https://setting.live/a-propos',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
 }
 
@@ -42,7 +42,7 @@ const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'ChallengersLab',
-  url: 'https://challengerslab.fr',
+  url: 'https://setting.live',
   description:
     'Service de prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B.',
   employee: [

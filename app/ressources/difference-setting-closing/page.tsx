@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/difference-setting-closing',
+    canonical: 'https://setting.live/ressources/difference-setting-closing',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/difference-setting-closing',
+  '@id': 'https://setting.live/ressources/difference-setting-closing',
   headline: 'Quelle est la différence entre setting et closing en B2B ?',
   description:
     'Le setting désigne la phase de prospection commerciale B2B. Le closing désigne la phase de vente. Deux rôles distincts qui s\'optimisent indépendamment.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/difference-setting-closing',
+  url: 'https://setting.live/ressources/difference-setting-closing',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/difference-setting-closing',
+    '@id': 'https://setting.live/ressources/difference-setting-closing',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Différence setting vs closing',
-      item: 'https://challengerslab.fr/ressources/difference-setting-closing',
+      item: 'https://setting.live/ressources/difference-setting-closing',
     },
   ],
 }

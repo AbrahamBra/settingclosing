@@ -5,9 +5,9 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Mentions légales | ChallengersLab',
   description:
-    'Mentions légales du site challengerslab.fr : éditeur, hébergeur, propriété intellectuelle et conditions d\'utilisation.',
+    'Mentions légales du site setting.live : éditeur, hébergeur, propriété intellectuelle et conditions d\'utilisation.',
   alternates: {
-    canonical: 'https://challengerslab.fr/mentions-legales',
+    canonical: 'https://setting.live/mentions-legales',
   },
   robots: { index: true, follow: true },
 }
@@ -43,13 +43,13 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Éditeur du site</h2>
               <p className="text-text-muted mb-2">
-                Le site <strong>challengerslab.fr</strong> est édité par :
+                Le site <strong>setting.live</strong> est édité par :
               </p>
               <ul className="list-none space-y-1 text-text-muted">
                 <li><strong>Raison sociale :</strong> ChallengersLab</li>
                 <li><strong>Forme juridique :</strong> Micro-entreprise</li>
                 <li><strong>Responsable de la publication :</strong> Abraham</li>
-                <li><strong>Email :</strong> contact@challengerslab.fr</li>
+                <li><strong>Email :</strong> contact@setting.live</li>
                 <li><strong>Adresse :</strong> France</li>
               </ul>
             </section>
@@ -68,7 +68,7 @@ export default function MentionsLegalesPage() {
             <section>
               <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Propriété intellectuelle</h2>
               <p className="text-text-muted">
-                L'ensemble des contenus présents sur le site challengerslab.fr (textes, images,
+                L'ensemble des contenus présents sur le site setting.live (textes, images,
                 graphismes, logo, icônes, structure) est protégé par le droit d'auteur et reste
                 la propriété exclusive de ChallengersLab, sauf mention contraire. Toute
                 reproduction, représentation, modification, publication ou adaptation de tout ou

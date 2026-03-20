@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/cout-setter-b2b-prix',
+    canonical: 'https://setting.live/ressources/cout-setter-b2b-prix',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/cout-setter-b2b-prix',
+  '@id': 'https://setting.live/ressources/cout-setter-b2b-prix',
   headline: "Coût d'un setter B2B en 2026 : prix, modèles et comparatif",
   description:
     "Combien coûte un setter B2B ? Fixe mensuel, prime par RDV, modèle hybride : les vrais chiffres, les pièges à éviter et comment calculer le ROI réel d'un programme de setting.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/cout-setter-b2b-prix',
+  url: 'https://setting.live/ressources/cout-setter-b2b-prix',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/cout-setter-b2b-prix',
+    '@id': 'https://setting.live/ressources/cout-setter-b2b-prix',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "Coût d'un setter B2B",
-      item: 'https://challengerslab.fr/ressources/cout-setter-b2b-prix',
+      item: 'https://setting.live/ressources/cout-setter-b2b-prix',
     },
   ],
 }

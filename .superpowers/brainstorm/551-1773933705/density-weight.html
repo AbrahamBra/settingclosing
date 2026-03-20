@@ -1,0 +1,97 @@
+<h2>Quelle densité visuelle pour ce bloc ?</h2>
+<p class="subtitle">Il s'insère entre SocialProof (léger, stats) et PipelineSection (dense, cartes). Quel poids lui donner ?</p>
+
+<div class="cards">
+  <!-- Option A: Minimal -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:32px 24px; background:#0A0908;">
+      <!-- Mockup minimal -->
+      <div style="max-width:560px; margin:0 auto; text-align:center;">
+        <p style="font-size:11px; text-transform:uppercase; letter-spacing:3px; color:#A8A090; margin-bottom:16px;">Le vrai problème</p>
+        <h3 style="font-size:24px; font-weight:800; color:#F0ECE4; line-height:1.25; margin-bottom:12px;">
+          L'IA fait le volume.<br>Mais qui arbitre ?
+        </h3>
+        <p style="font-size:14px; color:#A8A090; line-height:1.6; max-width:440px; margin:0 auto;">
+          Vous avez les outils. Tout le monde les a. Le vrai avantage, c'est de savoir quand l'IA suffit — et quand seul un humain peut débloquer le deal.
+        </p>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Bloc texte minimal</h3>
+      <p>Eyebrow + titre + sous-texte. Respire. Crée une pause contemplative entre les stats et la méthode. ~80px de padding vertical.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Moderate with visual element -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:32px 24px; background:#0A0908;">
+      <div style="max-width:640px; margin:0 auto; text-align:center;">
+        <p style="font-size:11px; text-transform:uppercase; letter-spacing:3px; color:#A8A090; margin-bottom:16px;">Le vrai problème</p>
+        <h3 style="font-size:24px; font-weight:800; color:#F0ECE4; line-height:1.25; margin-bottom:20px;">
+          L'IA fait le volume.<br>Mais qui arbitre ?
+        </h3>
+        <p style="font-size:14px; color:#A8A090; line-height:1.6; max-width:440px; margin:0 auto 24px;">
+          Vous avez les outils. Tout le monde les a. Le vrai avantage, c'est de savoir quand l'IA suffit — et quand seul un humain peut débloquer le deal.
+        </p>
+        <!-- Visual: 3 inline pills -->
+        <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+          <span style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; border-radius:999px; border:1px solid rgba(167,139,250,0.25); background:rgba(167,139,250,0.08); font-size:12px; color:#A78BFA;">
+            <span style="width:6px;height:6px;border-radius:50%;background:#A78BFA;"></span>
+            IA détecte
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; border-radius:999px; border:1px solid rgba(251,191,36,0.25); background:rgba(251,191,36,0.08); font-size:12px; color:#FBBF24;">
+            <span style="width:6px;height:6px;border-radius:50%;background:#FBBF24;"></span>
+            Méthode qualifie
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:6px; padding:6px 14px; border-radius:999px; border:1px solid rgba(52,211,153,0.25); background:rgba(52,211,153,0.08); font-size:12px; color:#34D399;">
+            <span style="width:6px;height:6px;border-radius:50%;background:#34D399;"></span>
+            Humain valide
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Texte + pills IA/Méthode/Humain</h3>
+      <p>Même texte, mais avec les 3 pills sémantiques en bas. Introduit le système de couleurs avant la méthode. Fait le lien visuel.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Richer with subtle animation hint -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:32px 24px; background:#0A0908;">
+      <div style="max-width:640px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:24px;">
+          <p style="font-size:11px; text-transform:uppercase; letter-spacing:3px; color:#A8A090; margin-bottom:16px;">Le vrai problème</p>
+          <h3 style="font-size:24px; font-weight:800; color:#F0ECE4; line-height:1.25; margin-bottom:12px;">
+            L'IA fait le volume.<br>Mais qui arbitre ?
+          </h3>
+          <p style="font-size:14px; color:#A8A090; line-height:1.6; max-width:440px; margin:0 auto;">
+            Vous avez les outils. Tout le monde les a.
+          </p>
+        </div>
+        <!-- Visual: 3 step cards inline -->
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+          <div style="border:1px solid rgba(167,139,250,0.2); border-radius:10px; padding:14px; background:rgba(167,139,250,0.04); text-align:center;">
+            <div style="font-size:18px; margin-bottom:6px;">⚡</div>
+            <p style="font-size:11px; font-weight:600; color:#A78BFA; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">L'IA détecte</p>
+            <p style="font-size:12px; color:#A8A090; line-height:1.4;">Signaux, timing, intent</p>
+          </div>
+          <div style="border:1px solid rgba(251,191,36,0.2); border-radius:10px; padding:14px; background:rgba(251,191,36,0.04); text-align:center;">
+            <div style="font-size:18px; margin-bottom:6px;">🎯</div>
+            <p style="font-size:11px; font-weight:600; color:#FBBF24; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">La méthode qualifie</p>
+            <p style="font-size:12px; color:#A8A090; line-height:1.4;">Scoring, séquences, filtres</p>
+          </div>
+          <div style="border:1px solid rgba(52,211,153,0.2); border-radius:10px; padding:14px; background:rgba(52,211,153,0.04); text-align:center;">
+            <div style="font-size:18px; margin-bottom:6px;">🤝</div>
+            <p style="font-size:11px; font-weight:600; color:#34D399; text-transform:uppercase; letter-spacing:1px; margin-bottom:4px;">L'humain valide</p>
+            <p style="font-size:12px; color:#A8A090; line-height:1.4;">Jugement, relation, closing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Texte + 3 mini-cartes</h3>
+      <p>Plus riche. Le titre pose la question, les 3 cartes donnent un avant-goût de la réponse (IA → Méthode → Humain). Risque : empiéter sur ce que la PipelineSection explique déjà.</p>
+    </div>
+  </div>
+</div>

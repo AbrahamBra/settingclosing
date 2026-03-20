@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/methodes-vente-b2b',
+    canonical: 'https://setting.live/ressources/methodes-vente-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/methodes-vente-b2b',
+  '@id': 'https://setting.live/ressources/methodes-vente-b2b',
   headline: 'Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS',
   description:
     'Comparatif des 3 méthodes de vente B2B les plus utilisées en France. Comment les choisir, les combiner et les appliquer selon votre cycle de vente.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/methodes-vente-b2b',
+  url: 'https://setting.live/ressources/methodes-vente-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/methodes-vente-b2b',
+    '@id': 'https://setting.live/ressources/methodes-vente-b2b',
   },
 }
 
@@ -99,13 +99,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Méthodes de vente B2B',
-      item: 'https://challengerslab.fr/ressources/methodes-vente-b2b',
+      item: 'https://setting.live/ressources/methodes-vente-b2b',
     },
   ],
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     'Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d\'achat au RDV qualifié. IA, méthode et validation humaine.',
   alternates: {
-    canonical: 'https://challengerslab.fr/methode/setting-linkedin',
+    canonical: 'https://setting.live/methode/setting-linkedin',
   },
   openGraph: {
     title: 'Setting LinkedIn — Méthode en 9 étapes | ChallengersLab',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d'achat au RDV qualifié. IA, méthode et validation humaine.",
     locale: 'fr_FR',
     type: 'website',
-    url: 'https://challengerslab.fr/methode/setting-linkedin',
+    url: 'https://setting.live/methode/setting-linkedin',
   },
 }
 
@@ -34,12 +34,12 @@ const webPageSchema = {
   name: 'Setting LinkedIn — Méthode en 9 étapes',
   description:
     "Découvrez notre pipeline de prospection LinkedIn : 9 étapes, de la détection des signaux d'achat au RDV qualifié. IA, méthode et validation humaine.",
-  url: 'https://challengerslab.fr/methode/setting-linkedin',
+  url: 'https://setting.live/methode/setting-linkedin',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
 }
 

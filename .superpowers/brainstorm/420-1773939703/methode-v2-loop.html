@@ -1,0 +1,195 @@
+<h2>Bloc Méthode v2 — Amélioration continue</h2>
+<p class="subtitle">On abandonne le slider IA↔Humain. Voici 3 concepts centrés sur la boucle de feedback.</p>
+
+<div class="options">
+
+  <!-- OPTION A: La boucle -->
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>La Boucle — "Chaque semaine, la machine s'affine."</h3>
+      <p style="margin-bottom:16px;">On montre le cycle de travail : IA détecte → Méthode structure → Humain décide → Feedback encodé → le tour suivant est meilleur. Pas de slider. Un cycle.</p>
+
+      <div style="background:#0A0908;border-radius:16px;padding:32px;border:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:monospace;font-size:11px;color:#FBBF24;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;text-align:center;">Notre méthode</div>
+        <div style="font-size:22px;font-weight:700;color:#F0ECE4;margin-bottom:6px;text-align:center;">Chaque semaine, la machine s'affine.</div>
+        <div style="font-size:14px;color:#888;margin-bottom:28px;text-align:center;max-width:480px;margin-left:auto;margin-right:auto;">L'IA détecte, la méthode structure, l'humain décide. Chaque décision enrichit le tour suivant.</div>
+
+        <!-- Loop visualization: 4 steps in a row with arrow back -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:24px;flex-wrap:wrap;">
+          <div style="text-align:center;padding:12px 16px;border-radius:10px;border:1px solid rgba(167,139,250,0.15);background:rgba(167,139,250,0.05);min-width:120px;">
+            <div style="font-size:11px;color:#A78BFA;font-weight:600;margin-bottom:4px;">IA détecte</div>
+            <div style="font-size:11px;color:#888;">Signaux, timing, intent</div>
+          </div>
+          <div style="color:#555;">→</div>
+          <div style="text-align:center;padding:12px 16px;border-radius:10px;border:1px solid rgba(251,191,36,0.15);background:rgba(251,191,36,0.05);min-width:120px;">
+            <div style="font-size:11px;color:#FBBF24;font-weight:600;margin-bottom:4px;">Méthode qualifie</div>
+            <div style="font-size:11px;color:#888;">Scoring, filtres, séquence</div>
+          </div>
+          <div style="color:#555;">→</div>
+          <div style="text-align:center;padding:12px 16px;border-radius:10px;border:1px solid rgba(52,211,153,0.15);background:rgba(52,211,153,0.05);min-width:120px;">
+            <div style="font-size:11px;color:#34D399;font-weight:600;margin-bottom:4px;">Humain décide</div>
+            <div style="font-size:11px;color:#888;">Validation, ton, closing</div>
+          </div>
+          <div style="color:#555;">→</div>
+          <div style="text-align:center;padding:12px 16px;border-radius:10px;border:1px solid rgba(251,191,36,0.3);background:rgba(251,191,36,0.08);min-width:120px;">
+            <div style="font-size:11px;color:#FBBF24;font-weight:600;margin-bottom:4px;">↻ Feedback encodé</div>
+            <div style="font-size:11px;color:#888;">Skill créé, boucle améliorée</div>
+          </div>
+        </div>
+
+        <!-- 3 months showing the loop effect -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(251,191,36,0.12);background:rgba(255,255,255,0.02);">
+            <div style="font-size:13px;font-weight:700;color:#FBBF24;margin-bottom:2px;">Mois 1</div>
+            <div style="font-size:11px;color:#888;margin-bottom:8px;">Calibrage</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.6;">L'humain explore votre marché. Chaque décision nourrit le système.</div>
+          </div>
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);">
+            <div style="font-size:13px;font-weight:700;color:#F0ECE4;margin-bottom:2px;">Mois 2</div>
+            <div style="font-size:11px;color:#888;margin-bottom:8px;">Accélération</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.6;">Les skills s'accumulent. Le setter identifie les patterns. La qualification se précise.</div>
+          </div>
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(52,211,153,0.15);background:rgba(255,255,255,0.02);">
+            <div style="font-size:13px;font-weight:700;color:#34D399;margin-bottom:2px;">Mois 3+</div>
+            <div style="font-size:11px;color:#888;margin-bottom:8px;">La machine tourne</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.6;">Le cycle tourne vite. Chaque pivot de marché est absorbé en jours, pas en semaines.</div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:16px;"><strong>Force :</strong> Montre le mécanisme réel — la boucle de feedback. Pas de fausse dichotomie IA/Humain.</p>
+      <p><strong>Risque :</strong> Plus abstrait que des barres. Le visiteur comprend-il le mécanisme en 5 secondes ?</p>
+    </div>
+  </div>
+
+  <!-- OPTION B: Les preuves concrètes -->
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>Les Preuves — "Mois 1 vs Mois 3 : ce qui change concrètement"</h3>
+      <p style="margin-bottom:16px;">On montre pas le comment mais le résultat. 3-4 métriques qui s'améliorent. Le visiteur voit l'effet, pas le mécanisme.</p>
+
+      <div style="background:#0A0908;border-radius:16px;padding:32px;border:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:monospace;font-size:11px;color:#FBBF24;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;text-align:center;">Notre méthode</div>
+        <div style="font-size:22px;font-weight:700;color:#F0ECE4;margin-bottom:6px;text-align:center;">La machine s'affine. Les résultats suivent.</div>
+        <div style="font-size:14px;color:#888;margin-bottom:28px;text-align:center;">Chaque interaction nourrit le système — l'IA, la méthode ET l'expertise du setter.</div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:600px;margin:0 auto;">
+          <!-- Metric 1 -->
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);">
+            <div style="font-size:11px;color:#888;margin-bottom:8px;">Temps pour explorer un nouveau secteur</div>
+            <div style="display:flex;align-items:baseline;gap:8px;">
+              <span style="font-size:11px;color:#666;text-decoration:line-through;">2 semaines</span>
+              <span style="color:#555;">→</span>
+              <span style="font-size:16px;font-weight:700;color:#34D399;">3 jours</span>
+            </div>
+            <div style="font-size:10px;color:#666;margin-top:4px;">↻ L'IA mappe les signaux, l'humain valide les patterns</div>
+          </div>
+          <!-- Metric 2 -->
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);">
+            <div style="font-size:11px;color:#888;margin-bottom:8px;">Précision du scoring</div>
+            <div style="display:flex;align-items:baseline;gap:8px;">
+              <span style="font-size:11px;color:#666;text-decoration:line-through;">~40% pertinent</span>
+              <span style="color:#555;">→</span>
+              <span style="font-size:16px;font-weight:700;color:#34D399;">~85%</span>
+            </div>
+            <div style="font-size:10px;color:#666;margin-top:4px;">↻ Le journal du setter affine les critères chaque semaine</div>
+          </div>
+          <!-- Metric 3 -->
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);">
+            <div style="font-size:11px;color:#888;margin-bottom:8px;">Taux de réponse aux messages</div>
+            <div style="display:flex;align-items:baseline;gap:8px;">
+              <span style="font-size:11px;color:#666;text-decoration:line-through;">~12%</span>
+              <span style="color:#555;">→</span>
+              <span style="font-size:16px;font-weight:700;color:#34D399;">~25%</span>
+            </div>
+            <div style="font-size:10px;color:#666;margin-top:4px;">↻ L'IA apprend le ton, l'humain ajuste les angles</div>
+          </div>
+          <!-- Metric 4 -->
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);">
+            <div style="font-size:11px;color:#888;margin-bottom:8px;">Closing rate</div>
+            <div style="display:flex;align-items:baseline;gap:8px;">
+              <span style="font-size:11px;color:#666;text-decoration:line-through;">~15%</span>
+              <span style="color:#555;">→</span>
+              <span style="font-size:16px;font-weight:700;color:#34D399;">~35%</span>
+            </div>
+            <div style="font-size:10px;color:#666;margin-top:4px;">↻ Meilleurs leads = meilleure conversion, 100% humain</div>
+          </div>
+        </div>
+
+        <div style="margin-top:20px;text-align:center;padding:12px;background:rgba(251,191,36,0.04);border:1px solid rgba(251,191,36,0.1);border-radius:8px;max-width:600px;margin-left:auto;margin-right:auto;">
+          <span style="font-size:12px;color:#ccc;">Chaque apprentissage est encodé en <strong style="color:#FBBF24;">skill</strong>. La boucle tourne — le système accélère.</span>
+        </div>
+      </div>
+
+      <p style="margin-top:16px;"><strong>Force :</strong> Ultra concret. Le visiteur voit des chiffres qui s'améliorent. Facile à scanner.</p>
+      <p><strong>Risque :</strong> Chevauche le before/after du PipelineSection. Les chiffres doivent être crédibles.</p>
+    </div>
+  </div>
+
+  <!-- OPTION C: Hybride Boucle + Preuves -->
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>C. Hybride — La boucle en haut, les 3 mois avec preuves en dessous</h3>
+      <p style="margin-bottom:16px;">On montre le mécanisme (la boucle IA→Méthode→Humain→Feedback) puis les 3 mois avec des preuves concrètes de ce qui s'améliore. Le "comment" et le "résultat".</p>
+
+      <div style="background:#0A0908;border-radius:16px;padding:32px;border:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:monospace;font-size:11px;color:#FBBF24;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;text-align:center;">Notre méthode</div>
+        <div style="font-size:22px;font-weight:700;color:#F0ECE4;margin-bottom:6px;text-align:center;">Trois couches. Une boucle. Chaque tour est meilleur.</div>
+        <div style="font-size:14px;color:#888;margin-bottom:24px;text-align:center;">L'IA détecte, la méthode structure, l'humain décide — et chaque décision nourrit le tour suivant.</div>
+
+        <!-- Compact loop -->
+        <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:24px;">
+          <span style="padding:6px 12px;border-radius:999px;border:1px solid rgba(167,139,250,0.2);background:rgba(167,139,250,0.1);font-size:11px;color:#A78BFA;">IA détecte</span>
+          <span style="color:#555;font-size:11px;">→</span>
+          <span style="padding:6px 12px;border-radius:999px;border:1px solid rgba(251,191,36,0.2);background:rgba(251,191,36,0.1);font-size:11px;color:#FBBF24;">Méthode qualifie</span>
+          <span style="color:#555;font-size:11px;">→</span>
+          <span style="padding:6px 12px;border-radius:999px;border:1px solid rgba(52,211,153,0.2);background:rgba(52,211,153,0.1);font-size:11px;color:#34D399;">Humain décide</span>
+          <span style="color:#555;font-size:11px;">→</span>
+          <span style="padding:6px 12px;border-radius:999px;border:1px solid rgba(251,191,36,0.3);background:rgba(251,191,36,0.12);font-size:11px;color:#FBBF24;font-weight:600;">↻ Skill encodé</span>
+        </div>
+
+        <!-- 3 months -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(251,191,36,0.12);background:rgba(255,255,255,0.02);">
+            <div style="font-size:13px;font-weight:700;color:#FBBF24;">Mois 1 — Calibrage</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.6;margin-top:8px;">L'humain explore votre marché, teste les angles, pose les fondations. Chaque décision crée un skill.</div>
+            <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06);">
+              <div style="font-size:11px;color:#666;">Le setter apprend votre ICP</div>
+              <div style="font-size:11px;color:#666;">L'IA cartographie les signaux</div>
+              <div style="font-size:11px;color:#666;">Premiers messages testés et ajustés</div>
+            </div>
+          </div>
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);">
+            <div style="font-size:13px;font-weight:700;color:#F0ECE4;">Mois 2 — Accélération</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.6;margin-top:8px;">Les patterns émergent. Le scoring se précise. La rédaction s'affine grâce au journal du setter.</div>
+            <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06);">
+              <div style="font-size:11px;color:#666;">Qualification plus rapide et plus juste</div>
+              <div style="font-size:11px;color:#666;">Nouveaux secteurs absorbés en jours</div>
+              <div style="font-size:11px;color:#666;">Taux de réponse en hausse</div>
+            </div>
+          </div>
+          <div style="padding:16px;border-radius:10px;border:1px solid rgba(52,211,153,0.15);background:rgba(255,255,255,0.02);">
+            <div style="font-size:13px;font-weight:700;color:#34D399;">Mois 3+ — La machine tourne</div>
+            <div style="font-size:12px;color:#aaa;line-height:1.6;margin-top:8px;">Le cycle tourne vite. L'humain se concentre sur le closing et les pivots stratégiques.</div>
+            <div style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.06);">
+              <div style="font-size:11px;color:#666;">Setting quasi-autonome</div>
+              <div style="font-size:11px;color:#666;">Pivot de marché en 3 jours</div>
+              <div style="font-size:11px;color:#666;">Closing = 100% humain, toujours</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;text-align:center;">
+          <span style="font-size:13px;color:#C87533;cursor:pointer;">Voir les 9 étapes en détail →</span>
+        </div>
+      </div>
+
+      <p style="margin-top:16px;"><strong>Force :</strong> Montre le mécanisme ET le résultat. Les pills en haut = instant compréhension du cycle. Les colonnes = progression pédagogique.</p>
+      <p><strong>Risque :</strong> Peut être un peu long. Mais reste plus léger que la page /methode.</p>
+    </div>
+  </div>
+
+</div>

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://challengerslab.fr/opengraph-image',
+        url: 'https://setting.live/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'Ressources ChallengersLab — Prospection LinkedIn B2B',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources',
+    canonical: 'https://setting.live/ressources',
   },
 }
 
@@ -32,31 +32,31 @@ export const metadata: Metadata = {
 const resourcesSchema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
-  '@id': 'https://challengerslab.fr/ressources',
+  '@id': 'https://setting.live/ressources',
   name: 'Ressources — Prospection et setting LinkedIn B2B',
   description:
     'Méthodes, scripts et stratégies de prospection LinkedIn B2B pour fondateurs et freelances.',
-  url: 'https://challengerslab.fr/ressources',
-  isPartOf: { '@id': 'https://challengerslab.fr/#website' },
-  breadcrumb: { '@id': 'https://challengerslab.fr/ressources#breadcrumb' },
+  url: 'https://setting.live/ressources',
+  isPartOf: { '@id': 'https://setting.live/#website' },
+  breadcrumb: { '@id': 'https://setting.live/ressources#breadcrumb' },
 }
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
-  '@id': 'https://challengerslab.fr/ressources#breadcrumb',
+  '@id': 'https://setting.live/ressources#breadcrumb',
   itemListElement: [
     {
       '@type': 'ListItem',
       position: 1,
       name: 'Accueil',
-      item: 'https://challengerslab.fr',
+      item: 'https://setting.live',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Ressources',
-      item: 'https://challengerslab.fr/ressources',
+      item: 'https://setting.live/ressources',
     },
   ],
 }

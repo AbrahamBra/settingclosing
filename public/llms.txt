@@ -36,19 +36,19 @@ ChallengersLab construit et opère des programmes de setting commercial B2B sur 
 
 ## Ressources
 
-- Ressources : https://challengerslab.fr/ressources
-- Guide Setting B2B : https://challengerslab.fr/ressources/setting-commercial-b2b
-- Guide Closing B2B : https://challengerslab.fr/ressources/closing-b2b
-- Guide Méthodes de vente : https://challengerslab.fr/ressources/methodes-vente-b2b
-- Glossaire : https://challengerslab.fr/glossaire
-- À propos : https://challengerslab.fr/a-propos
+- Ressources : https://setting.live/ressources
+- Guide Setting B2B : https://setting.live/ressources/setting-commercial-b2b
+- Guide Closing B2B : https://setting.live/ressources/closing-b2b
+- Guide Méthodes de vente : https://setting.live/ressources/methodes-vente-b2b
+- Glossaire : https://setting.live/glossaire
+- À propos : https://setting.live/a-propos
 
 ## Contenu détaillé
 
-- Voir llms-full.txt pour le contenu complet : https://challengerslab.fr/llms-full.txt
+- Voir llms-full.txt pour le contenu complet : https://setting.live/llms-full.txt
 
 ## Contact
 
-- Site : https://challengerslab.fr
-- Email : contact@challengerslab.fr
+- Site : https://setting.live
+- Email : contact@setting.live
 - LinkedIn : https://www.linkedin.com/company/challengerslab

@@ -16,34 +16,34 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/methode-spin-selling',
+    canonical: 'https://setting.live/ressources/methode-spin-selling',
   },
 }
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/methode-spin-selling',
+  '@id': 'https://setting.live/ressources/methode-spin-selling',
   headline: 'SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer',
   description:
     'Le SPIN Selling de Neil Rackham est la méthode de vente B2B la plus validée empiriquement. 4 types de questions qui font avancer un deal sans pression.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/methode-spin-selling',
+  url: 'https://setting.live/ressources/methode-spin-selling',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/methode-spin-selling',
+    '@id': 'https://setting.live/ressources/methode-spin-selling',
   },
 }
 
@@ -89,9 +89,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
-    { '@type': 'ListItem', position: 3, name: 'SPIN Selling', item: 'https://challengerslab.fr/ressources/methode-spin-selling' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 3, name: 'SPIN Selling', item: 'https://setting.live/ressources/methode-spin-selling' },
   ],
 }
 

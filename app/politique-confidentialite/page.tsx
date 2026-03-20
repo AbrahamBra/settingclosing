@@ -5,9 +5,9 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'Politique de confidentialité | ChallengersLab',
   description:
-    'Politique de confidentialité de challengerslab.fr : collecte, utilisation et protection de vos données personnelles.',
+    'Politique de confidentialité de setting.live : collecte, utilisation et protection de vos données personnelles.',
   alternates: {
-    canonical: 'https://challengerslab.fr/politique-confidentialite',
+    canonical: 'https://setting.live/politique-confidentialite',
   },
   robots: { index: true, follow: true },
 }
@@ -44,10 +44,10 @@ export default function PolitiqueConfidentialitePage() {
               <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-4">Responsable du traitement</h2>
               <p className="text-text-muted">
                 Le responsable du traitement des données personnelles collectées sur
-                challengerslab.fr est ChallengersLab, représenté par Abraham.
+                setting.live est ChallengersLab, représenté par Abraham.
               </p>
               <p className="text-text-muted mt-2">
-                Contact : <a href="mailto:contact@challengerslab.fr" className="text-accent hover:underline">contact@challengerslab.fr</a>
+                Contact : <a href="mailto:contact@setting.live" className="text-accent hover:underline">contact@setting.live</a>
               </p>
             </section>
 
@@ -133,8 +133,8 @@ export default function PolitiqueConfidentialitePage() {
               </ul>
               <p className="text-text-muted mt-3">
                 Pour exercer ces droits, contactez-nous à{' '}
-                <a href="mailto:contact@challengerslab.fr" className="text-accent hover:underline">
-                  contact@challengerslab.fr
+                <a href="mailto:contact@setting.live" className="text-accent hover:underline">
+                  contact@setting.live
                 </a>.
                 Nous nous engageons à répondre dans un délai de 30 jours.
               </p>

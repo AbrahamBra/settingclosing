@@ -16,34 +16,34 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/methode-soncas',
+    canonical: 'https://setting.live/ressources/methode-soncas',
   },
 }
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/methode-soncas',
+  '@id': 'https://setting.live/ressources/methode-soncas',
   headline: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples',
   description:
     'La méthode SONCAS permet d\'identifier les motivations d\'achat d\'un prospect B2B et d\'adapter son discours commercial en conséquence.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/methode-soncas',
+  url: 'https://setting.live/ressources/methode-soncas',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/methode-soncas',
+    '@id': 'https://setting.live/ressources/methode-soncas',
   },
 }
 
@@ -89,9 +89,9 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
-    { '@type': 'ListItem', position: 3, name: 'Méthode SONCAS', item: 'https://challengerslab.fr/ressources/methode-soncas' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
+    { '@type': 'ListItem', position: 3, name: 'Méthode SONCAS', item: 'https://setting.live/ressources/methode-soncas' },
   ],
 }
 

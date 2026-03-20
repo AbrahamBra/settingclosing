@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/closer-b2b',
+    canonical: 'https://setting.live/ressources/closer-b2b',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/closer-b2b',
+  '@id': 'https://setting.live/ressources/closer-b2b',
   headline: 'Closer B2B : définition, compétences et comment en recruter un',
   description:
     'Le closer B2B prend en charge les appels entrants sur des leads qualifiés et les transforme en clients signés. Il ne prospecte pas, ne fait pas de setting, ne gère pas les relances. Son seul rôle : signer.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/closer-b2b',
+  url: 'https://setting.live/ressources/closer-b2b',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/closer-b2b',
+    '@id': 'https://setting.live/ressources/closer-b2b',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Closer B2B',
-      item: 'https://challengerslab.fr/ressources/closer-b2b',
+      item: 'https://setting.live/ressources/closer-b2b',
     },
   ],
 }

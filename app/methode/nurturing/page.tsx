@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     'Scoring comportemental, routing automatique des leads chauds et création de revenus low ticket sur votre base existante. Exploitez enfin vos milliers de contacts.',
   alternates: {
-    canonical: 'https://challengerslab.fr/methode/nurturing',
+    canonical: 'https://setting.live/methode/nurturing',
   },
   openGraph: {
     title: 'Nurturing B2B — Scoring & funnel de maturité | ChallengersLab',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       'Scoring comportemental, routing des leads chauds et création de revenus low ticket sur votre base existante.',
     locale: 'fr_FR',
     type: 'website',
-    url: 'https://challengerslab.fr/methode/nurturing',
+    url: 'https://setting.live/methode/nurturing',
   },
 }
 
@@ -30,12 +30,12 @@ const webPageSchema = {
   name: 'Nurturing B2B — Scoring & funnel de maturité',
   description:
     'Notre système de nurturing : scoring comportemental vs démographique, seuils calibrés, séquences TOFU/MOFU/BOFU et routing automatique.',
-  url: 'https://challengerslab.fr/methode/nurturing',
+  url: 'https://setting.live/methode/nurturing',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
 }
 

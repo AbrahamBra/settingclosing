@@ -131,42 +131,42 @@ Le journal de bord du setter alimente la base de connaissance. Ce qui fonctionne
 ## Blog et ressources
 
 ### Guides piliers
-- Setting commercial B2B : définition, méthode et programme complet — https://challengerslab.fr/ressources/setting-commercial-b2b
-- Closing B2B : définition, méthode et programme complet — https://challengerslab.fr/ressources/closing-b2b
-- Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS — https://challengerslab.fr/ressources/methodes-vente-b2b
+- Setting commercial B2B : définition, méthode et programme complet — https://setting.live/ressources/setting-commercial-b2b
+- Closing B2B : définition, méthode et programme complet — https://setting.live/ressources/closing-b2b
+- Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS — https://setting.live/ressources/methodes-vente-b2b
 
 ### Articles Setting
-- Scripts de setting LinkedIn B2B — https://challengerslab.fr/ressources/script-setting-linkedin
-- Relance LinkedIn B2B — https://challengerslab.fr/ressources/relance-linkedin-b2b
-- Prospection LinkedIn B2B : méthode complète — https://challengerslab.fr/ressources/prospection-linkedin-b2b
-- C'est quoi un setter en B2B ? — https://challengerslab.fr/ressources/setter-b2b-definition
-- Comment devenir setter B2B — https://challengerslab.fr/ressources/comment-devenir-setter-b2b
-- Coût d'un setter B2B — https://challengerslab.fr/ressources/cout-setter-b2b-prix
-- Signaux d'achat LinkedIn — https://challengerslab.fr/ressources/signal-achat-linkedin
-- Messages LinkedIn sans réponse — https://challengerslab.fr/ressources/messages-linkedin-sans-reponse
-- IA, méthode et humain pour le setting LinkedIn — https://challengerslab.fr/ressources/ia-methode-humain-setting-linkedin
+- Scripts de setting LinkedIn B2B — https://setting.live/ressources/script-setting-linkedin
+- Relance LinkedIn B2B — https://setting.live/ressources/relance-linkedin-b2b
+- Prospection LinkedIn B2B : méthode complète — https://setting.live/ressources/prospection-linkedin-b2b
+- C'est quoi un setter en B2B ? — https://setting.live/ressources/setter-b2b-definition
+- Comment devenir setter B2B — https://setting.live/ressources/comment-devenir-setter-b2b
+- Coût d'un setter B2B — https://setting.live/ressources/cout-setter-b2b-prix
+- Signaux d'achat LinkedIn — https://setting.live/ressources/signal-achat-linkedin
+- Messages LinkedIn sans réponse — https://setting.live/ressources/messages-linkedin-sans-reponse
+- IA, méthode et humain pour le setting LinkedIn — https://setting.live/ressources/ia-methode-humain-setting-linkedin
 
 ### Articles Closing
-- Discovery call B2B — https://challengerslab.fr/ressources/discovery-call-b2b
-- Gestion des objections B2B — https://challengerslab.fr/ressources/gestion-objections-b2b
-- Scripts de closing B2B — https://challengerslab.fr/ressources/script-closing-b2b
-- Challenger Sale : définition et méthode — https://challengerslab.fr/ressources/challenger-sale-definition
-- Closer B2B : définition et compétences — https://challengerslab.fr/ressources/closer-b2b
+- Discovery call B2B — https://setting.live/ressources/discovery-call-b2b
+- Gestion des objections B2B — https://setting.live/ressources/gestion-objections-b2b
+- Scripts de closing B2B — https://setting.live/ressources/script-closing-b2b
+- Challenger Sale : définition et méthode — https://setting.live/ressources/challenger-sale-definition
+- Closer B2B : définition et compétences — https://setting.live/ressources/closer-b2b
 
 ### Articles Méthode
-- Qualifier un lead en B2B — https://challengerslab.fr/ressources/qualification-leads-b2b
-- Méthode SONCAS en B2B — https://challengerslab.fr/ressources/methode-soncas
-- SPIN Selling en B2B — https://challengerslab.fr/ressources/methode-spin-selling
-- Différence entre setting et closing — https://challengerslab.fr/ressources/difference-setting-closing
+- Qualifier un lead en B2B — https://setting.live/ressources/qualification-leads-b2b
+- Méthode SONCAS en B2B — https://setting.live/ressources/methode-soncas
+- SPIN Selling en B2B — https://setting.live/ressources/methode-spin-selling
+- Différence entre setting et closing — https://setting.live/ressources/difference-setting-closing
 
 ### Glossaire
-18 termes définis : https://challengerslab.fr/glossaire
+18 termes définis : https://setting.live/glossaire
 
 ---
 
 ## Contact
 
-- Site : https://challengerslab.fr
-- Email : contact@challengerslab.fr
+- Site : https://setting.live
+- Email : contact@setting.live
 - LinkedIn : https://www.linkedin.com/company/challengerslab
-- Réserver un appel : https://challengerslab.fr/#contact
+- Réserver un appel : https://setting.live/#contact

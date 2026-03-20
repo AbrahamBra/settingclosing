@@ -1,0 +1,179 @@
+<h2>Pipeline 9 étapes — quel format ?</h2>
+<p class="subtitle">3 approches pour réduire le scroll sans perdre d'info. Clique sur celle qui te parle le plus.</p>
+
+<div class="cards">
+
+  <!-- Option A: Accordion -->
+  <div class="card" data-choice="accordion" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: #1a1a2e;">
+      <!-- Mini mockup accordion -->
+      <div style="font-family: monospace; font-size: 11px; color: #818CF8; margin-bottom: 6px;">⚡ Pipeline Setting</div>
+
+      <!-- Expanded step -->
+      <div style="border: 1px solid rgba(129,140,248,0.3); border-radius: 8px; padding: 10px; margin-bottom: 4px; background: rgba(129,140,248,0.05);">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+          <span style="background: rgba(129,140,248,0.15); color: #818CF8; font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-family: monospace;">01</span>
+          <span style="color: white; font-size: 12px; font-weight: 600;">Stratégie & ciblage</span>
+          <span style="color: #C084FC; font-size: 9px; border: 1px solid rgba(192,132,252,0.3); padding: 1px 5px; border-radius: 10px;">IA + Méthode</span>
+          <span style="margin-left: auto; color: #818CF8;">▾</span>
+        </div>
+        <p style="color: #94a3b8; font-size: 10px; line-height: 1.5; margin: 0 0 6px 0;">ICP défini avec l'IA. Comptes à monitorer sélectionnés. Filtres Sales Navigator configurés...</p>
+        <div style="display: flex; gap: 4px;">
+          <span style="font-size: 9px; color: #818CF8; border: 1px solid rgba(129,140,248,0.2); padding: 1px 5px; border-radius: 3px; font-family: monospace;">Sales Navigator</span>
+          <span style="font-size: 9px; color: #818CF8; border: 1px solid rgba(129,140,248,0.2); padding: 1px 5px; border-radius: 3px; font-family: monospace;">ICP</span>
+        </div>
+      </div>
+
+      <!-- Collapsed steps -->
+      <div style="border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; margin-bottom: 3px; display: flex; align-items: center; gap: 8px;">
+        <span style="background: rgba(129,140,248,0.15); color: #818CF8; font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-family: monospace;">02</span>
+        <span style="color: #ccc; font-size: 11px;">Signaux inbound</span>
+        <span style="color: #818CF8; font-size: 9px; border: 1px solid rgba(129,140,248,0.3); padding: 1px 5px; border-radius: 10px;">IA</span>
+        <span style="margin-left: auto; color: #555;">▸</span>
+      </div>
+      <div style="border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; margin-bottom: 3px; display: flex; align-items: center; gap: 8px;">
+        <span style="background: rgba(129,140,248,0.15); color: #818CF8; font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-family: monospace;">03</span>
+        <span style="color: #ccc; font-size: 11px;">Signaux outbound</span>
+        <span style="color: #818CF8; font-size: 9px; border: 1px solid rgba(129,140,248,0.3); padding: 1px 5px; border-radius: 10px;">IA</span>
+        <span style="margin-left: auto; color: #555;">▸</span>
+      </div>
+      <div style="border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; margin-bottom: 3px; display: flex; align-items: center; gap: 8px;">
+        <span style="background: rgba(192,132,252,0.15); color: #C084FC; font-size: 10px; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-family: monospace;">04</span>
+        <span style="color: #ccc; font-size: 11px;">Profil analysé</span>
+        <span style="margin-left: auto; color: #555;">▸</span>
+      </div>
+      <div style="text-align: center; color: #555; font-size: 10px; padding: 4px;">... 05 → 09</div>
+    </div>
+    <div class="card-body">
+      <h3>A — Accordion</h3>
+      <p>Chaque étape = une ligne compacte (numéro + titre + tag). Clic pour déplier la description et les outils. Une seule ouverte à la fois.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pour</h4><ul><li>Scroll réduit de 80%</li><li>Toute l'info reste accessible</li><li>Pattern UX familier</li></ul></div>
+        <div class="cons"><h4>Contre</h4><ul><li>L'info est cachée par défaut</li><li>Demande des clics pour explorer</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option B: Grouped Phases -->
+  <div class="card" data-choice="phases" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: #1a1a2e;">
+      <div style="font-family: monospace; font-size: 11px; color: #818CF8; margin-bottom: 10px;">⚡ Pipeline Setting</div>
+
+      <!-- Phase 1 -->
+      <div style="border: 1px solid rgba(129,140,248,0.2); border-radius: 10px; padding: 12px; margin-bottom: 8px; background: rgba(129,140,248,0.03);">
+        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px;">
+          <span style="color: #818CF8; font-size: 11px; font-weight: 700;">PHASE 1</span>
+          <span style="color: white; font-size: 12px; font-weight: 600;">— Détection</span>
+          <div style="display: flex; gap: 3px; margin-left: auto;">
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(129,140,248,0.15); border: 1px solid rgba(129,140,248,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #818CF8; font-weight: bold;">01</span>
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(129,140,248,0.15); border: 1px solid rgba(129,140,248,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #818CF8; font-weight: bold;">02</span>
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(129,140,248,0.15); border: 1px solid rgba(129,140,248,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #818CF8; font-weight: bold;">03</span>
+          </div>
+        </div>
+        <p style="color: #94a3b8; font-size: 10px; line-height: 1.4; margin: 0;">L'IA et Sales Navigator repèrent les signaux d'achat — inbound et outbound. Stratégie de ciblage validée par l'humain.</p>
+        <div style="display: flex; gap: 3px; margin-top: 6px; flex-wrap: wrap;">
+          <span style="font-size: 8px; color: #818CF8; border: 1px solid rgba(129,140,248,0.2); padding: 1px 4px; border-radius: 3px;">Sales Navigator</span>
+          <span style="font-size: 8px; color: #818CF8; border: 1px solid rgba(129,140,248,0.2); padding: 1px 4px; border-radius: 3px;">Reactin</span>
+          <span style="font-size: 8px; color: #818CF8; border: 1px solid rgba(129,140,248,0.2); padding: 1px 4px; border-radius: 3px;">Spyer</span>
+        </div>
+      </div>
+
+      <!-- Phase 2 -->
+      <div style="border: 1px solid rgba(251,191,36,0.2); border-radius: 10px; padding: 12px; margin-bottom: 8px; background: rgba(251,191,36,0.03);">
+        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px;">
+          <span style="color: #FBBF24; font-size: 11px; font-weight: 700;">PHASE 2</span>
+          <span style="color: white; font-size: 12px; font-weight: 600;">— Qualification</span>
+          <div style="display: flex; gap: 3px; margin-left: auto;">
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #FBBF24; font-weight: bold;">04</span>
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #FBBF24; font-weight: bold;">05</span>
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(251,191,36,0.15); border: 1px solid rgba(251,191,36,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #FBBF24; font-weight: bold;">06</span>
+          </div>
+        </div>
+        <p style="color: #94a3b8; font-size: 10px; line-height: 1.4; margin: 0;">Analyse de profil, scoring en 5 niveaux, skill Claude personnalisé. Le filtre humain calibre en continu.</p>
+      </div>
+
+      <!-- Phase 3 -->
+      <div style="border: 1px solid rgba(52,211,153,0.2); border-radius: 10px; padding: 12px; background: rgba(52,211,153,0.03);">
+        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px;">
+          <span style="color: #34D399; font-size: 11px; font-weight: 700;">PHASE 3</span>
+          <span style="color: white; font-size: 12px; font-weight: 600;">— Conversion</span>
+          <div style="display: flex; gap: 3px; margin-left: auto;">
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(52,211,153,0.15); border: 1px solid rgba(52,211,153,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #34D399; font-weight: bold;">07</span>
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(52,211,153,0.15); border: 1px solid rgba(52,211,153,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #34D399; font-weight: bold;">08</span>
+            <span style="width: 18px; height: 18px; border-radius: 50%; background: rgba(52,211,153,0.15); border: 1px solid rgba(52,211,153,0.3); display: flex; align-items: center; justify-content: center; font-size: 8px; color: #34D399; font-weight: bold;">09</span>
+          </div>
+        </div>
+        <p style="color: #94a3b8; font-size: 10px; line-height: 1.4; margin: 0;">Message co-rédigé, validation humaine, conversion en RDV qualifié. Aucun message sans le test du téléphone.</p>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — 3 Phases groupées</h3>
+      <p>9 étapes regroupées en 3 blocs : Détection (01-03), Qualification (04-06), Conversion (07-09). Chaque bloc = résumé + outils. Les numéros restent visibles.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pour</h4><ul><li>Scroll réduit de 70%</li><li>Narrative claire en 3 temps</li><li>Pas besoin de clic</li></ul></div>
+        <div class="cons"><h4>Contre</h4><ul><li>Perd le détail par étape</li><li>Les descriptions sont fusionnées</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option C: Hybrid — phases + accordion -->
+  <div class="card" data-choice="hybrid" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding: 20px; background: #1a1a2e;">
+      <div style="font-family: monospace; font-size: 11px; color: #818CF8; margin-bottom: 10px;">⚡ Pipeline Setting</div>
+
+      <!-- Phase 1 with expandable steps -->
+      <div style="border: 1px solid rgba(129,140,248,0.2); border-radius: 10px; padding: 12px; margin-bottom: 8px; background: rgba(129,140,248,0.03);">
+        <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 8px;">
+          <span style="color: #818CF8; font-size: 11px; font-weight: 700;">DÉTECTION</span>
+          <span style="color: #94a3b8; font-size: 10px;">— Signaux inbound & outbound</span>
+        </div>
+
+        <!-- Compact step row - expanded -->
+        <div style="border: 1px solid rgba(129,140,248,0.2); border-radius: 6px; padding: 8px; margin-bottom: 4px; background: rgba(129,140,248,0.05);">
+          <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 5px;">
+            <span style="color: #818CF8; font-size: 10px; font-weight: bold; font-family: monospace;">01</span>
+            <span style="color: white; font-size: 11px; font-weight: 500;">Stratégie & ciblage</span>
+            <span style="color: #C084FC; font-size: 8px; border: 1px solid rgba(192,132,252,0.3); padding: 0px 4px; border-radius: 8px;">IA + Méthode</span>
+            <span style="margin-left: auto; color: #818CF8; font-size: 10px;">▾</span>
+          </div>
+          <p style="color: #94a3b8; font-size: 9px; line-height: 1.4; margin: 0; padding-left: 20px;">ICP défini avec l'IA. Filtres Sales Navigator configurés. L'humain valide les cibles.</p>
+        </div>
+
+        <!-- Compact step rows - collapsed -->
+        <div style="border: 1px solid rgba(255,255,255,0.04); border-radius: 6px; padding: 6px 8px; margin-bottom: 3px; display: flex; align-items: center; gap: 6px;">
+          <span style="color: #818CF8; font-size: 10px; font-weight: bold; font-family: monospace;">02</span>
+          <span style="color: #ccc; font-size: 11px;">Signaux inbound</span>
+          <span style="margin-left: auto; color: #555; font-size: 10px;">▸</span>
+        </div>
+        <div style="border: 1px solid rgba(255,255,255,0.04); border-radius: 6px; padding: 6px 8px; display: flex; align-items: center; gap: 6px;">
+          <span style="color: #818CF8; font-size: 10px; font-weight: bold; font-family: monospace;">03</span>
+          <span style="color: #ccc; font-size: 11px;">Signaux outbound</span>
+          <span style="margin-left: auto; color: #555; font-size: 10px;">▸</span>
+        </div>
+      </div>
+
+      <!-- Phase 2 collapsed -->
+      <div style="border: 1px solid rgba(251,191,36,0.2); border-radius: 10px; padding: 10px 12px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; background: rgba(251,191,36,0.03);">
+        <span style="color: #FBBF24; font-size: 11px; font-weight: 700;">QUALIFICATION</span>
+        <span style="color: #94a3b8; font-size: 10px;">— Étapes 04 → 06</span>
+        <span style="margin-left: auto; color: #FBBF24;">▸</span>
+      </div>
+
+      <!-- Phase 3 collapsed -->
+      <div style="border: 1px solid rgba(52,211,153,0.2); border-radius: 10px; padding: 10px 12px; display: flex; align-items: center; gap: 8px; background: rgba(52,211,153,0.03);">
+        <span style="color: #34D399; font-size: 11px; font-weight: 700;">CONVERSION</span>
+        <span style="color: #94a3b8; font-size: 10px;">— Étapes 07 → 09</span>
+        <span style="margin-left: auto; color: #34D399;">▸</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Phases + Accordion (hybride)</h3>
+      <p>3 phases cliquables qui dévoilent leurs étapes. Chaque étape est aussi un accordion. Deux niveaux de profondeur : phase → étape → détail.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Pour</h4><ul><li>Scroll réduit de 85%+</li><li>Zéro perte d'info</li><li>Structure narrative forte</li></ul></div>
+        <div class="cons"><h4>Contre</h4><ul><li>2 niveaux de clic max</li><li>Plus complexe à implémenter</li></ul></div>
+      </div>
+    </div>
+  </div>
+
+</div>

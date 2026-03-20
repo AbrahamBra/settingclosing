@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Waalaxy, PhantomBuster ou setter humain ? Comparatif honnête : taux de réponse, risque ban, coût réel et scalabilité.',
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/setting-humain-vs-automatisation-linkedin',
+    canonical: 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   },
   openGraph: {
     title: 'Setting humain vs automatisation LinkedIn | ChallengersLab',
@@ -24,27 +24,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/setting-humain-vs-automatisation-linkedin',
+  '@id': 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   headline: 'Setting humain vs automatisation LinkedIn : le vrai comparatif',
   description:
     'Waalaxy, PhantomBuster ou setter humain ? Comparatif point par point : taux de réponse réels, risque de ban LinkedIn, coût mensuel vrai et scalabilité. Pour choisir en connaissance de cause.',
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-19',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/setting-humain-vs-automatisation-linkedin',
+  url: 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/setting-humain-vs-automatisation-linkedin',
+    '@id': 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
   },
 }
 
@@ -83,13 +83,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Setting humain vs automatisation LinkedIn',
-      item: 'https://challengerslab.fr/ressources/setting-humain-vs-automatisation-linkedin',
+      item: 'https://setting.live/ressources/setting-humain-vs-automatisation-linkedin',
     },
   ],
 }

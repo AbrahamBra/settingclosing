@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/challenger-sale-definition',
+    canonical: 'https://setting.live/ressources/challenger-sale-definition',
   },
 }
 
@@ -25,27 +25,27 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/challenger-sale-definition',
+  '@id': 'https://setting.live/ressources/challenger-sale-definition',
   headline: "Qu'est-ce que le Challenger Sale ?",
   description:
     "Le Challenger Sale est une méthode de vente B2B développée par Matthew Dixon et Brent Adamson (CEB, 2011), basée sur une étude portant sur 6 000 commerciaux. Elle identifie 5 profils de vendeurs et démontre que les top performers challengent leurs prospects plutôt que de les accompagner.",
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/challenger-sale-definition',
+  url: 'https://setting.live/ressources/challenger-sale-definition',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/challenger-sale-definition',
+    '@id': 'https://setting.live/ressources/challenger-sale-definition',
   },
 }
 
@@ -94,13 +94,13 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://challengerslab.fr/ressources' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Ressources', item: 'https://setting.live/ressources' },
     {
       '@type': 'ListItem',
       position: 3,
       name: "Qu'est-ce que le Challenger Sale ?",
-      item: 'https://challengerslab.fr/ressources/challenger-sale-definition',
+      item: 'https://setting.live/ressources/challenger-sale-definition',
     },
   ],
 }

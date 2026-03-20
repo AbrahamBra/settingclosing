@@ -1,0 +1,69 @@
+<h2>A vs B — côte à côte avec le nouveau copy</h2>
+<p class="subtitle">Même texte, seule différence : avec ou sans les pills en bas</p>
+
+<div class="split">
+  <!-- Option A -->
+  <div class="mockup" data-choice="a" onclick="toggleSelect(this)" style="cursor:pointer;">
+    <div class="mockup-header">A — Minimal</div>
+    <div class="mockup-body" style="background:#0A0908; padding:48px 28px;">
+      <div style="max-width:480px; margin:0 auto; text-align:center;">
+        <p style="font-size:11px; text-transform:uppercase; letter-spacing:3px; color:#A8A090; margin-bottom:18px;">Le vrai problème</p>
+        <h3 style="font-size:26px; font-weight:800; color:#F0ECE4; line-height:1.25; margin-bottom:16px;">
+          L'IA fait le volume.<br>Mais qui arbitre ?
+        </h3>
+        <p style="font-size:14px; color:#A8A090; line-height:1.7; max-width:420px; margin:0 auto;">
+          Vous avez les outils. Tout le monde les a. Le vrai avantage, c'est de savoir quand l'IA suffit, quand elle doit être entraînée — et quand seul un humain peut débloquer le deal.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Option B -->
+  <div class="mockup" data-choice="b" onclick="toggleSelect(this)" style="cursor:pointer;">
+    <div class="mockup-header">B — Avec pills</div>
+    <div class="mockup-body" style="background:#0A0908; padding:48px 28px;">
+      <div style="max-width:480px; margin:0 auto; text-align:center;">
+        <p style="font-size:11px; text-transform:uppercase; letter-spacing:3px; color:#A8A090; margin-bottom:18px;">Le vrai problème</p>
+        <h3 style="font-size:26px; font-weight:800; color:#F0ECE4; line-height:1.25; margin-bottom:16px;">
+          L'IA fait le volume.<br>Mais qui arbitre ?
+        </h3>
+        <p style="font-size:14px; color:#A8A090; line-height:1.7; max-width:420px; margin:0 auto 24px;">
+          Vous avez les outils. Tout le monde les a. Le vrai avantage, c'est de savoir quand l'IA suffit, quand elle doit être entraînée — et quand seul un humain peut débloquer le deal.
+        </p>
+        <div style="display:flex; justify-content:center; gap:10px; flex-wrap:wrap;">
+          <span style="display:inline-flex; align-items:center; gap:6px; padding:5px 12px; border-radius:999px; border:1px solid rgba(167,139,250,0.25); background:rgba(167,139,250,0.08); font-size:11px; color:#A78BFA;">
+            <span style="width:5px;height:5px;border-radius:50%;background:#A78BFA;"></span>
+            IA suffit
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:6px; padding:5px 12px; border-radius:999px; border:1px solid rgba(251,191,36,0.25); background:rgba(251,191,36,0.08); font-size:11px; color:#FBBF24;">
+            <span style="width:5px;height:5px;border-radius:50%;background:#FBBF24;"></span>
+            IA à entraîner
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:6px; padding:5px 12px; border-radius:999px; border:1px solid rgba(52,211,153,0.25); background:rgba(52,211,153,0.08); font-size:11px; color:#34D399;">
+            <span style="width:5px;height:5px;border-radius:50%;background:#34D399;"></span>
+            Humain décide
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pros-cons" style="margin-top:24px;">
+  <div class="pros">
+    <h4>A — Minimal</h4>
+    <ul>
+      <li>Respire, pas de surcharge</li>
+      <li>Le texte porte tout seul</li>
+      <li>Zéro risque de doublon avec PipelineSection</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>B — Avec pills</h4>
+    <ul>
+      <li>Amorce le système de couleurs IA/Méthode/Humain</li>
+      <li>Crée un lien visuel avec la légende 3 couches plus bas</li>
+      <li>Les pills reprennent les 3 temps du sous-texte</li>
+    </ul>
+  </div>
+</div>

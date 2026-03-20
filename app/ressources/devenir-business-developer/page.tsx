@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/ressources/devenir-business-developer',
+    canonical: 'https://setting.live/ressources/devenir-business-developer',
   },
 }
 
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
-  '@id': 'https://challengerslab.fr/ressources/devenir-business-developer',
+  '@id': 'https://setting.live/ressources/devenir-business-developer',
   headline:
     'Business developer : le métier que vous ne connaissiez pas (et qui recrute près de chez vous)',
   description:
@@ -32,20 +32,20 @@ const articleSchema = {
   author: {
     '@type': 'Person',
     name: 'Abraham',
-    url: 'https://challengerslab.fr/a-propos',
+    url: 'https://setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   datePublished: '2026-02-26',
   dateModified: '2026-03-19',
   inLanguage: 'fr-FR',
-  url: 'https://challengerslab.fr/ressources/devenir-business-developer',
+  url: 'https://setting.live/ressources/devenir-business-developer',
   mainEntityOfPage: {
     '@type': 'WebPage',
-    '@id': 'https://challengerslab.fr/ressources/devenir-business-developer',
+    '@id': 'https://setting.live/ressources/devenir-business-developer',
   },
 }
 
@@ -89,18 +89,18 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'Ressources',
-      item: 'https://challengerslab.fr/ressources',
+      item: 'https://setting.live/ressources',
     },
     {
       '@type': 'ListItem',
       position: 3,
       name: 'Devenir Business Developer',
-      item: 'https://challengerslab.fr/ressources/devenir-business-developer',
+      item: 'https://setting.live/ressources/devenir-business-developer',
     },
   ],
 }

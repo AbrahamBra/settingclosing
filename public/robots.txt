@@ -20,4 +20,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://challengerslab.fr/sitemap.xml
+Sitemap: https://setting.live/sitemap.xml

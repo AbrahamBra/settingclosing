@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35%. Premiers r\u00e9sultats en 7 jours.',
   alternates: {
-    canonical: 'https://challengerslab.fr/resultats',
+    canonical: 'https://setting.live/resultats',
   },
   openGraph: {
     title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | ChallengersLab',
@@ -30,12 +30,12 @@ const webPageSchema = {
   name: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | ChallengersLab',
   description:
     'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35%. Premiers r\u00e9sultats en 7 jours.',
-  url: 'https://challengerslab.fr/resultats',
+  url: 'https://setting.live/resultats',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
 }
 
@@ -47,13 +47,13 @@ const breadcrumbSchema = {
       '@type': 'ListItem',
       position: 1,
       name: 'Accueil',
-      item: 'https://challengerslab.fr',
+      item: 'https://setting.live',
     },
     {
       '@type': 'ListItem',
       position: 2,
       name: 'R\u00e9sultats',
-      item: 'https://challengerslab.fr/resultats',
+      item: 'https://setting.live/resultats',
     },
   ],
 }

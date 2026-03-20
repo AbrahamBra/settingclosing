@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palettes Maroc — Comparateur immersif</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: #0A0A0A;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  /* === PALETTE SWITCHER === */
+  .switcher {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    padding: 16px 24px;
+    background: rgba(10,10,10,0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .switcher button {
+    padding: 10px 24px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    background: transparent;
+    color: #888;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .switcher button .swatch-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .switcher button.active {
+    color: #fff;
+    border-color: var(--accent);
+    background: var(--accent-glow);
+  }
+
+  .switcher button:hover:not(.active) {
+    border-color: rgba(255,255,255,0.15);
+    color: #ccc;
+  }
+
+  /* === CSS VARIABLES PER PALETTE === */
+  body.palette-marrakech {
+    --accent: #C2703E;
+    --accent-hover: #A45A2A;
+    --accent-light: #D4956A;
+    --accent-rgb: 194,112,62;
+    --accent-glow: rgba(194,112,62,0.1);
+    --bg: #0A0908;
+    --bg2: #141210;
+    --surface: #1A1510;
+    --text: #F0ECE4;
+    --text2: #A8A090;
+    --muted: #6B6560;
+    --card-border: rgba(194,112,62,0.08);
+    --semantic-setting: #A78BFA;
+    --semantic-closing: #34D399;
+    --stat-accent: #C2703E;
+  }
+
+  body.palette-chefchaouen {
+    --accent: #6062A8;
+    --accent-hover: #4A4C8A;
+    --accent-light: #8B8DC8;
+    --accent-rgb: 96,98,168;
+    --accent-glow: rgba(96,98,168,0.1);
+    --bg: #080A12;
+    --bg2: #0E1018;
+    --surface: #161824;
+    --text: #ECEEF4;
+    --text2: #9098A8;
+    --muted: #5A6070;
+    --card-border: rgba(96,98,168,0.1);
+    --semantic-setting: #8B8DC8;
+    --semantic-closing: #C87533;
+    --stat-accent: #C87533;
+  }
+
+  body.palette-fes {
+    --accent: #2D8B6F;
+    --accent-hover: #1F6B52;
+    --accent-light: #4AAD8B;
+    --accent-rgb: 45,139,111;
+    --accent-glow: rgba(45,139,111,0.1);
+    --bg: #090C0A;
+    --bg2: #0E110F;
+    --surface: #141A16;
+    --text: #EEF0EC;
+    --text2: #90A898;
+    --muted: #5A6B60;
+    --card-border: rgba(45,139,111,0.1);
+    --semantic-setting: #4AAD8B;
+    --semantic-closing: #D4A745;
+    --stat-accent: #D4A745;
+  }
+
+  /* === TRANSITION ON PALETTE CHANGE === */
+  body {
+    background: var(--bg);
+    transition: background 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* === GRAIN OVERLAY === */
+  .grain {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.018;
+  }
+
+  /* === HERO === */
+  .hero {
+    position: relative;
+    padding: 140px 24px 60px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-glow {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at 50% 40%, rgba(var(--accent-rgb),0.14) 0%, transparent 65%);
+    pointer-events: none;
+    transition: background 0.8s;
+    filter: blur(30px);
+  }
+
+  /* Subtle geometric pattern — very light */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(30deg, rgba(var(--accent-rgb),0.015) 12%, transparent 12.5%, transparent 87%, rgba(var(--accent-rgb),0.015) 87.5%),
+      linear-gradient(150deg, rgba(var(--accent-rgb),0.015) 12%, transparent 12.5%, transparent 87%, rgba(var(--accent-rgb),0.015) 87.5%),
+      linear-gradient(30deg, rgba(var(--accent-rgb),0.015) 12%, transparent 12.5%, transparent 87%, rgba(var(--accent-rgb),0.015) 87.5%),
+      linear-gradient(150deg, rgba(var(--accent-rgb),0.015) 12%, transparent 12.5%, transparent 87%, rgba(var(--accent-rgb),0.015) 87.5%),
+      linear-gradient(60deg, rgba(var(--accent-rgb),0.02) 25%, transparent 25.5%, transparent 75%, rgba(var(--accent-rgb),0.02) 75%),
+      linear-gradient(60deg, rgba(var(--accent-rgb),0.02) 25%, transparent 25.5%, transparent 75%, rgba(var(--accent-rgb),0.02) 75%);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    pointer-events: none;
+    opacity: 0.6;
+    transition: opacity 0.8s;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(var(--accent-rgb),0.2);
+    background: rgba(var(--accent-rgb),0.08);
+    color: var(--accent-light);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    position: relative;
+    transition: all 0.6s;
+  }
+
+  .eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-light);
+    transition: background 0.6s;
+  }
+
+  .hero-title {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    color: var(--text);
+    margin-bottom: 20px;
+    position: relative;
+    transition: color 0.6s;
+  }
+
+  .hero-title em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    color: var(--accent);
+    transition: color 0.6s;
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text2);
+    max-width: 520px;
+    margin: 0 auto 12px;
+    position: relative;
+    transition: color 0.6s;
+  }
+
+  .hero-personas {
+    font-size: 0.95rem;
+    color: var(--muted);
+    margin-bottom: 40px;
+    position: relative;
+    transition: color 0.6s;
+  }
+
+  .hero-personas strong {
+    color: var(--accent);
+    font-weight: 700;
+    transition: color 0.6s;
+  }
+
+  /* === CTA BUTTON === */
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    border-radius: 14px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+    box-shadow:
+      0 2px 20px rgba(var(--accent-rgb),0.35),
+      0 1px 4px rgba(var(--accent-rgb),0.2);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 8px 32px rgba(var(--accent-rgb),0.5),
+      0 2px 8px rgba(var(--accent-rgb),0.3),
+      0 16px 40px -8px rgba(var(--accent-rgb),0.35);
+  }
+
+  .cta-btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.07) 50%, transparent 100%);
+    animation: shine 8s infinite;
+    transform: rotate(30deg);
+    pointer-events: none;
+  }
+
+  @keyframes shine {
+    0% { transform: rotate(30deg) translateX(-200%); }
+    100% { transform: rotate(30deg) translateX(200%); }
+  }
+
+  .cta-link {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  .cta-link:hover { color: var(--text2); }
+
+  /* === STATS === */
+  .stats {
+    padding: 28px 24px;
+    background: var(--bg2);
+    transition: background 0.8s;
+    border-top: 1px solid rgba(var(--accent-rgb),0.06);
+  }
+
+  .stats-inner {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .stat { text-align: center; }
+
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--stat-accent);
+    transition: color 0.6s;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-top: 4px;
+    transition: color 0.6s;
+  }
+
+  /* === PRICING SECTION === */
+  .pricing {
+    padding: 80px 24px;
+    background: var(--bg2);
+    transition: background 0.8s;
+  }
+
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .pricing-header .tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+    transition: color 0.6s;
+  }
+
+  .pricing-header h2 {
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.02em;
+    transition: color 0.6s;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .pricing-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.008) 100%);
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(10px);
+    transition: all 0.6s;
+    position: relative;
+  }
+
+  .pricing-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, transparent 50%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .pricing-card-bar {
+    height: 3px;
+    transition: background 0.6s;
+  }
+
+  .pricing-card-body {
+    padding: 32px;
+  }
+
+  .pricing-card .card-tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    transition: color 0.6s;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 20px;
+    line-height: 1.3;
+    transition: color 0.6s;
+  }
+
+  .pricing-card .price-label {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 4px;
+    transition: color 0.6s;
+  }
+
+  .pricing-card .price {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text);
+    transition: color 0.6s;
+  }
+
+  .pricing-card .price span {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .pricing-card .guarantee {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    font-size: 0.8rem;
+    color: var(--text);
+    transition: color 0.6s;
+  }
+
+  .pricing-card .check {
+    transition: color 0.6s;
+  }
+
+  .pricing-card .card-cta {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 24px;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+    box-shadow: 0 2px 16px rgba(var(--accent-rgb),0.25);
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pricing-card .card-cta::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, transparent 0%, rgba(255,255,255,0.06) 50%, transparent 100%);
+    animation: shine 8s infinite;
+    transform: rotate(30deg);
+    pointer-events: none;
+  }
+
+  .pricing-card .card-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 24px rgba(var(--accent-rgb),0.4);
+  }
+
+  /* === SWATCHES BAR === */
+  .swatches-bar {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 40px 24px;
+    background: var(--bg);
+    transition: background 0.8s;
+  }
+
+  .swatch-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .swatch-color {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.6s;
+  }
+
+  .swatch-name {
+    font-size: 0.55rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.6s;
+  }
+
+  /* === PALETTE NAME BANNER === */
+  .palette-name {
+    text-align: center;
+    padding: 32px 24px 0;
+    position: relative;
+  }
+
+  .palette-name h2 {
+    font-family: 'Instrument Serif', serif;
+    font-size: 2.5rem;
+    font-style: italic;
+    color: var(--accent);
+    transition: color 0.8s;
+    opacity: 0.2;
+  }
+
+  .palette-name p {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 4px;
+    transition: color 0.6s;
+  }
+
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .pricing-grid { grid-template-columns: 1fr; }
+    .stats-inner { gap: 32px; }
+    .switcher { gap: 2px; }
+    .switcher button { padding: 8px 14px; font-size: 0.7rem; }
+  }
+
+  /* === SMOOTH TRANSITIONS === */
+  * { transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+</style>
+</head>
+<body class="palette-marrakech">
+
+<!-- GRAIN -->
+<svg class="grain">
+  <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3"/></filter>
+  <rect width="100%" height="100%" filter="url(#grain)"/>
+</svg>
+
+<!-- PALETTE SWITCHER -->
+<nav class="switcher">
+  <button class="active" onclick="setPalette('marrakech')" style="--accent:#C2703E">
+    <span class="swatch-dot" style="background:#C2703E"></span>Marrakech
+  </button>
+  <button onclick="setPalette('chefchaouen')" style="--accent:#6062A8">
+    <span class="swatch-dot" style="background:#6062A8"></span>Chefchaouen
+  </button>
+  <button onclick="setPalette('fes')" style="--accent:#2D8B6F">
+    <span class="swatch-dot" style="background:#2D8B6F"></span>Fes
+  </button>
+</nav>
+
+<!-- PALETTE NAME WATERMARK -->
+<div class="palette-name">
+  <h2 id="paletteName">Marrakech</h2>
+  <p id="paletteDesc">Terre cuite + sable chaud — le Maroc sans le dire</p>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="eyebrow">
+    <span class="dot"></span>
+    Setting &amp; Closing B2B
+  </div>
+  <h1 class="hero-title">
+    Vous avez deja l'offre.<br>
+    Nous avons la <em>machine</em>.
+  </h1>
+  <p class="hero-sub">
+    Premiers rendez-vous qualifies des la premiere semaine.
+    Pipeline complet : setting delegue, closing coache.
+  </p>
+  <p class="hero-personas">
+    Pour les <strong>fondateurs</strong> qui veulent plus de clients.
+  </p>
+  <button class="cta-btn">Reserver un appel gratuit</button>
+  <a href="#" class="cta-link">Decouvrir l'offre ↓</a>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat">
+      <div class="stat-value">20+</div>
+      <div class="stat-label">entrepreneurs accompagnes</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">400+</div>
+      <div class="stat-label">RDV qualifies generes</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">&lt;7j</div>
+      <div class="stat-label">avant les premiers resultats</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+  <div class="pricing-header">
+    <p class="tag">Tarifs</p>
+    <h2>Deux offres. Zero engagement long.</h2>
+  </div>
+
+  <div class="pricing-grid">
+    <!-- Setting -->
+    <div class="pricing-card">
+      <div class="pricing-card-bar" style="background:var(--semantic-setting)"></div>
+      <div class="pricing-card-body">
+        <p class="card-tag" style="color:var(--semantic-setting)">Setting</p>
+        <h3>2 a 4 RDV qualifies par semaine.</h3>
+        <p class="price-label">Fixe mensuel</p>
+        <p class="price">500 € <span>/ mois</span></p>
+        <div class="guarantee">
+          <span class="check" style="color:var(--semantic-setting)">&#10003;</span>
+          <span><strong>Garantie :</strong> minimum 5 RDV / mois</span>
+        </div>
+        <button class="card-cta">Deleguer mon setting →</button>
+      </div>
+    </div>
+
+    <!-- Closing -->
+    <div class="pricing-card">
+      <div class="pricing-card-bar" style="background:var(--semantic-closing)"></div>
+      <div class="pricing-card-body">
+        <p class="card-tag" style="color:var(--semantic-closing)">Closing</p>
+        <h3>La methode Challenger Sale. Appliquee a votre activite.</h3>
+        <p class="price-label">Programme complet</p>
+        <p class="price">1 000 € <span>/ mois × 3 mois</span></p>
+        <div class="guarantee">
+          <span class="check" style="color:var(--semantic-closing)">&#10003;</span>
+          <span>2h de coaching par semaine</span>
+        </div>
+        <button class="card-cta">Ameliorer mon closing →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SWATCHES -->
+<section class="swatches-bar" id="swatchesBar">
+  <!-- Dynamically filled -->
+</section>
+
+<script>
+const palettes = {
+  marrakech: {
+    name: 'Marrakech',
+    desc: 'Terre cuite + sable chaud — le Maroc sans le dire',
+    swatches: [
+      { color: '#C2703E', name: 'Accent' },
+      { color: '#A45A2A', name: 'Hover' },
+      { color: '#D4956A', name: 'Light' },
+      { color: '#0A0908', name: 'Bg' },
+      { color: '#141210', name: 'Surface' },
+      { color: '#F0ECE4', name: 'Text' },
+      { color: '#A8A090', name: 'Muted' },
+    ]
+  },
+  chefchaouen: {
+    name: 'Chefchaouen',
+    desc: 'Bleu Majorelle + terracotta — distinctif, memorable',
+    swatches: [
+      { color: '#6062A8', name: 'Accent' },
+      { color: '#4A4C8A', name: 'Hover' },
+      { color: '#8B8DC8', name: 'Light' },
+      { color: '#C87533', name: 'Warm' },
+      { color: '#080A12', name: 'Bg' },
+      { color: '#ECEEF4', name: 'Text' },
+      { color: '#9098A8', name: 'Muted' },
+    ]
+  },
+  fes: {
+    name: 'Fes',
+    desc: 'Vert zellige + or marocain — premium, royal',
+    swatches: [
+      { color: '#2D8B6F', name: 'Accent' },
+      { color: '#1F6B52', name: 'Hover' },
+      { color: '#4AAD8B', name: 'Light' },
+      { color: '#D4A745', name: 'Or' },
+      { color: '#090C0A', name: 'Bg' },
+      { color: '#EEF0EC', name: 'Text' },
+      { color: '#90A898', name: 'Muted' },
+    ]
+  }
+}
+
+function setPalette(name) {
+  // Update body class
+  document.body.className = 'palette-' + name
+
+  // Update buttons
+  document.querySelectorAll('.switcher button').forEach(btn => btn.classList.remove('active'))
+  event.currentTarget.classList.add('active')
+
+  // Update name banner
+  document.getElementById('paletteName').textContent = palettes[name].name
+  document.getElementById('paletteDesc').textContent = palettes[name].desc
+
+  // Update swatches
+  const bar = document.getElementById('swatchesBar')
+  bar.innerHTML = palettes[name].swatches.map(s => `
+    <div class="swatch-group">
+      <div class="swatch-color" style="background:${s.color}"></div>
+      <span class="swatch-name">${s.name}</span>
+    </div>
+  `).join('')
+}
+
+// Init swatches
+setPalette('marrakech')
+// Re-activate first button since setPalette uses event
+document.querySelector('.switcher button').classList.add('active')
+</script>
+
+</body>
+</html>

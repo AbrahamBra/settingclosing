@@ -1,0 +1,137 @@
+<h2>Bloc Méthode Homepage — 3 directions</h2>
+<p class="subtitle">Chaque approche répond à : "On sait quand mettre de l'IA, quand mettre de l'humain, et comment itérer."<br>Clique sur celle(s) qui t'attirent.</p>
+
+<div class="options">
+
+  <!-- OPTION A -->
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Le Filtre — "100 signaux entrent. 3 messages partent."</h3>
+      <p style="margin-bottom:16px;">Visualisation verticale en entonnoir. On voit la masse de données en haut (IA détecte des centaines de signaux), la méthode qui filtre au milieu, et les quelques messages validés par un humain en bas.</p>
+
+      <div style="background:#111;border-radius:12px;padding:24px;font-family:monospace;font-size:13px;line-height:1.6;">
+        <div style="text-align:center;margin-bottom:12px;">
+          <span style="color:#A78BFA;">████████████████████████████████</span><br>
+          <span style="color:#A78BFA;font-size:11px;">IA · 847 signaux détectés cette semaine</span>
+        </div>
+        <div style="text-align:center;margin-bottom:4px;color:#555;">▼ ▼ ▼</div>
+        <div style="text-align:center;margin-bottom:12px;">
+          <span style="color:#FBBF24;">████████████████</span><br>
+          <span style="color:#FBBF24;font-size:11px;">Méthode · 43 prospects qualifiés</span>
+        </div>
+        <div style="text-align:center;margin-bottom:4px;color:#555;">▼ ▼ ▼</div>
+        <div style="text-align:center;">
+          <span style="color:#34D399;">██████</span><br>
+          <span style="color:#34D399;font-size:11px;">Humain · 12 messages envoyés</span>
+        </div>
+      </div>
+
+      <p style="margin-top:16px;"><strong>Message clé :</strong> L'intelligence n'est pas dans ce qu'on envoie — c'est dans ce qu'on n'envoie pas.</p>
+      <p><strong>Émotion :</strong> Rigueur, anti-spam, précision chirurgicale.</p>
+    </div>
+  </div>
+
+  <!-- OPTION B -->
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>La Boucle — "Semaine 1 vs Semaine 8"</h3>
+      <p style="margin-bottom:16px;">Visualisation temporelle. On montre comment le système s'affine au fil des itérations : chaque retour humain entraîne l'IA, la méthode se calibre, les résultats s'améliorent. Le cercle vertueux.</p>
+
+      <div style="background:#111;border-radius:12px;padding:24px;font-family:monospace;font-size:13px;">
+        <div style="display:flex;gap:24px;justify-content:center;align-items:end;">
+          <div style="text-align:center;">
+            <div style="color:#666;font-size:11px;margin-bottom:8px;">Sem. 1</div>
+            <div style="width:60px;background:linear-gradient(to top,#A78BFA 40%,#FBBF24 30%,#34D399 30%);height:60px;border-radius:6px;opacity:0.5;"></div>
+            <div style="color:#666;font-size:11px;margin-top:4px;">calibrage</div>
+          </div>
+          <div style="color:#555;align-self:center;">→</div>
+          <div style="text-align:center;">
+            <div style="color:#888;font-size:11px;margin-bottom:8px;">Sem. 4</div>
+            <div style="width:60px;background:linear-gradient(to top,#A78BFA 25%,#FBBF24 40%,#34D399 35%);height:90px;border-radius:6px;opacity:0.75;"></div>
+            <div style="color:#888;font-size:11px;margin-top:4px;">ajustement</div>
+          </div>
+          <div style="color:#555;align-self:center;">→</div>
+          <div style="text-align:center;">
+            <div style="color:#ccc;font-size:11px;margin-bottom:8px;">Sem. 8</div>
+            <div style="width:60px;background:linear-gradient(to top,#A78BFA 20%,#FBBF24 35%,#34D399 45%);height:120px;border-radius:6px;"></div>
+            <div style="color:#ccc;font-size:11px;margin-top:4px;">autonomie</div>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:16px;color:#888;font-size:12px;">
+          ↻ Chaque retour humain affine l'IA. La méthode se calibre. Les résultats s'accélèrent.
+        </div>
+      </div>
+
+      <p style="margin-top:16px;"><strong>Message clé :</strong> Ce n'est pas un outil figé — c'est un système qui apprend de vous.</p>
+      <p><strong>Émotion :</strong> Progression, investissement intelligent, effet composé.</p>
+    </div>
+  </div>
+
+  <!-- OPTION C -->
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Le Curseur — "On sait où placer le curseur."</h3>
+      <p style="margin-bottom:16px;">3-4 décisions concrètes du quotidien, chacune avec un curseur positionné entre "Full IA" et "Full Humain". Montre que la valeur est dans le jugement — savoir QUAND automatiser et QUAND garder la main.</p>
+
+      <div style="background:#111;border-radius:12px;padding:20px;font-size:13px;">
+        <!-- Slider 1 -->
+        <div style="margin-bottom:16px;">
+          <div style="color:#ccc;margin-bottom:6px;">Détecter un signal d'achat</div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="color:#A78BFA;font-size:11px;width:30px;">IA</span>
+            <div style="flex:1;height:6px;background:#222;border-radius:3px;position:relative;">
+              <div style="width:90%;height:100%;background:linear-gradient(to right,#A78BFA,#A78BFA);border-radius:3px;"></div>
+              <div style="position:absolute;right:8%;top:-5px;width:16px;height:16px;background:#A78BFA;border-radius:50%;border:2px solid #111;"></div>
+            </div>
+            <span style="color:#34D399;font-size:11px;width:50px;">Humain</span>
+          </div>
+        </div>
+        <!-- Slider 2 -->
+        <div style="margin-bottom:16px;">
+          <div style="color:#ccc;margin-bottom:6px;">Qualifier un prospect</div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="color:#A78BFA;font-size:11px;width:30px;">IA</span>
+            <div style="flex:1;height:6px;background:#222;border-radius:3px;position:relative;">
+              <div style="width:55%;height:100%;background:linear-gradient(to right,#A78BFA,#FBBF24);border-radius:3px;"></div>
+              <div style="position:absolute;left:52%;top:-5px;width:16px;height:16px;background:#FBBF24;border-radius:50%;border:2px solid #111;"></div>
+            </div>
+            <span style="color:#34D399;font-size:11px;width:50px;">Humain</span>
+          </div>
+        </div>
+        <!-- Slider 3 -->
+        <div style="margin-bottom:16px;">
+          <div style="color:#ccc;margin-bottom:6px;">Rédiger un message de prospection</div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="color:#A78BFA;font-size:11px;width:30px;">IA</span>
+            <div style="flex:1;height:6px;background:#222;border-radius:3px;position:relative;">
+              <div style="width:35%;height:100%;background:linear-gradient(to right,#FBBF24,#34D399);border-radius:3px;"></div>
+              <div style="position:absolute;left:32%;top:-5px;width:16px;height:16px;background:#34D399;border-radius:50%;border:2px solid #111;"></div>
+            </div>
+            <span style="color:#34D399;font-size:11px;width:50px;">Humain</span>
+          </div>
+        </div>
+        <!-- Slider 4 -->
+        <div style="margin-bottom:4px;">
+          <div style="color:#ccc;margin-bottom:6px;">Closer un deal à 10k€</div>
+          <div style="display:flex;align-items:center;gap:8px;">
+            <span style="color:#A78BFA;font-size:11px;width:30px;">IA</span>
+            <div style="flex:1;height:6px;background:#222;border-radius:3px;position:relative;">
+              <div style="width:10%;height:100%;background:#34D399;border-radius:3px;"></div>
+              <div style="position:absolute;left:7%;top:-5px;width:16px;height:16px;background:#34D399;border-radius:50%;border:2px solid #111;"></div>
+            </div>
+            <span style="color:#34D399;font-size:11px;width:50px;">Humain</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:16px;"><strong>Message clé :</strong> Tout le monde a l'IA. Personne ne sait où s'arrêter.</p>
+      <p><strong>Émotion :</strong> Maîtrise, jugement, supériorité méthodologique.</p>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="margin-top:24px;">Tu peux aussi en combiner (ex: C en haut + A en preuve en dessous). Multi-sélection possible.</p>

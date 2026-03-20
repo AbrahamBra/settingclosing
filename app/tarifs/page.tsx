@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     'Prix du setting commercial externalisé : LinkedIn dès 490 € + 790 €/mois, téléphonique dès 690 €/mois, Nurturing 1 990 €. Sans engagement.',
   alternates: {
-    canonical: 'https://challengerslab.fr/tarifs',
+    canonical: 'https://setting.live/tarifs',
   },
   openGraph: {
     title: 'Tarifs setting commercial externalisé | ChallengersLab',
@@ -29,18 +29,18 @@ const webPageSchema = {
   name: 'Tarifs setting commercial externalisé | ChallengersLab',
   description:
     'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 790 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum.',
-  url: 'https://challengerslab.fr/tarifs',
+  url: 'https://setting.live/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
     '@type': 'WebSite',
     name: 'ChallengersLab',
-    url: 'https://challengerslab.fr',
+    url: 'https://setting.live',
   },
   breadcrumb: {
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-      { '@type': 'ListItem', position: 2, name: 'Tarifs', item: 'https://challengerslab.fr/tarifs' },
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+      { '@type': 'ListItem', position: 2, name: 'Tarifs', item: 'https://setting.live/tarifs' },
     ],
   },
   mainEntity: {

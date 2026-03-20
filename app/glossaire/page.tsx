@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://challengerslab.fr/og-default.png',
+        url: 'https://setting.live/og-default.png',
         width: 1200,
         height: 630,
         alt: 'Glossaire Setting & Prospection LinkedIn — ChallengersLab',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://challengerslab.fr/glossaire',
+    canonical: 'https://setting.live/glossaire',
   },
 }
 
@@ -196,12 +196,12 @@ const terms = [
 const definedTermSchemas = terms.map((t) => ({
   '@context': 'https://schema.org',
   '@type': 'DefinedTerm',
-  '@id': `https://challengerslab.fr/glossaire#${t.id}`,
+  '@id': `https://setting.live/glossaire#${t.id}`,
   name: t.term,
   description: t.definition,
   inDefinedTermSet: {
     '@type': 'DefinedTermSet',
-    '@id': 'https://challengerslab.fr/glossaire',
+    '@id': 'https://setting.live/glossaire',
     name: 'Glossaire Setting & Prospection B2B — ChallengersLab',
   },
 }))
@@ -210,8 +210,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://challengerslab.fr' },
-    { '@type': 'ListItem', position: 2, name: 'Glossaire', item: 'https://challengerslab.fr/glossaire' },
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Glossaire', item: 'https://setting.live/glossaire' },
   ],
 }
 
