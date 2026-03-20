@@ -9,7 +9,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 export const metadata: Metadata = {
   title: 'Tarifs setting commercial externalisé | ChallengersLab',
   description:
-    'Prix du setting commercial externalisé : Setting LinkedIn dès 490 € + 790 €/mois, Setting téléphonique dès 690 €/mois, Setup Nurturing 1 990 €. Garantie 5 RDV minimum. Sans engagement.',
+    'Prix du setting commercial externalisé : LinkedIn dès 490 € + 790 €/mois, téléphonique dès 690 €/mois, Nurturing 1 990 €. Sans engagement.',
   alternates: {
     canonical: 'https://challengerslab.fr/tarifs',
   },
@@ -50,7 +50,7 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 1,
         name: 'Setting LinkedIn',
-        description: 'Votre pipeline LinkedIn, clé en main. Setter dédié, ciblage ICP, messages co-rédigés avec IA, validation humaine.',
+        description: 'Votre pipeline LinkedIn, clé en main. Setter dédié, ciblage ICP, messages co-rédigés avec IA, validation humaine. Prime de +50 €/RDV au-delà de 8.',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
@@ -78,7 +78,7 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 2,
         name: 'Setting téléphonique',
-        description: 'Qualification téléphonique des leads entrants. Routing intelligent selon niveau de maturité.',
+        description: 'Qualification téléphonique des leads entrants. Routing intelligent selon niveau de maturité. Prime de +35 €/RDV au-delà de 10.',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
@@ -99,7 +99,7 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 3,
         name: 'Setup Nurturing',
-        description: 'Générez des RDV à partir de votre base existante. Scoring comportemental, séquences email/LinkedIn, workflow automatisé.',
+        description: 'Faites remonter vos leads chauds et créez des revenus low ticket sur votre base existante. Scoring comportemental, séquences email/LinkedIn, workflow automatisé. Prime de 80-100 €/RDV généré.',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
@@ -129,7 +129,7 @@ const faqSchema = {
       name: 'Combien coûte le Setting LinkedIn ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '490 € de setup initial, puis 790 €/mois les 2 premiers mois (calibration), et 1 290 €/mois ensuite. Un bonus de 50 €/RDV s\'applique au-delà de 15 RDV livrés. Sans engagement.',
+        text: '490 € de setup initial, puis 790 €/mois les 2 premiers mois (calibration), et 1 290 €/mois ensuite. Un bonus de 50 €/RDV s\'applique au-delà de 8 RDV livrés. Sans engagement.',
       },
     },
     {
@@ -145,7 +145,7 @@ const faqSchema = {
       name: 'Le Setting téléphonique est-il moins cher en bundle ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. En standalone, le Setting téléphonique est à 690 €/mois. En complément du Setting LinkedIn, il passe à 490 €/mois. Le setup de 290 € s\'applique dans les deux cas.',
+        text: 'Oui. En standalone, le Setting téléphonique est à 690 €/mois. En complément du Setting LinkedIn, il passe à 490 €/mois. Le setup de 290 € s\'applique dans les deux cas. Une prime de 35 €/RDV s\'ajoute au-delà de 10 RDV qualifiés.',
       },
     },
     {
@@ -189,7 +189,7 @@ const offers = [
       { label: 'Mois 1-2', amount: '790\u00a0\u20ac', suffix: '/ mois', detail: 'Phase de calibration' },
       { label: 'Mois 3+', amount: '1\u00a0290\u00a0\u20ac', suffix: '/ mois', detail: 'Pipeline \u00e0 plein r\u00e9gime' },
     ],
-    bonus: '+50\u00a0\u20ac par RDV au-del\u00e0 de 15',
+    bonus: '+50\u00a0\u20ac par RDV au-del\u00e0 de 8',
     features: [
       'Setter d\u00e9di\u00e9 \u00e0 votre compte',
       'Ciblage ICP + signaux d\u2019achat',
@@ -209,9 +209,9 @@ const offers = [
     headline: 'Vos leads qualifi\u00e9s par t\u00e9l\u00e9phone',
     pricingPhases: [
       { label: 'Setup', amount: '290\u00a0\u20ac', suffix: 'one-shot', detail: 'Script, formation, config CRM' },
-      { label: 'Standalone', amount: '690\u00a0\u20ac', suffix: '/ mois', detail: 'Qualification de vos leads entrants' },
+      { label: 'Standalone', amount: '690\u00a0\u20ac', suffix: '/ mois', detail: 'Qualification de vos leads entrants. 490\u00a0\u20ac/mois en bundle.' },
     ],
-    bonus: '490\u00a0\u20ac/mois en bundle avec le Setting LinkedIn',
+    bonus: '+35\u00a0\u20ac par RDV qualifi\u00e9 au-del\u00e0 de 10',
     features: [
       'Qualification t\u00e9l\u00e9phonique de chaque lead',
       'Routing : chaud \u2192 RDV / ti\u00e8de \u2192 newsletter / froid \u2192 nurturing',
@@ -227,12 +227,12 @@ const offers = [
     color: '#C87533',
     colorRgb: '200,117,51',
     eyebrow: 'Setup Nurturing',
-    headline: 'Des RDV à partir de votre base existante',
+    headline: 'Vos leads chauds en priorité. Des revenus sur le reste.',
     pricingPhases: [
       { label: 'Construction', amount: '1\u00a0990\u00a0\u20ac', suffix: 'one-shot', detail: 'Scoring, s\u00e9quences, workflows. ~4 semaines.' },
-      { label: 'Optimisation', amount: '490\u00a0\u20ac', suffix: '/ mois \u00d7 3', detail: '+ 80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9' },
+      { label: 'Optimisation', amount: '490\u00a0\u20ac', suffix: '/ mois \u00d7 3', detail: 'Affinage continu, autonomie apr\u00e8s M3' },
     ],
-    bonus: 'Autonomie totale apr\u00e8s 3 mois',
+    bonus: '+80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9',
     features: [
       'Scoring comportemental de votre base',
       'S\u00e9quences email/LinkedIn personnalis\u00e9es',
@@ -250,7 +250,7 @@ const offers = [
 const faqs = [
   {
     q: 'Combien co\u00fbte le Setting LinkedIn\u00a0?',
-    a: '490\u00a0\u20ac de setup, puis 790\u00a0\u20ac/mois les 2 premiers mois (calibration), et 1\u00a0290\u00a0\u20ac/mois ensuite. Un bonus de 50\u00a0\u20ac/RDV s\u2019applique au-del\u00e0 de 15\u00a0RDV livr\u00e9s. Sans engagement.',
+    a: '490\u00a0\u20ac de setup, puis 790\u00a0\u20ac/mois les 2 premiers mois (calibration), et 1\u00a0290\u00a0\u20ac/mois ensuite. Un bonus de 50\u00a0\u20ac/RDV s\u2019applique au-del\u00e0 de 8\u00a0RDV livr\u00e9s. Sans engagement.',
   },
   {
     q: 'Pourquoi un setup fee\u00a0?',
@@ -258,7 +258,7 @@ const faqs = [
   },
   {
     q: 'Le Setting t\u00e9l\u00e9phonique est-il moins cher en bundle\u00a0?',
-    a: 'Oui. En standalone, il est \u00e0 690\u00a0\u20ac/mois. En compl\u00e9ment du Setting LinkedIn, il passe \u00e0 490\u00a0\u20ac/mois. Le setup de 290\u00a0\u20ac s\u2019applique dans les deux cas.',
+    a: 'Oui. En standalone, il est \u00e0 690\u00a0\u20ac/mois. En compl\u00e9ment du Setting LinkedIn, il passe \u00e0 490\u00a0\u20ac/mois. Le setup de 290\u00a0\u20ac s\u2019applique dans les deux cas. Une prime de 35\u00a0\u20ac/RDV s\u2019ajoute au-del\u00e0 de 10 RDV qualifi\u00e9s.',
   },
   {
     q: 'Comment fonctionne le Setup Nurturing\u00a0?',
@@ -542,7 +542,7 @@ export default function TarifsPage() {
           <div className="container-max max-w-4xl mx-auto">
             <ScrollReveal>
               <p className="font-sans text-xs font-semibold tracking-widest text-text-muted uppercase mb-6">Voir aussi</p>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid sm:grid-cols-3 gap-4">
                 <a href="/resultats" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Résultats clients</p>
                   <p className="font-sans text-sm text-text-muted">3+ RDV qualifiés par semaine, premiers résultats en 7 jours.</p>
@@ -550,6 +550,10 @@ export default function TarifsPage() {
                 <a href="/methode/setting-linkedin" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">La méthode en 9 étapes</p>
                   <p className="font-sans text-sm text-text-muted">Du signal d'achat au RDV qualifié : comment fonctionne le pipeline.</p>
+                </a>
+                <a href="/externaliser-prospection-linkedin" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Externaliser sa prospection</p>
+                  <p className="font-sans text-sm text-text-muted">Pour qui, quand et comment externaliser votre prospection LinkedIn.</p>
                 </a>
               </div>
             </ScrollReveal>

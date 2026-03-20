@@ -48,7 +48,7 @@ export const offers: Offer[] = [
       setup: { amount: 490, label: 'Setup', detail: 'Cadrage ICP, setup outils, r\u00e9daction des s\u00e9quences.' },
       launch: { amount: 790, label: 'Mois 1-2 \u2014 Calibration', detail: 'Phase de rodage\u00a0: ciblage, tests, premiers RDV.' },
       subscription: { amount: 1290, period: '/ mois', detail: 'Pipeline \u00e0 plein r\u00e9gime d\u00e8s le mois 3.' },
-      bonus: '+50\u00a0\u20ac par RDV au-del\u00e0 de 15',
+      bonus: '+50\u00a0\u20ac par RDV au-del\u00e0 de 8',
     },
     guarantee: 'Moins de 5 RDV qualifi\u00e9s livr\u00e9s dans le mois\u00a0? Le mois suivant est offert.',
     noCommitment: true,
@@ -72,6 +72,7 @@ export const offers: Offer[] = [
       type: 'fixed',
       setup: { amount: 290, label: 'Setup', detail: 'Script, formation, configuration CRM et routing.' },
       subscription: { amount: 690, period: '/ mois', detail: 'Qualification de vos leads entrants. 490\u00a0\u20ac/mois en compl\u00e9ment du Setting LinkedIn.' },
+      bonus: '+35\u00a0\u20ac par RDV qualifi\u00e9 au-del\u00e0 de 10',
     },
     cta: { label: 'Obtenir un devis \u2192', href: '#contact' },
   },
@@ -80,9 +81,9 @@ export const offers: Offer[] = [
     slug: 'nurturing',
     eyebrow: 'Setup Nurturing',
     color: '#C87533',
-    situation: 'J\u2019ai une base \u00e9norme',
+    situation: 'J\u2019ai une grosse base, z\u00e9ro revenu dessus',
     description:
-      'Des milliers de contacts, actifs ou dormants. Z\u00e9ro syst\u00e8me pour les exploiter.',
+      'Des milliers de contacts qui ne rapportent rien. On fait remonter les leads les plus chauds et on ouvre des revenus low ticket sur le reste.',
     features: [
       { title: 'Scoring comportemental', detail: 'Engagement, r\u00e9cence, intent\u00a0: chaque lead a un score' },
       { title: 'S\u00e9quences personnalis\u00e9es', detail: 'Contenu adapt\u00e9 au niveau de maturit\u00e9 du lead' },
@@ -92,7 +93,8 @@ export const offers: Offer[] = [
     pricing: {
       type: 'fixed',
       setup: { amount: 1990, label: 'Construction', detail: 'Scoring, s\u00e9quences, workflows automatis\u00e9s. ~4 semaines.' },
-      subscription: { amount: 490, period: '/ mois \u00d7 3', detail: 'Optimisation + 80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9. Autonomie apr\u00e8s M3.' },
+      subscription: { amount: 490, period: '/ mois \u00d7 3', detail: 'Affinage continu, autonomie apr\u00e8s M3.' },
+      bonus: '+80-100\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9',
     },
     cta: { label: 'Construire mon syst\u00e8me \u2192', href: '#contact' },
   },

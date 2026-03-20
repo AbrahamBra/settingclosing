@@ -10,14 +10,14 @@ import { nurturingSteps } from '@/lib/methode-nurturing-data'
 export const metadata: Metadata = {
   title: 'Nurturing B2B — Scoring & funnel de maturité | ChallengersLab',
   description:
-    'Scoring comportemental vs démographique, seuils calibrés, séquences TOFU/MOFU/BOFU et routing automatique. Générez des RDV depuis votre base dormante.',
+    'Scoring comportemental, routing automatique des leads chauds et création de revenus low ticket sur votre base existante. Exploitez enfin vos milliers de contacts.',
   alternates: {
     canonical: 'https://challengerslab.fr/methode/nurturing',
   },
   openGraph: {
     title: 'Nurturing B2B — Scoring & funnel de maturité | ChallengersLab',
     description:
-      'Scoring comportemental, seuils calibrés sur vos données, séquences par maturité et routing automatique vers vos commerciaux.',
+      'Scoring comportemental, routing des leads chauds et création de revenus low ticket sur votre base existante.',
     locale: 'fr_FR',
     type: 'website',
     url: 'https://challengerslab.fr/methode/nurturing',
@@ -122,12 +122,12 @@ export default function NurturingPage() {
                 Setup Nurturing
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                Votre base de leads dort. On la r&eacute;veille m&eacute;thodiquement.
+                Faites remonter vos leads chauds. Mon&eacute;tisez les autres.
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                On pose un scoring sur votre base — qui est actif, qui dort, qui est pr&ecirc;t &agrave; acheter.
-                Les contacts m&ucirc;rs sont rout&eacute;s vers vos commerciaux.
-                Les autres re&ccedil;oivent du contenu jusqu&rsquo;&agrave; ce qu&rsquo;ils le soient.
+                Vous avez des milliers de contacts — mais aucun revenu dessus.
+                On pose un scoring pour identifier ceux qui sont pr&ecirc;ts &agrave; acheter maintenant,
+                et on cr&eacute;e des lignes de revenus low ticket sur les autres.
               </p>
 
               {/* Layer legend */}
@@ -391,7 +391,7 @@ export default function NurturingPage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">500 € le premier mois, sans engagement.</p>
+                  <p className="font-sans text-sm text-text-muted">1\u00a0990\u00a0\u20ac de construction + 490\u00a0\u20ac/mois \u00d7 3.</p>
                 </a>
               </div>
             </ScrollReveal>
@@ -403,10 +403,10 @@ export default function NurturingPage() {
           <div className="container-max text-center max-w-2xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4">
-                Vous avez les contacts. Il manque le syst&egrave;me.
+                Vous &ecirc;tes assis sur du revenu. On va le chercher.
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                On regarde votre base et on vous dit ce qu&rsquo;on peut en tirer.
+                On regarde votre base et on vous dit combien elle peut rapporter.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                 Construire mon syst&egrave;me
