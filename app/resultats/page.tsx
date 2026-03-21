@@ -9,7 +9,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 export const metadata: Metadata = {
   title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',
   description:
-    'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35%. Premiers r\u00e9sultats en 7 jours.',
+    'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35\u00a0%. D\u00e8s 790\u00a0\u20ac/mois. Premiers r\u00e9sultats en 7 jours.',
   alternates: {
     canonical: 'https://www.setting.live/resultats',
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',
     description:
-      '3+ RDV qualifi\u00e9s par semaine, 20-35% de taux de r\u00e9ponse. R\u00e9sultats d\u00e8s la premi\u00e8re semaine.',
+      '3+ RDV qualifi\u00e9s par semaine, 20-35\u00a0% de taux de r\u00e9ponse. D\u00e8s 790\u00a0\u20ac/mois. R\u00e9sultats d\u00e8s la premi\u00e8re semaine.',
     locale: 'fr_FR',
     type: 'website',
   },
@@ -33,7 +33,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   name: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',
   description:
-    'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35%. Premiers r\u00e9sultats en 7 jours.',
+    'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35\u00a0%. D\u00e8s 790\u00a0\u20ac/mois. Premiers r\u00e9sultats en 7 jours.',
   url: 'https://www.setting.live/resultats',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -147,24 +147,34 @@ const caseStudies = [
 
 const benchmarkRows = [
   {
-    label: 'Taux de r\u00e9ponse',
-    classic: '2-5%',
-    cl: '20-35%',
+    label: 'Taux de réponse',
+    solo: '2-5\u00a0%',
+    agence: '8-15\u00a0%',
+    setting: '20-35\u00a0%',
   },
   {
     label: 'RDV par mois',
-    classic: '0-4',
-    cl: '12-20',
+    solo: '0-4',
+    agence: '5-10',
+    setting: '12-20',
   },
   {
-    label: 'Temps investi',
-    classic: '10-15h/semaine',
-    cl: '0h (externalis\u00e9)',
+    label: 'Temps investi par vous',
+    solo: '10-15h/semaine',
+    agence: '2-3h/semaine',
+    setting: '0h (externalisé)',
   },
   {
-    label: 'D\u00e9lai avant premiers r\u00e9sultats',
-    classic: '1-3 mois',
-    cl: '<7 jours',
+    label: 'Délai premiers résultats',
+    solo: '1-3 mois',
+    agence: '2-4 semaines',
+    setting: '<\u00a07 jours',
+  },
+  {
+    label: 'Coût mensuel',
+    solo: 'Votre temps',
+    agence: '2\u00a0000 - 4\u00a0000\u00a0€',
+    setting: 'Dès 790\u00a0€',
   },
 ]
 
@@ -344,18 +354,23 @@ export default function ResultatsPage() {
                 Nos benchmarks vs le march&eacute;
               </h2>
               <p className="font-sans text-text-muted text-base text-center mb-10">
-                Prospection classique contre setting externalis&eacute;. M&ecirc;me cible. R&eacute;sultats tr&egrave;s diff&eacute;rents.
+                Vous seul, une agence classique, ou Setting. M&ecirc;mes cibles. R&eacute;sultats tr&egrave;s diff&eacute;rents.
               </p>
             </ScrollReveal>
 
             <ScrollReveal delay={80}>
               <div className="bg-bg-secondary rounded-2xl border border-white/[0.06] overflow-hidden">
                 {/* Table header */}
-                <div className="grid grid-cols-3 border-b border-white/[0.06]">
+                <div className="grid grid-cols-4 border-b border-white/[0.06]">
                   <div className="p-5" />
                   <div className="p-5 border-l border-white/[0.06]">
                     <p className="font-sans text-xs font-semibold uppercase tracking-wider text-text-muted text-center">
-                      Prospection classique
+                      Prospection solo
+                    </p>
+                  </div>
+                  <div className="p-5 border-l border-white/[0.06]">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-wider text-text-muted text-center">
+                      Agence classique
                     </p>
                   </div>
                   <div className="p-5 border-l border-white/[0.06]"
@@ -370,7 +385,7 @@ export default function ResultatsPage() {
                 {benchmarkRows.map((row, i) => (
                   <div
                     key={i}
-                    className={`grid grid-cols-3 ${i < benchmarkRows.length - 1 ? 'border-b border-white/[0.06]' : ''}`}
+                    className={`grid grid-cols-4 ${i < benchmarkRows.length - 1 ? 'border-b border-white/[0.06]' : ''}`}
                   >
                     <div className="p-5">
                       <p className="font-sans text-sm text-text-primary font-medium leading-snug">
@@ -379,7 +394,12 @@ export default function ResultatsPage() {
                     </div>
                     <div className="p-5 border-l border-white/[0.06] text-center">
                       <p className="font-sans text-sm text-text-muted">
-                        {row.classic}
+                        {row.solo}
+                      </p>
+                    </div>
+                    <div className="p-5 border-l border-white/[0.06] text-center">
+                      <p className="font-sans text-sm text-text-muted">
+                        {row.agence}
                       </p>
                     </div>
                     <div
@@ -387,7 +407,7 @@ export default function ResultatsPage() {
                       style={{ background: 'rgba(167,139,250,0.04)' }}
                     >
                       <p className="font-sans text-sm text-accent font-semibold">
-                        {row.cl}
+                        {row.setting}
                       </p>
                     </div>
                   </div>

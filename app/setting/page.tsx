@@ -78,7 +78,7 @@ const faqItems = [
   {
     question: 'Combien coute un setter B2B ?',
     answer:
-      "Un setter B2B externalise coute entre 500 et 1 500 euros par mois selon la formule. Un SDR interne revient a 45 000 - 70 000 euros par an charges comprises. Le modele hybride (fixe + prime par RDV) aligne les interets : chez Setting, c'est 490 euros de setup + 500 euros par mois avec une prime de 50 a 250 euros par RDV selon le ticket moyen.",
+      "Un setter B2B externalise coute entre 500 et 1 500 euros par mois selon la formule. Un SDR interne revient a 45 000 - 70 000 euros par an charges comprises. Le modele hybride (fixe + prime par RDV) aligne les interets : chez Setting, c'est 490 euros de setup + 790 euros par mois avec une prime de 50 a 250 euros par RDV selon le ticket moyen.",
   },
   {
     question: 'Le setting LinkedIn fonctionne-t-il pour les solopreneurs ?',
@@ -389,7 +389,7 @@ export default function SettingPillarPage() {
                       ['Competence cle', "Redaction, analyse de profils", 'Ecoute active, negociation'],
                       ['Livrable', 'Prospect qualifie + brief', 'Client signe + CA'],
                       ['Duree par lead', '3 a 15 jours', '1 a 3 appels'],
-                      ['Cout mensuel externalise', '500 - 1 500 EUR/mois', '8-15% de commission'],
+                      ['Cout mensuel externalise', '790 - 1 500 EUR/mois', '8-15% de commission'],
                     ].map(([critere, setting, closing]) => (
                       <tr key={critere} className="border-b border-white/[0.04]">
                         <td className="py-3 pr-4 font-semibold text-text-primary text-xs">{critere}</td>

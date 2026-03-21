@@ -41,6 +41,7 @@ const articleSchema = {
     '@type': 'Organization',
     name: 'Setting',
     url: 'https://www.setting.live',
+    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-19',
   dateModified: '2026-03-19',
@@ -67,7 +68,7 @@ const faqItems = [
   {
     question: 'Combien coûte un setter LinkedIn par mois ?',
     answer:
-      "Un setter LinkedIn humain coûte entre 500 et 1 500 €/mois selon le modèle de rémunération (fixe seul, prime par RDV ou hybride). Chez Setting, le modèle est hybride : 500 €/mois de fixe + prime par RDV qualifié livré. Ce modèle aligne les intérêts : le setter n'est pas payé pour le volume mais pour la qualité des rendez-vous. Les tarifs détaillés sont disponibles sur la page /tarifs.",
+      "Un setter LinkedIn humain coûte entre 500 et 1 500 €/mois selon le modèle de rémunération (fixe seul, prime par RDV ou hybride). Chez Setting, le modèle est hybride : 790 €/mois de fixe + prime par RDV qualifié livré. Ce modèle aligne les intérêts : le setter n'est pas payé pour le volume mais pour la qualité des rendez-vous. Les tarifs détaillés sont disponibles sur la page /tarifs.",
   },
 ]
 

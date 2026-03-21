@@ -42,6 +42,7 @@ const articleSchema = {
     '@type': 'Organization',
     name: 'Setting',
     url: 'https://www.setting.live',
+    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
@@ -149,7 +150,7 @@ const pricingModels = [
   },
   {
     label: 'Hybride : fixe bas + prime par RDV (recommandé)',
-    desc: "Un fixe couvre l'infrastructure et le travail de fond. La prime aligne les intérêts sur les résultats réels. C'est le modèle Setting : 500 €/mois + 25 à 150 €/RDV livré selon la qualification.",
+    desc: "Un fixe couvre l'infrastructure et le travail de fond. La prime aligne les intérêts sur les résultats réels. C'est le modèle Setting : 790 €/mois + 25 à 150 €/RDV livré selon la qualification.",
   },
 ]
 

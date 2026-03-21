@@ -46,8 +46,8 @@ export const offers: Offer[] = [
     pricing: {
       type: 'fixed',
       setup: { amount: 490, label: 'Setup', detail: 'Cadrage ICP, setup outils, r\u00e9daction des s\u00e9quences.' },
-      subscription: { amount: 500, period: '/ mois', detail: '500\u00a0\u20ac/mois identique sur les 3 premiers mois.' },
-      bonus: 'Prime de 50 \u00e0 250\u00a0\u20ac par RDV selon le ticket moyen',
+      subscription: { amount: 790, period: '/ mois', detail: '790\u00a0\u20ac/mois identique sur les 3 premiers mois.' },
+      bonus: 'Prime par RDV : 50\u00a0\u20ac (ticket <\u00a05k), 150\u00a0\u20ac (5\u201315k), 250\u00a0\u20ac (>\u00a015k)',
     },
     guarantee: 'Moins de 5 RDV qualifi\u00e9s livr\u00e9s dans le mois\u00a0? Le mois suivant est offert.',
     noCommitment: true,
@@ -60,8 +60,9 @@ export const offers: Offer[] = [
     color: '#FBBF24',
     situation: 'J\u2019ai des leads mais personne pour les qualifier',
     description:
-      'Les lead magnets performent, les formulaires se remplissent. Mais personne ne d\u00e9croche pour qualifier et router.',
+      'Vos lead magnets performent, votre contenu g\u00e9n\u00e8re de l\u2019engagement. Mais personne ne r\u00e9pond aux DMs, ne qualifie par t\u00e9l\u00e9phone et ne route vers un closing.',
     features: [
+      { title: 'R\u00e9ponse aux leads LinkedIn', detail: 'DMs, commentaires de posts et lead magnets g\u00e9r\u00e9s pour vous' },
       { title: 'Qualification t\u00e9l\u00e9phonique', detail: 'Un sales d\u00e9di\u00e9 appelle chaque lead entrant' },
       { title: 'Tri intelligent', detail: 'Chaud \u2192 RDV, ti\u00e8de \u2192 newsletter, froid \u2192 nurturing' },
       { title: 'Z\u00e9ro lead perdu', detail: 'Chaque contact est rout\u00e9, rien ne tombe dans l\u2019oubli' },
@@ -69,9 +70,9 @@ export const offers: Offer[] = [
     methodeLink: '/methode/setting-telephonique',
     pricing: {
       type: 'fixed',
-      setup: { amount: 290, label: 'Setup', detail: 'Script, formation, configuration CRM et routing.' },
-      subscription: { amount: 690, period: '/ mois', detail: 'Qualification de vos leads entrants. 490\u00a0\u20ac/mois en compl\u00e9ment du Setting LinkedIn.' },
-      bonus: 'Prime de 25 \u00e0 200\u00a0\u20ac par RDV qualifi\u00e9 selon le ticket moyen',
+      setup: { amount: 490, label: 'Setup', detail: 'Script, formation, configuration CRM et routing.' },
+      subscription: { amount: 690, period: '/ mois', detail: '690\u00a0\u20ac/mois par tranche d\u20191h/jour. 2h/jour = 1\u00a0380\u00a0\u20ac/mois. Ajustable.' },
+      bonus: 'Prime par RDV : 25\u00a0\u20ac (ticket <\u00a05k), 100\u00a0\u20ac (5\u201315k), 200\u00a0\u20ac (>\u00a015k)',
     },
     cta: { label: 'Obtenir un devis \u2192', href: '#contact' },
   },
@@ -91,9 +92,9 @@ export const offers: Offer[] = [
     methodeLink: '/methode/nurturing',
     pricing: {
       type: 'fixed',
-      setup: { amount: 1990, label: 'Construction', detail: 'Scoring, s\u00e9quences, workflows automatis\u00e9s. ~4 semaines.' },
-      subscription: { amount: 490, period: '/ mois \u00d7 3', detail: 'Affinage continu, autonomie apr\u00e8s M3.' },
-      bonus: 'Prime de 50 \u00e0 250\u00a0\u20ac par RDV g\u00e9n\u00e9r\u00e9 selon le ticket moyen',
+      setup: { amount: 2490, label: 'Construction', detail: 'Scoring, s\u00e9quences, workflows automatis\u00e9s. ~4 semaines.' },
+      subscription: { amount: 590, period: '/ mois \u00d7 3', detail: 'Affinage continu, autonomie apr\u00e8s M3.' },
+      bonus: 'Prime par RDV : 50\u00a0\u20ac (ticket <\u00a05k), 150\u00a0\u20ac (5\u201315k), 250\u00a0\u20ac (>\u00a015k)',
     },
     cta: { label: 'Construire mon syst\u00e8me \u2192', href: '#contact' },
   },

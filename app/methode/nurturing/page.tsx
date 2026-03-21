@@ -409,7 +409,7 @@ export default function NurturingPage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">1\u00a0990\u00a0\u20ac de construction + 490\u00a0\u20ac/mois \u00d7 3.</p>
+                  <p className="font-sans text-sm text-text-muted">2\u00a0490\u00a0\u20ac de construction + 590\u00a0\u20ac/mois \u00d7 3.</p>
                 </a>
               </div>
             </ScrollReveal>

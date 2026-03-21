@@ -334,7 +334,7 @@ export default function SettingTelephoniquePage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">D\u00e8s 290\u00a0\u20ac de setup + 500\u00a0\u20ac/h consacr\u00e9e par jour.</p>
+                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 690\u00a0\u20ac/mois par tranche d\u20191h/jour.</p>
                 </a>
               </div>
             </ScrollReveal>

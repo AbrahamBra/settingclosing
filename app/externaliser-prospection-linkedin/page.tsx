@@ -84,7 +84,7 @@ const faqSchema = {
       name: 'Quel est le coût comparé à un SDR interne ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un SDR junior coûte 35 000 à 45 000 €/an, plus 3 à 6 mois de montée en compétence. Si ça ne fonctionne pas, vous avez perdu 6 mois et plus de 20 000 €. L'externalisation démarre à 500 €/mois, sans engagement long terme.",
+        text: "Un SDR junior coûte 35 000 à 45 000 €/an, plus 3 à 6 mois de montée en compétence. Si ça ne fonctionne pas, vous avez perdu 6 mois et plus de 20 000 €. L'externalisation démarre à 790 €/mois, sans engagement long terme.",
       },
     },
     {
@@ -419,7 +419,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                 Combien &ccedil;a co&ucirc;te&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
-                Le service d&eacute;marre &agrave; <strong className="text-text-primary">500&nbsp;&euro;/mois</strong>.
+                Le service d&eacute;marre &agrave; <strong className="text-text-primary">790&nbsp;&euro;/mois</strong>.
                 Pas d&apos;engagement ann&eacute;el. Pas de frais cach&eacute;s.
               </p>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
@@ -480,7 +480,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     Un SDR junior co&ucirc;te 35 &agrave; 45&nbsp;k&euro;/an, plus 3 &agrave; 6 mois de mont&eacute;e en comp&eacute;tence.
                     Si &ccedil;a ne fonctionne pas, vous avez perdu 6 mois et plus de 20&nbsp;000&nbsp;&euro;.
-                    L&apos;externalisation d&eacute;marre &agrave; 500&nbsp;&euro;/mois, sans engagement long terme.
+                    L&apos;externalisation d&eacute;marre &agrave; 790&nbsp;&euro;/mois, sans engagement long terme.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -530,7 +530,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 500\u00a0\u20ac/mois. Sans engagement.</p>
+                  <p className="font-sans text-sm text-text-muted">D\u00e8s 490\u00a0\u20ac de setup + 790\u00a0\u20ac/mois. Sans engagement.</p>
                 </a>
               </div>
             </ScrollReveal>

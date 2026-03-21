@@ -1,18 +1,18 @@
-# ChallengersLab
+# Setting
 
-> Setting commercial LinkedIn externalisé et coaching closing LinkedIn pour fondateurs, freelances et solopreneurs.
+> Setting commercial LinkedIn externalisé pour fondateurs, freelances et solopreneurs B2B.
 
-## Ce que fait ChallengersLab
+## Ce que fait Setting
 
-ChallengersLab construit et opère des programmes de setting commercial B2B sur LinkedIn. Un setter dédié prospecte pour vous avec une méthode signal-based : on contacte uniquement les prospects qui ont déjà montré un intérêt (like, commentaire, changement de poste). Résultat : 2 à 4 RDV qualifiés par semaine dès la première semaine.
+Setting construit et opère des programmes de setting commercial B2B sur LinkedIn. Un setter dédié prospecte pour vous avec une méthode signal-based : on contacte uniquement les prospects qui ont déjà montré un intérêt (like, commentaire, changement de poste). Résultat : 2 à 4 RDV qualifiés par semaine dès la première semaine.
 
 ## Services
 
-- **Setting LinkedIn** : Setter dédié, prospection LinkedIn signal-based, IA comme co-rédacteur, 5 RDV qualifiés minimum par mois. Setup 490 € + 500 €/mois (même tarif sur les 3 premiers mois). Prime de 50 à 250 €/RDV selon le ticket moyen. Sans engagement.
-- **Setting téléphonique** : Qualification téléphonique des leads entrants, routing intelligent. 290 € setup + 690 €/mois (490 €/mois en bundle avec Setting LinkedIn). Prime de 25 à 200 €/RDV qualifié selon le ticket moyen.
-- **Setup Nurturing** : Scoring comportemental, séquences personnalisées, workflows automatisés. 1 990 € setup + 490 €/mois × 3 mois d'optimisation. Prime de 50 à 250 €/RDV généré selon le ticket moyen.
+- **Setting LinkedIn** : Setter dédié, prospection LinkedIn signal-based, IA comme co-rédacteur, 5 RDV qualifiés minimum par mois. Setup 490 € + 790 €/mois (même tarif sur les 3 premiers mois). Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k). Sans engagement.
+- **Setting téléphonique** : Qualification téléphonique des leads entrants + réponse aux leads LinkedIn (DMs, commentaires), routing intelligent. 490 € setup + 690 €/mois par tranche d'1h/jour. Prime par RDV : 25 € (ticket < 5k), 100 € (5-15k), 200 € (> 15k).
+- **Setup Nurturing** : Scoring comportemental, séquences personnalisées, workflows automatisés. 2 490 € setup + 590 €/mois × 3 mois d'optimisation. Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k).
 
-Le montant de la prime dépend du ticket moyen, de la présence de lead magnets actifs et d'une stratégie de contenu.
+Setting ne se contente pas de répondre aux commentaires sur vos posts LinkedIn. C'est de la prospection active vers les décideurs qui ont un besoin maintenant.
 
 ## Pour qui
 
@@ -38,19 +38,19 @@ Le montant de la prime dépend du ticket moyen, de la présence de lead magnets 
 
 ## Ressources
 
-- Ressources : https://setting.live/ressources
-- Guide Setting B2B : https://setting.live/ressources/setting-commercial-b2b
-- Guide Closing B2B : https://setting.live/ressources/closing-b2b
-- Guide Méthodes de vente : https://setting.live/ressources/methodes-vente-b2b
-- Glossaire : https://setting.live/glossaire
-- À propos : https://setting.live/a-propos
+- Ressources : https://www.setting.live/ressources
+- Guide Setting B2B : https://www.setting.live/ressources/setting-commercial-b2b
+- Guide Closing B2B : https://www.setting.live/ressources/closing-b2b
+- Guide Méthodes de vente : https://www.setting.live/ressources/methodes-vente-b2b
+- Glossaire : https://www.setting.live/glossaire
+- À propos : https://www.setting.live/a-propos
 
 ## Contenu détaillé
 
-- Voir llms-full.txt pour le contenu complet : https://setting.live/llms-full.txt
+- Voir llms-full.txt pour le contenu complet : https://www.setting.live/llms-full.txt
 
 ## Contact
 
-- Site : https://setting.live
+- Site : https://www.setting.live
 - Email : contact@setting.live
 - LinkedIn : https://www.linkedin.com/company/challengerslab

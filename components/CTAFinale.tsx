@@ -29,14 +29,14 @@ function CalendlySlot({ url }: { url: string }) {
       <div className="flex flex-col items-center justify-center gap-5 min-h-[260px]">
         <div className="text-center">
           <p className="font-sans font-semibold text-text-primary mb-2">
-            Vous préférez en parler directement ?
+            Vous préférez en parler de vive voix ?
           </p>
           <p className="font-sans text-text-muted text-sm">
-            Réservez un créneau de 30 minutes, sans engagement.
+            30 minutes pour estimer combien de RDV on peut vous livrer. Sans engagement.
           </p>
         </div>
         <ButtonGlow onClick={() => setLoaded(true)}>
-          Voir les créneaux disponibles →
+          Réserver 30 min pour estimer votre pipeline →
         </ButtonGlow>
       </div>
     )
@@ -97,7 +97,7 @@ export function CTAFinale() {
       <div className="container-max">
         <ScrollReveal>
           <h2 className="font-sans text-h2 font-bold text-text-primary text-center mb-16">
-            Prêt à déléguer ?
+            Prêt à remplir votre agenda ?
           </h2>
         </ScrollReveal>
 
@@ -188,7 +188,7 @@ export function CTAFinale() {
                     disabled={state === 'loading'}
                     className="w-full"
                   >
-                    {state === 'loading' ? 'Envoi en cours...' : 'Envoyer ma demande'}
+                    {state === 'loading' ? 'Envoi en cours...' : 'Recevoir mon estimation de pipeline'}
                   </ButtonGlow>
                 </form>
               )}

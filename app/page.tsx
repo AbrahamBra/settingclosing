@@ -14,7 +14,7 @@ const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').t
 export const metadata: Metadata = {
   title: 'Setting commercial LinkedIn externalisé | Setting',
   description:
-    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 500 €/mois.',
+    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 790 €/mois.',
   alternates: {
     canonical: 'https://www.setting.live',
     languages: {
@@ -38,6 +38,100 @@ export const metadata: Metadata = {
   },
 }
 
+const globalSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.setting.live/#website',
+      url: 'https://www.setting.live',
+      name: 'Setting',
+      inLanguage: 'fr-FR',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://www.setting.live/ressources?q={search_term_string}',
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@type': 'ProfessionalService',
+      '@id': 'https://www.setting.live/#business',
+      name: 'Setting',
+      url: 'https://www.setting.live',
+      logo: 'https://www.setting.live/opengraph-image',
+      description: 'Setting LinkedIn externalisé pour fondateurs, freelances et solopreneurs B2B. Méthode signal-based, setter dédié, IA + validation humaine.',
+      sameAs: [
+        'https://www.linkedin.com/company/challengerslab',
+      ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'contact@setting.live',
+        contactType: 'sales',
+        availableLanguage: 'French',
+      },
+      areaServed: {
+        '@type': 'Country',
+        name: 'France',
+      },
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        itemListElement: [
+          {
+            '@type': 'Offer',
+            name: 'Setting LinkedIn — Setup',
+            description: 'Cadrage ICP, setup outils, rédaction des séquences de prospection.',
+            url: 'https://www.setting.live/methode/setting-linkedin',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 490,
+              priceCurrency: 'EUR',
+              valueAddedTaxIncluded: false,
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Setting LinkedIn — Abonnement',
+            description: 'Pipeline LinkedIn clé en main : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés.',
+            url: 'https://www.setting.live/methode/setting-linkedin',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 500,
+              priceCurrency: 'EUR',
+              unitText: 'MONTH',
+              valueAddedTaxIncluded: false,
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Setting téléphonique — Qualification de leads',
+            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé.',
+            url: 'https://www.setting.live/methode/setting-telephonique',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 500,
+              priceCurrency: 'EUR',
+              unitText: 'HOUR',
+              valueAddedTaxIncluded: false,
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Setup Nurturing',
+            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing.',
+            url: 'https://www.setting.live/methode/nurturing',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 1990,
+              priceCurrency: 'EUR',
+              valueAddedTaxIncluded: false,
+            },
+          },
+        ],
+      },
+    },
+  ],
+}
+
 const homeFaqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -48,7 +142,7 @@ const homeFaqSchema = {
       name: 'Combien coûte le setting commercial externalisé ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '490 € de setup, puis 500 €/mois — même tarif sur les 3 premiers mois. Prime de 50 à 250 €/RDV selon le ticket moyen. Sans engagement.',
+        text: '490 € de setup, puis 790 €/mois — même tarif sur les 3 premiers mois. Prime par RDV selon votre ticket moyen : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €). Sans engagement.',
       },
     },
     {
@@ -89,6 +183,10 @@ const homeFaqSchema = {
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(globalSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}

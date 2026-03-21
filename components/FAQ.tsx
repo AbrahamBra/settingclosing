@@ -6,7 +6,7 @@ import { ScrollReveal } from './ui/ScrollReveal'
 const faqs = [
   {
     q: 'Combien ça coûte au total ?',
-    a: "490\u00a0\u20ac de setup, puis 500\u00a0\u20ac/mois \u2014 m\u00eame tarif sur les 3 premiers mois. Prime de 50 \u00e0 250\u00a0\u20ac par RDV selon le ticket moyen. Sans engagement.",
+    a: "490\u00a0\u20ac de setup, puis 790\u00a0\u20ac/mois \u2014 m\u00eame tarif sur les 3\u00a0premiers mois. Prime par RDV selon votre ticket moyen\u00a0: 50\u00a0\u20ac (< 5k\u00a0\u20ac), 150\u00a0\u20ac (5-15k\u00a0\u20ac), 250\u00a0\u20ac (> 15k\u00a0\u20ac). Sans engagement.",
   },
   {
     q: 'Quand est-ce que je vois les premiers RDV ?',
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "C'est quoi la différence avec un freelance SDR ?",
-    a: "Un freelance SDR envoie des messages. On ajoute le ciblage IA et une méthode qui s\u2019affine chaque semaine sur vos retours terrain. Même quota LinkedIn, résultats ×10.",
+    a: "Un freelance SDR envoie des messages. On ajoute le ciblage IA et une méthode qui s'affine chaque semaine sur vos retours terrain. Même quota LinkedIn, résultats ×10.",
   },
   {
     q: "Mon offre n'est pas encore rodée, c'est pour moi ?",

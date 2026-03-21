@@ -42,6 +42,7 @@ const articleSchema = {
     '@type': 'Organization',
     name: 'Setting',
     url: 'https://www.setting.live',
+    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
@@ -170,7 +171,7 @@ export default function CoutSetterB2BPage() {
             {[
               { stat: '800–1 500 €', label: 'fixe mensuel moyen' },
               { stat: '50–200 €', label: 'par RDV livré' },
-              { stat: '500 €/mois', label: 'fixe dans le modèle hybride Setting' },
+              { stat: '790 €/mois', label: 'fixe dans le modèle hybride Setting' },
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
@@ -254,7 +255,7 @@ export default function CoutSetterB2BPage() {
                     réduire le fixe futur.
                   </p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed mb-3">
-                    C&apos;est le modèle utilisé par Setting : 500 €/mois de fixe
+                    C&apos;est le modèle utilisé par Setting : 790 €/mois de fixe
                     + 50 à 250 €/RDV selon le ticket moyen du client. Le montant exact de la prime
                     dépend aussi de la présence de lead magnets actifs et d&apos;une stratégie de contenu
                     — un contexte favorable génère plus de volume et influence la fourchette.
@@ -341,7 +342,7 @@ export default function CoutSetterB2BPage() {
                     { label: 'Panier moyen de votre offre', value: '3 000 €' },
                     { label: 'Taux de closing sur un appel qualifié', value: '1 sur 3' },
                     { label: 'Valeur d&apos;un RDV qualifié', value: '1 000 €' },
-                    { label: 'Programme : 500 €/mois + 50 €/RDV × 8 RDV/mois', value: '900 €/mois' },
+                    { label: 'Programme : 790 €/mois + 50 €/RDV × 8 RDV/mois', value: '1 190 €/mois' },
                     { label: 'Valeur générée par mois (8 RDV × 1 000 €)', value: '8 000 €/mois' },
                     { label: 'ROI', value: '~8×', highlight: true },
                   ].map(({ label, value, highlight }) => (

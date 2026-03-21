@@ -168,10 +168,10 @@ export function SituationPicker() {
               Notre approche
             </p>
             <h2 className="font-sans text-h2 text-text-primary mb-3">
-              Vous en &ecirc;tes o&ugrave;&nbsp;?
+              Quelle est votre situation&nbsp;?
             </h2>
             <p className="text-sm text-text-secondary leading-relaxed">
-              Cliquez sur votre situation. On a la r&eacute;ponse.
+              Cliquez sur votre situation. On vous montre la solution et le prix.
             </p>
           </div>
         </ScrollReveal>

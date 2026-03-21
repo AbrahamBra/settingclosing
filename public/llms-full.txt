@@ -1,19 +1,19 @@
-# ChallengersLab — Contenu complet
+# Setting — Contenu complet
 
-> Setting commercial LinkedIn externalisé et coaching closing LinkedIn pour fondateurs, freelances et solopreneurs.
+> Setting commercial LinkedIn externalisé pour fondateurs, freelances et solopreneurs B2B.
 
 ---
 
 ## Présentation
 
-ChallengersLab construit et opère des programmes de setting commercial B2B sur LinkedIn. La méthode repose sur trois couches : IA pour la détection de signaux, méthode pour la structure, humain pour la validation. Aucun message ne part sans un regard humain. Le système apprend chaque semaine à partir du terrain.
+Setting construit et opère des programmes de setting commercial B2B sur LinkedIn. La méthode repose sur trois couches : IA pour la détection de signaux, méthode pour la structure, humain pour la validation. Aucun message ne part sans un regard humain. Le système apprend chaque semaine à partir du terrain.
 
 ---
 
 ## Service 1 : Setting commercial B2B externalisé
 
 ### Définition
-Le setting commercial est la phase de prospection qui précède le closing en B2B. Le setter identifie les prospects qualifiés, engage la conversation sur LinkedIn, et planifie des rendez-vous pour le closeur.
+Le setting commercial est la phase de prospection qui précède le closing en B2B. Le setter identifie les prospects qualifiés, engage la conversation sur LinkedIn, et planifie des rendez-vous pour le closeur. Setting ne se contente pas de répondre aux commentaires sur vos posts LinkedIn. C'est de la prospection active vers les décideurs qui ont un besoin maintenant.
 
 ### Ce qui est inclus
 - Setter dédié formé à votre offre
@@ -24,9 +24,8 @@ Le setting commercial est la phase de prospection qui précède le closing en B2
 
 ### Tarification
 - Setup : 490 € (cadrage ICP, outils, séquences)
-- 500 €/mois — même tarif sur les 3 premiers mois, sans augmentation
-- Prime : 50 à 250 €/RDV selon le ticket moyen du client
-- Le montant de la prime dépend aussi de la présence de lead magnets actifs et d'une stratégie de contenu
+- 790 €/mois — même tarif sur les 3 premiers mois, sans augmentation
+- Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k)
 - Sans engagement, résiliable à tout moment
 - Garantie : moins de 5 RDV qualifiés = mois suivant offert
 
@@ -53,10 +52,9 @@ Qualification téléphonique des leads entrants. Un sales dédié appelle chaque
 - Reporting par lead avec scoring
 
 ### Tarification
-- Setup : 290 € (script, formation, configuration CRM)
-- Standalone : 690 €/mois
-- En bundle avec Setting LinkedIn : 490 €/mois
-- Prime : 25 à 200 €/RDV qualifié selon le ticket moyen
+- Setup : 490 € (script, formation, configuration CRM)
+- Récurrent : 690 €/mois par tranche d'1h/jour (2h/jour = 1 380 €/mois, volume ajustable)
+- Prime par RDV : 25 € (ticket < 5k), 100 € (5-15k), 200 € (> 15k)
 
 ---
 
@@ -72,10 +70,9 @@ Construction sur-mesure du système de scoring, nurturing et routing pour transf
 - Optimisation continue sur 3 mois
 
 ### Tarification
-- Construction : 1 990 € (scoring, séquences, workflows, ~4 semaines)
-- Optimisation : 490 €/mois pendant 3 mois
-- Prime : 50 à 250 € par RDV généré selon le ticket moyen
-- Le montant de la prime dépend aussi de la présence de lead magnets actifs et d'une stratégie de contenu
+- Construction : 2 490 € (scoring, séquences, workflows, ~4 semaines)
+- Optimisation : 590 €/mois × 3 mois
+- Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k)
 - Après 3 mois : le système tourne en autonomie
 
 ---
@@ -123,51 +120,54 @@ Le journal de bord du setter alimente la base de connaissance. Ce qui fonctionne
 | Délai premier RDV | Semaine 1 |
 
 ### Exemples concrets
-- **Infopreneur** : 3 RDV dès la semaine 1, 2 signés dans le mois
-- **Consultant RH** : 80% de l'agenda rempli en 6 semaines
-- **Consultant stratégie** : Premier RDV jour 4, 4 clients en 3 mois
+- **Consultant stratégie IT** : 12 RDV qualifiés le premier mois, 3 contrats signés
+- **Agence marketing digital** : 4 RDV par semaine en rythme de croisière
+- **Coach business B2B** : 8 RDV le premier mois, 2 contrats signés
 
 ---
 
 ## Blog et ressources
 
 ### Guides piliers
-- Setting commercial B2B : définition, méthode et programme complet — https://setting.live/ressources/setting-commercial-b2b
-- Closing B2B : définition, méthode et programme complet — https://setting.live/ressources/closing-b2b
-- Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS — https://setting.live/ressources/methodes-vente-b2b
+- Setting commercial B2B : définition, méthode et programme complet — https://www.setting.live/ressources/setting-commercial-b2b
+- Closing B2B : définition, méthode et programme complet — https://www.setting.live/ressources/closing-b2b
+- Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS — https://www.setting.live/ressources/methodes-vente-b2b
 
 ### Articles Setting
-- Scripts de setting LinkedIn B2B — https://setting.live/ressources/script-setting-linkedin
-- Relance LinkedIn B2B — https://setting.live/ressources/relance-linkedin-b2b
-- Prospection LinkedIn B2B : méthode complète — https://setting.live/ressources/prospection-linkedin-b2b
-- C'est quoi un setter en B2B ? — https://setting.live/ressources/setter-b2b-definition
-- Comment devenir setter B2B — https://setting.live/ressources/comment-devenir-setter-b2b
-- Coût d'un setter B2B — https://setting.live/ressources/cout-setter-b2b-prix
-- Signaux d'achat LinkedIn — https://setting.live/ressources/signal-achat-linkedin
-- Messages LinkedIn sans réponse — https://setting.live/ressources/messages-linkedin-sans-reponse
-- IA, méthode et humain pour le setting LinkedIn — https://setting.live/ressources/ia-methode-humain-setting-linkedin
+- Scripts de setting LinkedIn B2B — https://www.setting.live/ressources/script-setting-linkedin
+- Relance LinkedIn B2B — https://www.setting.live/ressources/relance-linkedin-b2b
+- Prospection LinkedIn B2B : méthode complète — https://www.setting.live/ressources/prospection-linkedin-b2b
+- C'est quoi un setter en B2B ? — https://www.setting.live/ressources/setter-b2b-definition
+- Comment devenir setter B2B — https://www.setting.live/ressources/comment-devenir-setter-b2b
+- Coût d'un setter B2B — https://www.setting.live/ressources/cout-setter-b2b-prix
+- Signaux d'achat LinkedIn — https://www.setting.live/ressources/signal-achat-linkedin
+- Messages LinkedIn sans réponse — https://www.setting.live/ressources/messages-linkedin-sans-reponse
+- IA, méthode et humain pour le setting LinkedIn — https://www.setting.live/ressources/ia-methode-humain-setting-linkedin
+- Setting humain vs automatisation LinkedIn — https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin
+- SDR interne vs externalisé — https://www.setting.live/ressources/sdr-interne-vs-externalise
 
 ### Articles Closing
-- Discovery call B2B — https://setting.live/ressources/discovery-call-b2b
-- Gestion des objections B2B — https://setting.live/ressources/gestion-objections-b2b
-- Scripts de closing B2B — https://setting.live/ressources/script-closing-b2b
-- Challenger Sale : définition et méthode — https://setting.live/ressources/challenger-sale-definition
-- Closer B2B : définition et compétences — https://setting.live/ressources/closer-b2b
+- Discovery call B2B — https://www.setting.live/ressources/discovery-call-b2b
+- Gestion des objections B2B — https://www.setting.live/ressources/gestion-objections-b2b
+- Scripts de closing B2B — https://www.setting.live/ressources/script-closing-b2b
+- Challenger Sale : définition et méthode — https://www.setting.live/ressources/challenger-sale-definition
+- Closer B2B : définition et compétences — https://www.setting.live/ressources/closer-b2b
 
 ### Articles Méthode
-- Qualifier un lead en B2B — https://setting.live/ressources/qualification-leads-b2b
-- Méthode SONCAS en B2B — https://setting.live/ressources/methode-soncas
-- SPIN Selling en B2B — https://setting.live/ressources/methode-spin-selling
-- Différence entre setting et closing — https://setting.live/ressources/difference-setting-closing
+- Qualifier un lead en B2B — https://www.setting.live/ressources/qualification-leads-b2b
+- Méthode SONCAS en B2B — https://www.setting.live/ressources/methode-soncas
+- SPIN Selling en B2B — https://www.setting.live/ressources/methode-spin-selling
+- Différence entre setting et closing — https://www.setting.live/ressources/difference-setting-closing
+- Devenir business developer — https://www.setting.live/ressources/devenir-business-developer
 
 ### Glossaire
-18 termes définis : https://setting.live/glossaire
+18 termes définis : https://www.setting.live/glossaire
 
 ---
 
 ## Contact
 
-- Site : https://setting.live
+- Site : https://www.setting.live
 - Email : contact@setting.live
 - LinkedIn : https://www.linkedin.com/company/challengerslab
-- Réserver un appel : https://setting.live/#contact
+- Réserver un appel : https://www.setting.live/#contact

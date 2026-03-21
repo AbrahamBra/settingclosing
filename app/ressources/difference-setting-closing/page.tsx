@@ -42,6 +42,7 @@ const articleSchema = {
     '@type': 'Organization',
     name: 'Setting',
     url: 'https://www.setting.live',
+    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
@@ -364,7 +365,7 @@ export default function DifferenceSettingClosingPage() {
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
                   Setting externalisé
                 </p>
-                <p className="font-serif text-h3 text-text-primary mb-1">500 €<span className="font-sans text-text-secondary text-base font-normal">/mois</span></p>
+                <p className="font-serif text-h3 text-text-primary mb-1">790 €<span className="font-sans text-text-secondary text-base font-normal">/mois</span></p>
                 <p className="font-sans text-text-secondary text-sm">Fixe + prime à la performance par RDV livré. Garantie minimum 5 RDV qualifiés.</p>
               </div>
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">

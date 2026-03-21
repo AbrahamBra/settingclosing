@@ -80,20 +80,20 @@ const members = [
   {
     name: 'Brahim',
     role: 'Setting',
-    desc: 'C\u2019est lui qui envoie les messages, qualifie les prospects et vous décroche des RDV.',
-    bio: 'Plusieurs années à gérer des séquences d\u2019outreach LinkedIn sur des marchés B2B variés. Il sait lire une conversation et savoir si le prospect est chaud ou pas.',
+    desc: 'Il envoie les messages, qualifie les prospects et vous décroche des RDV. 400+ RDV qualifiés livrés.',
+    bio: 'Spécialisé en outreach LinkedIn B2B depuis 3 ans. Il a géré des campagnes pour des consultants IT, agences marketing, coaches et SaaS. Il sait lire une conversation et détecter quand un prospect est prêt à avancer.',
   },
   {
     name: 'Abraham',
     role: 'IA & Automatisation',
-    desc: 'Il construit les outils de ciblage et les automatisations qui font gagner du temps au reste de l\u2019équipe.',
-    bio: 'Développeur et passionné d\u2019automatisation. Il transforme les tâches répétitives en systèmes qui tournent seuls, pour que Brahim passe son temps sur ce qui compte.',
+    desc: 'Il construit les outils de ciblage IA et les automatisations qui réduisent les coûts de 60\u00a0% vs une agence classique.',
+    bio: 'Développeur spécialisé en automatisation et IA appliquée au sales. Il a construit le système de détection de signaux d\u2019achat qui permet de cibler les décideurs au bon moment, et les workflows qui font tourner le pipeline sans intervention manuelle.',
   },
   {
     name: 'Abdelhay',
     role: 'Stratégie commerciale',
-    desc: 'Il définit l\u2019angle commercial, les scripts et la stratégie de conversion.',
-    bio: 'Expérience en closing et en copywriting B2B. Il conçoit les messages qui déclenchent des réponses, et affine les scripts chaque semaine en fonction des résultats.',
+    desc: 'Il définit l\u2019angle commercial, les scripts et la stratégie de conversion. Taux de réponse moyen : 20-35\u00a0%.',
+    bio: 'Expérience en closing B2B et copywriting commercial. Il conçoit les séquences de messages qui déclenchent des réponses, et affine les scripts chaque semaine en fonction des données terrain. Approche Challenger Sale.',
   },
 ]
 
