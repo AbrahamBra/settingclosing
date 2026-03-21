@@ -96,7 +96,7 @@ export const offers: Offer[] = [
       subscription: { amount: 990, period: '/ mois \u00d7 3', detail: '4 contenus segment\u00e9s toutes les 2 semaines. Autonomie ou poursuite apr\u00e8s M3.' },
       bonus: 'Prime par RDV\u00a0: 50\u00a0\u20ac (ticket\u00a0<\u00a05k), 150\u00a0\u20ac (5\u201315k), 250\u00a0\u20ac (>\u00a015k)',
     },
-    guarantee: 'Garantie proportionnelle \u00e0 la base\u00a0: 3 RDV (1-3k contacts), 5 RDV (3-7k), 10 RDV (7k+) en 3 mois \u2014 sinon M4 offert.',
+    guarantee: 'Minimum 10 RDV qualifi\u00e9s en 3 mois, sinon M4 offert.',
     noCommitment: false,
     cta: { label: 'Lancer ma newsletter\u00a0\u2192', href: '#contact' },
   },
