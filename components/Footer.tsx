@@ -4,7 +4,7 @@ export function Footer() {
       <div className="container-max px-6 md:px-12 lg:px-20 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="font-sans font-extrabold text-xl text-text-primary mb-2">ChallengersLab</p>
+            <p className="font-sans font-extrabold text-xl text-text-primary mb-2">Setting</p>
             <p className="font-sans text-text-muted text-sm max-w-xs">
               Ce qui fonctionne en B2B, appliqué à votre activité.
             </p>
@@ -50,7 +50,7 @@ export function Footer() {
         </div>
         <div className="border-t border-white/[0.06] mt-8 pt-8">
           <p className="font-sans text-text-muted text-xs">
-            © {new Date().getFullYear()} ChallengersLab. Tous droits réservés.
+            © {new Date().getFullYear()} Setting. Tous droits réservés.
           </p>
         </div>
       </div>

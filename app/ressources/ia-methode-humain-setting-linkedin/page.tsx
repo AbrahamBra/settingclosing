@@ -42,6 +42,7 @@ const articleSchema = {
     '@type': 'Organization',
     name: 'Setting',
     url: 'https://www.setting.live',
+    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-17',
   dateModified: '2026-03-19',

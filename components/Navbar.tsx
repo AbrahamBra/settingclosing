@@ -46,7 +46,7 @@ export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' 
         className={`fixed top-0 left-0 right-0 flex items-center justify-between px-6 md:px-12 h-16 transition-all duration-300 ${bgClasses}`}
       >
         <a href="/" className="font-sans font-extrabold text-xl text-text-primary">
-          ChallengersLab
+          Setting
         </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
