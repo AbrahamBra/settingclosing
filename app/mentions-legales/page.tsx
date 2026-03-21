@@ -53,7 +53,7 @@ export default function MentionsLegalesPage() {
                 <li><strong>Raison sociale :</strong> Setting</li>
                 <li><strong>Forme juridique :</strong> Micro-entreprise</li>
                 <li><strong>Responsable de la publication :</strong> Abraham</li>
-                <li><strong>Email :</strong> contact@setting.live</li>
+                <li><strong>Email :</strong> a.brakha@challengerslab.com</li>
                 <li><strong>Adresse :</strong> France</li>
               </ul>
             </section>

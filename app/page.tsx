@@ -65,13 +65,17 @@ const globalSchema = {
       ],
       contactPoint: {
         '@type': 'ContactPoint',
-        email: 'contact@setting.live',
+        email: 'a.brakha@challengerslab.com',
         contactType: 'sales',
         availableLanguage: 'French',
       },
       areaServed: {
         '@type': 'Country',
         name: 'France',
+      },
+      speakable: {
+        '@type': 'SpeakableSpecification',
+        cssSelector: ['h1', '.hero-description', '.faq-answer'],
       },
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
@@ -91,11 +95,11 @@ const globalSchema = {
           {
             '@type': 'Offer',
             name: 'Setting LinkedIn — Abonnement',
-            description: 'Pipeline LinkedIn clé en main : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés.',
+            description: 'Pipeline LinkedIn clé en main : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
             url: 'https://www.setting.live/methode/setting-linkedin',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 500,
+              price: 790,
               priceCurrency: 'EUR',
               unitText: 'MONTH',
               valueAddedTaxIncluded: false,
@@ -103,28 +107,51 @@ const globalSchema = {
           },
           {
             '@type': 'Offer',
-            name: 'Setting téléphonique — Qualification de leads',
-            description: 'Qualification téléphonique de vos leads entrants : chaque lead est appelé, scoré et routé.',
+            name: 'Setting téléphonique — Setup',
+            description: 'Script, formation, configuration CRM et routing pour la qualification téléphonique.',
             url: 'https://www.setting.live/methode/setting-telephonique',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 500,
+              price: 490,
               priceCurrency: 'EUR',
-              unitText: 'HOUR',
+              valueAddedTaxIncluded: false,
+            },
+          },
+          {
+            '@type': 'Offer',
+            name: 'Setting téléphonique — Journée',
+            description: 'Qualification téléphonique des leads entrants : chaque lead est appelé, scoré et routé. Facturé au réel par demi-journée consacrée. Prime par RDV : 25 € (< 5k €), 100 € (5-15k €), 200 € (> 15k €).',
+            url: 'https://www.setting.live/methode/setting-telephonique',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 350,
+              priceCurrency: 'EUR',
+              unitText: 'DAY',
               valueAddedTaxIncluded: false,
             },
           },
           {
             '@type': 'Offer',
             name: 'Setup Nurturing',
-            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing.',
+            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing. ~4 semaines. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
             url: 'https://www.setting.live/methode/nurturing',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              price: 1990,
-              priceCurrency: 'EUR',
-              valueAddedTaxIncluded: false,
-            },
+            priceSpecification: [
+              {
+                '@type': 'PriceSpecification',
+                price: 2490,
+                priceCurrency: 'EUR',
+                valueAddedTaxIncluded: false,
+                description: 'Construction du système',
+              },
+              {
+                '@type': 'PriceSpecification',
+                price: 590,
+                priceCurrency: 'EUR',
+                unitText: 'MONTH',
+                valueAddedTaxIncluded: false,
+                description: '3 mois d\'optimisation',
+              },
+            ],
           },
         ],
       },
@@ -142,7 +169,7 @@ const homeFaqSchema = {
       name: 'Combien coûte le setting commercial externalisé ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '490 € de setup, puis 790 €/mois — même tarif sur les 3 premiers mois. Prime par RDV selon votre ticket moyen : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €). Sans engagement.',
+        text: '3 offres selon votre situation. Setting LinkedIn : 490 € de setup + 790 €/mois (même tarif sur les 3 premiers mois). Setting téléphonique : 490 € de setup + 350 €/jour (facturé au réel). Setup Nurturing : 2 490 € + 590 €/mois × 3. Prime par RDV sur chaque offre. Sans engagement.',
       },
     },
     {

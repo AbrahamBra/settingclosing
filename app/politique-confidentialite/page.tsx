@@ -51,7 +51,7 @@ export default function PolitiqueConfidentialitePage() {
                 setting.live est Setting, représenté par Abraham.
               </p>
               <p className="text-text-muted mt-2">
-                Contact : <a href="mailto:contact@setting.live" className="text-accent hover:underline">contact@setting.live</a>
+                Contact : <a href="mailto:a.brakha@challengerslab.com" className="text-accent hover:underline">a.brakha@challengerslab.com</a>
               </p>
             </section>
 
@@ -137,8 +137,8 @@ export default function PolitiqueConfidentialitePage() {
               </ul>
               <p className="text-text-muted mt-3">
                 Pour exercer ces droits, contactez-nous à{' '}
-                <a href="mailto:contact@setting.live" className="text-accent hover:underline">
-                  contact@setting.live
+                <a href="mailto:a.brakha@challengerslab.com" className="text-accent hover:underline">
+                  a.brakha@challengerslab.com
                 </a>.
                 Nous nous engageons à répondre dans un délai de 30 jours.
               </p>
