@@ -110,13 +110,33 @@ const linkedinConfig: SimulatorConfig = {
 const telephoneConfig: SimulatorConfig = {
   offerId: 'setting-telephonique',
   color: '#FBBF24',
+  presets: [
+    {
+      id: 'optin',
+      label: 'Opt-in qualifié',
+      note: 'Ils veulent être rappelés. Entre 20 et 40\u00a0% de closing vers RDV.',
+      values: { tauxRDV: 35, tauxClosing: 30 },
+    },
+    {
+      id: 'contenu',
+      label: 'Contenu',
+      note: 'Téléchargement, webinar, engagement. Le taux dépend de la qualité de la base.',
+      values: { tauxRDV: 15, tauxClosing: 15 },
+    },
+    {
+      id: 'concours',
+      label: 'Jeu concours',
+      note: 'Volume élevé, intention faible. Beaucoup de tri, peu de RDV.',
+      values: { tauxRDV: 5, tauxClosing: 8 },
+    },
+  ],
   inputs: [
     {
       id: 'leadsParMois',
       label: 'Leads entrants / mois',
       min: 10,
-      max: 200,
-      step: 5,
+      max: 500,
+      step: 10,
       default: 50,
       formatValue: (v) => `${v}`,
     },
@@ -136,7 +156,7 @@ const telephoneConfig: SimulatorConfig = {
       min: 5,
       max: 60,
       step: 5,
-      default: 20,
+      default: 15,
       unit: '%',
       formatValue: (v) => `${v}\u00a0%`,
     },
@@ -146,14 +166,13 @@ const telephoneConfig: SimulatorConfig = {
       min: 5,
       max: 50,
       step: 5,
-      default: 20,
+      default: 15,
       unit: '%',
       formatValue: (v) => `${v}\u00a0%`,
     },
   ],
   hypotheses: [
     '10 min max par lead au téléphone',
-    'Taux ajustables selon la qualité de vos leads',
     'Facturation par demi-journée (TJM 350\u00a0€)',
   ],
   conversionStat: 'Les taux varient selon la source : opt-in qualifié > contenu > jeu concours',
@@ -193,26 +212,6 @@ const telephoneConfig: SimulatorConfig = {
 const newsletterConfig: SimulatorConfig = {
   offerId: 'setting-newsletter',
   color: '#C87533',
-  presets: [
-    {
-      id: 'optin',
-      label: 'Opt-in qualifié',
-      note: 'Ils veulent être rappelés. On vous envoie que les RDV chauds.',
-      values: { tauxConversion: 30 },
-    },
-    {
-      id: 'contenu',
-      label: 'Contenu',
-      note: "L'IA analyse l'engagement. Le taux dépend de la qualité de votre base.",
-      values: { tauxConversion: 8 },
-    },
-    {
-      id: 'concours',
-      label: 'Jeu concours',
-      note: 'Volume élevé, intention faible. Le scoring filtre, ça prend du temps.',
-      values: { tauxConversion: 2 },
-    },
-  ],
   inputs: [
     {
       id: 'tailleBase',
@@ -222,16 +221,6 @@ const newsletterConfig: SimulatorConfig = {
       step: 500,
       default: 3000,
       formatValue: (v) => v.toLocaleString('fr-FR'),
-    },
-    {
-      id: 'tauxConversion',
-      label: 'Taux conversion → RDV',
-      min: 1,
-      max: 40,
-      step: 1,
-      default: 8,
-      unit: '%',
-      formatValue: (v) => `${v}\u00a0%`,
     },
     {
       id: 'ticketMoyen',
@@ -245,33 +234,33 @@ const newsletterConfig: SimulatorConfig = {
     },
   ],
   hypotheses: [
-    'Taux de closing post-RDV estimé à 30\u00a0%',
+    'Funnels par thématique et maturité, construits sur mesure',
     'Tarification sur devis selon la taille de base',
   ],
-  conversionStat: 'Le taux varie selon la source : opt-in qualifié > contenu > jeu concours',
+  conversionStat: 'On construit des funnels par thématique et maturité, adaptés à votre base',
   setupAmount: 2490,
   hideSetup: true,
   compute(values) {
-    const tauxConv = values.tauxConversion / 100
-    const tauxClosingPostRDV = 0.30
-    const rdvSur3Mois = Math.round(values.tailleBase * tauxConv)
-    const rdvParMois = rdvSur3Mois / 3
-    const clientsParMois = rdvParMois * tauxClosingPostRDV
-    const revenuMensuel = clientsParMois * values.ticketMoyen
-
     // Garantie dynamique selon la taille de base
     const base = values.tailleBase
-    const garantie = base < 3000 ? '3 RDV garantis' : base < 7000 ? '5 RDV garantis' : '10 RDV garantis'
+    const garantie = base < 3000
+      ? { rdv: 3, label: '3 RDV garantis' }
+      : base < 7000
+        ? { rdv: 5, label: '5 RDV garantis' }
+        : { rdv: 10, label: '10 RDV garantis' }
+
+    const tauxClosingPostRDV = 0.30
+    const clientsSur3Mois = garantie.rdv * tauxClosingPostRDV
+    const revenuSur3Mois = clientsSur3Mois * values.ticketMoyen
 
     return {
       items: [
-        { label: 'RDV qualifiés / 3 mois', value: `${rdvSur3Mois}` },
-        { label: 'Soit par mois', value: rdvParMois.toFixed(1) },
-        { label: 'Clients signés / mois (30\u00a0%)', value: clientsParMois.toFixed(1) },
-        { label: 'Revenu potentiel / mois', value: formatEur(revenuMensuel), highlight: true },
+        { label: 'RDV garantis / 3 mois', value: `${garantie.rdv} minimum` },
+        { label: 'Clients potentiels (30\u00a0%)', value: clientsSur3Mois.toFixed(1) },
+        { label: 'Revenu potentiel / 3 mois', value: formatEur(revenuSur3Mois), highlight: true },
       ],
       roi: 0,
-      roiLabel: garantie + ' en 3 mois, sinon M4 offert',
+      roiLabel: garantie.label + ' en 3 mois, sinon M4 offert',
     }
   },
 }
