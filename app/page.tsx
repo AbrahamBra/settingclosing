@@ -132,24 +132,24 @@ const globalSchema = {
           },
           {
             '@type': 'Offer',
-            name: 'Setup Nurturing',
-            description: 'Construction sur-mesure du workflow de scoring, nurturing et routing. ~4 semaines. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
-            url: 'https://www.setting.live/methode/nurturing',
+            name: 'Setting Newsletter',
+            description: 'Newsletter thought leadership opérée par IA — 4 contenus segmentés par maturité, scoring comportemental, routing automatique. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
+            url: 'https://www.setting.live/methode/setting-newsletter',
             priceSpecification: [
               {
                 '@type': 'PriceSpecification',
                 price: 2490,
                 priceCurrency: 'EUR',
                 valueAddedTaxIncluded: false,
-                description: 'Construction du système',
+                description: 'Construction : interview voix, Skill IA, scoring, config',
               },
               {
                 '@type': 'PriceSpecification',
-                price: 590,
+                price: 990,
                 priceCurrency: 'EUR',
                 unitText: 'MONTH',
                 valueAddedTaxIncluded: false,
-                description: '3 mois d\'optimisation',
+                description: '3 mois d\'opération',
               },
             ],
           },
@@ -169,7 +169,7 @@ const homeFaqSchema = {
       name: 'Combien coûte le setting commercial externalisé ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '3 offres selon votre situation. Setting LinkedIn : 490 € de setup + 790 €/mois (même tarif sur les 3 premiers mois). Setting téléphonique : 490 € de setup + 350 €/jour (facturé au réel). Setup Nurturing : 2 490 € + 590 €/mois × 3. Prime par RDV sur chaque offre. Sans engagement.',
+        text: '3 offres selon votre situation. Setting LinkedIn : 490 € de setup + 790 €/mois (même tarif sur les 3 premiers mois). Setting téléphonique : 490 € de setup + 350 €/jour (facturé au réel). Setting Newsletter : 2 490 € + 990 €/mois × 3. Prime par RDV sur chaque offre.',
       },
     },
     {

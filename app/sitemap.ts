@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: 'https://www.setting.live/methode/nurturing',
+      url: 'https://www.setting.live/methode/setting-newsletter',
       lastModified: new Date('2026-03-20'),
       changeFrequency: 'monthly',
       priority: 0.8,

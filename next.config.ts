@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         destination: '/ressources/setting-commercial-b2b',
         permanent: true,
       },
+      {
+        source: '/methode/nurturing',
+        destination: '/methode/setting-newsletter',
+        permanent: true,
+      },
     ]
   },
   async headers() {

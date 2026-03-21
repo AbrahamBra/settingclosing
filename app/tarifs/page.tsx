@@ -12,7 +12,7 @@ const ROICalculator = dynamic(() => import('@/components/ROICalculator').then(m 
 export const metadata: Metadata = {
   title: 'Tarifs setting commercial externalisé | Setting',
   description:
-    'Prix du setting commercial externalisé : LinkedIn 490 € + 790 €/mois, téléphonique 490 € + 350 €/jour, Nurturing 2 490 € + 590 €/mois ×3. Sans engagement.',
+    'Prix du setting commercial externalisé : LinkedIn 490 € + 790 €/mois, téléphonique 490 € + 350 €/jour, Newsletter 2 490 € + 990 €/mois ×3.',
   alternates: {
     canonical: 'https://www.setting.live/tarifs',
     languages: {
@@ -35,7 +35,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   name: 'Tarifs setting commercial externalisé | Setting',
   description:
-    'Prix du setting commercial externalisé : Setting LinkedIn 490 € + 790 €/mois, Setting téléphonique 490 € + 350 €/jour, Setup Nurturing 2 490 € + 590 €/mois ×3. Garantie 5 RDV minimum.',
+    'Prix du setting commercial externalisé : Setting LinkedIn 490 € + 790 €/mois, Setting téléphonique 490 € + 350 €/jour, Setting Newsletter 2 490 € + 990 €/mois ×3.',
   url: 'https://www.setting.live/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -98,21 +98,21 @@ const webPageSchema = {
       {
         '@type': 'Offer',
         position: 3,
-        name: 'Setup Nurturing',
-        description: 'Faites remonter vos leads chauds et créez des revenus low ticket sur votre base existante. Scoring comportemental, séquences email/LinkedIn, workflow automatisé. Prime par RDV généré : 50 € (ticket < 5k €), 150 € (5-15k €), 250 € (> 15k €).',
+        name: 'Setting Newsletter',
+        description: 'Newsletter thought leadership opérée par IA — 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. Prime par RDV : 50 € (ticket < 5k €), 150 € (5-15k €), 250 € (> 15k €).',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
             price: '2490',
             priceCurrency: 'EUR',
-            description: 'Construction du système (~4 semaines)',
+            description: 'Construction : interview voix, Skill IA, scoring, config (~2 semaines)',
           },
           {
             '@type': 'PriceSpecification',
-            price: '590',
+            price: '990',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
-            description: '3 mois d\'optimisation + prime par RDV généré : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €)',
+            description: '3 mois d\'opération + prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €)',
           },
         ],
       },
@@ -150,10 +150,10 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Comment fonctionne le Setup Nurturing ?',
+      name: 'Comment fonctionne le Setting Newsletter ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '2 490 € pour construire le système (scoring, séquences, workflows), puis 590 €/mois pendant 3 mois d\'optimisation. Prime par RDV généré : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €). Après 3 mois, le système tourne en autonomie.',
+        text: '2 490 € pour construire le système (interview voix, Skill IA, scoring, segmentation), puis 990 €/mois pendant 3 mois d\'opération. 4 contenus segmentés toutes les 2 semaines, dans la voix du dirigeant. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €). Garantie proportionnelle à la taille de base.',
       },
     },
     {
@@ -177,7 +177,7 @@ const faqSchema = {
       name: 'Puis-je combiner plusieurs offres ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting téléphonique avec le volume horaire adapté à leur flux, puis activent le Nurturing pour leur base existante. On construit le dispositif adapté à votre situation.",
+        text: "Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting téléphonique avec le volume horaire adapté à leur flux, puis activent le Setting Newsletter pour leur base existante. La newsletter se combine aussi directement avec le Setting téléphonique pour une délégation complète.",
       },
     },
   ],
@@ -230,24 +230,24 @@ const offers = [
     highlight: false,
   },
   {
-    id: 'setup-nurturing',
+    id: 'setting-newsletter',
     color: '#C87533',
     colorRgb: '200,117,51',
-    eyebrow: 'Setup Nurturing',
-    headline: 'Vos leads chauds en priorité. Des revenus sur le reste.',
+    eyebrow: 'Setting Newsletter',
+    headline: 'Votre base transform\u00e9e en pipeline de RDV.',
     pricingPhases: [
-      { label: 'Construction', amount: '2\u00a0490\u00a0\u20ac', suffix: 'one-shot', detail: 'Scoring, s\u00e9quences, workflows. ~4 semaines.' },
-      { label: 'Optimisation', amount: '590\u00a0\u20ac', suffix: '/ mois \u00d7 3', detail: 'Affinage continu, autonomie apr\u00e8s M3' },
+      { label: 'Construction', amount: '2\u00a0490\u00a0\u20ac', suffix: 'one-shot', detail: 'Interview voix, Skill IA, \u00e9dito, scoring, config. ~2\u00a0semaines.' },
+      { label: 'Op\u00e9ration', amount: '990\u00a0\u20ac', suffix: '/ mois \u00d7 3', detail: '4 contenus segment\u00e9s toutes les 2 semaines. Autonomie ou poursuite apr\u00e8s M3.' },
     ],
     bonus: 'Prime par RDV\u00a0: 50\u00a0\u20ac (ticket\u00a0<\u00a05k), 150\u00a0\u20ac (5-15k), 250\u00a0\u20ac (>\u00a015k)',
     features: [
-      'Scoring comportemental de votre base',
-      'S\u00e9quences email/LinkedIn personnalis\u00e9es',
-      'Workflow automatis\u00e9 de routing',
-      'Le syst\u00e8me s\u2019affine sur 3 mois',
+      'Newsletter thought leadership en votre nom',
+      '4 contenus par cycle\u00a0: g\u00e9n\u00e9rale + TOFU + MOFU + BOFU',
+      'Scoring comportemental & routing automatique',
+      'Le dirigeant valide en 10-15\u00a0min par cycle',
     ],
-    guarantee: null,
-    cta: 'Construire mon syst\u00e8me',
+    guarantee: 'Garantie proportionnelle \u00e0 la base\u00a0: 3\u00a0RDV (1-3k), 5\u00a0RDV (3-7k), 10\u00a0RDV (7k+) en 3 mois \u2014 sinon M4 offert.',
+    cta: 'Lancer ma newsletter',
     highlight: false,
   },
 ]
@@ -268,8 +268,8 @@ const faqs = [
     a: '350\u00a0\u20ac/jour, factur\u00e9 au r\u00e9el par demi-journ\u00e9e consacr\u00e9e. Le setup de 490\u00a0\u20ac couvre le script, la formation et la configuration CRM. Prime par RDV qualifi\u00e9\u00a0: 25\u00a0\u20ac (ticket\u00a0<\u00a05k\u00a0\u20ac), 100\u00a0\u20ac (5-15k\u00a0\u20ac), 200\u00a0\u20ac (>\u00a015k\u00a0\u20ac).',
   },
   {
-    q: 'Comment fonctionne le Setup Nurturing\u00a0?',
-    a: '2\u00a0490\u00a0\u20ac pour construire le syst\u00e8me (scoring, s\u00e9quences, workflows), puis 590\u00a0\u20ac/mois pendant 3 mois d\u2019optimisation. Prime par RDV g\u00e9n\u00e9r\u00e9\u00a0: 50\u00a0\u20ac (<\u00a05k\u00a0\u20ac), 150\u00a0\u20ac (5-15k\u00a0\u20ac), 250\u00a0\u20ac (>\u00a015k\u00a0\u20ac). Apr\u00e8s 3 mois, le syst\u00e8me tourne en autonomie.',
+    q: 'Comment fonctionne le Setting Newsletter\u00a0?',
+    a: '2\u00a0490\u00a0\u20ac pour construire le syst\u00e8me (interview voix, Skill IA, scoring, segmentation), puis 990\u00a0\u20ac/mois pendant 3 mois d\u2019op\u00e9ration. 4 contenus segment\u00e9s toutes les 2 semaines, dans la voix du dirigeant. Prime par RDV\u00a0: 50\u00a0\u20ac (<\u00a05k\u00a0\u20ac), 150\u00a0\u20ac (5-15k\u00a0\u20ac), 250\u00a0\u20ac (>\u00a015k\u00a0\u20ac). Garantie proportionnelle \u00e0 la taille de base.',
   },
   {
     q: 'Comment est calcul\u00e9e la prime par RDV\u00a0?',
@@ -281,7 +281,7 @@ const faqs = [
   },
   {
     q: 'Puis-je combiner plusieurs offres\u00a0?',
-    a: 'Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting t\u00e9l\u00e9phonique avec le volume horaire adapt\u00e9 \u00e0 leur flux, puis activent le Nurturing pour leur base existante.',
+    a: 'Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting t\u00e9l\u00e9phonique avec le volume horaire adapt\u00e9 \u00e0 leur flux, puis activent le Setting Newsletter pour leur base existante. La newsletter se combine aussi directement avec le Setting t\u00e9l\u00e9phonique pour une d\u00e9l\u00e9gation compl\u00e8te.',
   },
 ]
 

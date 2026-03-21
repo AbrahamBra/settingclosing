@@ -438,9 +438,9 @@ export default function SettingPillarPage() {
                     border: 'border-blue-400/30',
                   },
                   {
-                    title: 'Setup Nurturing',
-                    desc: "Scoring comportemental, routing automatique des leads chauds et creation de revenus low ticket sur la base existante. Active en phase 2, quand le flux principal est stabilise. Exploite les 97% de contacts qui ne sont pas prets maintenant.",
-                    href: '/methode/nurturing',
+                    title: 'Setting Newsletter',
+                    desc: "Newsletter thought leadership operee par IA — 4 contenus segmentes par maturite toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds vers un appel.",
+                    href: '/methode/setting-newsletter',
                     accent: 'text-emerald-400',
                     border: 'border-emerald-400/30',
                   },
@@ -862,7 +862,7 @@ export default function SettingPillarPage() {
                   {[
                     { href: '/methode/setting-linkedin', label: 'Methode Setting LinkedIn : le pipeline en 9 etapes' },
                     { href: '/methode/setting-telephonique', label: 'Methode Setting telephonique : qualification BANT + Challenger Sale' },
-                    { href: '/methode/nurturing', label: 'Setup Nurturing : scoring et monetisation de la base existante' },
+                    { href: '/methode/setting-newsletter', label: 'Setting Newsletter : newsletter thought leadership et scoring de la base existante' },
                     { href: '/externaliser-prospection-linkedin', label: 'Externaliser sa prospection LinkedIn : pour qui, quand, comment' },
                     { href: '/tarifs', label: 'Tarifs : prix du setting externalise' },
                   ].map(({ href, label }) => (

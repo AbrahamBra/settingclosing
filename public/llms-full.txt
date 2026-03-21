@@ -58,22 +58,37 @@ Qualification téléphonique des leads entrants. Un sales dédié appelle chaque
 
 ---
 
-## Service 3 : Setup Nurturing
+## Service 3 : Setting Newsletter
 
 ### Définition
-Construction sur-mesure du système de scoring, nurturing et routing pour transformer une base de contacts existante en RDV qualifiés.
+Newsletter thought leadership opérée par IA pour le compte du dirigeant. Le système produit 4 contenus segmentés par maturité toutes les 2 semaines, dans la voix du dirigeant. Un scoring comportemental détecte les leads chauds et les route automatiquement vers un appel.
 
 ### Ce qui est inclus
-- Scoring comportemental de votre base
-- Séquences email/LinkedIn personnalisées
-- Workflow automatisé de routing
-- Optimisation continue sur 3 mois
+- Interview voix du dirigeant + Skill IA sur-mesure
+- 4 contenus par cycle : générale + TOFU + MOFU + BOFU
+- Scoring comportemental (démographique 30% + comportemental 70%)
+- Routing automatique des leads chauds vers appel ou setter téléphonique
+- Reporting mensuel : ouvertures, clics, leads générés, RDV bookés
+- Le dirigeant valide en 10-15 min par cycle
 
 ### Tarification
-- Construction : 2 490 € (scoring, séquences, workflows, ~4 semaines)
-- Optimisation : 590 €/mois × 3 mois
+- Construction : 2 490 € (interview voix, Skill IA, ligne éditoriale, scoring, config outil — ~2 semaines)
+- Opération : 990 €/mois × 3 mois minimum
 - Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k)
-- Après 3 mois : le système tourne en autonomie
+- Garantie proportionnelle : 3 RDV (1-3k contacts), 5 RDV (3-7k), 10 RDV (7k+) en 3 mois — sinon M4 offert
+- Après M3 : autonomie avec Skills transférés ou opération continue
+
+### Méthode en 7 étapes
+1. Interview voix & Skill IA sur-mesure
+2. Nettoyage & scoring de la base
+3. Ligne éditoriale & segmentation
+4. Rédaction IA & validation dirigeant
+5. Envoi segmenté & triggers comportementaux
+6. Routing leads chauds & qualification
+7. Optimisation & recalibrage
+
+### Combinaison avec Setting Téléphonique
+Le client qui veut tout déléguer combine Newsletter + Téléphonique : la newsletter détecte les leads chauds, le setter appelle et qualifie, le client ne fait que closer.
 
 ---
 

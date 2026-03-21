@@ -197,9 +197,9 @@ export default function SettingLinkedinMethodePage() {
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting téléphonique</p>
                   <p className="font-sans text-sm text-text-muted">Qualification et routing de vos leads entrants.</p>
                 </a>
-                <a href="/methode/nurturing" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
-                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setup Nurturing</p>
-                  <p className="font-sans text-sm text-text-muted">Scoring, séquences et routing pour votre base existante.</p>
+                <a href="/methode/setting-newsletter" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
+                  <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting Newsletter</p>
+                  <p className="font-sans text-sm text-text-muted">Newsletter thought leadership segmentée pour votre base existante.</p>
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>

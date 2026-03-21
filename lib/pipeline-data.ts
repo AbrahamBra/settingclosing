@@ -102,8 +102,8 @@ export const settingSteps = [
     num: '09',
     label: 'RDV qualifié',
     layers: ['humain'] as const,
-    desc: "On convertit la conversation en rendez-vous. Pas de pitch — une ouverture. Les leads tièdes qui ne sont pas prêts rentrent en nurturing vers la newsletter.",
-    tools: ['Setter', 'Nurturing'],
+    desc: "On convertit la conversation en rendez-vous. Pas de pitch — une ouverture. Les leads tièdes qui ne sont pas prêts rentrent dans le Setting Newsletter.",
+    tools: ['Setter', 'Setting Newsletter'],
     pedagogy: {
       mistake: "Pousser au rendez-vous dès le deuxième message. \"Seriez-vous disponible pour un call de 15 min ?\" Le prospect n'a encore rien demandé. Ça ressemble à ce que c'est : de la prospection déguisée en conversation.",
       arbitrage: "On convertit la conversation en rendez-vous quand le timing est bon. Pas de pitch, une ouverture. Ce qui compte ensuite, c'est le reporting : quels messages ont décroché des réponses et quels profils ont bloqué. Ce retour recalibre tout le pipe.",
