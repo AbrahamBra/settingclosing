@@ -2,40 +2,17 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal'
 
 const rows: {
   label: string
+  solo: string | boolean
+  outil: string | boolean
   setting: string | boolean
-  agency: string | boolean
-  freelance: string | boolean
 }[] = [
-  {
-    label: 'Coût mensuel',
-    setting: '790\u00a0–\u00a0990\u00a0€/mois',
-    agency: '2\u00a0000\u00a0–\u00a04\u00a0000\u00a0€/mois',
-    freelance: '1\u00a0500\u00a0–\u00a02\u00a0500\u00a0€/mois',
-  },
-  {
-    label: 'Engagement',
-    setting: 'Sans engagement',
-    agency: '3-6 mois minimum',
-    freelance: 'Variable',
-  },
-  {
-    label: 'IA + signaux d\u2019achat',
-    setting: true,
-    agency: false,
-    freelance: false,
-  },
-  {
-    label: 'Prime sur résultat',
-    setting: true,
-    agency: false,
-    freelance: 'Rare',
-  },
-  {
-    label: 'Garantie RDV',
-    setting: true,
-    agency: false,
-    freelance: false,
-  },
+  { label: 'Coût mensuel', solo: '0–80\u00a0€', outil: '100–200\u00a0€', setting: '790\u00a0€' },
+  { label: 'Temps / semaine', solo: '8–10h', outil: '4–6h', setting: '0h' },
+  { label: 'RDV générés', solo: '1–2/sem', outil: '2–3/sem', setting: '3+/sem garanti' },
+  { label: 'Personnalisation', solo: 'Manuelle', outil: 'Templates', setting: 'IA + humain' },
+  { label: 'Signaux d\u2019achat', solo: false, outil: 'Basiques', setting: 'IA temps réel' },
+  { label: 'Garantie RDV', solo: false, outil: false, setting: true },
+  { label: 'Tu fais quoi', solo: 'TOUT', outil: 'Stratégie + suivi', setting: 'Tu closes. C\u2019est tout.' },
 ]
 
 function CellContent({ value }: { value: string | boolean }) {
@@ -65,7 +42,7 @@ export function PricingComparison() {
             COMPARATIF
           </p>
           <h2 className="text-h2 text-text-primary font-extrabold text-center mb-10">
-            Pourquoi Setting coûte 2 à 4× moins cher
+            Pourquoi déléguer ton setting
           </h2>
         </ScrollReveal>
 
@@ -77,7 +54,19 @@ export function PricingComparison() {
                   {/* Empty criteria column header */}
                   <th className="text-left px-4 py-3 min-w-[140px]" />
 
-                  {/* Setting column */}
+                  {/* Toi seul column */}
+                  <th className="px-4 py-3 min-w-[140px] text-text-muted text-sm font-semibold text-center">
+                    Toi seul
+                  </th>
+
+                  {/* Toi + outil column */}
+                  <th className="px-4 py-3 min-w-[140px] text-text-muted text-sm font-semibold text-center">
+                    Toi + outil
+                    <br />
+                    <span className="text-xs font-normal">(Lemlist...)</span>
+                  </th>
+
+                  {/* Toi + SettingClosing column */}
                   <th
                     className="px-4 py-3 min-w-[140px] border-t-2 text-sm font-bold text-center"
                     style={{
@@ -86,17 +75,7 @@ export function PricingComparison() {
                       color: '#C87533',
                     }}
                   >
-                    Setting
-                  </th>
-
-                  {/* Agence classique column */}
-                  <th className="px-4 py-3 min-w-[140px] text-text-muted text-sm font-semibold text-center">
-                    Agence classique
-                  </th>
-
-                  {/* SDR freelance column */}
-                  <th className="px-4 py-3 min-w-[140px] text-text-muted text-sm font-semibold text-center">
-                    SDR freelance
+                    Toi + SettingClosing
                   </th>
                 </tr>
               </thead>
@@ -109,22 +88,22 @@ export function PricingComparison() {
                       {row.label}
                     </td>
 
-                    {/* Setting cell */}
+                    {/* Solo cell */}
+                    <td className="px-4 py-3 min-w-[140px] text-center">
+                      <CellContent value={row.solo} />
+                    </td>
+
+                    {/* Outil cell */}
+                    <td className="px-4 py-3 min-w-[140px] text-center">
+                      <CellContent value={row.outil} />
+                    </td>
+
+                    {/* SettingClosing cell */}
                     <td
                       className="px-4 py-3 min-w-[140px] text-center"
                       style={{ background: 'rgba(200,117,51,0.04)' }}
                     >
                       <CellContent value={row.setting} />
-                    </td>
-
-                    {/* Agency cell */}
-                    <td className="px-4 py-3 min-w-[140px] text-center">
-                      <CellContent value={row.agency} />
-                    </td>
-
-                    {/* Freelance cell */}
-                    <td className="px-4 py-3 min-w-[140px] text-center">
-                      <CellContent value={row.freelance} />
                     </td>
                   </tr>
                 ))}
