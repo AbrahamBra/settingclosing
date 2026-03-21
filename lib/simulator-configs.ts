@@ -83,13 +83,12 @@ const linkedinConfig: SimulatorConfig = {
     'Prime par RDV : 50\u00a0€ (<5k), 150\u00a0€ (5-15k), 250\u00a0€ (>15k)',
   ],
   conversionStat: 'En moyenne : 1 à 4 RDV qualifiés par semaine selon le marché',
-  setupAmount: 490,
+  setupAmount: 0,
   compute(values, includeSetup) {
     const rdvParMois = values.rdvParSemaine * 4
     const prime = values.ticketMoyen < 5000 ? 50 : values.ticketMoyen <= 15000 ? 150 : 250
     const coutMensuel = 790 + prime * rdvParMois
-    const setupAmorti = includeSetup ? Math.round(490 / 3) : 0
-    const coutTotal = coutMensuel + setupAmorti
+    const coutTotal = coutMensuel
     const clientsGagnes = rdvParMois * (values.tauxClosing / 100)
     const revenuMensuel = clientsGagnes * values.ticketMoyen
     const roi = coutTotal > 0 ? revenuMensuel / coutTotal : 0
@@ -101,7 +100,7 @@ const linkedinConfig: SimulatorConfig = {
         { label: 'Revenu potentiel', value: formatEur(revenuMensuel), highlight: true },
       ],
       roi,
-      roiLabel: `Pour 1\u00a0€ investi, vous récupérez ${roi.toFixed(1)}\u00a0€`,
+      roiLabel: `Pour 1\u00a0€ investi, tu récupères ${roi.toFixed(1)}\u00a0€`,
     }
   },
 }
@@ -173,7 +172,7 @@ const telephoneConfig: SimulatorConfig = {
   ],
   hypotheses: [
     '10 min max par lead au téléphone',
-    'Facturation par demi-journée (TJM 350\u00a0€)',
+    'Facturation par demi-journée (175\u00a0€)',
   ],
   conversionStat: 'Les taux varient selon la source : opt-in qualifié > contenu > jeu concours',
   setupAmount: 490,
@@ -181,14 +180,14 @@ const telephoneConfig: SimulatorConfig = {
     const tauxRDV = values.tauxRDV / 100
     const minParLead = 10
     const tauxClosing = values.tauxClosing / 100
-    const TJM = 350
+    const halfDayRate = 175
 
     const rdvParMois = values.leadsParMois * tauxRDV
     const tempsHeures = (values.leadsParMois * minParLead) / 60
     const joursNecessaires = tempsHeures / 7
     const demiJournees = Math.ceil(joursNecessaires * 2)
     const prime = values.ticketMoyen < 5000 ? 25 : values.ticketMoyen <= 15000 ? 100 : 200
-    const coutMensuel = (demiJournees * TJM / 2) + (prime * rdvParMois)
+    const coutMensuel = (demiJournees * halfDayRate) + (prime * rdvParMois)
     const setupAmorti = includeSetup ? Math.round(490 / 3) : 0
     const coutTotal = coutMensuel + setupAmorti
     const clientsGagnes = rdvParMois * tauxClosing
@@ -197,13 +196,13 @@ const telephoneConfig: SimulatorConfig = {
 
     return {
       items: [
-        { label: 'Temps téléphone / mois', value: `${tempsHeures.toFixed(0)}h (${(demiJournees / 2).toFixed(1)}j)` },
+        { label: 'Demi-journées / mois', value: `${demiJournees} (${tempsHeures.toFixed(0)}h)` },
         { label: 'RDV qualifiés générés', value: rdvParMois.toFixed(0) },
         { label: 'Coût mensuel estimé', value: formatEur(coutTotal) },
         { label: 'Revenu potentiel', value: formatEur(revenuMensuel), highlight: true },
       ],
       roi,
-      roiLabel: `Pour 1\u00a0€ investi, vous récupérez ${roi.toFixed(1)}\u00a0€`,
+      roiLabel: `Pour 1\u00a0€ investi, tu récupères ${roi.toFixed(1)}\u00a0€`,
     }
   },
 }
@@ -238,7 +237,7 @@ const newsletterConfig: SimulatorConfig = {
     'Tarification sur devis selon la taille de base',
   ],
   conversionStat: 'On construit des funnels par thématique et maturité, adaptés à votre base',
-  setupAmount: 2490,
+  setupAmount: 830,
   hideSetup: true,
   compute(values) {
     // Garantie dynamique selon la taille de base
@@ -255,8 +254,9 @@ const newsletterConfig: SimulatorConfig = {
 
     return {
       items: [
+        { label: 'Construction (mois 1-3)', value: '830\u00a0€/mo' },
+        { label: 'Abonnement (mois 4+)', value: '990\u00a0€/mo' },
         { label: 'RDV garantis / 3 mois', value: `${garantie.rdv} minimum` },
-        { label: 'Clients potentiels (30\u00a0%)', value: clientsSur3Mois.toFixed(1) },
         { label: 'Revenu potentiel / 3 mois', value: formatEur(revenuSur3Mois), highlight: true },
       ],
       roi: 0,
