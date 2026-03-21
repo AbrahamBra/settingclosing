@@ -222,9 +222,9 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <SocialProof />
         <SituationPicker />
         <TeamBanner />
+        <SocialProof />
         <FAQ />
         <CTAFinale />
       </main>
