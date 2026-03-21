@@ -66,7 +66,10 @@ export function CTAFinale() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+            ...form,
+            _hp: (document.getElementById('_hp_cta') as HTMLInputElement)?.value ?? '',
+          }),
       })
       const json = await res.json()
 
@@ -115,6 +118,10 @@ export function CTAFinale() {
                 </p>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-5" noValidate>
+                  {/* Honeypot anti-bot field */}
+                  <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px' }}>
+                    <input id="_hp_cta" name="_hp" type="text" tabIndex={-1} autoComplete="off" />
+                  </div>
                   <div>
                     <label htmlFor="firstName" className="font-sans text-sm text-text-muted block mb-1.5">
                       Prénom *

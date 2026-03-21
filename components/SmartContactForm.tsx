@@ -84,6 +84,7 @@ export function SmartContactForm() {
           phone: form.phone,
           offre: form.offre,
           message: form.message,
+          _hp: (document.getElementById('_hp') as HTMLInputElement)?.value ?? '',
         }),
       })
       const json = await res.json()
@@ -129,6 +130,10 @@ export function SmartContactForm() {
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-5" noValidate>
+              {/* Honeypot anti-bot field - hidden from real users */}
+              <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', top: '-9999px' }}>
+                <input id="_hp" name="_hp" type="text" tabIndex={-1} autoComplete="off" />
+              </div>
               {/* Row: Prénom + Email side by side on sm+ */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
