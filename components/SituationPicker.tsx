@@ -7,6 +7,8 @@ import { offers } from '@/lib/offers-data'
 import type { Offer } from '@/lib/offers-data'
 import { ButtonGlow } from './ui/ButtonGlow'
 import { ScrollReveal } from './ui/ScrollReveal'
+import { MiniSimulator } from './MiniSimulator'
+import { simulatorConfigs } from '@/lib/simulator-configs'
 
 function OfferPanel({ offer, calendlyUrl }: { offer: Offer; calendlyUrl: string }) {
   const ctaHref = offer.cta.href === '#contact' ? calendlyUrl : offer.cta.href
@@ -45,7 +47,7 @@ function OfferPanel({ offer, calendlyUrl }: { offer: Offer; calendlyUrl: string 
           </Link>
         </div>
 
-        {/* Pricing */}
+        {/* Simulator or fallback */}
         <div
           className="md:col-span-2 rounded-xl border p-5"
           style={{
@@ -53,68 +55,13 @@ function OfferPanel({ offer, calendlyUrl }: { offer: Offer; calendlyUrl: string 
             background: `${offer.color}08`,
           }}
         >
-          {offer.pricing.type === 'fixed' ? (
-            <div className="space-y-3">
-              {offer.pricing.setup && (
-                <div>
-                  <p className="font-sans text-[10px] font-semibold uppercase tracking-widest text-text-muted mb-1">
-                    {offer.pricing.setup.label}
-                  </p>
-                  <div className="flex items-baseline gap-2">
-                    <p className="font-sans text-2xl text-text-primary font-bold">
-                      {offer.pricing.setup.amount.toLocaleString('fr-FR')}&nbsp;&euro;
-                    </p>
-                    <span className="font-sans text-text-muted text-xs">one-shot</span>
-                  </div>
-                  <p className="font-sans text-text-secondary text-[11px] mt-1 leading-relaxed">
-                    {offer.pricing.setup.detail}
-                  </p>
-                </div>
-              )}
-              {offer.pricing.launch && (
-                <div>
-                  <p className="font-sans text-[10px] font-semibold uppercase tracking-widest text-text-muted mb-1">
-                    {offer.pricing.launch.label}
-                  </p>
-                  <div className="flex items-baseline gap-2">
-                    <p className="font-sans text-2xl text-text-primary font-bold">
-                      {offer.pricing.launch.amount.toLocaleString('fr-FR')}&nbsp;&euro;
-                    </p>
-                    <span className="font-sans text-text-muted text-xs">/ mois</span>
-                  </div>
-                  <p className="font-sans text-text-secondary text-[11px] mt-1 leading-relaxed">
-                    {offer.pricing.launch.detail}
-                  </p>
-                </div>
-              )}
-              {offer.pricing.subscription && (
-                <div>
-                  <p className="font-sans text-[10px] font-semibold uppercase tracking-widest text-text-muted mb-1">
-                    Ensuite
-                  </p>
-                  <div className="flex items-baseline gap-2">
-                    <p className="font-sans text-2xl text-text-primary font-bold">
-                      {offer.pricing.subscription.amount.toLocaleString('fr-FR')}&nbsp;&euro;
-                    </p>
-                    <span className="font-sans text-text-muted text-xs">
-                      {offer.pricing.subscription.period}
-                    </span>
-                  </div>
-                  <p className="font-sans text-text-secondary text-[11px] mt-1 leading-relaxed">
-                    {offer.pricing.subscription.detail}
-                  </p>
-                </div>
-              )}
-              {offer.pricing.bonus && (
-                <p className="font-sans text-[11px] font-semibold mt-1" style={{ color: offer.color }}>
-                  {offer.pricing.bonus}
-                </p>
-              )}
-            </div>
+          {simulatorConfigs[offer.id] ? (
+            <MiniSimulator config={simulatorConfigs[offer.id]} />
           ) : (
-            <div>
-              <p className="font-sans text-text-muted text-sm mb-1">{offer.pricing.customLabel}</p>
-              <p className="font-sans text-text-secondary text-xs">{offer.pricing.customDetail}</p>
+            <div className="py-4 text-center">
+              <p className="font-sans text-text-muted text-sm">
+                Offre sur-mesure selon votre base.
+              </p>
             </div>
           )}
 
@@ -171,7 +118,7 @@ export function SituationPicker() {
               Quelle est votre situation&nbsp;?
             </h2>
             <p className="text-sm text-text-secondary leading-relaxed">
-              Cliquez sur votre situation. On vous montre la solution et le prix.
+              Cliquez sur votre situation. Simulez votre retour sur investissement.
             </p>
           </div>
         </ScrollReveal>
