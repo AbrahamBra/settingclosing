@@ -1,9 +1,9 @@
 import { ScrollReveal } from './ui/ScrollReveal'
 
 const stats = [
-  { value: '20+', label: 'entrepreneurs accompagnés' },
-  { value: '400+', label: 'RDV qualifiés livrés' },
-  { value: '<7j', label: 'avant votre premier RDV' },
+  { value: '20+', label: 'solopreneurs accompagnés' },
+  { value: '400+', label: 'RDV qualifiés générés' },
+  { value: '<7j', label: 'avant ton premier RDV' },
 ]
 
 export function SocialProof() {
