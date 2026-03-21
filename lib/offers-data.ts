@@ -71,7 +71,7 @@ export const offers: Offer[] = [
     pricing: {
       type: 'fixed',
       setup: { amount: 490, label: 'Setup', detail: 'Script, formation, configuration CRM et routing.' },
-      subscription: { amount: 690, period: '/ mois', detail: '690\u00a0\u20ac/mois par tranche d\u20191h/jour. 2h/jour = 1\u00a0380\u00a0\u20ac/mois. Ajustable.' },
+      subscription: { amount: 690, period: '/ mois', detail: '690\u00a0\u20ac/mois par demi-journ\u00e9e consacr\u00e9e (2h/jour).' },
       bonus: 'Prime par RDV : 25\u00a0\u20ac (ticket <\u00a05k), 100\u00a0\u20ac (5\u201315k), 200\u00a0\u20ac (>\u00a015k)',
     },
     cta: { label: 'Obtenir un devis \u2192', href: '#contact' },

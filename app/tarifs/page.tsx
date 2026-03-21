@@ -12,7 +12,7 @@ const ROICalculator = dynamic(() => import('@/components/ROICalculator').then(m 
 export const metadata: Metadata = {
   title: 'Tarifs setting commercial externalisé | Setting',
   description:
-    'Prix du setting commercial externalisé : LinkedIn 490 € + 790 €/mois, téléphonique 490 € + 690 €/mois par tranche d\'1h/jour, Nurturing 2 490 € + 590 €/mois ×3. Sans engagement.',
+    'Prix du setting commercial externalisé : LinkedIn 490 € + 790 €/mois, téléphonique 490 € + 690 €/mois (demi-journée), Nurturing 2 490 € + 590 €/mois ×3. Sans engagement.',
   alternates: {
     canonical: 'https://www.setting.live/tarifs',
     languages: {
@@ -35,7 +35,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   name: 'Tarifs setting commercial externalisé | Setting',
   description:
-    'Prix du setting commercial externalisé : Setting LinkedIn 490 € + 790 €/mois, Setting téléphonique 490 € + 690 €/mois par tranche d\'1h/jour, Setup Nurturing 2 490 € + 590 €/mois ×3. Garantie 5 RDV minimum.',
+    'Prix du setting commercial externalisé : Setting LinkedIn 490 € + 790 €/mois, Setting téléphonique 490 € + 690 €/mois (demi-journée), Setup Nurturing 2 490 € + 590 €/mois ×3. Garantie 5 RDV minimum.',
   url: 'https://www.setting.live/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -91,7 +91,7 @@ const webPageSchema = {
             price: '690',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
-            description: '690 €/mois par tranche d\'1h consacrée par jour. 2h/jour = 1 380 €/mois. Prime par RDV : 25 € (< 5k €), 100 € (5-15k €), 200 € (> 15k €).',
+            description: '690 €/mois par demi-journée consacrée (2h/jour). Prime par RDV : 25 € (< 5k €), 100 € (5-15k €), 200 € (> 15k €).',
           },
         ],
       },
@@ -145,7 +145,7 @@ const faqSchema = {
       name: 'Comment fonctionne le tarif du Setting téléphonique ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '690 €/mois par tranche d\'1 heure consacrée par jour. Si vous avez besoin de 2h/jour de qualification, c\'est 1 380 €/mois. Le setup de 490 € couvre le script, la formation et la configuration CRM. Prime par RDV qualifié : 25 € (ticket < 5k €), 100 € (5-15k €), 200 € (> 15k €).',
+        text: '690 €/mois par demi-journée consacrée (2h/jour). Le setup de 490 € couvre le script, la formation et la configuration CRM. Prime par RDV qualifié : 25 € (ticket < 5k €), 100 € (5-15k €), 200 € (> 15k €).',
       },
     },
     {
@@ -216,7 +216,7 @@ const offers = [
     headline: 'Vos leads qualifi\u00e9s par t\u00e9l\u00e9phone',
     pricingPhases: [
       { label: 'Setup', amount: '490\u00a0\u20ac', suffix: 'one-shot', detail: 'Script, formation, config CRM' },
-      { label: 'R\u00e9current', amount: '690\u00a0\u20ac', suffix: '/ mois', detail: 'Par tranche d\u20191h consacr\u00e9e par jour. 2h/jour = 1\u00a0380\u00a0\u20ac/mois.' },
+      { label: 'R\u00e9current', amount: '690\u00a0\u20ac', suffix: '/ mois', detail: 'Par demi-journ\u00e9e consacr\u00e9e (2h/jour).' },
     ],
     bonus: 'Prime par RDV\u00a0: 25\u00a0\u20ac (ticket\u00a0<\u00a05k), 100\u00a0\u20ac (5-15k), 200\u00a0\u20ac (>\u00a015k)',
     features: [
@@ -265,7 +265,7 @@ const faqs = [
   },
   {
     q: 'Comment fonctionne le tarif du Setting t\u00e9l\u00e9phonique\u00a0?',
-    a: '690\u00a0\u20ac/mois par tranche d\u20191 heure consacr\u00e9e par jour. Si vous avez besoin de 2h/jour de qualification, c\u2019est 1\u00a0380\u00a0\u20ac/mois. Le setup de 490\u00a0\u20ac couvre le script, la formation et la configuration CRM. Prime par RDV qualifi\u00e9\u00a0: 25\u00a0\u20ac (ticket\u00a0<\u00a05k\u00a0\u20ac), 100\u00a0\u20ac (5-15k\u00a0\u20ac), 200\u00a0\u20ac (>\u00a015k\u00a0\u20ac).',
+    a: '690\u00a0\u20ac/mois par demi-journ\u00e9e consacr\u00e9e (2h/jour). Le setup de 490\u00a0\u20ac couvre le script, la formation et la configuration CRM. Prime par RDV qualifi\u00e9\u00a0: 25\u00a0\u20ac (ticket\u00a0<\u00a05k\u00a0\u20ac), 100\u00a0\u20ac (5-15k\u00a0\u20ac), 200\u00a0\u20ac (>\u00a015k\u00a0\u20ac).',
   },
   {
     q: 'Comment fonctionne le Setup Nurturing\u00a0?',

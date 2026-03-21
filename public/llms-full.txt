@@ -53,7 +53,7 @@ Qualification téléphonique des leads entrants. Un sales dédié appelle chaque
 
 ### Tarification
 - Setup : 490 € (script, formation, configuration CRM)
-- Récurrent : 690 €/mois par tranche d'1h/jour (2h/jour = 1 380 €/mois, volume ajustable)
+- Récurrent : 690 €/mois par demi-journée consacrée (2h/jour)
 - Prime par RDV : 25 € (ticket < 5k), 100 € (5-15k), 200 € (> 15k)
 
 ---
