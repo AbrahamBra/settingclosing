@@ -48,4 +48,39 @@ describe('POST /api/contact', () => {
     })
     expect(res.status).toBe(422)
   })
+
+  it('includes offre in email subject when provided', async () => {
+    const { Resend } = await import('resend')
+    const mockSend = (new (Resend as any)()).emails.send
+    mockSend.mockClear()
+
+    const res = await callRoute({
+      firstName: 'Marie',
+      email: 'marie@example.com',
+      offre: 'setting-linkedin',
+    })
+    expect(res.status).toBe(200)
+
+    expect(mockSend).toHaveBeenCalledOnce()
+    const callArg = mockSend.mock.calls[0][0]
+    expect(callArg.subject).toContain('Setting LinkedIn')
+    expect(callArg.text).toContain('Offre intéressée : Setting LinkedIn')
+  })
+
+  it('still works without offre field (backward compat)', async () => {
+    const { Resend } = await import('resend')
+    const mockSend = (new (Resend as any)()).emails.send
+    mockSend.mockClear()
+
+    const res = await callRoute({
+      firstName: 'Jean',
+      email: 'jean@example.com',
+    })
+    expect(res.status).toBe(200)
+
+    expect(mockSend).toHaveBeenCalledOnce()
+    const callArg = mockSend.mock.calls[0][0]
+    expect(callArg.subject).toContain('setting')
+    expect(callArg.subject).not.toContain('Setting LinkedIn')
+  })
 })

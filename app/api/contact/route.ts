@@ -6,6 +6,14 @@ interface ContactPayload {
   email: string
   phone?: string
   message?: string
+  offre?: string
+}
+
+const offreLabels: Record<string, string> = {
+  'setting-linkedin': 'Setting LinkedIn',
+  'setting-telephonique': 'Setting téléphonique',
+  'setting-newsletter': 'Setting Newsletter',
+  'bundle': 'Offre combinée',
 }
 
 function isValidEmail(email: string): boolean {
@@ -40,6 +48,7 @@ export async function POST(request: Request) {
   }
 
   const payload = data as ContactPayload
+  const offreLabel = payload.offre ? offreLabels[payload.offre] ?? payload.offre : 'setting'
 
   try {
     const resend = new Resend(process.env.RESEND_API_KEY)
@@ -50,12 +59,12 @@ export async function POST(request: Request) {
         'b.krafat@challengerslab.com',
         'a.bekkali@challengerslab.com',
       ],
-      subject: `Nouvelle demande — setting — ${payload.firstName}`,
+      subject: `Nouvelle demande — ${offreLabel} — ${payload.firstName}`,
       text: [
         `Prénom : ${payload.firstName}`,
         `Email : ${payload.email}`,
         `Téléphone : ${payload.phone ?? 'Non renseigné'}`,
-        `Service : setting`,
+        `Offre intéressée : ${offreLabel}`,
         `Message : ${payload.message ?? 'Aucun message'}`,
       ].join('\n'),
     })
