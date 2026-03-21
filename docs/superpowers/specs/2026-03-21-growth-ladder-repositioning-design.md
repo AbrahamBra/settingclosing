@@ -30,7 +30,8 @@ The real competitor is NOT agencies. It's the solopreneur doing prospection alon
 **New:**
 - Headline: "Tu as une offre qui marche. Il te manque un pipeline."
 - Subheadline: "On genere tes RDV qualifies avec l'IA pour que tu te concentres sur ce que tu fais de mieux : closer."
-- CTA: "Voir comment ca marche" → scroll to growth journey
+- Primary CTA: "Voir comment ca marche" → smooth scroll to `#growth-journey` section
+- Secondary CTA: "Prendre RDV" → Calendly link (keeps current conversion path)
 
 ### 3.2 SituationPicker → GrowthJourney
 
@@ -40,8 +41,12 @@ Replace the current `SituationPicker` (3 parallel situation cards) with a **3-ph
 - **Phase 2 : Qualifier** — "Tu as des leads mais pas le temps de qualifier" → Setting Telephone
 - **Phase 3 : Scaler** — "Tu as une audience, transforme-la en clients" → Setting Newsletter
 
-Each phase is a clickable card linking to the corresponding section on the tarifs page.
-Visual treatment: horizontal steps connected by arrows/lines showing progression.
+Each phase is a clickable card linking to the tarifs page with anchor:
+- Phase 1 → `/tarifs#lancer`
+- Phase 2 → `/tarifs#qualifier`
+- Phase 3 → `/tarifs#scaler`
+
+Visual treatment: horizontal steps connected by arrows/lines on desktop, vertical stack on mobile.
 
 ### 3.3 SocialProof
 
@@ -58,7 +63,7 @@ Unchanged.
 
 ### 3.5 FAQ (Homepage)
 
-Rewritten — see Section 8 below.
+Rewritten — see Section 6 (FAQ) below. Same 7 questions used on both homepage and tarifs page.
 
 ---
 
@@ -92,8 +97,14 @@ PHASE 3: SCALER (standard card)
   Setting Newsletter | 990€/mo | Setup en 3x
   [MiniSimulator] [CTA: Passer a l'echelle]
 
-PACK CROISSANCE (optional bundle at bottom)
+PACK CROISSANCE (bottom section)
+  "LinkedIn + Telephone" or "LinkedIn + Newsletter"
+  -10% sur le total mensuel
+  [CTA: Composer mon pack]
 ```
+
+Each phase card anchor IDs: `id="lancer"`, `id="qualifier"`, `id="scaler"`.
+Phase cards are always fully expanded (no collapse). MiniSimulators open by default on Phase 1, closed (click to expand) on Phases 2 & 3.
 
 ### 4.2 Price Restructure
 
@@ -101,12 +112,44 @@ PACK CROISSANCE (optional bundle at bottom)
 |-------|--------|-------|-----------|
 | LinkedIn setup | 490€ | **Offert** (absorbed into service) | Reduce day-1 friction from 1280€ to 790€ |
 | LinkedIn monthly | 790€/mo | 790€/mo | Unchanged — right price point for target |
-| Telephone | 350€/jour | **175€/demi-journee** | Reframe for occasional use (2-4 half-days/mo) |
+| Telephone | 350€/jour | **175€/demi-journee** | Pure reframe (same daily rate: 175x2=350). Display unit changes, not price |
 | Telephone setup | 490€ | 490€ | Unchanged |
-| Newsletter setup | 2490€ one-shot | **830€/mo x3** (integrated into subscription) | Remove cash-flow barrier for solopreneurs |
+| Newsletter setup | 2490€ one-shot | **830€/mo x3** (setup-only months) | Remove cash-flow barrier for solopreneurs |
 | Newsletter monthly | 990€/mo x3 | 990€/mo (starts month 4) | Clear transition after setup period |
 
+**Newsletter payment flow clarified:**
+- Months 1-3: 830€/mo (setup only — content creation, segmentation, template design)
+- Month 4+: 990€/mo (ongoing subscription — sending, optimization, RDV generation)
+- Total setup cost unchanged (830x3 = 2,490€), just spread over 3 months
+
 **Day-1 cost for LinkedIn:** 1,280€ → **790€** (-38%)
+
+### 4.2b Guarantee Terms
+
+Guarantee language stays aligned with existing offers-data. Do NOT change the actual guarantee numbers:
+- LinkedIn: "Moins de 5 RDV qualifies livres dans le mois" → keep as-is
+- The comparison table uses "3+/sem garanti" as aspirational marketing language, not contractual
+- FAQ uses "garantie RDV" (generic) — no specific number to avoid mismatch
+
+### 4.2c Simulator Formula Updates
+
+**LinkedIn simulator:**
+- Remove setup amortization (setup was 490€ over 3 months, now 0€)
+- `monthlyCost = 790 + bonuses` (no setup component)
+- ROI formula unchanged: `revenue / monthlyCost`
+
+**Telephone simulator:**
+- Display unit changes from "jour" to "demi-journee"
+- `halfDayRate = 175` (displayed), `dailyRate = 350` (internal, unchanged)
+- Input label: "Demi-journees par mois" (range: 1-8, default: 3)
+- `monthlyCost = halfDays * 175 + bonuses`
+
+**Newsletter simulator:**
+- Setup display: "830€/mo pendant 3 mois" instead of "2,490€"
+- Months 1-3: `monthlyCost = 830 + bonuses`
+- Month 4+: `monthlyCost = 990 + bonuses`
+- Show both in simulator with a toggle: "Mois 1-3" / "Mois 4+"
+- ROI guarantee text unchanged
 
 ### 4.3 Comparison Section
 
@@ -176,7 +219,13 @@ The setter is NOT at the end of the pipeline validating. The setter is ABOVE the
 **Base de connaissance:** Feature highlighted in Phase 1 (LinkedIn) card:
 "Base de connaissance dediee — l'IA apprend ton offre, ton marche, ton ton"
 
-### 5.4 Expandable Detail
+### 5.4 Placement
+
+`PipelineVisual` appears in TWO places:
+- **Tarifs page:** Between the GrowthLadder phases and the Comparison section (main placement)
+- **Homepage:** Compact version below the GrowthJourney section, before SocialProof
+
+### 5.5 Expandable Detail
 
 The current 9-step methodology stays accessible via a "En savoir plus" expandable section below the visual pipeline.
 
@@ -187,7 +236,7 @@ The current 9-step methodology stays accessible via a "En savoir plus" expandabl
 7 questions, rewritten:
 
 1. **"790€/mois c'est beaucoup pour un solopreneur, non ?"**
-   → C'est 8-10h/semaine que tu recuperes. Si ton taux horaire depasse 80€, c'est rentable des le premier mois. Et avec la garantie 3 RDV/semaine, le risque est de notre cote.
+   → C'est 8-10h/semaine que tu recuperes. Si ton taux horaire depasse 80€, c'est rentable des le premier mois. Et avec la garantie RDV, le risque est de notre cote.
 
 2. **"Je peux le faire moi-meme avec Lemlist/LaGrowthMachine ?"**
    → Oui, si tu as 5-8h/semaine et l'expertise IA pour personnaliser chaque message. On combine detection de signaux + redaction IA + validation humaine. C'est ca qui fait la difference entre 2% et 8% de taux de reponse.
@@ -245,12 +294,19 @@ Keep existing ProfessionalService + OfferCatalog structure. Update:
 ### Modified Components
 - `PricingComparison` — New columns (Toi seul / Outil / Nous), new content
 - `SocialProof` — "solopreneurs" wording
-- `SmartContactForm` — Updated offer dropdown to match phase names
+- `SmartContactForm` — Dropdown labels updated: "Phase 1 : Setting LinkedIn", "Phase 2 : Setting Telephonique", "Phase 3 : Setting Newsletter", "Pack Croissance"
 - `MiniSimulator` — Updated for new prices (no setup LinkedIn, demi-journee telephone, 3x newsletter)
 
 ### Modified Data
-- `lib/offers-data.ts` — New prices, new situations, phase labels
-- `lib/simulator-configs.ts` — Updated calculations for new pricing
+- `lib/offers-data.ts` — Changes:
+  - Add `phase: 1 | 2 | 3` field to each offer
+  - Add `phaseLabel: string` ("Lancer" | "Qualifier" | "Scaler")
+  - Add `phaseSituation: string` (the buyer's situation text)
+  - LinkedIn: `setup.amount = 0`, `setup.label = "Offert"`
+  - Telephone: `period = "demi-journee"`, display price = 175€, keep internal daily rate 350€
+  - Newsletter: `setup.amount = 830`, `setup.period = "mo"`, `setup.duration = 3`, `setup.label = "830€/mo x3"`
+  - Existing features carry over as-is (no rewrite needed)
+- `lib/simulator-configs.ts` — Updated calculations (see Section 4.2c)
 
 ### Modified Pages
 - `app/page.tsx` — New hero, GrowthJourney instead of SituationPicker, updated FAQ
@@ -267,5 +323,5 @@ Keep existing ProfessionalService + OfferCatalog structure. Update:
 
 - Real testimonials (to be added when available — no placeholders)
 - Visual/graphic design decisions (colors, animations, spacing — deferred to implementation with design skills)
-- Mobile-specific layouts (deferred to implementation, existing responsive patterns apply)
+- Mobile-specific layouts (deferred to implementation — GrowthJourney stacks vertical on mobile, GrowthLadder already vertical, PipelineVisual simplified to linear vertical flow)
 - New pages (no about page changes, no blog, no new routes)
