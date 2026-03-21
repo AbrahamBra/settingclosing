@@ -439,7 +439,7 @@ export default function SettingPillarPage() {
                   },
                   {
                     title: 'Setting Newsletter',
-                    desc: "Newsletter thought leadership operee par IA — 4 contenus segmentes par maturite toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds vers un appel.",
+                    desc: "Newsletter thought leadership operee par IA. 4 contenus segmentes par maturite toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds vers un appel.",
                     href: '/methode/setting-newsletter',
                     accent: 'text-emerald-400',
                     border: 'border-emerald-400/30',

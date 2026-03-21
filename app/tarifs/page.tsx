@@ -99,7 +99,7 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 3,
         name: 'Setting Newsletter',
-        description: 'Newsletter thought leadership opérée par IA — 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. Prime par RDV : 50 € (ticket < 5k €), 150 € (5-15k €), 250 € (> 15k €).',
+        description: 'Newsletter thought leadership opérée par IA. 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. Prime par RDV : 50 € (ticket < 5k €), 150 € (5-15k €), 250 € (> 15k €).',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',

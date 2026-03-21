@@ -8,7 +8,7 @@ import { layerConfig } from '@/lib/pipeline-data'
 import { newsletterSteps } from '@/lib/methode-newsletter-data'
 
 export const metadata: Metadata = {
-  title: 'Setting Newsletter B2B — Contenu expert segmenté & scoring | Setting',
+  title: 'Setting Newsletter B2B : contenu expert segmenté et scoring | Setting',
   description:
     'Newsletter thought leadership opérée par IA : 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. 2 490 € + 990 €/mois.',
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Setting Newsletter B2B — Contenu expert segmenté & scoring | Setting',
+    title: 'Setting Newsletter B2B : contenu expert segmenté et scoring | Setting',
     description:
       'Newsletter thought leadership opérée par IA : interview voix, Skill IA sur-mesure, scoring comportemental et routing automatique des leads chauds vers un appel.',
     locale: 'fr_FR',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Setting Newsletter B2B — Contenu expert segmenté & scoring',
+  name: 'Setting Newsletter B2B : contenu expert segmenté et scoring',
   description:
     'Notre méthode newsletter B2B : interview voix du dirigeant, Skill IA sur-mesure, scoring comportemental et routing automatique des leads chauds.',
   url: 'https://www.setting.live/methode/setting-newsletter',
@@ -56,7 +56,7 @@ const breadcrumbSchema = {
 const howToSchema = {
   '@context': 'https://schema.org',
   '@type': 'HowTo',
-  name: 'Setting Newsletter B2B — 7 étapes',
+  name: 'Setting Newsletter B2B en 7 étapes',
   description:
     'Comment transformer votre base en pipeline de RDV grâce à une newsletter thought leadership opérée par IA.',
   step: newsletterSteps.map((step) => ({
@@ -83,7 +83,7 @@ const faqSchema = {
       name: "Qu'est-ce que l'interview voix ?",
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Une session visio de 1h30 à 2h avec le dirigeant. On extrait sa voix, ses convictions, son vocabulaire et ses exemples. La transcription est transformée en Skill IA qui permet à Claude de rédiger dans la voix exacte du dirigeant — pas un persona inventé, sa vraie façon de parler.",
+        text: "Une session visio de 1h30 à 2h avec le dirigeant. On extrait sa voix, ses convictions, son vocabulaire et ses exemples. La transcription est transformée en Skill IA qui permet à Claude de rédiger dans la voix exacte du dirigeant, pas un persona inventé. Sa vraie façon de parler.",
       },
     },
     {
@@ -99,7 +99,7 @@ const faqSchema = {
       name: 'Comment fonctionne le scoring comportemental ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le score combine deux dimensions : démographique (poste, entreprise, secteur — 30 % du score) et comportemental (ouvertures, clics, visites site — 70 %). Le comportemental pèse plus parce qu\'il mesure ce que les gens font, pas ce qu\'ils sont sur le papier.',
+        text: 'Le score combine deux dimensions : démographique (poste, entreprise, secteur, 30 % du score) et comportemental (ouvertures, clics, visites site, 70 %). Le comportemental pèse plus parce qu\'il mesure ce que les gens font, pas ce qu\'ils sont sur le papier.',
       },
     },
     {

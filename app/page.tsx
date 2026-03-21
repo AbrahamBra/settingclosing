@@ -133,7 +133,7 @@ const globalSchema = {
           {
             '@type': 'Offer',
             name: 'Setting Newsletter',
-            description: 'Newsletter thought leadership opérée par IA — 4 contenus segmentés par maturité, scoring comportemental, routing automatique. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
+            description: 'Newsletter thought leadership opérée par IA. 4 contenus segmentés par maturité, scoring comportemental, routing automatique. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
             url: 'https://www.setting.live/methode/setting-newsletter',
             priceSpecification: [
               {
