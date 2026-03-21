@@ -41,6 +41,15 @@ const linkedinConfig: SimulatorConfig = {
   color: '#A78BFA',
   inputs: [
     {
+      id: 'rdvParSemaine',
+      label: 'RDV qualifiés / semaine',
+      min: 1,
+      max: 4,
+      step: 1,
+      default: 2,
+      formatValue: (v) => `${v}`,
+    },
+    {
       id: 'ticketMoyen',
       label: 'Ticket moyen',
       min: 1000,
@@ -62,13 +71,12 @@ const linkedinConfig: SimulatorConfig = {
     },
   ],
   hypotheses: [
-    '12 RDV qualifiés / mois (≈ 3/semaine)',
     'Prime par RDV : 50\u00a0€ (<5k), 150\u00a0€ (5-15k), 250\u00a0€ (>15k)',
   ],
-  conversionStat: 'En moyenne : 2 à 4 RDV qualifiés par semaine',
+  conversionStat: 'En moyenne : 1 à 4 RDV qualifiés par semaine selon le marché',
   setupAmount: 490,
   compute(values, includeSetup) {
-    const rdvParMois = 12
+    const rdvParMois = values.rdvParSemaine * 4
     const prime = values.ticketMoyen < 5000 ? 50 : values.ticketMoyen <= 15000 ? 150 : 250
     const coutMensuel = 790 + prime * rdvParMois
     const setupAmorti = includeSetup ? Math.round(490 / 3) : 0
@@ -113,19 +121,38 @@ const telephoneConfig: SimulatorConfig = {
       unit: '€',
       formatValue: (v) => formatEur(v),
     },
+    {
+      id: 'tauxRDV',
+      label: 'Taux de prise de RDV',
+      min: 5,
+      max: 60,
+      step: 5,
+      default: 20,
+      unit: '%',
+      formatValue: (v) => `${v}\u00a0%`,
+    },
+    {
+      id: 'tauxClosing',
+      label: 'Taux de closing',
+      min: 5,
+      max: 50,
+      step: 5,
+      default: 20,
+      unit: '%',
+      formatValue: (v) => `${v}\u00a0%`,
+    },
   ],
   hypotheses: [
     '10 min max par lead au téléphone',
-    '30% de prise de RDV',
-    'Taux de closing : 25%',
+    'Taux ajustables selon la qualité de vos leads',
     'Facturation par demi-journée (TJM 350\u00a0€)',
   ],
-  conversionStat: '30% de prise de RDV en moyenne — 10 min par lead max',
+  conversionStat: 'Les taux varient selon la source : opt-in qualifié > contenu > jeu concours',
   setupAmount: 490,
   compute(values, includeSetup) {
-    const tauxRDV = 0.30
+    const tauxRDV = values.tauxRDV / 100
     const minParLead = 10
-    const tauxClosing = 0.25
+    const tauxClosing = values.tauxClosing / 100
     const TJM = 350
 
     const rdvParMois = values.leadsParMois * tauxRDV
