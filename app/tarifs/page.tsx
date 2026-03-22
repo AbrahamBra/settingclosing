@@ -5,7 +5,6 @@ import { Footer } from '@/components/Footer'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { DarkCard } from '@/components/ui/DarkCard'
 import { CombinedSimulator } from '@/components/CombinedSimulator'
-import { PipelineVisual } from '@/components/PipelineVisual'
 import { PricingComparison } from '@/components/PricingComparison'
 import { FAQ } from '@/components/FAQ'
 import { SmartContactForm } from '@/components/SmartContactForm'
@@ -202,13 +201,6 @@ export default function TarifsPage() {
 
         {/* ── Simulateur ROI LinkedIn + Téléphonique ────────────────────── */}
         <CombinedSimulator />
-
-        {/* ── PipelineVisual ───────────────────────────────────────────────── */}
-        <section className="bg-bg-primary section-padding">
-          <div className="container-max max-w-3xl mx-auto">
-            <PipelineVisual />
-          </div>
-        </section>
 
         {/* ── PricingComparison ─────────────────────────────────────────────── */}
         <PricingComparison />
