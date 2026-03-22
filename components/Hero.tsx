@@ -28,7 +28,7 @@ export function Hero() {
           className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-[#D4956A]/20 bg-[#D4956A]/10 font-sans text-xs font-semibold uppercase tracking-widest text-[#D4956A] mb-8"
         >
           <span className="w-1.5 h-1.5 rounded-full bg-[#D4956A] inline-block" />
-          Setting commercial B2B
+          Setting LinkedIn B2B
         </motion.div>
 
         <motion.h1

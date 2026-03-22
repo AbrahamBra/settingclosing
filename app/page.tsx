@@ -13,9 +13,9 @@ import { TeamStrip } from '@/components/TeamStrip'
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
 export const metadata: Metadata = {
-  title: 'SettingClosing — Prospection LinkedIn IA pour solopreneurs',
+  title: 'Setting LinkedIn B2B | Prospection externalisée, RDV qualifiés — Setting.live',
   description:
-    'Externalise ta prospection LinkedIn B2B : setter dédié, ciblage par signaux d\u2019achat IA, RDV qualifiés dès la première semaine. À partir de 790\u00a0€/mois.',
+    'Service de setting LinkedIn pour solopreneurs et fondateurs B2B : setter dédié, ciblage par signaux d\u2019achat IA, RDV qualifiés dès la première semaine. À partir de 790\u00a0€/mois.',
   alternates: {
     canonical: 'https://www.setting.live',
     languages: {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'SettingClosing — Prospection LinkedIn IA pour solopreneurs',
-    description: 'Externalise ta prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
+    title: 'Setting LinkedIn B2B | Prospection externalisée — Setting.live',
+    description: 'Service de setting LinkedIn pour solopreneurs B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: 'https://www.setting.live/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'SettingClosing — Prospection LinkedIn IA pour solopreneurs',
+        alt: 'Setting LinkedIn B2B — Prospection externalisée pour solopreneurs',
       },
     ],
   },
@@ -163,7 +163,7 @@ const homeFaqSchema = {
       name: 'Combien de clients tu prends par mois\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '5 max. Chaque client a un setter dédié — on ne dilue pas la qualité. C\u2019est pour ça qu\u2019on peut garantir les résultats.',
+        text: '5 max. Chaque client a un setter dédié, on ne dilue pas la qualité. C\u2019est pour ça qu\u2019on peut garantir les résultats.',
       },
     },
     {
@@ -211,7 +211,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6"
                 style={{ backgroundColor: 'rgba(167,139,250,0.1)', color: '#A78BFA', border: '1px solid rgba(167,139,250,0.2)' }}
               >
-                Setting LinkedIn &mdash; Notre offre phare
+                Setting LinkedIn · Notre offre phare
               </span>
             </div>
             <PipelineVisual />
@@ -256,7 +256,7 @@ export default function Home() {
               Trop de RDV, pas assez de bras&nbsp;?
             </h2>
             <p className="text-text-secondary text-sm mb-8 max-w-lg mx-auto">
-              Quand le pipeline tourne, c&apos;est la delivery qui bloque. Lib&egrave;re du temps, d&eacute;l&egrave;gue, automatise&nbsp;&mdash; ChallengersLab t&apos;aide &agrave; scaler sans recruter.
+              Quand le pipeline tourne, c&apos;est la delivery qui bloque. Lib&egrave;re du temps, d&eacute;l&egrave;gue, automatise. ChallengersLab t&apos;aide &agrave; scaler sans recruter.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
               <a

@@ -17,11 +17,11 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Setting commercial LinkedIn externalisé | Setting',
-  description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. À partir de 790 €/mois, setup offert.',
+  title: 'Setting LinkedIn B2B | Prospection externalisée, RDV qualifiés — Setting.live',
+  description: 'Service de setting LinkedIn pour solopreneurs et fondateurs B2B : setter dédié, ciblage par signaux d\'achat IA, RDV qualifiés dès la première semaine. À partir de 790 €/mois.',
   openGraph: {
-    title: 'Setting commercial LinkedIn externalisé | Setting',
-    description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
+    title: 'Setting LinkedIn B2B | Prospection externalisée — Setting.live',
+    description: 'Service de setting LinkedIn pour solopreneurs B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: 'https://www.setting.live/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Setting — Setting commercial LinkedIn externalisé',
+        alt: 'Setting LinkedIn B2B — Prospection externalisée pour solopreneurs',
       },
     ],
   },

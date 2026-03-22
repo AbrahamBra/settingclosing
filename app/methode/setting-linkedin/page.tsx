@@ -11,9 +11,9 @@ import { telephoniqueSteps } from '@/lib/methode-telephonique-data'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Notre m\u00e9thode — Prospection LinkedIn + Qualification t\u00e9l\u00e9phonique | Setting',
+  title: 'Setting LinkedIn B2B : notre méthode complète (9 étapes) | Setting',
   description:
-    'De la d\u00e9tection des signaux d\u2019achat au RDV qualifi\u00e9 : 9 \u00e9tapes LinkedIn (IA + validation humaine) + qualification t\u00e9l\u00e9phonique BANT et Challenger Sale.',
+    'Notre méthode de setting LinkedIn en 9 étapes : détection des signaux d\u2019achat, ciblage IA, messages personnalisés + qualification téléphonique BANT. Pipeline B2B complet.',
   alternates: {
     canonical: 'https://www.setting.live/methode/setting-linkedin',
     languages: {
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Notre m\u00e9thode — Prospection LinkedIn + Qualification t\u00e9l\u00e9phonique | Setting',
+    title: 'Setting LinkedIn B2B : notre méthode complète (9 étapes) | Setting',
     description:
-      'Pipeline complet : 9 \u00e9tapes de prospection LinkedIn signal-based + qualification t\u00e9l\u00e9phonique BANT. IA, m\u00e9thode et validation humaine.',
+      'Notre méthode de setting LinkedIn : 9 étapes de prospection signal-based + qualification téléphonique BANT. IA et validation humaine.',
     locale: 'fr_FR',
     type: 'website',
     url: 'https://www.setting.live/methode/setting-linkedin',

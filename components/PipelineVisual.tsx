@@ -68,7 +68,7 @@ export function PipelineVisual({ compact = false, variant = 'full' }: PipelineVi
   if (variant === 'homepage') {
     const steps = [
       { icon: '🎯', title: 'On cible', desc: 'Ton setter identifie tes prospects idéaux grâce aux signaux d\u2019achat' },
-      { icon: '✍️', title: 'On contacte', desc: 'Messages perso, adaptés à chaque prospect — rien ne part sans validation' },
+      { icon: '✍️', title: 'On contacte', desc: 'Messages perso, adaptés à chaque prospect. Rien ne part sans validation.' },
       { icon: '✅', title: 'On qualifie', desc: 'Les intéressés sont qualifiés et tu reçois un RDV prêt à closer' },
     ]
 
@@ -144,7 +144,7 @@ export function PipelineVisual({ compact = false, variant = 'full' }: PipelineVi
               Ton setter pilote tout
             </p>
             <p className="text-text-muted text-xs mb-3">
-              Il s&rsquo;appuie sur ta base de connaissance — enrichie chaque semaine
+              Il s&rsquo;appuie sur ta base de connaissance, enrichie chaque semaine
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {SETTER_TAGS.map((tag) => (
@@ -322,7 +322,7 @@ export function PipelineVisual({ compact = false, variant = 'full' }: PipelineVi
                     Concretement : on construit des listes avec Sales Navigator qui ciblent exactement ton client idéal. En parallèle, on surveille qui interagit avec tes concurrents pour capter les prospects déjà en réflexion.
                   </p>
                   <p className="mb-3">
-                    Cote inbound, chaque lead qui arrive — que ce soit un DM, un commentaire ou un formulaire — est qualifie par ton setter. Selon le canal, c&rsquo;est fait en DM LinkedIn ou par telephone.
+                    Cote inbound, chaque lead qui arrive (DM, commentaire ou formulaire) est qualifie par ton setter. Selon le canal, c&rsquo;est fait en DM LinkedIn ou par telephone.
                   </p>
                   <p>
                     Et chaque semaine, on ajuste : quels angles marchent, quels profils repondent, quels messages convertissent. C&rsquo;est ca qui fait que mois 3 n&rsquo;a rien a voir avec mois 1.
