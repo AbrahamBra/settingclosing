@@ -28,7 +28,7 @@ const OUTBOUND_STEPS = [
 ]
 
 /* ── Inbound steps ──────────────────────────────────── */
-const INBOUND_SOURCES = ['DMs', 'Commentaires', 'Lead magnets', 'Formulaires']
+const INBOUND_SOURCES = ['DMs', 'Commentaires', 'Lead magnets', 'Formulaires', 'Nurturing']
 const INBOUND_QUALIF = [
   { title: 'Qualification LinkedIn', subtitle: 'Ton setter répond en DM' },
   { title: 'Qualification téléphonique', subtitle: 'On appelle directement le lead' },
