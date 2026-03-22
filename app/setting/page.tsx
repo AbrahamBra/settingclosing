@@ -912,7 +912,7 @@ export default function SettingPillarPage() {
               On construit le systeme complet : strategie, ciblage, skill maison,
               setter dedie, coaching closing. Premiers RDV qualifies des la semaine 1.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Reserver un appel gratuit &rarr;
             </ButtonGlow>
           </div>

@@ -329,7 +329,7 @@ export default function GlossairePage() {
               en B2B. Setter dédié, méthode signal-based, RDV qualifiés dès la première semaine.
             </p>
             <a
-              href="/#contact"
+              href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer"
               className="inline-block font-sans text-sm font-medium text-bg-primary bg-accent hover:bg-accent/90 transition-colors px-6 py-3 rounded-xl"
             >
               Voir comment ça marche →

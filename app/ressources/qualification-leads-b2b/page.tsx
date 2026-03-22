@@ -454,7 +454,7 @@ export default function QualificationLeadsB2BPage() {
               Un appel de 30 minutes pour comprendre comment vous qualifiez aujourd&apos;hui, identifier
               ce qui se perd dans le pipeline et ce qu&apos;un setter dédié changerait. Gratuit. Sans engagement.
             </p>
-            <ButtonGlow as="a" href="/#contact">Réserver un appel gratuit →</ButtonGlow>
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">Réserver un appel gratuit →</ButtonGlow>
           </div>
 
           <div className="mt-8 text-center">

@@ -526,7 +526,7 @@ export default function SdrInterneVsExternalisePage() {
               Programme de <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> LinkedIn externalisé. Opérationnel en 2 semaines.
               Garantie 5 RDV qualifiés minimum par mois. Résiliation libre sans préavis.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Voir le programme et les tarifs →
             </ButtonGlow>
           </div>

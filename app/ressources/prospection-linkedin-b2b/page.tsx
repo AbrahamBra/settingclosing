@@ -744,7 +744,7 @@ export default function ProspectionLinkedInB2BPage() {
               Signaux détectés, messages rédigés et validés, RDV livrés dans votre agenda.
               Garantie 5 RDV qualifiés minimum par mois. On démarre en 2 semaines.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Déléguer ma prospection →
             </ButtonGlow>
           </div>

@@ -676,7 +676,7 @@ export default function Page() {
             <p className="font-sans text-text-secondary text-sm mb-6">
               On calibre, on construit la base de connaissance, on lance. Premiers RDV dès la première semaine.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>

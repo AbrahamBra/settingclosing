@@ -181,7 +181,7 @@ function PackCroissance() {
           <p className="text-text-primary text-sm font-medium">LinkedIn + Newsletter</p>
         </div>
       </div>
-      <ButtonGlow href="#contact?offre=pack-croissance">Composer mon pack →</ButtonGlow>
+      <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">Composer mon pack →</ButtonGlow>
     </div>
   )
 }

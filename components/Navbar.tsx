@@ -8,7 +8,7 @@ export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' 
   const [scrolled, setScrolled] = useState(false)
   const [drawerOpen, setDrawerOpen] = useState(false)
   const pathname = usePathname()
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '/#contact'
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab'
 
   useEffect(() => {
     const threshold = variant === 'default' ? 80 : 20

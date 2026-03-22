@@ -638,7 +638,7 @@ export default function MessagesLinkedInSansReponsePage() {
               Setting construit et opère le système complet : signaux, rédaction assistée par IA,
               relances calibrées. Vous recevez les RDV. Garantie 5 minimum par mois.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Déléguer mon setting →
             </ButtonGlow>
           </div>

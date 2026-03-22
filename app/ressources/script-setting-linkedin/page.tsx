@@ -776,7 +776,7 @@ export default function ScriptSettingLinkedinPage() {
               ces scripts, adaptés à votre offre et à votre ICP.
               Garantie 5 RDV qualifiés minimum par mois.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Déléguer mon setting →
             </ButtonGlow>
           </div>

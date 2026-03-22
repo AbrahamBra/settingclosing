@@ -6,7 +6,7 @@ import { ButtonGlow } from './ui/ButtonGlow'
 const personas = ['solopreneurs', 'fondateurs', 'indépendants B2B']
 
 export function Hero() {
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '#contact'
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab'
 
   return (
     <section className="relative overflow-hidden section-padding pt-32 lg:pt-40 flex flex-col items-center text-center">

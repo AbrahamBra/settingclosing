@@ -631,7 +631,7 @@ export default function RelanceLinkedInB2BPage() {
               Setting opère le système complet : premier message, relances calibrées, gestion du pipeline.
               Vous vous concentrez sur les RDV qualifiés. Garantie 5 minimum par mois.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Déléguer mon setting →
             </ButtonGlow>
           </div>

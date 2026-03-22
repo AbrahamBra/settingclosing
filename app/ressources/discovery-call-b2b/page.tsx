@@ -439,7 +439,7 @@ export default function DiscoveryCallPage() {
               Un appel de 30 minutes pour regarder comment vous conduisez vos discoveries actuellement
               et identifier ce qui changerait votre taux de closing. Gratuit. Sans engagement.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>

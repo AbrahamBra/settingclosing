@@ -128,7 +128,7 @@ const breadcrumbSchema = {
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function ExternaliserProspectionLinkedinPage() {
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '/#contact'
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab'
 
   return (
     <>

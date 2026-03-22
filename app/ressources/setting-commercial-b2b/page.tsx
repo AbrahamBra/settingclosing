@@ -1060,7 +1060,7 @@ export default function SettingCommercialPage() {
               setter dédié, coaching closing. Premiers RDV qualifiés dès la semaine 1.
               Un appel de 30 minutes pour voir si ça correspond à votre situation.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>

@@ -557,7 +557,7 @@ export default function CommentDevenirSetterB2BPage() {
               Vous apprenez sur des profils réels dans votre secteur — pas sur des slides.
               Programme structuré en 3 phases, accompagnement terrain.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Rejoindre le programme →
             </ButtonGlow>
           </div>

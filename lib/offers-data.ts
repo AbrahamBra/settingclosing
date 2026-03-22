@@ -68,7 +68,7 @@ export const offers: Offer[] = [
     homepageResult: '1 \u00e0 4 RDV qualifi\u00e9s par semaine',
     guarantee: 'Moins de 5 RDV qualifi\u00e9s livr\u00e9s dans le mois\u00a0? Le mois suivant est offert.',
     noCommitment: true,
-    cta: { label: 'D\u00e9marrer\u00a0\u2192', href: '#contact' },
+    cta: { label: 'D\u00e9marrer\u00a0\u2192', href: 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab' },
   },
   {
     id: 'setting-telephonique',
@@ -101,7 +101,7 @@ export const offers: Offer[] = [
       'Tri automatique\u00a0: chaud \u2192 RDV, ti\u00e8de \u2192 relance',
     ],
     homepageResult: 'Z\u00e9ro lead perdu, que des RDV pr\u00eats \u00e0 closer',
-    cta: { label: 'Ajouter\u00a0\u2192', href: '#contact' },
+    cta: { label: 'Ajouter\u00a0\u2192', href: 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab' },
   },
   {
     id: 'setting-newsletter',
@@ -135,6 +135,6 @@ export const offers: Offer[] = [
     homepageResult: 'Pipeline continu sans prospecter activement',
     guarantee: 'Garantie RDV proportionnelle \u00e0 ta base. Si on ne livre pas, M4 offert.',
     noCommitment: false,
-    cta: { label: 'Passer \u00e0 l\u2019\u00e9chelle\u00a0\u2192', href: '#contact' },
+    cta: { label: 'Passer \u00e0 l\u2019\u00e9chelle\u00a0\u2192', href: 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab' },
   },
 ]

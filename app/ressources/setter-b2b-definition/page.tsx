@@ -430,7 +430,7 @@ export default function SetterDefinitionPage() {
               Garantie 5 RDV qualifiés minimum par mois. Fixe mensuel + prime à la performance.
               On démarre en 2 semaines.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Déléguer mon setting →
             </ButtonGlow>
           </div>

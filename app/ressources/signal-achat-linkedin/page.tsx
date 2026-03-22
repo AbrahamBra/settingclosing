@@ -476,7 +476,7 @@ export default function SignalAchatLinkedInPage() {
               Setting met en place le flux complet : surveillance des signaux, rédaction assistée
               par IA, suivi des conversations, RDV qualifiés livrés. Garantie 5 RDV minimum par mois.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Déléguer mon setting →
             </ButtonGlow>
           </div>

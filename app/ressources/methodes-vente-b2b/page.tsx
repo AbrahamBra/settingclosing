@@ -622,7 +622,7 @@ export default function MethodesVenteB2BPage() {
               dans un pipeline qui fonctionne. Discovery, qualification, closing : on construit
               avec vous le processus commercial qui transforme vos leads en clients.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Structurer mon pipeline de vente &rarr;
             </ButtonGlow>
           </div>

@@ -1053,7 +1053,7 @@ export default function ClosingB2BPage() {
               Un appel de 30 minutes pour regarder votre structure d&apos;appel actuelle, identifier
               où les deals se perdent et ce qui changerait dans votre cas. Gratuit. Sans engagement.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>

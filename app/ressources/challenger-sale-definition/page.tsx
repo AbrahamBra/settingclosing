@@ -403,7 +403,7 @@ export default function ChallengerSalePage() {
               3 mois. Un mois par composante. 2h de coaching par semaine dont une heure
               sur un vrai appel prospect. Vous sortez avec une méthode, pas juste des notes.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Améliorer mon closing →
             </ButtonGlow>
           </div>

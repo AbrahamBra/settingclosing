@@ -454,7 +454,7 @@ export default function DifferenceSettingClosingPage() {
               Un appel de 30 minutes suffit à identifier ce qui bloque réellement.
               On repart avec un plan d&apos;action concret.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>

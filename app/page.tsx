@@ -222,7 +222,9 @@ export default function Home() {
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <a
-                  href="#contact?offre=setting-linkedin"
+                  href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#A78BFA] text-[#0D0B07] font-semibold text-sm hover:bg-[#B89CFC] transition-colors"
                 >
                   D&eacute;marrer ma prospection &rarr;

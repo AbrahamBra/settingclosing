@@ -464,7 +464,7 @@ export default function MethodeSpinSellingPage() {
               Un appel de 30 minutes pour regarder votre structure d&apos;appel, identifier les
               questions manquantes et ce qui changerait dans votre cas. Gratuit. Sans engagement.
             </p>
-            <ButtonGlow as="a" href="/#contact">Réserver un appel gratuit →</ButtonGlow>
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">Réserver un appel gratuit →</ButtonGlow>
           </div>
 
           <div className="mt-8 text-center">

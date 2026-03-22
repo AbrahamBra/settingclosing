@@ -5,7 +5,7 @@ import { offers } from '@/lib/offers-data'
 import type { Offer } from '@/lib/offers-data'
 
 function OfferBlock({ offer, isLast }: { offer: Offer; isLast: boolean }) {
-  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '#contact'
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab'
   const ctaHref = offer.cta.href === '#contact' ? calendlyUrl : offer.cta.href
 
   return (

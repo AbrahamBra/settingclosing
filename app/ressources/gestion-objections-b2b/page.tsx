@@ -362,7 +362,7 @@ export default function GestionObjectionsPage() {
               Un appel de 30 minutes pour regarder où vos deals se perdent et ce qui changerait
               dans votre cas. Gratuit. Sans engagement.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>

@@ -476,7 +476,7 @@ export default function ScriptClosingPage() {
               Un appel de 30 minutes pour revoir la structure de vos appels de vente et identifier
               ce qui bloque vos closes. Gratuit. Sans engagement.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>

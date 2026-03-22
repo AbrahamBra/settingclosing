@@ -523,7 +523,7 @@ export default function CoutSetterB2BPage() {
               Fixe mensuel + prime par RDV livré. Garantie 5 RDV qualifiés minimum par mois.
               Pas de paiement si l&apos;objectif n&apos;est pas atteint. On démarre en 2 semaines.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Voir le programme et les tarifs →
             </ButtonGlow>
           </div>

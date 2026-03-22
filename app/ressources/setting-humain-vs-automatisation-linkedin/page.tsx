@@ -591,7 +591,7 @@ export default function SettingHumainVsAutomatisationPage() {
               Un setter dédié, une méthode signal-based, et des RDV qualifiés dans votre agenda.
               Premiers résultats dès la première semaine. Garantie sur les résultats.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Voir le programme →
             </ButtonGlow>
           </div>

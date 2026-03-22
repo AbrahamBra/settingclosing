@@ -577,7 +577,7 @@ export default function CloserB2BPage() {
               conversion. On travaille les deux rôles : qualification en amont, conversion sur
               l&apos;appel. 2 à 4 rendez-vous par semaine, leads chauds, suivi sur chaque deal.
             </p>
-            <ButtonGlow as="a" href="/#contact">
+            <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               Discuter de mon pipeline →
             </ButtonGlow>
           </div>
