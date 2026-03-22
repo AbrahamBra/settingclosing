@@ -4,16 +4,18 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { DarkCard } from '@/components/ui/DarkCard'
-import { PricingPicker } from '@/components/PricingPicker'
+import { GrowthLadder } from '@/components/GrowthLadder'
+import { PipelineVisual } from '@/components/PipelineVisual'
 import { PricingComparison } from '@/components/PricingComparison'
+import { FAQ } from '@/components/FAQ'
 import { SmartContactForm } from '@/components/SmartContactForm'
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Tarifs setting commercial externalisé | Setting',
+  title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | SettingClosing',
   description:
-    'Prix du setting commercial externalisé : LinkedIn 490 € + 790 €/mois, téléphonique 490 € + 350 €/jour, Newsletter 2 490 € + 990 €/mois ×3.',
+    'Tarifs prospection LinkedIn externalisée pour solopreneurs : à partir de 790\u00a0€/mois, setup offert, zéro engagement. Simulez votre ROI.',
   alternates: {
     canonical: 'https://www.setting.live/tarifs',
     languages: {
@@ -22,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Tarifs setting commercial externalisé | Setting',
-    description: 'Prix du setting commercial externalisé : 3 offres adaptées à votre situation. Garantie 5 RDV minimum, sans engagement.',
+    title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | SettingClosing',
+    description: 'Tarifs prospection LinkedIn externalisée : setup offert, à partir de 790\u00a0€/mois, zéro engagement.',
     locale: 'fr_FR',
     type: 'website',
   },
@@ -34,9 +36,9 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Tarifs setting commercial externalisé | Setting',
+  name: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | SettingClosing',
   description:
-    'Prix du setting commercial externalisé : Setting LinkedIn 490 € + 790 €/mois, Setting téléphonique 490 € + 350 €/jour, Setting Newsletter 2 490 € + 990 €/mois ×3.',
+    'Tarifs prospection LinkedIn externalisée pour solopreneurs : à partir de 790\u00a0€/mois, setup offert, zéro engagement. Simulez votre ROI.',
   url: 'https://www.setting.live/tarifs',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -62,12 +64,6 @@ const webPageSchema = {
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
-            price: '490',
-            priceCurrency: 'EUR',
-            description: 'Setup : cadrage ICP, outils, séquences',
-          },
-          {
-            '@type': 'PriceSpecification',
             price: '790',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
@@ -78,21 +74,15 @@ const webPageSchema = {
       {
         '@type': 'Offer',
         position: 2,
-        name: 'Setting téléphonique',
+        name: 'Setting téléphonique — Demi-journée',
         description: 'Qualification téléphonique des leads entrants. Routing intelligent selon niveau de maturité. Prime par RDV : 25 € (ticket < 5k €), 100 € (5-15k €), 200 € (> 15k €).',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
-            price: '490',
+            price: '175',
             priceCurrency: 'EUR',
-            description: 'Setup : script, formation, CRM',
-          },
-          {
-            '@type': 'PriceSpecification',
-            price: '350',
-            priceCurrency: 'EUR',
-            unitText: 'DAY',
-            description: '350 €/jour, facturé au réel par demi-journée consacrée. Prime par RDV : 25 € (< 5k €), 100 € (5-15k €), 200 € (> 15k €).',
+            unitText: 'HALF_DAY',
+            description: '175 €/demi-journée, facturé au réel.',
           },
         ],
       },
@@ -104,16 +94,10 @@ const webPageSchema = {
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
-            price: '2490',
-            priceCurrency: 'EUR',
-            description: 'Construction : interview voix, Skill IA, scoring, config (~2 semaines)',
-          },
-          {
-            '@type': 'PriceSpecification',
-            price: '990',
+            price: '830',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
-            description: '3 mois d\'opération + prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €)',
+            description: '830 €/mois × 3 mois',
           },
         ],
       },
@@ -130,15 +114,15 @@ const faqSchema = {
       name: 'Combien coûte le Setting LinkedIn ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '490 € de setup, puis 790 €/mois — même tarif sur les 3 premiers mois. Prime par RDV selon votre ticket moyen : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €). Sans engagement.',
+        text: '790 €/mois, setup offert. Même tarif sur les 3 premiers mois. Sans engagement.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Pourquoi un setup fee ?',
+      name: 'Le setup est vraiment offert ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le setup couvre le travail de cadrage avant le premier message : définition de votre ICP, rédaction des séquences, paramétrage des outils et des signaux d\'achat. Ce travail est nécessaire pour démarrer vite et bien.',
+        text: 'Oui. Le cadrage ICP, la rédaction des séquences et le paramétrage des outils sont inclus dans le premier mois. Vous ne payez que l\'abonnement mensuel.',
       },
     },
     {
@@ -146,7 +130,7 @@ const faqSchema = {
       name: 'Comment fonctionne le tarif du Setting téléphonique ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '350 €/jour, facturé au réel par demi-journée consacrée. Le setup de 490 € couvre le script, la formation et la configuration CRM. Prime par RDV qualifié : 25 € (ticket < 5k €), 100 € (5-15k €), 200 € (> 15k €).',
+        text: '175 €/demi-journée, facturé au réel selon votre flux de leads entrants. Zéro setup fee.',
       },
     },
     {
@@ -154,68 +138,35 @@ const faqSchema = {
       name: 'Comment fonctionne le Setting Newsletter ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '2 490 € pour construire le système (interview voix, Skill IA, scoring, segmentation), puis 990 €/mois pendant 3 mois d\'opération. 4 contenus segmentés toutes les 2 semaines, dans la voix du dirigeant. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €). Garantie proportionnelle à la taille de base.',
+        text: '830 €/mois × 3 mois, tout inclus. Conception, rédaction IA dans votre voix, envoi, scoring comportemental et routing automatique des leads chauds.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Comment est calculée la prime par RDV ?',
+      name: 'Y a-t-il un engagement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'La prime dépend de votre ticket moyen : moins de 5 000 € → 50 €/RDV, entre 5 000 et 15 000 € → 150 €/RDV, plus de 15 000 € → 250 €/RDV. Pour le Setting téléphonique : 25 €, 100 € et 200 € respectivement.',
+        text: 'Non. Chaque offre est résiliable à tout moment. Garantie RDV sur chaque phase.',
       },
     },
     {
       '@type': 'Question',
-      name: "Y a-t-il un engagement ?",
+      name: 'Puis-je combiner plusieurs phases ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Si nous n'atteignons pas 5 RDV qualifiés dans le mois, le mois suivant est offert.",
+        text: 'Oui. La plupart de nos clients commencent par LinkedIn, ajoutent le téléphonique quand le flux monte, puis activent la newsletter pour leur base existante.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Puis-je combiner plusieurs offres ?',
+      name: 'Quel ROI puis-je attendre ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting téléphonique avec le volume horaire adapté à leur flux, puis activent le Setting Newsletter pour leur base existante. La newsletter se combine aussi directement avec le Setting téléphonique pour une délégation complète.",
+        text: 'Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5× dès le 2e mois. Simulez votre pipeline directement sur la page.',
       },
     },
   ],
 }
-
-// ─── FAQ Data ─────────────────────────────────────────────────────────────────
-
-const faqs = [
-  {
-    q: 'Combien coûte le Setting LinkedIn\u00a0?',
-    a: '490\u00a0€ de setup, puis 790\u00a0€/mois \u2014 même tarif sur les 3 premiers mois. Prime par RDV selon votre ticket moyen\u00a0: 50\u00a0€ (<\u00a05k\u00a0€), 150\u00a0€ (5-15k\u00a0€), 250\u00a0€ (>\u00a015k\u00a0€). Sans engagement.',
-  },
-  {
-    q: 'Pourquoi un setup fee\u00a0?',
-    a: 'Le setup couvre le travail de cadrage avant le premier message\u00a0: définition de votre ICP, rédaction des séquences, paramétrage des outils et des signaux d\u2019achat. Ce travail est nécessaire pour démarrer vite et bien.',
-  },
-  {
-    q: 'Comment fonctionne le tarif du Setting téléphonique\u00a0?',
-    a: '350\u00a0€/jour, facturé au réel par demi-journée consacrée. Le setup de 490\u00a0€ couvre le script, la formation et la configuration CRM. Prime par RDV qualifié\u00a0: 25\u00a0€ (ticket\u00a0<\u00a05k\u00a0€), 100\u00a0€ (5-15k\u00a0€), 200\u00a0€ (>\u00a015k\u00a0€).',
-  },
-  {
-    q: 'Comment fonctionne le Setting Newsletter\u00a0?',
-    a: '2\u00a0490\u00a0€ pour construire le système (interview voix, Skill IA, scoring, segmentation), puis 990\u00a0€/mois pendant 3 mois d\u2019opération. 4 contenus segmentés toutes les 2 semaines, dans la voix du dirigeant. Prime par RDV\u00a0: 50\u00a0€ (<\u00a05k\u00a0€), 150\u00a0€ (5-15k\u00a0€), 250\u00a0€ (>\u00a015k\u00a0€). Garantie proportionnelle à la taille de base.',
-  },
-  {
-    q: 'Comment est calculée la prime par RDV\u00a0?',
-    a: 'La prime dépend de votre ticket moyen\u00a0: moins de 5\u00a0000\u00a0€ \u2192 50\u00a0€/RDV, entre 5\u00a0000 et 15\u00a0000\u00a0€ \u2192 150\u00a0€/RDV, plus de 15\u00a0000\u00a0€ \u2192 250\u00a0€/RDV. Pour le Setting téléphonique\u00a0: 25\u00a0€, 100\u00a0€ et 200\u00a0€ respectivement.',
-  },
-  {
-    q: 'Y a-t-il un engagement\u00a0?',
-    a: 'Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Si nous n\u2019atteignons pas 5\u00a0RDV qualifiés dans le mois, le mois suivant est offert.',
-  },
-  {
-    q: 'Puis-je combiner plusieurs offres\u00a0?',
-    a: 'Oui. La plupart de nos clients commencent par le Setting LinkedIn, ajoutent le Setting téléphonique avec le volume horaire adapté à leur flux, puis activent le Setting Newsletter pour leur base existante. La newsletter se combine aussi directement avec le Setting téléphonique pour une délégation complète.',
-  },
-]
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
@@ -263,17 +214,24 @@ export default function TarifsPage() {
                 Tarifs
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                Un prix clair. Un ROI mesurable.
+                Choisis ton niveau de croissance
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
-                Fixe transparent + prime variable par RDV. Simulez votre retour sur investissement en 30 secondes.
+                Chaque phase se débloque quand ton business est prêt. Commence par LinkedIn, ajoute le reste quand tu en as besoin.
               </p>
             </ScrollReveal>
           </div>
         </section>
 
-        {/* ── PricingPicker ─────────────────────────────────────────────────── */}
-        <PricingPicker />
+        {/* ── GrowthLadder ─────────────────────────────────────────────────── */}
+        <GrowthLadder />
+
+        {/* ── PipelineVisual ───────────────────────────────────────────────── */}
+        <section className="bg-bg-primary section-padding">
+          <div className="container-max max-w-3xl mx-auto">
+            <PipelineVisual />
+          </div>
+        </section>
 
         {/* ── PricingComparison ─────────────────────────────────────────────── */}
         <PricingComparison />
@@ -286,25 +244,25 @@ export default function TarifsPage() {
                 Transparence
               </p>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6 text-center">
-                Pourquoi c&apos;est moins cher qu&apos;une agence
+                Pourquoi ce prix
               </h2>
               <div className="space-y-4">
                 <DarkCard className="p-6">
-                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">Pas de structure lourde</h3>
+                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">Un système qui s&apos;améliore</h3>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">
-                    3 personnes, pas de bureau, pas de commercial. Le budget qui irait dans des locaux et un BDR senior va directement dans votre pipeline.
+                    Base de connaissance dédiée, feedback setter, expertise marché enrichie chaque semaine. Mois 3 n&apos;a rien à voir avec mois 1.
                   </p>
                 </DarkCard>
                 <DarkCard className="p-6">
-                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">L&apos;IA réduit le travail manuel</h3>
+                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">IA + humain, pas IA toute seule</h3>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">
-                    Le ciblage, le scoring et la détection des signaux d&apos;achat sont automatisés. Le setter passe son temps sur ce qui compte : les conversations, pas le scraping.
+                    L&apos;IA détecte et rédige. Ton setter pilote par la data, choisit les angles, et itère le système chaque semaine.
                   </p>
                 </DarkCard>
                 <DarkCard className="p-6">
-                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">Le variable aligne nos intérêts</h3>
+                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">Zéro engagement, zéro risque</h3>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">
-                    La prime par RDV fait qu&apos;on gagne plus quand vous gagnez plus. Une agence classique facture 2 000 à 4 000 €/mois quel que soit le résultat.
+                    Garantie RDV sur chaque offre. Tu peux arrêter à tout moment. On gagne quand tu gagnes.
                   </p>
                 </DarkCard>
               </div>
@@ -313,25 +271,7 @@ export default function TarifsPage() {
         </section>
 
         {/* ── FAQ ──────────────────────────────────────────────────────────── */}
-        <section id="faq-tarifs" className="bg-bg-secondary section-padding">
-          <div className="container-max max-w-2xl mx-auto">
-            <ScrollReveal>
-              <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-10 text-center">
-                Questions fréquentes
-              </h2>
-            </ScrollReveal>
-            <dl className="flex flex-col gap-4">
-              {faqs.map((faq, i) => (
-                <ScrollReveal key={i} delay={i * 60}>
-                  <div className="bg-bg-secondary rounded-2xl border border-white/[0.06] p-8">
-                    <dt className="font-sans font-semibold text-text-primary text-base mb-3">{faq.q}</dt>
-                    <dd className="font-sans text-text-secondary text-sm leading-relaxed m-0">{faq.a}</dd>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </dl>
-          </div>
-        </section>
+        <FAQ />
 
         {/* ── Smart Contact Form ────────────────────────────────────────────── */}
         <Suspense fallback={null}>

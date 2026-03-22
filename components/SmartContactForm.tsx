@@ -25,10 +25,10 @@ const initialForm: FormData = {
 
 const offreOptions = [
   { value: '', label: 'Je ne sais pas encore' },
-  { value: 'setting-linkedin', label: 'Setting LinkedIn' },
-  { value: 'setting-telephonique', label: 'Setting Téléphonique' },
-  { value: 'setting-newsletter', label: 'Setting Newsletter' },
-  { value: 'bundle', label: 'Offre combinée' },
+  { value: 'setting-linkedin', label: 'Phase 1 : Setting LinkedIn' },
+  { value: 'setting-telephonique', label: 'Phase 2 : Setting Téléphonique' },
+  { value: 'setting-newsletter', label: 'Phase 3 : Setting Newsletter' },
+  { value: 'bundle', label: 'Pack Croissance' },
 ]
 
 const placeholders: Record<string, string> = {
