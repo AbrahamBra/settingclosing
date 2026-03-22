@@ -14,26 +14,26 @@ const OUTBOUND_SOURCES = [
     items: ['Sales Navigator', 'Filtres ICP', 'Scraping ciblé'],
   },
   {
-    title: 'Spyers concurrents',
-    items: ['Audiences engagées', 'Likes, commentaires', 'Followers concurrents'],
+    title: 'Veille concurrents',
+    items: ['Qui like tes concurrents', 'Qui commente chez eux', 'Leurs nouveaux followers'],
   },
 ]
 
 /* ── Outbound steps ─────────────────────────────────── */
 const OUTBOUND_STEPS = [
-  { title: 'Scoring IA', subtitle: 'Priorisation des prospects' },
-  { title: 'Message personnalisé', subtitle: 'Angle choisi par le setter' },
-  { title: 'Validation + envoi', subtitle: 'Humain avant chaque message' },
+  { title: 'On trie', subtitle: 'L\u2019IA score et priorise les meilleurs profils' },
+  { title: 'On écrit', subtitle: 'Message personnalisé, angle choisi par ton setter' },
+  { title: 'On vérifie, on envoie', subtitle: 'Rien ne part sans validation humaine' },
 ]
 
 /* ── Inbound steps ──────────────────────────────────── */
 const INBOUND_SOURCES = ['DMs', 'Commentaires', 'Lead magnets', 'Formulaires']
 const INBOUND_QUALIF = [
-  { title: 'Qualification LinkedIn', subtitle: 'Par le setter en DM' },
-  { title: 'Qualification téléphonique', subtitle: 'Appel direct du lead' },
+  { title: 'Qualification LinkedIn', subtitle: 'Ton setter répond en DM' },
+  { title: 'Qualification téléphonique', subtitle: 'On appelle directement le lead' },
 ]
 
-const SETTER_TAGS = ['Expertise marché', 'Data', 'Angles', 'Itération']
+const SETTER_TAGS = ['Connaissance marché', 'Pilotage data', 'Choix des angles', 'Itération continue']
 
 /* ── Arrow component ────────────────────────────────── */
 function Arrow({ direction = 'down', muted = false }: { direction?: 'down' | 'right'; muted?: boolean }) {
@@ -87,10 +87,10 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
           {/* ── Setter + Base de connaissance (top) ─────────── */}
           <div className="bg-accent/10 border border-accent/20 rounded-xl p-5 text-center">
             <p className="font-sans font-bold text-text-primary text-base mb-1">
-              Ton setter pilote
+              Ton setter pilote tout
             </p>
             <p className="text-text-muted text-xs mb-3">
-              + ta base de connaissance, enrichie chaque semaine
+              Il s&rsquo;appuie sur ta base de connaissance — enrichie chaque semaine
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {SETTER_TAGS.map((tag) => (
@@ -103,7 +103,7 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
               ))}
             </div>
             <p className="text-text-muted text-[11px] mt-3 italic">
-              La base de connaissance dépend du travail fait en amont avec toi : ton offre, ton marché, tes retours terrain.
+              Cette base depend du travail qu&rsquo;on fait ensemble en amont : comprendre ton offre, ton marche, ton client ideal.
             </p>
           </div>
 
@@ -210,8 +210,8 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
                 <Arrow />
               </div>
               <StepCard
-                title="Routing intelligent"
-                subtitle="Chaud → RDV · Tiède → nurturing · Froid → liste"
+                title="Tri des leads"
+                subtitle="Chaud → RDV · Tiède → relance · Froid → liste"
                 accent
               />
             </div>
@@ -235,18 +235,18 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
             <div className="flex flex-col items-center gap-1">
               <span className="text-accent/40 text-base leading-none">↓</span>
               <span className="text-text-muted text-[11px] px-4 text-center">
-                Feedback : quel angle a marché, quel profil a converti
+                Qu&rsquo;est-ce qui a marche ? Quel profil a converti ? Quel angle a accroche ?
               </span>
               <span className="text-accent/40 text-lg leading-none">↻</span>
               <span className="text-text-muted text-[11px]">
-                Remonte dans la base de connaissance
+                Tout remonte dans ta base de connaissance
               </span>
             </div>
           </div>
 
           {/* ── Tagline ────────────────────────────────────── */}
           <p className="text-center text-text-secondary text-sm leading-relaxed max-w-xl mx-auto pt-2">
-            L&rsquo;IA exécute. Ton setter pilote. Chaque semaine, l&rsquo;expertise marché s&rsquo;affine, les angles s&rsquo;aiguisent, les résultats s&rsquo;accélèrent.
+            L&rsquo;IA fait le gros du travail. Ton setter pilote tout. Et chaque semaine, le systeme s&rsquo;affine avec tes retours.
           </p>
 
           {/* ── Expandable section — only in full mode ─────── */}
@@ -264,8 +264,14 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
 
               {expanded && (
                 <div className="mt-4 bg-bg-secondary rounded-xl border border-white/[0.06] p-5 text-text-secondary text-sm leading-relaxed max-w-2xl mx-auto">
+                  <p className="mb-3">
+                    Concretement : on construit des listes avec Sales Navigator qui ciblent exactement ton client ideal. En parallele, on surveille qui interagit avec tes concurrents pour capter les prospects deja en reflexion.
+                  </p>
+                  <p className="mb-3">
+                    Cote inbound, chaque lead qui arrive — que ce soit un DM, un commentaire ou un formulaire — est qualifie par ton setter. Selon le canal, c&rsquo;est fait en DM LinkedIn ou par telephone.
+                  </p>
                   <p>
-                    Notre méthodologie combine la puissance des outils IA (Reactin, Spyer, Sales Navigator) pour la détection des signaux marché avec le jugement humain de ton setter dédié. Les listes sur-mesure ciblent ton ICP exact, les spyers surveillent les audiences de tes concurrents, et l&rsquo;inbound est qualifié en temps réel — par LinkedIn ou par téléphone selon le canal d&rsquo;entrée. Chaque semaine, les angles de prospection sont réévalués à partir des retours terrain, les messages affinés, et la base de connaissance mise à jour. Résultat : une prospection qui s&rsquo;améliore en continu, pas une campagne statique.
+                    Et chaque semaine, on ajuste : quels angles marchent, quels profils repondent, quels messages convertissent. C&rsquo;est ca qui fait que mois 3 n&rsquo;a rien a voir avec mois 1.
                   </p>
                 </div>
               )}
