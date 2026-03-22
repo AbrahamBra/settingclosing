@@ -192,9 +192,15 @@ export default function TarifsPage() {
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
                 Un pipeline LinkedIn &agrave; 790&nbsp;&euro;/mois
               </h1>
-              <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
+              <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto mb-6">
                 Setup offert, z&eacute;ro engagement. Simule ton ROI en temps r&eacute;el.
               </p>
+              <a
+                href="/methode/setting-linkedin"
+                className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+              >
+                Voir comment &ccedil;a marche &darr;
+              </a>
             </ScrollReveal>
           </div>
         </section>
