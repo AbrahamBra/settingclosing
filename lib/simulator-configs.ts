@@ -113,20 +113,20 @@ const telephoneConfig: SimulatorConfig = {
     {
       id: 'optin',
       label: 'Opt-in qualifié',
-      note: 'Ils veulent être rappelés. Entre 20 et 40\u00a0% de closing vers RDV.',
-      values: { tauxRDV: 35, tauxClosing: 30 },
+      note: 'Ils ont demandé à être rappelés. Meilleur taux de conversion.',
+      values: { tauxRDV: 25, tauxClosing: 20 },
     },
     {
       id: 'contenu',
       label: 'Contenu',
-      note: 'Téléchargement, webinar, engagement. Le taux dépend de la qualité de la base.',
-      values: { tauxRDV: 15, tauxClosing: 15 },
+      note: 'Téléchargement, webinar, engagement. Intention moyenne.',
+      values: { tauxRDV: 10, tauxClosing: 12 },
     },
     {
       id: 'concours',
       label: 'Jeu concours',
       note: 'Volume élevé, intention faible. Beaucoup de tri, peu de RDV.',
-      values: { tauxRDV: 5, tauxClosing: 8 },
+      values: { tauxRDV: 3, tauxClosing: 8 },
     },
   ],
   inputs: [
@@ -152,10 +152,10 @@ const telephoneConfig: SimulatorConfig = {
     {
       id: 'tauxRDV',
       label: 'Taux de prise de RDV',
-      min: 5,
-      max: 60,
-      step: 5,
-      default: 15,
+      min: 3,
+      max: 40,
+      step: 1,
+      default: 12,
       unit: '%',
       formatValue: (v) => `${v}\u00a0%`,
     },
@@ -163,29 +163,32 @@ const telephoneConfig: SimulatorConfig = {
       id: 'tauxClosing',
       label: 'Taux de closing',
       min: 5,
-      max: 50,
-      step: 5,
-      default: 15,
+      max: 40,
+      step: 1,
+      default: 12,
       unit: '%',
       formatValue: (v) => `${v}\u00a0%`,
     },
   ],
   hypotheses: [
-    '10 min max par lead au téléphone',
+    '~15 min par lead (8 min d\u2019échange + composition + notes CRM)',
+    'Max 15 leads traités par demi-journée (3h de calls effectifs)',
     'Facturation par demi-journée (175\u00a0€)',
   ],
   conversionStat: 'Les taux varient selon la source : opt-in qualifié > contenu > jeu concours',
   setupAmount: 490,
   compute(values, includeSetup) {
     const tauxRDV = values.tauxRDV / 100
-    const minParLead = 10
     const tauxClosing = values.tauxClosing / 100
     const halfDayRate = 175
+    const minParLead = 15
+    const leadsParDemiJournee = 15
 
     const rdvParMois = values.leadsParMois * tauxRDV
     const tempsHeures = (values.leadsParMois * minParLead) / 60
-    const joursNecessaires = tempsHeures / 7
-    const demiJournees = Math.ceil(joursNecessaires * 2)
+    // Cap par capacité : max 15 leads par demi-journée
+    const demiJourneesParTemps = Math.ceil(values.leadsParMois / leadsParDemiJournee)
+    const demiJournees = demiJourneesParTemps
     const prime = values.ticketMoyen < 5000 ? 25 : values.ticketMoyen <= 15000 ? 100 : 200
     const coutMensuel = (demiJournees * halfDayRate) + (prime * rdvParMois)
     const setupAmorti = includeSetup ? Math.round(490 / 3) : 0
@@ -196,7 +199,7 @@ const telephoneConfig: SimulatorConfig = {
 
     return {
       items: [
-        { label: 'Demi-journées / mois', value: `${demiJournees} (${tempsHeures.toFixed(0)}h)` },
+        { label: 'Demi-journées nécessaires', value: `${demiJournees} (~${tempsHeures.toFixed(0)}h de calls)` },
         { label: 'RDV qualifiés générés', value: rdvParMois.toFixed(0) },
         { label: 'Coût mensuel estimé', value: formatEur(coutTotal) },
         { label: 'Revenu potentiel', value: formatEur(revenuMensuel), highlight: true },
