@@ -214,7 +214,7 @@ const newsletterConfig: SimulatorConfig = {
   inputs: [
     {
       id: 'tailleBase',
-      label: 'Taille de votre base',
+      label: 'Taille de ta base',
       min: 500,
       max: 25000,
       step: 500,
@@ -231,15 +231,25 @@ const newsletterConfig: SimulatorConfig = {
       unit: '€',
       formatValue: (v) => formatEur(v),
     },
+    {
+      id: 'tauxClosing',
+      label: 'Taux de closing post-RDV',
+      min: 10,
+      max: 50,
+      step: 5,
+      default: 30,
+      unit: '%',
+      formatValue: (v) => `${v}\u00a0%`,
+    },
   ],
   hypotheses: [
-    'Funnels par thématique et maturité, construits sur mesure',
-    'Tarification sur devis selon la taille de base',
+    'Garantie RDV proportionnelle à la taille de base',
+    'Construction sur 3 mois (830\u00a0€/mo), puis 990\u00a0€/mo',
+    'Prime par RDV : 50\u00a0€ (<5k), 150\u00a0€ (5-15k), 250\u00a0€ (>15k)',
   ],
-  conversionStat: 'On construit des funnels par thématique et maturité, adaptés à votre base',
-  setupAmount: 830,
-  hideSetup: true,
-  compute(values) {
+  conversionStat: 'Funnels par thématique et maturité, adaptés à ta base',
+  setupAmount: 2490,
+  compute(values, includeSetup) {
     // Garantie dynamique selon la taille de base
     const base = values.tailleBase
     const garantie = base < 3000
@@ -248,19 +258,32 @@ const newsletterConfig: SimulatorConfig = {
         ? { rdv: 5, label: '5 RDV garantis' }
         : { rdv: 10, label: '10 RDV garantis' }
 
-    const tauxClosingPostRDV = 0.30
-    const clientsSur3Mois = garantie.rdv * tauxClosingPostRDV
+    const tauxClosing = values.tauxClosing / 100
+    const clientsSur3Mois = garantie.rdv * tauxClosing
     const revenuSur3Mois = clientsSur3Mois * values.ticketMoyen
+
+    // Coût récurrent sur 3 mois : 990€ × 3 + primes RDV
+    const prime = values.ticketMoyen < 5000 ? 50 : values.ticketMoyen <= 15000 ? 150 : 250
+    const coutRecurrent3Mois = 990 * 3 + prime * garantie.rdv
+    // Setup (construction) : 2490€ amorti sur 3 mois
+    const setupAmorti = includeSetup ? Math.round(2490 / 3) : 0
+    const coutTotal3Mois = coutRecurrent3Mois + (setupAmorti * 3)
+
+    const roi = coutTotal3Mois > 0 ? revenuSur3Mois / coutTotal3Mois : 0
 
     return {
       items: [
-        { label: 'Construction (mois 1-3)', value: '830\u00a0€/mo' },
-        { label: 'Abonnement (mois 4+)', value: '990\u00a0€/mo' },
+        { label: 'Coût récurrent / 3 mois', value: formatEur(coutRecurrent3Mois) },
+        ...(includeSetup ? [{ label: 'Setup (construction)', value: formatEur(2490) }] : []),
+        { label: 'Coût total / 3 mois', value: formatEur(coutTotal3Mois) },
         { label: 'RDV garantis / 3 mois', value: `${garantie.rdv} minimum` },
+        { label: 'Clients potentiels', value: clientsSur3Mois.toFixed(1) },
         { label: 'Revenu potentiel / 3 mois', value: formatEur(revenuSur3Mois), highlight: true },
       ],
-      roi: 0,
-      roiLabel: garantie.label + ' en 3 mois, sinon M4 offert',
+      roi,
+      roiLabel: roi > 0
+        ? `Pour 1\u00a0€ investi, tu récupères ${roi.toFixed(1)}\u00a0€ — ${garantie.label} sinon M4 offert`
+        : garantie.label + ' en 3 mois, sinon M4 offert',
     }
   },
 }

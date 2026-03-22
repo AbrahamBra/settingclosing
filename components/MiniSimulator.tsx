@@ -136,8 +136,8 @@ export function MiniSimulator({ config }: { config: SimulatorConfig }) {
         ))}
       </div>
 
-      {/* Setup toggle */}
-      {!config.hideSetup && (
+      {/* Setup toggle — hidden when setup is 0 or explicitly hidden */}
+      {!config.hideSetup && config.setupAmount > 0 && (
         <label className="flex items-center gap-2 cursor-pointer">
           <input
             type="checkbox"
