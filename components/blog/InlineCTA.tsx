@@ -1,7 +1,7 @@
 import { ButtonGlow } from '../ui/ButtonGlow'
 
 export function InlineCTA({
-  title = 'Vous voulez ce pipeline pour votre boîte ?',
+  title = 'Tu veux ce pipeline pour ta boîte ?',
   subtitle = 'On met en place le double filtrage + setter en 14 jours.',
   buttonText = 'Réserver un appel stratégique →',
   href = '#contact'

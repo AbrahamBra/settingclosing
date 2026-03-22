@@ -6,7 +6,7 @@ export function Footer() {
           <div>
             <p className="font-sans font-extrabold text-xl text-text-primary mb-2">Setting</p>
             <p className="font-sans text-text-muted text-sm max-w-xs">
-              Ce qui fonctionne en B2B, appliqué à votre activité.
+              Ce qui fonctionne en B2B, appliqué à ton activité.
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-8 text-sm font-sans text-text-muted">

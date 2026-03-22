@@ -78,7 +78,7 @@ const faqItems = [
   {
     question: 'Combien coute un setter B2B ?',
     answer:
-      "Un setter B2B externalise coute entre 500 et 1 500 euros par mois selon la formule. Un SDR interne revient a 45 000 - 70 000 euros par an charges comprises. Le modele hybride (fixe + prime par RDV) aligne les interets : chez Setting, c'est 490 euros de setup + 790 euros par mois avec une prime de 50 a 250 euros par RDV selon le ticket moyen.",
+      "Un setter B2B externalise coute entre 500 et 1 500 euros par mois selon la formule. Un SDR interne revient a 45 000 - 70 000 euros par an charges comprises. Le modele hybride (fixe + prime par RDV) aligne les interets : chez Setting, c'est 790 euros par mois, setup offert, avec une prime de 50 a 250 euros par RDV selon le ticket moyen.",
   },
   {
     question: 'Le setting LinkedIn fonctionne-t-il pour les solopreneurs ?',

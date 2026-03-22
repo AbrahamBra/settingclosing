@@ -46,7 +46,7 @@ export function FAQ() {
               Questions fréquentes
             </p>
             <h2 className="font-sans text-h2 text-text-primary">
-              On r&eacute;pond avant que vous demandiez
+              On r&eacute;pond avant que tu demandes
             </h2>
           </div>
         </ScrollReveal>

@@ -4,7 +4,7 @@ const members = [
     initial: 'B',
     role: 'Setting',
     color: '#A78BFA',
-    desc: 'C\u2019est lui qui envoie les messages, qualifie les prospects et vous d\u00e9croche des RDV.',
+    desc: 'C\u2019est lui qui envoie les messages, qualifie les prospects et te d\u00e9croche des RDV.',
   },
   {
     name: 'Abraham',

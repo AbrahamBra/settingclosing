@@ -29,14 +29,14 @@ function CalendlySlot({ url }: { url: string }) {
       <div className="flex flex-col items-center justify-center gap-5 min-h-[260px]">
         <div className="text-center">
           <p className="font-sans font-semibold text-text-primary mb-2">
-            Vous préférez en parler de vive voix ?
+            Tu préfères en parler de vive voix ?
           </p>
           <p className="font-sans text-text-muted text-sm">
-            30 minutes pour estimer combien de RDV on peut vous livrer. Sans engagement.
+            30 minutes pour estimer combien de RDV on peut te livrer. Sans engagement.
           </p>
         </div>
         <ButtonGlow onClick={() => setLoaded(true)}>
-          Réserver 30 min pour estimer votre pipeline →
+          Réserver 30 min pour estimer ton pipeline →
         </ButtonGlow>
       </div>
     )
@@ -100,7 +100,7 @@ export function CTAFinale() {
       <div className="container-max">
         <ScrollReveal>
           <h2 className="font-sans text-h2 font-bold text-text-primary text-center mb-16">
-            Prêt à remplir votre agenda ?
+            Prêt à remplir ton agenda ?
           </h2>
         </ScrollReveal>
 
@@ -114,7 +114,7 @@ export function CTAFinale() {
 
               {state === 'success' ? (
                 <p className="font-sans text-[#34D399] font-semibold">
-                  Message reçu. On vous répond sous 24h.
+                  Message reçu. On te répond sous 24h.
                 </p>
               ) : (
                 <form onSubmit={handleSubmit} className="flex flex-col gap-5" noValidate>
@@ -182,7 +182,7 @@ export function CTAFinale() {
                       value={form.message}
                       onChange={handleChange}
                       className="w-full bg-[#1C1A16] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
-                      placeholder="Décrivez votre situation..."
+                      placeholder="Décrivez ta situation..."
                     />
                   </div>
 

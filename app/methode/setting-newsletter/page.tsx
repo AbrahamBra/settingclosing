@@ -10,7 +10,7 @@ import { newsletterSteps } from '@/lib/methode-newsletter-data'
 export const metadata: Metadata = {
   title: 'Setting Newsletter B2B : contenu expert segmenté et scoring | Setting',
   description:
-    'Newsletter thought leadership opérée par IA : 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. 2 490 € + 990 €/mois.',
+    'Newsletter thought leadership opérée par IA : 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. 830 €/mois × 3.',
   alternates: {
     canonical: 'https://www.setting.live/methode/setting-newsletter',
     languages: {
@@ -219,7 +219,7 @@ export default function SettingNewsletterPage() {
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
-                  <p className="font-sans text-sm text-text-muted">D&egrave;s 2&nbsp;490&nbsp;&euro; de construction + 990&nbsp;&euro;/mois.</p>
+                  <p className="font-sans text-sm text-text-muted">830&nbsp;&euro;/mois &times; 3.</p>
                 </a>
               </div>
             </ScrollReveal>

@@ -41,7 +41,7 @@ const placeholders: Record<string, string> = {
   'bundle':
     "Je cherche une solution complète. Ma situation actuelle : [décrivez brièvement].",
   '':
-    "Décrivez votre situation et vos objectifs...",
+    "Décris ta situation et tes objectifs...",
 }
 
 const inputClass =
@@ -119,14 +119,14 @@ export function SmartContactForm() {
             On en parle ?
           </h2>
           <p className="font-sans text-text-secondary text-lg leading-relaxed text-center mb-10">
-            30 minutes pour comprendre votre situation et voir si on peut vous aider.
+            30 minutes pour comprendre ta situation et voir si on peut t'aider.
           </p>
         </ScrollReveal>
 
         <ScrollReveal delay={100}>
           {state === 'success' ? (
             <p className="font-sans text-[#34D399] font-semibold text-center">
-              Message reçu. On vous répond sous 24h.
+              Message reçu. On te répond sous 24h.
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-5" noValidate>
@@ -189,7 +189,7 @@ export function SmartContactForm() {
               {/* Offre intéressée - full width */}
               <div>
                 <label htmlFor="offre" className={labelClass}>
-                  Offre qui vous intéresse
+                  Offre qui t'intéresse
                 </label>
                 <select
                   id="offre"
@@ -209,7 +209,7 @@ export function SmartContactForm() {
               {/* Message with dynamic placeholder */}
               <div>
                 <label htmlFor="message" className={labelClass}>
-                  Votre situation (optionnel)
+                  Ta situation (optionnel)
                 </label>
                 <textarea
                   id="message"
@@ -241,7 +241,7 @@ export function SmartContactForm() {
                   rel="noopener noreferrer"
                   className="font-sans text-text-muted text-sm hover:text-text-primary transition-colors"
                 >
-                  Vous préférez réserver directement un créneau ? →
+                  Tu préfères réserver directement un créneau ? →
                 </a>
               </p>
             </form>
