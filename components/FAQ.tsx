@@ -5,28 +5,32 @@ import { ScrollReveal } from './ui/ScrollReveal'
 
 const faqs = [
   {
-    q: 'Combien ça coûte au total ?',
-    a: "490\u00a0\u20ac de setup, puis 790\u00a0\u20ac/mois \u2014 m\u00eame tarif sur les 3\u00a0premiers mois. Prime par RDV selon votre ticket moyen\u00a0: 50\u00a0\u20ac (< 5k\u00a0\u20ac), 150\u00a0\u20ac (5-15k\u00a0\u20ac), 250\u00a0\u20ac (> 15k\u00a0\u20ac). Sans engagement.",
+    q: '790\u00a0€/mois c\u2019est beaucoup pour un solopreneur, non\u00a0?',
+    a: 'C\u2019est 8-10h/semaine que tu récupères. Si ton taux horaire dépasse 80\u00a0€, c\u2019est rentable dès le premier mois. Et avec la garantie RDV, le risque est de notre côté.',
   },
   {
-    q: 'Quand est-ce que je vois les premiers RDV ?',
-    a: "Dès la première semaine. On ne commence pas par un audit de 30 jours. Votre setter envoie des messages dès le démarrage.",
+    q: 'Je peux le faire moi-même avec Lemlist/LaGrowthMachine\u00a0?',
+    a: 'Oui, si tu as 5-8h/semaine et l\u2019expertise IA pour personnaliser chaque message. On combine détection de signaux + rédaction IA + validation humaine. C\u2019est ça qui fait la différence entre 2\u00a0% et 8\u00a0% de taux de réponse.',
   },
   {
-    q: 'Est-ce que vous envoyez des messages sans mon accord ?',
-    a: "Non. Chaque message est validé par un humain avant envoi. Aucune automatisation n\u2019envoie de messages à votre place.",
+    q: 'C\u2019est quoi la différence avec une agence de prospection\u00a0?',
+    a: 'Le prix (3-5× moins), l\u2019engagement (aucun), et la méthode (IA + humain vs. templates en masse). Et on est payés au résultat avec les bonuses RDV.',
   },
   {
-    q: 'Et si ça ne marche pas ?',
-    a: "Moins de 5 RDV qualifiés livrés dans le mois\u00a0? Le mois suivant est offert. On continue jusqu\u2019à ce que le pipeline tourne.",
+    q: 'Combien de temps avant les premiers RDV\u00a0?',
+    a: 'Moins de 7 jours. On commence par tes clients idéaux et on itère chaque semaine.',
   },
   {
-    q: "C'est quoi la différence avec un freelance SDR ?",
-    a: "Un freelance SDR envoie des messages. On ajoute le ciblage IA et une méthode qui s'affine chaque semaine sur vos retours terrain. Même quota LinkedIn, résultats ×10.",
+    q: 'Je n\u2019ai pas de base email, je peux quand même\u00a0?',
+    a: 'La Phase 1 (LinkedIn) ne nécessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter c\u2019est pour plus tard.',
   },
   {
-    q: "Mon offre n'est pas encore rodée, c'est pour moi ?",
-    a: "On travaille mieux avec une offre validée. Mais le setting est aussi un excellent test de marché\u00a0: en 4 semaines, vous saurez quels messages accrochent, quels profils répondent, et quels angles convertissent.",
+    q: 'Et si ça marche pas\u00a0?',
+    a: 'Zéro engagement. Tu peux arrêter à tout moment. Et la garantie RDV couvre ton risque\u00a0: si on ne délivre pas, on continue gratuitement.',
+  },
+  {
+    q: 'C\u2019est quoi les bonuses RDV\u00a0?',
+    a: 'Un système de rémunération au résultat. Plus on génère de RDV, plus notre part variable augmente. Ça aligne nos intérêts\u00a0: on gagne quand tu gagnes.',
   },
 ]
 

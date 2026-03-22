@@ -1,21 +1,12 @@
 'use client'
 
-import { AnimatePresence, motion } from 'framer-motion'
-import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import { ButtonGlow } from './ui/ButtonGlow'
 
-const personas = ['consultants', 'fondateurs', 'indépendants B2B']
+const personas = ['solopreneurs', 'fondateurs', 'indépendants B2B']
 
 export function Hero() {
-  const [index, setIndex] = useState(0)
   const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? '#contact'
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((i) => (i + 1) % personas.length)
-    }, 2500)
-    return () => clearInterval(interval)
-  }, [])
 
   return (
     <section className="relative overflow-hidden section-padding pt-32 lg:pt-40 flex flex-col items-center text-center">
@@ -46,59 +37,35 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans font-extrabold tracking-tight text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] leading-[1.15] text-text-primary mb-6"
         >
-          Setting commercial LinkedIn{' '}
+          Tu as une offre qui marche.{' '}
           <br className="hidden sm:block" />
-          <span className="text-accent">externalis&eacute;.</span>
+          <span className="text-accent">Il te manque un pipeline.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-sans text-lg text-text-secondary mb-4 max-w-xl mx-auto"
+          className="font-sans text-lg text-text-secondary mb-12 max-w-xl mx-auto"
         >
-          Vous avez l&apos;offre, on a la machine. Premiers RDV qualifi&eacute;s d&egrave;s la premi&egrave;re semaine.
+          On génère tes RDV qualifiés avec l&apos;IA pour que tu te concentres sur ce que tu fais de mieux&nbsp;: closer.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center justify-center gap-2 text-text-muted font-sans text-base mb-12"
-        >
-          <span>Pour les</span>
-          <span className="relative inline-block w-[195px] h-6">
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={personas[index]}
-                initial={{ opacity: 0, filter: 'blur(8px)' }}
-                animate={{ opacity: 1, filter: 'blur(0px)' }}
-                exit={{ opacity: 0, filter: 'blur(8px)' }}
-                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-                className="absolute inset-0 flex items-center justify-center text-accent font-semibold"
-              >
-                {personas[index]}
-              </motion.span>
-            </AnimatePresence>
-          </span>
-          <span>qui ont une offre qui marche, et veulent remplir leur agenda.</span>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
-            Réserver un appel gratuit
-          </ButtonGlow>
           <a
-            href="#offres"
-            className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+            href="#growth-journey"
+            className="font-sans text-sm font-semibold text-text-muted hover:text-text-primary transition-colors"
           >
-            Découvrir l&apos;offre ↓
+            Voir comment ça marche ↓
           </a>
+          <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+            Prendre RDV
+          </ButtonGlow>
         </motion.div>
 
       </div>

@@ -7,14 +7,15 @@ import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
 import { TeamBanner } from '@/components/TeamBanner'
 import { FAQ } from '@/components/FAQ'
+import { GrowthJourney } from '@/components/GrowthJourney'
+import { PipelineVisual } from '@/components/PipelineVisual'
 
-const SituationPicker = dynamic(() => import('@/components/SituationPicker').then(m => m.SituationPicker))
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
 export const metadata: Metadata = {
-  title: 'Setting commercial LinkedIn externalisé | Setting',
+  title: 'SettingClosing — Prospection LinkedIn IA pour solopreneurs',
   description:
-    'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage par signaux d\'achat, RDV qualifiés dès la première semaine. Dès 490 € + 790 €/mois.',
+    'Externalise ta prospection LinkedIn B2B : setter dédié, ciblage par signaux d\u2019achat IA, RDV qualifiés dès la première semaine. À partir de 790\u00a0€/mois.',
   alternates: {
     canonical: 'https://www.setting.live',
     languages: {
@@ -23,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Setting commercial LinkedIn externalisé | Setting',
-    description: 'Externalisez votre prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
+    title: 'SettingClosing — Prospection LinkedIn IA pour solopreneurs',
+    description: 'Externalise ta prospection LinkedIn B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
     locale: 'fr_FR',
     type: 'website',
     images: [
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
         url: 'https://www.setting.live/opengraph-image',
         width: 1200,
         height: 630,
-        alt: 'Setting — Setting commercial LinkedIn externalisé',
+        alt: 'SettingClosing — Prospection LinkedIn IA pour solopreneurs',
       },
     ],
   },
@@ -59,7 +60,7 @@ const globalSchema = {
       name: 'Setting',
       url: 'https://www.setting.live',
       logo: 'https://www.setting.live/opengraph-image',
-      description: 'Setting LinkedIn externalisé pour fondateurs, freelances et solopreneurs B2B. Méthode signal-based, setter dédié, IA + validation humaine.',
+      description: 'Prospection LinkedIn externalisée pour solopreneurs et fondateurs B2B. Méthode signal-based, setter dédié, IA + validation humaine.',
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
       ],
@@ -82,18 +83,6 @@ const globalSchema = {
         itemListElement: [
           {
             '@type': 'Offer',
-            name: 'Setting LinkedIn — Setup',
-            description: 'Cadrage ICP, setup outils, rédaction des séquences de prospection.',
-            url: 'https://www.setting.live/methode/setting-linkedin',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              price: 490,
-              priceCurrency: 'EUR',
-              valueAddedTaxIncluded: false,
-            },
-          },
-          {
-            '@type': 'Offer',
             name: 'Setting LinkedIn — Abonnement',
             description: 'Pipeline LinkedIn clé en main : setter dédié, IA signal-based, reporting hebdomadaire, RDV qualifiés. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
             url: 'https://www.setting.live/methode/setting-linkedin',
@@ -107,26 +96,14 @@ const globalSchema = {
           },
           {
             '@type': 'Offer',
-            name: 'Setting téléphonique — Setup',
-            description: 'Script, formation, configuration CRM et routing pour la qualification téléphonique.',
-            url: 'https://www.setting.live/methode/setting-telephonique',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              price: 490,
-              priceCurrency: 'EUR',
-              valueAddedTaxIncluded: false,
-            },
-          },
-          {
-            '@type': 'Offer',
-            name: 'Setting téléphonique — Journée',
+            name: 'Setting téléphonique — Demi-journée',
             description: 'Qualification téléphonique des leads entrants : chaque lead est appelé, scoré et routé. Facturé au réel par demi-journée consacrée. Prime par RDV : 25 € (< 5k €), 100 € (5-15k €), 200 € (> 15k €).',
             url: 'https://www.setting.live/methode/setting-telephonique',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 350,
+              price: 175,
               priceCurrency: 'EUR',
-              unitText: 'DAY',
+              unitText: 'HALF_DAY',
               valueAddedTaxIncluded: false,
             },
           },
@@ -135,23 +112,14 @@ const globalSchema = {
             name: 'Setting Newsletter',
             description: 'Newsletter thought leadership opérée par IA. 4 contenus segmentés par maturité, scoring comportemental, routing automatique. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
             url: 'https://www.setting.live/methode/setting-newsletter',
-            priceSpecification: [
-              {
-                '@type': 'PriceSpecification',
-                price: 2490,
-                priceCurrency: 'EUR',
-                valueAddedTaxIncluded: false,
-                description: 'Construction : interview voix, Skill IA, scoring, config',
-              },
-              {
-                '@type': 'PriceSpecification',
-                price: 990,
-                priceCurrency: 'EUR',
-                unitText: 'MONTH',
-                valueAddedTaxIncluded: false,
-                description: '3 mois d\'opération',
-              },
-            ],
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              price: 830,
+              priceCurrency: 'EUR',
+              unitText: 'MONTH',
+              valueAddedTaxIncluded: false,
+              description: 'Construction : 830 €/mois × 3 mois',
+            },
           },
         ],
       },
@@ -166,42 +134,58 @@ const homeFaqSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Combien coûte le setting commercial externalisé ?',
+      name: '790\u00a0€/mois c\u2019est beaucoup pour un solopreneur, non\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '3 offres selon votre situation. Setting LinkedIn : 490 € de setup + 790 €/mois (même tarif sur les 3 premiers mois). Setting téléphonique : 490 € de setup + 350 €/jour (facturé au réel). Setting Newsletter : 2 490 € + 990 €/mois × 3. Prime par RDV sur chaque offre.',
+        text: 'C\u2019est 8-10h/semaine que tu récupères. Si ton taux horaire dépasse 80\u00a0€, c\u2019est rentable dès le premier mois. Et avec la garantie RDV, le risque est de notre côté.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quand voit-on les premiers RDV qualifiés ?',
+      name: 'Je peux le faire moi-même avec Lemlist/LaGrowthMachine\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Dès la première semaine. Le setter envoie des messages dès le démarrage, pas après un audit de 30 jours.',
+        text: 'Oui, si tu as 5-8h/semaine et l\u2019expertise IA pour personnaliser chaque message. On combine détection de signaux + rédaction IA + validation humaine. C\u2019est ça qui fait la différence entre 2\u00a0% et 8\u00a0% de taux de réponse.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Les messages sont-ils envoyés sans validation ?',
+      name: 'C\u2019est quoi la différence avec une agence de prospection\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Non. Chaque message est validé par un humain avant envoi. Aucune automatisation ne contacte vos prospects à votre place.',
+        text: 'Le prix (3-5× moins), l\u2019engagement (aucun), et la méthode (IA + humain vs. templates en masse). Et on est payés au résultat avec les bonuses RDV.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Que se passe-t-il si le service ne fonctionne pas ?',
+      name: 'Combien de temps avant les premiers RDV\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Moins de 5 RDV qualifiés livrés dans le mois ? Le mois suivant est offert.',
+        text: 'Moins de 7 jours. On commence par tes clients idéaux et on itère chaque semaine.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Quelle est la différence avec un freelance SDR ?',
+      name: 'Je n\u2019ai pas de base email, je peux quand même\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: "Un freelance SDR envoie des messages. Setting combine un setter dédié, un système IA qui détecte les signaux d'achat, et une méthode qui s'affine chaque semaine.",
+        text: 'La Phase 1 (LinkedIn) ne nécessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter c\u2019est pour plus tard.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Et si ça marche pas\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Zéro engagement. Tu peux arrêter à tout moment. Et la garantie RDV couvre ton risque\u00a0: si on ne délivre pas, on continue gratuitement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'C\u2019est quoi les bonuses RDV\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Un système de rémunération au résultat. Plus on génère de RDV, plus notre part variable augmente. Ça aligne nos intérêts\u00a0: on gagne quand tu gagnes.',
       },
     },
   ],
@@ -222,9 +206,14 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <SituationPicker />
-        <TeamBanner />
+        <GrowthJourney />
+        <section className="bg-bg-primary section-padding">
+          <div className="container-max max-w-3xl mx-auto">
+            <PipelineVisual compact />
+          </div>
+        </section>
         <SocialProof />
+        <TeamBanner />
         <FAQ />
         <CTAFinale />
       </main>
