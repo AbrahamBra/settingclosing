@@ -7,7 +7,7 @@ const steps = [
   },
   {
     label: 'Semaine 2',
-    desc: 'Premiers messages envoyés — ton setter est opérationnel',
+    desc: 'Premiers messages envoyés, ton setter est opérationnel',
   },
   {
     label: 'Semaine 3',
@@ -15,7 +15,7 @@ const steps = [
   },
   {
     label: 'Mois 2+',
-    desc: 'Optimisation continue — chaque semaine on affine avec tes retours',
+    desc: 'Optimisation continue, on affine chaque semaine avec tes retours',
   },
 ]
 

@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: 'Combien de clients tu prends par mois\u00a0?',
-    a: '5 max. Chaque client a un setter dédié — on ne dilue pas la qualité. C\u2019est pour ça qu\u2019on peut garantir les résultats.',
+    a: '5 max. Chaque client a un setter dédié, on ne dilue pas la qualité. C\u2019est pour ça qu\u2019on peut garantir les résultats.',
   },
   {
     q: 'Et si ça marche pas\u00a0?',
