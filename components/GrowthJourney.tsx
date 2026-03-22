@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import { motion, type Variants } from 'framer-motion'
 import { offers } from '@/lib/offers-data'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
@@ -57,9 +56,8 @@ export function GrowthJourney() {
                   variants={cardVariants}
                   className="flex-1 min-w-0"
                 >
-                  <Link
-                    href={`/tarifs#${offer.phaseLabel.toLowerCase()}`}
-                    className="group block h-full bg-bg-secondary rounded-2xl border border-white/[0.06] p-6 border-l-4 transition-all duration-300 hover:border-white/[0.12] hover:-translate-y-1"
+                  <div
+                    className="h-full bg-bg-secondary rounded-2xl border border-white/[0.06] p-6 border-l-4"
                     style={{ borderLeftColor: offer.color }}
                   >
                     {/* Phase badge */}
@@ -71,30 +69,53 @@ export function GrowthJourney() {
                     </div>
 
                     {/* Phase label */}
-                    <h3
-                      className="font-sans text-lg font-bold text-text-primary mb-1 group-hover:opacity-90 transition-opacity"
-                    >
+                    <h3 className="font-sans text-lg font-bold text-text-primary mb-1">
                       {offer.phaseLabel}
                     </h3>
 
                     {/* Situation */}
-                    <p className="text-text-secondary text-sm leading-relaxed mb-3">
+                    <p className="text-text-secondary text-sm leading-relaxed">
                       {offer.phaseSituation}
                     </p>
 
-                    {/* Eyebrow / offer name */}
-                    <p className="font-mono text-xs uppercase tracking-widest text-text-muted">
-                      {offer.eyebrow}
+                    {/* Bullets */}
+                    <ul className="mt-3 space-y-1.5">
+                      {offer.homepageBullets.map((bullet, j) => (
+                        <li key={j} className="flex items-start gap-2 text-sm text-text-secondary">
+                          <span
+                            className="mt-1.5 w-1 h-1 rounded-full shrink-0"
+                            style={{ background: offer.color }}
+                          />
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Result */}
+                    <p className="mt-3 text-sm font-semibold" style={{ color: offer.color }}>
+                      → {offer.homepageResult}
                     </p>
 
-                    {/* Color-tinted arrow hint */}
-                    <p
-                      className="mt-4 text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity"
-                      style={{ color: offer.color }}
-                    >
-                      Voir l&apos;offre →
-                    </p>
-                  </Link>
+                    {/* Links */}
+                    <div className="mt-4 pt-3 border-t border-white/[0.06] flex flex-wrap gap-x-4 gap-y-1 text-xs">
+                      <a
+                        href="/methode"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-text-muted hover:text-text-primary transition-colors"
+                      >
+                        Comprendre la m&eacute;thode →
+                      </a>
+                      <a
+                        href={`/tarifs#${offer.phaseLabel.toLowerCase()}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-text-muted hover:text-text-primary transition-colors"
+                      >
+                        Voir l&apos;offre →
+                      </a>
+                    </div>
+                  </div>
                 </motion.div>
 
                 {/* Connector between cards (not after the last card) */}

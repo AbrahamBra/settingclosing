@@ -6,9 +6,15 @@ const stats = [
   { value: '<7j', label: 'avant ton premier RDV' },
 ]
 
-export function SocialProof() {
+interface SocialProofProps {
+  variant?: 'dark' | 'light'
+}
+
+export function SocialProof({ variant = 'dark' }: SocialProofProps) {
+  const isLight = variant === 'light'
+
   return (
-    <section className="section-padding py-12 lg:py-16 bg-bg-secondary">
+    <section className={`section-padding py-12 lg:py-16 ${isLight ? 'bg-transparent' : 'bg-bg-secondary'}`}>
       <div className="container-max">
         <ScrollReveal>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16">
@@ -17,7 +23,7 @@ export function SocialProof() {
                 <p className="font-sans text-3xl sm:text-4xl font-extrabold text-accent tracking-tight">
                   {stat.value}
                 </p>
-                <p className="font-sans text-xs text-text-muted uppercase tracking-wider mt-1">
+                <p className={`font-sans text-xs uppercase tracking-wider mt-1 ${isLight ? 'text-[#6B6560]' : 'text-text-muted'}`}>
                   {stat.label}
                 </p>
               </div>

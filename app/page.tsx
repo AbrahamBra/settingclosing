@@ -9,6 +9,7 @@ import { TeamBanner } from '@/components/TeamBanner'
 import { FAQ } from '@/components/FAQ'
 import { GrowthJourney } from '@/components/GrowthJourney'
 import { PipelineVisual } from '@/components/PipelineVisual'
+import { OnboardingTimeline } from '@/components/OnboardingTimeline'
 
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
@@ -174,6 +175,14 @@ const homeFaqSchema = {
     },
     {
       '@type': 'Question',
+      name: 'Combien de clients tu prends par mois\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '5 max. Chaque client a un setter dédié — on ne dilue pas la qualité. C\u2019est pour ça qu\u2019on peut garantir les résultats.',
+      },
+    },
+    {
+      '@type': 'Question',
       name: 'Et si ça marche pas\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
@@ -207,14 +216,29 @@ export default function Home() {
       <main>
         <Hero />
         <GrowthJourney />
-        <section className="bg-bg-primary section-padding">
-          <div className="container-max max-w-3xl mx-auto">
-            <PipelineVisual compact />
-          </div>
-        </section>
-        <SocialProof />
+
+        {/* — Respiration warm white — */}
+        <div className="bg-[#F5F2ED]">
+          <PipelineVisual variant="homepage" />
+          <OnboardingTimeline />
+          <SocialProof variant="light" />
+        </div>
+
         <TeamBanner />
         <FAQ />
+
+        {/* Bandeau rareté */}
+        <div className="section-padding !py-8">
+          <div className="container-max">
+            <div className="max-w-2xl mx-auto text-center bg-accent/5 border border-accent/20 rounded-xl px-6 py-4">
+              <p className="text-sm text-text-secondary">
+                On accompagne 5 clients max par mois.{' '}
+                <span className="font-semibold text-accent">2 places disponibles en avril.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
         <CTAFinale />
       </main>
       <Footer />

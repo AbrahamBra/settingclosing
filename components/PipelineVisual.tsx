@@ -5,6 +5,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal'
 
 interface PipelineVisualProps {
   compact?: boolean
+  variant?: 'full' | 'homepage'
 }
 
 /* ── Outbound sources ───────────────────────────────── */
@@ -62,7 +63,60 @@ function StepCard({ title, subtitle, accent }: { title: string; subtitle: string
   )
 }
 
-export function PipelineVisual({ compact = false }: PipelineVisualProps) {
+export function PipelineVisual({ compact = false, variant = 'full' }: PipelineVisualProps) {
+  /* ── Homepage: simplified 3-step version ── */
+  if (variant === 'homepage') {
+    const steps = [
+      { icon: '🎯', title: 'On cible', desc: 'Ton setter identifie tes prospects idéaux grâce aux signaux d\u2019achat' },
+      { icon: '✍️', title: 'On contacte', desc: 'Messages perso, adaptés à chaque prospect — rien ne part sans validation' },
+      { icon: '✅', title: 'On qualifie', desc: 'Les intéressés sont qualifiés et tu reçois un RDV prêt à closer' },
+    ]
+
+    return (
+      <section className="section-padding">
+        <div className="container-max">
+          <ScrollReveal>
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#C87533] mb-4 text-center">
+              Ton pipeline
+            </p>
+            <h2 className="text-h2 font-bold text-[#1A1816] text-center mb-12">
+              Comment on remplit ton agenda
+            </h2>
+          </ScrollReveal>
+
+          <div className="flex flex-col md:flex-row items-stretch gap-4 md:gap-6">
+            {steps.map((step, i) => (
+              <ScrollReveal key={i} delay={i * 100} className="flex-1 flex flex-col md:flex-row items-center gap-4">
+                <div className="flex-1 w-full rounded-2xl border border-[#D4CFC7] bg-white/60 p-6 text-center">
+                  <div className="text-3xl mb-3">{step.icon}</div>
+                  <h3 className="font-semibold text-[#1A1816] mb-2">{step.title}</h3>
+                  <p className="text-sm text-[#6B6560]">{step.desc}</p>
+                </div>
+                {i < steps.length - 1 && (
+                  <span className="text-[#A8A090] text-xl hidden md:block">→</span>
+                )}
+                {i < steps.length - 1 && (
+                  <span className="text-[#A8A090] text-xl md:hidden">↓</span>
+                )}
+              </ScrollReveal>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <a
+              href="/methode"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-[#C87533] hover:underline"
+            >
+              En savoir plus sur la méthode →
+            </a>
+          </div>
+        </div>
+      </section>
+    )
+  }
+
   const [expanded, setExpanded] = useState(false)
 
   return (
@@ -103,7 +157,7 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
               ))}
             </div>
             <p className="text-text-muted text-[11px] mt-3 italic">
-              Cette base depend du travail qu&rsquo;on fait ensemble en amont : comprendre ton offre, ton marche, ton client ideal.
+              Cette base dépend du travail qu&rsquo;on fait ensemble en amont : comprendre ton offre, ton marché, ton client idéal.
             </p>
           </div>
 
@@ -235,7 +289,7 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
             <div className="flex flex-col items-center gap-1">
               <span className="text-accent/40 text-base leading-none">↓</span>
               <span className="text-text-muted text-[11px] px-4 text-center">
-                Qu&rsquo;est-ce qui a marche ? Quel profil a converti ? Quel angle a accroche ?
+                Qu&rsquo;est-ce qui a marché ? Quel profil a converti ? Quel angle a accroché ?
               </span>
               <span className="text-accent/40 text-lg leading-none">↻</span>
               <span className="text-text-muted text-[11px]">
@@ -246,7 +300,7 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
 
           {/* ── Tagline ────────────────────────────────────── */}
           <p className="text-center text-text-secondary text-sm leading-relaxed max-w-xl mx-auto pt-2">
-            L&rsquo;IA fait le gros du travail. Ton setter pilote tout. Et chaque semaine, le systeme s&rsquo;affine avec tes retours.
+            L&rsquo;IA fait le gros du travail. Ton setter pilote tout. Et chaque semaine, le système s&rsquo;affine avec tes retours.
           </p>
 
           {/* ── Expandable section — only in full mode ─────── */}
@@ -265,7 +319,7 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
               {expanded && (
                 <div className="mt-4 bg-bg-secondary rounded-xl border border-white/[0.06] p-5 text-text-secondary text-sm leading-relaxed max-w-2xl mx-auto">
                   <p className="mb-3">
-                    Concretement : on construit des listes avec Sales Navigator qui ciblent exactement ton client ideal. En parallele, on surveille qui interagit avec tes concurrents pour capter les prospects deja en reflexion.
+                    Concretement : on construit des listes avec Sales Navigator qui ciblent exactement ton client idéal. En parallèle, on surveille qui interagit avec tes concurrents pour capter les prospects déjà en réflexion.
                   </p>
                   <p className="mb-3">
                     Cote inbound, chaque lead qui arrive — que ce soit un DM, un commentaire ou un formulaire — est qualifie par ton setter. Selon le canal, c&rsquo;est fait en DM LinkedIn ou par telephone.

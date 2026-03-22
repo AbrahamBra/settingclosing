@@ -109,7 +109,7 @@ export function CTAFinale() {
           <ScrollReveal>
             <div className="bg-bg-secondary p-10 border-b md:border-b-0 md:border-r border-black/8">
               <h3 className="font-sans font-semibold text-h3 text-text-primary mb-8">
-                Contactez-nous
+                Écris-nous
               </h3>
 
               {state === 'success' ? (

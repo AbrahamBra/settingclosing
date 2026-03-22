@@ -25,6 +25,10 @@ const faqs = [
     a: 'La Phase 1 (LinkedIn) ne nécessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter c\u2019est pour plus tard.',
   },
   {
+    q: 'Combien de clients tu prends par mois\u00a0?',
+    a: '5 max. Chaque client a un setter dédié — on ne dilue pas la qualité. C\u2019est pour ça qu\u2019on peut garantir les résultats.',
+  },
+  {
     q: 'Et si ça marche pas\u00a0?',
     a: 'Zéro engagement. Tu peux arrêter à tout moment. Et la garantie RDV couvre ton risque\u00a0: si on ne délivre pas, on continue gratuitement.',
   },

@@ -28,6 +28,8 @@ export interface Offer {
   pricing: OfferPricing
   guarantee?: string
   noCommitment?: boolean
+  homepageBullets: string[]
+  homepageResult: string
   cta: { label: string; href: string }
 }
 
@@ -56,6 +58,12 @@ export const offers: Offer[] = [
       subscription: { amount: 790, period: '/ mois', detail: '790\u00a0\u20ac/mois. Sans engagement.' },
       bonus: 'Prime par RDV : 50\u00a0\u20ac (ticket <\u00a05k), 150\u00a0\u20ac (5\u201315k), 250\u00a0\u20ac (>\u00a015k)',
     },
+    homepageBullets: [
+      'Ton setter contacte 200+ profils/semaine',
+      'Ciblage par signaux d\u2019achat IA',
+      'Messages personnalis\u00e9s, pas des templates',
+    ],
+    homepageResult: '3+ RDV qualifi\u00e9s par semaine',
     guarantee: 'Moins de 5 RDV qualifi\u00e9s livr\u00e9s dans le mois\u00a0? Le mois suivant est offert.',
     noCommitment: true,
     cta: { label: 'D\u00e9marrer\u00a0\u2192', href: '#contact' },
@@ -84,6 +92,12 @@ export const offers: Offer[] = [
       subscription: { amount: 175, period: '/ demi-journ\u00e9e', detail: '175\u00a0\u20ac/demi-journ\u00e9e. 2-4 demi-journ\u00e9es/mois en moyenne.' },
       bonus: 'Prime par RDV : 25\u00a0\u20ac (ticket <\u00a05k), 100\u00a0\u20ac (5\u201315k), 200\u00a0\u20ac (>\u00a015k)',
     },
+    homepageBullets: [
+      'Ton setter rappelle chaque lead en moins de 24h',
+      'Qualification par t\u00e9l\u00e9phone ou DM LinkedIn',
+      'Tri automatique\u00a0: chaud \u2192 RDV, ti\u00e8de \u2192 relance',
+    ],
+    homepageResult: 'Z\u00e9ro lead perdu, que des RDV pr\u00eats \u00e0 closer',
     cta: { label: 'Ajouter\u00a0\u2192', href: '#contact' },
   },
   {
@@ -109,6 +123,12 @@ export const offers: Offer[] = [
       subscription: { amount: 990, period: '/ mois', detail: '990\u00a0\u20ac/mois tout compris. Engagement 3 mois, puis sans engagement.' },
       bonus: 'Prime par RDV\u00a0: 50\u00a0\u20ac (ticket\u00a0<\u00a05k), 150\u00a0\u20ac (5\u201315k), 250\u00a0\u20ac (>\u00a015k)',
     },
+    homepageBullets: [
+      'On r\u00e9active ta base dormante avec du contenu cibl\u00e9',
+      'Scoring IA pour identifier les contacts les plus chauds',
+      'S\u00e9quences automatis\u00e9es de nurturing',
+    ],
+    homepageResult: 'Pipeline continu sans prospecter activement',
     guarantee: 'Garantie RDV proportionnelle \u00e0 ta base. Si on ne livre pas, M4 offert.',
     noCommitment: false,
     cta: { label: 'Passer \u00e0 l\u2019\u00e9chelle\u00a0\u2192', href: '#contact' },
