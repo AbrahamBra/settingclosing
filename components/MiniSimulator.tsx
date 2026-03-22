@@ -192,7 +192,7 @@ export function MiniSimulator({ config }: { config: SimulatorConfig }) {
               {results.roi.toFixed(1)}x
             </p>
             <p className="font-sans text-text-muted text-[10px] mt-0.5">
-              Pour 1&nbsp;&euro; investi, vous r&eacute;cup&eacute;rez {results.roi.toFixed(1)}&nbsp;&euro;
+              Pour 1&nbsp;&euro; investi, tu r&eacute;cup&egrave;res {results.roi.toFixed(1)}&nbsp;&euro;
             </p>
           </>
         ) : (

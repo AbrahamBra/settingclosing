@@ -43,7 +43,7 @@ export function ROICalculator() {
               Simulateur
             </p>
             <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-3">
-              Combien peut vous rapporter le Setting&nbsp;?
+              Combien peut te rapporter le Setting&nbsp;?
             </h2>
             <p className="font-sans text-text-muted text-base">
               Ajustez les curseurs. Le calcul se fait en temps r&eacute;el.
@@ -149,7 +149,7 @@ export function ROICalculator() {
             <div className="bg-bg-secondary rounded-2xl border border-accent/20 p-8 flex flex-col gap-6"
               style={{ background: 'rgba(200,117,51,0.03)' }}>
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent">
-                Votre estimation mensuelle
+                Ton estimation mensuelle
               </p>
 
               <div className="flex flex-col gap-4 flex-1">
@@ -192,13 +192,13 @@ export function ROICalculator() {
                   {results.roi.toFixed(1)}x
                 </p>
                 <p className="font-sans text-text-muted text-[11px] mt-1">
-                  Pour 1&nbsp;&euro; investi, vous r&eacute;cup&eacute;rez {results.roi.toFixed(1)}&nbsp;&euro;
+                  Pour 1&nbsp;&euro; investi, tu r&eacute;cup&egrave;res {results.roi.toFixed(1)}&nbsp;&euro;
                 </p>
               </div>
 
               <p className="font-sans text-text-muted text-[11px] leading-relaxed">
-                Estimation indicative bas&eacute;e sur vos param&egrave;tres.
-                Le taux de closing d&eacute;pend de votre offre et de votre march&eacute;.
+                Estimation indicative bas&eacute;e sur tes param&egrave;tres.
+                Le taux de closing d&eacute;pend de ton offre et de ton march&eacute;.
               </p>
             </div>
           </div>

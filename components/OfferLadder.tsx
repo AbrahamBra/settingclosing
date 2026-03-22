@@ -162,7 +162,7 @@ export function OfferLadder() {
               Notre approche
             </p>
             <h2 className="font-sans text-h2 text-text-primary mb-3">
-              Vous en &ecirc;tes o&ugrave;&nbsp;?
+              Tu en es o&ugrave;&nbsp;?
             </h2>
             <p className="text-sm text-text-secondary leading-relaxed">
               Trois niveaux de maturit&eacute;, trois r&eacute;ponses. Trouvez la v&ocirc;tre.

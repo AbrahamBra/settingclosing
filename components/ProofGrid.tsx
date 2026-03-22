@@ -5,13 +5,13 @@ const proofs = [
   {
     icon: '📸',
     title: 'Ciblage chirurgical',
-    desc: 'Vos filtres Sales Navigator en action sur une vraie liste',
+    desc: 'Tes filtres Sales Navigator en action sur une vraie liste',
     placeholder: 'Screenshot Sales Navigator',
   },
   {
     icon: '🎥',
     title: 'Scoring en temps réel',
-    desc: "L'IA qui analyse et priorise vos leads",
+    desc: "L'IA qui analyse et priorise tes leads",
     placeholder: 'Vidéo Claude Cowork',
   },
   {
