@@ -82,201 +82,175 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
       )}
 
       <ScrollReveal delay={compact ? 0 : 100}>
-        {compact ? (
-          /* ══════════════════════════════════════════════════
-             COMPACT MODE — linear flow for homepage
-             ══════════════════════════════════════════════════ */
-          <div className="w-full space-y-4">
-            {/* Setter banner — simplified */}
-            <div className="bg-accent/10 border border-accent/20 rounded-xl p-4 text-center">
-              <p className="font-sans font-bold text-text-primary text-sm mb-1">
-                Ton setter pilote tout
-              </p>
-              <div className="flex flex-wrap justify-center gap-1.5">
-                {SETTER_TAGS.map((tag) => (
-                  <span key={tag} className="px-2 py-0.5 rounded-full text-[11px] font-medium bg-accent/10 border border-accent/20 text-accent">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
+        <div className="w-full space-y-5">
 
-            <div className="flex justify-center"><Arrow /></div>
-
-            {/* Linear 4-step flow */}
-            <div className="flex flex-col md:flex-row gap-3 md:gap-0 md:items-stretch">
-              {[
-                { title: 'On cible', subtitle: 'Listes Sales Nav + veille concurrents' },
-                { title: 'On ecrit', subtitle: 'Message IA, angle choisi par le setter' },
-                { title: 'On verifie', subtitle: 'Rien ne part sans validation humaine' },
-                { title: 'On livre', subtitle: 'RDV qualifie dans ton agenda' },
-              ].map((step, i, arr) => (
-                <div key={step.title} className="flex flex-col md:flex-row md:items-center flex-1 min-w-0">
-                  <StepCard title={step.title} subtitle={step.subtitle} accent={i === arr.length - 1} />
-                  {i < arr.length - 1 && (
-                    <div className="flex items-center justify-center shrink-0 py-1.5 md:py-0 md:px-2">
-                      <span className="flex md:hidden text-accent text-base leading-none">↓</span>
-                      <span className="hidden md:flex text-accent text-base leading-none">→</span>
-                    </div>
-                  )}
-                </div>
+          {/* ── Setter + Base de connaissance (top) ─────────── */}
+          <div className="bg-accent/10 border border-accent/20 rounded-xl p-5 text-center">
+            <p className="font-sans font-bold text-text-primary text-base mb-1">
+              Ton setter pilote tout
+            </p>
+            <p className="text-text-muted text-xs mb-3">
+              Il s&rsquo;appuie sur ta base de connaissance — enrichie chaque semaine
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {SETTER_TAGS.map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-accent/10 border border-accent/20 text-accent"
+                >
+                  {tag}
+                </span>
               ))}
             </div>
-
-            <div className="flex justify-center">
-              <div className="flex items-center gap-2 text-text-muted text-[11px]">
-                <span className="text-accent/40">↻</span>
-                Chaque semaine, le systeme s&rsquo;affine avec tes retours
-              </div>
-            </div>
-
-            <p className="text-center text-text-secondary text-sm leading-relaxed max-w-lg mx-auto">
-              L&rsquo;IA fait le gros du travail. Ton setter pilote tout.
+            <p className="text-text-muted text-[11px] mt-3 italic">
+              Cette base depend du travail qu&rsquo;on fait ensemble en amont : comprendre ton offre, ton marche, ton client ideal.
             </p>
           </div>
-        ) : (
-          /* ══════════════════════════════════════════════════
-             FULL MODE — outbound/inbound detail for tarifs
-             ══════════════════════════════════════════════════ */
-          <div className="w-full space-y-5">
 
-            {/* ── Setter + Base de connaissance (top) ─────────── */}
-            <div className="bg-accent/10 border border-accent/20 rounded-xl p-5 text-center">
-              <p className="font-sans font-bold text-text-primary text-base mb-1">
-                Ton setter pilote tout
-              </p>
-              <p className="text-text-muted text-xs mb-3">
-                Il s&rsquo;appuie sur ta base de connaissance — enrichie chaque semaine
-              </p>
-              <div className="flex flex-wrap justify-center gap-2">
-                {SETTER_TAGS.map((tag) => (
-                  <span
-                    key={tag}
-                    className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-accent/10 border border-accent/20 text-accent"
+          {/* ── Arrow down ─────────────────────────────────── */}
+          <div className="flex justify-center">
+            <Arrow />
+          </div>
+
+          {/* ── Two columns: Outbound | Inbound ────────────── */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* ── OUTBOUND column ──────────────────────────── */}
+            <div className="space-y-4">
+              <div className="text-center">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#A78BFA]/10 border border-[#A78BFA]/20 text-[#A78BFA]">
+                  Outbound
+                </span>
+              </div>
+
+              {/* Two source cards side by side */}
+              <div className="grid grid-cols-2 gap-3">
+                {OUTBOUND_SOURCES.map((source) => (
+                  <div
+                    key={source.title}
+                    className="bg-bg-secondary rounded-xl border border-white/[0.06] p-3"
                   >
-                    {tag}
-                  </span>
+                    <p className="font-sans font-semibold text-text-primary text-xs mb-2 text-center">
+                      {source.title}
+                    </p>
+                    <ul className="space-y-1">
+                      {source.items.map((item) => (
+                        <li key={item} className="text-text-muted text-[11px] flex items-start gap-1.5">
+                          <span className="text-accent/60 mt-0.5 shrink-0">·</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
               </div>
-              <p className="text-text-muted text-[11px] mt-3 italic">
-                Cette base depend du travail qu&rsquo;on fait ensemble en amont : comprendre ton offre, ton marche, ton client ideal.
+
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <Arrow />
+              </div>
+
+              {/* Outbound pipeline steps */}
+              <div className="space-y-2">
+                {OUTBOUND_STEPS.map((step, i) => (
+                  <div key={step.title}>
+                    <StepCard title={step.title} subtitle={step.subtitle} />
+                    {i < OUTBOUND_STEPS.length - 1 && (
+                      <div className="flex justify-center py-1.5">
+                        <Arrow muted />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* ── INBOUND column ───────────────────────────── */}
+            <div className="space-y-4">
+              <div className="text-center">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FBBF24]/10 border border-[#FBBF24]/20 text-[#FBBF24]">
+                  Inbound
+                </span>
+              </div>
+
+              {/* Sources */}
+              <div className="bg-bg-secondary rounded-xl border border-white/[0.06] p-3">
+                <p className="font-sans font-semibold text-text-primary text-xs mb-2 text-center">
+                  Leads entrants
+                </p>
+                <div className="flex flex-wrap justify-center gap-1.5">
+                  {INBOUND_SOURCES.map((source) => (
+                    <span
+                      key={source}
+                      className="px-2 py-0.5 rounded-full text-[11px] text-text-muted bg-white/[0.04] border border-white/[0.06]"
+                    >
+                      {source}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Arrow */}
+              <div className="flex justify-center">
+                <Arrow />
+              </div>
+
+              {/* Qualification — two options */}
+              <div className="space-y-2">
+                <p className="text-text-muted text-[11px] text-center uppercase tracking-wider font-semibold">
+                  Qualification (selon le canal)
+                </p>
+                {INBOUND_QUALIF.map((step) => (
+                  <StepCard key={step.title} title={step.title} subtitle={step.subtitle} />
+                ))}
+              </div>
+
+              {/* Routing */}
+              <div className="flex justify-center pt-1">
+                <Arrow />
+              </div>
+              <StepCard
+                title="Tri des leads"
+                subtitle="Chaud → RDV · Tiède → relance · Froid → liste"
+                accent
+              />
+            </div>
+          </div>
+
+          {/* ── Convergence → RDV qualifié ─────────────────── */}
+          <div className="flex justify-center">
+            <Arrow />
+          </div>
+
+          <div className="flex justify-center">
+            <div className="bg-accent/10 border-2 border-accent/30 rounded-xl px-8 py-4 text-center">
+              <p className="font-sans font-bold text-accent text-sm">
+                RDV qualifié
               </p>
             </div>
+          </div>
 
-            {/* ── Arrow down ─────────────────────────────────── */}
-            <div className="flex justify-center">
-              <Arrow />
+          {/* ── Feedback loop arrow back up ─────────────────── */}
+          <div className="flex justify-center">
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-accent/40 text-base leading-none">↓</span>
+              <span className="text-text-muted text-[11px] px-4 text-center">
+                Qu&rsquo;est-ce qui a marche ? Quel profil a converti ? Quel angle a accroche ?
+              </span>
+              <span className="text-accent/40 text-lg leading-none">↻</span>
+              <span className="text-text-muted text-[11px]">
+                Tout remonte dans ta base de connaissance
+              </span>
             </div>
+          </div>
 
-            {/* ── Two columns: Outbound | Inbound ────────────── */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* ── Tagline ────────────────────────────────────── */}
+          <p className="text-center text-text-secondary text-sm leading-relaxed max-w-xl mx-auto pt-2">
+            L&rsquo;IA fait le gros du travail. Ton setter pilote tout. Et chaque semaine, le systeme s&rsquo;affine avec tes retours.
+          </p>
 
-              {/* ── OUTBOUND column ──────────────────────────── */}
-              <div className="space-y-4">
-                <div className="text-center">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#A78BFA]/10 border border-[#A78BFA]/20 text-[#A78BFA]">
-                    Outbound
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  {OUTBOUND_SOURCES.map((source) => (
-                    <div key={source.title} className="bg-bg-secondary rounded-xl border border-white/[0.06] p-3">
-                      <p className="font-sans font-semibold text-text-primary text-xs mb-2 text-center">
-                        {source.title}
-                      </p>
-                      <ul className="space-y-1">
-                        {source.items.map((item) => (
-                          <li key={item} className="text-text-muted text-[11px] flex items-start gap-1.5">
-                            <span className="text-accent/60 mt-0.5 shrink-0">·</span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="flex justify-center"><Arrow /></div>
-
-                <div className="space-y-2">
-                  {OUTBOUND_STEPS.map((step, i) => (
-                    <div key={step.title}>
-                      <StepCard title={step.title} subtitle={step.subtitle} />
-                      {i < OUTBOUND_STEPS.length - 1 && (
-                        <div className="flex justify-center py-1.5"><Arrow muted /></div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* ── INBOUND column ───────────────────────────── */}
-              <div className="space-y-4">
-                <div className="text-center">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#FBBF24]/10 border border-[#FBBF24]/20 text-[#FBBF24]">
-                    Inbound
-                  </span>
-                </div>
-
-                <div className="bg-bg-secondary rounded-xl border border-white/[0.06] p-3">
-                  <p className="font-sans font-semibold text-text-primary text-xs mb-2 text-center">
-                    Leads entrants
-                  </p>
-                  <div className="flex flex-wrap justify-center gap-1.5">
-                    {INBOUND_SOURCES.map((source) => (
-                      <span key={source} className="px-2 py-0.5 rounded-full text-[11px] text-text-muted bg-white/[0.04] border border-white/[0.06]">
-                        {source}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex justify-center"><Arrow /></div>
-
-                <div className="space-y-2">
-                  <p className="text-text-muted text-[11px] text-center uppercase tracking-wider font-semibold">
-                    Qualification (selon le canal)
-                  </p>
-                  {INBOUND_QUALIF.map((step) => (
-                    <StepCard key={step.title} title={step.title} subtitle={step.subtitle} />
-                  ))}
-                </div>
-
-                <div className="flex justify-center pt-1"><Arrow /></div>
-                <StepCard title="Tri des leads" subtitle="Chaud → RDV · Tiede → relance · Froid → liste" accent />
-              </div>
-            </div>
-
-            {/* ── Convergence → RDV qualifié ─────────────────── */}
-            <div className="flex justify-center"><Arrow /></div>
-
-            <div className="flex justify-center">
-              <div className="bg-accent/10 border-2 border-accent/30 rounded-xl px-8 py-4 text-center">
-                <p className="font-sans font-bold text-accent text-sm">RDV qualifie</p>
-              </div>
-            </div>
-
-            {/* ── Feedback loop ─────────────────────────────── */}
-            <div className="flex justify-center">
-              <div className="flex flex-col items-center gap-1">
-                <span className="text-accent/40 text-base leading-none">↓</span>
-                <span className="text-text-muted text-[11px] px-4 text-center">
-                  Qu&rsquo;est-ce qui a marche ? Quel profil a converti ? Quel angle a accroche ?
-                </span>
-                <span className="text-accent/40 text-lg leading-none">↻</span>
-                <span className="text-text-muted text-[11px]">
-                  Tout remonte dans ta base de connaissance
-                </span>
-              </div>
-            </div>
-
-            {/* ── Tagline ────────────────────────────────────── */}
-            <p className="text-center text-text-secondary text-sm leading-relaxed max-w-xl mx-auto pt-2">
-              L&rsquo;IA fait le gros du travail. Ton setter pilote tout. Et chaque semaine, le systeme s&rsquo;affine avec tes retours.
-            </p>
-
-            {/* ── Expandable section ─────────────────────────── */}
+          {/* ── Expandable section — only in full mode ─────── */}
+          {!compact && (
             <div className="pt-2">
               <div className="flex justify-center">
                 <button
@@ -284,7 +258,7 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
                   className="text-accent text-sm font-medium underline-offset-4 hover:underline transition-colors"
                   aria-expanded={expanded}
                 >
-                  {expanded ? 'Reduire ↑' : 'En savoir plus ↓'}
+                  {expanded ? 'Réduire ↑' : 'En savoir plus ↓'}
                 </button>
               </div>
 
@@ -302,9 +276,9 @@ export function PipelineVisual({ compact = false }: PipelineVisualProps) {
                 </div>
               )}
             </div>
+          )}
 
-          </div>
-        )}
+        </div>
       </ScrollReveal>
     </div>
   )

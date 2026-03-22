@@ -180,8 +180,8 @@ export default function ExternaliserProspectionLinkedinPage() {
                 Externaliser sa prospection LinkedIn&nbsp;: pour qui, quand, comment
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                Vous &ecirc;tes bon pour d&eacute;livrer votre service. Mais la prospection prend du temps que vous n&apos;avez pas.
-                Vous avez essay&eacute; des outils d&apos;automatisation et les r&eacute;sultats &eacute;taient d&eacute;cevants.
+                Tu es bon pour d&eacute;livrer ton service. Mais la prospection prend du temps que tu n&apos;as pas.
+                Tu as essay&eacute; des outils d&apos;automatisation et les r&eacute;sultats &eacute;taient d&eacute;cevants.
                 Externaliser, c&apos;est confier cette partie &agrave; quelqu&apos;un qui fait &ccedil;a &agrave; plein temps.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
@@ -203,7 +203,7 @@ export default function ExternaliserProspectionLinkedinPage() {
               <ScrollReveal delay={0}>
                 <DarkCard hover className="p-8 h-full">
                   <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
-                    Vous n&apos;avez pas le temps
+                    Tu n&apos;as pas le temps
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     Bien prospecter sur LinkedIn prend 2 &agrave; 3 heures par jour.
@@ -229,7 +229,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     Un SDR junior co&ucirc;te 35&ndash;45&nbsp;k&euro;/an, plus 3 &agrave; 6 mois de mont&eacute;e en comp&eacute;tence.
-                    Si &ccedil;a ne fonctionne pas, vous avez perdu 6 mois et plus de 20&nbsp;000&nbsp;&euro;.
+                    Si &ccedil;a ne fonctionne pas, tu as perdu 6 mois et plus de 20&nbsp;000&nbsp;&euro;.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -255,8 +255,8 @@ export default function ExternaliserProspectionLinkedinPage() {
                     Consultants et freelances B2B
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
-                    Vous vendez de l&apos;expertise, pas du volume.
-                    Vous avez besoin de 3 &agrave; 5 RDV qualifi&eacute;s par semaine, pas de 100 messages envoy&eacute;s dans le vide.
+                    Tu vends de l&apos;expertise, pas du volume.
+                    Tu as besoin de 3 &agrave; 5 RDV qualifi&eacute;s par semaine, pas de 100 messages envoy&eacute;s dans le vide.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -266,7 +266,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                     Fondateurs de startups
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
-                    Vous devez valider votre march&eacute; et remplir votre pipeline pendant que vous construisez le produit.
+                    Tu dois valider ton march&eacute; et remplir ton pipeline pendant que tu construis le produit.
                     Faire les deux en m&ecirc;me temps sans aide, c&apos;est compliqu&eacute;.
                   </p>
                 </DarkCard>
@@ -277,8 +277,8 @@ export default function ExternaliserProspectionLinkedinPage() {
                     Solopreneurs et coachs B2B
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
-                    Vous avez l&apos;offre et les comp&eacute;tences pour d&eacute;livrer.
-                    Il vous manque juste un flux r&eacute;gulier de prospects qualifi&eacute;s.
+                    Tu as l&apos;offre et les comp&eacute;tences pour d&eacute;livrer.
+                    Il te manque juste un flux r&eacute;gulier de prospects qualifi&eacute;s.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -309,12 +309,12 @@ export default function ExternaliserProspectionLinkedinPage() {
                       1
                     </span>
                     <h3 className="font-sans font-extrabold text-h3 text-text-primary">
-                      On d&eacute;finit votre cible
+                      On d&eacute;finit ta cible
                     </h3>
                   </div>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     ICP, signaux d&apos;achat, messages. On cadre tout &ccedil;a ensemble en 48h.
-                    Vous validez avant qu&apos;on commence.
+                    Tu valides avant qu&apos;on commence.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -325,7 +325,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                       2
                     </span>
                     <h3 className="font-sans font-extrabold text-h3 text-text-primary">
-                      Un setter prospecte pour vous
+                      Un setter prospecte pour toi
                     </h3>
                   </div>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
@@ -341,7 +341,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                       3
                     </span>
                     <h3 className="font-sans font-extrabold text-h3 text-text-primary">
-                      Vous recevez des RDV qualifi&eacute;s
+                      Tu re&ccedil;ois des RDV qualifi&eacute;s
                     </h3>
                   </div>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
@@ -359,7 +359,7 @@ export default function ExternaliserProspectionLinkedinPage() {
           <div className="container-max">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary text-center mb-4">
-                Ce que vous pouvez attendre
+                Ce que tu peux attendre
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed text-center mb-12 max-w-xl mx-auto">
                 Des chiffres bas&eacute;s sur les missions en cours. Pas des projections marketing.
@@ -453,8 +453,8 @@ export default function ExternaliserProspectionLinkedinPage() {
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     Les premiers RDV arrivent g&eacute;n&eacute;ralement dans les 7 premiers jours.
-                    On d&eacute;finit votre cible et vos messages en 48h, puis le setter commence &agrave; prospecter.
-                    Si vous avez moins de 5 RDV dans le premier mois, le mois suivant est offert.
+                    On d&eacute;finit ta cible et tes messages en 48h, puis le setter commence &agrave; prospecter.
+                    Si tu as moins de 5 RDV dans le premier mois, le mois suivant est offert.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -462,12 +462,12 @@ export default function ExternaliserProspectionLinkedinPage() {
               <ScrollReveal delay={60}>
                 <DarkCard className="p-8">
                   <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3">
-                    Est-ce que vous envoyez des messages sans mon accord&nbsp;?
+                    Est-ce que tu envoies des messages sans mon accord&nbsp;?
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     Non. Chaque message est relu et valid&eacute; par un humain avant envoi.
                     Rien ne part en automatique.
-                    Vous gardez le contr&ocirc;le sur ce qui sort sous votre nom.
+                    Tu gardes le contr&ocirc;le sur ce qui sort sous ton nom.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -479,7 +479,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     Un SDR junior co&ucirc;te 35 &agrave; 45&nbsp;k&euro;/an, plus 3 &agrave; 6 mois de mont&eacute;e en comp&eacute;tence.
-                    Si &ccedil;a ne fonctionne pas, vous avez perdu 6 mois et plus de 20&nbsp;000&nbsp;&euro;.
+                    Si &ccedil;a ne fonctionne pas, tu as perdu 6 mois et plus de 20&nbsp;000&nbsp;&euro;.
                     L&apos;externalisation d&eacute;marre &agrave; 790&nbsp;&euro;/mois, sans engagement long terme.
                   </p>
                 </DarkCard>
@@ -492,8 +492,8 @@ export default function ExternaliserProspectionLinkedinPage() {
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     C&apos;est justement un bon moment pour prospecter.
-                    Les retours terrain affinent votre positionnement plus vite que n&apos;importe quelle analyse interne.
-                    On travaille avec vous sur les messages pour tester plusieurs angles.
+                    Les retours terrain affinent ton positionnement plus vite que n&apos;importe quelle analyse interne.
+                    On travaille avec toi sur les messages pour tester plusieurs angles.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -505,7 +505,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                   </h3>
                   <p className="font-sans text-text-secondary text-lg leading-relaxed">
                     Non. Pas d&apos;engagement minimum impos&eacute;.
-                    On vous demande juste de nous laisser 30 jours pour que le pipeline produise ses premiers r&eacute;sultats.
+                    On te demande juste de nous laisser 30 jours pour que le pipeline produise ses premiers r&eacute;sultats.
                   </p>
                 </DarkCard>
               </ScrollReveal>
@@ -542,10 +542,10 @@ export default function ExternaliserProspectionLinkedinPage() {
           <div className="container-max max-w-2xl mx-auto text-center">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4">
-                Pr&ecirc;t &agrave; externaliser votre prospection&nbsp;?
+                Pr&ecirc;t &agrave; externaliser ta prospection&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                Un appel de 30 minutes pour &eacute;valuer si ce service correspond &agrave; votre situation.
+                Un appel de 30 minutes pour &eacute;valuer si ce service correspond &agrave; ta situation.
                 Pas de pitch agressif. Juste une conversation franche.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">

@@ -147,7 +147,7 @@ export default function SettingNewsletterPage() {
                 Setting Newsletter
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                7 &eacute;tapes pour transformer votre base en pipeline de RDV.
+                7 &eacute;tapes pour transformer ta base en pipeline de RDV.
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
                 L&rsquo;IA r&eacute;dige dans la voix du dirigeant. Le scoring d&eacute;tecte les leads chauds.
@@ -215,7 +215,7 @@ export default function SettingNewsletterPage() {
                 </a>
                 <a href="/methode/setting-telephonique" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting t&eacute;l&eacute;phonique</p>
-                  <p className="font-sans text-sm text-text-muted">Qualification et routing de vos leads entrants.</p>
+                  <p className="font-sans text-sm text-text-muted">Qualification et routing de tes leads entrants.</p>
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
@@ -231,10 +231,10 @@ export default function SettingNewsletterPage() {
           <div className="container-max text-center max-w-2xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4">
-                Pr&ecirc;t &agrave; r&eacute;veiller votre base&nbsp;?
+                Pr&ecirc;t &agrave; r&eacute;veiller ta base&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                Parlons de votre base, de votre expertise et du syst&egrave;me qu&rsquo;on peut construire.
+                Parlons de ta base, de ton expertise et du syst&egrave;me qu&rsquo;on peut construire.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                 R&eacute;server un appel d&eacute;couverte

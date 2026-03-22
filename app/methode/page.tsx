@@ -79,8 +79,8 @@ export default function MethodeHubPage() {
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
                 Chaque entreprise a un niveau de maturit&eacute; commerciale diff&eacute;rent.
-                Notre approche s&apos;adapte &agrave; votre situation et construit le syst&egrave;me
-                qui vous am&egrave;ne des RDV qualifi&eacute;s.
+                Notre approche s&apos;adapte &agrave; ta situation et construit le syst&egrave;me
+                qui t&apos;am&egrave;ne des RDV qualifi&eacute;s.
               </p>
             </ScrollReveal>
           </div>
@@ -139,10 +139,10 @@ export default function MethodeHubPage() {
           <div className="container-max text-center max-w-2xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4">
-                Pr&ecirc;t &agrave; remplir votre agenda&nbsp;?
+                Pr&ecirc;t &agrave; remplir ton agenda&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                Quel que soit votre niveau de maturit&eacute;, les premiers RDV arrivent d&egrave;s la premi&egrave;re semaine.
+                Quel que soit ton niveau de maturit&eacute;, les premiers RDV arrivent d&egrave;s la premi&egrave;re semaine.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                 R&eacute;server un appel d&eacute;couverte

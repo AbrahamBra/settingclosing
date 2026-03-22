@@ -119,7 +119,7 @@ export default function SettingLinkedinMethodePage() {
                 Notre méthode
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                9 &eacute;tapes pour remplir votre agenda. Aucun message ne part sans validation humaine.
+                9 &eacute;tapes pour remplir ton agenda. Aucun message ne part sans validation humaine.
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
                 L&apos;IA rep&egrave;re les bons profils et propose des drafts. Nos r&egrave;gles de m&eacute;thode filtrent
@@ -195,11 +195,11 @@ export default function SettingLinkedinMethodePage() {
               <div className="grid sm:grid-cols-3 gap-4">
                 <a href="/methode/setting-telephonique" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting téléphonique</p>
-                  <p className="font-sans text-sm text-text-muted">Qualification et routing de vos leads entrants.</p>
+                  <p className="font-sans text-sm text-text-muted">Qualification et routing de tes leads entrants.</p>
                 </a>
                 <a href="/methode/setting-newsletter" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting Newsletter</p>
-                  <p className="font-sans text-sm text-text-muted">Newsletter thought leadership segmentée pour votre base existante.</p>
+                  <p className="font-sans text-sm text-text-muted">Newsletter thought leadership segment&eacute;e pour ta base existante.</p>
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
@@ -215,11 +215,11 @@ export default function SettingLinkedinMethodePage() {
           <div className="container-max text-center max-w-2xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4">
-                Prêt à remplir votre agenda ?
+                Pr&ecirc;t &agrave; remplir ton agenda&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                Ce pipeline se calibre en deux mois. Apr&egrave;s &ccedil;a, vous vous concentrez sur les appels.
-                La prospection tourne sans vous.
+                Ce pipeline se calibre en deux mois. Apr&egrave;s &ccedil;a, tu te concentres sur les appels.
+                La prospection tourne sans toi.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                 Réserver un appel découverte

@@ -123,10 +123,10 @@ export default function SettingTelephoniquePage() {
                 Setting t&eacute;l&eacute;phonique
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                Vos leads entrent. Un sales les qualifie. Aucun ne tombe entre les mailles.
+                Tes leads entrent. Un sales les qualifie. Aucun ne tombe entre les mailles.
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                Chaque lead entrant est appel&eacute;, qualifi&eacute; via une grille BANT construite avec vous,
+                Chaque lead entrant est appel&eacute;, qualifi&eacute; via une grille BANT construite avec toi,
                 et rout&eacute; selon sa maturit&eacute;. Approche Challenger Sale, scoring pond&eacute;r&eacute;, z&eacute;ro lead oubli&eacute;.
               </p>
 
@@ -194,7 +194,7 @@ export default function SettingTelephoniquePage() {
           <div className="container-max max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-3">
-                Le framework BANT, adapt&eacute; &agrave; votre march&eacute;
+                Le framework BANT, adapt&eacute; &agrave; ton march&eacute;
               </h2>
               <p className="text-text-secondary text-base leading-relaxed mb-4 max-w-3xl">
                 Le BANT (Budget, Authority, Need, Timeline) est un framework de qualification
@@ -234,9 +234,9 @@ export default function SettingTelephoniquePage() {
                 <p className="text-text-secondary text-sm leading-relaxed">
                   <span className="font-semibold text-[#FBBF24]">Le principe&nbsp;:</span> le BANT seul
                   ne suffit pas. C&rsquo;est une grille de lecture, pas un interrogatoire.
-                  Chaque crit&egrave;re est pond&eacute;r&eacute; selon votre march&eacute;&nbsp;: Authority compte triple
+                  Chaque crit&egrave;re est pond&eacute;r&eacute; selon ton march&eacute;&nbsp;: Authority compte triple
                   en vente grands comptes, Timeline compte triple pour un produit saisonnier.
-                  La grille est construite avec vous. Pas de template.
+                  La grille est construite avec toi. Pas de template.
                 </p>
               </div>
             </ScrollReveal>
@@ -330,7 +330,7 @@ export default function SettingTelephoniquePage() {
                 </a>
                 <a href="/methode/setting-newsletter" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Setting Newsletter</p>
-                  <p className="font-sans text-sm text-text-muted">Newsletter thought leadership segmentée pour votre base existante.</p>
+                  <p className="font-sans text-sm text-text-muted">Newsletter thought leadership segment&eacute;e pour ta base existante.</p>
                 </a>
                 <a href="/tarifs" className="group block border border-white/[0.06] rounded-xl p-5 hover:border-white/[0.12] transition-colors">
                   <p className="font-sans font-semibold text-text-primary mb-1 group-hover:text-white transition-colors">Tarifs</p>
@@ -349,7 +349,7 @@ export default function SettingTelephoniquePage() {
                 Des leads qui entrent, des RDV qui sortent.
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
-                Parlons de votre volume de leads et du routing qui manque.
+                Parlons de ton volume de leads et du routing qui manque.
               </p>
               <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
                 Discuter de mon volume
