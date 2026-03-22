@@ -217,12 +217,9 @@ export default function Home() {
         <Hero />
         <GrowthJourney />
 
-        {/* — Respiration warm white — */}
-        <div className="bg-[#F5F2ED]">
-          <PipelineVisual variant="homepage" />
-          <OnboardingTimeline />
-          <SocialProof variant="light" />
-        </div>
+        <PipelineVisual variant="homepage" />
+        <OnboardingTimeline />
+        <SocialProof />
 
         <TeamBanner />
         <FAQ />

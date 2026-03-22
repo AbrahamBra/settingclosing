@@ -79,7 +79,7 @@ export function PipelineVisual({ compact = false, variant = 'full' }: PipelineVi
             <p className="text-xs font-semibold uppercase tracking-widest text-[#C87533] mb-4 text-center">
               Ton pipeline
             </p>
-            <h2 className="text-h2 font-bold text-[#1A1816] text-center mb-12">
+            <h2 className="text-h2 font-bold text-text-primary text-center mb-12">
               Comment on remplit ton agenda
             </h2>
           </ScrollReveal>
@@ -87,10 +87,10 @@ export function PipelineVisual({ compact = false, variant = 'full' }: PipelineVi
           <div className="flex flex-col md:flex-row items-stretch gap-4 md:gap-6">
             {steps.map((step, i) => (
               <ScrollReveal key={i} delay={i * 100} className="flex-1 flex flex-col md:flex-row items-center gap-4">
-                <div className="flex-1 w-full rounded-2xl border border-[#D4CFC7] bg-white/60 p-6 text-center">
+                <div className="flex-1 w-full rounded-2xl border border-white/[0.06] bg-bg-secondary p-6 text-center">
                   <div className="text-3xl mb-3">{step.icon}</div>
-                  <h3 className="font-semibold text-[#1A1816] mb-2">{step.title}</h3>
-                  <p className="text-sm text-[#6B6560]">{step.desc}</p>
+                  <h3 className="font-semibold text-text-primary mb-2">{step.title}</h3>
+                  <p className="text-sm text-text-secondary">{step.desc}</p>
                 </div>
                 {i < steps.length - 1 && (
                   <span className="text-[#A8A090] text-xl hidden md:block">→</span>

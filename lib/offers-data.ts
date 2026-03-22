@@ -63,7 +63,7 @@ export const offers: Offer[] = [
       'Ciblage par signaux d\u2019achat IA',
       'Messages personnalis\u00e9s, pas des templates',
     ],
-    homepageResult: '3+ RDV qualifi\u00e9s par semaine',
+    homepageResult: '1 \u00e0 4 RDV qualifi\u00e9s par semaine',
     guarantee: 'Moins de 5 RDV qualifi\u00e9s livr\u00e9s dans le mois\u00a0? Le mois suivant est offert.',
     noCommitment: true,
     cta: { label: 'D\u00e9marrer\u00a0\u2192', href: '#contact' },
