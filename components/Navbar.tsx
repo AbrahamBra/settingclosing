@@ -23,7 +23,7 @@ export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' 
   }, [drawerOpen])
 
   const navLinks = [
-    { label: 'Méthode', href: '/methode' },
+    { label: 'Méthode', href: '/methode/setting-linkedin' },
     { label: 'Tarifs', href: '/tarifs' },
     { label: 'Résultats', href: '/resultats' },
     { label: 'Ressources', href: '/ressources' },

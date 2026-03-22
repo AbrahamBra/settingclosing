@@ -58,7 +58,7 @@ export function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#growth-journey"
+            href="#methode"
             className="font-sans text-sm font-semibold text-text-muted hover:text-text-primary transition-colors"
           >
             Voir comment ça marche ↓

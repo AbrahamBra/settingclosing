@@ -24,6 +24,11 @@ const nextConfig: NextConfig = {
         destination: '/methode/setting-newsletter',
         permanent: true,
       },
+      {
+        source: '/methode',
+        destination: '/methode/setting-linkedin',
+        permanent: false,
+      },
     ]
   },
   async headers() {

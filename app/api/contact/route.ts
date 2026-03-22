@@ -10,13 +10,14 @@ interface ContactPayload {
   _hp?: string // honeypot
 }
 
-const VALID_OFFRES = ['setting-linkedin', 'setting-telephonique', 'setting-newsletter', 'bundle'] as const
+const VALID_OFFRES = ['setting-linkedin', 'setting-telephonique', 'setting-newsletter', 'bundle', 'autre'] as const
 
 const offreLabels: Record<string, string> = {
   'setting-linkedin': 'Setting LinkedIn',
   'setting-telephonique': 'Setting téléphonique',
   'setting-newsletter': 'Setting Newsletter',
   'bundle': 'Offre combinée',
+  'autre': 'Autre besoin',
 }
 
 const ALLOWED_ORIGINS = [

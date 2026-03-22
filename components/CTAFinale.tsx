@@ -190,7 +190,7 @@ export function CTAFinale() {
                       value={form.message}
                       onChange={handleChange}
                       className="w-full bg-[#1C1A16] border border-white/[0.06] rounded-lg px-4 py-3 font-sans text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
-                      placeholder="Décrivez ta situation..."
+                      placeholder="D\u00e9cris ta situation..."
                     />
                   </div>
 

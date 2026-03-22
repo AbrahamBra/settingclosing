@@ -25,21 +25,15 @@ const initialForm: FormData = {
 
 const offreOptions = [
   { value: '', label: 'Je ne sais pas encore' },
-  { value: 'setting-linkedin', label: 'Setting LinkedIn — Prospection' },
-  { value: 'setting-telephonique', label: 'Setting T\u00e9l\u00e9phonique — Qualification' },
-  { value: 'setting-newsletter', label: 'Setting Newsletter — Nurturing' },
-  { value: 'bundle', label: 'Pack Croissance' },
+  { value: 'setting-linkedin', label: 'Setting LinkedIn' },
+  { value: 'autre', label: 'Autre besoin (téléphonique, coaching...)' },
 ]
 
 const placeholders: Record<string, string> = {
   'setting-linkedin':
     "Je cible [secteur/persona]. Mon ticket moyen est d'environ [X]€. Je cherche à obtenir [X] RDV/semaine.",
-  'setting-telephonique':
-    "Je reçois environ [X] leads/mois via [source]. Mon problème principal : [personne ne les rappelle / pas de qualification / leads perdus].",
-  'setting-newsletter':
-    "J'ai une base de [X] contacts sur [outil]. Aujourd'hui elle ne génère [aucun revenu / peu de RDV].",
-  'bundle':
-    "Je cherche une solution complète. Ma situation actuelle : [décrivez brièvement].",
+  'autre':
+    "Décris ton besoin (qualification leads entrants, coaching closing, automatisation...).",
   '':
     "Décris ta situation et tes objectifs...",
 }

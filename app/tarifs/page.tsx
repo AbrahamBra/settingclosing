@@ -4,7 +4,7 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 import { DarkCard } from '@/components/ui/DarkCard'
-import { GrowthLadder } from '@/components/GrowthLadder'
+import { CombinedSimulator } from '@/components/CombinedSimulator'
 import { PipelineVisual } from '@/components/PipelineVisual'
 import { PricingComparison } from '@/components/PricingComparison'
 import { FAQ } from '@/components/FAQ'
@@ -86,21 +86,6 @@ const webPageSchema = {
           },
         ],
       },
-      {
-        '@type': 'Offer',
-        position: 3,
-        name: 'Setting Newsletter',
-        description: 'Newsletter thought leadership op\u00e9r\u00e9e par IA. 4 contenus segment\u00e9s par maturit\u00e9 toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. Prime par RDV : 50 \u20ac (ticket < 5k \u20ac), 150 \u20ac (5-15k \u20ac), 250 \u20ac (> 15k \u20ac).',
-        priceSpecification: [
-          {
-            '@type': 'PriceSpecification',
-            price: '990',
-            priceCurrency: 'EUR',
-            unitText: 'MONTH',
-            description: '990 \u20ac/mois tout compris. Engagement 3 mois, puis sans engagement.',
-          },
-        ],
-      },
     ],
   },
 }
@@ -135,26 +120,18 @@ const faqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Comment fonctionne le Setting Newsletter ?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: '990 \u20ac/mois tout compris. Conception, r\u00e9daction IA dans votre voix, envoi, scoring comportemental et routing automatique des leads chauds. Engagement 3 mois, puis sans engagement.',
-      },
-    },
-    {
-      '@type': 'Question',
       name: 'Y a-t-il un engagement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Non. Chaque offre est r\u00e9siliable \u00e0 tout moment (sauf Newsletter : 3 mois minimum). Garantie RDV sur chaque offre.',
+        text: 'Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Garantie RDV incluse.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Puis-je combiner plusieurs offres ?',
+      name: 'Je peux ajouter la qualification téléphonique ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. Chaque offre r\u00e9pond \u00e0 une situation diff\u00e9rente. La plupart de nos clients commencent par LinkedIn, puis ajoutent le t\u00e9l\u00e9phonique ou la newsletter selon leurs besoins.',
+        text: 'Oui. Si tu reçois des leads entrants (lead magnets, formulaires, contenu), on les qualifie par téléphone à 175 €/demi-journée. Activable à tout moment.',
       },
     },
     {
@@ -214,17 +191,17 @@ export default function TarifsPage() {
                 Tarifs
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                Une solution pour chaque situation
+                Un pipeline LinkedIn &agrave; 790&nbsp;&euro;/mois
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
-                Choisis l&apos;offre qui correspond &agrave; ta situation. Commence par LinkedIn, ajoute le reste quand tu en as besoin.
+                Setup offert, z&eacute;ro engagement. Simule ton ROI en temps r&eacute;el.
               </p>
             </ScrollReveal>
           </div>
         </section>
 
-        {/* ── GrowthLadder ─────────────────────────────────────────────────── */}
-        <GrowthLadder />
+        {/* ── Simulateur ROI LinkedIn + Téléphonique ────────────────────── */}
+        <CombinedSimulator />
 
         {/* ── PipelineVisual ───────────────────────────────────────────────── */}
         <section className="bg-bg-primary section-padding">

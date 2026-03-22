@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: 'Je n\u2019ai pas de base email, je peux quand m\u00eame\u00a0?',
-    a: 'Le Setting LinkedIn ne n\u00e9cessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter est un module compl\u00e9mentaire pour ceux qui ont d\u00e9j\u00e0 une audience.',
+    a: 'Pas besoin. Le Setting LinkedIn cible directement les prospects via les signaux d\u2019achat sur LinkedIn. Aucune base email requise.',
   },
   {
     q: 'Combien de clients tu prends par mois\u00a0?',
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: 'C\u2019est quoi les bonuses RDV\u00a0?',
-    a: 'Un système de rémunération au résultat. Plus on génère de RDV, plus notre part variable augmente. Ça aligne nos intérêts\u00a0: on gagne quand tu gagnes.',
+    a: 'Une prime variable par RDV g\u00e9n\u00e9r\u00e9, index\u00e9e sur ton ticket moyen. 50\u00a0\u20ac par RDV sous 5k\u00a0\u20ac, 150\u00a0\u20ac entre 5 et 15k, 250\u00a0\u20ac au-dessus. On gagne quand tu gagnes.',
   },
 ]
 

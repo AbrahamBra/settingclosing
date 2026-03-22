@@ -11,11 +11,12 @@ export const metadata: Metadata = {
   title: 'Setting téléphonique — Qualification BANT | Setting',
   description:
     'Qualification téléphonique B2B : grille BANT co-construite, Challenger Sale, scoring pondéré et routing par maturité. Zéro lead perdu.',
+  robots: { index: false, follow: true },
   alternates: {
-    canonical: 'https://www.setting.live/methode/setting-telephonique',
+    canonical: 'https://www.setting.live/methode/setting-linkedin#telephone',
     languages: {
-      'fr': 'https://www.setting.live/methode/setting-telephonique',
-      'x-default': 'https://www.setting.live/methode/setting-telephonique',
+      'fr': 'https://www.setting.live/methode/setting-linkedin#telephone',
+      'x-default': 'https://www.setting.live/methode/setting-linkedin#telephone',
     },
   },
   openGraph: {

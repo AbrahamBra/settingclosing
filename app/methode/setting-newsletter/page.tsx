@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   title: 'Setting Newsletter B2B : contenu expert segmenté et scoring | Setting',
   description:
     'Newsletter thought leadership opérée par IA : 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. 830 €/mois × 3.',
+  robots: { index: false, follow: true },
   alternates: {
     canonical: 'https://www.setting.live/methode/setting-newsletter',
     languages: {

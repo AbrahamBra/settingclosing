@@ -107,20 +107,6 @@ const globalSchema = {
               valueAddedTaxIncluded: false,
             },
           },
-          {
-            '@type': 'Offer',
-            name: 'Setting Newsletter',
-            description: 'Newsletter thought leadership op\u00e9r\u00e9e par IA. 4 contenus segment\u00e9s par maturit\u00e9, scoring comportemental, routing automatique. Prime par RDV : 50 \u20ac (< 5k \u20ac), 150 \u20ac (5-15k \u20ac), 250 \u20ac (> 15k \u20ac).',
-            url: 'https://www.setting.live/methode/setting-newsletter',
-            priceSpecification: {
-              '@type': 'PriceSpecification',
-              price: 990,
-              priceCurrency: 'EUR',
-              unitText: 'MONTH',
-              valueAddedTaxIncluded: false,
-              description: '990 \u20ac/mois tout compris. Engagement 3 mois, puis sans engagement.',
-            },
-          },
         ],
       },
     },
@@ -169,7 +155,7 @@ const homeFaqSchema = {
       name: 'Je n\u2019ai pas de base email, je peux quand m\u00eame\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le Setting LinkedIn ne n\u00e9cessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter est un module compl\u00e9mentaire pour ceux qui ont d\u00e9j\u00e0 une audience.',
+        text: 'Pas besoin. Le Setting LinkedIn cible directement les prospects via les signaux d\u2019achat sur LinkedIn. Aucune base email requise.',
       },
     },
     {
@@ -193,7 +179,7 @@ const homeFaqSchema = {
       name: 'C\u2019est quoi les bonuses RDV\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Un système de rémunération au résultat. Plus on génère de RDV, plus notre part variable augmente. Ça aligne nos intérêts\u00a0: on gagne quand tu gagnes.',
+        text: 'Une prime variable par RDV g\u00e9n\u00e9r\u00e9, index\u00e9e sur ton ticket moyen. 50\u00a0\u20ac par RDV sous 5k\u00a0\u20ac, 150\u00a0\u20ac entre 5 et 15k, 250\u00a0\u20ac au-dessus. On gagne quand tu gagnes.',
       },
     },
   ],
@@ -218,7 +204,7 @@ export default function Home() {
         <ToolMarquee />
 
         {/* Showcase offre phare : pipeline visuel complet */}
-        <section className="section-padding bg-bg-primary">
+        <section id="methode" className="section-padding bg-bg-primary scroll-mt-20">
           <div className="container-max max-w-4xl mx-auto">
             <div className="text-center mb-6">
               <span
@@ -270,35 +256,59 @@ export default function Home() {
             <p className="text-text-secondary text-sm mb-8 max-w-lg mx-auto">
               Quand le pipeline tourne, c&apos;est la delivery qui bloque. Lib&egrave;re du temps, d&eacute;l&egrave;gue, automatise&nbsp;&mdash; ChallengersLab t&apos;aide &agrave; scaler sans recruter.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
               <a
                 href="https://www.challengerslab.com/ia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-5 py-3 rounded-xl text-sm text-left border border-[#A78BFA]/20 hover:bg-[#A78BFA]/5 transition-colors"
+                className="group block rounded-xl p-5 border border-[#A78BFA]/15 hover:border-[#A78BFA]/30 hover:bg-[#A78BFA]/[0.03] transition-all"
               >
-                <span className="w-8 h-8 rounded-full bg-[#A78BFA]/10 flex items-center justify-center shrink-0">
-                  <span className="text-[#A78BFA] text-sm">&#x26A1;</span>
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#A78BFA]/10 mb-3">
+                  <span className="text-[#A78BFA] text-base">&#x26A1;</span>
                 </span>
-                <span>
-                  <span className="block font-semibold text-text-primary">Gagner en efficacit&eacute;</span>
-                  <span className="block text-xs text-text-muted">Automatisation &amp; IA sur-mesure</span>
-                </span>
+                <p className="font-semibold text-text-primary text-sm mb-1">Automatisation IA</p>
+                <p className="text-text-muted text-xs leading-relaxed">
+                  Tu passes plus de temps &agrave; produire qu&rsquo;&agrave; vendre. On automatise ta delivery.
+                </p>
               </a>
               <a
                 href="https://www.challengerslab.com/sales"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-3 px-5 py-3 rounded-xl text-sm text-left border border-[#FBBF24]/20 hover:bg-[#FBBF24]/5 transition-colors"
+                className="group block rounded-xl p-5 border border-[#FBBF24]/15 hover:border-[#FBBF24]/30 hover:bg-[#FBBF24]/[0.03] transition-all"
               >
-                <span className="w-8 h-8 rounded-full bg-[#FBBF24]/10 flex items-center justify-center shrink-0">
-                  <span className="text-[#FBBF24] text-sm">&#x1F3AF;</span>
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#FBBF24]/10 mb-3">
+                  <span className="text-[#FBBF24] text-base">&#x1F3AF;</span>
                 </span>
-                <span>
-                  <span className="block font-semibold text-text-primary">D&eacute;l&eacute;guer le closing</span>
-                  <span className="block text-xs text-text-muted">Coaching &amp; accompagnement sales</span>
-                </span>
+                <p className="font-semibold text-text-primary text-sm mb-1">Coaching closing</p>
+                <p className="text-text-muted text-xs leading-relaxed">
+                  Les RDV tombent mais le taux de closing stagne. 2h/semaine pour structurer ton process.
+                </p>
               </a>
+              <div className="rounded-xl p-5 border border-[#34D399]/15 opacity-70">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#34D399]/10 mb-3">
+                  <span className="text-[#34D399] text-base">&#x1F9E0;</span>
+                </span>
+                <p className="font-semibold text-text-primary text-sm mb-1">Encodage expertise</p>
+                <p className="text-text-muted text-xs leading-relaxed">
+                  Ton savoir-faire, encod&eacute; dans un syst&egrave;me IA. D&eacute;l&egrave;gue sans perdre en qualit&eacute;.
+                </p>
+                <span className="inline-block mt-2 text-[10px] font-medium text-text-muted bg-white/[0.06] px-2 py-0.5 rounded-full">
+                  Bient&ocirc;t
+                </span>
+              </div>
+              <div className="rounded-xl p-5 border border-[#F87171]/15 opacity-70">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#F87171]/10 mb-3">
+                  <span className="text-[#F87171] text-base">&#x1F4C8;</span>
+                </span>
+                <p className="font-semibold text-text-primary text-sm mb-1">Growth ops</p>
+                <p className="text-text-muted text-xs leading-relaxed">
+                  CRM, reporting, dashboards. L&rsquo;infra commerciale qui manque aux solopreneurs.
+                </p>
+                <span className="inline-block mt-2 text-[10px] font-medium text-text-muted bg-white/[0.06] px-2 py-0.5 rounded-full">
+                  Bient&ocirc;t
+                </span>
+              </div>
             </div>
           </div>
         </section>
