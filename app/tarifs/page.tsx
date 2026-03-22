@@ -90,14 +90,14 @@ const webPageSchema = {
         '@type': 'Offer',
         position: 3,
         name: 'Setting Newsletter',
-        description: 'Newsletter thought leadership opérée par IA. 4 contenus segmentés par maturité toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. Prime par RDV : 50 € (ticket < 5k €), 150 € (5-15k €), 250 € (> 15k €).',
+        description: 'Newsletter thought leadership op\u00e9r\u00e9e par IA. 4 contenus segment\u00e9s par maturit\u00e9 toutes les 2 semaines, scoring comportemental, routing automatique des leads chauds. Prime par RDV : 50 \u20ac (ticket < 5k \u20ac), 150 \u20ac (5-15k \u20ac), 250 \u20ac (> 15k \u20ac).',
         priceSpecification: [
           {
             '@type': 'PriceSpecification',
-            price: '830',
+            price: '990',
             priceCurrency: 'EUR',
             unitText: 'MONTH',
-            description: '830 €/mois × 3 mois',
+            description: '990 \u20ac/mois tout compris. Engagement 3 mois, puis sans engagement.',
           },
         ],
       },
@@ -138,7 +138,7 @@ const faqSchema = {
       name: 'Comment fonctionne le Setting Newsletter ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '830 €/mois × 3 mois, tout inclus. Conception, rédaction IA dans votre voix, envoi, scoring comportemental et routing automatique des leads chauds.',
+        text: '990 \u20ac/mois tout compris. Conception, r\u00e9daction IA dans votre voix, envoi, scoring comportemental et routing automatique des leads chauds. Engagement 3 mois, puis sans engagement.',
       },
     },
     {
@@ -146,15 +146,15 @@ const faqSchema = {
       name: 'Y a-t-il un engagement ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Non. Chaque offre est résiliable à tout moment. Garantie RDV sur chaque phase.',
+        text: 'Non. Chaque offre est r\u00e9siliable \u00e0 tout moment (sauf Newsletter : 3 mois minimum). Garantie RDV sur chaque offre.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Puis-je combiner plusieurs phases ?',
+      name: 'Puis-je combiner plusieurs offres ?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui. La plupart de nos clients commencent par LinkedIn, ajoutent le téléphonique quand le flux monte, puis activent la newsletter pour leur base existante.',
+        text: 'Oui. Chaque offre r\u00e9pond \u00e0 une situation diff\u00e9rente. La plupart de nos clients commencent par LinkedIn, puis ajoutent le t\u00e9l\u00e9phonique ou la newsletter selon leurs besoins.',
       },
     },
     {
@@ -214,10 +214,10 @@ export default function TarifsPage() {
                 Tarifs
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                Choisis ton niveau de croissance
+                Une solution pour chaque situation
               </h1>
               <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
-                Chaque phase se débloque quand ton business est prêt. Commence par LinkedIn, ajoute le reste quand tu en as besoin.
+                Choisis l&apos;offre qui correspond &agrave; ta situation. Commence par LinkedIn, ajoute le reste quand tu en as besoin.
               </p>
             </ScrollReveal>
           </div>

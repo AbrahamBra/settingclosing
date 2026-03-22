@@ -246,10 +246,10 @@ const newsletterConfig: SimulatorConfig = {
     },
   ],
   hypotheses: [
-    '990\u00a0€/mois tout compris (construction + operation)',
+    '990\u00a0\u20ac/mois tout compris (construction + op\u00e9ration)',
     'Engagement 3 mois, puis sans engagement',
-    'Estimation RDV basee sur la taille de base et les benchmarks',
-    'Prime par RDV : 50\u00a0€ (<5k), 150\u00a0€ (5-15k), 250\u00a0€ (>15k)',
+    'Estimation RDV bas\u00e9e sur la taille de base et les benchmarks',
+    'Prime par RDV : 50\u00a0\u20ac (<5k), 150\u00a0\u20ac (5-15k), 250\u00a0\u20ac (>15k)',
   ],
   conversionStat: 'Funnels par thematique et maturite, adaptes a ta base',
   setupAmount: 0,

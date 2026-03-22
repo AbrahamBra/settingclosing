@@ -25,9 +25,9 @@ const initialForm: FormData = {
 
 const offreOptions = [
   { value: '', label: 'Je ne sais pas encore' },
-  { value: 'setting-linkedin', label: 'Phase 1 : Setting LinkedIn' },
-  { value: 'setting-telephonique', label: 'Phase 2 : Setting Téléphonique' },
-  { value: 'setting-newsletter', label: 'Phase 3 : Setting Newsletter' },
+  { value: 'setting-linkedin', label: 'Setting LinkedIn — Prospection' },
+  { value: 'setting-telephonique', label: 'Setting T\u00e9l\u00e9phonique — Qualification' },
+  { value: 'setting-newsletter', label: 'Setting Newsletter — Nurturing' },
   { value: 'bundle', label: 'Pack Croissance' },
 ]
 

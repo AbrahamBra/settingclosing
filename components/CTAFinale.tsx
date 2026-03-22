@@ -99,9 +99,17 @@ export function CTAFinale() {
     <section id="contact" className="section-padding bg-bg-secondary">
       <div className="container-max">
         <ScrollReveal>
-          <h2 className="font-sans text-h2 font-bold text-text-primary text-center mb-16">
-            Prêt à remplir ton agenda ?
-          </h2>
+          <div className="text-center mb-16">
+            <p className="text-sm text-text-secondary mb-4">
+              On accompagne 5 clients max par mois.{' '}
+              <span className="font-semibold text-accent animate-pulse">
+                2 places disponibles en avril.
+              </span>
+            </p>
+            <h2 className="font-sans text-h2 font-bold text-text-primary">
+              Pr&ecirc;t &agrave; remplir ton agenda ?
+            </h2>
+          </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 rounded-2xl overflow-hidden border border-black/8">

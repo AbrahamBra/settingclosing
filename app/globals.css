@@ -53,3 +53,8 @@
   0% { transform: rotate(30deg) translateX(-100%); }
   100% { transform: rotate(30deg) translateX(200%); }
 }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

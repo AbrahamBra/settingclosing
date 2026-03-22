@@ -8,19 +8,12 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 
 const TRANSITION_TEXTS: Record<number, string> = {
-  1: 'Quand tu reçois des leads entrants',
-  2: 'Quand tu as une base à monétiser',
-}
-
-const PHASE_TAGS: Record<number, string | null> = {
-  1: null,
-  2: 'Addon',
-  3: 'Pour les bases 1000+ contacts',
+  1: 'Tu re\u00e7ois aussi des leads entrants\u00a0?',
+  2: 'Tu as une base email \u00e0 mon\u00e9tiser\u00a0?',
 }
 
 function PhaseCard({ offer }: { offer: Offer }) {
   const config = simulatorConfigs[offer.id]
-  const phaseTag = PHASE_TAGS[offer.phase]
   const isPhaseOne = offer.phase === 1
 
   const setupAmount = offer.pricing.setup?.amount ?? null
@@ -43,7 +36,7 @@ function PhaseCard({ offer }: { offer: Offer }) {
             color: offer.color,
           }}
         >
-          Phase {offer.phase} — {offer.phaseLabel}
+          {offer.eyebrow}
         </span>
 
         {isPhaseOne && (
@@ -54,13 +47,13 @@ function PhaseCard({ offer }: { offer: Offer }) {
               color: '#C87533',
             }}
           >
-            Là où 80% de nos clients commencent
+            L&agrave; o&ugrave; 80% de nos clients commencent
           </span>
         )}
 
-        {phaseTag && (
+        {offer.tag && !isPhaseOne && (
           <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white/[0.06] text-text-secondary">
-            {phaseTag}
+            {offer.tag}
           </span>
         )}
       </div>

@@ -21,6 +21,7 @@ export interface Offer {
   phase: 1 | 2 | 3
   phaseLabel: string
   phaseSituation: string
+  tag?: string
   situation: string
   description: string
   features: OfferFeature[]
@@ -40,8 +41,9 @@ export const offers: Offer[] = [
     eyebrow: 'Setting LinkedIn',
     color: '#A78BFA',
     phase: 1,
-    phaseLabel: 'Lancer',
+    phaseLabel: 'Prospection',
     phaseSituation: 'Tu as une offre mais z\u00e9ro pipeline',
+    tag: 'Recommand\u00e9',
     situation: 'Tu n\u2019as pas de leads',
     description:
       'On prospecte pour toi sur LinkedIn avec un ciblage par signaux d\u2019achat. Tu te concentres sur le closing.',
@@ -74,8 +76,9 @@ export const offers: Offer[] = [
     eyebrow: 'Setting t\u00e9l\u00e9phonique',
     color: '#FBBF24',
     phase: 2,
-    phaseLabel: 'Qualifier',
+    phaseLabel: 'Qualification',
     phaseSituation: 'Tu as des leads mais pas le temps de qualifier',
+    tag: 'Module compl\u00e9mentaire',
     situation: 'Tu as des leads mais personne pour les qualifier',
     description:
       'Tes lead magnets performent, ton contenu g\u00e9n\u00e8re de l\u2019engagement. On qualifie par t\u00e9l\u00e9phone et on route vers le closing.',
@@ -106,8 +109,9 @@ export const offers: Offer[] = [
     eyebrow: 'Setting Newsletter',
     color: '#C87533',
     phase: 3,
-    phaseLabel: 'Scaler',
+    phaseLabel: 'Nurturing',
     phaseSituation: 'Tu as une audience, transforme-la en clients',
+    tag: 'Bases 1\u00a0000+ contacts',
     situation: 'Tu as une grosse base, z\u00e9ro revenu dessus',
     description:
       'Des milliers de contacts qui ne rapportent rien. On op\u00e8re ta newsletter d\u2019expert \u2014 contenu segment\u00e9, scoring, routing automatique des leads chauds.',

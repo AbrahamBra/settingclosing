@@ -21,8 +21,8 @@ const faqs = [
     a: 'Moins de 7 jours. On commence par tes clients idéaux et on itère chaque semaine.',
   },
   {
-    q: 'Je n\u2019ai pas de base email, je peux quand même\u00a0?',
-    a: 'La Phase 1 (LinkedIn) ne nécessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter c\u2019est pour plus tard.',
+    q: 'Je n\u2019ai pas de base email, je peux quand m\u00eame\u00a0?',
+    a: 'Le Setting LinkedIn ne n\u00e9cessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter est un module compl\u00e9mentaire pour ceux qui ont d\u00e9j\u00e0 une audience.',
   },
   {
     q: 'Combien de clients tu prends par mois\u00a0?',

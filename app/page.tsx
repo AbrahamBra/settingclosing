@@ -2,14 +2,13 @@ import type { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { Navbar } from '@/components/Navbar'
 import { Hero } from '@/components/Hero'
-import { SocialProof } from '@/components/SocialProof'
 import { CTAFinale } from '@/components/CTAFinale'
 import { Footer } from '@/components/Footer'
-import { TeamBanner } from '@/components/TeamBanner'
 import { FAQ } from '@/components/FAQ'
-import { GrowthJourney } from '@/components/GrowthJourney'
 import { PipelineVisual } from '@/components/PipelineVisual'
-import { OnboardingTimeline } from '@/components/OnboardingTimeline'
+import { ToolMarquee } from '@/components/ToolMarquee'
+import { CombinedSimulator } from '@/components/CombinedSimulator'
+import { TeamStrip } from '@/components/TeamStrip'
 
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
@@ -111,15 +110,15 @@ const globalSchema = {
           {
             '@type': 'Offer',
             name: 'Setting Newsletter',
-            description: 'Newsletter thought leadership opérée par IA. 4 contenus segmentés par maturité, scoring comportemental, routing automatique. Prime par RDV : 50 € (< 5k €), 150 € (5-15k €), 250 € (> 15k €).',
+            description: 'Newsletter thought leadership op\u00e9r\u00e9e par IA. 4 contenus segment\u00e9s par maturit\u00e9, scoring comportemental, routing automatique. Prime par RDV : 50 \u20ac (< 5k \u20ac), 150 \u20ac (5-15k \u20ac), 250 \u20ac (> 15k \u20ac).',
             url: 'https://www.setting.live/methode/setting-newsletter',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: 830,
+              price: 990,
               priceCurrency: 'EUR',
               unitText: 'MONTH',
               valueAddedTaxIncluded: false,
-              description: 'Construction : 830 €/mois × 3 mois',
+              description: '990 \u20ac/mois tout compris. Engagement 3 mois, puis sans engagement.',
             },
           },
         ],
@@ -167,10 +166,10 @@ const homeFaqSchema = {
     },
     {
       '@type': 'Question',
-      name: 'Je n\u2019ai pas de base email, je peux quand même\u00a0?',
+      name: 'Je n\u2019ai pas de base email, je peux quand m\u00eame\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'La Phase 1 (LinkedIn) ne nécessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter c\u2019est pour plus tard.',
+        text: 'Le Setting LinkedIn ne n\u00e9cessite aucune base. On cible directement les prospects via les signaux d\u2019achat. La newsletter est un module compl\u00e9mentaire pour ceux qui ont d\u00e9j\u00e0 une audience.',
       },
     },
     {
@@ -215,26 +214,94 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <GrowthJourney />
 
-        <PipelineVisual variant="homepage" />
-        <OnboardingTimeline />
-        <SocialProof />
+        <ToolMarquee />
 
-        <TeamBanner />
-        <FAQ />
-
-        {/* Bandeau rareté */}
-        <div className="section-padding !py-8">
-          <div className="container-max">
-            <div className="max-w-2xl mx-auto text-center bg-accent/5 border border-accent/20 rounded-xl px-6 py-4">
-              <p className="text-sm text-text-secondary">
-                On accompagne 5 clients max par mois.{' '}
-                <span className="font-semibold text-accent">2 places disponibles en avril.</span>
-              </p>
+        {/* Showcase offre phare : pipeline visuel complet */}
+        <section className="section-padding bg-bg-primary">
+          <div className="container-max max-w-4xl mx-auto">
+            <div className="text-center mb-6">
+              <span
+                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6"
+                style={{ backgroundColor: 'rgba(167,139,250,0.1)', color: '#A78BFA', border: '1px solid rgba(167,139,250,0.2)' }}
+              >
+                Setting LinkedIn &mdash; Notre offre phare
+              </span>
+            </div>
+            <PipelineVisual />
+            <div className="mt-10 text-center space-y-4">
+              <div className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-bg-secondary border border-white/[0.06]">
+                <span className="text-2xl font-bold text-accent tabular-nums">790&nbsp;&euro;</span>
+                <span className="text-text-muted text-sm">/mois &middot; setup offert &middot; sans engagement</span>
+              </div>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a
+                  href="#contact?offre=setting-linkedin"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#A78BFA] text-[#0D0B07] font-semibold text-sm hover:bg-[#B89CFC] transition-colors"
+                >
+                  D&eacute;marrer ma prospection &rarr;
+                </a>
+                <a
+                  href="/methode/setting-linkedin"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-text-secondary text-sm hover:text-text-primary transition-colors border border-white/[0.06]"
+                >
+                  Voir la m&eacute;thode en d&eacute;tail
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        <CombinedSimulator />
+
+        <TeamStrip />
+
+        <FAQ />
+
+        {/* Cross-sell ChallengersLab */}
+        <section className="px-6 md:px-12 lg:px-20 py-16 bg-[#1A1714] border-t border-accent/10">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="font-mono text-xs uppercase tracking-widest text-text-muted mb-4">
+              Le probl&egrave;me d&apos;apr&egrave;s
+            </p>
+            <h2 className="font-sans text-2xl md:text-3xl font-extrabold text-text-primary mb-3">
+              Trop de RDV, pas assez de bras&nbsp;?
+            </h2>
+            <p className="text-text-secondary text-sm mb-8 max-w-lg mx-auto">
+              Quand le pipeline tourne, c&apos;est la delivery qui bloque. Lib&egrave;re du temps, d&eacute;l&egrave;gue, automatise&nbsp;&mdash; ChallengersLab t&apos;aide &agrave; scaler sans recruter.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a
+                href="https://www.challengerslab.com/ia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-5 py-3 rounded-xl text-sm text-left border border-[#A78BFA]/20 hover:bg-[#A78BFA]/5 transition-colors"
+              >
+                <span className="w-8 h-8 rounded-full bg-[#A78BFA]/10 flex items-center justify-center shrink-0">
+                  <span className="text-[#A78BFA] text-sm">&#x26A1;</span>
+                </span>
+                <span>
+                  <span className="block font-semibold text-text-primary">Gagner en efficacit&eacute;</span>
+                  <span className="block text-xs text-text-muted">Automatisation &amp; IA sur-mesure</span>
+                </span>
+              </a>
+              <a
+                href="https://www.challengerslab.com/sales"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-3 px-5 py-3 rounded-xl text-sm text-left border border-[#FBBF24]/20 hover:bg-[#FBBF24]/5 transition-colors"
+              >
+                <span className="w-8 h-8 rounded-full bg-[#FBBF24]/10 flex items-center justify-center shrink-0">
+                  <span className="text-[#FBBF24] text-sm">&#x1F3AF;</span>
+                </span>
+                <span>
+                  <span className="block font-semibold text-text-primary">D&eacute;l&eacute;guer le closing</span>
+                  <span className="block text-xs text-text-muted">Coaching &amp; accompagnement sales</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
 
         <CTAFinale />
       </main>

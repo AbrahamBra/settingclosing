@@ -5,8 +5,8 @@ import { offers } from '@/lib/offers-data'
 import { ScrollReveal } from '@/components/ui/ScrollReveal'
 
 const TRANSITIONS = [
-  'Quand tu reçois des leads entrants',
-  'Quand tu as une base à monétiser',
+  'Tu re\u00e7ois aussi des leads entrants\u00a0?',
+  'Tu as une base email \u00e0 mon\u00e9tiser\u00a0?',
 ]
 
 const cardVariants: Variants = {
@@ -30,10 +30,10 @@ export function GrowthJourney() {
         <ScrollReveal>
           <div className="text-center mb-12">
             <p className="font-mono text-xs uppercase tracking-widest text-accent mb-4">
-              TON PARCOURS
+              NOS SOLUTIONS
             </p>
             <h2 className="font-sans text-h2 text-text-primary">
-              Choisis ton niveau de croissance
+              Une solution pour chaque situation
             </h2>
           </div>
         </ScrollReveal>
@@ -60,22 +60,29 @@ export function GrowthJourney() {
                     className="h-full bg-bg-secondary rounded-2xl border border-white/[0.06] p-6 border-l-4"
                     style={{ borderLeftColor: offer.color }}
                   >
-                    {/* Phase badge */}
-                    <div
-                      className="w-8 h-8 rounded-full flex items-center justify-center mb-4 text-white text-sm font-bold shrink-0"
-                      style={{ backgroundColor: offer.color }}
-                    >
-                      {offer.phase}
+                    {/* Service badge */}
+                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                      <span
+                        className="px-2.5 py-0.5 rounded-full text-xs font-semibold"
+                        style={{ backgroundColor: `${offer.color}1A`, color: offer.color }}
+                      >
+                        {offer.eyebrow}
+                      </span>
+                      {offer.tag && (
+                        <span className="px-2 py-0.5 rounded-full text-[10px] font-medium bg-white/[0.06] text-text-muted">
+                          {offer.tag}
+                        </span>
+                      )}
                     </div>
 
-                    {/* Phase label */}
+                    {/* Situation */}
                     <h3 className="font-sans text-lg font-bold text-text-primary mb-1">
-                      {offer.phaseLabel}
+                      {offer.phaseSituation}
                     </h3>
 
-                    {/* Situation */}
+                    {/* Description */}
                     <p className="text-text-secondary text-sm leading-relaxed">
-                      {offer.phaseSituation}
+                      {offer.description}
                     </p>
 
                     {/* Bullets */}
