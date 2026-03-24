@@ -1,6 +1,6 @@
 # Setting — Contenu complet
 
-> Setting commercial LinkedIn externalisé pour fondateurs, freelances et solopreneurs B2B.
+> Prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B. Setter dédié, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine.
 
 ---
 
@@ -23,8 +23,7 @@ Le setting commercial est la phase de prospection qui précède le closing en B2
 - Suivi hebdomadaire et reporting
 
 ### Tarification
-- Setup : 490 € (cadrage ICP, outils, séquences)
-- 790 €/mois — même tarif sur les 3 premiers mois, sans augmentation
+- 790 €/mois, setup offert
 - Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k)
 - Sans engagement, résiliable à tout moment
 - Garantie : moins de 5 RDV qualifiés = mois suivant offert
@@ -52,43 +51,8 @@ Qualification téléphonique des leads entrants. Un sales dédié appelle chaque
 - Reporting par lead avec scoring
 
 ### Tarification
-- Setup : 490 € (script, formation, configuration CRM)
-- Récurrent : 350 €/jour (demi-journée, facturé au réel)
+- 175 €/demi-journée, facturé au réel
 - Prime par RDV : 25 € (ticket < 5k), 100 € (5-15k), 200 € (> 15k)
-
----
-
-## Service 3 : Setting Newsletter
-
-### Définition
-Newsletter thought leadership opérée par IA pour le compte du dirigeant. Le système produit 4 contenus segmentés par maturité toutes les 2 semaines, dans la voix du dirigeant. Un scoring comportemental détecte les leads chauds et les route automatiquement vers un appel.
-
-### Ce qui est inclus
-- Interview voix du dirigeant + Skill IA sur-mesure
-- 4 contenus par cycle : générale + TOFU + MOFU + BOFU
-- Scoring comportemental (démographique 30% + comportemental 70%)
-- Routing automatique des leads chauds vers appel ou setter téléphonique
-- Reporting mensuel : ouvertures, clics, leads générés, RDV bookés
-- Le dirigeant valide en 10-15 min par cycle
-
-### Tarification
-- Construction : 2 490 € (interview voix, Skill IA, ligne éditoriale, scoring, config outil, environ 2 semaines)
-- Opération : 990 €/mois × 3 mois minimum
-- Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k)
-- Garantie proportionnelle : 3 RDV (1-3k contacts), 5 RDV (3-7k), 10 RDV (7k+) en 3 mois, sinon M4 offert
-- Après M3 : autonomie avec Skills transférés ou opération continue
-
-### Méthode en 7 étapes
-1. Interview voix & Skill IA sur-mesure
-2. Nettoyage & scoring de la base
-3. Ligne éditoriale & segmentation
-4. Rédaction IA & validation dirigeant
-5. Envoi segmenté & triggers comportementaux
-6. Routing leads chauds & qualification
-7. Optimisation & recalibrage
-
-### Combinaison avec Setting Téléphonique
-Le client qui veut tout déléguer combine Newsletter + Téléphonique : la newsletter détecte les leads chauds, le setter appelle et qualifie, le client ne fait que closer.
 
 ---
 
@@ -109,19 +73,22 @@ Le client qui veut tout déléguer combine Newsletter + Téléphonique : la news
 
 ---
 
-## Méthode en 4 étapes
+## Méthode en 9 étapes
 
-### Étape 1 : Détection de signaux
-Outils : Reactin, Spyer, Sales Navigator, IA. On identifie les prospects qui ont déjà levé la main — pas une liste froide.
+### Phase 1 : Détection (étapes 1-3)
+1. **Stratégie & ciblage** — ICP défini avec l'IA, comptes à monitorer sélectionnés, filtres Sales Navigator configurés.
+2. **Signaux inbound** — Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel contenu.
+3. **Signaux outbound** — Spyer monitore les comptes concurrents et complémentaires. Sales Navigator remonte les changements de poste et signaux d'achat récents.
 
-### Étape 2 : Messages ancrés sur un fait
-Chaque message est construit sur un signal précis tiré du profil ou d'un post récent. 5 phrases max. Pas de pitch. Claude propose un draft, le setter valide avant envoi.
+### Phase 2 : Qualification (étapes 4-6)
+4. **Profil analysé** — Claude analyse titre, bio, posts récents, connexions communes. Résultat déposé dans un Google Sheet avec recommandation.
+5. **Scoring & ajustement** — 5 niveaux de maturité d'achat, recalibrés chaque semaine avec les retours terrain.
+6. **Skill maison** — Un skill Claude encodé sur votre expertise : jargon métier, objections connues, messages qui ont décroché des réponses.
 
-### Étape 3 : Qualification et routing
-Les leads sont qualifiés sur 5 niveaux de maturité. Niveaux 4–5 sont traités en priorité. Le closeur reçoit le contexte complet.
-
-### Étape 4 : Amélioration continue
-Le journal de bord du setter alimente la base de connaissance. Ce qui fonctionne est codifié. Ce qui rate est compris. Le système devient plus précis chaque semaine.
+### Phase 3 : Conversion (étapes 7-9)
+7. **Message co-rédigé** — Claude propose un draft ancré dans le skill. 5 phrases max, 2e phrase = fait précis du profil, jamais de pitch dans le premier DM.
+8. **Validé et envoyé** — Test du téléphone : si ça ne sonne pas naturel dit à voix haute, on réécrit. Aucun message ne part sans validation humaine.
+9. **RDV qualifié** — Conversion en rendez-vous qualifié. Le closeur reçoit le contexte complet. Les retours recalibrent tout le pipeline.
 
 ---
 

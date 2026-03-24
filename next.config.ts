@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/methode/nurturing',
-        destination: '/methode/setting-newsletter',
+        destination: '/methode/setting-linkedin',
         permanent: true,
       },
       {

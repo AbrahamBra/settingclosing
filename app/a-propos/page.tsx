@@ -53,23 +53,27 @@ const organizationSchema = {
     {
       '@type': 'Person',
       name: 'Brahim',
-      jobTitle: 'Setting',
+      jobTitle: 'Setter LinkedIn B2B',
       description:
-        'Envoie les messages, qualifie les prospects et décroche les RDV.',
+        'Envoie les messages, qualifie les prospects et décroche les RDV. 400+ RDV qualifiés livrés, 3 ans de spécialisation en outreach LinkedIn B2B.',
+      knowsAbout: ['prospection LinkedIn', 'setting commercial B2B', 'qualification de leads'],
     },
     {
       '@type': 'Person',
       name: 'Abraham',
-      jobTitle: 'IA & Automatisation',
+      jobTitle: 'Fondateur & Automatisation IA',
+      url: 'https://www.setting.live/a-propos',
       description:
-        'Construit les outils de ciblage et les automatisations qui font gagner du temps à l\'équipe.',
+        'Développeur spécialisé en automatisation et IA appliquée au sales. Créateur du système de détection de signaux d\'achat LinkedIn.',
+      knowsAbout: ['automatisation commerciale', 'IA appliquée au sales', 'détection de signaux d\'achat LinkedIn'],
     },
     {
       '@type': 'Person',
       name: 'Abdelhay',
-      jobTitle: 'Stratégie commerciale',
+      jobTitle: 'Stratégie commerciale & Closing B2B',
       description:
-        'Définit l\'angle commercial, les scripts et la stratégie de conversion.',
+        'Expérience en closing B2B et copywriting commercial. Conçoit les séquences de messages et affine les scripts. Approche Challenger Sale. Taux de réponse moyen : 20-35%.',
+      knowsAbout: ['closing B2B', 'Challenger Sale', 'copywriting commercial', 'stratégie de conversion'],
     },
   ],
 }

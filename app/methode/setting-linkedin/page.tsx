@@ -57,6 +57,75 @@ const breadcrumbSchema = {
   ],
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment g\u00e9n\u00e9rer des RDV qualifi\u00e9s via LinkedIn en 9 \u00e9tapes',
+  description: 'M\u00e9thode compl\u00e8te de prospection LinkedIn signal-based : de la d\u00e9tection des signaux d\u2019achat au RDV qualifi\u00e9, avec IA et validation humaine.',
+  totalTime: 'P21D',
+  estimatedCost: {
+    '@type': 'MonetaryAmount',
+    currency: 'EUR',
+    value: '790',
+  },
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Strat\u00e9gie & ciblage',
+      text: 'D\u00e9finir l\u2019ICP avec l\u2019IA, s\u00e9lectionner les comptes \u00e0 monitorer, configurer les filtres Sales Navigator (fonctions, industrie, taille, triggers r\u00e9cents).',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Signaux inbound',
+      text: 'Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L\u2019IA identifie qui a r\u00e9agi, quand, et avec quel type de contenu.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Signaux outbound',
+      text: 'Spyer monitore les comptes concurrents et compl\u00e9mentaires. Sales Navigator remonte les changements de poste et signaux d\u2019achat r\u00e9cents.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Profil analys\u00e9',
+      text: 'Claude analyse le profil complet : titre, bio, posts r\u00e9cents, connexions communes. R\u00e9sultat d\u00e9pos\u00e9 dans un Google Sheet avec recommandation.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Scoring & ajustement',
+      text: '5 niveaux de maturit\u00e9 d\u2019achat. On valide chaque profil et on ajuste les crit\u00e8res de ciblage au fil des retours terrain, chaque semaine.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 6,
+      name: 'Skill maison',
+      text: 'Un skill Claude encod\u00e9 sur votre expertise : jargon m\u00e9tier, objections connues, exemples de messages qui ont d\u00e9croch\u00e9 des r\u00e9ponses.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 7,
+      name: 'Message co-r\u00e9dig\u00e9',
+      text: 'Claude propose un draft ancr\u00e9 dans le skill. La m\u00e9thode impose 5 phrases max, 2e phrase = fait pr\u00e9cis tir\u00e9 du profil, jamais de pitch dans le premier DM.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 8,
+      name: 'Valid\u00e9 et envoy\u00e9',
+      text: 'Test du t\u00e9l\u00e9phone appliqu\u00e9 : si \u00e7a ne sonnerait pas naturel dit \u00e0 voix haute, on r\u00e9\u00e9crit. Aucun message ne part sans validation humaine.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 9,
+      name: 'RDV qualifi\u00e9',
+      text: 'On convertit la conversation en rendez-vous qualifi\u00e9. Le closeur re\u00e7oit le contexte complet. Les retours recalibrent tout le pipeline.',
+    },
+  ],
+}
+
 // ─── LinkedIn Phase Definitions ──────────────────────────────────────────────
 
 const phases = [
@@ -151,6 +220,10 @@ export default function MethodePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <Navbar />
       <main className="pt-20">

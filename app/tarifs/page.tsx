@@ -12,7 +12,7 @@ import { SmartContactForm } from '@/components/SmartContactForm'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | SettingClosing',
+  title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | Setting',
   description:
     'Tarifs prospection LinkedIn externalisée pour solopreneurs : à partir de 790\u00a0€/mois, setup offert, zéro engagement. Simulez votre ROI.',
   alternates: {
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | SettingClosing',
+    title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | Setting',
     description: 'Tarifs prospection LinkedIn externalisée : setup offert, à partir de 790\u00a0€/mois, zéro engagement.',
     locale: 'fr_FR',
     type: 'website',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | SettingClosing',
+  name: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | Setting',
   description:
     'Tarifs prospection LinkedIn externalisée pour solopreneurs : à partir de 790\u00a0€/mois, setup offert, zéro engagement. Simulez votre ROI.',
   url: 'https://www.setting.live/tarifs',
