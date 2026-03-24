@@ -238,7 +238,7 @@ export default function SettingHumainVsAutomatisationPage() {
                 Vous pouvez lire comment ce système fonctionne en détail dans l&apos;article{' '}
                 <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">
                   IA, méthode et humain
-                </a>.
+                </a>, ou découvrir les 9 étapes de notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn</a>.
               </p>
             </section>
 
@@ -566,6 +566,8 @@ export default function SettingHumainVsAutomatisationPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
+                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: 'Détecter les signaux d\u2019achat LinkedIn pour prospecter au bon moment' },

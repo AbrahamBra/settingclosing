@@ -286,6 +286,7 @@ export default function Page() {
                 Deux mois de ce cycle et le système n&apos;est plus le même. Les messages sortent
                 plus proches de la cible, le setter corrige moins, les réponses arrivent plus vite.
                 C&apos;est itératif dans le sens littéral : chaque échange améliore le suivant.
+                Chaque étape de ce processus est détaillée dans notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn en 9 étapes</a>.
               </p>
             </section>
 
@@ -656,6 +657,7 @@ export default function Page() {
             <div className="space-y-3">
               {[
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
+                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },

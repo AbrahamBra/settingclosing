@@ -663,6 +663,7 @@ export default function ProspectionLinkedInB2BPage() {
               un CRM minimal pour tracker chaque prospect et son statut, un journal hebdomadaire
               des taux de réponse par message et par segment, et un flux de nurturing
               pour les leads qui ne sont pas encore en phase d&apos;achat.
+              C&apos;est exactement ce que décrit notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn</a> en 9 étapes.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               En phase de calibration (mois 1 à 2), l&apos;objectif n&apos;est pas le volume.
@@ -718,6 +719,8 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
+                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },

@@ -349,7 +349,7 @@ export default function SignalAchatLinkedInPage() {
             <p className="font-sans text-text-secondary leading-relaxed mb-8">
               Un signal seul ne génère pas de RDV. C&apos;est ce qui suit le signal — la qualité
               du message, la logique de qualification, le timing des relances — qui détermine
-              si le signal se convertit en rendez-vous qualifié.
+              si le signal se convertit en rendez-vous qualifié. C&apos;est tout l&apos;objet d&apos;une <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn</a> structurée.
             </p>
 
             <div className="space-y-0">
@@ -451,6 +451,8 @@ export default function SignalAchatLinkedInPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
+                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },

@@ -29,6 +29,11 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.setting.live/methode/setting-linkedin',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting LinkedIn B2B : méthode complète en 9 étapes',
+    description: 'Méthode de setting LinkedIn : détection IA des signaux d\u2019achat, co-rédaction des messages et qualification téléphonique BANT.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -36,9 +41,9 @@ export const metadata: Metadata = {
 const webPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebPage',
-  name: 'Notre m\u00e9thode \u2014 Prospection LinkedIn + Qualification t\u00e9l\u00e9phonique',
+  name: 'Setting LinkedIn B2B : m\u00e9thode compl\u00e8te en 9 \u00e9tapes',
   description:
-    'Pipeline complet : 9 \u00e9tapes de prospection LinkedIn signal-based + qualification t\u00e9l\u00e9phonique BANT. IA, m\u00e9thode et validation humaine.',
+    'M\u00e9thode de setting LinkedIn en 9 \u00e9tapes : d\u00e9tection des signaux d\u2019achat, ciblage IA, messages personnalis\u00e9s + qualification t\u00e9l\u00e9phonique BANT. Pipeline B2B complet.',
   url: 'https://www.setting.live/methode/setting-linkedin',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -122,6 +127,53 @@ const howToSchema = {
       position: 9,
       name: 'RDV qualifi\u00e9',
       text: 'On convertit la conversation en rendez-vous qualifi\u00e9. Le closeur re\u00e7oit le contexte complet. Les retours recalibrent tout le pipeline.',
+    },
+  ],
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Qu\u2019est-ce que le setting LinkedIn\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le setting LinkedIn est une m\u00e9thode de prospection B2B qui consiste \u00e0 d\u00e9tecter les signaux d\u2019achat sur LinkedIn, puis \u00e0 engager une conversation personnalis\u00e9e avec le prospect. Contrairement au cold outreach classique, le setting repose sur un \u00e9change progressif et une validation humaine de chaque message avant envoi.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quelle est la diff\u00e9rence entre setting LinkedIn et cold outreach\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Le cold outreach envoie des messages \u00e0 des profils sans signal d\u2019int\u00e9r\u00eat. Le setting LinkedIn cible uniquement les profils qui ont montr\u00e9 un signal d\u2019achat (r\u00e9action \u00e0 un post, changement de poste, visite de profil). Chaque message est co-r\u00e9dig\u00e9 avec l\u2019IA puis valid\u00e9 par un humain. En pratique, les taux de r\u00e9ponse sont 3 \u00e0 5 fois sup\u00e9rieurs.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Combien de RDV g\u00e9n\u00e8re le setting LinkedIn par mois\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'En moyenne, notre m\u00e9thode de setting LinkedIn g\u00e9n\u00e8re entre 8 et 15 RDV qualifi\u00e9s par mois, selon le march\u00e9 et la maturit\u00e9 du profil LinkedIn. Les premiers RDV arrivent d\u00e8s la premi\u00e8re semaine de d\u00e9marrage.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Le setting LinkedIn fonctionne-t-il pour le B2B\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui, le setting LinkedIn fonctionne en B2B. La m\u00e9thode utilise Sales Navigator, les signaux d\u2019achat professionnels et la qualification BANT pour cibler les d\u00e9cideurs. \u00c7a marche bien pour les solopreneurs, fondateurs et \u00e9quipes sales qui vendent des prestations \u00e0 forte valeur ajout\u00e9e.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quel est le prix du setting LinkedIn externalis\u00e9\u00a0?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Chez Setting, l\u2019abonnement de setting LinkedIn externalis\u00e9 d\u00e9marre \u00e0 790\u00a0\u20ac/mois avec un setter d\u00e9di\u00e9, le ciblage IA et la validation humaine de chaque message. Le setup initial est offert. Un simulateur ROI est disponible sur la page tarifs.',
+      },
     },
   ],
 }
@@ -225,6 +277,10 @@ export default function MethodePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navbar />
       <main className="pt-20">
 
@@ -240,12 +296,19 @@ export default function MethodePage() {
                 Notre m&eacute;thode
               </p>
               <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
-                Du signal d&rsquo;achat au RDV qualifi&eacute;. Aucun message ne part sans validation humaine.
+                Setting LinkedIn B2B : du signal d&rsquo;achat au RDV qualifi&eacute;
               </h1>
+              <p className="font-sans text-text-secondary text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+                Le setting LinkedIn, c&rsquo;est passer d&rsquo;un signal d&rsquo;int&eacute;r&ecirc;t
+                &agrave; une conversation qualifi&eacute;e, sans pitcher dans le premier message.
+                On d&eacute;tecte les signaux d&rsquo;achat avec l&rsquo;IA, on applique nos r&egrave;gles de m&eacute;thode,
+                et un humain valide chaque message avant envoi. Le pipeline g&eacute;n&egrave;re des RDV
+                qualifi&eacute;s, pas du volume creux.
+              </p>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-                L&apos;IA rep&egrave;re les bons profils et propose des drafts. Nos r&egrave;gles de m&eacute;thode filtrent
-                ce qui est pertinent. Un humain relit et valide chaque envoi. Et quand les leads entrent,
-                on les qualifie par t&eacute;l&eacute;phone.
+                Notre m&eacute;thode de setting LinkedIn en 9 &eacute;tapes couvre la d&eacute;tection des bons profils,
+                la co-r&eacute;daction des messages et la qualification t&eacute;l&eacute;phonique BANT.
+                Aucun message ne part sans validation humaine.
               </p>
 
               {/* Layer legend */}

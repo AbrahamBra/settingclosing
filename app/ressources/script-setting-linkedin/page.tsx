@@ -279,7 +279,7 @@ export default function ScriptSettingLinkedinPage() {
               Un script, c&apos;est différent. Un script, c&apos;est un <strong className="text-text-primary font-semibold">cadre</strong> :
               une structure avec des positions prédéfinies, et dans chaque position, vous mettez
               les informations spécifiques à ce prospect. Le squelette est fixe. La chair change à
-              chaque fois.
+              chaque fois. Ces scripts s&apos;inscrivent dans une <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn</a> plus large qui structure l&apos;ensemble du processus.
             </p>
 
             <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-accent/20 mb-6">
@@ -749,6 +749,7 @@ export default function ScriptSettingLinkedinPage() {
             <div className="space-y-3">
               {[
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
+                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },

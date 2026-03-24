@@ -69,6 +69,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://www.setting.live/ressources/setting-linkedin-definition',
+      lastModified: new Date('2026-03-24'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
       lastModified: new Date('2026-03-17'),
       changeFrequency: 'monthly',
