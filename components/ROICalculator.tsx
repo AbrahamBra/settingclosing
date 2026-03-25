@@ -25,7 +25,9 @@ export function ROICalculator() {
 
   const results = useMemo(() => {
     const prime = getPrimeParRDV(ticketMoyen)
-    const coutMensuel = COUT_FIXE + prime * rdvParMois
+    // 5 premiers RDV inclus dans le 790€, primes à partir du 6e
+    const rdvFactures = Math.max(0, rdvParMois - 5)
+    const coutMensuel = COUT_FIXE + prime * rdvFactures
     const clientsGagnes = rdvParMois * (tauxClosing / 100)
     const revenuMensuel = clientsGagnes * ticketMoyen
     const roi = coutMensuel > 0 ? revenuMensuel / coutMensuel : 0
@@ -140,7 +142,7 @@ export function ROICalculator() {
               </div>
 
               <p className="font-sans text-text-muted text-[11px] leading-relaxed mt-auto">
-                Prime par RDV appliqu&eacute;e&nbsp;: {formatEur(results.prime)} (palier
+                5 premiers RDV inclus. Prime &agrave; partir du 6e&nbsp;: {formatEur(results.prime)}/RDV (palier
                 ticket&nbsp;{ticketMoyen < 5000 ? '< 5k €' : ticketMoyen <= 15000 ? '5 – 15k €' : '> 15k €'})
               </p>
             </div>
