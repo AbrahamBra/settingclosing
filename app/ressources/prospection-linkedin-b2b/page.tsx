@@ -5,6 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: "Prospection LinkedIn B2B en 2026 | Setting",
@@ -164,6 +165,10 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
             <AuthorBlock date="2026-03-18" readTime="13 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
+
+          <TldrBox>
+            <p>La prospection LinkedIn en 2026, ce n&apos;est plus envoyer des messages &agrave; froid. Cet article explique la m&eacute;thode signal-based en 6 &eacute;tapes : d&eacute;tection des signaux d&apos;achat, ciblage ICP, r&eacute;daction des messages, relance et qualification. Taux de r&eacute;ponse vis&eacute; : 20-35&nbsp;%.</p>
+          </TldrBox>
 
           {/* Bloc Définition */}
           <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-10">
@@ -628,7 +633,6 @@ export default function ProspectionLinkedInB2BPage() {
               un CRM minimal pour tracker chaque prospect et son statut, un journal hebdomadaire
               des taux de réponse par message et par segment, et un flux de nurturing
               pour les leads qui ne sont pas encore en phase d&apos;achat.
-              C&apos;est exactement ce que décrit notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn</a> en 9 étapes.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               En phase de calibration (mois 1 à 2), l&apos;objectif n&apos;est pas le volume.
@@ -639,7 +643,7 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
               En phase de scaling (mois 3 et au-delà), le système tourne sur des bases connues.
-              50 à 100 messages par semaine, taux de réponse stable au-dessus de 15 %,
+              50 &agrave; 100 messages par semaine (LinkedIn limite les connexions &agrave; environ 100/semaine), taux de r&eacute;ponse stable au-dessus de 15&nbsp;%,
               pipeline prévisible. C&apos;est le résultat direct des deux mois de calibration.
               La plupart abandonnent avant d&apos;y arriver.
             </p>
@@ -684,8 +688,6 @@ export default function ProspectionLinkedInB2BPage() {
             </p>
             <div className="space-y-3">
               {[
-                { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
-                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },

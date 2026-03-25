@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: 'Devenir Business Developer en 2026 | Setting',
@@ -165,6 +166,10 @@ export default function DevenirBusinessDeveloperPage() {
             </p>
             <AuthorBlock date="2026-02-26" readTime="7 min de lecture" dateLabel="26 février 2026" updatedDate="2026-03-19" />
           </header>
+
+          <TldrBox>
+            <p>Ce qu&apos;il faut savoir pour devenir business developer en 2026 : comp&eacute;tences attendues, parcours possibles (BTS, &eacute;cole de commerce, reconversion), fourchettes de salaire (30-55k&nbsp;&euro; selon exp&eacute;rience) et r&eacute;alit&eacute;s du m&eacute;tier au quotidien.</p>
+          </TldrBox>
 
           {/* Stats */}
           <div className="grid sm:grid-cols-3 gap-4 mb-10">

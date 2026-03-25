@@ -5,6 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: 'Closing B2B : définition et méthode | Setting',
@@ -181,6 +182,10 @@ export default function ClosingB2BPage() {
             </p>
             <AuthorBlock date="2026-03-18" readTime="25 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
+
+          <TldrBox>
+            <p>Le closing, c&apos;est le moment o&ugrave; le prospect dit oui (ou non). Ce guide couvre la structure d&apos;un appel de closing, les scripts qui fonctionnent, les erreurs classiques et la diff&eacute;rence entre closer un deal &agrave; 3k et un deal &agrave; 50k. Avec des exemples de phrases concr&egrave;tes.</p>
+          </TldrBox>
 
           {/* Stats */}
           <div className="grid sm:grid-cols-3 gap-4 mb-10">

@@ -3,6 +3,7 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { TldrBox } from '@/components/TldrBox'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
 
@@ -182,6 +183,10 @@ export default function SettingCommercialPage() {
             </p>
             <AuthorBlock date="2026-03-17" readTime="25 min de lecture" dateLabel="17 mars 2026" updatedDate="2026-03-19" />
           </header>
+
+          <TldrBox>
+            <p>Le setting commercial, c&apos;est la phase qui pr&eacute;c&egrave;de le closing : d&eacute;tecter les bons prospects, leur &eacute;crire, qualifier et d&eacute;crocher un RDV. Cet article d&eacute;taille le r&ocirc;le du setter, la m&eacute;thode LinkedIn signal-based en 9 &eacute;tapes, les 5 erreurs qui plombent les taux de r&eacute;ponse, et le programme complet sur 3 mois.</p>
+          </TldrBox>
 
           {/* Definition block — GEO */}
           <div className="bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-10">

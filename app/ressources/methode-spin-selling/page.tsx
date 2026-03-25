@@ -245,7 +245,7 @@ export default function MethodeSpinSellingPage() {
               Qu&apos;est-ce que le SPIN Selling ?
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              SPIN Selling est une méthode de vente publiée par Neil Rackham en 1988, issue de la
+              SPIN Selling est une méthode de vente publiée par <a href="https://www.amazon.fr/SPIN-Selling-Neil-Rackham/dp/0070511136" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Neil Rackham en 1988</a>, issue de la
               plus grande étude empirique jamais conduite sur la performance commerciale. L&apos;acronyme
               désigne 4 catégories de questions :{' '}
               <strong className="text-text-primary">S</strong>ituation,{' '}

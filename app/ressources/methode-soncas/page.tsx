@@ -252,7 +252,7 @@ export default function MethodeSoncasPage() {
               Qu&apos;est-ce que la méthode SONCAS ?
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              SONCAS est un acronyme commercial né dans les années 1990 qui liste six motivations
+              SONCAS est un acronyme commercial créé par Jean-Denis Larradet dans les années 1990 qui liste six motivations
               d&apos;achat universelles : <strong className="text-text-primary">S</strong>écurité,{' '}
               <strong className="text-text-primary">O</strong>rgueil,{' '}
               <strong className="text-text-primary">N</strong>ouveauté,{' '}

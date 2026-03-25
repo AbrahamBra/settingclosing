@@ -5,6 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: "Scripts de closing B2B : exemples | Setting",
@@ -165,6 +166,10 @@ export default function ScriptClosingPage() {
             </p>
             <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
+
+          <TldrBox>
+            <p>Scripts et phrases de closing B2B utilis&eacute;s en conditions r&eacute;elles. Structure d&apos;un closing en 4 temps, phrases de transition, techniques de gestion du silence, et les erreurs qui font capoter un deal &agrave; la derni&egrave;re minute.</p>
+          </TldrBox>
 
           {/* Section 1 — Script vs template */}
           <section className="mb-14">

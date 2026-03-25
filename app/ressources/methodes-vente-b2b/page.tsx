@@ -5,6 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: 'Méthodes de vente B2B comparées | Setting',
@@ -301,6 +302,10 @@ export default function MethodesVenteB2BPage() {
             </p>
             <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
+
+          <TldrBox>
+            <p>Trois m&eacute;thodes de vente B2B pass&eacute;es au crible : Challenger Sale (enseigner avant de vendre), SPIN Selling (questionner pour r&eacute;v&eacute;ler le besoin), SONCAS (s&apos;adapter au profil psychologique). Pour chacune : quand l&apos;utiliser, les limites, et ce qui marche en pratique.</p>
+          </TldrBox>
 
           {/* Key Insight */}
           <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-10">

@@ -5,6 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: "IA et humain : système de setting LinkedIn | Setting",
@@ -173,6 +174,10 @@ export default function Page() {
             <AuthorBlock date="2026-03-17" readTime="12 min de lecture" dateLabel="17 mars 2026" updatedDate="2026-03-19" />
           </header>
 
+          <TldrBox>
+            <p>Un syst&egrave;me de setting LinkedIn qui marche repose sur 3 couches : l&apos;IA d&eacute;tecte les signaux et r&eacute;dige des drafts, la m&eacute;thode filtre et cadre, l&apos;humain relit et valide. Cet article d&eacute;taille chaque couche et explique pourquoi l&apos;automatisation pure ne fonctionne pas.</p>
+          </TldrBox>
+
           {/* Definition block — GEO */}
           <div className="bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-12">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
@@ -299,7 +304,6 @@ export default function Page() {
                 Deux mois de ce cycle et le système n&apos;est plus le même. Les messages sortent
                 plus proches de la cible, le setter corrige moins, les réponses arrivent plus vite.
                 C&apos;est itératif dans le sens littéral : chaque échange améliore le suivant.
-                Chaque étape de ce processus est détaillée dans notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn en 9 étapes</a>.
               </p>
             </section>
 
@@ -672,7 +676,6 @@ export default function Page() {
             <div className="space-y-3">
               {[
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
-                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },

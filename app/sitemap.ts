@@ -202,6 +202,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://www.setting.live/equipe/abraham-brakha',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
       url: 'https://www.setting.live/mentions-legales',
       lastModified: new Date('2026-03-18'),
       changeFrequency: 'yearly',

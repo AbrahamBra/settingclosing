@@ -221,7 +221,7 @@ export default function ChallengerSalePage() {
             </p>
             <p className="font-sans text-text-primary leading-relaxed">
               Le <strong>Challenger Sale</strong> est une méthode de vente B2B développée par
-              Matthew Dixon et Brent Adamson (CEB, 2011), basée sur une étude portant sur
+              Matthew Dixon et Brent Adamson (<a href="https://www.amazon.fr/Challenger-Sale-Control-Customer-Conversation/dp/1591844355" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">The Challenger Sale, Portfolio/Penguin 2011</a>), bas&eacute;e sur une &eacute;tude portant sur
               6 000 commerciaux. Elle identifie 5 profils de vendeurs et démontre que les
               top performers ne vendent pas en suivant le client — ils le challengent : ils apportent
               une perspective nouvelle, adaptent leur discours et prennent le contrôle de

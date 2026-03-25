@@ -5,6 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: 'SDR interne vs externalisé : coût réel et ROI | Setting',
@@ -160,6 +161,10 @@ export default function SdrInterneVsExternalisePage() {
             <AuthorBlock date="2026-03-19" readTime="8 min de lecture" dateLabel="19 mars 2026" updatedDate="2026-03-19" />
           </header>
 
+          <TldrBox>
+            <p>Recruter un SDR co&ucirc;te 35-45k&nbsp;&euro;/an, avec 3-6 mois avant les premiers r&eacute;sultats. Externaliser d&eacute;marre &agrave; 790&nbsp;&euro;/mois sans engagement. Cet article compare les deux options : co&ucirc;t r&eacute;el, d&eacute;lai de mise en route, contr&ocirc;le et ROI.</p>
+          </TldrBox>
+
           {/* Definition block */}
           <div className="bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
@@ -208,7 +213,7 @@ export default function SdrInterneVsExternalisePage() {
                 {[
                   {
                     title: 'Salaire brut',
-                    desc: '30 000 à 45 000 €/an pour un profil junior à confirmé en France. La fourchette basse correspond à un premier poste SDR. La fourchette haute, à un profil avec 2 à 3 ans d\'expérience.',
+                    desc: '30 000 à 45 000 €/an pour un profil junior à confirmé en France (source : Glassdoor.fr, mars 2026). La fourchette basse correspond à un premier poste SDR. La fourchette haute, à un profil avec 2 à 3 ans d\'expérience.',
                   },
                   {
                     title: 'Charges patronales',

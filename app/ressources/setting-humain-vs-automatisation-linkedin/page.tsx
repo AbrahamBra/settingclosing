@@ -5,6 +5,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
+import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
   title: 'Humain vs automatisation LinkedIn | Setting',
@@ -156,6 +157,10 @@ export default function SettingHumainVsAutomatisationPage() {
             <AuthorBlock date="2026-03-19" readTime="10 min de lecture" dateLabel="19 mars 2026" />
           </header>
 
+          <TldrBox>
+            <p>Les outils d&apos;automatisation LinkedIn envoient des messages. Le setting humain d&eacute;tecte les bons moments pour &eacute;crire. Cet article compare les deux approches sur 6 crit&egrave;res : taux de r&eacute;ponse, co&ucirc;t, scalabilit&eacute;, personnalisation, risque LinkedIn et qualit&eacute; des RDV.</p>
+          </TldrBox>
+
           {/* Definition block */}
           <div className="bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
@@ -251,7 +256,7 @@ export default function SettingHumainVsAutomatisationPage() {
                 Vous pouvez lire comment ce système fonctionne en détail dans l&apos;article{' '}
                 <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">
                   IA, méthode et humain
-                </a>, ou découvrir les 9 étapes de notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn</a>.
+                </a>.
               </p>
             </section>
 
@@ -581,8 +586,6 @@ export default function SettingHumainVsAutomatisationPage() {
             </p>
             <div className="space-y-3">
               {[
-                { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
-                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: 'Détecter les signaux d\u2019achat LinkedIn pour prospecter au bon moment' },
