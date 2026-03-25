@@ -70,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setting-linkedin-definition',
-      lastModified: new Date('2026-03-24'),
+      lastModified: new Date('2026-03-25'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
