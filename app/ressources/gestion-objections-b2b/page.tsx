@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "Objections B2B : méthode et exemples | Setting",
@@ -228,6 +230,8 @@ export default function GestionObjectionsPage() {
             </p>
           </section>
 
+          <CtaArticle variant="methode" />
+
           {/* Section 2 — Les 5 objections */}
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -383,6 +387,12 @@ export default function GestionObjectionsPage() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min' },
+            { href: '/ressources/closing-b2b', title: 'Closing B2B : définition, méthode et programme complet', readTime: '25 min' },
+            { href: '/ressources/script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min' },
+          ]} />
 
         </div>
       </main>

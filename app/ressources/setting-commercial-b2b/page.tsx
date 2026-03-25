@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Setting commercial B2B : définition et rôle du setter | Setting',
@@ -353,6 +355,8 @@ export default function SettingCommercialPage() {
                 </p>
               </div>
             </section>
+
+            <CtaArticle />
 
             {/* Section 3 — Stack outils */}
             <section id="linkedin" className="scroll-mt-24">
@@ -1093,6 +1097,12 @@ export default function SettingCommercialPage() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/difference-setting-closing', title: 'Quelle est la diff\u00e9rence entre setting et closing en B2B ?', readTime: '7 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
+          ]} />
 
         </div>
       </main>

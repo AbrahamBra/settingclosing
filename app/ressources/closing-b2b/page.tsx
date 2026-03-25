@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Closing B2B : définition et méthode | Setting',
@@ -341,6 +343,8 @@ export default function ClosingB2BPage() {
               ))}
             </div>
           </section>
+
+          <CtaArticle variant="methode" />
 
           {/* Section 3 — Discovery */}
           <section id="discovery" className="mb-14 scroll-mt-24">
@@ -1086,6 +1090,12 @@ export default function ClosingB2BPage() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min' },
+            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
+            { href: '/ressources/discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs \u00e0 \u00e9viter', readTime: '10 min' },
+          ]} />
 
         </div>
       </main>

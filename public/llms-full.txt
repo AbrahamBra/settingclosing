@@ -175,6 +175,65 @@ Une prime variable par RDV généré, indexée sur ton ticket moyen. 50 € par 
 
 ---
 
+## FAQ Tarifs
+
+**Combien coûte le Setting LinkedIn ?**
+790 €/mois, setup offert. Même tarif sur les 3 premiers mois. Sans engagement.
+
+**Le setup est vraiment offert ?**
+Oui. Le cadrage ICP, la rédaction des séquences et le paramétrage des outils sont inclus dans le premier mois.
+
+**Comment fonctionne le tarif du Setting téléphonique ?**
+175 €/demi-journée, facturé au réel selon votre flux de leads entrants. Zéro setup fee.
+
+**Y a-t-il un engagement ?**
+Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Garantie RDV incluse.
+
+**Quel ROI puis-je attendre ?**
+Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5× dès le 2e mois.
+
+---
+
+## Glossaire
+
+**Setting commercial :** Le setting commercial est la phase de prospection qui précède le closing. Le setter identifie des prospects qualifiés, envoie des messages de prise de contact, gère les échanges jusqu'à la prise de rendez-vous, puis passe le lead au closeur. En B2B, le setting se fait principalement sur LinkedIn.
+
+**Setter :** Un setter est un commercial spécialisé dans la prospection et la prise de rendez-vous. Il ne signe pas les contrats — c'est le rôle du closeur. Son travail : identifier les prospects selon des critères précis, envoyer des messages personnalisés, qualifier les réponses et remplir l'agenda du closeur de rendez-vous pertinents.
+
+**Closer :** Un closer B2B est le commercial qui prend en charge les rendez-vous qualifiés par le setter et transforme les prospects en clients. Il conduit la discovery call, identifie les objections, présente l'offre et signe. Le closer travaille sur des leads déjà chauffés, ce qui lui permet d'atteindre des taux de conversion élevés.
+
+**Closing :** Le closing est la phase de vente où un commercial transforme un prospect qualifié en client signé. En B2B, le closing se fait généralement lors d'un appel structuré (discovery call + pitch + gestion des objections + signature). Le taux de closing mesure le ratio prospects contactés / contrats signés.
+
+**Signal d'achat :** Un signal d'achat est un comportement observable d'un prospect qui indique un intérêt pour votre offre ou pour le problème que vous résolvez. Sur LinkedIn : liker un post sur votre thématique, commenter un contenu concurrent, changer de poste, réagir à une publication sur la transformation digitale. Les signaux d'achat sont la base du setting moderne : on contacte les prospects qui ont levé la main, pas une liste froide.
+
+**Prospection LinkedIn :** La prospection LinkedIn B2B consiste à identifier des prospects pertinents sur LinkedIn, à les contacter par message personnalisé et à qualifier leur intérêt avant de proposer un rendez-vous. La méthode signal-based utilise Sales Navigator et des outils comme Reactin ou Spyer pour détecter les signaux d'achat avant d'envoyer le premier message.
+
+**ICP — Ideal Customer Profile :** L'ICP (Ideal Customer Profile) est le profil précis du client idéal pour une offre donnée. En B2B, il inclut le secteur, la taille d'entreprise, le poste du décideur, le problème spécifique rencontré, le budget disponible et le niveau de maturité du prospect. Un setter travaille toujours avec un ICP défini pour ne pas perdre de temps sur des leads non qualifiés.
+
+**Qualification :** La qualification est l'évaluation du niveau de maturité et d'adéquation d'un prospect par rapport à une offre. En setting B2B, on qualifie généralement sur 5 niveaux : du lead froid (niveau 1, pas de signal) au lead chaud (niveau 5, a exprimé un besoin explicite). Les niveaux 4 et 5 sont prioritaires pour décrocher un appel.
+
+**Discovery call :** La discovery call est le premier appel commercial, conduit par le closeur, dont l'objectif est de comprendre le problème, le contexte et le budget du prospect avant de présenter l'offre. Une bonne discovery dure 20 à 40 minutes et permet d'identifier si le prospect peut bénéficier de la solution. Elle précède toujours le pitch.
+
+**Pipeline commercial :** Le pipeline commercial est la représentation visuelle de toutes les opportunités commerciales en cours, classées par étape du cycle de vente. En setting B2B : prospects identifiés → messages envoyés → réponses reçues → leads qualifiés → RDV pris → RDV réalisés → offres envoyées → contrats signés. Le setter alimente l'entrée du pipeline, le closeur travaille la fin.
+
+**Sales Navigator :** Sales Navigator est l'outil de prospection avancée de LinkedIn, vendu en abonnement (~100 €/mois). Il permet de filtrer les profils LinkedIn selon des dizaines de critères (poste, secteur, taille d'entreprise, ancienneté, signaux récents), de sauvegarder des listes de prospects et de recevoir des alertes sur les changements de poste ou activités récentes. C'est l'outil de base de tout setter professionnel.
+
+**Taux de réponse :** Le taux de réponse mesure le pourcentage de prospects qui répondent à un message de prospection. En prospection LinkedIn sans méthode, il tourne autour de 2 à 5 %. Avec une approche signal-based (message ancré sur un fait précis tiré du profil), il peut atteindre 20 à 35 % sur les prospects chauds. Le taux de réponse est le premier indicateur de performance d'un setter.
+
+**Challenger Sale :** Le Challenger Sale est une méthode de vente B2B développée par Matthew Dixon et Brent Adamson, basée sur l'étude de 6 000 commerciaux. Elle identifie 5 profils de vendeurs et montre que les plus performants sont les "Challengers" — ceux qui éduquent le prospect, adaptent leur discours et prennent le contrôle de la conversation. Ses 3 composantes : Teach (apporter un insight), Tailor (adapter au contexte), Take Control (conduire la décision).
+
+**Outreach :** L'outreach désigne l'ensemble des actions de prise de contact sortante vers des prospects qui ne vous ont pas sollicité. Par opposition à l'inbound (prospects qui viennent vers vous), l'outreach inclut les messages LinkedIn, les emails de prospection et les appels à froid. En setting B2B, l'outreach signal-based améliore fortement les taux de réponse en ciblant uniquement les prospects ayant récemment montré un signe d'intérêt.
+
+**Inbound :** En vente B2B, l'inbound désigne les prospects qui viennent vers vous — via votre contenu, votre site, votre réputation ou vos recommandations. Un setter inbound traite les personnes qui ont réagi à vos posts, visité votre profil ou téléchargé un lead magnet. Le setting inbound a généralement des taux de réponse plus élevés que l'outreach pur, car le prospect a déjà montré de l'intérêt.
+
+**Follow-up (relance) :** Un follow-up est un message de relance envoyé après un premier message sans réponse, ou après un échange qui n'a pas débouché sur un rendez-vous. En setting B2B, la relance doit être sobre, courte et apporter un élément nouveau (article, question, contexte différent). La règle : maximum 2 relances, séparées de 5 à 7 jours. Plus de relances = risque de spam et dégradation de la réputation LinkedIn.
+
+**Objection :** Une objection est une résistance du prospect pendant le processus de vente. Les objections courantes en closing B2B : "C'est trop cher", "Je dois en parler à mon associé", "Je n'ai pas le temps maintenant". La gestion des objections est une compétence centrale du closeur — il distingue les objections réelles (doutes légitimes) des objections-prétextes (volonté de mettre fin à la conversation sans conflit).
+
+**Solopreneur :** Un solopreneur est un entrepreneur qui travaille seul, sans salariés, et génère son revenu via une ou plusieurs offres (consulting, formation, coaching, service). Contrairement au freelance, le solopreneur construit généralement une marque personnelle et des offres packagées. Le principal défi du solopreneur est la gestion simultanée de la prospection, de la livraison et du développement — c'est pourquoi l'externalisation du setting est souvent son premier levier de croissance.
+
+---
+
 ## Contact
 
 - Site : https://www.setting.live

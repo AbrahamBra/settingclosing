@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Setting vs Closing : la différence | Setting',
@@ -325,6 +327,8 @@ export default function DifferenceSettingClosingPage() {
             </div>
           </section>
 
+          <CtaArticle />
+
           {/* Section 3 — Dans quel ordre investir */}
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -469,6 +473,12 @@ export default function DifferenceSettingClosingPage() {
               Réserver un appel gratuit →
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
+            { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
+          ]} />
 
         </div>
       </main>

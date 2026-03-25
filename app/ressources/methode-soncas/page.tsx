@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Méthode SONCAS : 6 leviers B2B | Setting',
@@ -332,6 +334,8 @@ export default function MethodeSoncasPage() {
             </div>
           </section>
 
+          <CtaArticle variant="methode" />
+
           {/* Section 3 — Application en discovery */}
           <section id="application" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -512,6 +516,12 @@ export default function MethodeSoncasPage() {
           <div className="mt-8 text-center">
             <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">← Retour au blog</a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/methodes-vente-b2b', title: 'M\u00e9thodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS', readTime: '10 min' },
+            { href: '/ressources/methode-spin-selling', title: 'SPIN Selling 2026 : la m\u00e9thode pour vendre en B2B sans forcer', readTime: '9 min' },
+            { href: '/ressources/gestion-objections-b2b', title: 'G\u00e9rer les objections en vente B2B : m\u00e9thode et exemples', readTime: '9 min' },
+          ]} />
 
         </div>
       </main>

@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "Relance LinkedIn B2B : quand et comment | Setting",
@@ -353,6 +355,8 @@ export default function RelanceLinkedInB2BPage() {
             </div>
           </section>
 
+          <CtaArticle />
+
           {/* Section 3 — Comment relancer */}
           <section id="comment" className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -646,6 +650,12 @@ export default function RelanceLinkedInB2BPage() {
               Déléguer mon setting →
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : anatomie, exemples et cadre complet', readTime: '11 min' },
+            { href: '/ressources/messages-linkedin-sans-reponse', title: "Pourquoi vos messages LinkedIn n\u2019obtiennent pas de r\u00e9ponses", readTime: '8 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
+          ]} />
 
         </div>
       </main>

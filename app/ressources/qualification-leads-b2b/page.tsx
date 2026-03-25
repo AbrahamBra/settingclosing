@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Qualification de leads B2B en 2026 | Setting',
@@ -302,6 +304,8 @@ export default function QualificationLeadsB2BPage() {
             </p>
           </section>
 
+          <CtaArticle variant="methode" />
+
           {/* Section 4 — Niveaux signal */}
           <section id="niveaux" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -427,6 +431,12 @@ export default function QualificationLeadsB2BPage() {
           <div className="mt-8 text-center">
             <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">← Retour au blog</a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs \u00e0 \u00e9viter', readTime: '10 min' },
+            { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
+            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+          ]} />
 
         </div>
       </main>

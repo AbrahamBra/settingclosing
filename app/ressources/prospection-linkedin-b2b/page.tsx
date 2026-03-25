@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "Prospection LinkedIn B2B en 2026 | Setting",
@@ -312,6 +314,8 @@ export default function ProspectionLinkedInB2BPage() {
               </p>
             </div>
           </section>
+
+          <CtaArticle />
 
           {/* Section 3 — Sales Navigator */}
           <section className="mb-14">
@@ -712,6 +716,12 @@ export default function ProspectionLinkedInB2BPage() {
               Déléguer ma prospection →
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
+            { href: '/ressources/script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : anatomie, exemples et cadre complet', readTime: '11 min' },
+            { href: '/ressources/relance-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min' },
+          ]} />
 
         </div>
       </main>

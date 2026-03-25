@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Closer B2B : définition et compétences | Setting',
@@ -321,6 +323,8 @@ export default function CloserB2BPage() {
             </p>
           </section>
 
+          <CtaArticle variant="methode" />
+
           {/* Section 3 — Setter + Closer */}
           <section id="setter-closer" className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -592,6 +596,12 @@ export default function CloserB2BPage() {
               Discuter de mon pipeline →
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/closing-b2b', title: 'Closing B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
+            { href: '/ressources/difference-setting-closing', title: 'Quelle est la diff\u00e9rence entre setting et closing en B2B ?', readTime: '7 min' },
+            { href: '/ressources/script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min' },
+          ]} />
 
         </div>
       </main>

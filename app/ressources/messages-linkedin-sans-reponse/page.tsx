@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "Messages LinkedIn sans réponse | Setting",
@@ -387,6 +389,8 @@ export default function MessagesLinkedInSansReponsePage() {
             </div>
           </section>
 
+          <CtaArticle />
+
           {/* Section — Deux modes de message */}
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -653,6 +657,12 @@ export default function MessagesLinkedInSansReponsePage() {
               Déléguer mon setting →
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : anatomie, exemples et cadre complet', readTime: '11 min' },
+            { href: '/ressources/relance-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min' },
+            { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
+          ]} />
 
         </div>
       </main>

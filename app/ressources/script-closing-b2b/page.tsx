@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "Scripts de closing B2B : exemples | Setting",
@@ -210,6 +212,8 @@ export default function ScriptClosingPage() {
               immédiatement la différence.
             </p>
           </section>
+
+          <CtaArticle variant="methode" />
 
           {/* Section 2 — Les 5 scripts */}
           <section className="mb-14">
@@ -453,6 +457,12 @@ export default function ScriptClosingPage() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/closing-b2b', title: 'Closing B2B : définition, méthode et programme complet', readTime: '25 min' },
+            { href: '/ressources/gestion-objections-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min' },
+            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que ça demande, comment en recruter un", readTime: '11 min' },
+          ]} />
 
         </div>
       </main>

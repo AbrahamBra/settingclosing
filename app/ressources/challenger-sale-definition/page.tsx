@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Challenger Sale : définition et méthode | Setting',
@@ -292,6 +294,8 @@ export default function ChallengerSalePage() {
             </div>
           </section>
 
+          <CtaArticle variant="methode" />
+
           {/* Section 3 — Les 3 composantes */}
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -418,6 +422,12 @@ export default function ChallengerSalePage() {
               Améliorer mon closing →
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/methodes-vente-b2b', title: 'M\u00e9thodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS', readTime: '10 min' },
+            { href: '/ressources/methode-spin-selling', title: 'SPIN Selling 2026 : la m\u00e9thode pour vendre en B2B sans forcer', readTime: '9 min' },
+            { href: '/ressources/closing-b2b', title: 'Closing B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
+          ]} />
 
         </div>
       </main>

@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { AuthorBlock } from '@/components/AuthorBlock'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'SPIN Selling : méthode de vente B2B | Setting',
@@ -305,6 +307,8 @@ export default function MethodeSpinSellingPage() {
             </div>
           </section>
 
+          <CtaArticle variant="methode" />
+
           {/* Section 3 — Discovery */}
           <section id="discovery" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -481,6 +485,12 @@ export default function MethodeSpinSellingPage() {
           <div className="mt-8 text-center">
             <a href="/ressources" className="font-sans text-sm text-text-secondary hover:text-text-primary transition-colors">← Retour au blog</a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/methodes-vente-b2b', title: 'M\u00e9thodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS', readTime: '10 min' },
+            { href: '/ressources/methode-soncas', title: 'M\u00e9thode SONCAS en B2B 2026 : d\u00e9finition, 6 leviers et exemples concrets', readTime: '10 min' },
+            { href: '/ressources/challenger-sale-definition', title: "Qu\u2019est-ce que le Challenger Sale ?", readTime: '9 min' },
+          ]} />
 
         </div>
       </main>

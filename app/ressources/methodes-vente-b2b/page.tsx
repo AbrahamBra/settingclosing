@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Méthodes de vente B2B comparées | Setting',
@@ -436,6 +438,8 @@ export default function MethodesVenteB2BPage() {
             </section>
           ))}
 
+          <CtaArticle variant="methode" />
+
           {/* Section — Choisir sa méthode */}
           <section id="choisir" className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -638,6 +642,12 @@ export default function MethodesVenteB2BPage() {
               Structurer mon pipeline de vente &rarr;
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/challenger-sale-definition', title: "Qu\u2019est-ce que le Challenger Sale ?", readTime: '9 min' },
+            { href: '/ressources/methode-spin-selling', title: 'SPIN Selling 2026 : la m\u00e9thode pour vendre en B2B sans forcer', readTime: '9 min' },
+            { href: '/ressources/methode-soncas', title: 'M\u00e9thode SONCAS en B2B 2026 : d\u00e9finition, 6 leviers et exemples concrets', readTime: '10 min' },
+          ]} />
 
         </div>
       </main>

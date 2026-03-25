@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "Comment devenir setter B2B en 2026 | Setting",
@@ -295,6 +297,8 @@ export default function CommentDevenirSetterB2BPage() {
             </p>
           </section>
 
+          <CtaArticle />
+
           {/* Section 3 */}
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -528,6 +532,12 @@ export default function CommentDevenirSetterB2BPage() {
               Rejoindre le programme →
             </ButtonGlow>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/cout-setter-b2b-prix', title: "Co\u00fbt d\u2019un setter B2B en 2026 : les vrais chiffres", readTime: '9 min' },
+            { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
+          ]} />
 
         </div>
       </main>

@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "Prix d'un setter B2B en 2026 | Setting",
@@ -334,6 +336,8 @@ export default function CoutSetterB2BPage() {
               </div>
             </section>
 
+            <CtaArticle />
+
             {/* Section 3 */}
             <section>
               <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -548,6 +552,12 @@ export default function CoutSetterB2BPage() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min' },
+            { href: '/ressources/sdr-interne-vs-externalise', title: 'SDR interne vs SDR externalis\u00e9 : le comparatif co\u00fbt r\u00e9el', readTime: '8 min' },
+            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+          ]} />
 
         </div>
       </main>

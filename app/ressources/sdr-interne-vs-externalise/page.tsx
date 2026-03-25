@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'SDR interne vs externalisé : coût réel et ROI | Setting',
@@ -307,6 +309,8 @@ export default function SdrInterneVsExternalisePage() {
               </div>
             </section>
 
+            <CtaArticle />
+
             {/* Section 3 — Comparatif chiffré */}
             <section>
               <h2 className="font-serif text-h2 text-text-primary mb-5">
@@ -551,6 +555,12 @@ export default function SdrInterneVsExternalisePage() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/cout-setter-b2b-prix', title: "Co\u00fbt d\u2019un setter B2B en 2026 : les vrais chiffres", readTime: '9 min' },
+            { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '10 min' },
+            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+          ]} />
 
         </div>
       </main>

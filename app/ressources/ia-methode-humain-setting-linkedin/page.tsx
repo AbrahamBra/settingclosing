@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: "IA et humain : système de setting LinkedIn | Setting",
@@ -300,6 +302,8 @@ export default function Page() {
                 Chaque étape de ce processus est détaillée dans notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn en 9 étapes</a>.
               </p>
             </section>
+
+            <CtaArticle />
 
             {/* Section 3 */}
             <section>
@@ -704,6 +708,12 @@ export default function Page() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '10 min' },
+            { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
+          ]} />
 
         </div>
       </main>

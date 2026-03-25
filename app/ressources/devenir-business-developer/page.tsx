@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Devenir Business Developer en 2026 | Setting',
@@ -295,6 +297,8 @@ export default function DevenirBusinessDeveloperPage() {
               il faut aimer comprendre comment les choses fonctionnent et ne pas avoir peur de tester.
             </p>
           </section>
+
+          <CtaArticle />
 
           {/* Section 3 — Pourquoi ça recrute */}
           <section id="recrutement" className="mb-14 scroll-mt-24">
@@ -630,6 +634,12 @@ export default function DevenirBusinessDeveloperPage() {
               ))}
             </div>
           </section>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min' },
+            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
+            { href: '/ressources/qualification-leads-b2b', title: 'Qualifier un lead en B2B 2026 : m\u00e9thodes, crit\u00e8res et exemples', readTime: '8 min' },
+          ]} />
 
         </div>
       </main>

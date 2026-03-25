@@ -3,6 +3,8 @@ import { NavbarBlog } from '@/components/NavbarBlog'
 import { Footer } from '@/components/Footer'
 import { ButtonGlow } from '@/components/ui/ButtonGlow'
 import { AuthorBlock } from '@/components/AuthorBlock'
+import { CtaArticle } from '@/components/CtaArticle'
+import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
   title: 'Humain vs automatisation LinkedIn | Setting',
@@ -252,6 +254,8 @@ export default function SettingHumainVsAutomatisationPage() {
                 </a>, ou découvrir les 9 étapes de notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn</a>.
               </p>
             </section>
+
+            <CtaArticle />
 
             {/* Section 4 — Comparison table */}
             <section>
@@ -618,6 +622,12 @@ export default function SettingHumainVsAutomatisationPage() {
               ← Retour au blog
             </a>
           </div>
+
+          <RelatedArticles articles={[
+            { href: '/ressources/ia-methode-humain-setting-linkedin', title: "IA, m\u00e9thode et humain : les 3 couches d\u2019un syst\u00e8me de setting LinkedIn qui tient sur la dur\u00e9e", readTime: '12 min' },
+            { href: '/ressources/sdr-interne-vs-externalise', title: 'SDR interne vs SDR externalis\u00e9 : le comparatif co\u00fbt r\u00e9el', readTime: '8 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
+          ]} />
 
         </div>
       </main>
