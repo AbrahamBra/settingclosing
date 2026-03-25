@@ -66,11 +66,9 @@ const globalSchema = {
         height: 512,
       },
       description: 'Prospection LinkedIn externalisée pour solopreneurs et fondateurs B2B. Méthode signal-based, setter dédié, IA + validation humaine.',
-      alternateName: 'ChallengersLab',
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
         'https://www.linkedin.com/in/abraham-brakha',
-        'https://www.challengerslab.com',
       ],
       foundingDate: '2024',
       numberOfEmployees: {

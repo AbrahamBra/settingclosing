@@ -42,6 +42,10 @@ const webPageSchema = {
     name: 'Setting',
     url: 'https://www.setting.live',
   },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const breadcrumbSchema = {
