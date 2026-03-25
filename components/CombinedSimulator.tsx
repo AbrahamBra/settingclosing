@@ -26,7 +26,9 @@ export function CombinedSimulator() {
     // LinkedIn
     const rdvLinkedinMois = rdvParSemaine * 4
     const prime = ticketMoyen < 5000 ? 50 : ticketMoyen <= 15000 ? 150 : 250
-    const coutLinkedin = 790 + prime * rdvLinkedinMois
+    // 5 premiers RDV inclus dans le 790€, primes à partir du 6e
+    const rdvFactures = Math.max(0, rdvLinkedinMois - 5)
+    const coutLinkedin = 790 + prime * rdvFactures
     const clientsLinkedin = rdvLinkedinMois * (tauxClosing / 100)
     const revenuLinkedin = clientsLinkedin * ticketMoyen
 
@@ -40,7 +42,7 @@ export function CombinedSimulator() {
     if (withTelephone) {
       rdvTelMois = leadsParMois * (tauxRDV / 100)
       demiJournees = Math.ceil(leadsParMois / 15)
-      const primeTel = ticketMoyen < 5000 ? 25 : ticketMoyen <= 15000 ? 100 : 200
+      const primeTel = ticketMoyen < 5000 ? 50 : ticketMoyen <= 15000 ? 100 : 200
       coutTelephone = demiJournees * 175 + primeTel * rdvTelMois
       clientsTel = rdvTelMois * (tauxClosing / 100)
       revenuTel = clientsTel * ticketMoyen
@@ -256,7 +258,7 @@ export function CombinedSimulator() {
 
                 {/* Hypotheses */}
                 <p className="text-[10px] text-text-muted mt-4 leading-relaxed">
-                  Hypoth&egrave;ses : prime par RDV selon ticket &middot; 15 leads/demi-journ&eacute;e max (t&eacute;l&eacute;phone) &middot; taux de closing partag&eacute;
+                  Hypoth&egrave;ses : 5 premiers RDV/mois inclus, prime &agrave; partir du 6e selon ticket &middot; 15 leads/demi-journ&eacute;e max (t&eacute;l&eacute;phone) &middot; taux de closing partag&eacute;
                 </p>
               </div>
             </div>

@@ -80,14 +80,16 @@ const linkedinConfig: SimulatorConfig = {
     },
   ],
   hypotheses: [
-    'Prime par RDV : 50\u00a0€ (<5k), 150\u00a0€ (5-15k), 250\u00a0€ (>15k)',
+    '5 premiers RDV/mois inclus, puis prime : 50\u00a0€ (<5k), 150\u00a0€ (5-15k), 250\u00a0€ (>15k)',
   ],
   conversionStat: 'En moyenne : 1 à 4 RDV qualifiés par semaine selon le marché',
   setupAmount: 0,
   compute(values, includeSetup) {
     const rdvParMois = values.rdvParSemaine * 4
     const prime = values.ticketMoyen < 5000 ? 50 : values.ticketMoyen <= 15000 ? 150 : 250
-    const coutMensuel = 790 + prime * rdvParMois
+    // 5 premiers RDV inclus dans le 790€, primes à partir du 6e
+    const rdvFactures = Math.max(0, rdvParMois - 5)
+    const coutMensuel = 790 + prime * rdvFactures
     const coutTotal = coutMensuel
     const clientsGagnes = rdvParMois * (values.tauxClosing / 100)
     const revenuMensuel = clientsGagnes * values.ticketMoyen
@@ -189,7 +191,7 @@ const telephoneConfig: SimulatorConfig = {
     // Cap par capacité : max 15 leads par demi-journée
     const demiJourneesParTemps = Math.ceil(values.leadsParMois / leadsParDemiJournee)
     const demiJournees = demiJourneesParTemps
-    const prime = values.ticketMoyen < 5000 ? 25 : values.ticketMoyen <= 15000 ? 100 : 200
+    const prime = values.ticketMoyen < 5000 ? 50 : values.ticketMoyen <= 15000 ? 100 : 200
     const coutMensuel = (demiJournees * halfDayRate) + (prime * rdvParMois)
     const setupAmorti = includeSetup ? Math.round(490 / 3) : 0
     const coutTotal = coutMensuel + setupAmorti
