@@ -326,6 +326,9 @@ export default function ProspectionLinkedInB2BPage() {
                 une curation précise des comptes à surveiller. Un système mature utilise les deux.
               </p>
             </div>
+            <p className="text-sm text-text-muted italic mt-2">
+              Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">Comment prospecter sur LinkedIn en 2026</a>
+            </p>
           </section>
 
           <CtaArticle />
@@ -624,6 +627,9 @@ export default function ProspectionLinkedInB2BPage() {
                 pas pourquoi — parce que les messages semblent bons à l&apos;écrit.
               </p>
             </div>
+            <p className="text-sm text-text-muted italic mt-2">
+              Pour aller plus loin : <a href="/ressources/messages-prospection-linkedin-exemples" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
+            </p>
           </section>
 
           {/* Section 7 — Construire un système */}

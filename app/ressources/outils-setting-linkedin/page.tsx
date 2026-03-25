@@ -328,6 +328,9 @@ export default function OutilsSettingLinkedinPage() {
                 Commencez avec le filtre minimum (poste + taille entreprise + seuil de score).
                 Ajoutez de la complexite apres les 50 premiers leads, quand vous savez ce qui convertit.
               </p>
+              <p className="text-sm text-text-muted italic mt-2">
+                Pour aller plus loin : <a href="/ressources/automatisation-prospection-linkedin" className="text-accent hover:underline">Automatisation prospection LinkedIn : limites et alternatives</a>
+              </p>
             </section>
 
             {/* Section 4 — BreakCold */}

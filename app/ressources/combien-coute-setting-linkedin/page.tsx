@@ -352,6 +352,9 @@ export default function CombienCouteSettingLinkedinPage() {
                 ce que votre setter va optimiser au quotidien. Un fixe seul r&eacute;compense la pr&eacute;sence.
                 Une prime seule r&eacute;compense le volume. L&apos;hybride r&eacute;compense la qualit&eacute;.
               </p>
+              <p className="text-sm text-text-muted italic mt-2">
+                Pour aller plus loin : <a href="/ressources/agence-prospection-linkedin" className="text-accent hover:underline">Agence de prospection LinkedIn : comment choisir</a>
+              </p>
             </section>
 
             {/* Section 3 — Comparatif canaux */}

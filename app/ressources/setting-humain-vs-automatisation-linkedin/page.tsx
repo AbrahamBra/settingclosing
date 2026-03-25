@@ -475,6 +475,9 @@ export default function SettingHumainVsAutomatisationPage() {
               <p>
                 Si vous cochez deux de ces cases, l&apos;automatisation mérite d&apos;être testée sérieusement.
               </p>
+              <p className="text-sm text-text-muted italic mt-2">
+                Pour aller plus loin : <a href="/ressources/automatisation-prospection-linkedin" className="text-accent hover:underline">Automatisation prospection LinkedIn : limites et alternatives</a>
+              </p>
             </section>
 
             {/* Section 6 */}

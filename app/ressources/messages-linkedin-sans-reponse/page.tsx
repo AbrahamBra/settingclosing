@@ -609,6 +609,9 @@ export default function MessagesLinkedInSansReponsePage() {
                 Source : données terrain Setting, analyse de 1 200+ messages envoyés, 2025–2026
               </p>
             </div>
+            <p className="text-sm text-text-muted italic mt-2">
+              Pour aller plus loin : <a href="/ressources/messages-prospection-linkedin-exemples" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
+            </p>
           </section>
 
           {/* FAQ */}

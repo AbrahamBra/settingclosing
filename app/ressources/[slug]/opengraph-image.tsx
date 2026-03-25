@@ -31,6 +31,18 @@ const titles: Record<string, { title: string; category: string }> = {
   'devenir-business-developer': { title: 'Devenir Business Developer', category: 'Guide carrière' },
   'sdr-interne-vs-externalise': { title: 'SDR interne vs externalisé', category: 'Comparaison' },
   'setting-humain-vs-automatisation-linkedin': { title: 'Setting humain vs automatisation', category: 'Comparaison' },
+  'agence-setting-linkedin-vs-freelance': { title: 'Agence setting vs freelance', category: 'Comparaison' },
+  'combien-coute-setting-linkedin': { title: 'Prix du setting LinkedIn', category: 'Guide prix' },
+  'comment-choisir-setter-linkedin': { title: 'Choisir son setter LinkedIn', category: 'Guide' },
+  'outils-setting-linkedin': { title: 'Outils du setting LinkedIn', category: 'Outils' },
+  'setting-commercial-linkedin': { title: 'Setting commercial LinkedIn', category: 'Guide complet' },
+  'setting-linkedin-definition': { title: 'Setting LinkedIn : définition', category: 'Définition' },
+  // Batch 6 — élargissement prospection LinkedIn
+  'comment-prospecter-sur-linkedin': { title: 'Comment prospecter sur LinkedIn', category: 'Guide complet' },
+  'agence-prospection-linkedin': { title: 'Agence prospection LinkedIn', category: 'Guide' },
+  'messages-prospection-linkedin-exemples': { title: '15 messages de prospection LinkedIn', category: 'Exemples' },
+  'social-selling-linkedin-b2b': { title: 'Social selling LinkedIn B2B', category: 'Guide' },
+  'automatisation-prospection-linkedin': { title: 'Automatisation prospection LinkedIn', category: 'Comparaison' },
 }
 
 export default async function OGImage({ params }: { params: Promise<{ slug: string }> }) {

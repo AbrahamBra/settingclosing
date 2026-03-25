@@ -446,6 +446,9 @@ export default function SignalAchatLinkedInPage() {
               Le signal indique un intérêt — pas encore une intention d&apos;achat. C&apos;est la conversation
               qui permet de distinguer les deux.
             </p>
+            <p className="text-sm text-text-muted italic mt-2">
+              Pour aller plus loin : <a href="/ressources/social-selling-linkedin-b2b" className="text-accent hover:underline">Social selling LinkedIn : d&eacute;finition et m&eacute;thode</a>
+            </p>
           </section>
 
           {/* Section 6 — FAQ */}

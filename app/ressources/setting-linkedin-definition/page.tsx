@@ -423,6 +423,9 @@ export default function SettingLinkedInDefinitionPage() {
                 setting humain vs automatisation LinkedIn
               </a>.
             </p>
+            <p className="text-sm text-text-muted italic mt-2">
+              Pour aller plus loin : <a href="/ressources/social-selling-linkedin-b2b" className="text-accent hover:underline">Social selling LinkedIn : d&eacute;finition et m&eacute;thode</a>
+            </p>
           </section>
 
 
@@ -521,6 +524,9 @@ export default function SettingLinkedInDefinitionPage() {
                 </a>
               </p>
             </div>
+            <p className="text-sm text-text-muted italic mt-2">
+              Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">Comment prospecter sur LinkedIn en 2026</a>
+            </p>
           </section>
 
 

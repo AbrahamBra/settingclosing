@@ -320,6 +320,9 @@ export default function SdrInterneVsExternalisePage() {
                   les premières semaines, pas après 6 mois de ramp-up.
                 </p>
               </div>
+              <p className="text-sm text-text-muted italic mt-2">
+                Pour aller plus loin : <a href="/ressources/agence-prospection-linkedin" className="text-accent hover:underline">Agence de prospection LinkedIn : comment choisir</a>
+              </p>
             </section>
 
             <CtaArticle />

@@ -552,6 +552,9 @@ export default function ScriptSettingLinkedinPage() {
                 </p>
               </div>
             </div>
+            <p className="text-sm text-text-muted italic mt-2">
+              Pour aller plus loin : <a href="/ressources/messages-prospection-linkedin-exemples" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
+            </p>
           </section>
 
           {/* Section 5 — Erreurs */}
