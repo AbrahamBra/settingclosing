@@ -48,13 +48,15 @@ const serviceSchema = {
   },
   offers: {
     '@type': 'Offer',
-    price: '500',
+    price: '790',
     priceCurrency: 'EUR',
     priceSpecification: {
       '@type': 'UnitPriceSpecification',
-      price: '500',
+      price: '790',
       priceCurrency: 'EUR',
-      unitText: 'MONTH',
+      unitText: 'MON',
+      billingDuration: 'P1M',
+      valueAddedTaxIncluded: false,
     },
   },
 }

@@ -47,6 +47,11 @@ Setting construit et opère des pipelines de prospection LinkedIn B2B. Un setter
 - Glossaire : https://www.setting.live/glossaire
 - À propos : https://www.setting.live/a-propos
 
+## Questions fréquentes (FAQ)
+
+- 8 questions-réponses couvrant le prix, la méthode, la garantie, les délais et les bonuses RDV
+- Voir llms-full.txt pour le détail : https://www.setting.live/llms-full.txt
+
 ## Contenu détaillé
 
 - Voir llms-full.txt pour le contenu complet : https://www.setting.live/llms-full.txt

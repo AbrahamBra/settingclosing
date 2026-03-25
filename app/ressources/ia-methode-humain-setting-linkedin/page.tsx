@@ -35,14 +35,15 @@ const articleSchema = {
     "Un système de setting LinkedIn qui tient combine trois couches distinctes : l'IA pour la détection et la co-rédaction, la méthode pour le scoring et les règles non-négociables, et l'humain pour la validation et la décision. Explications et exemples.",
   author: {
     '@type': 'Person',
-    name: 'Abraham',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
     url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.setting.live/#business',
     name: 'Setting',
     url: 'https://www.setting.live',
-    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-17',
   dateModified: '2026-03-19',
@@ -53,6 +54,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
   },
   image: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const faqItems = [

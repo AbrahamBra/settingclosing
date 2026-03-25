@@ -35,14 +35,15 @@ const articleSchema = {
     'Les vrais scripts de setting LinkedIn : anatomie d\'un message qui obtient des réponses, 6 scripts concrets (inbound + outbound), les 4 erreurs qui tuent le taux de réponse.',
   author: {
     '@type': 'Person',
-    name: 'Abraham',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
     url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.setting.live/#business',
     name: 'Setting',
     url: 'https://www.setting.live',
-    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
@@ -53,6 +54,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/script-setting-linkedin',
   },
   image: 'https://www.setting.live/ressources/script-setting-linkedin/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const faqItems = [

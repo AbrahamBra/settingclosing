@@ -35,14 +35,15 @@ const articleSchema = {
     "Le closing B2B est la phase de vente où un commercial transforme un prospect qualifié en client signé. Définition exacte, rôle du closeur, discovery call, gestion des objections et programme.",
   author: {
     '@type': 'Person',
-    name: 'Abraham',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
     url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.setting.live/#business',
     name: 'Setting',
     url: 'https://www.setting.live',
-    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
@@ -53,6 +54,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/closing-b2b',
   },
   image: 'https://www.setting.live/ressources/closing-b2b/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const faqItems = [

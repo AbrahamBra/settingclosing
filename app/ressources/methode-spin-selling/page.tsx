@@ -33,14 +33,15 @@ const articleSchema = {
     'Le SPIN Selling de Neil Rackham est la méthode de vente B2B la plus validée empiriquement. 4 types de questions qui font avancer un deal sans pression.',
   author: {
     '@type': 'Person',
-    name: 'Abraham',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
     url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.setting.live/#business',
     name: 'Setting',
     url: 'https://www.setting.live',
-    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
@@ -51,6 +52,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/methode-spin-selling',
   },
   image: 'https://www.setting.live/ressources/methode-spin-selling/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const faqItems = [

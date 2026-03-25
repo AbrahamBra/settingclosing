@@ -35,14 +35,15 @@ const articleSchema = {
     "La discovery call est le premier appel commercial du closeur. Structure en 4 phases, les 10 meilleures questions à poser, les 3 erreurs qui font perdre des deals.",
   author: {
     '@type': 'Person',
-    name: 'Abraham',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
     url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.setting.live/#business',
     name: 'Setting',
     url: 'https://www.setting.live',
-    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-18',
   dateModified: '2026-03-19',
@@ -53,6 +54,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/discovery-call-b2b',
   },
   image: 'https://www.setting.live/ressources/discovery-call-b2b/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const faqItems = [

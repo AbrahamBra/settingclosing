@@ -35,14 +35,15 @@ const articleSchema = {
     "Le Challenger Sale est une méthode de vente B2B développée par Matthew Dixon et Brent Adamson (CEB, 2011), basée sur une étude portant sur 6 000 commerciaux. Elle identifie 5 profils de vendeurs et démontre que les top performers challengent leurs prospects plutôt que de les accompagner.",
   author: {
     '@type': 'Person',
-    name: 'Abraham',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
     url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.setting.live/#business',
     name: 'Setting',
     url: 'https://www.setting.live',
-    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-16',
   dateModified: '2026-03-19',
@@ -53,6 +54,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/challenger-sale-definition',
   },
   image: 'https://www.setting.live/ressources/challenger-sale-definition/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const faqItems = [

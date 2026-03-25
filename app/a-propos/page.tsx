@@ -45,35 +45,57 @@ const aboutPageSchema = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': 'https://www.setting.live/#business',
   name: 'Setting',
+  alternateName: 'ChallengersLab',
   url: 'https://www.setting.live',
   description:
     'Service de prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B.',
+  sameAs: [
+    'https://www.linkedin.com/company/challengerslab',
+    'https://www.linkedin.com/in/abraham-brakha',
+    'https://www.challengerslab.com',
+  ],
   employee: [
     {
       '@type': 'Person',
-      name: 'Brahim',
+      '@id': 'https://www.setting.live/a-propos#brahim',
+      name: 'Brahim Brakha',
+      givenName: 'Brahim',
+      familyName: 'Brakha',
       jobTitle: 'Setter LinkedIn B2B',
       description:
         'Envoie les messages, qualifie les prospects et décroche les RDV. 400+ RDV qualifiés livrés, 3 ans de spécialisation en outreach LinkedIn B2B.',
       knowsAbout: ['prospection LinkedIn', 'setting commercial B2B', 'qualification de leads'],
+      worksFor: { '@type': 'Organization', '@id': 'https://www.setting.live/#business' },
     },
     {
       '@type': 'Person',
-      name: 'Abraham',
+      '@id': 'https://www.setting.live/a-propos#abraham',
+      name: 'Abraham Brakha',
+      givenName: 'Abraham',
+      familyName: 'Brakha',
       jobTitle: 'Fondateur & Automatisation IA',
       url: 'https://www.setting.live/a-propos',
+      sameAs: [
+        'https://www.linkedin.com/in/abraham-brakha',
+      ],
       description:
         'Développeur spécialisé en automatisation et IA appliquée au sales. Créateur du système de détection de signaux d\'achat LinkedIn.',
       knowsAbout: ['automatisation commerciale', 'IA appliquée au sales', 'détection de signaux d\'achat LinkedIn'],
+      worksFor: { '@type': 'Organization', '@id': 'https://www.setting.live/#business' },
     },
     {
       '@type': 'Person',
-      name: 'Abdelhay',
+      '@id': 'https://www.setting.live/a-propos#abdelhay',
+      name: 'Abdelhay Brakha',
+      givenName: 'Abdelhay',
+      familyName: 'Brakha',
       jobTitle: 'Stratégie commerciale & Closing B2B',
       description:
         'Expérience en closing B2B et copywriting commercial. Conçoit les séquences de messages et affine les scripts. Approche Challenger Sale. Taux de réponse moyen : 20-35%.',
       knowsAbout: ['closing B2B', 'Challenger Sale', 'copywriting commercial', 'stratégie de conversion'],
+      worksFor: { '@type': 'Organization', '@id': 'https://www.setting.live/#business' },
     },
   ],
 }

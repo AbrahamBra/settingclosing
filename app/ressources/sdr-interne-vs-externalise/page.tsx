@@ -34,14 +34,15 @@ const articleSchema = {
     'Recruter un SDR ou externaliser sa prospection B2B ? Salaire, charges patronales, ramp-up, turnover : les vrais chiffres côte à côte.',
   author: {
     '@type': 'Person',
-    name: 'Abraham',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
     url: 'https://www.setting.live/a-propos',
   },
   publisher: {
     '@type': 'Organization',
+    '@id': 'https://www.setting.live/#business',
     name: 'Setting',
     url: 'https://www.setting.live',
-    logo: 'https://www.setting.live/opengraph-image',
   },
   datePublished: '2026-03-19',
   dateModified: '2026-03-19',
@@ -52,6 +53,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
   },
   image: 'https://www.setting.live/ressources/sdr-interne-vs-externalise/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
+  },
 }
 
 const faqItems = [
