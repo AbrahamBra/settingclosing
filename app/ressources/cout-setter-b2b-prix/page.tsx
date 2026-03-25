@@ -58,6 +58,12 @@ const articleSchema = {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
   },
+  articleSection: 'Métiers B2B',
+  wordCount: 2800,
+  about: [
+    { '@type': 'Thing', name: 'Coût setter B2B' },
+    { '@type': 'Thing', name: 'Tarification prospection' },
+  ],
 }
 
 const faqItems = [

@@ -356,6 +356,79 @@ export default function ExternaliserProspectionLinkedinPage() {
           </div>
         </section>
 
+        {/* ── Comparatif ────────────────────────────────────────────────────── */}
+        <section id="comparatif" className="bg-bg-primary section-padding">
+          <div className="container-max max-w-4xl mx-auto">
+            <ScrollReveal>
+              <h2 className="font-sans font-extrabold text-h2 text-text-primary text-center mb-4">
+                Combien co&ucirc;te vraiment la prospection&nbsp;?
+              </h2>
+              <p className="font-sans text-text-secondary text-lg leading-relaxed text-center mb-10 max-w-xl mx-auto">
+                Les chiffres, c&ocirc;te &agrave; c&ocirc;te. Pas de discours marketing.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal>
+              <div className="overflow-x-auto" style={{ WebkitOverflowScrolling: 'touch' }}>
+                <table className="w-full border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="text-left px-4 py-3 min-w-[140px]" />
+                      <th className="px-4 py-3 min-w-[130px] text-text-muted text-sm font-semibold text-center">SDR interne</th>
+                      <th className="px-4 py-3 min-w-[130px] text-text-muted text-sm font-semibold text-center">Agence classique</th>
+                      <th className="px-4 py-3 min-w-[130px] text-text-muted text-sm font-semibold text-center">Outil automation</th>
+                      <th className="px-4 py-3 min-w-[130px] border-t-2 text-sm font-bold text-center" style={{ borderColor: '#C87533', background: 'rgba(200,117,51,0.04)', color: '#C87533' }}>Setting.live</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="sticky left-0 bg-bg-primary px-4 py-3 text-text-primary text-sm font-semibold">Co&ucirc;t mensuel</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">3&nbsp;000&ndash;4&nbsp;000&nbsp;&euro;</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">2&nbsp;000&ndash;5&nbsp;000&nbsp;&euro;</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">100&ndash;200&nbsp;&euro;</td>
+                      <td className="px-4 py-3 text-center text-sm font-semibold" style={{ background: 'rgba(200,117,51,0.04)', color: '#C87533' }}>790&nbsp;&euro;</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="sticky left-0 bg-bg-primary px-4 py-3 text-text-primary text-sm font-semibold">D&eacute;lai premier RDV</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">3&ndash;6 mois</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">2&ndash;4 semaines</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">1&ndash;2 semaines</td>
+                      <td className="px-4 py-3 text-center text-sm font-semibold" style={{ background: 'rgba(200,117,51,0.04)', color: '#C87533' }}>&lt;&nbsp;7 jours</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="sticky left-0 bg-bg-primary px-4 py-3 text-text-primary text-sm font-semibold">Taux de r&eacute;ponse</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">5&ndash;15&nbsp;%</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">3&ndash;8&nbsp;%</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">2&ndash;5&nbsp;%</td>
+                      <td className="px-4 py-3 text-center text-sm font-semibold" style={{ background: 'rgba(200,117,51,0.04)', color: '#C87533' }}>20&ndash;35&nbsp;%</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="sticky left-0 bg-bg-primary px-4 py-3 text-text-primary text-sm font-semibold">Engagement</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">CDI / CDD</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">3&ndash;12 mois</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">Mensuel</td>
+                      <td className="px-4 py-3 text-center text-sm font-semibold" style={{ background: 'rgba(200,117,51,0.04)', color: '#C87533' }}>Aucun</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="sticky left-0 bg-bg-primary px-4 py-3 text-text-primary text-sm font-semibold">Personnalisation</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">Variable</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">Templates</td>
+                      <td className="px-4 py-3 text-center text-text-secondary text-sm">Templates</td>
+                      <td className="px-4 py-3 text-center text-sm font-semibold" style={{ background: 'rgba(200,117,51,0.04)', color: '#C87533' }}>IA + humain</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="sticky left-0 bg-bg-primary px-4 py-3 text-text-primary text-sm font-semibold">Garantie r&eacute;sultats</td>
+                      <td className="px-4 py-3 text-center"><span className="text-text-muted font-bold" aria-label="Non">&#x2717;</span></td>
+                      <td className="px-4 py-3 text-center"><span className="text-text-muted font-bold" aria-label="Non">&#x2717;</span></td>
+                      <td className="px-4 py-3 text-center"><span className="text-text-muted font-bold" aria-label="Non">&#x2717;</span></td>
+                      <td className="px-4 py-3 text-center" style={{ background: 'rgba(200,117,51,0.04)' }}><span className="font-bold" style={{ color: '#C87533' }} aria-label="Oui">&#x2713;</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* ── Résultats attendus ───────────────────────────────────────────── */}
         <section id="resultats" className="bg-bg-primary section-padding">
           <div className="container-max">

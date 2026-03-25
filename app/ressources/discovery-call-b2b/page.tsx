@@ -58,6 +58,12 @@ const articleSchema = {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
   },
+  articleSection: 'Méthode de vente B2B',
+  wordCount: 2800,
+  about: [
+    { '@type': 'Thing', name: 'Discovery call B2B' },
+    { '@type': 'Thing', name: 'Qualification commerciale' },
+  ],
 }
 
 const faqItems = [
@@ -101,40 +107,6 @@ const faqSchema = {
   })),
 }
 
-const howToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'Comment conduire une discovery call B2B',
-  description:
-    "Structure en 4 phases pour conduire une discovery call B2B efficace : ouverture, exploration du problème, qualification du décideur et synthèse.",
-  step: [
-    {
-      '@type': 'HowToStep',
-      name: 'Ouverture et cadrage',
-      text: "Posez le cadre de l'appel dès le début : expliquez que vous voulez comprendre la situation du prospect avant de parler de votre offre. Sécurisez 20 à 25 minutes pour la discovery.",
-      position: 1,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Exploration du problème',
-      text: "Posez des questions ouvertes pour comprendre le problème précis, depuis quand il existe, ce qu'il coûte concrètement et ce qui a déjà été essayé. Creusez chaque réponse intéressante.",
-      position: 2,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Qualification du décideur et du timing',
-      text: "Identifiez si la personne en face peut prendre la décision d'achat. Demandez s'il y a un co-décideur à impliquer et évaluez l'urgence réelle du besoin.",
-      position: 3,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Synthèse et transition vers le pitch',
-      text: "Résumez ce que vous avez compris dans vos propres mots et obtenez la confirmation du prospect. Cette validation crée l'ouverture naturelle pour présenter votre offre.",
-      position: 4,
-    },
-  ],
-}
-
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -160,10 +132,6 @@ export default function DiscoveryCallPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <NavbarBlog />
       <main className="pt-28 pb-24">

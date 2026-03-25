@@ -13,7 +13,7 @@ import { TeamStrip } from '@/components/TeamStrip'
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
 export const metadata: Metadata = {
-  title: 'Setting LinkedIn B2B | Prospection externalisée, RDV qualifiés — Setting.live',
+  title: 'Setting LinkedIn B2B | RDV qualifiés dès la semaine 1 — Setting',
   description:
     'Service de setting LinkedIn pour solopreneurs et fondateurs B2B : setter dédié, ciblage par signaux d\u2019achat IA, RDV qualifiés dès la première semaine. À partir de 790\u00a0€/mois.',
   alternates: {
@@ -220,6 +220,18 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <noscript>
+          <div className="section-padding bg-bg-primary">
+            <div className="container-max max-w-3xl mx-auto text-center">
+              <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-6 leading-tight">
+                Tu as une offre qui marche. Il te manque un pipeline.
+              </h1>
+              <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+                On te trouve des clients sur LinkedIn. Setter dédié, IA signal-based, validation humaine. Premiers RDV en 7 jours.
+              </p>
+            </div>
+          </div>
+        </noscript>
 
         <ToolMarquee />
 

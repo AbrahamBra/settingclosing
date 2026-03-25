@@ -73,13 +73,19 @@ export function FAQ() {
                     +
                   </span>
                 </button>
-                {open === i && (
+                <div
+                  className="overflow-hidden transition-all duration-200"
+                  style={{
+                    maxHeight: open === i ? '500px' : '0',
+                    opacity: open === i ? 1 : 0,
+                  }}
+                >
                   <div className="px-5 pb-5">
-                    <p className="font-sans text-sm text-text-secondary leading-relaxed">
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed faq-answer">
                       {faq.a}
                     </p>
                   </div>
-                )}
+                </div>
               </div>
             </ScrollReveal>
           ))}

@@ -58,6 +58,12 @@ const articleSchema = {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
   },
+  articleSection: 'Méthode de vente B2B',
+  wordCount: 2800,
+  about: [
+    { '@type': 'Thing', name: 'Scripts de closing B2B' },
+    { '@type': 'Thing', name: 'Techniques de closing' },
+  ],
 }
 
 const faqItems = [
@@ -101,46 +107,6 @@ const faqSchema = {
   })),
 }
 
-const howToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'Comment structurer un appel de closing B2B',
-  description:
-    "Les 5 phases d'un appel de closing B2B : ouverture, coût du statu quo, synthèse, demande de décision et gestion des objections.",
-  step: [
-    {
-      '@type': 'HowToStep',
-      name: "Ouvrir et cadrer l'appel",
-      text: "Posez le format de l'appel : commencez par comprendre la situation du prospect avant tout pitch. Sécurisez 15 à 20 minutes de discovery.",
-      position: 1,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Poser la question du coût du statu quo',
-      text: "Faites chiffrer au prospect l'impact de ne rien changer. Cela ancre la valeur du problème avant de parler du prix de votre offre.",
-      position: 2,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Faire la synthèse avant le pitch',
-      text: "Résumez ce que le prospect vous a dit dans vos propres mots et obtenez sa confirmation avant de présenter votre offre.",
-      position: 3,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Demander une décision',
-      text: "Posez une question directe après le pitch : « Est-ce qu'on avance ensemble ? ». Ne laissez pas le prospect partir sans réponse claire.",
-      position: 4,
-    },
-    {
-      '@type': 'HowToStep',
-      name: "Gérer l'objection « je vais réfléchir »",
-      text: "Clarifiez si c'est une vraie hésitation ou un non poli. Demandez ce qui manque pour décider et fixez une prochaine étape datée.",
-      position: 5,
-    },
-  ],
-}
-
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -166,10 +132,6 @@ export default function ScriptClosingPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <NavbarBlog />
       <main className="pt-28 pb-24">

@@ -58,6 +58,12 @@ const articleSchema = {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
   },
+  articleSection: 'Setting LinkedIn',
+  wordCount: 2800,
+  about: [
+    { '@type': 'Thing', name: 'Relance LinkedIn B2B' },
+    { '@type': 'Thing', name: 'Follow-up commercial' },
+  ],
 }
 
 const faqItems = [

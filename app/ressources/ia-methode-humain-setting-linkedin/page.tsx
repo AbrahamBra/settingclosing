@@ -58,6 +58,12 @@ const articleSchema = {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
   },
+  articleSection: 'Stratégie commerciale',
+  wordCount: 3500,
+  about: [
+    { '@type': 'Thing', name: 'IA et setting LinkedIn' },
+    { '@type': 'Thing', name: 'Automatisation commerciale' },
+  ],
 }
 
 const faqItems = [

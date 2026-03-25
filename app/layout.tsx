@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
 import { VideoBackground } from '@/components/VideoBackground'
+import { CookieConsent } from '@/components/CookieConsent'
 import './globals.css'
 
 const inter = Inter({
@@ -19,6 +20,11 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Setting LinkedIn B2B | Prospection externalisée, RDV qualifiés — Setting.live',
   description: 'Service de setting LinkedIn pour solopreneurs et fondateurs B2B : setter dédié, ciblage par signaux d\'achat IA, RDV qualifiés dès la première semaine. À partir de 790 €/mois.',
+  twitter: {
+    card: 'summary_large_image',
+    site: '@challengerslab',
+    creator: '@abrahambrakha',
+  },
   openGraph: {
     title: 'Setting LinkedIn B2B | Prospection externalisée — Setting.live',
     description: 'Service de setting LinkedIn pour solopreneurs B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
@@ -49,6 +55,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${inter.variable} ${jetbrainsMono.variable}`}
     >
       <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://assets.calendly.com" />
+        {/* Google consent mode — refuse par defaut (RGPD) */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',wait_for_update:500});`}
+        </Script>
         {/* Google Tag Manager */}
         <Script id="gtm" strategy="afterInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -70,6 +84,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
         <VideoBackground />
         {children}
+        <CookieConsent />
       </body>
     </html>
   )

@@ -58,6 +58,12 @@ const articleSchema = {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
   },
+  articleSection: 'Setting LinkedIn',
+  wordCount: 2800,
+  about: [
+    { '@type': 'Thing', name: 'Scripts LinkedIn B2B' },
+    { '@type': 'Thing', name: 'Messages de prospection' },
+  ],
 }
 
 const faqItems = [
@@ -101,52 +107,6 @@ const faqSchema = {
   })),
 }
 
-const howToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'Comment rédiger un script de setting LinkedIn B2B',
-  description:
-    'Structure en 5 positions pour écrire des messages LinkedIn B2B qui obtiennent des réponses, avec exemples inbound et outbound.',
-  step: [
-    {
-      '@type': 'HowToStep',
-      name: "Rédiger l'accroche sur le signal",
-      text: "Commencez par une observation précise sur un événement récent du prospect : un post, un changement de poste, une actualité de leur secteur.",
-      position: 1,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Ancrer un fait précis sur le prospect',
-      text: "Ajoutez un élément concret tiré de leur profil ou activité récente pour prouver que vous avez fait le travail de recherche.",
-      position: 2,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Créer le pont vers ce que vous faites',
-      text: "Connectez leur situation à votre domaine sans pitcher votre offre. Montrez que vous comprenez leur contexte pour générer de la curiosité.",
-      position: 3,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Poser une question ouverte',
-      text: "Terminez par une question courte qui invite à la conversation sans engagement fort, comme « Est-ce que c'est un sujet pour vous en ce moment ? ».",
-      position: 4,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Ajouter une preuve courte (optionnel)',
-      text: "Si pertinent, ajoutez une ligne de preuve : un résultat concret, un client similaire ou une statistique qui renforce votre message.",
-      position: 5,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Gérer le suivi si pas de réponse',
-      text: "Relancez à J+3 avec un angle différent, puis à J+7 avec un breakup message. Deux relances maximum, chacune apportant un angle nouveau.",
-      position: 6,
-    },
-  ],
-}
-
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -182,10 +142,6 @@ export default function ScriptSettingLinkedinPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <NavbarBlog />
       <main className="pt-28 pb-24">

@@ -56,6 +56,12 @@ const articleSchema = {
     '@type': 'SpeakableSpecification',
     cssSelector: ['h1', 'article > p:first-of-type', '.faq-answer'],
   },
+  articleSection: 'Méthode de vente B2B',
+  wordCount: 2000,
+  about: [
+    { '@type': 'Thing', name: 'Qualification de leads B2B' },
+    { '@type': 'Thing', name: 'Scoring commercial' },
+  ],
 }
 
 const faqItems = [
@@ -96,46 +102,6 @@ const faqSchema = {
   })),
 }
 
-const howToSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'HowTo',
-  name: 'Comment qualifier un lead en B2B',
-  description:
-    "Processus de qualification de leads B2B : vérifier le profil ICP, appliquer BANT ou MEDDIC, attribuer un niveau de maturité par signal et coordonner setter-closeur.",
-  step: [
-    {
-      '@type': 'HowToStep',
-      name: 'Vérifier les 4 critères de base',
-      text: "Évaluez si le lead correspond à l'ICP (profil, secteur, taille), a un problème réel que vous résolvez, dispose des moyens d'acheter et a l'autorité de décision.",
-      position: 1,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Appliquer le cadre BANT',
-      text: "Vérifiez Budget, Authority, Need et Timeline. BANT est particulièrement adapté aux leads inbound qui ont déjà formalisé leur besoin.",
-      position: 2,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Appliquer MEDDIC pour les cycles longs',
-      text: "Pour les deals complexes, qualifiez avec Metrics, Economic Buyer, Decision Criteria, Decision Process, Identify Pain et Champion.",
-      position: 3,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Attribuer un niveau de maturité (N1 à N5)',
-      text: "Classez chaque prospect de N1 (curiosité froide) à N5 (deal chaud). Seuls les leads N4 et N5 sont envoyés en appel de closing.",
-      position: 4,
-    },
-    {
-      '@type': 'HowToStep',
-      name: 'Coordonner la qualification setter-closeur',
-      text: "Le setter qualifie en amont (niveau, profil ICP, signal, résumé des échanges). Le closeur confirme pendant la discovery call et retransmet les résultats pour affiner les critères.",
-      position: 5,
-    },
-  ],
-}
-
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -162,10 +128,6 @@ export default function QualificationLeadsB2BPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
         }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
       <NavbarBlog />
       <main className="pt-28 pb-24">
