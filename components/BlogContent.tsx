@@ -98,6 +98,12 @@ const articles: Article[] = [
   // Guides complets
   { slug: 'closing-b2b', title: 'Closing B2B : le guide complet pour conclure en vente', readTime: '12 min', category: 'methode', date: '2026-03-18' },
   { slug: 'devenir-business-developer', title: 'Devenir business developer : parcours, compétences et salaire', readTime: '10 min', category: 'methode', date: '2026-02-26' },
+  // Batch 6 — élargissement topique
+  { slug: 'comment-prospecter-sur-linkedin', title: 'Comment prospecter sur LinkedIn en 2026 : guide complet', readTime: '14 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'agence-prospection-linkedin', title: 'Agence de prospection LinkedIn : comment choisir en 2026', readTime: '13 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'messages-prospection-linkedin-exemples', title: 'Messages de prospection LinkedIn : 15 exemples qui obtiennent des réponses', readTime: '15 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'social-selling-linkedin-b2b', title: 'Social selling LinkedIn : définition, méthode et SSI en B2B', readTime: '12 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'automatisation-prospection-linkedin', title: 'Automatisation de la prospection LinkedIn : limites et alternatives en 2026', readTime: '14 min', category: 'setting', date: '2026-03-25' },
 ]
 
 // ─── Component ───────────────────────────────────────────────────────────────

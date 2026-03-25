@@ -238,6 +238,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://www.setting.live/ressources/comment-prospecter-sur-linkedin',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.setting.live/ressources/agence-prospection-linkedin',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.setting.live/ressources/messages-prospection-linkedin-exemples',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/social-selling-linkedin-b2b',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/automatisation-prospection-linkedin',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://www.setting.live/mentions-legales',
       lastModified: new Date('2026-03-18'),
       changeFrequency: 'yearly',
