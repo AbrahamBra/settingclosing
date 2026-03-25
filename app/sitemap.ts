@@ -196,6 +196,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: 'https://www.setting.live/ressources/setting-commercial-linkedin',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.setting.live/ressources/comment-choisir-setter-linkedin',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/combien-coute-setting-linkedin',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/outils-setting-linkedin',
+      lastModified: new Date('2026-03-25'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://www.setting.live/mentions-legales',
       lastModified: new Date('2026-03-18'),
       changeFrequency: 'yearly',

@@ -88,6 +88,12 @@ const articles: Article[] = [
   // Comparatifs
   { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting' },
   { slug: 'sdr-interne-vs-externalise', title: 'SDR interne vs externalisé : coût réel et ROI', readTime: '10 min', category: 'setting' },
+  { slug: 'agence-setting-linkedin-vs-freelance', title: 'Agence setting LinkedIn vs setter freelance : le bon choix selon votre situation', readTime: '9 min', category: 'setting' },
+  // Guides
+  { slug: 'setting-commercial-linkedin', title: 'Setting commercial LinkedIn : la méthode pour générer des RDV qualifiés', readTime: '11 min', category: 'setting' },
+  { slug: 'comment-choisir-setter-linkedin', title: 'Comment choisir son setter LinkedIn en 2026', readTime: '10 min', category: 'setting' },
+  { slug: 'combien-coute-setting-linkedin', title: 'Combien coûte le setting LinkedIn en 2026 ?', readTime: '9 min', category: 'setting' },
+  { slug: 'outils-setting-linkedin', title: 'Outils du setting LinkedIn : Reactin, Make et BreakCold', readTime: '9 min', category: 'setting' },
   // Guides complets
   { slug: 'closing-b2b', title: 'Closing B2B : le guide complet pour conclure en vente', readTime: '12 min', category: 'methode' },
   { slug: 'devenir-business-developer', title: 'Devenir business developer : parcours, compétences et salaire', readTime: '10 min', category: 'methode' },
