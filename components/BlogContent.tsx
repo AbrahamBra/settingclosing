@@ -13,6 +13,7 @@ interface Article {
   title: string
   readTime: string
   category: Category
+  date: string
 }
 
 interface PillarGuide {
@@ -65,38 +66,38 @@ const pillarGuides: PillarGuide[] = [
 
 const articles: Article[] = [
   // Setting
-  { slug: 'script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : exemples et cadre complet', readTime: '11 min', category: 'setting' },
-  { slug: 'relance-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min', category: 'setting' },
-  { slug: 'prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : méthode complète en 2026', readTime: '13 min', category: 'setting' },
-  { slug: 'comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min', category: 'setting' },
-  { slug: 'cout-setter-b2b-prix', title: "Coût d'un setter B2B en 2026 : les vrais chiffres", readTime: '9 min', category: 'setting' },
-  { slug: 'messages-linkedin-sans-reponse', title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses", readTime: '8 min', category: 'setting' },
-  { slug: 'signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min', category: 'setting' },
-  { slug: 'ia-methode-humain-setting-linkedin', title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn", readTime: '12 min', category: 'setting' },
-  { slug: 'setter-b2b-definition', title: "C'est quoi un setter en B2B ?", readTime: '8 min', category: 'setting' },
+  { slug: 'script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : exemples et cadre complet', readTime: '11 min', category: 'setting', date: '2026-03-18' },
+  { slug: 'relance-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min', category: 'setting', date: '2026-03-18' },
+  { slug: 'prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : méthode complète en 2026', readTime: '13 min', category: 'setting', date: '2026-03-18' },
+  { slug: 'comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min', category: 'setting', date: '2026-03-18' },
+  { slug: 'cout-setter-b2b-prix', title: "Coût d'un setter B2B en 2026 : les vrais chiffres", readTime: '9 min', category: 'setting', date: '2026-03-18' },
+  { slug: 'messages-linkedin-sans-reponse', title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses", readTime: '8 min', category: 'setting', date: '2026-03-17' },
+  { slug: 'signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min', category: 'setting', date: '2026-03-17' },
+  { slug: 'ia-methode-humain-setting-linkedin', title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn", readTime: '12 min', category: 'setting', date: '2026-03-17' },
+  { slug: 'setter-b2b-definition', title: "C'est quoi un setter en B2B ?", readTime: '8 min', category: 'setting', date: '2026-03-16' },
   // Closing
-  { slug: 'discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min', category: 'methode' },
-  { slug: 'gestion-objections-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min', category: 'methode' },
-  { slug: 'script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min', category: 'methode' },
-  { slug: 'challenger-sale-definition', title: "Qu'est-ce que le Challenger Sale ?", readTime: '9 min', category: 'methode' },
-  { slug: 'closer-b2b', title: 'Closer B2B : définition, compétences et comment en recruter un', readTime: '11 min', category: 'methode' },
+  { slug: 'discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min', category: 'methode', date: '2026-03-18' },
+  { slug: 'gestion-objections-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min', category: 'methode', date: '2026-03-18' },
+  { slug: 'script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min', category: 'methode', date: '2026-03-18' },
+  { slug: 'challenger-sale-definition', title: "Qu'est-ce que le Challenger Sale ?", readTime: '9 min', category: 'methode', date: '2026-03-16' },
+  { slug: 'closer-b2b', title: 'Closer B2B : définition, compétences et comment en recruter un', readTime: '11 min', category: 'methode', date: '2026-03-18' },
   // Méthode
-  { slug: 'qualification-leads-b2b', title: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples', readTime: '8 min', category: 'methode' },
-  { slug: 'methode-soncas', title: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples concrets', readTime: '10 min', category: 'methode' },
-  { slug: 'methode-spin-selling', title: 'SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer', readTime: '9 min', category: 'methode' },
-  { slug: 'difference-setting-closing', title: 'Quelle est la différence entre setting et closing ?', readTime: '7 min', category: 'methode' },
+  { slug: 'qualification-leads-b2b', title: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples', readTime: '8 min', category: 'methode', date: '2026-03-18' },
+  { slug: 'methode-soncas', title: 'Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples concrets', readTime: '10 min', category: 'methode', date: '2026-03-18' },
+  { slug: 'methode-spin-selling', title: 'SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer', readTime: '9 min', category: 'methode', date: '2026-03-18' },
+  { slug: 'difference-setting-closing', title: 'Quelle est la différence entre setting et closing ?', readTime: '7 min', category: 'methode', date: '2026-03-16' },
   // Comparatifs
-  { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting' },
-  { slug: 'sdr-interne-vs-externalise', title: 'SDR interne vs externalisé : coût réel et ROI', readTime: '10 min', category: 'setting' },
-  { slug: 'agence-setting-linkedin-vs-freelance', title: 'Agence setting LinkedIn vs setter freelance : le bon choix selon votre situation', readTime: '9 min', category: 'setting' },
+  { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting', date: '2026-03-19' },
+  { slug: 'sdr-interne-vs-externalise', title: 'SDR interne vs externalisé : coût réel et ROI', readTime: '10 min', category: 'setting', date: '2026-03-19' },
+  { slug: 'agence-setting-linkedin-vs-freelance', title: 'Agence setting LinkedIn vs setter freelance : le bon choix selon votre situation', readTime: '9 min', category: 'setting', date: '2026-03-25' },
   // Guides
-  { slug: 'setting-commercial-linkedin', title: 'Setting commercial LinkedIn : la méthode pour générer des RDV qualifiés', readTime: '11 min', category: 'setting' },
-  { slug: 'comment-choisir-setter-linkedin', title: 'Comment choisir son setter LinkedIn en 2026', readTime: '10 min', category: 'setting' },
-  { slug: 'combien-coute-setting-linkedin', title: 'Combien coûte le setting LinkedIn en 2026 ?', readTime: '9 min', category: 'setting' },
-  { slug: 'outils-setting-linkedin', title: 'Outils du setting LinkedIn : Reactin, Make et BreakCold', readTime: '9 min', category: 'setting' },
+  { slug: 'setting-commercial-linkedin', title: 'Setting commercial LinkedIn : la méthode pour générer des RDV qualifiés', readTime: '11 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'comment-choisir-setter-linkedin', title: 'Comment choisir son setter LinkedIn en 2026', readTime: '10 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'combien-coute-setting-linkedin', title: 'Combien coûte le setting LinkedIn en 2026 ?', readTime: '9 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'outils-setting-linkedin', title: 'Outils du setting LinkedIn : Reactin, Make et BreakCold', readTime: '9 min', category: 'setting', date: '2026-03-25' },
   // Guides complets
-  { slug: 'closing-b2b', title: 'Closing B2B : le guide complet pour conclure en vente', readTime: '12 min', category: 'methode' },
-  { slug: 'devenir-business-developer', title: 'Devenir business developer : parcours, compétences et salaire', readTime: '10 min', category: 'methode' },
+  { slug: 'closing-b2b', title: 'Closing B2B : le guide complet pour conclure en vente', readTime: '12 min', category: 'methode', date: '2026-03-18' },
+  { slug: 'devenir-business-developer', title: 'Devenir business developer : parcours, compétences et salaire', readTime: '10 min', category: 'methode', date: '2026-02-26' },
 ]
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -231,6 +232,13 @@ export function BlogContent() {
                     <h3 className="font-sans font-semibold text-text-primary text-sm leading-snug mb-3 group-hover:text-[#C87533] transition-colors flex-1">
                       {article.title}
                     </h3>
+                    <p className="font-sans text-[11px] text-text-muted mb-2">
+                      <a href="/equipe/abraham-brakha" className="hover:text-text-primary transition-colors" onClick={(e) => e.stopPropagation()}>Abraham Brakha</a>
+                      {' · '}
+                      <time dateTime={article.date}>
+                        {new Date(article.date).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', year: 'numeric' })}
+                      </time>
+                    </p>
                     <div className="flex items-center justify-between">
                       <span className="font-sans text-xs text-text-muted">
                         {article.readTime} de lecture

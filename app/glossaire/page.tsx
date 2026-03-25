@@ -210,6 +210,19 @@ const definedTermSchemas = terms.map((t) => ({
   },
 }))
 
+const glossairePageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Glossaire Setting & Prospection B2B',
+  url: 'https://www.setting.live/glossaire',
+  inLanguage: 'fr-FR',
+  isPartOf: { '@type': 'WebSite', name: 'Setting', url: 'https://www.setting.live' },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '.term-name', '.term-definition'],
+  },
+}
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -227,7 +240,7 @@ export default function GlossairePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([...definedTermSchemas, breadcrumbSchema]),
+          __html: JSON.stringify([glossairePageSchema, ...definedTermSchemas, breadcrumbSchema]),
         }}
       />
       <NavbarBlog />

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-const INDEXNOW_KEY = 'a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4'
+const INDEXNOW_KEY = '7d7158440180a4b75d23c65aa3f8f17c'
 const HOST = 'https://www.setting.live'
 
 export async function POST(request: NextRequest) {
