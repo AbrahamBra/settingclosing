@@ -50,11 +50,12 @@ export default function MentionsLegalesPage() {
                 Le site <strong>setting.live</strong> est édité par :
               </p>
               <ul className="list-none space-y-1 text-text-muted">
-                <li><strong>Raison sociale :</strong> Setting</li>
-                <li><strong>Forme juridique :</strong> Micro-entreprise</li>
-                <li><strong>Responsable de la publication :</strong> Abraham</li>
+                <li><strong>Raison sociale :</strong> Abraham Brakha (Setting)</li>
+                <li><strong>Forme juridique :</strong> Entrepreneur individuel (micro-entreprise)</li>
+                <li><strong>SIRET :</strong> 902 889 385 00016</li>
+                <li><strong>Responsable de la publication :</strong> Abraham Brakha</li>
                 <li><strong>Email :</strong> a.brakha@challengerslab.com</li>
-                <li><strong>Adresse :</strong> France</li>
+                <li><strong>Adresse :</strong> 50B rue Salomon Reinach, 69007 Lyon, France</li>
               </ul>
             </section>
 
