@@ -22,9 +22,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setting-commercial-b2b',
-      lastModified: new Date('2026-03-17'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      lastModified: new Date('2026-03-26'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: 'https://www.setting.live/ressources/closing-b2b',
@@ -68,12 +68,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/setting-linkedin-definition',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    // setting-linkedin-definition — redirigé vers setting-commercial-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
       lastModified: new Date('2026-03-17'),
@@ -92,24 +87,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/setter-b2b-definition',
-      lastModified: new Date('2026-03-16'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // setter-b2b-definition — redirigé vers setting-commercial-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/challenger-sale-definition',
       lastModified: new Date('2026-03-16'),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/difference-setting-closing',
-      lastModified: new Date('2026-03-16'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // difference-setting-closing — redirigé vers setting-commercial-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/script-setting-linkedin',
       lastModified: new Date('2026-03-18'),
@@ -207,12 +192,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/setting-commercial-linkedin',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    // setting-commercial-linkedin — redirigé vers setting-commercial-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/comment-choisir-setter-linkedin',
       lastModified: new Date('2026-03-25'),

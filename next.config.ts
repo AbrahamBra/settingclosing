@@ -29,6 +29,27 @@ const nextConfig: NextConfig = {
         destination: '/methode/setting-linkedin',
         permanent: false,
       },
+      // Consolidation SEO : 4 articles fusionnés dans le pilier setting-commercial-b2b
+      {
+        source: '/ressources/setting-linkedin-definition',
+        destination: '/ressources/setting-commercial-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/setter-b2b-definition',
+        destination: '/ressources/setting-commercial-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/difference-setting-closing',
+        destination: '/ressources/setting-commercial-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/setting-commercial-linkedin',
+        destination: '/ressources/setting-commercial-b2b',
+        permanent: true,
+      },
     ]
   },
   async headers() {
