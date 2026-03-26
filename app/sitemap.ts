@@ -28,28 +28,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/closing-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      lastModified: new Date('2026-03-26'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
-    {
-      url: 'https://www.setting.live/ressources/discovery-call-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/gestion-objections-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/script-closing-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // closer-b2b — redirigé vers closing-b2b (consolidation SEO)
+    // discovery-call-b2b — redirigé vers closing-b2b (consolidation SEO)
+    // gestion-objections-b2b — redirigé vers closing-b2b (consolidation SEO)
+    // script-closing-b2b — redirigé vers closing-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/prospection-linkedin-b2b',
       lastModified: new Date('2026-03-18'),
@@ -101,12 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/closer-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // closer-b2b — already redirected above (consolidation SEO closing-b2b)
     {
       url: 'https://www.setting.live/a-propos',
       lastModified: new Date('2026-03-19'),

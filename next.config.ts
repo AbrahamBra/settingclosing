@@ -50,6 +50,27 @@ const nextConfig: NextConfig = {
         destination: '/ressources/setting-commercial-b2b',
         permanent: true,
       },
+      // Consolidation SEO : 4 articles fusionnés dans le pilier closing-b2b
+      {
+        source: '/ressources/closer-b2b',
+        destination: '/ressources/closing-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/discovery-call-b2b',
+        destination: '/ressources/closing-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/gestion-objections-b2b',
+        destination: '/ressources/closing-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/script-closing-b2b',
+        destination: '/ressources/closing-b2b',
+        permanent: true,
+      },
       // Consolidation SEO : 3 articles fusionnés → pilier "devenir setter ou closer B2B"
       {
         source: '/ressources/cout-setter-b2b-prix',
