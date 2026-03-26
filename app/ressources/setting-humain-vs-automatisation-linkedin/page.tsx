@@ -639,7 +639,7 @@ export default function SettingHumainVsAutomatisationPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/ia-methode-humain-setting-linkedin', title: "IA, m\u00e9thode et humain : les 3 couches d\u2019un syst\u00e8me de setting LinkedIn qui tient sur la dur\u00e9e", readTime: '12 min' },
-            { href: '/ressources/sdr-interne-vs-externalise', title: 'SDR interne vs SDR externalis\u00e9 : le comparatif co\u00fbt r\u00e9el', readTime: '8 min' },
+            { href: '/externaliser-prospection-linkedin#sdr-commercial', title: 'SDR interne vs SDR externalis\u00e9 : le comparatif co\u00fbt r\u00e9el', readTime: '8 min' },
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
           ]} />
 

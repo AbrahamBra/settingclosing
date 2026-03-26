@@ -618,7 +618,7 @@ export default function SettingLinkedInDefinitionPage() {
 
             <p className="font-sans text-text-secondary leading-relaxed mt-6">
               Pour un comparatif d&eacute;taill&eacute; :{' '}
-              <a href="/ressources/outils-setting-linkedin" className="text-accent hover:underline transition-colors">
+              <a href="/externaliser-prospection-linkedin#outils" className="text-accent hover:underline transition-colors">
                 outils du setting LinkedIn : Reactin, Make et BreakCold
               </a>.
             </p>
@@ -758,7 +758,7 @@ export default function SettingLinkedInDefinitionPage() {
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
               H&eacute;sitez entre une agence et un freelance ?{' '}
-              <a href="/ressources/agence-setting-linkedin-vs-freelance" className="text-accent hover:underline transition-colors">
+              <a href="/externaliser-prospection-linkedin#agence-vs-freelance" className="text-accent hover:underline transition-colors">
                 Agence setting LinkedIn vs setter freelance
               </a>{' '}
               d&eacute;taille les crit&egrave;res de choix.
@@ -804,8 +804,8 @@ export default function SettingLinkedInDefinitionPage() {
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
-                { href: '/ressources/agence-setting-linkedin-vs-freelance', label: 'Agence setting LinkedIn vs setter freelance : le bon choix' },
-                { href: '/ressources/outils-setting-linkedin', label: 'Outils du setting LinkedIn : Reactin, Make et BreakCold' },
+                { href: '/externaliser-prospection-linkedin#agence-vs-freelance', label: 'Agence setting LinkedIn vs setter freelance : le bon choix' },
+                { href: '/externaliser-prospection-linkedin#outils', label: 'Outils du setting LinkedIn : Reactin, Make et BreakCold' },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: 'IA, m\u00e9thode et humain : les 3 couches du setting LinkedIn' },
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
               ].map(({ href, label }) => (

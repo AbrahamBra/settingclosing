@@ -49,6 +49,48 @@
 
 ---
 
+### 2. Pilier "Externaliser sa prospection" (2026-03-26)
+
+**Page pilier :** `/externaliser-prospection-linkedin`
+
+**Keywords cibles :**
+| Keyword | Volume/mois | Position actuelle |
+|---------|------------|-------------------|
+| externaliser prospection commerciale | 170 | a tracker |
+| agence prospection b2b | 140 | a tracker |
+| sdr commercial | 70 | a tracker |
+
+**Articles fusionnes (301 → pilier) :**
+| URL absorbee | Contenu recupere | Ancre sur pilier |
+|-------------|------------------|-----------------|
+| /ressources/agence-setting-linkedin-vs-freelance | Comparatif agence vs freelance, tableau, decision criteria, FAQ | #agence-vs-freelance |
+| /ressources/sdr-interne-vs-externalise | Cout reel SDR (salaire, charges, ramp-up, turnover), piege du moins cher, FAQ | #sdr-commercial |
+| /ressources/outils-setting-linkedin | Stack Reactin + Make + BreakCold, flux 4 etapes, couts | #outils |
+
+**Actions :**
+- [x] Page pilier reecrite avec contenu fusionne (3 nouvelles sections)
+- [x] 301 redirects dans next.config.ts
+- [x] Sitemap mis a jour (3 URLs retirees, date pilier → 2026-03-26)
+- [x] Liens internes mis a jour (11 fichiers, ~20 liens)
+- [x] BlogContent.tsx : 3 articles retires de la liste blog
+- [x] FAQ schema enrichi (10 questions, couvrant les 3 keywords)
+- [x] Humanizer pass
+- [x] Build OK
+
+**Liens internes vers le pilier (maillage) :**
+- /equipe/abraham-brakha → #sdr-commercial
+- /setting → #sdr-commercial
+- /ressources/combien-coute-setting-linkedin → #sdr-commercial
+- /ressources/automatisation-prospection-linkedin → #outils
+- /ressources/comment-prospecter-sur-linkedin → #outils
+- /ressources/agence-prospection-linkedin → #sdr-commercial, #agence-vs-freelance
+- /ressources/cout-setter-b2b-prix → #sdr-commercial
+- /ressources/comment-choisir-setter-linkedin → #sdr-commercial
+- /ressources/setting-linkedin-definition → #outils, #agence-vs-freelance
+- /ressources/setting-humain-vs-automatisation-linkedin → #sdr-commercial
+
+---
+
 ## Structure de contenu actuelle
 
 ### Piliers principaux
@@ -74,3 +116,6 @@
 | /ressources/cout-setter-b2b-prix | /ressources/comment-devenir-setter-b2b | 301 |
 | /ressources/comment-choisir-setter-linkedin | /ressources/comment-devenir-setter-b2b | 301 |
 | /ressources/combien-coute-setting-linkedin | /ressources/comment-devenir-setter-b2b | 301 |
+| /ressources/agence-setting-linkedin-vs-freelance | /externaliser-prospection-linkedin | 301 |
+| /ressources/sdr-interne-vs-externalise | /externaliser-prospection-linkedin | 301 |
+| /ressources/outils-setting-linkedin | /externaliser-prospection-linkedin | 301 |

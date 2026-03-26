@@ -135,7 +135,7 @@ const clusterSetting = [
   { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : definition, methode et programme complet' },
   { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
   { href: '/ressources/comment-devenir-setter-b2b', label: "Devenir setter ou closer B2B : le guide complet" },
-  { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs externalise : le comparatif cout reel' },
+  { href: '/externaliser-prospection-linkedin#sdr-commercial', label: 'SDR interne vs externalise : le comparatif cout reel' },
   { href: '/ressources/difference-setting-closing', label: 'Quelle est la difference entre setting et closing ?' },
 ]
 
@@ -599,7 +599,7 @@ export default function SettingPillarPage() {
                 <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline">guide complet du setter B2B</a>{' '}
                 couvre les 3 modeles de tarification (fixe, performance, hybride) et le calcul de ROI.
                 Le{' '}
-                <a href="/ressources/sdr-interne-vs-externalise" className="text-accent hover:underline">comparatif SDR interne vs externalise</a>{' '}
+                <a href="/externaliser-prospection-linkedin#sdr-commercial" className="text-accent hover:underline">comparatif SDR interne vs externalise</a>{' '}
                 detaille le cout reel d&apos;un recrutement.
               </p>
 
