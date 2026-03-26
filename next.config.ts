@@ -50,6 +50,27 @@ const nextConfig: NextConfig = {
         destination: '/ressources/setting-commercial-b2b',
         permanent: true,
       },
+      // Consolidation SEO : 4 articles fusionnés dans le pilier prospection-linkedin-b2b
+      {
+        source: '/ressources/messages-linkedin-sans-reponse',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/script-setting-linkedin',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/relance-linkedin-b2b',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/messages-prospection-linkedin-exemples',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
       // Consolidation SEO : 3 articles fusionnés → pilier "devenir setter ou closer B2B"
       {
         source: '/ressources/cout-setter-b2b-prix',
