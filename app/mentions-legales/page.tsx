@@ -16,9 +16,22 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: 'Mentions l\u00e9gales', item: 'https://www.setting.live/mentions-legales' },
+  ],
+}
+
 export default function MentionsLegalesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <NavbarBlog />
       <main className="pt-28 pb-24">
         <div className="container-max max-w-3xl px-6 md:px-8">

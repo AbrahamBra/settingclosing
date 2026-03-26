@@ -132,6 +132,41 @@ const breadcrumbSchema = {
   ],
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment conduire une discovery call B2B',
+  description:
+    'Structure en 4 phases pour conduire une discovery call B2B efficace : ouverture et cadrage, exploration du problème, qualification du décideur et du timing, synthèse et transition vers le pitch.',
+  totalTime: 'PT30M',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Ouverture et cadrage',
+      text: 'Posez le cadre de l\'appel dès le début : expliquez que vous allez d\'abord comprendre la situation du prospect avant de parler de votre offre. Cela signale que vous n\'allez pas pitcher immédiatement et rassure le prospect.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Exploration du problème',
+      text: 'Phase centrale de la discovery. Cherchez à comprendre le problème précis, depuis combien de temps il existe, ce qu\'il coûte concrètement et ce qui a déjà été essayé. Approfondissez chaque réponse intéressante avant de passer à la question suivante.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Qualification du décideur et du timing',
+      text: 'Avant de présenter quoi que ce soit, déterminez si la personne en face peut prendre la décision. Si quelqu\'un d\'autre est impliqué, demandez comment les rejoindre. Évaluez l\'urgence réelle et les contraintes de délai.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Synthèse et transition',
+      text: 'Résumez ce que vous avez compris dans vos propres mots pour montrer que vous avez écouté. Validez avec le prospect, puis ouvrez la transition vers le pitch ou proposez une prochaine étape concrète.',
+    },
+  ],
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function DiscoveryCallPage() {
@@ -140,7 +175,7 @@ export default function DiscoveryCallPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
+          __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema, howToSchema]),
         }}
       />
       <NavbarBlog />

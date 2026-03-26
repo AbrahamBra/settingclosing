@@ -336,6 +336,51 @@ export default function SdrInterneVsExternalisePage() {
                 Voici les deux options côte à côte sur les critères qui comptent vraiment.
               </p>
 
+              {/* Semantic HTML table for AI / machine readability */}
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-sm text-left font-sans border-collapse">
+                  <thead>
+                    <tr className="border-b border-white/10">
+                      <th className="py-3 px-4 text-text-muted font-semibold">Critère</th>
+                      <th className="py-3 px-4 text-text-muted font-semibold">SDR interne</th>
+                      <th className="py-3 px-4 text-[#C87533] font-semibold">SDR externalisé</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Coût année 1</td>
+                      <td className="py-3 px-4 text-text-primary">50–75 k€</td>
+                      <td className="py-3 px-4 text-text-primary">6–24 k€</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Premiers résultats</td>
+                      <td className="py-3 px-4 text-text-primary">Mois 4–6</td>
+                      <td className="py-3 px-4 text-text-primary">Semaine 1–2</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Risque si ça ne marche pas</td>
+                      <td className="py-3 px-4 text-text-primary">Licenciement coûteux</td>
+                      <td className="py-3 px-4 text-text-primary">On arrête le mois suivant</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Management requis</td>
+                      <td className="py-3 px-4 text-text-primary">2–5 h/semaine</td>
+                      <td className="py-3 px-4 text-text-primary">1 h/semaine max</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Connaissance produit</td>
+                      <td className="py-3 px-4 text-text-primary">Profonde (avantage)</td>
+                      <td className="py-3 px-4 text-text-primary">Suffisante pour prospecter</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Pour monter en volume</td>
+                      <td className="py-3 px-4 text-text-primary">Recruter un 2e SDR</td>
+                      <td className="py-3 px-4 text-text-primary">Augmenter le forfait</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
               <div className="rounded-xl border border-white/[0.06] overflow-hidden mb-6">
                 <div className="grid grid-cols-3 bg-bg-secondary border-b border-white/[0.06]">
                   <div className="px-4 py-3 font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary">

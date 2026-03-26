@@ -35,8 +35,11 @@ const articleSchema = {
     "Le setting est la phase de prospection B2B qui transforme un prospect inconnu en rendez-vous qualifié. Définition exacte, méthode, outils, scripts, coût réel, setting vs closing, et programme complet.",
   author: {
     '@type': 'Person',
-    name: 'Abraham',
-    url: 'https://www.setting.live/a-propos',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
+    url: 'https://www.setting.live/equipe/abraham-brakha',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',

@@ -1,182 +1,267 @@
 # Setting — Contenu complet
 
-> Prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B. Setter dédié, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine.
+> Prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B. Setter dédié, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine. À partir de 790 €/mois, sans engagement.
 
 ---
 
-## Présentation
+## Services détaillés
 
-Setting construit et opère des programmes de setting commercial B2B sur LinkedIn. La méthode repose sur trois couches : IA pour la détection de signaux, méthode pour la structure, humain pour la validation. Aucun message ne part sans un regard humain. Le système apprend chaque semaine à partir du terrain.
+### Setting LinkedIn (offre principale)
 
----
+**Description :** Pipeline de prospection LinkedIn clé en main. Un setter dédié prospecte pour vous avec une méthode signal-based : on contacte uniquement les prospects qui ont déjà montré un intérêt (like, commentaire, changement de poste). Le résultat : 2 à 4 RDV qualifiés par semaine dès la première semaine.
 
-## Service 1 : Setting commercial B2B externalisé
+**Ce qui est inclus :**
+- Setter dédié qui gère toute la prospection LinkedIn
+- Ciblage ICP (Ideal Customer Profile) défini avec l'IA
+- Détection de signaux d'achat en temps réel (Reactin, Spyer, Sales Navigator)
+- Co-rédaction des messages avec IA (Claude) + validation humaine de chaque message avant envoi
+- Scoring des prospects sur 5 niveaux de maturité, recalibrés chaque semaine
+- Skill Claude maison encodé sur votre expertise, jargon et objections
+- Reporting hebdomadaire et recalibrage continu du pipeline
+- Minimum 5 RDV qualifiés par mois
 
-### Définition
-Le setting commercial est la phase de prospection qui précède le closing en B2B. Le setter identifie les prospects qualifiés, engage la conversation sur LinkedIn, et planifie des rendez-vous pour le closeur. Setting ne se contente pas de répondre aux commentaires sur vos posts LinkedIn. C'est de la prospection active vers les décideurs qui ont un besoin maintenant.
-
-### Ce qui est inclus
-- Setter dédié formé à votre offre
-- Prospection LinkedIn signal-based (pas de cold outreach)
-- IA comme co-rédacteur (Claude génère les drafts, le setter valide)
-- Minimum 5 RDV qualifiés par mois garanti
-- Suivi hebdomadaire et reporting
-
-### Tarification
-- 790 €/mois, setup offert
-- Prime par RDV : 50 € (ticket < 5k), 150 € (5-15k), 250 € (> 15k)
+**Tarif :**
+- 790 €/mois HT (même tarif les 3 premiers mois)
+- Setup offert (cadrage ICP, rédaction des séquences, paramétrage des outils)
 - Sans engagement, résiliable à tout moment
-- Garantie : moins de 5 RDV qualifiés = mois suivant offert
+- Garantie RDV : si on ne délivre pas, on continue gratuitement
 
-### Méthode signal-based
-Contrairement à la prospection froide (2–3% de taux de réponse), la méthode signal-based cible uniquement les prospects qui ont montré un intérêt :
-- Like ou commentaire sur un sujet lié à votre offre
-- Changement de poste récent
-- Interaction avec un concurrent
-- Publication sur une problématique que vous résolvez
+**Primes par RDV (bonus variables) :**
+- 50 € par RDV si ticket moyen < 5 000 €
+- 150 € par RDV si ticket moyen entre 5 000 et 15 000 €
+- 250 € par RDV si ticket moyen > 15 000 €
 
-Résultat : >20% de taux de réponse.
-
----
-
-## Service 2 : Setting téléphonique
-
-### Définition
-Qualification téléphonique des leads entrants. Un sales dédié appelle chaque lead, le score et le route vers le bon parcours.
-
-### Ce qui est inclus
-- Qualification téléphonique de chaque lead entrant
-- Routing intelligent : chaud → RDV, tiède → newsletter, froid → nurturing
-- Script co-construit avec votre équipe
-- Reporting par lead avec scoring
-
-### Tarification
-- 175 €/demi-journée, facturé au réel
-- Prime par RDV : 25 € (ticket < 5k), 100 € (5-15k), 200 € (> 15k)
-
----
-
-## Audience cible
-
-### Profils idéaux
-- **Fondateurs de startups** qui lancent leur offre B2B et n'ont pas d'équipe commerciale
-- **Freelances B2B** (consultants, coaches, formateurs) qui n'ont plus de temps pour prospecter
-- **Créateurs de micro-SaaS** qui veulent de l'acquisition LinkedIn
-- **Solopreneurs** avec une offre B2B à 2 000 € ou plus
-- **Entrepreneurs** qui ont un closeur mais pas de setter
-
-### Profils non adaptés
+**Profils non adaptés :**
 - Offres B2C ou grand public
 - Activités sans offre définie
 - Ceux qui veulent de l'automatisation complète sans contact humain
 - Secteurs où LinkedIn n'est pas le canal des acheteurs
 
----
-
-## Méthode en 9 étapes
-
-### Phase 1 : Détection (étapes 1-3)
-1. **Stratégie & ciblage** — ICP défini avec l'IA, comptes à monitorer sélectionnés, filtres Sales Navigator configurés.
-2. **Signaux inbound** — Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel contenu.
-3. **Signaux outbound** — Spyer monitore les comptes concurrents et complémentaires. Sales Navigator remonte les changements de poste et signaux d'achat récents.
-
-### Phase 2 : Qualification (étapes 4-6)
-4. **Profil analysé** — Claude analyse titre, bio, posts récents, connexions communes. Résultat déposé dans un Google Sheet avec recommandation.
-5. **Scoring & ajustement** — 5 niveaux de maturité d'achat, recalibrés chaque semaine avec les retours terrain.
-6. **Skill maison** — Un skill Claude encodé sur votre expertise : jargon métier, objections connues, messages qui ont décroché des réponses.
-
-### Phase 3 : Conversion (étapes 7-9)
-7. **Message co-rédigé** — Claude propose un draft ancré dans le skill. 5 phrases max, 2e phrase = fait précis du profil, jamais de pitch dans le premier DM.
-8. **Validé et envoyé** — Test du téléphone : si ça ne sonne pas naturel dit à voix haute, on réécrit. Aucun message ne part sans validation humaine.
-9. **RDV qualifié** — Conversion en rendez-vous qualifié. Le closeur reçoit le contexte complet. Les retours recalibrent tout le pipeline.
+**URL :** https://www.setting.live/methode/setting-linkedin
 
 ---
 
-## Résultats mesurés
+### Setting téléphonique (complémentaire)
 
-| Métrique | Résultat |
-|----------|---------|
-| Clients accompagnés (2026) | 20+ |
-| RDV qualifiés par semaine | 2–4 en régime de croisière |
-| Taux de réponse LinkedIn | >20% (vs 2–3% sans méthode) |
-| Délai premier RDV | Semaine 1 |
+**Description :** Qualification téléphonique des leads entrants. LinkedIn génère des RDV outbound, mais vous recevez aussi des leads entrants (lead magnets, formulaires, DMs, contenu). Chaque lead est appelé, qualifié via une grille BANT construite avec vous, et routé selon sa maturité.
 
-### Exemples concrets
-- **Consultant stratégie IT** : 12 RDV qualifiés le premier mois, 3 contrats signés
-- **Agence marketing digital** : 4 RDV par semaine en rythme de croisière
-- **Coach business B2B** : 8 RDV le premier mois, 2 contrats signés
+**Ce qui est inclus :**
+- Co-construction de la grille de qualification BANT adaptée à votre marché
+- Intelligence pré-appel (enrichissement IA de la fiche prospect)
+- Ouverture Challenger Sale (insight sectoriel, pas un pitch)
+- Discovery et qualification BANT structurée (7-12 minutes)
+- Scoring et verdict en 3 catégories : lead chaud (RDV closeur), lead tiède (nurturing), lead froid (disqualification propre)
+- Routing automatique par maturité dans le CRM
+- Feedback loop hebdomadaire pour recalibrer la grille
 
----
+**Pourquoi qualifier par téléphone :**
+- Rapidité : un appel qualifie en 7 minutes, un email prend 24-48h
+- Profondeur : au téléphone, l'hésitation s'entend, le non-verbal vocal révèle ce que le texte cache
+- Routing immédiat : à la fin de l'appel, le lead a un prochain pas (RDV closeur, nurturing, ou sortie propre)
 
-## Blog et ressources
+**Tarif :**
+- 175 €/demi-journée HT, facturé au réel selon le flux de leads entrants
+- Zéro setup fee
+- Activable à tout moment
 
-### Guides piliers (méga-guides consolidés)
-- Setting commercial B2B : définition, méthode et programme complet — https://www.setting.live/ressources/setting-commercial-b2b
-- Closing B2B : le guide complet pour conclure en vente — https://www.setting.live/ressources/closing-b2b
-- Prospection LinkedIn B2B : méthode complète en 2026 — https://www.setting.live/ressources/prospection-linkedin-b2b
-- Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS — https://www.setting.live/ressources/methodes-vente-b2b
-- Devenir setter ou closer B2B : le guide complet — https://www.setting.live/ressources/comment-devenir-setter-b2b
-- Externaliser sa prospection LinkedIn — https://www.setting.live/externaliser-prospection-linkedin
+**Primes par RDV (bonus variables) :**
+- 25 € par RDV si ticket moyen < 5 000 €
+- 100 € par RDV si ticket moyen entre 5 000 et 15 000 €
+- 200 € par RDV si ticket moyen > 15 000 €
 
-### Articles
-- Signaux d'achat LinkedIn — https://www.setting.live/ressources/signal-achat-linkedin
-- IA, méthode et humain pour le setting LinkedIn — https://www.setting.live/ressources/ia-methode-humain-setting-linkedin
-- Setting humain vs automatisation LinkedIn — https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin
-- Devenir business developer — https://www.setting.live/ressources/devenir-business-developer
-- Comment prospecter sur LinkedIn en 2026 : guide complet — https://www.setting.live/ressources/comment-prospecter-sur-linkedin
-- Agence de prospection LinkedIn : comment choisir en 2026 — https://www.setting.live/ressources/agence-prospection-linkedin
-- Social selling LinkedIn : définition, méthode et SSI — https://www.setting.live/ressources/social-selling-linkedin-b2b
-- Automatisation de la prospection LinkedIn : limites et alternatives — https://www.setting.live/ressources/automatisation-prospection-linkedin
-
-### Glossaire
-18 termes définis : https://www.setting.live/glossaire
+**URL :** https://www.setting.live/methode/setting-telephonique
 
 ---
 
-## Questions fréquentes (FAQ)
+## Pour qui
 
-**790 €/mois c'est beaucoup pour un solopreneur, non ?**
-C'est 8-10h/semaine que tu récupères. Si ton taux horaire dépasse 80 €, c'est rentable dès le premier mois. Et avec la garantie RDV, le risque est de notre côté.
-
-**Je peux le faire moi-même avec Lemlist/LaGrowthMachine ?**
-Oui, si tu as 5-8h/semaine et l'expertise IA pour personnaliser chaque message. On combine détection de signaux + rédaction IA + validation humaine. C'est ça qui fait la différence entre 2% et 8% de taux de réponse.
-
-**C'est quoi la différence avec une agence de prospection ?**
-Le prix (3-5x moins), l'engagement (aucun), et la méthode (IA + humain vs. templates en masse). Et on est payés au résultat avec les bonuses RDV.
-
-**Combien de temps avant les premiers RDV ?**
-Moins de 7 jours. On commence par tes clients idéaux et on itère chaque semaine.
-
-**Je n'ai pas de base email, je peux quand même ?**
-Pas besoin. Le Setting LinkedIn cible directement les prospects via les signaux d'achat sur LinkedIn. Aucune base email requise.
-
-**Combien de clients tu prends par mois ?**
-5 max. Chaque client a un setter dédié, on ne dilue pas la qualité. C'est pour ça qu'on peut garantir les résultats.
-
-**Et si ça marche pas ?**
-Zéro engagement. Tu peux arrêter à tout moment. Et la garantie RDV couvre ton risque : si on ne délivre pas, on continue gratuitement.
-
-**C'est quoi les bonuses RDV ?**
-Une prime variable par RDV généré, indexée sur ton ticket moyen. 50 € par RDV sous 5k €, 150 € entre 5 et 15k, 250 € au-dessus. On gagne quand tu gagnes.
+- Fondateurs de startups early-stage avec une offre B2B à 2 000 € ou plus
+- Freelances et consultants B2B qui n'ont plus de temps pour prospecter
+- Créateurs de micro-SaaS qui lancent leur acquisition
+- Solopreneurs qui ont un closeur mais pas de setter
 
 ---
 
-## FAQ Tarifs
+## Méthode en détail
 
-**Combien coûte le Setting LinkedIn ?**
-790 €/mois, setup offert. Même tarif sur les 3 premiers mois. Sans engagement.
+### Pipeline LinkedIn : 9 étapes
 
-**Le setup est vraiment offert ?**
-Oui. Le cadrage ICP, la rédaction des séquences et le paramétrage des outils sont inclus dans le premier mois.
+La méthode Setting LinkedIn couvre 3 phases : Détection, Qualification, Conversion. Chaque étape combine IA, méthode et validation humaine.
 
-**Comment fonctionne le tarif du Setting téléphonique ?**
-175 €/demi-journée, facturé au réel selon votre flux de leads entrants. Zéro setup fee.
+#### Phase 1 — Détection
 
-**Y a-t-il un engagement ?**
-Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Garantie RDV incluse.
+**Étape 1 : Stratégie & ciblage** (IA + Méthode)
+ICP défini avec l'IA. Comptes à monitorer sélectionnés (concurrents, complémentaires). Filtres Sales Navigator configurés : fonctions, industrie, taille, triggers récents. On valide chaque cible. LinkedIn limite à environ 100 connexions par semaine : chaque créneau compte. Seuls les profils à partir du 3e niveau de maturité entrent dans le pipe.
+Outils : Sales Navigator, ICP.
 
-**Quel ROI puis-je attendre ?**
-Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5× dès le 2e mois.
+**Étape 2 : Signaux inbound** (IA)
+Reactin surveille chaque interaction sur vos posts et ceux de vos concurrents. L'IA identifie qui a réagi, quand, avec quel type de contenu. On traque aussi les lead magnets à succès. Reactin distingue le type de signal : un CEO qui commente un post concurrent en décrivant un problème = signal fort. Un étudiant qui like = bruit.
+Outils : Reactin, Lead magnets, Scoring.
+
+**Étape 3 : Signaux outbound** (IA)
+Spyer monitore les comptes concurrents et complémentaires. Sales Navigator remonte les changements de poste, prises de fonction et signaux d'achat récents. L'IA priorise les profils à contacter. Un profil qui réagit à 3 posts d'un concurrent en 2 semaines est en phase d'exploration active.
+Outils : Spyer, Sales Navigator.
+
+#### Phase 2 — Qualification
+
+**Étape 4 : Profil analysé** (IA + Méthode)
+Claude analyse le profil complet : titre, bio, posts récents, connexions communes. Résultat déposé dans un Google Sheet avec recommandation (contacter ou non, contexte clé, segment probable). Claude identifie le levier d'achat dominant : sécurité, confort ou ROI mesurable. Le message change en fonction.
+Outils : Claude, Google Sheet.
+
+**Étape 5 : Scoring & ajustement** (Méthode)
+5 niveaux de maturité d'achat. On valide chaque profil et on ajuste les critères de ciblage au fil des retours terrain. Ce jugement recalibre Sales Navigator et Spyer en continu. Les retours terrain ("cette semaine, 3 prospects ont décroché sur l'angle X mais pas sur Y") remontent dans les filtres et dans le skill Claude.
+Outils : Scoring, Feedback loop.
+
+**Étape 6 : Skill maison** (IA + Méthode)
+Un skill Claude encodé sur votre expertise : jargon métier, objections connues, exemples de messages qui ont décroché des réponses. Mois 1, il est générique. Mois 2, il a intégré les vrais mots de vos prospects, les objections qui reviennent, et les formulations qui ont décroché des réponses. Après 2 mois, le skill connaît vos prospects mieux qu'un commercial qui débarque.
+Outils : Claude Skill, Journal de bord.
+
+#### Phase 3 — Conversion
+
+**Étape 7 : Message co-rédigé** (IA + Méthode)
+Claude propose un draft ancré dans le skill. La méthode impose les règles : 5 phrases max, 2e phrase = fait précis tiré du profil, jamais de pitch dans le premier DM. On planifie la séquence complète : message 1 = ouverture, relance à J+5, interaction sur un post entre-temps, nouveau message à J+12.
+Outils : Claude, Règles méthode.
+
+**Étape 8 : Validé et envoyé** (Humain)
+Test du téléphone appliqué : si le message ne sonnerait pas naturel dit à voix haute, on réécrit. Aucun message ne part sans validation humaine. C'est la seule étape 100% manuelle. Si le message ne passe pas le test, il ne part pas.
+Outils : Validation humaine.
+
+**Étape 9 : RDV qualifié** (Humain)
+On convertit la conversation en rendez-vous quand le timing est bon. Pas de pitch, une ouverture. Les leads tièdes qui ne sont pas prêts rentrent dans le Setting Newsletter. Le reporting recalibre tout le pipe : quels messages ont décroché des réponses, quels profils ont bloqué.
+Outils : Setter, Setting Newsletter.
+
+---
+
+### Pipeline téléphonique : 7 étapes
+
+Le module complémentaire de qualification téléphonique traite les leads entrants.
+
+**Étape 1 : Co-construction de la grille de qualification** (Méthode)
+Workshop de 90 minutes. Le BANT (Budget, Authority, Need, Timeline) sert de socle, mais chaque critère est adapté à votre marché. On définit les critères éliminatoires, les critères pondérés, et les seuils de passage. Budget pour un SaaS à 200 €/mois ne se qualifie pas comme un projet à 50 000 €. Authority dans une PME de 15 personnes signifie le dirigeant ; dans un grand groupe, c'est le sponsor interne plus un circuit de validation.
+Outils : BANT, Grille sur mesure, Workshop client.
+
+**Étape 2 : Intelligence pré-appel** (IA)
+Le lead entre via formulaire, lead magnet ou demande de contact. Avant qu'un humain décroche, l'IA enrichit la fiche : taille de l'entreprise, secteur, poste exact, historique d'interactions. Le setter ouvre l'appel avec du contexte, pas à l'aveugle. Un lead qui a téléchargé votre guide sur le closing B2B n'a pas le même besoin que celui qui a rempli « demande de devis ».
+Outils : CRM, Enrichissement IA, Historique interactions.
+
+**Étape 3 : Ouverture Challenger Sale** (Humain)
+L'approche Challenger Sale repose sur trois piliers : Teach (partager une observation terrain que le prospect ne connaissait pas), Tailor (adapter cet insight au contexte spécifique du prospect), Take Control (diriger la conversation vers un diagnostic structuré). Les 90 premières secondes posent le cadre avec un insight sectoriel, pas un pitch. Le prospect écoute parce qu'il apprend quelque chose.
+Outils : Challenger Sale, Script d'ouverture.
+
+**Étape 4 : Discovery & qualification BANT** (Humain + Méthode)
+7 à 12 minutes de questions structurées. Budget : "comment fonctionne votre processus d'achat pour ce type de prestation ?". Authority : "qui d'autre serait impliqué dans cette décision ?". Need : "qu'est-ce que ça vous coûte aujourd'hui de ne pas avoir résolu ce problème ?". Timeline : "qu'est-ce qui fait que c'est un sujet maintenant plutôt qu'il y a 6 mois ?". Le setter écoute 70% du temps et note les verbatims exacts — pas son interprétation.
+Outils : Grille BANT, Prise de notes structurée.
+
+**Étape 5 : Scoring & verdict** (Méthode)
+Chaque critère BANT est scoré sur une échelle pondérée. Trois catégories de verdict. Lead chaud : besoin réel, budget existant, décideur identifié, timing court — il part en RDV closeur. Lead tiède : 2 critères sur 4 validés, souvent le timing ou l'authority manquent — il entre en nurturing actif. Lead froid : besoin flou ou inexistant — il rejoint une séquence longue ou est disqualifié proprement. La disqualification n'est pas un échec : c'est du temps gagné pour le closeur.
+Outils : Scoring pondéré, Matrice de décision.
+
+**Étape 6 : Routing par maturité** (IA)
+Le CRM route automatiquement selon le score. Les leads chauds reçoivent un lien Calendly dans les 2 minutes. Les leads tièdes entrent dans une séquence de nurturing personnalisée selon le critère manquant : contenu sur le ROI si c'est le budget qui bloque, case studies du même secteur si c'est la confiance, relance à date si c'est le timing. Les leads froids reçoivent un email de courtoisie et rejoignent la newsletter. Zéro lead tombe entre les mailles.
+Outils : CRM, Routing automatique, Séquences email.
+
+**Étape 7 : Feedback loop** (IA + Méthode)
+Chaque semaine, analyse des données terrain. Quels critères prédisent vraiment un RDV qui signe ? Quels verbatims reviennent chez les leads chauds ? Quels signaux trompent — un lead enthousiaste au téléphone qui ne se présente pas au RDV ? Ces retours recalibrent la grille de scoring, le script d'ouverture et les seuils de routing. Après 4 semaines, le système qualifie mieux qu'un commercial senior qui débute sur votre offre.
+Outils : Reporting hebdomadaire, Recalibrage, Optimisation continue.
+
+---
+
+## Résultats et garantie
+
+**Chiffres clés :**
+- 20+ clients accompagnés en 2026
+- 2-4 RDV qualifiés par semaine en régime de croisière
+- > 20% de taux de réponse (vs 2-3% en prospection classique)
+- Premiers RDV dès la semaine 1
+- Taux de réponse moyen : 20-35%
+- 400+ RDV qualifiés livrés par Brahim (setter principal)
+
+**Garantie RDV :**
+Zéro engagement. Le client peut arrêter à tout moment. La garantie RDV couvre le risque : si Setting ne délivre pas les RDV promis, le service continue gratuitement. On gagne quand le client gagne, grâce au système de primes par RDV.
+
+**Comparatif (pourquoi déléguer ton setting) :**
+
+| Critère                | Toi seul     | Toi + outil (Lemlist...) | Toi + Setting     |
+|------------------------|--------------|--------------------------|-------------------|
+| Coût mensuel           | 0-80 €       | 100-200 €                | 790 €             |
+| Temps / semaine        | 8-10h        | 4-6h                     | 0h                |
+| RDV générés            | 1-2/sem      | 2-3/sem                  | 3+/sem garanti    |
+| Personnalisation       | Manuelle     | Templates                | IA + humain       |
+| Signaux d'achat        | Non          | Basiques                 | IA temps réel     |
+| Garantie RDV           | Non          | Non                      | Oui               |
+| Tu fais quoi           | TOUT         | Stratégie + suivi        | Tu closes. C'est tout. |
+
+**Pourquoi ce prix :**
+- Un système qui s'améliore : base de connaissance dédiée, feedback setter, expertise marché enrichie chaque semaine. Mois 3 n'a rien à voir avec mois 1.
+- IA + humain, pas IA toute seule : l'IA détecte et rédige. Le setter pilote par la data, choisit les angles, et itère le système chaque semaine.
+- Zéro engagement, zéro risque : garantie RDV sur chaque offre. Le client peut arrêter à tout moment.
+
+---
+
+## FAQ complète
+
+### FAQ générales (homepage)
+
+**Q : 790 €/mois c'est beaucoup pour un solopreneur, non ?**
+R : C'est 8-10h/semaine que tu récupères. Si ton taux horaire dépasse 80 €, c'est rentable dès le premier mois. Et avec la garantie RDV, le risque est de notre côté.
+
+**Q : Je peux le faire moi-même avec Lemlist/LaGrowthMachine ?**
+R : Oui, si tu as 5-8h/semaine et l'expertise IA pour personnaliser chaque message. On combine détection de signaux + rédaction IA + validation humaine. C'est ça qui fait la différence entre 2% et 8% de taux de réponse.
+
+**Q : C'est quoi la différence avec une agence de prospection ?**
+R : Le prix (3-5x moins), l'engagement (aucun), et la méthode (IA + humain vs. templates en masse). Et on est payés au résultat avec les bonuses RDV.
+
+**Q : Combien de temps avant les premiers RDV ?**
+R : Moins de 7 jours. On commence par tes clients idéaux et on itère chaque semaine.
+
+**Q : Je n'ai pas de base email, je peux quand même ?**
+R : Pas besoin. Le Setting LinkedIn cible directement les prospects via les signaux d'achat sur LinkedIn. Aucune base email requise.
+
+**Q : Combien de clients tu prends par mois ?**
+R : 5 max. Chaque client a un setter dédié, on ne dilue pas la qualité. C'est pour ça qu'on peut garantir les résultats.
+
+**Q : Et si ça marche pas ?**
+R : Zéro engagement. Tu peux arrêter à tout moment. Et la garantie RDV couvre ton risque : si on ne délivre pas, on continue gratuitement.
+
+**Q : C'est quoi les bonuses RDV ?**
+R : Une prime variable par RDV généré, indexée sur ton ticket moyen. 50 € par RDV sous 5k €, 150 € entre 5 et 15k, 250 € au-dessus. On gagne quand tu gagnes.
+
+### FAQ méthode (page setting LinkedIn)
+
+**Q : Qu'est-ce que le setting LinkedIn ?**
+R : Le setting LinkedIn est une méthode de prospection B2B qui consiste à détecter les signaux d'achat sur LinkedIn, puis à engager une conversation personnalisée avec le prospect. Contrairement au cold outreach classique, le setting repose sur un échange progressif et une validation humaine de chaque message avant envoi.
+
+**Q : Quelle est la différence entre setting LinkedIn et cold outreach ?**
+R : Le cold outreach envoie des messages à des profils sans signal d'intérêt. Le setting LinkedIn cible uniquement les profils qui ont montré un signal d'achat (réaction à un post, changement de poste, visite de profil). Chaque message est co-rédigé avec l'IA puis validé par un humain. En pratique, les taux de réponse sont 3 à 5 fois supérieurs.
+
+**Q : Combien de RDV génère le setting LinkedIn par mois ?**
+R : En moyenne, la méthode génère entre 8 et 15 RDV qualifiés par mois, selon le marché et la maturité du profil LinkedIn. Les premiers RDV arrivent dès la première semaine de démarrage.
+
+**Q : Le setting LinkedIn fonctionne-t-il pour le B2B ?**
+R : Oui. La méthode utilise Sales Navigator, les signaux d'achat professionnels et la qualification BANT pour cibler les décideurs. Ça marche bien pour les solopreneurs, fondateurs et équipes sales qui vendent des prestations à forte valeur ajoutée.
+
+**Q : Quel est le prix du setting LinkedIn externalisé ?**
+R : Chez Setting, l'abonnement démarre à 790 €/mois avec un setter dédié, le ciblage IA et la validation humaine de chaque message. Le setup initial est offert.
+
+### FAQ tarifs
+
+**Q : Combien coûte le Setting LinkedIn ?**
+R : 790 €/mois, setup offert. Même tarif sur les 3 premiers mois. Sans engagement.
+
+**Q : Le setup est vraiment offert ?**
+R : Oui. Le cadrage ICP, la rédaction des séquences et le paramétrage des outils sont inclus dans le premier mois. Vous ne payez que l'abonnement mensuel.
+
+**Q : Comment fonctionne le tarif du Setting téléphonique ?**
+R : 175 €/demi-journée, facturé au réel selon votre flux de leads entrants. Zéro setup fee.
+
+**Q : Y a-t-il un engagement ?**
+R : Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Garantie RDV incluse.
+
+**Q : Je peux ajouter la qualification téléphonique ?**
+R : Oui. Si tu reçois des leads entrants (lead magnets, formulaires, contenu), on les qualifie par téléphone à 175 €/demi-journée. Activable à tout moment.
+
+**Q : Quel ROI puis-je attendre ?**
+R : Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5x dès le 2e mois. Un simulateur ROI est disponible sur la page tarifs : https://www.setting.live/tarifs
 
 ---
 
@@ -190,7 +275,7 @@ Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5× dès le 2e 
 
 **Closing :** Le closing est la phase de vente où un commercial transforme un prospect qualifié en client signé. En B2B, le closing se fait généralement lors d'un appel structuré (discovery call + pitch + gestion des objections + signature). Le taux de closing mesure le ratio prospects contactés / contrats signés.
 
-**Signal d'achat :** Un signal d'achat est un comportement observable d'un prospect qui indique un intérêt pour votre offre ou pour le problème que vous résolvez. Sur LinkedIn : liker un post sur votre thématique, commenter un contenu concurrent, changer de poste, réagir à une publication sur la transformation digitale. Les signaux d'achat sont la base du setting moderne : on contacte les prospects qui ont levé la main, pas une liste froide.
+**Signal d'achat :** Un signal d'achat est un comportement observable d'un prospect qui indique un intérêt pour votre offre ou pour le problème que vous résolvez. Sur LinkedIn : liker un post sur votre thématique, commenter un contenu concurrent, changer de poste, réagir à une publication. Les signaux d'achat sont la base du setting moderne : on contacte les prospects qui ont levé la main, pas une liste froide.
 
 **Prospection LinkedIn :** La prospection LinkedIn B2B consiste à identifier des prospects pertinents sur LinkedIn, à les contacter par message personnalisé et à qualifier leur intérêt avant de proposer un rendez-vous. La méthode signal-based utilise Sales Navigator et des outils comme Reactin ou Spyer pour détecter les signaux d'achat avant d'envoyer le premier message.
 
@@ -200,7 +285,7 @@ Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5× dès le 2e 
 
 **Discovery call :** La discovery call est le premier appel commercial, conduit par le closeur, dont l'objectif est de comprendre le problème, le contexte et le budget du prospect avant de présenter l'offre. Une bonne discovery dure 20 à 40 minutes et permet d'identifier si le prospect peut bénéficier de la solution. Elle précède toujours le pitch.
 
-**Pipeline commercial :** Le pipeline commercial est la représentation visuelle de toutes les opportunités commerciales en cours, classées par étape du cycle de vente. En setting B2B : prospects identifiés → messages envoyés → réponses reçues → leads qualifiés → RDV pris → RDV réalisés → offres envoyées → contrats signés. Le setter alimente l'entrée du pipeline, le closeur travaille la fin.
+**Pipeline commercial :** Le pipeline commercial est la représentation visuelle de toutes les opportunités commerciales en cours, classées par étape du cycle de vente. En setting B2B : prospects identifiés, messages envoyés, réponses reçues, leads qualifiés, RDV pris, RDV réalisés, offres envoyées, contrats signés. Le setter alimente l'entrée du pipeline, le closeur travaille la fin.
 
 **Sales Navigator :** Sales Navigator est l'outil de prospection avancée de LinkedIn, vendu en abonnement (~100 €/mois). Il permet de filtrer les profils LinkedIn selon des dizaines de critères (poste, secteur, taille d'entreprise, ancienneté, signaux récents), de sauvegarder des listes de prospects et de recevoir des alertes sur les changements de poste ou activités récentes. C'est l'outil de base de tout setter professionnel.
 
@@ -218,11 +303,178 @@ Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5× dès le 2e 
 
 **Solopreneur :** Un solopreneur est un entrepreneur qui travaille seul, sans salariés, et génère son revenu via une ou plusieurs offres (consulting, formation, coaching, service). Contrairement au freelance, le solopreneur construit généralement une marque personnelle et des offres packagées. Le principal défi du solopreneur est la gestion simultanée de la prospection, de la livraison et du développement — c'est pourquoi l'externalisation du setting est souvent son premier levier de croissance.
 
+**URL du glossaire complet (18 termes) :** https://www.setting.live/glossaire
+
 ---
 
-## Contact
+## Articles ressources
 
-- Site : https://www.setting.live
-- Email : a.brakha@challengerslab.com
-- LinkedIn : https://www.linkedin.com/company/challengerslab
-- Réserver un appel : https://www.setting.live/#contact
+### Guides piliers
+
+- **Setting commercial B2B : guide complet** — Setter definition, méthode LinkedIn signal-based, 9 étapes, différence setting/closing, coût et programme 3 mois.
+  URL : https://www.setting.live/ressources/setting-commercial-b2b
+
+- **Closing B2B : guide complet** — Closer B2B, discovery call, gestion des objections, scripts d'appel et programme de coaching.
+  URL : https://www.setting.live/ressources/closing-b2b
+
+- **Prospection LinkedIn B2B : guide complet** — Méthode signal-based, scripts inbound et outbound, 15 exemples de messages, séquence de relances et IA co-rédacteur.
+  URL : https://www.setting.live/ressources/prospection-linkedin-b2b
+
+- **Méthodes de vente B2B** — Panorama des principales méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS.
+  URL : https://www.setting.live/ressources/methodes-vente-b2b
+
+- **Devenir setter ou closer B2B** — Comment se lancer dans le métier de setter ou closer.
+  URL : https://www.setting.live/ressources/comment-devenir-setter-b2b
+
+- **Externaliser sa prospection LinkedIn** — Guide pour externaliser sa prospection.
+  URL : https://www.setting.live/externaliser-prospection-linkedin
+
+### Articles setting et prospection
+
+- **Setter B2B : définition** — C'est quoi un setter en B2B ?
+  URL : https://www.setting.live/ressources/setter-b2b-definition
+
+- **Closer B2B : définition** — Closer B2B : définition, compétences et recrutement.
+  URL : https://www.setting.live/ressources/closer-b2b
+
+- **Différence setting vs closing** — Quelle est la différence entre setting et closing ?
+  URL : https://www.setting.live/ressources/difference-setting-closing
+
+- **Setting commercial LinkedIn** — Le setting commercial appliqué à LinkedIn.
+  URL : https://www.setting.live/ressources/setting-commercial-linkedin
+
+- **Setting LinkedIn : définition** — Définition complète du setting LinkedIn.
+  URL : https://www.setting.live/ressources/setting-linkedin-definition
+
+- **Script setting LinkedIn** — Scripts de setting LinkedIn : exemples concrets.
+  URL : https://www.setting.live/ressources/script-setting-linkedin
+
+- **Outils setting LinkedIn** — Les outils du setting LinkedIn.
+  URL : https://www.setting.live/ressources/outils-setting-linkedin
+
+- **Setting humain vs automatisation LinkedIn** — Comparatif entre approche humaine et automatisée.
+  URL : https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin
+
+- **IA, méthode et humain dans le setting LinkedIn** — Comment combiner IA, méthode et humain.
+  URL : https://www.setting.live/ressources/ia-methode-humain-setting-linkedin
+
+### Articles prospection LinkedIn
+
+- **Comment prospecter sur LinkedIn** — Guide pratique de prospection LinkedIn.
+  URL : https://www.setting.live/ressources/comment-prospecter-sur-linkedin
+
+- **Messages prospection LinkedIn : exemples** — Exemples concrets de messages de prospection.
+  URL : https://www.setting.live/ressources/messages-prospection-linkedin-exemples
+
+- **Pourquoi vos messages LinkedIn n'obtiennent pas de réponses** — Diagnostic et solutions.
+  URL : https://www.setting.live/ressources/messages-linkedin-sans-reponse
+
+- **Relance LinkedIn B2B** — Quand et comment relancer sur LinkedIn.
+  URL : https://www.setting.live/ressources/relance-linkedin-b2b
+
+- **Signal d'achat LinkedIn** — C'est quoi un signal d'achat LinkedIn ?
+  URL : https://www.setting.live/ressources/signal-achat-linkedin
+
+- **Automatisation prospection LinkedIn** — Automatiser sa prospection LinkedIn : limites et alternatives.
+  URL : https://www.setting.live/ressources/automatisation-prospection-linkedin
+
+- **Social selling LinkedIn B2B** — Le social selling sur LinkedIn en B2B : définition, méthode et SSI.
+  URL : https://www.setting.live/ressources/social-selling-linkedin-b2b
+
+### Articles closing et vente
+
+- **Script closing B2B** — Scripts d'appel de closing B2B.
+  URL : https://www.setting.live/ressources/script-closing-b2b
+
+- **Discovery call B2B** — Comment structurer un appel de découverte B2B.
+  URL : https://www.setting.live/ressources/discovery-call-b2b
+
+- **Gestion des objections B2B** — Gérer les objections en vente B2B.
+  URL : https://www.setting.live/ressources/gestion-objections-b2b
+
+- **Qualification des leads B2B** — Comment qualifier les leads en B2B.
+  URL : https://www.setting.live/ressources/qualification-leads-b2b
+
+- **Challenger Sale : définition** — Qu'est-ce que le Challenger Sale ?
+  URL : https://www.setting.live/ressources/challenger-sale-definition
+
+- **Méthode SONCAS** — La méthode SONCAS en vente B2B.
+  URL : https://www.setting.live/ressources/methode-soncas
+
+- **Méthode SPIN Selling** — Le SPIN Selling en vente B2B.
+  URL : https://www.setting.live/ressources/methode-spin-selling
+
+### Articles métiers et comparatifs
+
+- **Devenir business developer** — Comment devenir business developer.
+  URL : https://www.setting.live/ressources/devenir-business-developer
+
+- **SDR interne vs externalisé** — Comparatif SDR interne versus externalisé.
+  URL : https://www.setting.live/ressources/sdr-interne-vs-externalise
+
+- **Agence prospection LinkedIn** — Comparatif des agences de prospection LinkedIn.
+  URL : https://www.setting.live/ressources/agence-prospection-linkedin
+
+- **Agence setting LinkedIn vs freelance** — Agence setting LinkedIn vs freelance : comment choisir.
+  URL : https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance
+
+---
+
+## À propos
+
+### L'équipe
+
+Setting est une équipe de 3 personnes aux rôles distincts. Le système fonctionne parce que les rôles ne se chevauchent pas.
+
+**Brahim Brakha — Setter LinkedIn B2B**
+Il envoie les messages, qualifie les prospects et décroche les RDV. 400+ RDV qualifiés livrés. Spécialisé en outreach LinkedIn B2B depuis 3 ans. Il a géré des campagnes pour des consultants IT, agences marketing, coaches et SaaS. Il sait lire une conversation et détecter quand un prospect est prêt à avancer.
+
+**Abraham Brakha — Fondateur & Automatisation IA**
+Il construit les outils de ciblage IA et les automatisations qui réduisent les coûts de 60% vs une agence classique. Développeur spécialisé en automatisation et IA appliquée au sales. Il a construit le système de détection de signaux d'achat qui permet de cibler les décideurs au bon moment, et les workflows qui font tourner le pipeline sans intervention manuelle.
+
+**Abdelhay Brakha — Stratégie commerciale & Closing B2B**
+Il définit l'angle commercial, les scripts et la stratégie de conversion. Taux de réponse moyen : 20-35%. Expérience en closing B2B et copywriting commercial. Il conçoit les séquences de messages qui déclenchent des réponses, et affine les scripts chaque semaine en fonction des données terrain. Approche Challenger Sale.
+
+### Mission
+
+La plupart des fondateurs et freelances B2B savent faire leur métier. Ce qu'ils ne savent pas faire, c'est prospecter. Ou plutôt, ils savent, mais ça leur prend un temps fou pour des résultats décevants. Deux heures sur LinkedIn chaque matin. Des messages qui restent sans réponse. Des profils mal ciblés. Un pipeline vide à la fin du mois. Setting prend cette tâche en charge. Pas avec des outils en self-service. Pas avec de l'automatisation à l'aveugle. Avec une équipe qui gère votre prospection comme si c'était la sienne.
+
+### Approche en 3 principes
+
+1. **IA pour la détection** — L'IA analyse les comportements LinkedIn pour identifier les prospects en recherche active. On ne cherche pas à automatiser les messages. On cherche à ne jamais prospecter les mauvaises personnes.
+
+2. **Méthode pour le cadrage** — Le pipeline a des critères clairs à chaque étape : qui on contacte, quand on relance, quand on arrête. Ces règles s'affinent chaque semaine. Rien n'est laissé à l'appréciation du moment.
+
+3. **Humain pour la validation** — Avant chaque envoi, un humain vérifie le message, le contexte et le profil. C'est ce qui empêche d'envoyer des messages automatisés au nom de vos clients.
+
+**URL :** https://www.setting.live/a-propos
+
+---
+
+## Contact et informations pratiques
+
+- **Site web :** https://www.setting.live
+- **Email :** a.brakha@challengerslab.com
+- **LinkedIn entreprise :** https://www.linkedin.com/company/challengerslab
+- **LinkedIn fondateur :** https://www.linkedin.com/in/abraham-brakha
+- **Calendly (appel découverte) :** https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab
+- **Adresse :** 50B rue Salomon Reinach, 69007 Lyon, France
+- **Fondée en :** 2024
+- **Nombre d'employés :** 3
+- **Langue :** Français
+- **Zone servie :** France
+
+### Pages principales
+
+- Accueil : https://www.setting.live
+- Méthode Setting LinkedIn : https://www.setting.live/methode/setting-linkedin
+- Tarifs : https://www.setting.live/tarifs
+- Résultats : https://www.setting.live/resultats
+- À propos : https://www.setting.live/a-propos
+- Ressources : https://www.setting.live/ressources
+- Glossaire : https://www.setting.live/glossaire
+
+### Fichiers LLM
+
+- Version courte (66 lignes) : https://www.setting.live/llms.txt
+- Version complète (ce fichier) : https://www.setting.live/llms-full.txt

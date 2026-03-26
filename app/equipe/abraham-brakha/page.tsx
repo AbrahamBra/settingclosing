@@ -35,11 +35,21 @@ const personSchema = {
   familyName: 'Brakha',
   jobTitle: 'Fondateur & Automatisation IA',
   url: 'https://www.setting.live/equipe/abraham-brakha',
-  sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
+  image: {
+    '@type': 'ImageObject',
+    url: 'https://www.setting.live/icon.png',
+    width: 512,
+    height: 512,
+  },
+  sameAs: [
+    'https://www.linkedin.com/in/abraham-brakha',
+    'https://www.setting.live/a-propos',
+  ],
   worksFor: {
     '@type': 'Organization',
     '@id': 'https://www.setting.live/#business',
     name: 'Setting',
+    url: 'https://www.setting.live',
   },
   knowsAbout: [
     'automatisation commerciale',
@@ -48,9 +58,15 @@ const personSchema = {
     'prospection LinkedIn B2B',
     'Next.js',
     'TypeScript',
+    'SDR externalisé',
+    'qualification de leads B2B',
   ],
+  alumniOf: {
+    '@type': 'Organization',
+    name: 'Setting',
+  },
   description:
-    "Développeur spécialisé en automatisation et IA appliquée au sales B2B. Créateur du système de détection de signaux d'achat LinkedIn utilisé par Setting.",
+    "Développeur spécialisé en automatisation et IA appliquée au sales B2B. Créateur du système de détection de signaux d'achat LinkedIn utilisé par Setting. Auteur de 20+ guides sur la prospection LinkedIn et les méthodes de vente B2B.",
 }
 
 const breadcrumbSchema = {

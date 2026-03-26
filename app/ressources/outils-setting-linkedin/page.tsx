@@ -34,8 +34,11 @@ const articleSchema = {
     'Les 3 outils du stack setting LinkedIn. Reactin detecte les signaux inbound, Make automatise le scoring et le routage, BreakCold gere le pipeline social selling. Guide pratique.',
   author: {
     '@type': 'Person',
-    name: 'Abraham',
-    url: 'https://www.setting.live/a-propos',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
+    url: 'https://www.setting.live/equipe/abraham-brakha',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',
@@ -52,6 +55,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/outils-setting-linkedin',
   },
   image: 'https://www.setting.live/ressources/outils-setting-linkedin/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '[data-speakable]', '.faq-answer'],
+  },
 }
 
 const faqItems = [

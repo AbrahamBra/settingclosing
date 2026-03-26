@@ -35,10 +35,11 @@ const articleSchema = {
     'Comparatif des mod\u00e8les d\u2019agence de prospection LinkedIn (automation, hybride, setting), crit\u00e8res de s\u00e9lection, tarifs r\u00e9els et red flags \u00e0 surveiller.',
   author: {
     '@type': 'Person',
+    '@id': 'https://www.setting.live/a-propos#abraham',
     name: 'Abraham Brakha',
-    jobTitle: 'Fondateur, Setting',
     url: 'https://www.setting.live/equipe/abraham-brakha',
-    sameAs: 'https://www.linkedin.com/in/abraham-brakha/',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',

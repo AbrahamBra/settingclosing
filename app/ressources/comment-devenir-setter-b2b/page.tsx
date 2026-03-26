@@ -157,6 +157,47 @@ const breadcrumbSchema = {
   ],
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment devenir setter B2B en 2026',
+  description:
+    'Les étapes pour devenir setter B2B : comprendre le métier, développer les compétences clés (lecture de profil, écriture concise, discipline de relance), se former sur le terrain, maîtriser les outils et choisir le bon cadre (freelance, agence ou interne).',
+  totalTime: 'P2M',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Comprendre le métier de setter au quotidien',
+      text: 'Apprenez ce que fait réellement un setter : analyser les signaux inbound, lire les profils LinkedIn rapidement, rédiger des messages personnalisés (5 phrases max), gérer les réponses et qualifier les prospects. Le setter ne pitche pas et ne close pas.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Développer les 3 compétences clés',
+      text: 'Travaillez les compétences fondamentales : lire un profil en 2 minutes pour extraire un angle de conversation, écrire court et précis (5 phrases maximum), et ne pas abandonner au 3e message — la discipline de relance est la compétence la plus sous-estimée.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Se former sur le terrain, pas en théorie',
+      text: 'Envoyez de vrais messages sur de vrais profils dès la première semaine. Tenez un journal de bord quotidien de ce qui fonctionne et ce qui échoue. Recevez du feedback sur chaque message. Les formations vidéo sans pratique ne forment pas un setter.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Maîtriser les outils de prospection',
+      text: 'Apprenez à utiliser Sales Navigator pour le ciblage, Reactin pour les signaux inbound, Spyer pour la surveillance des comptes tiers, un CRM dédié pour le suivi des conversations, et l\'IA comme co-rédacteur de messages.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Choisir le bon cadre : freelance, agence ou interne',
+      text: 'Évaluez les trois options selon votre situation. Freelance (500-900 euros/mois) pour démarrer léger, agence (790-1 500 euros/mois) pour une méthode et des outils inclus, ou interne (2 500-4 000 euros/mois) si le volume de leads est récurrent sur 6 mois minimum.',
+    },
+  ],
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function CommentDevenirSetterB2BPage() {
@@ -165,7 +206,7 @@ export default function CommentDevenirSetterB2BPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
+          __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema, howToSchema]),
         }}
       />
       <NavbarBlog />

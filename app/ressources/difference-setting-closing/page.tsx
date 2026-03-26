@@ -245,6 +245,56 @@ export default function DifferenceSettingClosingPage() {
             </div>
           </div>
 
+          {/* Semantic HTML table — Setting vs Closing comparison for AI / machine readability */}
+          <div className="overflow-x-auto my-8">
+            <table className="w-full text-sm text-left font-sans border-collapse">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="py-3 px-4 text-text-muted font-semibold">Critère</th>
+                  <th className="py-3 px-4 text-[#C87533] font-semibold">Setting</th>
+                  <th className="py-3 px-4 text-text-muted font-semibold">Closing</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 text-text-muted">Objectif</td>
+                  <td className="py-3 px-4 text-text-primary">Décrocher des rendez-vous qualifiés</td>
+                  <td className="py-3 px-4 text-text-primary">Signer des contrats</td>
+                </tr>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 text-text-muted">Phase du cycle de vente</td>
+                  <td className="py-3 px-4 text-text-primary">Étapes 1 à 4 (ciblage, approche, qualification, prise de RDV)</td>
+                  <td className="py-3 px-4 text-text-primary">Étapes 5 à 8 (discovery, proposition, objections, signature)</td>
+                </tr>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 text-text-muted">Compétences clés</td>
+                  <td className="py-3 px-4 text-text-primary">Persévérance, rythme soutenu, peau épaisse</td>
+                  <td className="py-3 px-4 text-text-primary">Écoute active, empathie calibrée, gestion des silences</td>
+                </tr>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 text-text-muted">Externalisable</td>
+                  <td className="py-3 px-4 text-text-primary">Oui, totalement recommandé</td>
+                  <td className="py-3 px-4 text-text-primary">Plus délicat, coaching recommandé</td>
+                </tr>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 text-text-muted">Budget externalisé</td>
+                  <td className="py-3 px-4 text-text-primary">790 €/mois (fixe + prime par RDV)</td>
+                  <td className="py-3 px-4 text-text-primary">1 000 €/mois (coaching 3 mois)</td>
+                </tr>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 text-text-muted">Quand investir en premier</td>
+                  <td className="py-3 px-4 text-text-primary">Calendrier vide, pas assez de RDV</td>
+                  <td className="py-3 px-4 text-text-primary">Des RDV mais taux de signature faible</td>
+                </tr>
+                <tr className="border-b border-white/[0.06]">
+                  <td className="py-3 px-4 text-text-muted">KPI principal</td>
+                  <td className="py-3 px-4 text-text-primary">Nombre de RDV qualifiés par mois</td>
+                  <td className="py-3 px-4 text-text-primary">Taux de closing (20–30 % = correct)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           {/* Section 1 — Le cycle complet */}
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5">

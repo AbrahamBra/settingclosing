@@ -34,8 +34,11 @@ const articleSchema = {
     'Agence de setting LinkedIn ou setter freelance ? Co\u00fbt mensuel, m\u00e9thode, outils fournis, garantie r\u00e9sultats : le comparatif honn\u00eate pour trancher.',
   author: {
     '@type': 'Person',
-    name: 'Abraham',
-    url: 'https://www.setting.live/a-propos',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
+    url: 'https://www.setting.live/equipe/abraham-brakha',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',
@@ -52,6 +55,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance',
   },
   image: 'https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '[data-speakable]', '.faq-answer'],
+  },
 }
 
 const faqItems = [
@@ -310,6 +317,51 @@ export default function AgenceSettingLinkedinVsFreelancePage() {
               <p className="mb-6">
                 Les deux options c&ocirc;te &agrave; c&ocirc;te, sur les crit&egrave;res qui comptent pour d&eacute;cider.
               </p>
+
+              {/* Semantic HTML table for AI / machine readability */}
+              <div className="overflow-x-auto my-8">
+                <table className="w-full text-sm text-left font-sans border-collapse">
+                  <thead>
+                    <tr className="border-b border-white/10">
+                      <th className="py-3 px-4 text-text-muted font-semibold">Crit&egrave;re</th>
+                      <th className="py-3 px-4 text-text-muted font-semibold">Freelance</th>
+                      <th className="py-3 px-4 text-[#C87533] font-semibold">Agence</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Co&ucirc;t mensuel</td>
+                      <td className="py-3 px-4 text-text-primary">500–1 200 &euro; + outils</td>
+                      <td className="py-3 px-4 text-text-primary">1 000–3 000 &euro; tout inclus</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Onboarding</td>
+                      <td className="py-3 px-4 text-text-primary">2–4 semaines, vous g&eacute;rez</td>
+                      <td className="py-3 px-4 text-text-primary">1–2 semaines, g&eacute;r&eacute; pour vous</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">M&eacute;thode et outils</td>
+                      <td className="py-3 px-4 text-text-primary">&Agrave; votre charge</td>
+                      <td className="py-3 px-4 text-text-primary">Fournis et configur&eacute;s</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Remplacement setter</td>
+                      <td className="py-3 px-4 text-text-primary">Vous recommencez</td>
+                      <td className="py-3 px-4 text-text-primary">Backup setter en quelques jours</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Scalabilit&eacute;</td>
+                      <td className="py-3 px-4 text-text-primary">Trouver un autre freelance</td>
+                      <td className="py-3 px-4 text-text-primary">Ajouter un setter au programme</td>
+                    </tr>
+                    <tr className="border-b border-white/[0.06]">
+                      <td className="py-3 px-4 text-text-muted">Garantie r&eacute;sultats</td>
+                      <td className="py-3 px-4 text-text-primary">Rare</td>
+                      <td className="py-3 px-4 text-text-primary">Souvent incluse (5 RDV min chez Setting)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <div className="rounded-xl border border-white/[0.06] overflow-hidden mb-6">
                 <div className="grid grid-cols-3 bg-bg-secondary border-b border-white/[0.06]">

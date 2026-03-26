@@ -122,6 +122,47 @@ const breadcrumbSchema = {
   ],
 }
 
+const howToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment qualifier un lead en B2B',
+  description:
+    'Processus de qualification d\'un lead B2B en 5 étapes : vérifier le profil ICP, évaluer le besoin, confirmer le budget, identifier le décideur et attribuer un niveau de maturité.',
+  totalTime: 'PT15M',
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Vérifier le profil ICP',
+      text: 'Vérifiez que le lead correspond à votre profil de client idéal : secteur, taille d\'entreprise, poste et marché cible.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Évaluer le besoin réel',
+      text: 'Identifiez si le prospect exprime une difficulté ou un objectif que votre offre résout. En prospection signal-based, analysez ses publications et commentaires LinkedIn pour détecter les signaux d\'intérêt.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Confirmer le budget',
+      text: 'Évaluez si le prospect a les moyens d\'acheter. En outbound, le budget est rarement défini à l\'avance — estimez la compatibilité approximative avec votre offre.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Identifier le décideur',
+      text: 'Déterminez si le prospect est décideur ou co-décideur. S\'il ne l\'est pas, vérifiez s\'il peut vous mettre en relation avec celui qui prend la décision.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Attribuer un niveau de maturité (N1 à N5)',
+      text: 'Classez le lead selon 5 niveaux de maturité : N1 (curiosité froide), N2 (intérêt visible), N3 (signal qualifié), N4 (acheteur potentiel), N5 (deal chaud). Seuls les N4 et N5 sont envoyés en appel de closing.',
+    },
+  ],
+}
+
 const niveauxQualif = [
   { niveau: 'N1', label: 'Curiosité froide', desc: 'A réagi à un post générique. Aucun signal d\'intention. Pas prêt pour un appel — garder en liste de nurturing.' },
   { niveau: 'N2', label: 'Intérêt visible', desc: 'A commenté un contenu lié au problème que vous résolvez, ou a visité votre profil. Peut justifier un premier message de prospection.' },
@@ -136,7 +177,7 @@ export default function QualificationLeadsB2BPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema]),
+          __html: JSON.stringify([articleSchema, faqSchema, breadcrumbSchema, howToSchema]),
         }}
       />
       <NavbarBlog />

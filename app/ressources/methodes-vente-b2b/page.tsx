@@ -10,7 +10,7 @@ import { TldrBox } from '@/components/TldrBox'
 export const metadata: Metadata = {
   title: 'Méthodes de vente B2B (2026) : SONCAS, SPIN Selling, Challenger Sale, qualification leads | Setting',
   description:
-    'Guide complet des méthodes de vente B2B : méthode SONCAS (6 leviers), SPIN Selling (4 questions), Challenger Sale (3 composantes), qualification leads (BANT, MEDDIC). Comparatif, exemples et pipeline.',
+    'Méthodes de vente B2B : SONCAS, SPIN Selling, Challenger Sale et qualification leads (BANT, MEDDIC). Comparatif et exemples.',
   openGraph: {
     title: 'Méthodes de vente B2B : SONCAS, SPIN Selling, Challenger Sale | Setting',
     description:

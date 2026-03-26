@@ -35,10 +35,11 @@ const articleSchema = {
     'Automatiser sa prospection LinkedIn : outils, limites, risques de ban et alternative humaine. Comparatif Waalaxy, Lemlist, LaGrowthMachine vs setting manuel.',
   author: {
     '@type': 'Person',
+    '@id': 'https://www.setting.live/a-propos#abraham',
     name: 'Abraham Brakha',
-    jobTitle: 'Fondateur, Setting',
     url: 'https://www.setting.live/equipe/abraham-brakha',
-    sameAs: 'https://www.linkedin.com/in/abraham-brakha/',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',

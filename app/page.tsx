@@ -69,8 +69,24 @@ const globalSchema = {
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
         'https://www.linkedin.com/in/abraham-brakha',
+        'https://www.setting.live/a-propos',
+        'https://www.setting.live/equipe/abraham-brakha',
       ],
       foundingDate: '2024',
+      founder: {
+        '@type': 'Person',
+        '@id': 'https://www.setting.live/a-propos#abraham',
+        name: 'Abraham Brakha',
+        url: 'https://www.setting.live/equipe/abraham-brakha',
+        sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
+      },
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '50B rue Salomon Reinach',
+        addressLocality: 'Lyon',
+        postalCode: '69007',
+        addressCountry: 'FR',
+      },
       numberOfEmployees: {
         '@type': 'QuantitativeValue',
         value: 3,
@@ -80,6 +96,8 @@ const globalSchema = {
         'setting commercial',
         'qualification de leads',
         'automatisation IA commerciale',
+        'détection de signaux d\'achat LinkedIn',
+        'SDR externalisé',
       ],
       contactPoint: {
         '@type': 'ContactPoint',
@@ -91,6 +109,7 @@ const globalSchema = {
         '@type': 'Country',
         name: 'France',
       },
+      priceRange: '€€',
       speakable: {
         '@type': 'SpeakableSpecification',
         cssSelector: ['h1', '.hero-description', '.faq-answer'],
