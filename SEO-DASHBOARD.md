@@ -91,21 +91,150 @@
 
 ---
 
+### 3. Pilier "Setting commercial B2B" (2026-03-26)
+
+**URL survivante :** `/ressources/setting-commercial-b2b`
+**Titre :** Setting commercial B2B : définition, méthode et programme complet
+**Keywords ciblés :**
+
+| Keyword | Volume | Position cible |
+|---------|--------|---------------|
+| setter definition | 50/mo | Top 3 |
+| setting linkedin | 40/mo | Top 3 |
+| setting commercial | 0 (early mover) | Top 1 |
+
+**Articles fusionnés (301 → URL survivante) :**
+- `/ressources/setting-linkedin-definition` — Setting LinkedIn : définition
+- `/ressources/setter-b2b-definition` — C'est quoi un setter en B2B ?
+- `/ressources/difference-setting-closing` — Différence entre setting et closing
+- `/ressources/setting-commercial-linkedin` — Setting commercial LinkedIn
+
+**Checklist consolidation :**
+- [x] Article pilier réécrit (~5000 mots)
+- [x] 301 redirects dans `next.config.ts`
+- [x] Sitemap mis à jour (4 URLs supprimées, survivante priority 0.9)
+- [x] Schema structured data : Article + FAQPage + BreadcrumbList
+- [x] GEO : DefinedTerm, data-speakable, TL;DR quotable
+- [x] Humanizer pass
+- [x] Build Next.js : OK
+
+---
+
+### 4. Pilier "Closing B2B" (2026-03-26)
+
+**URL survivante :** `/ressources/closing-b2b`
+**Titre :** Closing B2B : le guide complet pour conclure en vente
+**Keywords ciblés :**
+
+| Keyword | Volume | Position cible |
+|---------|--------|---------------|
+| closing commercial | 210/mo | Top 5 |
+| closer b2b | 170/mo | Top 5 |
+| discovery call | 140/mo | Top 5 |
+| gestion objections | 90/mo | Top 10 |
+
+**Articles fusionnés (301 → URL survivante) :**
+- `/ressources/closer-b2b` — Closer B2B : définition et compétences
+- `/ressources/discovery-call-b2b` — Discovery call B2B
+- `/ressources/gestion-objections-b2b` — Gérer les objections en vente B2B
+- `/ressources/script-closing-b2b` — Scripts de closing B2B
+
+**Checklist consolidation :**
+- [x] Article pilier réécrit (~5000 mots)
+- [x] 301 redirects dans `next.config.ts`
+- [x] Sitemap mis à jour (4 URLs supprimées, survivante priority 0.9)
+- [x] Schema structured data : Article + FAQPage + BreadcrumbList
+- [x] GEO : DefinedTerm, HowTo, data-speakable, stat blocks
+- [x] Humanizer pass
+- [x] Build Next.js : OK
+
+---
+
+### 5. Pilier "Méthodes de vente B2B" (2026-03-26)
+
+**URL survivante :** `/ressources/methodes-vente-b2b`
+**Titre :** Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS
+**Keywords ciblés :**
+
+| Keyword | Volume | Position cible |
+|---------|--------|---------------|
+| methode soncas | 880/mo | Top 10 |
+| spin selling | 590/mo | Top 10 |
+| methode de vente | 720/mo | Top 10 |
+| qualification leads | 50/mo | Top 3 |
+
+**Articles fusionnés (301 → URL survivante) :**
+- `/ressources/methode-soncas` — Méthode SONCAS en B2B
+- `/ressources/methode-spin-selling` — SPIN Selling en B2B
+- `/ressources/challenger-sale-definition` — Qu'est-ce que le Challenger Sale ?
+- `/ressources/qualification-leads-b2b` — Qualifier un lead en B2B
+
+**Checklist consolidation :**
+- [x] Article pilier réécrit (~5000 mots)
+- [x] 301 redirects dans `next.config.ts`
+- [x] Sitemap mis à jour (4 URLs supprimées, survivante priority 0.9)
+- [x] Schema structured data : Article + FAQPage + BreadcrumbList
+- [x] GEO : DefinedTerm pour chaque méthode, HowTo, data-speakable
+- [x] Humanizer pass
+- [x] Build Next.js : OK
+
+---
+
+### 6. Pilier "Prospection LinkedIn B2B" (2026-03-26)
+
+**URL survivante :** `/ressources/prospection-linkedin-b2b`
+**Titre :** Prospection LinkedIn B2B : méthode complète en 2026
+**Keywords ciblés :**
+
+| Keyword | Volume | Position cible |
+|---------|--------|---------------|
+| prospection linkedin | 1300/mo | Top 10 |
+| message prospection linkedin | 320/mo | Top 10 |
+| relance linkedin | 110/mo | Top 5 |
+| script prospection linkedin | 70/mo | Top 5 |
+
+**Articles fusionnés (301 → URL survivante) :**
+- `/ressources/messages-linkedin-sans-reponse` — Pourquoi vos messages LinkedIn n'obtiennent pas de réponses
+- `/ressources/script-setting-linkedin` — Scripts de setting LinkedIn B2B
+- `/ressources/relance-linkedin-b2b` — Relance LinkedIn B2B
+- `/ressources/messages-prospection-linkedin-exemples` — Messages de prospection LinkedIn : exemples
+
+**Checklist consolidation :**
+- [x] Article pilier réécrit (~5000 mots)
+- [x] 301 redirects dans `next.config.ts`
+- [x] Sitemap mis à jour (4 URLs supprimées, survivante priority 0.9)
+- [x] Schema structured data : Article + FAQPage + BreadcrumbList
+- [x] GEO : DefinedTerm, HowTo, data-speakable, stat blocks
+- [x] Humanizer pass
+- [x] Build Next.js : OK
+
+---
+
 ## Structure de contenu actuelle
 
-### Piliers principaux
+### Piliers consolidés (priority 0.9)
 | URL | Titre | Priority | Dernière MAJ |
 |-----|-------|----------|-------------|
-| /ressources/setting-commercial-b2b | Setting commercial B2B | 0.8 | 2026-03-17 |
-| /ressources/closing-b2b | Closing B2B | 0.8 | 2026-03-18 |
+| /ressources/setting-commercial-b2b | Setting commercial B2B | 0.9 | 2026-03-26 |
+| /ressources/closing-b2b | Closing B2B | 0.9 | 2026-03-26 |
+| /ressources/prospection-linkedin-b2b | Prospection LinkedIn B2B | 0.9 | 2026-03-26 |
+| /ressources/methodes-vente-b2b | Méthodes de vente B2B | 0.9 | 2026-03-26 |
 | /ressources/comment-devenir-setter-b2b | Devenir setter ou closer B2B | 0.8 | 2026-03-26 |
-| /ressources/setting-linkedin-definition | Setting LinkedIn : définition | 0.8 | 2026-03-25 |
-| /ressources/setting-commercial-linkedin | Setting commercial LinkedIn | 0.8 | 2026-03-25 |
+| /externaliser-prospection-linkedin | Externaliser sa prospection | 0.9 | 2026-03-26 |
+
+### Articles standalone
+| URL | Titre | Priority | Dernière MAJ |
+|-----|-------|----------|-------------|
+| /ressources/signal-achat-linkedin | Signaux d'achat LinkedIn | 0.7 | 2026-03-17 |
+| /ressources/ia-methode-humain-setting-linkedin | IA, méthode et humain | 0.7 | 2026-03-17 |
+| /ressources/setting-humain-vs-automatisation-linkedin | Setting humain vs automatisation | 0.7 | 2026-03-19 |
+| /ressources/devenir-business-developer | Devenir business developer | 0.7 | 2026-03-18 |
 | /ressources/comment-prospecter-sur-linkedin | Comment prospecter sur LinkedIn | 0.8 | 2026-03-25 |
 | /ressources/agence-prospection-linkedin | Agence prospection LinkedIn | 0.8 | 2026-03-25 |
-| /ressources/methodes-vente-b2b | Méthodes de vente B2B | 0.7 | 2026-03-18 |
+| /ressources/social-selling-linkedin-b2b | Social selling LinkedIn | 0.7 | 2026-03-25 |
+| /ressources/automatisation-prospection-linkedin | Automatisation prospection LinkedIn | 0.7 | 2026-03-25 |
 
-### Redirections actives
+### Redirections actives (22 total)
 | Source | Destination | Type |
 |--------|-------------|------|
 | /blog | /ressources | 301 |
@@ -113,6 +242,22 @@
 | /setting | /ressources/setting-commercial-b2b | 301 |
 | /methode/nurturing | /methode/setting-linkedin | 301 |
 | /methode | /methode/setting-linkedin | 302 |
+| /ressources/setting-linkedin-definition | /ressources/setting-commercial-b2b | 301 |
+| /ressources/setter-b2b-definition | /ressources/setting-commercial-b2b | 301 |
+| /ressources/difference-setting-closing | /ressources/setting-commercial-b2b | 301 |
+| /ressources/setting-commercial-linkedin | /ressources/setting-commercial-b2b | 301 |
+| /ressources/closer-b2b | /ressources/closing-b2b | 301 |
+| /ressources/discovery-call-b2b | /ressources/closing-b2b | 301 |
+| /ressources/gestion-objections-b2b | /ressources/closing-b2b | 301 |
+| /ressources/script-closing-b2b | /ressources/closing-b2b | 301 |
+| /ressources/methode-soncas | /ressources/methodes-vente-b2b | 301 |
+| /ressources/methode-spin-selling | /ressources/methodes-vente-b2b | 301 |
+| /ressources/challenger-sale-definition | /ressources/methodes-vente-b2b | 301 |
+| /ressources/qualification-leads-b2b | /ressources/methodes-vente-b2b | 301 |
+| /ressources/messages-linkedin-sans-reponse | /ressources/prospection-linkedin-b2b | 301 |
+| /ressources/script-setting-linkedin | /ressources/prospection-linkedin-b2b | 301 |
+| /ressources/relance-linkedin-b2b | /ressources/prospection-linkedin-b2b | 301 |
+| /ressources/messages-prospection-linkedin-exemples | /ressources/prospection-linkedin-b2b | 301 |
 | /ressources/cout-setter-b2b-prix | /ressources/comment-devenir-setter-b2b | 301 |
 | /ressources/comment-choisir-setter-linkedin | /ressources/comment-devenir-setter-b2b | 301 |
 | /ressources/combien-coute-setting-linkedin | /ressources/comment-devenir-setter-b2b | 301 |
