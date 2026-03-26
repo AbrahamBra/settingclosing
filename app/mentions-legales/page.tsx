@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     },
   },
   robots: { index: true, follow: true },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mentions légales | Setting',
+    description: 'Mentions légales du site setting.live : éditeur, hébergeur, propriété intellectuelle et conditions d\'utilisation.',
+  },
 }
 
 const breadcrumbSchema = {

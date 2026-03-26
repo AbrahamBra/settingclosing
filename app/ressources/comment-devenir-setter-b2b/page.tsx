@@ -22,6 +22,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Devenir setter ou closer B2B en 2026 | Formation, prix, guide | Setting',
+    description: 'Comment devenir setter ou closer B2B en 2026. Formation, comp\u00e9tences r\u00e9elles, prix du march\u00e9, outils et crit\u00e8res pour choisir un setter. Guide terrain complet.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

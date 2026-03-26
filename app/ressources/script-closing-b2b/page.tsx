@@ -25,6 +25,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/script-closing-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Scripts de closing B2B : exemples | Setting',
+    description: "Ouverture, discovery, pitch, demande de décision : les scripts de closing B2B avec exemples avant/après et les erreurs qui coûtent des deals.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -167,7 +172,7 @@ export default function ScriptClosingPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Scripts et phrases de closing B2B : cadre et exemples
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Un script de closing n&apos;est pas un texte à réciter. C&apos;est un cadre : les phases
               de l&apos;appel, les objectifs de chaque moment, les questions qui font avancer. Les mots
               changent selon le prospect. La structure, non.
@@ -175,9 +180,11 @@ export default function ScriptClosingPage() {
             <AuthorBlock date="2026-03-18" readTime="10 min de lecture" dateLabel="18 mars 2026" updatedDate="2026-03-19" />
           </header>
 
-          <TldrBox>
-            <p>Scripts et phrases de closing B2B utilis&eacute;s en conditions r&eacute;elles. Structure d&apos;un closing en 4 temps, phrases de transition, techniques de gestion du silence, et les erreurs qui font capoter un deal &agrave; la derni&egrave;re minute.</p>
-          </TldrBox>
+          <div data-speakable="true">
+            <TldrBox>
+              <p>Scripts et phrases de closing B2B utilis&eacute;s en conditions r&eacute;elles. Structure d&apos;un closing en 4 temps, phrases de transition, techniques de gestion du silence, et les erreurs qui font capoter un deal &agrave; la derni&egrave;re minute.</p>
+            </TldrBox>
+          </div>
 
           {/* Section 1 — Script vs template */}
           <section className="mb-14">
@@ -411,8 +418,8 @@ export default function ScriptClosingPage() {
               Questions fréquentes
             </h2>
             <div className="space-y-6">
-              {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
+              {faqItems.map(({ question, answer }, i) => (
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5" {...(i === 0 ? { 'data-speakable': 'true' } : {})}>
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>

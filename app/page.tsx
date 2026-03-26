@@ -37,6 +37,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting LinkedIn B2B | Prospection externalisée — Setting.live',
+    description: 'Service de setting LinkedIn pour solopreneurs B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
+  },
 }
 
 const globalSchema = {
@@ -66,11 +71,9 @@ const globalSchema = {
         height: 512,
       },
       description: 'Prospection LinkedIn externalisée pour solopreneurs et fondateurs B2B. Méthode signal-based, setter dédié, IA + validation humaine.',
+      alternateName: 'ChallengersLab',
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
-        'https://www.linkedin.com/in/abraham-brakha',
-        'https://www.setting.live/a-propos',
-        'https://www.setting.live/equipe/abraham-brakha',
       ],
       foundingDate: '2024',
       founder: {

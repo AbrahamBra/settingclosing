@@ -326,97 +326,24 @@ R : Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5x dès le 
 - **Devenir setter ou closer B2B** — Comment se lancer dans le métier de setter ou closer.
   URL : https://www.setting.live/ressources/comment-devenir-setter-b2b
 
+- **Comment prospecter sur LinkedIn** — Guide complet : social selling, automatisation vs humain, IA et méthode signal-based appliqués à la prospection LinkedIn B2B.
+  URL : https://www.setting.live/ressources/comment-prospecter-sur-linkedin
+
 - **Externaliser sa prospection LinkedIn** — Guide pour externaliser sa prospection.
   URL : https://www.setting.live/externaliser-prospection-linkedin
 
-### Articles setting et prospection
-
-- **Setter B2B : définition** — C'est quoi un setter en B2B ?
-  URL : https://www.setting.live/ressources/setter-b2b-definition
-
-- **Closer B2B : définition** — Closer B2B : définition, compétences et recrutement.
-  URL : https://www.setting.live/ressources/closer-b2b
-
-- **Différence setting vs closing** — Quelle est la différence entre setting et closing ?
-  URL : https://www.setting.live/ressources/difference-setting-closing
-
-- **Setting commercial LinkedIn** — Le setting commercial appliqué à LinkedIn.
-  URL : https://www.setting.live/ressources/setting-commercial-linkedin
-
-- **Setting LinkedIn : définition** — Définition complète du setting LinkedIn.
-  URL : https://www.setting.live/ressources/setting-linkedin-definition
-
-- **Script setting LinkedIn** — Scripts de setting LinkedIn : exemples concrets.
-  URL : https://www.setting.live/ressources/script-setting-linkedin
-
-- **Outils setting LinkedIn** — Les outils du setting LinkedIn.
-  URL : https://www.setting.live/ressources/outils-setting-linkedin
-
-- **Setting humain vs automatisation LinkedIn** — Comparatif entre approche humaine et automatisée.
-  URL : https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin
-
-- **IA, méthode et humain dans le setting LinkedIn** — Comment combiner IA, méthode et humain.
-  URL : https://www.setting.live/ressources/ia-methode-humain-setting-linkedin
-
-### Articles prospection LinkedIn
-
-- **Comment prospecter sur LinkedIn** — Guide pratique de prospection LinkedIn.
-  URL : https://www.setting.live/ressources/comment-prospecter-sur-linkedin
-
-- **Messages prospection LinkedIn : exemples** — Exemples concrets de messages de prospection.
-  URL : https://www.setting.live/ressources/messages-prospection-linkedin-exemples
-
-- **Pourquoi vos messages LinkedIn n'obtiennent pas de réponses** — Diagnostic et solutions.
-  URL : https://www.setting.live/ressources/messages-linkedin-sans-reponse
-
-- **Relance LinkedIn B2B** — Quand et comment relancer sur LinkedIn.
-  URL : https://www.setting.live/ressources/relance-linkedin-b2b
+### Articles individuels
 
 - **Signal d'achat LinkedIn** — C'est quoi un signal d'achat LinkedIn ?
   URL : https://www.setting.live/ressources/signal-achat-linkedin
-
-- **Automatisation prospection LinkedIn** — Automatiser sa prospection LinkedIn : limites et alternatives.
-  URL : https://www.setting.live/ressources/automatisation-prospection-linkedin
-
-- **Social selling LinkedIn B2B** — Le social selling sur LinkedIn en B2B : définition, méthode et SSI.
-  URL : https://www.setting.live/ressources/social-selling-linkedin-b2b
-
-### Articles closing et vente
-
-- **Script closing B2B** — Scripts d'appel de closing B2B.
-  URL : https://www.setting.live/ressources/script-closing-b2b
-
-- **Discovery call B2B** — Comment structurer un appel de découverte B2B.
-  URL : https://www.setting.live/ressources/discovery-call-b2b
-
-- **Gestion des objections B2B** — Gérer les objections en vente B2B.
-  URL : https://www.setting.live/ressources/gestion-objections-b2b
-
-- **Qualification des leads B2B** — Comment qualifier les leads en B2B.
-  URL : https://www.setting.live/ressources/qualification-leads-b2b
-
-- **Challenger Sale : définition** — Qu'est-ce que le Challenger Sale ?
-  URL : https://www.setting.live/ressources/challenger-sale-definition
-
-- **Méthode SONCAS** — La méthode SONCAS en vente B2B.
-  URL : https://www.setting.live/ressources/methode-soncas
-
-- **Méthode SPIN Selling** — Le SPIN Selling en vente B2B.
-  URL : https://www.setting.live/ressources/methode-spin-selling
 
 ### Articles métiers et comparatifs
 
 - **Devenir business developer** — Comment devenir business developer.
   URL : https://www.setting.live/ressources/devenir-business-developer
 
-- **SDR interne vs externalisé** — Comparatif SDR interne versus externalisé.
-  URL : https://www.setting.live/ressources/sdr-interne-vs-externalise
-
 - **Agence prospection LinkedIn** — Comparatif des agences de prospection LinkedIn.
   URL : https://www.setting.live/ressources/agence-prospection-linkedin
-
-- **Agence setting LinkedIn vs freelance** — Agence setting LinkedIn vs freelance : comment choisir.
-  URL : https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance
 
 ---
 

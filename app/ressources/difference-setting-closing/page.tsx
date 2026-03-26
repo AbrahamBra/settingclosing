@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/difference-setting-closing',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting vs Closing : la diff\u00e9rence | Setting',
+    description: 'Deux r\u00f4les distincts. Savoir lequel travailler en premier change tout \u00e0 votre croissance.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -213,7 +218,7 @@ export default function DifferenceSettingClosingPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Quelle est la différence entre setting et closing en B2B ?
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Deux rôles distincts dans un cycle de vente B2B. Comprendre lequel travailler
               en premier change tout à ce que vous signez chaque mois.
             </p>
@@ -221,7 +226,7 @@ export default function DifferenceSettingClosingPage() {
           </header>
 
           {/* Two Definition Blocks */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
+          <div data-speakable="true" className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
             <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5">
               <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
                 Setting

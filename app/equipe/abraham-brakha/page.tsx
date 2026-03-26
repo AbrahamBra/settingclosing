@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'profile',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Abraham Brakha — Fondateur Setting',
+    description: "Développeur spécialisé en automatisation IA appliquée au sales B2B. Créateur du système de détection de signaux d'achat LinkedIn.",
+  },
 }
 
 const personSchema = {
@@ -43,7 +48,6 @@ const personSchema = {
   },
   sameAs: [
     'https://www.linkedin.com/in/abraham-brakha',
-    'https://www.setting.live/a-propos',
   ],
   worksFor: {
     '@type': 'Organization',

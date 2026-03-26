@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/methode-soncas',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Méthode SONCAS : 6 leviers B2B | Setting',
+    description: 'SONCAS : comment utiliser les 6 motivations d\'achat pour améliorer sa discovery call et son taux de closing en B2B.',
+  },
 }
 
 const articleSchema = {
@@ -205,7 +210,7 @@ export default function MethodeSoncasPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Méthode SONCAS en B2B 2026 : définition, 6 leviers et exemples concrets
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               SONCAS est un cadre pour comprendre pourquoi un prospect achète — ou n&apos;achète pas.
               Six motivations universelles : Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie.
               En les identifiant pendant la discovery call, vous adaptez votre discours à ce qui
@@ -215,7 +220,7 @@ export default function MethodeSoncasPage() {
           </header>
 
           {/* Stat externe */}
-          <div className="bg-bg-secondary rounded-xl p-5 border border-accent/20 mb-10">
+          <div data-speakable="true" className="bg-bg-secondary rounded-xl p-5 border border-accent/20 mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Chiffre clé
             </p>
@@ -475,8 +480,8 @@ export default function MethodeSoncasPage() {
               Questions fréquentes sur la méthode SONCAS
             </h2>
             <div className="space-y-6">
-              {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
+              {faqItems.map(({ question, answer }, i) => (
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5" {...(i === 0 ? { 'data-speakable': 'true' } : {})}>
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>

@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/agence-prospection-linkedin',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Agence de prospection LinkedIn : comment choisir en 2026',
+    description: 'Comparatif des mod\u00e8les d\u2019agence de prospection LinkedIn : automation, hybride et setting. Crit\u00e8res de s\u00e9lection, tarifs r\u00e9els et red flags.',
+  },
 }
 
 const articleSchema = {
@@ -152,7 +157,7 @@ export default function AgenceProspectionLinkedInPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Agence de prospection LinkedIn : comment choisir en 2026
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Le march&eacute; des agences de prospection LinkedIn est opaque. Entre les vendeurs
               d&apos;automatisation &agrave; 300&nbsp;&euro; et les agences premium &agrave;
               3&nbsp;000&nbsp;&euro; avec 6 mois d&apos;engagement, il y a de quoi se perdre.
@@ -162,9 +167,11 @@ export default function AgenceProspectionLinkedInPage() {
             <AuthorBlock date="2026-03-25" readTime="13 min de lecture" dateLabel="25 mars 2026" />
           </header>
 
-          <TldrBox>
-            <p>Trois mod&egrave;les d&apos;agence coexistent : automation (300-600 &euro;, risque de ban), hybride (1 500-3 000 &euro;, engagement long), et setting (790 &euro; chez Setting, z&eacute;ro engagement, setter d&eacute;di&eacute;). Crit&egrave;res cl&eacute;s : m&eacute;thode signal-based, garantie RDV, transparence reporting, absence d&apos;engagement forc&eacute;.</p>
-          </TldrBox>
+          <div data-speakable="true">
+            <TldrBox>
+              <p>Trois mod&egrave;les d&apos;agence coexistent : automation (300-600 &euro;, risque de ban), hybride (1 500-3 000 &euro;, engagement long), et setting (790 &euro; chez Setting, z&eacute;ro engagement, setter d&eacute;di&eacute;). Crit&egrave;res cl&eacute;s : m&eacute;thode signal-based, garantie RDV, transparence reporting, absence d&apos;engagement forc&eacute;.</p>
+            </TldrBox>
+          </div>
 
           <nav aria-label="Sommaire" className="bg-bg-secondary rounded-xl p-6 mb-14 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">Sommaire</p>

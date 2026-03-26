@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/relance-linkedin-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Relance LinkedIn B2B : quand et comment | Setting',
+    description: "Pas de réponse à votre message LinkedIn ? Quand relancer, avec quel message et combien de fois : le cadre complet pour des follow-ups qui obtiennent des réponses.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -183,7 +188,7 @@ export default function RelanceLinkedInB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Vous avez envoyé un premier message. Pas de réponse. Que faire maintenant — relancer, attendre,
               ou classer le prospect comme perdu ? Ce guide répond à ces trois questions avec des exemples
               de messages réels et un cadre applicable dès aujourd&apos;hui.
@@ -192,7 +197,7 @@ export default function RelanceLinkedInB2BPage() {
           </header>
 
           {/* Stat block */}
-          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-10 border border-white/[0.06]">
+          <div data-speakable="true" className="bg-bg-secondary rounded-xl px-6 py-5 mb-10 border border-white/[0.06]">
             <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
             <p className="font-sans font-semibold text-text-primary mb-1">
               Entre 70 et 80&nbsp;% des réponses obtenues sur LinkedIn arrivent après une relance — pas après le premier message.

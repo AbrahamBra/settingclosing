@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/challenger-sale-definition',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Challenger Sale : définition et méthode | Setting',
+    description: "Issue d'une étude sur 6 000 commerciaux, la méthode Challenger Sale identifie le profil qui surperforme et ses 3 composantes clés.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -215,7 +220,7 @@ export default function ChallengerSalePage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Qu&apos;est-ce que le Challenger Sale ?
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La méthode de vente B2B issue d&apos;une étude sur 6 000 commerciaux — et pourquoi
               le profil qui surperforme n&apos;est pas celui qu&apos;on attendait.
             </p>
@@ -223,7 +228,7 @@ export default function ChallengerSalePage() {
           </header>
 
           {/* Definition Block */}
-          <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
+          <div data-speakable="true" className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Définition
             </p>
@@ -382,7 +387,7 @@ export default function ChallengerSalePage() {
             </h2>
             <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
-                <div key={i} className="py-5">
+                <div key={i} className="py-5" {...(i === 0 ? { 'data-speakable': 'true' } : {})}>
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>

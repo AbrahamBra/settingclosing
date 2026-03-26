@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/messages-prospection-linkedin-exemples',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Messages de prospection LinkedIn : 15 exemples qui obtiennent des r\u00e9ponses',
+    description: '15 exemples de messages de prospection LinkedIn B2B class\u00e9s par signal d\u2019achat. Mod\u00e8les de connexion, d\u2019accroche et de relance avec taux de r\u00e9ponse r\u00e9els.',
+  },
 }
 
 const articleSchema = {

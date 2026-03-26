@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/social-selling-linkedin-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Social selling LinkedIn : d\u00e9finition, m\u00e9thode et SSI en B2B',
+    description: 'Le social selling LinkedIn consiste \u00e0 vendre via son r\u00e9seau professionnel. D\u00e9finition, m\u00e9thode, Social Selling Index (SSI) et lien avec le setting B2B.',
+  },
 }
 
 const articleSchema = {

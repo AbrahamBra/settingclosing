@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/automatisation-prospection-linkedin',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Automatisation de la prospection LinkedIn : limites et alternatives en 2026',
+    description: 'Comparatif des outils d\u2019automatisation LinkedIn (Waalaxy, Lemlist, LaGrowthMachine), risques r\u00e9els et alternative setting humain.',
+  },
 }
 
 const articleSchema = {

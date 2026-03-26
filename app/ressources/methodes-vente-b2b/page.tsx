@@ -25,6 +25,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/methodes-vente-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'M\u00e9thodes de vente B2B : SONCAS, SPIN Selling, Challenger Sale | Setting',
+    description: 'Les 4 m\u00e9thodes de vente B2B qui structurent un cycle de vente. M\u00e9thode SONCAS, SPIN Selling, Challenger Sale et qualification de leads. Comparatif, exemples concrets et pipeline complet.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

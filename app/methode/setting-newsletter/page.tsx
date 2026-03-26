@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.setting.live/methode/setting-newsletter',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting Newsletter B2B : contenu expert segmenté et scoring | Setting',
+    description: 'Newsletter thought leadership opérée par IA : interview voix, Skill IA sur-mesure, scoring comportemental et routing automatique des leads chauds vers un appel.',
+  },
 }
 
 const webPageSchema = {

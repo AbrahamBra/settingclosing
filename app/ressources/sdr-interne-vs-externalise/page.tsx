@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SDR interne vs SDR externalisé | Setting',
+    description: 'Le comparatif coût réel entre recruter un SDR et externaliser sa prospection B2B.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -161,7 +166,7 @@ export default function SdrInterneVsExternalisePage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               SDR interne vs SDR externalisé : le comparatif coût réel
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Recruter un SDR ou externaliser sa prospection ? Ce n&apos;est pas une question
               idéologique. C&apos;est une question de chiffres. Voici le comparatif honnête,
               avec les vrais coûts des deux côtés.
@@ -169,12 +174,14 @@ export default function SdrInterneVsExternalisePage() {
             <AuthorBlock date="2026-03-19" readTime="8 min de lecture" dateLabel="19 mars 2026" updatedDate="2026-03-19" />
           </header>
 
-          <TldrBox>
-            <p>Recruter un SDR co&ucirc;te 35-45k&nbsp;&euro;/an, avec 3-6 mois avant les premiers r&eacute;sultats. Externaliser d&eacute;marre &agrave; 790&nbsp;&euro;/mois sans engagement. Cet article compare les deux options : co&ucirc;t r&eacute;el, d&eacute;lai de mise en route, contr&ocirc;le et ROI.</p>
-          </TldrBox>
+          <div data-speakable="true">
+            <TldrBox>
+              <p>Recruter un SDR co&ucirc;te 35-45k&nbsp;&euro;/an, avec 3-6 mois avant les premiers r&eacute;sultats. Externaliser d&eacute;marre &agrave; 790&nbsp;&euro;/mois sans engagement. Cet article compare les deux options : co&ucirc;t r&eacute;el, d&eacute;lai de mise en route, contr&ocirc;le et ROI.</p>
+            </TldrBox>
+          </div>
 
           {/* Definition block */}
-          <div className="bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-10">
+          <div data-speakable="true" className="bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
               Définition
             </p>

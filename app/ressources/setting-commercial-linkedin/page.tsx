@@ -22,6 +22,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/setting-commercial-linkedin',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting commercial LinkedIn : m\u00e9thode compl\u00e8te pour g\u00e9n\u00e9rer des RDV qualifi\u00e9s',
+    description: 'Le setting sur LinkedIn n\u2019est pas de la prospection automatis\u00e9e. D\u00e9couvrez la m\u00e9thode en 9 \u00e9tapes, les outils et les signaux qui g\u00e9n\u00e8rent 20 \u00e0 35 % de taux de r\u00e9ponse.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

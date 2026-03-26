@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.setting.live/methode/setting-telephonique',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting téléphonique — Qualification BANT | Setting',
+    description: 'Grille BANT co-construite, Challenger Sale, scoring pondéré et routing par maturité. Chaque lead est qualifié, scoré et routé.',
+  },
 }
 
 const webPageSchema = {

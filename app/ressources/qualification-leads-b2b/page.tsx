@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/qualification-leads-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Qualification de leads B2B en 2026 | Setting',
+    description: 'BANT, MEDDIC, qualification signal-based : comment \u00e9valuer un prospect B2B avant d\'allouer du temps commercial. M\u00e9thodes compar\u00e9es et exemples concrets.',
+  },
 }
 
 const articleSchema = {
@@ -203,7 +208,7 @@ export default function QualificationLeadsB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Qualifier un lead en B2B 2026 : méthodes, critères et exemples
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Un lead non qualifié qui arrive dans l&apos;agenda du closeur, c&apos;est du temps
               perdu — et parfois un deal raté qui aurait pu attendre. Qualifier un lead en B2B
               signifie évaluer sa probabilité de devenir client avant de lui consacrer du temps
@@ -213,7 +218,7 @@ export default function QualificationLeadsB2BPage() {
           </header>
 
           {/* Stat externe */}
-          <div className="bg-bg-secondary rounded-xl p-5 border border-accent/20 mb-10">
+          <div data-speakable="true" className="bg-bg-secondary rounded-xl p-5 border border-accent/20 mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Chiffre clé
             </p>

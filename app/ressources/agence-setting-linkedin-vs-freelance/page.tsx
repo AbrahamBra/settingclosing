@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Agence setting LinkedIn vs setter freelance | Setting',
+    description: 'Co\u00fbt, m\u00e9thode, outils, supervision : le comparatif entre agence de setting et setter freelance.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

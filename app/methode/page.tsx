@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://www.setting.live/methode',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Notre méthode | Setting',
+    description: 'Trois niveaux de maturité, trois méthodes. Setting LinkedIn, Setting téléphonique, Setting Newsletter.',
+  },
 }
 
 const webPageSchema = {

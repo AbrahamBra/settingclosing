@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Messages LinkedIn sans réponse | Setting',
+    description: "Pitch trop tôt, deuxième phrase générique, test du téléphone raté. Les 5 erreurs de prospection LinkedIn les plus courantes — avec corrections.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -201,7 +206,7 @@ export default function MessagesLinkedInSansReponsePage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Pourquoi vos messages LinkedIn n&apos;obtiennent pas de réponses
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Ce n&apos;est pas LinkedIn qui ne fonctionne pas. Ce sont 5 erreurs précises
               qui tuent les taux de réponse — et qui se corrigent avec une règle simple à chaque fois.
             </p>
@@ -209,7 +214,7 @@ export default function MessagesLinkedInSansReponsePage() {
           </header>
 
           {/* Stat block */}
-          <div className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
+          <div data-speakable="true" className="bg-bg-secondary rounded-xl px-6 py-5 mb-14 border border-white/[0.06]">
             <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
             <p className="font-sans font-semibold text-text-primary mb-1">
               Le taux de réponse moyen sur les messages LinkedIn non personnalisés est inférieur à 3&nbsp;%.
