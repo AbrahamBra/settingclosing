@@ -285,7 +285,7 @@ export default function CommentProspecterLinkedInPage() {
                 </ul>
               </div>
               <p className="text-sm text-text-muted italic">
-                Pour aller plus loin : <a href="/ressources/outils-setting-linkedin" className="text-accent hover:underline">Les outils du setting LinkedIn</a>
+                Pour aller plus loin : <a href="/externaliser-prospection-linkedin#outils" className="text-accent hover:underline">Les outils du setting LinkedIn</a>
               </p>
             </section>
 

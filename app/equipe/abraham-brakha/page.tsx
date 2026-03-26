@@ -110,7 +110,7 @@ const articles = [
   { href: '/ressources/methode-soncas', title: 'M\u00e9thode SONCAS en B2B' },
   { href: '/ressources/methode-spin-selling', title: 'SPIN Selling\u00a0: la m\u00e9thode' },
   { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation' },
-  { href: '/ressources/sdr-interne-vs-externalise', title: 'SDR interne vs externalis\u00e9' },
+  { href: '/externaliser-prospection-linkedin#sdr-commercial', title: 'SDR interne vs externalis\u00e9' },
 ]
 
 export default function AbrahamBrakhaPage() {

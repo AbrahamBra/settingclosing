@@ -66,6 +66,22 @@ const nextConfig: NextConfig = {
         destination: '/ressources/comment-devenir-setter-b2b',
         permanent: true,
       },
+      // Consolidation SEO : 3 articles fusionnés → pilier "externaliser prospection"
+      {
+        source: '/ressources/agence-setting-linkedin-vs-freelance',
+        destination: '/externaliser-prospection-linkedin',
+        permanent: true,
+      },
+      {
+        source: '/ressources/sdr-interne-vs-externalise',
+        destination: '/externaliser-prospection-linkedin',
+        permanent: true,
+      },
+      {
+        source: '/ressources/outils-setting-linkedin',
+        destination: '/externaliser-prospection-linkedin',
+        permanent: true,
+      },
     ]
   },
   async headers() {

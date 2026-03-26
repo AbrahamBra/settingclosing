@@ -121,7 +121,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/externaliser-prospection-linkedin',
-      lastModified: new Date('2026-03-19'),
+      lastModified: new Date('2026-03-26'),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
@@ -174,12 +174,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
-      lastModified: new Date('2026-03-19'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // sdr-interne-vs-externalise → 301 vers /externaliser-prospection-linkedin
     {
       url: 'https://www.setting.live/equipe/abraham-brakha',
       lastModified: new Date('2026-03-25'),
@@ -187,18 +182,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     // setting-commercial-linkedin — redirigé vers setting-commercial-b2b (consolidation SEO)
-    {
-      url: 'https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/outils-setting-linkedin',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // comment-choisir-setter-linkedin — redirigé vers comment-devenir-setter-b2b (consolidation SEO)
+    // combien-coute-setting-linkedin — redirigé vers comment-devenir-setter-b2b (consolidation SEO)
+    // agence-setting-linkedin-vs-freelance → 301 vers /externaliser-prospection-linkedin
+    // outils-setting-linkedin → 301 vers /externaliser-prospection-linkedin
     {
       url: 'https://www.setting.live/ressources/comment-prospecter-sur-linkedin',
       lastModified: new Date('2026-03-25'),

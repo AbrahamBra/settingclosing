@@ -87,11 +87,9 @@ const articles: Article[] = [
   { slug: 'difference-setting-closing', title: 'Quelle est la différence entre setting et closing ?', readTime: '7 min', category: 'methode', date: '2026-03-16' },
   // Comparatifs
   { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting', date: '2026-03-19' },
-  { slug: 'sdr-interne-vs-externalise', title: 'SDR interne vs externalisé : coût réel et ROI', readTime: '10 min', category: 'setting', date: '2026-03-19' },
-  { slug: 'agence-setting-linkedin-vs-freelance', title: 'Agence setting LinkedIn vs setter freelance : le bon choix selon votre situation', readTime: '9 min', category: 'setting', date: '2026-03-25' },
   // Guides
   { slug: 'setting-commercial-linkedin', title: 'Setting commercial LinkedIn : la méthode pour générer des RDV qualifiés', readTime: '11 min', category: 'setting', date: '2026-03-25' },
-  { slug: 'outils-setting-linkedin', title: 'Outils du setting LinkedIn : Reactin, Make et BreakCold', readTime: '9 min', category: 'setting', date: '2026-03-25' },
+  // outils-setting-linkedin, comment-choisir-setter-linkedin, combien-coute-setting-linkedin — consolidated/redirected
   // Guides complets
   { slug: 'closing-b2b', title: 'Closing B2B : le guide complet pour conclure en vente', readTime: '12 min', category: 'methode', date: '2026-03-18' },
   { slug: 'devenir-business-developer', title: 'Devenir business developer : parcours, compétences et salaire', readTime: '10 min', category: 'methode', date: '2026-02-26' },
