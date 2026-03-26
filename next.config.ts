@@ -50,6 +50,27 @@ const nextConfig: NextConfig = {
         destination: '/ressources/setting-commercial-b2b',
         permanent: true,
       },
+      // Consolidation SEO : 4 articles fusionnés → pilier "méthodes de vente B2B"
+      {
+        source: '/ressources/methode-soncas',
+        destination: '/ressources/methodes-vente-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/methode-spin-selling',
+        destination: '/ressources/methodes-vente-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/challenger-sale-definition',
+        destination: '/ressources/methodes-vente-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/qualification-leads-b2b',
+        destination: '/ressources/methodes-vente-b2b',
+        permanent: true,
+      },
       // Consolidation SEO : 3 articles fusionnés → pilier "devenir setter ou closer B2B"
       {
         source: '/ressources/cout-setter-b2b-prix',

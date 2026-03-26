@@ -82,12 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     // setter-b2b-definition — redirigé vers setting-commercial-b2b (consolidation SEO)
-    {
-      url: 'https://www.setting.live/ressources/challenger-sale-definition',
-      lastModified: new Date('2026-03-16'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // challenger-sale-definition — redirigé vers methodes-vente-b2b (consolidation SEO)
     // difference-setting-closing — redirigé vers setting-commercial-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/script-setting-linkedin',
@@ -140,28 +135,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/methodes-vente-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      lastModified: new Date('2026-03-26'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
-    {
-      url: 'https://www.setting.live/ressources/methode-soncas',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/methode-spin-selling',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/qualification-leads-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // methode-soncas — redirigé vers methodes-vente-b2b (consolidation SEO)
+    // methode-spin-selling — redirigé vers methodes-vente-b2b (consolidation SEO)
+    // qualification-leads-b2b — redirigé vers methodes-vente-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/devenir-business-developer',
       lastModified: new Date('2026-03-18'),
