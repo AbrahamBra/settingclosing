@@ -563,8 +563,8 @@ export default function SettingHumainVsAutomatisationPage() {
                 La comparaison honnête n&apos;est pas "100 €/mois d&apos;outil vs 800 €/mois de setter".
                 C&apos;est "800 à 2 300 €/mois tout compris avec 3% de taux de réponse vs 800 €/mois tout compris avec 20 à 35%".
                 Pour en savoir plus sur comment évaluer les offres de setting,{' '}
-                <a href="/ressources/cout-setter-b2b-prix" className="text-accent hover:underline transition-colors">
-                  consultez le comparatif des modèles de rémunération
+                <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline transition-colors">
+                  consultez le guide complet du setter B2B pour les modèles de rémunération
                 </a>.
               </p>
             </section>
@@ -600,7 +600,7 @@ export default function SettingHumainVsAutomatisationPage() {
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: 'Détecter les signaux d\u2019achat LinkedIn pour prospecter au bon moment' },
-                { href: '/ressources/cout-setter-b2b-prix', label: "Prix d'un setter B2B en 2026 : les vrais chiffres" },
+                { href: '/ressources/comment-devenir-setter-b2b', label: "Devenir setter ou closer B2B : le guide complet" },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>

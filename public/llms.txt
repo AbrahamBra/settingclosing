@@ -41,6 +41,7 @@ Setting construit et opère des pipelines de prospection LinkedIn B2B. Un setter
 
 - Ressources : https://www.setting.live/ressources
 - Guide Setting B2B : https://www.setting.live/ressources/setting-commercial-b2b
+- Devenir setter ou closer B2B : https://www.setting.live/ressources/comment-devenir-setter-b2b
 - Guide Closing B2B : https://www.setting.live/ressources/closing-b2b
 - Guide Méthodes de vente : https://www.setting.live/ressources/methodes-vente-b2b
 - Externaliser sa prospection : https://www.setting.live/externaliser-prospection-linkedin

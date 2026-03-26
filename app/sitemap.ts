@@ -58,15 +58,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
-      lastModified: new Date('2026-03-18'),
+      lastModified: new Date('2026-03-26'),
       changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/cout-setter-b2b-prix',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.8,
     },
     // setting-linkedin-definition — redirigé vers setting-commercial-b2b (consolidation SEO)
     {
@@ -193,18 +187,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     // setting-commercial-linkedin — redirigé vers setting-commercial-b2b (consolidation SEO)
-    {
-      url: 'https://www.setting.live/ressources/comment-choisir-setter-linkedin',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/combien-coute-setting-linkedin',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
     {
       url: 'https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance',
       lastModified: new Date('2026-03-25'),

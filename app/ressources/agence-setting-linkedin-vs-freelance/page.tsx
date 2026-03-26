@@ -405,7 +405,7 @@ export default function AgenceSettingLinkedinVsFreelancePage() {
               <p>
                 Si vous &ecirc;tes dans cette configuration, un freelance bien choisi va vous co&ucirc;ter
                 moins cher et fonctionner correctement. L&apos;article sur le{' '}
-                <a href="/ressources/cout-setter-b2b-prix" className="text-accent hover:underline transition-colors">co&ucirc;t d&apos;un setter B2B</a>{' '}
+                <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline transition-colors">guide complet du setter B2B</a>{' '}
                 d&eacute;taille les mod&egrave;les de r&eacute;mun&eacute;ration possibles.
               </p>
             </section>
@@ -497,9 +497,8 @@ export default function AgenceSettingLinkedinVsFreelancePage() {
             </p>
             <div className="space-y-3">
               {[
-                { href: '/ressources/cout-setter-b2b-prix', label: "Co\u00fbt d\u0027un setter B2B en 2026 : les vrais chiffres" },
+                { href: '/ressources/comment-devenir-setter-b2b', label: "Devenir setter ou closer B2B : le guide complet" },
                 { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs externalis\u00e9 : le comparatif co\u00fbt r\u00e9el' },
-                { href: '/ressources/comment-choisir-setter-linkedin', label: 'Comment choisir un setter LinkedIn pour votre entreprise' },
                 { href: '/tarifs', label: 'Tarifs Setting : forfaits et garantie r\u00e9sultats' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">

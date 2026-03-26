@@ -50,6 +50,22 @@ const nextConfig: NextConfig = {
         destination: '/ressources/setting-commercial-b2b',
         permanent: true,
       },
+      // Consolidation SEO : 3 articles fusionnés → pilier "devenir setter ou closer B2B"
+      {
+        source: '/ressources/cout-setter-b2b-prix',
+        destination: '/ressources/comment-devenir-setter-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/comment-choisir-setter-linkedin',
+        destination: '/ressources/comment-devenir-setter-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/combien-coute-setting-linkedin',
+        destination: '/ressources/comment-devenir-setter-b2b',
+        permanent: true,
+      },
     ]
   },
   async headers() {

@@ -69,8 +69,7 @@ const articles: Article[] = [
   { slug: 'script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : exemples et cadre complet', readTime: '11 min', category: 'setting', date: '2026-03-18' },
   { slug: 'relance-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min', category: 'setting', date: '2026-03-18' },
   { slug: 'prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : méthode complète en 2026', readTime: '13 min', category: 'setting', date: '2026-03-18' },
-  { slug: 'comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min', category: 'setting', date: '2026-03-18' },
-  { slug: 'cout-setter-b2b-prix', title: "Coût d'un setter B2B en 2026 : les vrais chiffres", readTime: '9 min', category: 'setting', date: '2026-03-18' },
+  { slug: 'comment-devenir-setter-b2b', title: 'Devenir setter ou closer B2B en 2026 : le guide complet', readTime: '20 min', category: 'setting', date: '2026-03-18' },
   { slug: 'messages-linkedin-sans-reponse', title: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses", readTime: '8 min', category: 'setting', date: '2026-03-17' },
   { slug: 'signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min', category: 'setting', date: '2026-03-17' },
   { slug: 'ia-methode-humain-setting-linkedin', title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn", readTime: '12 min', category: 'setting', date: '2026-03-17' },
@@ -92,8 +91,6 @@ const articles: Article[] = [
   { slug: 'agence-setting-linkedin-vs-freelance', title: 'Agence setting LinkedIn vs setter freelance : le bon choix selon votre situation', readTime: '9 min', category: 'setting', date: '2026-03-25' },
   // Guides
   { slug: 'setting-commercial-linkedin', title: 'Setting commercial LinkedIn : la méthode pour générer des RDV qualifiés', readTime: '11 min', category: 'setting', date: '2026-03-25' },
-  { slug: 'comment-choisir-setter-linkedin', title: 'Comment choisir son setter LinkedIn en 2026', readTime: '10 min', category: 'setting', date: '2026-03-25' },
-  { slug: 'combien-coute-setting-linkedin', title: 'Combien coûte le setting LinkedIn en 2026 ?', readTime: '9 min', category: 'setting', date: '2026-03-25' },
   { slug: 'outils-setting-linkedin', title: 'Outils du setting LinkedIn : Reactin, Make et BreakCold', readTime: '9 min', category: 'setting', date: '2026-03-25' },
   // Guides complets
   { slug: 'closing-b2b', title: 'Closing B2B : le guide complet pour conclure en vente', readTime: '12 min', category: 'methode', date: '2026-03-18' },

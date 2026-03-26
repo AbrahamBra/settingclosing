@@ -533,7 +533,7 @@ export default function SdrInterneVsExternalisePage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/cout-setter-b2b-prix', label: "Coût d'un setter B2B en 2026 : les vrais chiffres" },
+                { href: '/ressources/comment-devenir-setter-b2b', label: "Devenir setter ou closer B2B : le guide complet" },
                 { href: '/tarifs', label: 'Tarifs Setting : forfaits et garantie résultats' },
                 { href: '/externaliser-prospection-linkedin', label: 'Externaliser sa prospection LinkedIn B2B' },
               ].map(({ href, label }) => (
@@ -573,7 +573,7 @@ export default function SdrInterneVsExternalisePage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/cout-setter-b2b-prix', title: "Co\u00fbt d\u2019un setter B2B en 2026 : les vrais chiffres", readTime: '9 min' },
+            { href: '/ressources/comment-devenir-setter-b2b', title: "Devenir setter ou closer B2B : le guide complet", readTime: '20 min' },
             { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '10 min' },
             { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
           ]} />

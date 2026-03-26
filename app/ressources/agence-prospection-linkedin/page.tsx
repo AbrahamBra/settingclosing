@@ -251,7 +251,7 @@ export default function AgenceProspectionLinkedInPage() {
                 </table>
               </div>
               <p className="text-sm text-text-muted italic">
-                Pour aller plus loin : <a href="/ressources/combien-coute-setting-linkedin" className="text-accent hover:underline">Combien co&ucirc;te le setting LinkedIn en 2026 ?</a>
+                Pour aller plus loin : <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline">Devenir setter ou closer B2B : le guide complet</a>
               </p>
             </section>
 
@@ -274,7 +274,7 @@ export default function AgenceProspectionLinkedInPage() {
                 ))}
               </div>
               <p className="text-sm text-text-muted italic mt-4">
-                Pour aller plus loin : <a href="/ressources/comment-choisir-setter-linkedin" className="text-accent hover:underline">Comment choisir son setter LinkedIn</a>
+                Pour aller plus loin : <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline">le guide complet du setter B2B</a>
               </p>
             </section>
 
@@ -391,7 +391,7 @@ export default function AgenceProspectionLinkedInPage() {
 
           <RelatedArticles
             articles={[
-              { href: '/ressources/combien-coute-setting-linkedin', title: 'Combien co\u00fbte le setting LinkedIn en 2026 ?', readTime: '9 min' },
+              { href: '/ressources/comment-devenir-setter-b2b', title: 'Devenir setter ou closer B2B : le guide complet', readTime: '20 min' },
               { href: '/ressources/agence-setting-linkedin-vs-freelance', title: 'Agence setting vs setter freelance', readTime: '9 min' },
               { href: '/ressources/sdr-interne-vs-externalise', title: 'SDR interne vs externalis\u00e9', readTime: '10 min' },
             ]}

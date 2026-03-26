@@ -569,7 +569,7 @@ export default function OutilsSettingLinkedinPage() {
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn : la methode complete en 9 etapes' },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: 'IA, methode et humain : les 3 couches du systeme de setting' },
                 { href: '/ressources/signal-achat-linkedin', label: 'Detecter les signaux d\u2019achat LinkedIn pour prospecter au bon moment' },
-                { href: '/ressources/cout-setter-b2b-prix', label: 'Prix d\u2019un setter B2B en 2026 : les vrais chiffres' },
+                { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">&rarr;</span>

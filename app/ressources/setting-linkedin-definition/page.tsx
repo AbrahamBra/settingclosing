@@ -663,8 +663,8 @@ export default function SettingLinkedInDefinitionPage() {
                 Le co&ucirc;t par RDV qualifi&eacute; est la m&eacute;trique qui permet de comparer le setting
                 avec vos autres canaux (ads, cold email, salons).
                 D&eacute;tail des{' '}
-                <a href="/ressources/combien-coute-setting-linkedin" className="text-accent hover:underline transition-colors">
-                  co&ucirc;ts du setting LinkedIn
+                <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline transition-colors">
+                  guide complet du setter B2B
                 </a>.
               </p>
             </div>
@@ -763,8 +763,8 @@ export default function SettingLinkedInDefinitionPage() {
               </a>{' '}
               d&eacute;taille les crit&egrave;res de choix.
               Et si vous cherchez le bon prestataire :{' '}
-              <a href="/ressources/comment-choisir-setter-linkedin" className="text-accent hover:underline transition-colors">
-                comment choisir son setter LinkedIn
+              <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline transition-colors">
+                devenir setter ou closer B2B
               </a>.
               Consultez nos <a href="/tarifs" className="text-accent hover:underline transition-colors">tarifs</a> pour
               en savoir plus.
@@ -803,9 +803,8 @@ export default function SettingLinkedInDefinitionPage() {
                 { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : 6 exemples concrets' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
-                { href: '/ressources/combien-coute-setting-linkedin', label: 'Combien co\u00fbte le setting LinkedIn en 2026 ?' },
+                { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
                 { href: '/ressources/agence-setting-linkedin-vs-freelance', label: 'Agence setting LinkedIn vs setter freelance : le bon choix' },
-                { href: '/ressources/comment-choisir-setter-linkedin', label: 'Comment choisir son setter LinkedIn en 2026' },
                 { href: '/ressources/outils-setting-linkedin', label: 'Outils du setting LinkedIn : Reactin, Make et BreakCold' },
                 { href: '/ressources/ia-methode-humain-setting-linkedin', label: 'IA, m\u00e9thode et humain : les 3 couches du setting LinkedIn' },
                 { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },

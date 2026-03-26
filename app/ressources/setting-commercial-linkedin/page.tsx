@@ -663,7 +663,7 @@ export default function SettingCommercialLinkedInPage() {
                 { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
                 { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn' },
                 { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
-                { href: '/ressources/combien-coute-setting-linkedin', label: 'Combien co\u00fbte le setting LinkedIn ?' },
+                { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
               ].map(({ href, label }) => (
                 <a
                   key={href}

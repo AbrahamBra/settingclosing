@@ -445,7 +445,7 @@ export default function AutomatisationProspectionLinkedInPage() {
                 Avec un setter &agrave; 790&nbsp;&euro;/mois, tu n&apos;as rien &agrave; g&eacute;rer. Z&eacute;ro temps de configuration, z&eacute;ro risque de ban, 20-35&nbsp;% de taux de r&eacute;ponse, et des RDV qualifi&eacute;s dans ton agenda. Une fois qu&apos;on compte tout, l&apos;automatisation n&apos;est pas moins ch&egrave;re.
               </p>
               <p className="text-sm text-text-muted italic mt-4">
-                Pour aller plus loin : <a href="/ressources/combien-coute-setting-linkedin" className="text-accent hover:underline">Combien co&ucirc;te le setting LinkedIn en 2026 ?</a>
+                Pour aller plus loin : <a href="/ressources/comment-devenir-setter-b2b" className="text-accent hover:underline">Devenir setter ou closer B2B : le guide complet</a>
               </p>
             </section>
 
