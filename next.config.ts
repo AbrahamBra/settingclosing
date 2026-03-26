@@ -145,6 +145,27 @@ const nextConfig: NextConfig = {
         destination: '/externaliser-prospection-linkedin',
         permanent: true,
       },
+      // Consolidation SEO : 4 articles fusionnés → pilier "prospecter sur LinkedIn"
+      {
+        source: '/ressources/social-selling-linkedin-b2b',
+        destination: '/ressources/comment-prospecter-sur-linkedin',
+        permanent: true,
+      },
+      {
+        source: '/ressources/automatisation-prospection-linkedin',
+        destination: '/ressources/comment-prospecter-sur-linkedin',
+        permanent: true,
+      },
+      {
+        source: '/ressources/setting-humain-vs-automatisation-linkedin',
+        destination: '/ressources/comment-prospecter-sur-linkedin',
+        permanent: true,
+      },
+      {
+        source: '/ressources/ia-methode-humain-setting-linkedin',
+        destination: '/ressources/comment-prospecter-sur-linkedin',
+        permanent: true,
+      },
     ]
   },
   async headers() {
