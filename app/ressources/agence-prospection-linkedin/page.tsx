@@ -328,7 +328,7 @@ export default function AgenceProspectionLinkedInPage() {
                 </table>
               </div>
               <p className="text-sm text-text-muted italic">
-                Pour aller plus loin : <a href="/ressources/sdr-interne-vs-externalise" className="text-accent hover:underline">SDR interne vs externalis&eacute; : co&ucirc;t r&eacute;el et ROI</a>
+                Pour aller plus loin : <a href="/externaliser-prospection-linkedin#sdr-commercial" className="text-accent hover:underline">SDR interne vs externalis&eacute; : co&ucirc;t r&eacute;el et ROI</a>
               </p>
             </section>
 
@@ -392,8 +392,8 @@ export default function AgenceProspectionLinkedInPage() {
           <RelatedArticles
             articles={[
               { href: '/ressources/comment-devenir-setter-b2b', title: 'Devenir setter ou closer B2B : le guide complet', readTime: '20 min' },
-              { href: '/ressources/agence-setting-linkedin-vs-freelance', title: 'Agence setting vs setter freelance', readTime: '9 min' },
-              { href: '/ressources/sdr-interne-vs-externalise', title: 'SDR interne vs externalis\u00e9', readTime: '10 min' },
+              { href: '/externaliser-prospection-linkedin#agence-vs-freelance', title: 'Agence setting vs setter freelance', readTime: '9 min' },
+              { href: '/externaliser-prospection-linkedin#sdr-commercial', title: 'SDR interne vs externalis\u00e9', readTime: '10 min' },
             ]}
           />
         </div>

@@ -92,6 +92,27 @@ const nextConfig: NextConfig = {
         destination: '/ressources/closing-b2b',
         permanent: true,
       },
+      // Consolidation SEO : 4 articles fusionnés dans le pilier prospection-linkedin-b2b
+      {
+        source: '/ressources/messages-linkedin-sans-reponse',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/script-setting-linkedin',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/relance-linkedin-b2b',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
+      {
+        source: '/ressources/messages-prospection-linkedin-exemples',
+        destination: '/ressources/prospection-linkedin-b2b',
+        permanent: true,
+      },
       // Consolidation SEO : 3 articles fusionnés → pilier "devenir setter ou closer B2B"
       {
         source: '/ressources/cout-setter-b2b-prix',
@@ -106,6 +127,22 @@ const nextConfig: NextConfig = {
       {
         source: '/ressources/combien-coute-setting-linkedin',
         destination: '/ressources/comment-devenir-setter-b2b',
+        permanent: true,
+      },
+      // Consolidation SEO : 3 articles fusionnés → pilier "externaliser prospection"
+      {
+        source: '/ressources/agence-setting-linkedin-vs-freelance',
+        destination: '/externaliser-prospection-linkedin',
+        permanent: true,
+      },
+      {
+        source: '/ressources/sdr-interne-vs-externalise',
+        destination: '/externaliser-prospection-linkedin',
+        permanent: true,
+      },
+      {
+        source: '/ressources/outils-setting-linkedin',
+        destination: '/externaliser-prospection-linkedin',
         permanent: true,
       },
     ]
