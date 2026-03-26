@@ -1,5 +1,7 @@
 # Setting
 
+> Last updated: 2026-03-26
+
 > Prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B. Setter dédié, ciblage IA par signaux d'achat, RDV qualifiés dès la première semaine.
 
 ## Ce que fait Setting
@@ -58,11 +60,21 @@ Setting construit et opère des pipelines de prospection LinkedIn B2B. Un setter
 
 - Voir llms-full.txt pour le contenu complet : https://www.setting.live/llms-full.txt
 
+## Benchmarks clés
+
+- Taux de réponse moyen : 20-35 % (vs 2-5 % en prospection classique)
+- RDV qualifiés par semaine : 2 à 4 en régime de croisière
+- Délai premier RDV : < 7 jours
+- Touchpoints moyens avant RDV : 8
+- Durée qualification téléphonique : 7 minutes
+- Longueur message LinkedIn : 5 phrases max
+- Connexions LinkedIn par semaine : ~100
+
 ## Contact
 
 - Site : https://www.setting.live
 - Email : a.brakha@challengerslab.com
 - Fondateur : Abraham Brakha — https://www.linkedin.com/in/abraham-brakha
-- Entreprise : https://www.linkedin.com/company/challengerslab
+- LinkedIn (entreprise) : https://www.linkedin.com/company/challengerslab
 - Adresse : 50B rue Salomon Reinach, 69007 Lyon, France
 - SIRET : 902 889 385 00016

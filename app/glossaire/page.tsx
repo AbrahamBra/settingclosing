@@ -21,6 +21,11 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Glossaire Setting & Prospection LinkedIn | Setting',
+    description: 'Définitions des termes clés du setting et de la prospection LinkedIn B2B : setter, signal d\'achat, ICP, pipeline, qualification.',
+  },
   alternates: {
     canonical: 'https://www.setting.live/glossaire',
     languages: {
@@ -199,6 +204,51 @@ const terms = [
     relatedTerms: ['setting-commercial', 'icp', 'pipeline'],
     articleHref: '/ressources/setting-commercial-b2b',
     articleLabel: 'Setting commercial B2B pour solopreneurs',
+  },
+  {
+    id: 'social-selling',
+    term: 'Social selling',
+    definition:
+      "Le social selling est une approche de prospection qui utilise les réseaux sociaux — principalement LinkedIn en B2B — pour identifier, se connecter et interagir avec des prospects potentiels. Contrairement au cold calling ou au cold emailing, le social selling repose sur la construction d'une relation avant la prise de contact commerciale : publier du contenu pertinent, commenter les publications de ses prospects, et être visible dans leur fil d'actualité. Le setting LinkedIn est une forme avancée de social selling qui combine cette présence organique avec une détection active des signaux d'achat pour déclencher des conversations qualifiées.",
+    relatedTerms: ['prospection-linkedin', 'signal-achat', 'outreach'],
+    articleHref: '/ressources/prospection-linkedin-b2b',
+    articleLabel: 'Prospection LinkedIn B2B : méthode complète',
+  },
+  {
+    id: 'taux-de-conversion',
+    term: 'Taux de conversion',
+    definition:
+      "Le taux de conversion mesure le pourcentage de prospects qui passent d'une étape du pipeline à la suivante. En setting B2B, on distingue plusieurs taux de conversion : le taux de réponse (messages envoyés → réponses, typiquement 20-35 % en signal-based), le taux de qualification (réponses → RDV pris, autour de 30-50 %), et le taux de closing (RDV → contrats signés, généralement 15-30 % en B2B). Le taux de conversion global du pipeline (premier message → contrat signé) est le produit de tous ces taux intermédiaires.",
+    relatedTerms: ['taux-de-reponse', 'pipeline', 'closing'],
+    articleHref: '/ressources/closing-b2b',
+    articleLabel: 'Guide complet du closing B2B',
+  },
+  {
+    id: 'cout-par-lead',
+    term: 'Coût par lead (CPL)',
+    definition:
+      "Le coût par lead (CPL) est le montant total dépensé pour générer un lead qualifié. En prospection LinkedIn B2B, le CPL se calcule en divisant le coût mensuel total (abonnement + outils + temps passé) par le nombre de leads qualifiés générés. Avec un SDR interne (coût réel de 43 500 à 55 000 €/an), le CPL varie de 200 à 800 € selon le volume et la qualification. Avec un service de setting externalisé à 790 €/mois générant 8 à 15 RDV qualifiés, le CPL descend à 50-100 € par lead qualifié — un ratio 4 à 8 fois plus favorable qu'un recrutement interne.",
+    relatedTerms: ['pipeline', 'qualification', 'taux-de-conversion'],
+    articleHref: '/externaliser-prospection-linkedin',
+    articleLabel: 'Externaliser sa prospection LinkedIn',
+  },
+  {
+    id: 'pipeline-velocity',
+    term: 'Pipeline velocity',
+    definition:
+      "La pipeline velocity (vélocité du pipeline) mesure la vitesse à laquelle les opportunités commerciales se transforment en revenus. La formule : (nombre d'opportunités × ticket moyen × taux de conversion) ÷ durée du cycle de vente. En setting B2B, on agit sur les deux premiers leviers : augmenter le nombre de RDV qualifiés qui entrent dans le pipeline, et raccourcir le cycle en pré-qualifiant les prospects (via la qualification téléphonique BANT). Un pipeline velocity élevé signifie que chaque euro investi en prospection génère du revenu plus rapidement.",
+    relatedTerms: ['pipeline', 'taux-de-conversion', 'qualification'],
+    articleHref: '/ressources/setting-commercial-b2b',
+    articleLabel: 'Setting commercial B2B : méthode complète',
+  },
+  {
+    id: 'lead-scoring',
+    term: 'Lead scoring',
+    definition:
+      "Le lead scoring est un système de notation des prospects selon leur probabilité de conversion. En setting LinkedIn B2B, on score les leads sur 5 niveaux de maturité : niveau 1 (aucun signal, lead froid), niveau 2 (a vu un contenu), niveau 3 (a interagi — like, commentaire), niveau 4 (a répondu à un message ou visité le profil), niveau 5 (a exprimé un besoin explicite). Les niveaux 4 et 5 sont prioritaires pour la prise de RDV. Le scoring est recalibré chaque semaine en fonction des taux de conversion observés, ce qui permet d'affiner le ciblage en continu.",
+    relatedTerms: ['qualification', 'signal-achat', 'icp'],
+    articleHref: '/ressources/setting-commercial-b2b',
+    articleLabel: 'Les 5 niveaux de qualification d\'un lead',
   },
 ]
 

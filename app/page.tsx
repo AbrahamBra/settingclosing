@@ -39,8 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Setting LinkedIn B2B | Prospection externalisée — Setting.live',
-    description: 'Service de setting LinkedIn pour solopreneurs B2B : setter dédié, ciblage IA, RDV qualifiés dès la première semaine.',
+    title: 'Setting LinkedIn B2B | RDV qualifiés dès la semaine 1',
+    description: 'Prospection LinkedIn externalisée pour solopreneurs B2B. Setter dédié, IA signal-based, premiers RDV en 7 jours. À partir de 790 €/mois.',
+    images: ['https://www.setting.live/opengraph-image'],
   },
 }
 
@@ -74,6 +75,8 @@ const globalSchema = {
       alternateName: 'ChallengersLab',
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
+        'https://www.linkedin.com/in/abraham-brakha',
+        'https://www.challengerslab.com',
       ],
       foundingDate: '2024',
       founder: {
@@ -163,7 +166,7 @@ const homeFaqSchema = {
       name: '790\u00a0€/mois c\u2019est beaucoup pour un solopreneur, non\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'C\u2019est 8-10h/semaine que tu récupères. Si ton taux horaire dépasse 80\u00a0€, c\u2019est rentable dès le premier mois. Et avec la garantie RDV, le risque est de notre côté.',
+        text: 'Un service de setting LinkedIn externalisé à 790 €/mois remplace 8 à 10 heures de prospection par semaine. Si ton taux horaire dépasse 80 €, le service est rentable dès le premier mois. À titre de comparaison, un SDR interne coûte 43 500 à 55 000 € par an (charges comprises), et une agence de prospection facture entre 2 000 et 5 000 €/mois. Avec la garantie RDV (moins de 5 RDV le premier mois = mois suivant offert), le risque financier est du côté de Setting, pas du tien.',
       },
     },
     {
@@ -171,7 +174,7 @@ const homeFaqSchema = {
       name: 'Je peux le faire moi-même avec Lemlist/LaGrowthMachine\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Oui, si tu as 5-8h/semaine et l\u2019expertise IA pour personnaliser chaque message. On combine détection de signaux + rédaction IA + validation humaine. C\u2019est ça qui fait la différence entre 2\u00a0% et 8\u00a0% de taux de réponse.',
+        text: 'Les outils d\'automatisation LinkedIn comme Lemlist ou LaGrowthMachine permettent d\'envoyer des séquences de messages en masse, mais ils atteignent en moyenne 2 à 5 % de taux de réponse. Le setting externalisé combine trois éléments que l\'automatisation seule ne peut pas reproduire : la détection de signaux d\'achat en temps réel (likes, commentaires, changements de poste), la co-rédaction IA personnalisée par profil, et la validation humaine de chaque message avant envoi. Résultat : 20 à 35 % de taux de réponse sur les prospects ciblés. L\'écart vient du fait qu\'on contacte uniquement des prospects qui ont déjà montré un signe d\'intérêt, pas une liste froide.',
       },
     },
     {
@@ -179,7 +182,7 @@ const homeFaqSchema = {
       name: 'C\u2019est quoi la différence avec une agence de prospection\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Le prix (3-5× moins), l\u2019engagement (aucun), et la méthode (IA + humain vs. templates en masse). Et on est payés au résultat avec les bonuses RDV.',
+        text: 'Une agence de prospection B2B facture entre 2 000 et 5 000 €/mois avec un engagement de 3 à 6 mois, et utilise généralement des templates de messages envoyés en masse à des listes achetées. Le setting LinkedIn externalisé coûte 790 €/mois sans engagement (résiliable à tout moment), utilise une méthode signal-based (ciblage IA + messages personnalisés par profil + validation humaine), et aligne les intérêts avec des primes au résultat par RDV qualifié (50 à 250 € selon le ticket moyen). C\'est 3 à 5 fois moins cher qu\'une agence, avec des taux de réponse 4 à 10 fois supérieurs aux approches template-based.',
       },
     },
     {
@@ -187,7 +190,7 @@ const homeFaqSchema = {
       name: 'Combien de temps avant les premiers RDV\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Moins de 7 jours. On commence par tes clients idéaux et on itère chaque semaine.',
+        text: 'Les premiers RDV qualifiés arrivent en moins de 7 jours. Le processus de démarrage prend 48 heures : définition de l\'ICP (profil client idéal), configuration des outils de détection de signaux (Reactin, Spyer, Sales Navigator), et encodage de ton expertise dans l\'IA. Dès le troisième jour, le setter commence à prospecter en ciblant les prospects qui ont récemment montré un signe d\'intérêt. En régime de croisière (après 2-3 semaines), les clients obtiennent 2 à 4 RDV qualifiés par semaine.',
       },
     },
     {
@@ -195,7 +198,7 @@ const homeFaqSchema = {
       name: 'Je n\u2019ai pas de base email, je peux quand m\u00eame\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Pas besoin. Le Setting LinkedIn cible directement les prospects via les signaux d\u2019achat sur LinkedIn. Aucune base email requise.',
+        text: 'Aucune base email n\'est nécessaire. Le setting LinkedIn cible directement les prospects sur LinkedIn via les signaux d\'achat (likes, commentaires, changements de poste, visites de profil). Le setter utilise Sales Navigator et des outils de monitoring comme Reactin et Spyer pour détecter ces signaux en temps réel, puis contacte chaque prospect avec un message ancré sur un fait précis de son profil. C\'est la différence fondamentale avec l\'emailing : on n\'a pas besoin d\'une liste, on contacte les personnes qui ont déjà levé la main.',
       },
     },
     {
@@ -203,7 +206,7 @@ const homeFaqSchema = {
       name: 'Combien de clients tu prends par mois\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '5 max. Chaque client a un setter dédié, on ne dilue pas la qualité. C\u2019est pour ça qu\u2019on peut garantir les résultats.',
+        text: '5 clients maximum par mois. Chaque client a un setter dédié qui gère environ 100 connexions LinkedIn par semaine, personnalise chaque message, et qualifie chaque réponse individuellement. Ce plafond garantit la qualité : pas de dilution, pas de messages génériques, pas de prospects mal ciblés. C\'est aussi ce qui permet de maintenir la garantie RDV.',
       },
     },
     {
@@ -211,7 +214,7 @@ const homeFaqSchema = {
       name: 'Et si ça marche pas\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Zéro engagement. Tu peux arrêter à tout moment. Et la garantie RDV couvre ton risque\u00a0: si on ne délivre pas, on continue gratuitement.',
+        text: 'Zéro engagement — tu peux arrêter à tout moment, sans préavis ni frais. La garantie RDV couvre le risque : si tu obtiens moins de 5 RDV qualifiés dans le premier mois, le mois suivant est offert. Le modèle de bonus par RDV (50 à 250 € selon le ticket moyen) aligne les intérêts : Setting gagne quand tu signes des clients, pas quand tu paies un abonnement.',
       },
     },
     {
@@ -219,7 +222,7 @@ const homeFaqSchema = {
       name: 'C\u2019est quoi les bonuses RDV\u00a0?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Une prime variable par RDV g\u00e9n\u00e9r\u00e9, index\u00e9e sur ton ticket moyen. 50\u00a0\u20ac par RDV sous 5k\u00a0\u20ac, 150\u00a0\u20ac entre 5 et 15k, 250\u00a0\u20ac au-dessus. On gagne quand tu gagnes.',
+        text: 'Les bonuses sont une prime variable versée par RDV qualifié généré, indexée sur le ticket moyen de ton offre. Trois paliers : 50 € par RDV si ton ticket est inférieur à 5 000 €, 150 € entre 5 000 et 15 000 €, et 250 € au-dessus de 15 000 €. Ce modèle de rémunération au résultat aligne les intérêts : Setting investit du temps et des ressources pour maximiser le nombre et la qualité des RDV, puisque le revenu dépend directement de la performance.',
       },
     },
   ],

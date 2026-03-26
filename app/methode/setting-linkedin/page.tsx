@@ -135,6 +135,63 @@ const howToSchema = {
   ],
 }
 
+const phoneHowToSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HowTo',
+  name: 'Comment qualifier des leads B2B par t\u00e9l\u00e9phone en 7 \u00e9tapes (m\u00e9thode BANT + Challenger Sale)',
+  description: 'M\u00e9thode de qualification t\u00e9l\u00e9phonique des leads entrants B2B : grille BANT personnalis\u00e9e, ouverture Challenger Sale, scoring par maturit\u00e9 et routing automatis\u00e9.',
+  totalTime: 'PT7M',
+  estimatedCost: {
+    '@type': 'MonetaryAmount',
+    currency: 'EUR',
+    value: '175',
+  },
+  step: [
+    {
+      '@type': 'HowToStep',
+      position: 1,
+      name: 'Co-construction de la grille de qualification',
+      text: 'Workshop de 90 minutes pour adapter le BANT (Budget, Authority, Need, Timeline) au march\u00e9 sp\u00e9cifique du client. D\u00e9finir les crit\u00e8res \u00e9liminatoires, les crit\u00e8res pond\u00e9r\u00e9s et les seuils de passage.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 2,
+      name: 'Intelligence pr\u00e9-appel',
+      text: 'L\u2019IA enrichit la fiche du lead avant l\u2019appel : taille d\u2019entreprise, secteur, poste exact, historique d\u2019interactions. Le setter ouvre avec du contexte, pas \u00e0 l\u2019aveugle.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 3,
+      name: 'Ouverture Challenger Sale',
+      text: 'Les 90 premi\u00e8res secondes posent le cadre avec la m\u00e9thode Challenger Sale : Teach (apporter un insight), Tailor (adapter au contexte), Take Control (diriger vers un diagnostic).',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 4,
+      name: 'Discovery & qualification BANT',
+      text: '7 \u00e0 12 minutes de questions structur\u00e9es. Budget : \u00ab comment fonctionne votre processus d\u2019achat ? \u00bb. Authority : \u00ab qui d\u2019autre serait impliqu\u00e9 ? \u00bb. Need : \u00ab qu\u2019est-ce que \u00e7a vous co\u00fbte de ne pas avoir r\u00e9solu ce probl\u00e8me ? \u00bb. Timeline : \u00ab pourquoi maintenant ? \u00bb.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 5,
+      name: 'Scoring & verdict',
+      text: 'Chaque crit\u00e8re BANT scor\u00e9 sur une \u00e9chelle pond\u00e9r\u00e9e. Verdict en 3 cat\u00e9gories : lead chaud (RDV closeur), lead ti\u00e8de (nurturing actif), lead froid (s\u00e9quence longue ou disqualification propre).',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 6,
+      name: 'Routing par maturit\u00e9',
+      text: 'Le CRM route automatiquement : leads chauds re\u00e7oivent un Calendly dans les 2 minutes, leads ti\u00e8des entrent en nurturing personnalis\u00e9 selon le crit\u00e8re manquant, leads froids re\u00e7oivent un email de courtoisie.',
+    },
+    {
+      '@type': 'HowToStep',
+      position: 7,
+      name: 'Feedback loop hebdomadaire',
+      text: 'Analyse hebdomadaire des donn\u00e9es terrain : quels crit\u00e8res pr\u00e9disent un RDV qui signe ? Quels signaux trompent ? Les retours recalibrent la grille, le script et les seuils de routing.',
+    },
+  ],
+}
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -285,6 +342,10 @@ export default function MethodePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(phoneHowToSchema) }}
+      />
       <Navbar />
       <main className="pt-20">
 
@@ -330,6 +391,46 @@ export default function MethodePage() {
                 })}
               </div>
 
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ── Benchmarks clés (bloc consolidé pour citabilité IA) ─────── */}
+        <section className="bg-bg-secondary section-padding" data-speakable>
+          <div className="container-max max-w-3xl mx-auto">
+            <ScrollReveal>
+              <h2 className="font-sans font-extrabold text-h3 text-text-primary mb-6">
+                Setting LinkedIn B2B &mdash; Benchmarks cl&eacute;s
+              </h2>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+                {[
+                  { value: '20-35\u00a0%', label: 'Taux de r\u00e9ponse moyen' },
+                  { value: '8-15', label: 'RDV qualifi\u00e9s / mois' },
+                  { value: '< 7 j', label: 'D\u00e9lai premier RDV' },
+                  { value: '8', label: 'Touchpoints avant RDV' },
+                  { value: '7 min', label: 'Qualification t\u00e9l\u00e9phonique' },
+                  { value: '5 phrases', label: 'Longueur message max' },
+                  { value: '~100', label: 'Connexions LinkedIn / semaine' },
+                  { value: '5 niveaux', label: 'Scoring de maturit\u00e9' },
+                ].map((b) => (
+                  <div
+                    key={b.label}
+                    className="rounded-xl bg-bg-primary border border-white/[0.06] p-4 text-center"
+                  >
+                    <p className="font-sans text-2xl font-extrabold text-accent tabular-nums mb-1">{b.value}</p>
+                    <p className="font-sans text-xs text-text-muted leading-snug">{b.label}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="font-sans text-text-muted text-sm leading-relaxed">
+                Ces benchmarks sont issus de nos campagnes de setting LinkedIn signal-based
+                men&eacute;es pour des solopreneurs, fondateurs et freelances B2B en France.
+                Les taux de r&eacute;ponse de 20 &agrave; 35&nbsp;% s&rsquo;expliquent par le ciblage exclusif
+                de prospects ayant montr&eacute; un signal d&rsquo;achat r&eacute;cent (like, commentaire, changement de poste),
+                combin&eacute; &agrave; la co-r&eacute;daction IA et la validation humaine de chaque message.
+                En prospection LinkedIn classique sans m&eacute;thode signal-based,
+                les taux de r&eacute;ponse oscillent entre 2 et 5&nbsp;%.
+              </p>
             </ScrollReveal>
           </div>
         </section>

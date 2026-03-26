@@ -20,6 +20,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Setting LinkedIn B2B | Prospection externalisée, RDV qualifiés — Setting.live',
   description: 'Service de setting LinkedIn pour solopreneurs et fondateurs B2B : setter dédié, ciblage par signaux d\'achat IA, RDV qualifiés dès la première semaine. À partir de 790 €/mois.',
+  robots: {
+    index: true,
+    follow: true,
+    'max-snippet': -1,
+    'max-image-preview': 'large',
+    'max-video-preview': -1,
+  },
   twitter: {
     card: 'summary_large_image',
     site: '@challengerslab',
