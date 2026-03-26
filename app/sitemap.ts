@@ -63,12 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     // setting-linkedin-definition — redirigé vers setting-commercial-b2b (consolidation SEO)
-    {
-      url: 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
-      lastModified: new Date('2026-03-17'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // ia-methode-humain-setting-linkedin — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
       lastModified: new Date('2026-03-17'),
@@ -168,12 +163,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/setting-humain-vs-automatisation-linkedin',
-      lastModified: new Date('2026-03-19'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // setting-humain-vs-automatisation-linkedin — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/sdr-interne-vs-externalise',
       lastModified: new Date('2026-03-19'),
@@ -201,9 +191,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/comment-prospecter-sur-linkedin',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.8,
+      lastModified: new Date('2026-03-26'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: 'https://www.setting.live/ressources/agence-prospection-linkedin',
@@ -217,18 +207,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/social-selling-linkedin-b2b',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/automatisation-prospection-linkedin',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // social-selling-linkedin-b2b — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
+    // automatisation-prospection-linkedin — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
     {
       url: 'https://www.setting.live/mentions-legales',
       lastModified: new Date('2026-03-18'),
