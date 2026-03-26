@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/methode-spin-selling',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SPIN Selling : méthode de vente B2B | Setting',
+    description: 'SPIN Selling : les 4 types de questions qui font avancer un deal B2B. Méthode, exemples et lien avec la discovery call et le closing.',
+  },
 }
 
 const articleSchema = {
@@ -201,7 +206,7 @@ export default function MethodeSpinSellingPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               SPIN Selling 2026 : la méthode pour vendre en B2B sans forcer
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Neil Rackham a analysé 35 000 appels commerciaux sur 12 ans pour comprendre ce qui
               différenciait les meilleurs vendeurs B2B. Résultat : pas les techniques de closing
               agressives. Les meilleurs posaient de meilleures questions. SPIN Selling est le cadre
@@ -211,7 +216,7 @@ export default function MethodeSpinSellingPage() {
           </header>
 
           {/* Stat externe */}
-          <div className="bg-bg-secondary rounded-xl p-5 border border-accent/20 mb-10">
+          <div data-speakable="true" className="bg-bg-secondary rounded-xl p-5 border border-accent/20 mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               À l&apos;origine de la méthode
             </p>
@@ -448,8 +453,8 @@ export default function MethodeSpinSellingPage() {
           <section className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-6">Questions fréquentes sur le SPIN Selling</h2>
             <div className="space-y-6">
-              {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
+              {faqItems.map(({ question, answer }, i) => (
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5" {...(i === 0 ? { 'data-speakable': 'true' } : {})}>
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>

@@ -25,6 +25,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/ia-methode-humain-setting-linkedin',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'IA et humain : système de setting LinkedIn | Setting',
+    description: "L'IA détecte. La méthode filtre. L'humain valide. Pourquoi les 3 couches sont nécessaires, et comment les calibrer pour tenir sur la durée.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

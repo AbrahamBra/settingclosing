@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting humain vs automatisation LinkedIn | Setting',
+    description: 'Automatisation vs setting humain sur LinkedIn. Comparatif des résultats réels.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

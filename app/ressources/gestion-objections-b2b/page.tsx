@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/gestion-objections-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Objections B2B : méthode et exemples | Setting',
+    description: "Les 5 objections B2B les plus fréquentes — avec les bonnes et mauvaises réponses. Ce que 'c'est trop cher' veut dire en réalité.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -166,7 +171,7 @@ export default function GestionObjectionsPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Gérer les objections en vente B2B : méthode et exemples
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Toutes les objections ne se traitent pas de la même façon. Il y a celles qui méritent une réponse
               et celles qui signalent que la décision est non. Confondre les deux vous fait passer du temps
               à argumenter avec des gens qui ne signeront pas.
@@ -336,8 +341,8 @@ export default function GestionObjectionsPage() {
               Questions fréquentes
             </h2>
             <div className="space-y-6">
-              {faqItems.map(({ question, answer }) => (
-                <div key={question} className="border-l-2 border-white/[0.06] pl-5">
+              {faqItems.map(({ question, answer }, i) => (
+                <div key={question} className="border-l-2 border-white/[0.06] pl-5" {...(i === 0 ? { 'data-speakable': 'true' } : {})}>
                   <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
                 </div>

@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'article',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Outils du setting LinkedIn : Reactin, Make et BreakCold | Setting',
+    description: 'Le stack technique du setting LinkedIn en 2026. Comment Reactin, Make et BreakCold fonctionnent ensemble.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

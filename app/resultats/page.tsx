@@ -17,6 +17,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/resultats',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'R\u00e9sultats clients \u2014 Setting LinkedIn B2B | Setting',
+    description: 'Nos clients obtiennent 3+ RDV qualifi\u00e9s par semaine avec un taux de r\u00e9ponse de 20-35\u00a0%. D\u00e8s 790\u00a0\u20ac/mois. Premiers r\u00e9sultats en 7 jours.',
+  },
 }
 
 // ─── Page ─────────────────────────────────────────────────────────────────────

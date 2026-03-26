@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/setter-b2b-definition',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setter B2B : définition et rôle | Setting',
+    description: 'Un setter B2B est le commercial qui prospecte pour vous. Définition, rôle, coût et les 3 phases du setting expliqués pour les solopreneurs.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -207,14 +212,14 @@ export default function SetterDefinitionPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               C&apos;est quoi un setter en B2B ?
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Définition complète, rôle au quotidien, coût réel et les 3 phases du <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> expliquées simplement.
             </p>
             <AuthorBlock date="2026-03-16" readTime="8 min de lecture" dateLabel="16 mars 2026" updatedDate="2026-03-19" />
           </header>
 
           {/* Definition Block — auto-extractable par les IA */}
-          <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
+          <div data-speakable="true" className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Définition
             </p>

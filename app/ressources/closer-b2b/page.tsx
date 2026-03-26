@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/closer-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Closer B2B : définition et compétences | Setting',
+    description: 'Closer B2B : définition, compétences clés, modèles freelance et comment évaluer un closer avant de le recruter.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -189,7 +194,7 @@ export default function CloserB2BPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Closer B2B : ce que c&apos;est vraiment, ce que ça demande, comment en recruter un
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Le closer B2B n&apos;est pas un commercial qui prospecte. C&apos;est quelqu&apos;un
               qui prend un appel sur un lead qualifié et en sort avec une signature — ou sans. Voici
               ce que ça implique vraiment.
@@ -198,7 +203,7 @@ export default function CloserB2BPage() {
           </header>
 
           {/* Definition Block */}
-          <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-10">
+          <div data-speakable="true" className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Définition
             </p>
@@ -549,7 +554,7 @@ export default function CloserB2BPage() {
             </h2>
             <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
-                <div key={i} className="py-5">
+                <div key={i} className="py-5" {...(i === 0 ? { 'data-speakable': 'true' } : {})}>
                   <p className="font-sans font-semibold text-text-primary mb-2">
                     {item.question}
                   </p>

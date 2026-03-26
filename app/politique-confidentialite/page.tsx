@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     },
   },
   robots: { index: true, follow: true },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Politique de confidentialité | Setting',
+    description: 'Politique de confidentialité de setting.live : collecte, utilisation et protection de vos données personnelles.',
+  },
 }
 
 const breadcrumbSchema = {

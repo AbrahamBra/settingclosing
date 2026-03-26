@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/discovery-call-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Discovery call B2B : guide complet | Setting',
+    description: "Comment conduire une discovery call B2B qui m\u00e8ne au closing : structure, questions, erreurs \u00e0 \u00e9viter. Le guide terrain.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -201,7 +206,7 @@ export default function DiscoveryCallPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Discovery call B2B : structure, questions et erreurs à éviter
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La majority des deals perdus ne se perdent pas sur les objections. Ils se perdent parce
               que le closeur a pitché sans vraiment comprendre ce que le prospect voulait. La discovery
               call est la phase qui évite ça — et la plupart des gens la bâclent.
@@ -210,7 +215,7 @@ export default function DiscoveryCallPage() {
           </header>
 
           {/* Résultat concret */}
-          <div className="border-l-2 border-accent/30 pl-5 mb-14">
+          <div data-speakable="true" className="border-l-2 border-accent/30 pl-5 mb-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Résultat concret
             </p>

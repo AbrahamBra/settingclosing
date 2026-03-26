@@ -29,6 +29,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ressources — Prospection et setting LinkedIn B2B | Setting',
+    description: 'Méthodes, scripts et stratégies de prospection LinkedIn B2B pour fondateurs et freelances.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

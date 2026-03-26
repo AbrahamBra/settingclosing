@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/signal-achat-linkedin',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: "C'est quoi un signal d'achat LinkedIn ?",
+    description: "Inbound ou signal tiers : deux fa\u00e7ons de d\u00e9tecter des prospects chauds avant m\u00eame qu'ils vous contactent. La base du setting moderne.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -204,7 +209,7 @@ export default function SignalAchatLinkedInPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               C&apos;est quoi un signal d&apos;achat LinkedIn ?
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               La plupart des solopreneurs pensent que prospecter sur LinkedIn, c&apos;est contacter des inconnus à froid.
               Un signal d&apos;achat, c&apos;est l&apos;opposé : le prospect a déjà levé la main — vous n&apos;avez plus qu&apos;à le voir.
             </p>
@@ -212,7 +217,7 @@ export default function SignalAchatLinkedInPage() {
           </header>
 
           {/* Definition Block */}
-          <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
+          <div data-speakable="true" className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               Définition
             </p>

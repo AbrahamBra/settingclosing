@@ -321,7 +321,7 @@ export default function SettingLinkedInDefinitionPage() {
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               Setting LinkedIn : d&eacute;finition, m&eacute;thode et exemples concrets
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Qu&rsquo;est-ce que le setting LinkedIn, comment &ccedil;a fonctionne, et pourquoi
               de plus en plus de fondateurs B2B l&rsquo;utilisent &agrave; la place du cold outreach.
               D&eacute;finition, &eacute;tapes, scripts, outils, KPIs et erreurs &agrave; &eacute;viter.
@@ -341,7 +341,7 @@ export default function SettingLinkedInDefinitionPage() {
           </TldrBox>
 
           {/* Definition Block */}
-          <div className="definition-block border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
+          <div data-speakable="true" className="definition-block border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-14">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">
               D&eacute;finition
             </p>

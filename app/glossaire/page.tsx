@@ -28,6 +28,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/glossaire',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Glossaire Setting & Prospection LinkedIn | Setting',
+    description: "Les définitions exactes des termes du setting et de la prospection LinkedIn — setter, signal d'achat, ICP, pipeline, qualification et plus.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

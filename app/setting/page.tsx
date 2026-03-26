@@ -22,6 +22,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/setting',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Setting : le guide complet du setting commercial B2B',
+    description: "Tout sur le setting : d\u00e9finition, m\u00e9thode LinkedIn signal-based, outils, scripts, co\u00fbt r\u00e9el et programme complet. Le guide de r\u00e9f\u00e9rence pour les fondateurs B2B.",
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

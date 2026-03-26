@@ -25,6 +25,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/script-setting-linkedin',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Scripts de setting LinkedIn : exemples | Setting',
+    description: 'Anatomie d\'un message qui obtient des r\u00e9ponses, 6 scripts concrets (inbound + outbound), les 4 erreurs qui tuent le taux de r\u00e9ponse.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

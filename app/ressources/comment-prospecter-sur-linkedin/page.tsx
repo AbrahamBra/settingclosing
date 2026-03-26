@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/comment-prospecter-sur-linkedin',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prospecter sur LinkedIn en 2026 : social selling, automatisation et m\u00e9thode signal-based',
+    description: 'Social selling LinkedIn, automatisation, SSI, m\u00e9thode signal-based et comparatif humain vs robot. Le guide complet pour g\u00e9n\u00e9rer des RDV qualifi\u00e9s en B2B.',
+  },
 }
 
 /* ─── Structured Data ─────────────────────────────────────────────────────── */

@@ -28,6 +28,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | Setting',
+    description: 'Tarifs prospection LinkedIn externalisée : setup offert, à partir de 790\u00a0€/mois, zéro engagement.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -44,6 +49,10 @@ const webPageSchema = {
     '@type': 'WebSite',
     name: 'Setting',
     url: 'https://www.setting.live',
+  },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '[data-speakable]', '.faq-answer'],
   },
   breadcrumb: {
     '@type': 'BreadcrumbList',

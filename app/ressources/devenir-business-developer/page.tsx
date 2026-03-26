@@ -24,6 +24,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/devenir-business-developer',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Devenir Business Developer en 2026 | Setting',
+    description: 'Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous explique le quotidien réel et comment vous y former en alternance.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -167,7 +172,7 @@ export default function DevenirBusinessDeveloperPage() {
             <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
               Business developer : le métier que vous ne connaissiez pas (et qui recrute près de chez vous)
             </h1>
-            <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
+            <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous
               explique le quotidien réel et comment vous pouvez vous y former en alternance depuis Chartres,
               en étant rémunéré.
@@ -175,9 +180,11 @@ export default function DevenirBusinessDeveloperPage() {
             <AuthorBlock date="2026-02-26" readTime="7 min de lecture" dateLabel="26 février 2026" updatedDate="2026-03-19" />
           </header>
 
-          <TldrBox>
-            <p>Ce qu&apos;il faut savoir pour devenir business developer en 2026 : comp&eacute;tences attendues, parcours possibles (BTS, &eacute;cole de commerce, reconversion), fourchettes de salaire (30-55k&nbsp;&euro; selon exp&eacute;rience) et r&eacute;alit&eacute;s du m&eacute;tier au quotidien.</p>
-          </TldrBox>
+          <div data-speakable="true">
+            <TldrBox>
+              <p>Ce qu&apos;il faut savoir pour devenir business developer en 2026 : comp&eacute;tences attendues, parcours possibles (BTS, &eacute;cole de commerce, reconversion), fourchettes de salaire (30-55k&nbsp;&euro; selon exp&eacute;rience) et r&eacute;alit&eacute;s du m&eacute;tier au quotidien.</p>
+            </TldrBox>
+          </div>
 
           {/* Stats */}
           <div className="grid sm:grid-cols-3 gap-4 mb-10">

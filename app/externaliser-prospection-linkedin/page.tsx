@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Externaliser sa prospection commerciale B2B | Setting',
+    description: 'Agence prospection B2B, SDR commercial externalisé, outils setting LinkedIn : tout ce qu\'il faut savoir pour externaliser sa prospection.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -43,6 +48,10 @@ const serviceSchema = {
     url: 'https://www.setting.live',
   },
   serviceType: 'Prospection commerciale LinkedIn externalisée',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '[data-speakable]', '.faq-answer'],
+  },
   areaServed: {
     '@type': 'Country',
     name: 'France',

@@ -23,6 +23,11 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live/ressources/prospection-linkedin-b2b',
     },
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prospection LinkedIn B2B : guide complet (scripts, exemples, relances) | Setting',
+    description: 'M\u00e9thode signal-based, scripts inbound et outbound, 15 exemples de messages, s\u00e9quence de relances et IA co-r\u00e9dacteur. Le guide terrain pour d\u00e9crocher des RDV qualifi\u00e9s sur LinkedIn.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────

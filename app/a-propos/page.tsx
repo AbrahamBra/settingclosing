@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'À propos de Setting | Setting LinkedIn B2B',
+    description: 'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
+  },
 }
 
 // ─── Structured Data ──────────────────────────────────────────────────────────
@@ -53,15 +58,15 @@ const aboutPageSchema = {
 
 const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': 'ProfessionalService',
   '@id': 'https://www.setting.live/#business',
   name: 'Setting',
+  alternateName: 'ChallengersLab',
   url: 'https://www.setting.live',
   description:
     'Service de prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B.',
   sameAs: [
     'https://www.linkedin.com/company/challengerslab',
-    'https://www.linkedin.com/in/abraham-brakha',
   ],
   employee: [
     {
