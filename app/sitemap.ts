@@ -52,9 +52,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/prospection-linkedin-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      lastModified: new Date('2026-03-26'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
@@ -69,12 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
-    {
-      url: 'https://www.setting.live/ressources/messages-linkedin-sans-reponse',
-      lastModified: new Date('2026-03-17'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // messages-linkedin-sans-reponse — redirigé vers prospection-linkedin-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/signal-achat-linkedin',
       lastModified: new Date('2026-03-17'),
@@ -89,18 +84,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     // difference-setting-closing — redirigé vers setting-commercial-b2b (consolidation SEO)
-    {
-      url: 'https://www.setting.live/ressources/script-setting-linkedin',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: 'https://www.setting.live/ressources/relance-linkedin-b2b',
-      lastModified: new Date('2026-03-18'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // script-setting-linkedin — redirigé vers prospection-linkedin-b2b (consolidation SEO)
+    // relance-linkedin-b2b — redirigé vers prospection-linkedin-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/closer-b2b',
       lastModified: new Date('2026-03-18'),
@@ -198,12 +183,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    {
-      url: 'https://www.setting.live/ressources/messages-prospection-linkedin-exemples',
-      lastModified: new Date('2026-03-25'),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
+    // messages-prospection-linkedin-exemples — redirigé vers prospection-linkedin-b2b (consolidation SEO)
     {
       url: 'https://www.setting.live/ressources/social-selling-linkedin-b2b',
       lastModified: new Date('2026-03-25'),
