@@ -259,7 +259,7 @@ export default function AutomatisationProspectionLinkedInPage() {
                 <strong className="text-text-primary">Dripify</strong> fonctionne en cloud, ce qui r&eacute;duit la d&eacute;tection. Interface simple, prix accessible. Limite : LinkedIn finit par d&eacute;tecter les patterns m&ecirc;me en cloud, surtout si les messages sont identiques.
               </p>
               <p className="text-sm text-text-muted italic mt-4">
-                Pour aller plus loin : <a href="/ressources/outils-setting-linkedin" className="text-accent hover:underline">Les meilleurs outils pour le setting LinkedIn</a>
+                Pour aller plus loin : <a href="/externaliser-prospection-linkedin#outils" className="text-accent hover:underline">Les meilleurs outils pour le setting LinkedIn</a>
               </p>
             </section>
 
@@ -468,7 +468,7 @@ export default function AutomatisationProspectionLinkedInPage() {
           <RelatedArticles
             articles={[
               { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn', readTime: '11 min' },
-              { href: '/ressources/outils-setting-linkedin', title: 'Les meilleurs outils pour le setting LinkedIn', readTime: '9 min' },
+              { href: '/externaliser-prospection-linkedin#outils', title: 'Les meilleurs outils pour le setting LinkedIn', readTime: '9 min' },
               { href: '/ressources/ia-methode-humain-setting-linkedin', title: 'IA et m\u00e9thode humaine : le mod\u00e8le Setting', readTime: '12 min' },
             ]}
           />

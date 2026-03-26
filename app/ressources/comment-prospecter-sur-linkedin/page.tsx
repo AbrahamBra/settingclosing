@@ -388,6 +388,9 @@ export default function CommentProspecterLinkedInPage() {
                   <li><span className="text-text-primary font-semibold">Make / Zapier</span> : routage automatique des leads vers le bon canal</li>
                 </ul>
               </div>
+              <p className="text-sm text-text-muted italic">
+                Pour aller plus loin : <a href="/externaliser-prospection-linkedin#outils" className="text-accent hover:underline">Les outils du setting LinkedIn</a>
+              </p>
             </section>
 
             {/* ─── 5. 7 &eacute;tapes ─── */}
