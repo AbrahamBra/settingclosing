@@ -630,7 +630,7 @@ export default function ProspectionLinkedInB2BPage() {
           <section id="scripts" className="mb-14">
             <h2 className="font-serif text-h2 text-text-primary mb-5"><strong>Scripts de prospection LinkedIn</strong> : 6 mod&egrave;les concrets</h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Un <strong>script prospection LinkedIn</strong> n&apos;est pas un template &agrave; copier-coller. C&apos;est un cadre : structure fixe, contenu variable. Les templates se rep&egrave;rent. Les scripts, non.
+              Un <strong>script prospection LinkedIn</strong> n&apos;est pas un template &agrave; copier-coller. C&apos;est un cadre : structure fixe, contenu variable. Les templates se rep&egrave;rent. Les scripts, non. Pour comprendre la diff&eacute;rence entre le r&ocirc;le du <a href="/ressources/setting-commercial-b2b#setter-definition" className="text-accent hover:underline transition-colors">setter</a> et du <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">closer</a>, voir nos guides d&eacute;di&eacute;s.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-8">Voici 6 scripts pour les situations les plus courantes. Trois inbound, trois outbound.</p>
 
@@ -839,7 +839,7 @@ export default function ProspectionLinkedInB2BPage() {
             <h2 className="font-serif text-h2 text-text-primary mb-5">L&apos;IA comme co-r&eacute;dacteur dans la prospection LinkedIn</h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">L&apos;IA sans contexte produit des messages g&eacute;n&eacute;riques. Exactement le type que les d&eacute;cideurs filtrent en deux secondes.</p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">Avec le bon contexte, l&apos;IA produit des messages personnalis&eacute;s. Le flux : collez le profil LinkedIn du prospect dans le mod&egrave;le (titre, bio, posts r&eacute;cents, connexions communes). Ajoutez vos r&egrave;gles et deux exemples de bons messages. Le mod&egrave;le propose un draft. Relisez. Corrigez si besoin. Envoyez.</p>
-            <p className="font-sans text-text-secondary leading-relaxed">La r&egrave;gle finale : lisez le message &agrave; voix haute. Si vous entendez le LLM, r&eacute;&eacute;crivez. Si &ccedil;a sonne comme un humain qui conna&icirc;t le prospect, envoyez.</p>
+            <p className="font-sans text-text-secondary leading-relaxed">La r&egrave;gle finale : lisez le message &agrave; voix haute. Si vous entendez le LLM, r&eacute;&eacute;crivez. Si &ccedil;a sonne comme un humain qui conna&icirc;t le prospect, envoyez. Voir aussi notre analyse compl&egrave;te <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">IA, m&eacute;thode et humain</a> et le comparatif <a href="/ressources/setting-humain-vs-automatisation-linkedin" className="text-accent hover:underline transition-colors">setting humain vs automatisation</a>.</p>
             <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]" data-speakable="true">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
               <p className="font-sans font-semibold text-text-primary mb-1">Les &eacute;quipes qui utilisent l&apos;IA comme co-r&eacute;dacteur (avec validation humaine) ont des taux de r&eacute;ponse 3x sup&eacute;rieurs &agrave; ceux qui g&eacute;n&egrave;rent sans relire.</p>

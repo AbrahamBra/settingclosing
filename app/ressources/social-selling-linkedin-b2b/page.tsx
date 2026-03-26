@@ -35,10 +35,11 @@ const articleSchema = {
     'Le social selling LinkedIn consiste \u00e0 vendre via son r\u00e9seau professionnel. D\u00e9finition, m\u00e9thode, Social Selling Index (SSI) et lien avec le setting B2B.',
   author: {
     '@type': 'Person',
+    '@id': 'https://www.setting.live/a-propos#abraham',
     name: 'Abraham Brakha',
-    jobTitle: 'Fondateur, Setting',
     url: 'https://www.setting.live/equipe/abraham-brakha',
-    sameAs: 'https://www.linkedin.com/in/abraham-brakha/',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',

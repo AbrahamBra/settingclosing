@@ -8,7 +8,7 @@ import { TldrBox } from '@/components/TldrBox'
 export const metadata: Metadata = {
   title: 'Setting LinkedIn : le guide complet — d\u00e9finition, m\u00e9thode et exemples (2026)',
   description:
-    'Le setting LinkedIn est une m\u00e9thode de prospection B2B qui cible les signaux d\u2019achat pour engager des conversations qualifi\u00e9es. D\u00e9finition, \u00e9tapes, scripts de messages, outils, KPIs et erreurs \u00e0 \u00e9viter.',
+    'Setting LinkedIn : m\u00e9thode de prospection B2B par signaux d\u2019achat. D\u00e9finition, \u00e9tapes, scripts de messages, outils et KPIs cl\u00e9s.',
   openGraph: {
     title: 'Setting LinkedIn : le guide complet (2026)',
     description:

@@ -62,4 +62,7 @@ Setting construit et opère des pipelines de prospection LinkedIn B2B. Un setter
 
 - Site : https://www.setting.live
 - Email : a.brakha@challengerslab.com
-- LinkedIn : https://www.linkedin.com/company/challengerslab
+- Fondateur : Abraham Brakha — https://www.linkedin.com/in/abraham-brakha
+- Entreprise : https://www.linkedin.com/company/challengerslab
+- Adresse : 50B rue Salomon Reinach, 69007 Lyon, France
+- SIRET : 902 889 385 00016

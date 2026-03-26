@@ -35,8 +35,11 @@ const articleSchema = {
     'Le setting commercial LinkedIn est une m\u00e9thode de prospection B2B qui combine d\u00e9tection de signaux, qualification humaine et messages contextualis\u00e9s. 9 \u00e9tapes, 4 outils, premiers RDV en 3 semaines.',
   author: {
     '@type': 'Person',
-    name: 'Abraham',
-    url: 'https://www.setting.live/a-propos',
+    '@id': 'https://www.setting.live/a-propos#abraham',
+    name: 'Abraham Brakha',
+    url: 'https://www.setting.live/equipe/abraham-brakha',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',
@@ -53,6 +56,10 @@ const articleSchema = {
     '@id': 'https://www.setting.live/ressources/setting-commercial-linkedin',
   },
   image: 'https://www.setting.live/ressources/setting-commercial-linkedin/opengraph-image',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '[data-speakable]', '.faq-answer'],
+  },
 }
 
 const faqItems = [

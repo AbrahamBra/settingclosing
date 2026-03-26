@@ -35,10 +35,11 @@ const articleSchema = {
     '15 exemples de messages de prospection LinkedIn B2B class\u00e9s par signal d\u2019achat. Mod\u00e8les de connexion, d\u2019accroche et de relance avec taux de r\u00e9ponse r\u00e9els.',
   author: {
     '@type': 'Person',
+    '@id': 'https://www.setting.live/a-propos#abraham',
     name: 'Abraham Brakha',
-    jobTitle: 'Fondateur, Setting',
     url: 'https://www.setting.live/equipe/abraham-brakha',
-    sameAs: 'https://www.linkedin.com/in/abraham-brakha/',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',

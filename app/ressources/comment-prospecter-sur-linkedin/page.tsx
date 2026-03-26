@@ -9,7 +9,7 @@ import { RelatedArticles } from '@/components/RelatedArticles'
 export const metadata: Metadata = {
   title: 'Prospecter sur LinkedIn en 2026 : social selling, automatisation et m\u00e9thode signal-based | Setting',
   description:
-    'Comment prospecter sur LinkedIn en B2B : social selling, automatisation (Waalaxy, Lemlist), m\u00e9thode signal-based, SSI, exemples de messages et comparatif humain vs robot. Guide complet 2026.',
+    'Prospecter sur LinkedIn en B2B : social selling, automatisation, m\u00e9thode signal-based, exemples de messages et comparatif humain vs robot.',
   openGraph: {
     title: 'Prospecter sur LinkedIn en 2026 : social selling, automatisation et m\u00e9thode signal-based',
     description:
@@ -43,10 +43,11 @@ const articleSchema = {
     'Guide complet : social selling LinkedIn, automatisation (Waalaxy, Lemlist), m\u00e9thode signal-based, SSI, exemples de messages et comparatif humain vs robot pour g\u00e9n\u00e9rer des RDV qualifi\u00e9s en B2B.',
   author: {
     '@type': 'Person',
+    '@id': 'https://www.setting.live/a-propos#abraham',
     name: 'Abraham Brakha',
-    jobTitle: 'Fondateur, Setting',
     url: 'https://www.setting.live/equipe/abraham-brakha',
-    sameAs: 'https://www.linkedin.com/in/abraham-brakha/',
+    jobTitle: 'Fondateur & Automatisation IA',
+    sameAs: ['https://www.linkedin.com/in/abraham-brakha'],
   },
   publisher: {
     '@type': 'Organization',
