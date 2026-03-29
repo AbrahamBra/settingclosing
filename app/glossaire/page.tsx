@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Glossaire Setting & Prospection LinkedIn | Setting',
-    description: 'Définitions des termes clés du setting et de la prospection LinkedIn B2B : setter, signal d\'achat, ICP, pipeline, qualification.',
+    description: "Les définitions exactes des termes du setting et de la prospection LinkedIn — setter, signal d'achat, ICP, pipeline, qualification et plus.",
   },
   alternates: {
     canonical: 'https://www.setting.live/glossaire',
@@ -32,11 +32,6 @@ export const metadata: Metadata = {
       'fr': 'https://www.setting.live/glossaire',
       'x-default': 'https://www.setting.live/glossaire',
     },
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Glossaire Setting & Prospection LinkedIn | Setting',
-    description: "Les définitions exactes des termes du setting et de la prospection LinkedIn — setter, signal d'achat, ICP, pipeline, qualification et plus.",
   },
 }
 

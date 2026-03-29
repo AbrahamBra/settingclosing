@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { ButtonGlow } from './ui/ButtonGlow'
+import { HeroPretextDescription } from './HeroPretextDescription'
 
 const personas = ['solopreneurs', 'fondateurs', 'indépendants B2B']
 
@@ -42,14 +43,13 @@ export function Hero() {
           <span className="text-accent">Il te manque un pipeline.</span>
         </motion.h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-sans text-lg text-text-secondary mb-12 max-w-xl mx-auto"
         >
-          On génère tes RDV qualifiés avec l&apos;IA pour que tu te concentres sur ce que tu fais de mieux&nbsp;: closer.
-        </motion.p>
+          <HeroPretextDescription />
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

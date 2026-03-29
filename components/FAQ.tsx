@@ -1,7 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { ScrollReveal } from './ui/ScrollReveal'
+import { prepare, layout, type PreparedText } from '@chenglou/pretext'
+import { BalancedText } from './ui/BalancedText'
 
 const faqs = [
   {
@@ -38,20 +41,72 @@ const faqs = [
   },
 ]
 
+// Padding inside answer: px-5 pb-5 = 20px horizontal + 20px bottom padding
+const ANSWER_PADDING_V = 20 // pb-5
+const ANSWER_PADDING_H = 40 // px-5 × 2
+
 export function FAQ() {
   const [open, setOpen] = useState<number | null>(null)
+  const [heights, setHeights] = useState<number[]>([])
+  const containerRef = useRef<HTMLDivElement>(null)
+  const preparedRef = useRef<PreparedText[]>([])
+
+  const computeHeights = () => {
+    const el = containerRef.current
+    if (!el || preparedRef.current.length === 0) return
+
+    // Container is max-w-2xl (672px) minus px-5 padding on each side
+    const containerWidth = el.offsetWidth - ANSWER_PADDING_H
+    if (containerWidth <= 0) return
+
+    // text-sm = 14px, leading-relaxed = 1.625 → 22.75px ≈ 23px
+    const computed = window.getComputedStyle(el.querySelector('[data-faq-measure]') ?? el)
+    const fontSize = parseFloat(computed.fontSize) || 14
+    const lineHeightPx = Math.round(fontSize * 1.625)
+
+    const newHeights = preparedRef.current.map((p) => {
+      const result = layout(p, containerWidth, lineHeightPx)
+      // Total height = text height + bottom padding
+      return result.height + ANSWER_PADDING_V
+    })
+    setHeights(newHeights)
+  }
+
+  useEffect(() => {
+    document.fonts.ready.then(() => {
+      const el = containerRef.current
+      if (!el) return
+      const measureEl = el.querySelector('[data-faq-measure]') ?? el
+      const computed = window.getComputedStyle(measureEl)
+      const font = computed.font || `${computed.fontWeight} ${computed.fontSize} ${computed.fontFamily}`
+
+      preparedRef.current = faqs.map((faq) => prepare(faq.a, font))
+      computeHeights()
+    })
+
+    const onResize = () => computeHeights()
+    window.addEventListener('resize', onResize)
+    return () => window.removeEventListener('resize', onResize)
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section id="faq" className="section-padding">
-      <div className="container-max max-w-2xl">
+      <div ref={containerRef} className="container-max max-w-2xl">
+        {/* Invisible measure element to read computed text styles */}
+        <span
+          aria-hidden="true"
+          data-faq-measure
+          className="font-sans text-sm leading-relaxed absolute opacity-0 pointer-events-none"
+        />
+
         <ScrollReveal>
           <div className="text-center mb-10">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Questions fréquentes
             </p>
-            <h2 className="font-sans text-h2 text-text-primary">
-              On r&eacute;pond avant que tu demandes
-            </h2>
+            <BalancedText as="h2" className="font-sans text-h2 text-text-primary">
+              {'On répond avant que tu demandes'}
+            </BalancedText>
           </div>
         </ScrollReveal>
 
@@ -62,30 +117,43 @@ export function FAQ() {
                 <button
                   onClick={() => setOpen(open === i ? null : i)}
                   className="w-full flex items-center justify-between gap-4 p-5 text-left hover:bg-white/[0.02] transition-colors"
+                  aria-expanded={open === i}
                 >
                   <span className="font-sans text-sm font-semibold text-text-primary">
                     {faq.q}
                   </span>
-                  <span
-                    className="text-text-muted text-lg shrink-0 transition-transform duration-200"
-                    style={{ transform: open === i ? 'rotate(45deg)' : 'rotate(0deg)' }}
+                  <motion.span
+                    animate={{ rotate: open === i ? 45 : 0 }}
+                    transition={{ duration: 0.2, ease: 'easeInOut' }}
+                    className="text-text-muted text-lg shrink-0"
+                    aria-hidden="true"
                   >
                     +
-                  </span>
+                  </motion.span>
                 </button>
-                <div
-                  className="overflow-hidden transition-all duration-200"
-                  style={{
-                    maxHeight: open === i ? '500px' : '0',
-                    opacity: open === i ? 1 : 0,
-                  }}
-                >
-                  <div className="px-5 pb-5">
-                    <p className="font-sans text-sm text-text-secondary leading-relaxed faq-answer">
-                      {faq.a}
-                    </p>
-                  </div>
-                </div>
+
+                <AnimatePresence initial={false}>
+                  {open === i && (
+                    <motion.div
+                      key="answer"
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{
+                        // Use Pretext-predicted height when available, fallback to auto
+                        height: heights[i] ?? 'auto',
+                        opacity: 1,
+                      }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-5 pb-5">
+                        <p className="font-sans text-sm text-text-secondary leading-relaxed faq-answer">
+                          {faq.a}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </ScrollReveal>
           ))}

@@ -9,6 +9,7 @@ import { PipelineVisual } from '@/components/PipelineVisual'
 import { ToolMarquee } from '@/components/ToolMarquee'
 import { CombinedSimulator } from '@/components/CombinedSimulator'
 import { TeamStrip } from '@/components/TeamStrip'
+import { BalancedText } from '@/components/ui/BalancedText'
 
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
@@ -307,9 +308,9 @@ export default function Home() {
             <p className="font-mono text-xs uppercase tracking-widest text-text-muted mb-4">
               Le probl&egrave;me d&apos;apr&egrave;s
             </p>
-            <h2 className="font-sans text-2xl md:text-3xl font-extrabold text-text-primary mb-3">
-              Trop de RDV, pas assez de bras&nbsp;?
-            </h2>
+            <BalancedText as="h2" className="font-sans text-2xl md:text-3xl font-extrabold text-text-primary mb-3">
+              {'Trop de RDV, pas assez de bras\u00a0?'}
+            </BalancedText>
             <p className="text-text-secondary text-sm mb-8 max-w-lg mx-auto">
               Quand le pipeline tourne, c&apos;est la delivery qui bloque. Lib&egrave;re du temps, d&eacute;l&egrave;gue, automatise. ChallengersLab t&apos;aide &agrave; scaler sans recruter.
             </p>

@@ -4,9 +4,9 @@
     {
       "name": "challengerslab-dev",
       "runtimeExecutable": "node",
-      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev"],
-      "port": 3000,
-      "cwd": "C:\\Users\\abrah\\CLsettingclosing"
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev", "--port", "3001"],
+      "port": 3001,
+      "cwd": "C:\\Users\\abrah\\CLsettingclosing\\.claude\\worktrees\\silly-davinci"
     }
   ]
 }
