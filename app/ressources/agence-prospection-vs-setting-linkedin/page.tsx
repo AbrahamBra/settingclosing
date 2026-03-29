@@ -88,7 +88,7 @@ const faqItems = [
   {
     question: 'Quelle est la diff\u00e9rence principale entre une agence de prospection B2B et le setting LinkedIn externalis\u00e9 ?',
     answer:
-      'Une agence de prospection B2B utilise g\u00e9n\u00e9ralement des campagnes multicanal (email, t\u00e9l\u00e9phone, LinkedIn) avec une approche volumique : beaucoup de contacts, peu de personnalisation. Le setting LinkedIn externalis\u00e9 se concentre sur un seul canal (LinkedIn) avec une approche signal-based : chaque message est d\u00e9clench\u00e9 par un signal d\u2019achat d\u00e9tect\u00e9 sur le profil du prospect. Le r\u00e9sultat est un taux de r\u00e9ponse nettement plus \u00e9lev\u00e9 et des rendez-vous mieux qualifi\u00e9s.',
+      'L\u2019agence envoie des campagnes multicanal (email, t\u00e9l\u00e9phone, LinkedIn) en volume. Le setting externalis\u00e9 ne travaille que LinkedIn, et contacte uniquement les prospects qui ont montr\u00e9 un signal d\u2019achat. Moins de contacts, mais chaque message est contextualis\u00e9.',
   },
   {
     question: 'Pourquoi le setting LinkedIn externalis\u00e9 co\u00fbte moins cher qu\u2019une agence de prospection ?',
@@ -175,9 +175,8 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
               Agence prospection B2B vs setting LinkedIn externalis&eacute; : le comparatif chiffr&eacute;
             </h1>
             <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
-              Deux approches pour g&eacute;n&eacute;rer des rendez-vous qualifi&eacute;s en B2B.
-              L&apos;une mise sur le volume, l&apos;autre sur la pr&eacute;cision. Voici les vraies diff&eacute;rences,
-              les vrais co&ucirc;ts et les vrais r&eacute;sultats.
+              Vous h&eacute;sitez entre une agence de prospection et un service de setting LinkedIn.
+              On a pass&eacute; des mois des deux c&ocirc;t&eacute;s. Voici ce qu&apos;on en retient.
             </p>
             <AuthorBlock date="2026-03-29" readTime="10 min de lecture" dateLabel="29 mars 2026" updatedDate="2026-03-29" />
           </header>
@@ -265,12 +264,12 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
                 <p className="font-sans font-semibold text-text-primary mb-1">
-                  En r&eacute;sum&eacute;
+                  Bon &agrave; savoir
                 </p>
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
-                  L&apos;agence de prospection est un mod&egrave;le &eacute;prouv&eacute;, mais co&ucirc;teux et
-                  lent &agrave; d&eacute;marrer. Elle convient aux entreprises qui veulent d&eacute;l&eacute;guer
-                  enti&egrave;rement leur acquisition et qui ont le budget pour un engagement long.
+                  Le mod&egrave;le agence fonctionne. Mais il co&ucirc;te cher et met du temps &agrave;
+                  d&eacute;marrer. Si vos premiers r&eacute;sultats arrivent au mois 3 et que
+                  l&apos;engagement est de 6 mois, vous avez peu de marge de manœuvre.
                 </p>
               </div>
             </section>
@@ -325,8 +324,8 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
                     desc: 'Un setter form\u00e9 \u00e0 votre offre g\u00e8re tout : d\u00e9tection de signaux, r\u00e9daction des messages, qualification des r\u00e9ponses, booking des RDV. Vous recevez les RDV dans votre agenda.',
                   },
                   {
-                    title: 'Taux de r\u00e9ponse \u00e9lev\u00e9',
-                    desc: 'L\u2019approche signal-based g\u00e9n\u00e8re un taux de r\u00e9ponse estim\u00e9 entre 15 et 25 %, contre 3 \u00e0 8 % pour les campagnes de prospection classiques. La personnalisation et le timing font la diff\u00e9rence.',
+                    title: 'Taux de r\u00e9ponse plus \u00e9lev\u00e9',
+                    desc: 'On estime le taux de r\u00e9ponse entre 15 et 25 %, contre 3 \u00e0 8 % en cold outreach classique. La raison est simple : le prospect a d\u00e9j\u00e0 montr\u00e9 un int\u00e9r\u00eat. On ne le contacte pas \u00e0 froid.',
                   },
                 ].map(({ title, desc }) => (
                   <div key={title} className="flex gap-4">
@@ -342,12 +341,11 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
                 <p className="font-sans font-semibold text-text-primary mb-1">
-                  En r&eacute;sum&eacute;
+                  Concr&egrave;tement
                 </p>
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
-                  Le setting externalis&eacute; mise sur la qualit&eacute; plut&ocirc;t que le volume. Moins de
-                  contacts, mais des messages pertinents envoy&eacute;s au bon moment. Le co&ucirc;t est 3 &agrave;
-                  6 fois inf&eacute;rieur &agrave; une agence, sans engagement.
+                  Moins de volume, plus de pr&eacute;cision. 50 messages cibl&eacute;s par semaine
+                  au lieu de 500 emails g&eacute;n&eacute;riques. Et si &ccedil;a ne marche pas, vous arr&ecirc;tez.
                 </p>
               </div>
             </section>
@@ -360,65 +358,11 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
                 Le comparatif point par point
               </h2>
               <p className="mb-6">
-                Les deux approches c&ocirc;te &agrave; c&ocirc;te, sur les 8 crit&egrave;res qui comptent pour d&eacute;cider.
+                8 crit&egrave;res, c&ocirc;te &agrave; c&ocirc;te. Pas de note, pas de classement &mdash;
+                juste les faits pour que vous d&eacute;cidiez.
               </p>
 
-              {/* Semantic HTML table */}
-              <div className="overflow-x-auto my-8">
-                <table className="w-full text-sm text-left font-sans border-collapse">
-                  <thead>
-                    <tr className="border-b border-white/10">
-                      <th className="py-3 px-4 text-text-muted font-semibold">Crit&egrave;re</th>
-                      <th className="py-3 px-4 text-text-muted font-semibold">Agence prospection B2B</th>
-                      <th className="py-3 px-4 text-[#C87533] font-semibold">Setting LinkedIn externalis&eacute;</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">Prix mensuel</td>
-                      <td className="py-3 px-4 text-text-primary">2 000&ndash;5 000 &euro;/mois</td>
-                      <td className="py-3 px-4 text-text-primary">790 &euro;/mois</td>
-                    </tr>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">Engagement</td>
-                      <td className="py-3 px-4 text-text-primary">3&ndash;6 mois minimum</td>
-                      <td className="py-3 px-4 text-text-primary">Sans engagement</td>
-                    </tr>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">M&eacute;thode</td>
-                      <td className="py-3 px-4 text-text-primary">Multicanal, volumique</td>
-                      <td className="py-3 px-4 text-text-primary">Signal-based, LinkedIn uniquement</td>
-                    </tr>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">Personnalisation</td>
-                      <td className="py-3 px-4 text-text-primary">Variables basiques (pr&eacute;nom, entreprise)</td>
-                      <td className="py-3 px-4 text-text-primary">Contextualis&eacute;e par signal d&apos;achat</td>
-                    </tr>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">Taux de r&eacute;ponse (estim&eacute;)</td>
-                      <td className="py-3 px-4 text-text-primary">3&ndash;8 %</td>
-                      <td className="py-3 px-4 text-text-primary">15&ndash;25 %</td>
-                    </tr>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">D&eacute;lai premiers RDV</td>
-                      <td className="py-3 px-4 text-text-primary">4&ndash;8 semaines</td>
-                      <td className="py-3 px-4 text-text-primary">7&ndash;14 jours</td>
-                    </tr>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">Transparence</td>
-                      <td className="py-3 px-4 text-text-primary">Reporting mensuel, peu de visibilit&eacute; quotidienne</td>
-                      <td className="py-3 px-4 text-text-primary">Acc&egrave;s temps r&eacute;el aux conversations</td>
-                    </tr>
-                    <tr className="border-b border-white/[0.06]">
-                      <td className="py-3 px-4 text-text-muted">Contr&ocirc;le</td>
-                      <td className="py-3 px-4 text-text-primary">D&eacute;l&eacute;gu&eacute; &agrave; l&apos;agence</td>
-                      <td className="py-3 px-4 text-text-primary">Vous validez les messages et le ciblage</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              {/* Visual grid version */}
+              {/* Comparison grid */}
               <div className="rounded-xl border border-white/[0.06] overflow-hidden mb-6">
                 <div className="grid grid-cols-3 bg-bg-secondary border-b border-white/[0.06]">
                   <div className="px-4 py-3 font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary">
@@ -488,8 +432,7 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
                 Quand choisir une agence de prospection B2B ?
               </h2>
               <p className="mb-4">
-                L&apos;agence reste pertinente dans certains cas pr&eacute;cis. Voici les trois situations o&ugrave;
-                elle a un avantage.
+                L&apos;agence n&apos;est pas obsol&egrave;te. Dans ces situations, c&apos;est elle qui a raison.
               </p>
 
               <div className="space-y-4 my-6">
@@ -524,7 +467,7 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
                 Quand choisir le setting LinkedIn externalis&eacute; ?
               </h2>
               <p className="mb-4">
-                Le setting externalis&eacute; est le meilleur choix dans ces trois situations.
+                Le setting marche mieux quand ces conditions sont r&eacute;unies.
               </p>
 
               <div className="space-y-4 my-6">
@@ -555,12 +498,12 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
               <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
                 <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />
                 <p className="font-sans font-semibold text-text-primary mb-1">
-                  Le point cl&eacute;
+                  Un mot d&apos;honn&ecirc;tet&eacute;
                 </p>
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
-                  Le setting externalis&eacute; n&apos;est pas l&apos;oppos&eacute; d&apos;une agence. C&apos;est une
-                  alternative plus l&eacute;g&egrave;re, plus rapide et plus pr&eacute;cise quand votre cible est sur
-                  LinkedIn. Les deux approches peuvent coexister si les canaux sont bien r&eacute;partis.
+                  On fait du setting, pas de l&apos;agence. On n&apos;est pas neutres. Mais on sait aussi
+                  que le setting ne r&eacute;pond pas &agrave; tous les cas. Si vos prospects ne sont pas sur LinkedIn,
+                  une agence multicanal sera plus adapt&eacute;e.
                 </p>
               </div>
             </section>
@@ -574,14 +517,15 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
               </h2>
               <div className="divide-y divide-white/[0.06]">
                 {faqItems.map((item, i) => (
-                  <div key={i} className="py-5">
-                    <p className="font-sans font-semibold text-text-primary mb-2">
+                  <details key={i} className="group py-5" {...(i === 0 ? { open: true } : {})}>
+                    <summary className="font-sans font-semibold text-text-primary cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
                       {item.question}
-                    </p>
-                    <p className="faq-answer font-sans text-text-secondary leading-relaxed text-sm">
+                      <span className="shrink-0 text-accent transition-transform group-open:rotate-45 text-lg">+</span>
+                    </summary>
+                    <p className="faq-answer font-sans text-text-secondary leading-relaxed text-sm mt-3">
                       {item.answer}
                     </p>
-                  </div>
+                  </details>
                 ))}
               </div>
             </section>
