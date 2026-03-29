@@ -16,6 +16,7 @@ export const metadata: Metadata = {
       'Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous explique le quotidien réel et comment vous y former en alternance.',
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Devenir%20business%20developer%20en%202026&tag=Guide%20m%C3%A9tier', width: 1200, height: 630, alt: 'Devenir business developer en 2026 — Setting' }],
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/devenir-business-developer',
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Devenir Business Developer en 2026 | Setting',
     description: 'Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous explique le quotidien réel et comment vous y former en alternance.',
+    images: ['https://www.setting.live/api/og?title=Devenir%20business%20developer%20en%202026&tag=Guide%20m%C3%A9tier'],
   },
 }
 

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
       "Tout sur le setting : définition, méthode LinkedIn signal-based, outils, scripts, coût réel et programme complet. Le guide de référence pour les fondateurs B2B.",
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Le%20setting%20LinkedIn%20expliqu%C3%A9&tag=M%C3%A9thode', width: 1200, height: 630, alt: 'Le setting LinkedIn expliqué — Setting' }],
   },
   alternates: {
     canonical: 'https://www.setting.live/setting',
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Setting : le guide complet du setting commercial B2B',
     description: "Tout sur le setting : d\u00e9finition, m\u00e9thode LinkedIn signal-based, outils, scripts, co\u00fbt r\u00e9el et programme complet. Le guide de r\u00e9f\u00e9rence pour les fondateurs B2B.",
+    images: ['https://www.setting.live/api/og?title=Le%20setting%20LinkedIn%20expliqu%C3%A9&tag=M%C3%A9thode'],
   },
 }
 

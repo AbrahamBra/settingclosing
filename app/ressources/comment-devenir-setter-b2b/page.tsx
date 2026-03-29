@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: "Comment devenir setter ou closer B2B en 2026. Formation, comp\u00e9tences r\u00e9elles, prix du march\u00e9, outils et crit\u00e8res pour choisir un setter. Guide terrain complet.",
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Devenir%20setter%20ou%20closer%20B2B%20en%202026&tag=Guide%20carri%C3%A8re', width: 1200, height: 630, alt: 'Devenir setter ou closer B2B en 2026 — Setting' }],
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Devenir setter ou closer B2B en 2026 | Formation, prix, guide | Setting',
     description: 'Comment devenir setter ou closer B2B en 2026. Formation, comp\u00e9tences r\u00e9elles, prix du march\u00e9, outils et crit\u00e8res pour choisir un setter. Guide terrain complet.',
+    images: ['https://www.setting.live/api/og?title=Devenir%20setter%20ou%20closer%20B2B%20en%202026&tag=Guide%20carri%C3%A8re'],
   },
 }
 

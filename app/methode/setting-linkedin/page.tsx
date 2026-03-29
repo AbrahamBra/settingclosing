@@ -28,11 +28,13 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'website',
     url: 'https://www.setting.live/methode/setting-linkedin',
+    images: [{ url: 'https://www.setting.live/api/og?title=M%C3%A9thode%20Setting%20LinkedIn&tag=M%C3%A9thode', width: 1200, height: 630, alt: 'Méthode Setting LinkedIn — Setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Setting LinkedIn B2B : méthode complète en 9 étapes',
     description: 'Méthode de setting LinkedIn : détection IA des signaux d\u2019achat, co-rédaction des messages et qualification téléphonique BANT.',
+    images: ['https://www.setting.live/api/og?title=M%C3%A9thode%20Setting%20LinkedIn&tag=M%C3%A9thode'],
   },
 }
 

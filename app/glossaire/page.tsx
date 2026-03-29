@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.setting.live/opengraph-image',
+        url: 'https://www.setting.live/api/og?title=Glossaire%20du%20setting%20B2B&tag=Glossaire',
         width: 1200,
         height: 630,
-        alt: 'Glossaire Setting & Prospection LinkedIn — Setting',
+        alt: 'Glossaire du setting B2B — Setting',
       },
     ],
   },
@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Glossaire Setting & Prospection LinkedIn | Setting',
     description: 'Définitions des termes clés du setting et de la prospection LinkedIn B2B : setter, signal d\'achat, ICP, pipeline, qualification.',
+    images: ['https://www.setting.live/api/og?title=Glossaire%20du%20setting%20B2B&tag=Glossaire'],
   },
   alternates: {
     canonical: 'https://www.setting.live/glossaire',

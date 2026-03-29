@@ -23,11 +23,13 @@ export const metadata: Metadata = {
     description: 'Prix, m\u00e9thode, engagement, r\u00e9sultats : le comparatif entre agence de prospection B2B et setting LinkedIn externalis\u00e9.',
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Agence%20prospection%20B2B%20vs%20setting%20LinkedIn&tag=Comparatif', width: 1200, height: 630, alt: 'Agence prospection B2B vs setting LinkedIn \u2014 Setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Agence prospection B2B vs setting LinkedIn externalis\u00e9 | Setting',
     description: 'Prix, m\u00e9thode, engagement, r\u00e9sultats : le comparatif entre agence de prospection B2B et setting LinkedIn externalis\u00e9.',
+    images: ['https://www.setting.live/api/og?title=Agence%20prospection%20B2B%20vs%20setting%20LinkedIn&tag=Comparatif'],
   },
 }
 
