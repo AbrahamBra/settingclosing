@@ -11,7 +11,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 export const metadata: Metadata = {
   title: 'Résultats clients — Setting LinkedIn B2B | Setting',
   description:
-    'Découvrez les résultats prospection LinkedIn B2B de nos clients : 2-4 RDV qualifiés/semaine, 20-35 % de taux de réponse, premiers résultats en 7 jours.',
+    'Notre méthode, nos engagements et le déroulement concret d\u2019un accompagnement Setting : objectifs, métriques suivies, garantie et profils types.',
   robots: { index: true, follow: true },
   alternates: {
     canonical: 'https://www.setting.live/resultats',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Résultats clients — Setting LinkedIn B2B | Setting',
     description:
-      'Nos clients obtiennent 2-4 RDV qualifiés/semaine avec un taux de réponse 5 à 10x supérieur à la prospection classique.',
+      'Notre méthode, nos engagements et le déroulement concret d\u2019un accompagnement Setting.',
     locale: 'fr_FR',
     type: 'website',
     url: 'https://www.setting.live/resultats',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Résultats clients — Setting LinkedIn B2B | Setting',
     description:
-      'Nos clients obtiennent 2-4 RDV qualifiés/semaine avec un taux de réponse 5 à 10x supérieur à la prospection classique.',
+      'Notre méthode, nos engagements et le déroulement concret d\u2019un accompagnement Setting.',
     images: ['https://www.setting.live/api/og?title=R%C3%A9sultats%20clients%20%E2%80%94%20Setting%20LinkedIn%20B2B&tag=R%C3%A9sultats'],
   },
 }
@@ -45,7 +45,7 @@ const webPageSchema = {
   '@type': 'WebPage',
   name: 'Résultats clients — Setting LinkedIn B2B | Setting',
   description:
-    'Découvrez les résultats prospection LinkedIn B2B de nos clients : 2-4 RDV qualifiés/semaine, 20-35 % de taux de réponse, premiers résultats en 7 jours.',
+    'Notre méthode, nos engagements et le déroulement concret d\u2019un accompagnement Setting : objectifs, métriques suivies, garantie et profils types.',
   url: 'https://www.setting.live/resultats',
   inLanguage: 'fr-FR',
   isPartOf: {
@@ -110,23 +110,23 @@ const faqSchema = {
 const metrics = [
   {
     value: '2-4 RDV/semaine',
-    label: '[estimation]',
-    description: 'En régime de croisière, après la phase de lancement de 7 jours.',
+    label: 'Objectif',
+    description: 'C\u2019est l\u2019objectif en régime de croisière. Si on n\u2019atteint pas 5 RDV le premier mois, le mois suivant est offert.',
   },
   {
-    value: '20-35\u00a0% taux de réponse',
-    label: '[estimation]',
-    description: 'Vs 2-5\u00a0% en prospection classique (cold emailing, InMails de masse).',
+    value: 'Signal-based',
+    label: 'Méthode',
+    description: 'On contacte uniquement les prospects qui ont montré un signal d\u2019intérêt. Pas de cold outreach de masse.',
   },
   {
     value: '< 7 jours',
-    label: '[estimation]',
-    description: 'Délai moyen pour obtenir les premiers RDV qualifiés après lancement.',
+    label: 'Lancement',
+    description: 'Délai entre le démarrage et les premiers messages envoyés. Setup en 48h, prospection dès le jour 3.',
   },
   {
-    value: '5 clients max/mois',
-    label: '',
-    description: 'Nombre de nouveaux clients acceptés chaque mois pour garantir la qualité.',
+    value: '5 clients max',
+    label: 'Par mois',
+    description: 'On limite le nombre de nouveaux clients pour garantir un setter dédié et des messages de qualité.',
   },
 ]
 
@@ -197,8 +197,8 @@ export default function ResultatsPage() {
                 data-speakable
                 className="font-sans text-text-secondary text-lg md:text-xl leading-relaxed max-w-2xl mx-auto"
               >
-                Nos clients obtiennent en moyenne 2 à 4 RDV qualifiés par semaine
-                avec un taux de réponse 5 à 10&nbsp;fois supérieur à la prospection classique.
+                Notre méthode, nos engagements et ce que vous pouvez attendre
+                d&apos;un accompagnement Setting.
               </p>
             </ScrollReveal>
           </div>
@@ -296,66 +296,44 @@ export default function ResultatsPage() {
           </div>
         </section>
 
-        {/* ── Cas clients ────────────────────────────────────────────────── */}
+        {/* ── Comment ça se passe concrètement ──────────────────────────── */}
         <section className="py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-6">
             <ScrollReveal>
               <h2 className="font-sans font-bold text-2xl md:text-3xl text-text-primary mb-4">
-                Exemples de résultats obtenus
+                Comment ça se passe concrètement
               </h2>
               <p className="font-sans text-text-secondary text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
-                Chaque cas est anonymisé. Les chiffres sont issus de campagnes réelles
-                menées entre 2025 et 2026.
+                Voici le déroulement type d&apos;un accompagnement Setting,
+                de la première semaine au régime de croisière.
               </p>
             </ScrollReveal>
 
-            <div className="space-y-6">
+            <div className="space-y-5">
               {[
                 {
-                  sector: 'SaaS B2B — logiciel de gestion',
-                  ticket: 'Ticket moyen : 8 000 €',
-                  before: 'Pipeline dépendant 100 % de l\u2019inbound. Zéro prospection sortante.',
-                  after: '12 RDV qualifiés en 10 semaines. 3 deals signés. ROI positif dès le mois 2.',
-                  method: 'Setting signal-based LinkedIn + Sales Navigator.',
-                  duration: '3 mois',
+                  step: 'Semaine 1',
+                  title: 'Setup & premiers messages',
+                  detail: 'On définit votre ICP, vos messages et vos filtres Sales Navigator. Le setter commence à prospecter. Les premiers échanges LinkedIn arrivent dans les jours qui suivent.',
                 },
                 {
-                  sector: 'Consultant indépendant — conseil en transformation',
-                  ticket: 'Ticket moyen : 5 000 €',
-                  before: 'Prospection manuelle 1h/jour sur LinkedIn, 1-2 RDV/mois.',
-                  after: '8 RDV qualifiés/mois en régime de croisière. Temps de prospection délégué à 100 %.',
-                  method: 'Setter dédié + signaux Reactin + relances séquencées.',
-                  duration: '2 mois',
+                  step: 'Semaines 2-4',
+                  title: 'Montée en charge',
+                  detail: 'Le setter ajuste les messages en fonction des réponses terrain. Le taux de réponse se stabilise. Les premiers RDV qualifiés sont bookés et transférés.',
                 },
                 {
-                  sector: 'Agence marketing — prestations sur mesure',
-                  ticket: 'Ticket moyen : 3 000 €/mois',
-                  before: 'Bouche-à-oreille uniquement. Pipeline irrégulier.',
-                  after: '6 RDV qualifiés/mois. 2 nouveaux clients récurrents signés en 6 semaines.',
-                  method: 'Ciblage dirigeants PME + messages contextualisés sur signaux d\u2019achat.',
-                  duration: '6 semaines',
+                  step: 'Mois 2-3',
+                  title: 'Régime de croisière',
+                  detail: 'Le pipe est rodé. Vous recevez un reporting hebdomadaire avec les métriques : messages envoyés, taux de réponse, RDV bookés, conversion. On recalibre chaque semaine.',
                 },
-              ].map((c, i) => (
-                <ScrollReveal key={c.sector} delay={i * 100}>
+              ].map((s, i) => (
+                <ScrollReveal key={s.step} delay={i * 100}>
                   <DarkCard hover className="p-6">
-                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
-                      <p className="font-sans font-bold text-text-primary">{c.sector}</p>
-                      <span className="font-mono text-xs text-accent uppercase tracking-wider">{c.ticket}</span>
+                    <div className="flex items-baseline gap-4 mb-3">
+                      <span className="font-mono text-xs text-accent uppercase tracking-wider shrink-0">{s.step}</span>
+                      <p className="font-sans font-bold text-text-primary">{s.title}</p>
                     </div>
-                    <div className="grid sm:grid-cols-2 gap-4">
-                      <div>
-                        <p className="font-mono text-[10px] text-text-muted/60 uppercase tracking-widest mb-1">Avant</p>
-                        <p className="font-sans text-sm text-text-secondary leading-relaxed">{c.before}</p>
-                      </div>
-                      <div>
-                        <p className="font-mono text-[10px] text-accent uppercase tracking-widest mb-1">Après</p>
-                        <p className="font-sans text-sm text-text-secondary leading-relaxed">{c.after}</p>
-                      </div>
-                    </div>
-                    <div className="mt-4 pt-4 border-t border-white/[0.06] flex flex-col sm:flex-row gap-4 text-xs text-text-muted">
-                      <span>Méthode : {c.method}</span>
-                      <span>Durée : {c.duration}</span>
-                    </div>
+                    <p className="font-sans text-sm text-text-secondary leading-relaxed">{s.detail}</p>
                   </DarkCard>
                 </ScrollReveal>
               ))}
