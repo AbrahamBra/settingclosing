@@ -1,11 +1,14 @@
 import { ImageResponse } from 'next/og'
+import { type NextRequest } from 'next/server'
 
 export const runtime = 'edge'
-export const alt = 'Setting — Prospection LinkedIn B2B externalisée'
-export const size = { width: 1200, height: 630 }
-export const contentType = 'image/png'
 
-export default function OGImage() {
+export async function GET(req: NextRequest) {
+  const { searchParams } = req.nextUrl
+  const title = searchParams.get('title') ?? 'Setting LinkedIn B2B'
+  const subtitle = searchParams.get('subtitle') ?? ''
+  const tag = searchParams.get('tag') ?? ''
+
   return new ImageResponse(
     (
       <div
@@ -20,19 +23,23 @@ export default function OGImage() {
           fontFamily: 'system-ui, -apple-system, sans-serif',
         }}
       >
+        {/* Top: tag + title + subtitle */}
         <div style={{ display: 'flex', flexDirection: 'column' }}>
-          <div
-            style={{
-              fontSize: 16,
-              fontWeight: 600,
-              color: '#C87533',
-              letterSpacing: '0.12em',
-              textTransform: 'uppercase',
-              marginBottom: 24,
-            }}
-          >
-            Prospection LinkedIn B2B
-          </div>
+          {tag && (
+            <div
+              style={{
+                fontSize: 16,
+                fontWeight: 600,
+                color: '#C87533',
+                letterSpacing: '0.12em',
+                textTransform: 'uppercase',
+                marginBottom: 24,
+              }}
+            >
+              {tag}
+            </div>
+          )}
+          {/* Accent bar */}
           <div
             style={{
               width: 56,
@@ -44,28 +51,31 @@ export default function OGImage() {
           />
           <div
             style={{
-              fontSize: 56,
+              fontSize: title.length > 60 ? 40 : title.length > 40 ? 48 : 56,
               fontWeight: 700,
               color: '#F0ECE4',
               lineHeight: 1.15,
               maxWidth: 960,
             }}
           >
-            On te construit un pipeline de RDV qualifiés
+            {title}
           </div>
-          <div
-            style={{
-              fontSize: 22,
-              color: '#A09A92',
-              lineHeight: 1.5,
-              maxWidth: 800,
-              marginTop: 20,
-            }}
-          >
-            Setter dédié · Méthode signal-based · RDV dès la semaine 1
-          </div>
+          {subtitle && (
+            <div
+              style={{
+                fontSize: 22,
+                color: '#A09A92',
+                lineHeight: 1.5,
+                maxWidth: 800,
+                marginTop: 20,
+              }}
+            >
+              {subtitle}
+            </div>
+          )}
         </div>
 
+        {/* Bottom: brand */}
         <div
           style={{
             display: 'flex',
@@ -73,7 +83,14 @@ export default function OGImage() {
             justifyContent: 'space-between',
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+            }}
+          >
+            {/* Logo dot */}
             <div
               style={{
                 width: 12,
@@ -93,12 +110,17 @@ export default function OGImage() {
               Setting
             </div>
           </div>
-          <div style={{ fontSize: 16, color: '#6C6560' }}>
+          <div
+            style={{
+              fontSize: 16,
+              color: '#6C6560',
+            }}
+          >
             setting.live
           </div>
         </div>
       </div>
     ),
-    { ...size }
+    { width: 1200, height: 630 }
   )
 }

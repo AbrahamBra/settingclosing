@@ -16,6 +16,7 @@ export const metadata: Metadata = {
       'Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous explique le quotidien réel et comment vous y former en alternance.',
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Devenir%20business%20developer%20en%202026&tag=Guide%20m%C3%A9tier', width: 1200, height: 630, alt: 'Devenir business developer en 2026 — Setting' }],
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/devenir-business-developer',
@@ -28,6 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Devenir Business Developer en 2026 | Setting',
     description: 'Le métier de business developer a changé. Outils numériques, automatisation, IA : on vous explique le quotidien réel et comment vous y former en alternance.',
+    images: ['https://www.setting.live/api/og?title=Devenir%20business%20developer%20en%202026&tag=Guide%20m%C3%A9tier'],
   },
 }
 
@@ -182,7 +184,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           <div data-speakable="true">
             <TldrBox>
-              <p>Ce qu&apos;il faut savoir pour devenir business developer en 2026 : comp&eacute;tences attendues, parcours possibles (BTS, &eacute;cole de commerce, reconversion), fourchettes de salaire (30-55k&nbsp;&euro; selon exp&eacute;rience) et r&eacute;alit&eacute;s du m&eacute;tier au quotidien.</p>
+              <p>Ce qu&apos;il faut savoir pour devenir business developer en 2026 : comp&eacute;tences attendues, parcours possibles (BTS, &eacute;cole de commerce, reconversion), fourchettes de salaire (30-55k&nbsp;&euro; selon exp&eacute;rience, source&nbsp;: <a href="https://www.apec.fr" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">APEC</a>) et r&eacute;alit&eacute;s du m&eacute;tier au quotidien.</p>
             </TldrBox>
           </div>
 
@@ -347,8 +349,9 @@ export default function DevenirBusinessDeveloperPage() {
                 </p>
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   En trois à cinq ans, les profils confirmés atteignent{' '}
-                  <span className="font-semibold text-text-primary">45 000 à 60 000 €</span>. Et les
-                  meilleurs dépassent largement ces chiffres.
+                  <span className="font-semibold text-text-primary">45 000 à 60 000 €</span> (source&nbsp;:{' '}
+                  <a href="https://www.apec.fr/tous-nos-metiers/commercial-marketing/business-developer.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">APEC</a>).
+                  Et les meilleurs dépassent largement ces chiffres.
                 </p>
               </div>
             </div>
@@ -570,7 +573,7 @@ export default function DevenirBusinessDeveloperPage() {
                   des indicateurs clairs.
                 </p>
                 <a
-                  href="/ressources/setter-b2b-definition"
+                  href="/ressources/setting-commercial-b2b"
                   className="font-sans text-xs text-accent hover:underline"
                 >
                   Comprendre le rôle du setter →
@@ -622,7 +625,7 @@ export default function DevenirBusinessDeveloperPage() {
               <ul className="space-y-2">
                 {[
                   { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
-                  { href: '/ressources/difference-setting-closing', label: 'Setting vs Closing : quelle est la différence ?' },
+                  { href: '/ressources/setting-commercial-b2b', label: 'Setting vs Closing : quelle est la différence ?' },
                   { href: '/ressources/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
                   { href: '/ressources/setting-commercial-b2b', label: 'Le setting commercial B2B : guide complet' },
                 ].map(({ href, label }) => (
@@ -646,19 +649,22 @@ export default function DevenirBusinessDeveloperPage() {
               Questions fréquentes
             </h2>
             <div className="space-y-4">
-              {faqItems.map(({ question, answer }) => (
-                <div key={question} className="bg-bg-secondary rounded-xl p-6 border border-white/[0.06]">
-                  <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
-                </div>
+              {faqItems.map(({ question, answer }, i) => (
+                <details key={question} className="group bg-bg-secondary rounded-xl p-6 border border-white/[0.06]" {...(i === 0 ? { open: true } : {})}>
+                  <summary className="font-sans font-semibold text-text-primary text-sm cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    {question}
+                    <span className="shrink-0 text-accent transition-transform group-open:rotate-45 text-lg">+</span>
+                  </summary>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mt-3 faq-answer">{answer}</p>
+                </details>
               ))}
             </div>
           </section>
 
           <RelatedArticles articles={[
             { href: '/ressources/comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min' },
-            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
-            { href: '/ressources/qualification-leads-b2b', title: 'Qualifier un lead en B2B 2026 : m\u00e9thodes, crit\u00e8res et exemples', readTime: '8 min' },
+            { href: '/ressources/closing-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
+            { href: '/ressources/methodes-vente-b2b', title: 'Qualifier un lead en B2B 2026 : m\u00e9thodes, crit\u00e8res et exemples', readTime: '8 min' },
           ]} />
 
         </div>

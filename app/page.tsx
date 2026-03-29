@@ -10,6 +10,7 @@ import { ToolMarquee } from '@/components/ToolMarquee'
 import { CombinedSimulator } from '@/components/CombinedSimulator'
 import { TeamStrip } from '@/components/TeamStrip'
 import { BalancedText } from '@/components/ui/BalancedText'
+import { VideoBackground } from '@/components/VideoBackground'
 
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
@@ -73,12 +74,16 @@ const globalSchema = {
         height: 512,
       },
       description: 'Prospection LinkedIn externalisée pour solopreneurs et fondateurs B2B. Méthode signal-based, setter dédié, IA + validation humaine.',
-      alternateName: 'ChallengersLab',
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
         'https://www.linkedin.com/in/abraham-brakha',
-        'https://www.challengerslab.com',
       ],
+      parentOrganization: {
+        '@type': 'Organization',
+        name: 'ChallengersLab',
+        url: 'https://www.challengerslab.com',
+        sameAs: ['https://www.linkedin.com/company/challengerslab'],
+      },
       foundingDate: '2024',
       founder: {
         '@type': 'Person',
@@ -240,6 +245,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqSchema) }}
       />
+      <VideoBackground />
       <CursorGlowClient />
       <Navbar />
       <main>
@@ -247,9 +253,9 @@ export default function Home() {
         <noscript>
           <div className="section-padding bg-bg-primary">
             <div className="container-max max-w-3xl mx-auto text-center">
-              <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-6 leading-tight">
+              <p className="font-sans font-extrabold text-h1 text-text-primary mb-6 leading-tight">
                 Tu as une offre qui marche. Il te manque un pipeline.
-              </h1>
+              </p>
               <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
                 On te trouve des clients sur LinkedIn. Setter dédié, IA signal-based, validation humaine. Premiers RDV en 7 jours.
               </p>
@@ -301,6 +307,47 @@ export default function Home() {
         <TeamStrip />
 
         <FAQ />
+
+        {/* Guides gratuits — maillage interne vers piliers */}
+        <section className="px-6 md:px-12 lg:px-20 py-16 bg-bg-primary border-t border-white/[0.06]">
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="font-mono text-xs uppercase tracking-widest text-text-muted mb-4">
+              Guides gratuits
+            </p>
+            <h2 className="font-sans text-2xl md:text-3xl font-extrabold text-text-primary mb-8">
+              Approfondis ta prospection B2B
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+              <a
+                href="/ressources/setting-commercial-b2b"
+                className="group block rounded-xl p-5 border border-white/[0.06] hover:border-accent/30 hover:bg-accent/[0.03] transition-all"
+              >
+                <p className="font-semibold text-text-primary text-sm mb-1">Setting commercial B2B</p>
+                <p className="text-text-muted text-xs leading-relaxed">
+                  Guide complet : d&eacute;finition, m&eacute;thode signal-based, 9 &eacute;tapes, co&ucirc;t r&eacute;el.
+                </p>
+              </a>
+              <a
+                href="/ressources/prospection-linkedin-b2b"
+                className="group block rounded-xl p-5 border border-white/[0.06] hover:border-accent/30 hover:bg-accent/[0.03] transition-all"
+              >
+                <p className="font-semibold text-text-primary text-sm mb-1">Prospection LinkedIn B2B</p>
+                <p className="text-text-muted text-xs leading-relaxed">
+                  Messages, scripts, relances : tout pour d&eacute;crocher des RDV sur LinkedIn.
+                </p>
+              </a>
+              <a
+                href="/ressources/closing-b2b"
+                className="group block rounded-xl p-5 border border-white/[0.06] hover:border-accent/30 hover:bg-accent/[0.03] transition-all"
+              >
+                <p className="font-semibold text-text-primary text-sm mb-1">Closing B2B</p>
+                <p className="text-text-muted text-xs leading-relaxed">
+                  Discovery call, gestion des objections, scripts de closing.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* Cross-sell ChallengersLab */}
         <section className="px-6 md:px-12 lg:px-20 py-16 bg-[#1A1714] border-t border-accent/10">

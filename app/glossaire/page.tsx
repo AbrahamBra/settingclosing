@@ -14,17 +14,18 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://www.setting.live/og-default.png',
+        url: 'https://www.setting.live/api/og?title=Glossaire%20du%20setting%20B2B&tag=Glossaire',
         width: 1200,
         height: 630,
-        alt: 'Glossaire Setting & Prospection LinkedIn — Setting',
+        alt: 'Glossaire du setting B2B — Setting',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Glossaire Setting & Prospection LinkedIn | Setting',
-    description: "Les définitions exactes des termes du setting et de la prospection LinkedIn — setter, signal d'achat, ICP, pipeline, qualification et plus.",
+    description: 'Définitions des termes clés du setting et de la prospection LinkedIn B2B : setter, signal d\'achat, ICP, pipeline, qualification.',
+    images: ['https://www.setting.live/api/og?title=Glossaire%20du%20setting%20B2B&tag=Glossaire'],
   },
   alternates: {
     canonical: 'https://www.setting.live/glossaire',
@@ -53,8 +54,8 @@ const terms = [
     definition:
       "Un setter est un commercial spécialisé dans la prospection et la prise de rendez-vous. Il ne signe pas les contrats — c'est le rôle du closeur. Son travail : identifier les prospects selon des critères précis, envoyer des messages personnalisés, qualifier les réponses et remplir l'agenda du closeur de rendez-vous pertinents.",
     relatedTerms: ['setting-commercial', 'closer', 'qualification'],
-    articleHref: '/ressources/setter-b2b-definition',
-    articleLabel: "C'est quoi un setter en B2B ?",
+    articleHref: '/ressources/setting-commercial-b2b',
+    articleLabel: 'Guide complet du setting commercial B2B',
   },
   {
     id: 'closer',
@@ -62,8 +63,8 @@ const terms = [
     definition:
       "Un closer B2B est le commercial qui prend en charge les rendez-vous qualifiés par le setter et transforme les prospects en clients. Il conduit la discovery call, identifie les objections, présente l'offre et signe. Le closer travaille sur des leads déjà chauffés, ce qui lui permet d'atteindre des taux de conversion élevés.",
     relatedTerms: ['closing', 'setter', 'discovery'],
-    articleHref: '/ressources/closer-b2b',
-    articleLabel: 'Closer B2B : définition, compétences et recrutement',
+    articleHref: '/ressources/closing-b2b',
+    articleLabel: 'Guide complet du closing B2B',
   },
   {
     id: 'closing',
@@ -71,8 +72,8 @@ const terms = [
     definition:
       "Le closing est la phase de vente où un commercial transforme un prospect qualifié en client signé. En B2B, le closing se fait généralement lors d'un appel structuré (discovery call + pitch + gestion des objections + signature). Le taux de closing mesure le ratio prospects contactés / contrats signés.",
     relatedTerms: ['closer', 'setting-commercial', 'discovery'],
-    articleHref: '/ressources/difference-setting-closing',
-    articleLabel: 'Quelle est la différence entre setting et closing ?',
+    articleHref: '/ressources/setting-commercial-b2b',
+    articleLabel: 'Setting commercial B2B : setting vs closing',
   },
   {
     id: 'signal-achat',
@@ -116,8 +117,8 @@ const terms = [
     definition:
       "La discovery call est le premier appel commercial, conduit par le closeur, dont l'objectif est de comprendre le problème, le contexte et le budget du prospect avant de présenter l'offre. Une bonne discovery dure 20 à 40 minutes et permet d'identifier si le prospect peut bénéficier de la solution. Elle précède toujours le pitch.",
     relatedTerms: ['closer', 'closing', 'qualification'],
-    articleHref: '/ressources/closer-b2b',
-    articleLabel: 'Closer B2B : définition et compétences',
+    articleHref: '/ressources/closing-b2b',
+    articleLabel: 'Closing B2B : discovery call et compétences',
   },
   {
     id: 'pipeline',
@@ -125,7 +126,7 @@ const terms = [
     definition:
       "Le pipeline commercial est la représentation visuelle de toutes les opportunités commerciales en cours, classées par étape du cycle de vente. En setting B2B : prospects identifiés → messages envoyés → réponses reçues → leads qualifiés → RDV pris → RDV réalisés → offres envoyées → contrats signés. Le setter alimente l'entrée du pipeline, le closeur travaille la fin.",
     relatedTerms: ['setting-commercial', 'closer', 'qualification'],
-    articleHref: '/ressources/difference-setting-closing',
+    articleHref: '/ressources/setting-commercial-b2b',
     articleLabel: 'Setting vs closing : rôles dans le pipeline',
   },
   {
@@ -143,8 +144,8 @@ const terms = [
     definition:
       "Le taux de réponse mesure le pourcentage de prospects qui répondent à un message de prospection. En prospection LinkedIn sans méthode, il tourne autour de 2 à 5 %. Avec une approche signal-based (message ancré sur un fait précis tiré du profil), il peut atteindre 20 à 35 % sur les prospects chauds. Le taux de réponse est le premier indicateur de performance d'un setter.",
     relatedTerms: ['setting-commercial', 'signal-achat', 'prospection-linkedin'],
-    articleHref: '/ressources/messages-linkedin-sans-reponse',
-    articleLabel: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses",
+    articleHref: '/ressources/prospection-linkedin-b2b',
+    articleLabel: 'Prospection LinkedIn B2B : taux de réponse et méthode',
   },
   {
     id: 'challenger-sale',
@@ -152,8 +153,8 @@ const terms = [
     definition:
       "Le Challenger Sale est une méthode de vente B2B développée par Matthew Dixon et Brent Adamson, basée sur l'étude de 6 000 commerciaux. Elle identifie 5 profils de vendeurs et montre que les plus performants sont les \"Challengers\" — ceux qui éduquent le prospect, adaptent leur discours et prennent le contrôle de la conversation. Ses 3 composantes : Teach (apporter un insight), Tailor (adapter au contexte), Take Control (conduire la décision).",
     relatedTerms: ['closer', 'closing', 'discovery'],
-    articleHref: '/ressources/challenger-sale-definition',
-    articleLabel: "Qu'est-ce que le Challenger Sale ?",
+    articleHref: '/ressources/methodes-vente-b2b',
+    articleLabel: 'Méthodes de vente B2B : Challenger Sale et autres',
   },
   {
     id: 'outreach',
@@ -161,8 +162,8 @@ const terms = [
     definition:
       "L'outreach désigne l'ensemble des actions de prise de contact sortante vers des prospects qui ne vous ont pas sollicité. Par opposition à l'inbound (prospects qui viennent vers vous), l'outreach inclut les messages LinkedIn, les emails de prospection et les appels à froid. En setting B2B, l'outreach signal-based améliore fortement les taux de réponse en ciblant uniquement les prospects ayant récemment montré un signe d'intérêt.",
     relatedTerms: ['prospection-linkedin', 'signal-achat', 'setting-commercial'],
-    articleHref: '/ressources/script-setting-linkedin',
-    articleLabel: 'Scripts de setting LinkedIn : exemples concrets',
+    articleHref: '/ressources/prospection-linkedin-b2b',
+    articleLabel: 'Prospection LinkedIn B2B : scripts et exemples',
   },
   {
     id: 'inbound',
@@ -170,8 +171,8 @@ const terms = [
     definition:
       "En vente B2B, l'inbound désigne les prospects qui viennent vers vous — via votre contenu, votre site, votre réputation ou vos recommandations. Un setter inbound traite les personnes qui ont réagi à vos posts, visité votre profil ou téléchargé un lead magnet. Le setting inbound a généralement des taux de réponse plus élevés que l'outreach pur, car le prospect a déjà montré de l'intérêt.",
     relatedTerms: ['signal-achat', 'setting-commercial', 'outreach'],
-    articleHref: '/ressources/script-setting-linkedin',
-    articleLabel: 'Scripts inbound vs outbound en setting LinkedIn',
+    articleHref: '/ressources/prospection-linkedin-b2b',
+    articleLabel: 'Prospection LinkedIn B2B : inbound vs outbound',
   },
   {
     id: 'follow-up',
@@ -179,8 +180,8 @@ const terms = [
     definition:
       "Un follow-up est un message de relance envoyé après un premier message sans réponse, ou après un échange qui n'a pas débouché sur un rendez-vous. En setting B2B, la relance doit être sobre, courte et apporter un élément nouveau (article, question, contexte différent). La règle : maximum 2 relances, séparées de 5 à 7 jours. Plus de relances = risque de spam et dégradation de la réputation LinkedIn.",
     relatedTerms: ['setting-commercial', 'taux-de-reponse', 'outreach'],
-    articleHref: '/ressources/relance-linkedin-b2b',
-    articleLabel: 'Relance LinkedIn B2B : quand et comment relancer',
+    articleHref: '/ressources/prospection-linkedin-b2b',
+    articleLabel: 'Prospection LinkedIn B2B : relances et follow-up',
   },
   {
     id: 'objection',
@@ -188,8 +189,8 @@ const terms = [
     definition:
       "Une objection est une résistance du prospect pendant le processus de vente. Les objections courantes en closing B2B : \"C'est trop cher\", \"Je dois en parler à mon associé\", \"Je n'ai pas le temps maintenant\". La gestion des objections est une compétence centrale du closeur — il distingue les objections réelles (doutes légitimes) des objections-prétextes (volonté de mettre fin à la conversation sans conflit).",
     relatedTerms: ['closing', 'closer', 'discovery'],
-    articleHref: '/ressources/closer-b2b',
-    articleLabel: 'Closer B2B : gérer les objections',
+    articleHref: '/ressources/closing-b2b',
+    articleLabel: 'Closing B2B : gérer les objections',
   },
   {
     id: 'solopreneur',

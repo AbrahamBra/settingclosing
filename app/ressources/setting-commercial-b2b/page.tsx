@@ -17,11 +17,13 @@ export const metadata: Metadata = {
       "Setter definition, setting LinkedIn, m\u00e9thode signal-based, 9 \u00e9tapes, outils, co\u00fbt r\u00e9el et programme de 3 mois. Le guide pilier du setting commercial B2B.",
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Setting%20commercial%20B2B%20%3A%20guide%20complet&tag=Guide%20pilier', width: 1200, height: 630, alt: 'Setting commercial B2B : guide complet \u2014 Setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Setting commercial B2B : guide complet (2026)',
     description: 'Setter definition, setting LinkedIn, 9 \u00e9tapes, outils et co\u00fbt r\u00e9el du setting commercial.',
+    images: ['https://www.setting.live/api/og?title=Setting%20commercial%20B2B%20%3A%20guide%20complet&tag=Guide%20pilier'],
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/setting-commercial-b2b',
@@ -397,7 +399,7 @@ export default function SettingCommercialPage() {
               <p className="mb-4">
                 Ce que le setter ne fait pas : fermer des deals, pitcher dans le premier DM,
                 envoyer des propositions commerciales, g&eacute;rer les{' '}
-                <a href="/ressources/relance-linkedin-b2b" className="text-accent hover:underline transition-colors">relances</a>{' '}
+                <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">relances</a>{' '}
                 post-appel.
               </p>
               <p>
@@ -425,7 +427,7 @@ export default function SettingCommercialPage() {
                   prospection sortante. Son r&ocirc;le : identifier des prospects pertinents,
                   les contacter via{' '}
                   <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">LinkedIn</a>,{' '}
-                  <a href="/ressources/qualification-leads-b2b" className="text-accent hover:underline transition-colors">qualifier leur int&eacute;r&ecirc;t</a>{' '}
+                  <a href="/ressources/methodes-vente-b2b" className="text-accent hover:underline transition-colors">qualifier leur int&eacute;r&ecirc;t</a>{' '}
                   et d&eacute;crocher un rendez-vous avec le closeur. Le setter ne vend pas.
                   Il ouvre la porte. En anglais, l&apos;&eacute;quivalent est le SDR (Sales Development Representative).
                 </p>
@@ -570,7 +572,7 @@ export default function SettingCommercialPage() {
                 <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">prospection LinkedIn classique</a>{' '}
                 : le prospect n&apos;est pas froid. Il a d&eacute;j&agrave; montr&eacute; quelque chose.
                 Le message s&apos;ancre sur cette preuve. Voil&agrave; pourquoi les{' '}
-                <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">
                   messages g&eacute;n&eacute;riques n&apos;obtiennent pas de r&eacute;ponses
                 </a>.
               </p>
@@ -1015,16 +1017,19 @@ export default function SettingCommercialPage() {
                   {
                     tool: 'Reactin',
                     role: 'Signaux inbound',
+                    url: 'https://www.reactin.io',
                     detail: "Connect\u00e9 \u00e0 votre compte LinkedIn, Reactin recense qui a interact\u00e9 avec vos posts. Sur un compte qui publie 2-3 fois par semaine, \u00e7a g\u00e9n\u00e8re 15 \u00e0 50 signaux par semaine. Le setter filtre selon l'ICP.",
                   },
                   {
                     tool: 'Spyer',
                     role: 'Signaux concurrents',
+                    url: 'https://www.spyer.io',
                     detail: "Vous d\u00e9finissez une liste de comptes \u00e0 monitorer. Spyer alerte quand des profils int\u00e9ressants interagissent avec leur contenu. Ces prospects n'ont pas interagi avec vous, mais ils ont montr\u00e9 un int\u00e9r\u00eat pour votre th\u00e9matique.",
                   },
                   {
                     tool: 'Sales Navigator',
                     role: 'Ciblage pr\u00e9cis',
+                    url: 'https://business.linkedin.com/sales-solutions',
                     detail: "L'outil LinkedIn premium (~100 \u20ac/mois) pour construire des listes par fonction, secteur, taille d'entreprise, changements r\u00e9cents. Sales Navigator d\u00e9finit qui surveiller. Spyer ex\u00e9cute la surveillance.",
                   },
                   {
@@ -1032,10 +1037,12 @@ export default function SettingCommercialPage() {
                     role: 'Co-r\u00e9daction des messages',
                     detail: "Un skill construit sur votre contexte : offre, march\u00e9, objections connues, formulations qui fonctionnent. Claude propose un draft. Le setter lit, ajuste, valide. Aucun message ne part sans regard humain.",
                   },
-                ].map(({ tool, role, detail }) => (
+                ].map(({ tool, role, detail, url }: { tool: string; role: string; detail: string; url?: string }) => (
                   <div key={tool} className="border border-white/[0.06] rounded-xl overflow-hidden">
                     <div className="bg-bg-secondary px-5 py-3 border-b border-white/[0.06] flex items-center justify-between gap-4">
-                      <p className="font-sans font-semibold text-text-primary text-sm">{tool}</p>
+                      <p className="font-sans font-semibold text-text-primary text-sm">
+                        {url ? <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">{tool} &nearr;</a> : tool}
+                      </p>
                       <p className="font-sans text-xs text-accent">{role}</p>
                     </div>
                     <div className="px-5 py-4">
@@ -1086,7 +1093,7 @@ export default function SettingCommercialPage() {
                 Lui donner vos r&egrave;gles, des exemples de messages qui ont march&eacute;, les
                 objections types. L&apos;IA propose un draft. L&apos;humain valide. Pour les clients
                 qui le souhaitent, on construit un{' '}
-                <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">
                   skill Claude encod&eacute; sur leur expertise
                 </a>.
               </p>
@@ -1290,14 +1297,15 @@ export default function SettingCommercialPage() {
               </h2>
               <div className="divide-y divide-white/[0.06]">
                 {faqItems.map((item, i) => (
-                  <div key={i} className="py-5">
-                    <p className="font-sans font-semibold text-text-primary mb-2">
+                  <details key={i} className="group py-5" {...(i === 0 ? { open: true } : {})}>
+                    <summary className="font-sans font-semibold text-text-primary cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
                       {item.question}
-                    </p>
-                    <p className="faq-answer font-sans text-text-secondary leading-relaxed text-sm">
+                      <span className="shrink-0 text-accent transition-transform group-open:rotate-45 text-lg">+</span>
+                    </summary>
+                    <p className="faq-answer font-sans text-text-secondary leading-relaxed text-sm mt-3">
                       {item.answer}
                     </p>
-                  </div>
+                  </details>
                 ))}
               </div>
             </section>
@@ -1312,14 +1320,14 @@ export default function SettingCommercialPage() {
             <div className="space-y-3">
               {[
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, m\u00e9thode et humain : les 3 couches d'un syst\u00e8me de setting" },
-                { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, m\u00e9thode et humain : les 3 couches d'un syst\u00e8me de setting" },
+                { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
                 { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026' },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
-                { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
-                { href: '/ressources/relance-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
-                { href: '/ressources/closer-b2b', label: 'Closer B2B : d\u00e9finition et comment en recruter un' },
-                { href: '/ressources/qualification-leads-b2b', label: 'Qualification des leads B2B : m\u00e9thode et crit\u00e8res' },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
+                { href: '/ressources/closing-b2b', label: 'Closer B2B : d\u00e9finition et comment en recruter un' },
+                { href: '/ressources/methodes-vente-b2b', label: 'Qualification des leads B2B : m\u00e9thode et crit\u00e8res' },
                 { href: '/glossaire', label: 'Glossaire setting & closing B2B' },
               ].map(({ href, label }) => (
                 <a
@@ -1373,7 +1381,7 @@ export default function SettingCommercialPage() {
           <RelatedArticles articles={[
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
             { href: '/ressources/comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min' },
-            { href: '/ressources/closer-b2b', title: 'Closer B2B : d\u00e9finition et comment en recruter un', readTime: '11 min' },
+            { href: '/ressources/closing-b2b', title: 'Closer B2B : d\u00e9finition et comment en recruter un', readTime: '11 min' },
           ]} />
 
         </div>

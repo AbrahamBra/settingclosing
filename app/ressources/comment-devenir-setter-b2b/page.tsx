@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description: "Comment devenir setter ou closer B2B en 2026. Formation, comp\u00e9tences r\u00e9elles, prix du march\u00e9, outils et crit\u00e8res pour choisir un setter. Guide terrain complet.",
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Devenir%20setter%20ou%20closer%20B2B%20en%202026&tag=Guide%20carri%C3%A8re', width: 1200, height: 630, alt: 'Devenir setter ou closer B2B en 2026 — Setting' }],
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/comment-devenir-setter-b2b',
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Devenir setter ou closer B2B en 2026 | Formation, prix, guide | Setting',
     description: 'Comment devenir setter ou closer B2B en 2026. Formation, comp\u00e9tences r\u00e9elles, prix du march\u00e9, outils et crit\u00e8res pour choisir un setter. Guide terrain complet.',
+    images: ['https://www.setting.live/api/og?title=Devenir%20setter%20ou%20closer%20B2B%20en%202026&tag=Guide%20carri%C3%A8re'],
   },
 }
 
@@ -250,9 +252,9 @@ export default function CommentDevenirSetterB2BPage() {
               D&eacute;finition
             </p>
             <p className="font-sans text-text-primary leading-relaxed">
-              <strong><a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">Setter</a></strong> = prospection avant l&apos;appel.
+              <strong><a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">Setter</a></strong> = prospection avant l&apos;appel.
               Il identifie les prospects sur LinkedIn, les contacte et d&eacute;croche des rendez-vous qualifi&eacute;s.{' '}
-              <strong><a href="/ressources/closer-b2b" className="text-accent hover:underline transition-colors">Closer</a></strong> = conversion pendant l&apos;appel.
+              <strong><a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">Closer</a></strong> = conversion pendant l&apos;appel.
               Il prend le RDV, conduit la <a href="/ressources/discovery-call-b2b" className="text-accent hover:underline transition-colors">d&eacute;couverte</a>, g&egrave;re les objections et signe.
               Deux r&ocirc;les compl&eacute;mentaires dans un pipeline B2B.
             </p>
@@ -312,7 +314,7 @@ export default function CommentDevenirSetterB2BPage() {
               Devenir closer B2B : un m&eacute;tier compl&eacute;mentaire
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Le setter d&eacute;croche le rendez-vous. Le <a href="/ressources/closer-b2b" className="text-accent hover:underline transition-colors">closer B2B</a>, lui,
+              Le setter d&eacute;croche le rendez-vous. Le <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">closer B2B</a>, lui,
               prend ce rendez-vous et le transforme en client sign&eacute;.
               Concr&egrave;tement, le closer conduit la <a href="/ressources/discovery-call-b2b" className="text-accent hover:underline transition-colors">discovery call</a>,
               pose les bonnes questions pour comprendre le vrai besoin, g&egrave;re
@@ -515,29 +517,35 @@ export default function CommentDevenirSetterB2BPage() {
               {[
                 {
                   name: 'LinkedIn Sales Navigator',
+                  url: 'https://business.linkedin.com/sales-solutions',
                   desc: "Filtres par poste, secteur, taille d\u2019entreprise, changements de poste r\u00e9cents. C\u2019est avec \u00e7a qu\u2019on construit des listes outbound qui tiennent la route. Sans lui, le sourcing est manuel et incomplet. ~100 \u20ac/mois.",
                 },
                 {
                   name: 'Reactin',
+                  url: 'https://www.reactin.io',
                   desc: "Capture les likes, commentaires et partages sur vos posts LinkedIn. Vous voyez qui a r\u00e9agi \u00e0 quoi, et vous contactez ceux dont le profil colle \u00e0 votre ICP. C\u2019est la premi\u00e8re source de signaux inbound. ~50 \u20ac/mois.",
                 },
                 {
                   name: 'Spyer',
+                  url: 'https://www.spyer.io',
                   desc: "Surveille les comptes concurrents dont l\u2019audience ressemble \u00e0 votre ICP. Quand un prospect interagit avec ces comptes, il remonte dans votre flux. Surtout utile quand votre propre contenu ne g\u00e9n\u00e8re pas encore assez de signaux. ~30\u201380 \u20ac/mois.",
                 },
                 {
                   name: 'BreakCold',
+                  url: 'https://www.breakcold.com',
                   desc: "CRM con\u00e7u pour la prospection LinkedIn. Permet de suivre chaque conversation, planifier les relances, taguer les prospects selon leur niveau de maturit\u00e9 et \u00e9viter les doublons. Un Google Sheets peut suffire pour d\u00e9marrer, mais BreakCold structure mieux le flux d\u00e8s que le volume monte.",
                 },
                 {
                   name: 'Claude / GPT avec contexte',
                   desc: "Pas pour g\u00e9n\u00e9rer des messages en masse. Le setter fournit le profil, le signal, les r\u00e8gles. L\u2019IA propose un draft. L\u2019humain relit, ajuste, valide. La r\u00e9daction va 3x plus vite, et aucun message ne part sans qu\u2019un humain l\u2019ait lu \u00e0 voix haute.",
                 },
-              ].map(({ name, desc }) => (
+              ].map(({ name, desc, url }: { name: string; desc: string; url?: string }) => (
                 <div key={name} className="flex gap-3">
                   <span className="text-accent shrink-0 mt-0.5 font-semibold font-sans">&rarr;</span>
                   <div>
-                    <p className="font-sans font-semibold text-text-primary mb-1">{name}</p>
+                    <p className="font-sans font-semibold text-text-primary mb-1">
+                      {url ? <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">{name} &nearr;</a> : name}
+                    </p>
                     <p className="font-sans text-text-secondary text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
@@ -709,7 +717,7 @@ export default function CommentDevenirSetterB2BPage() {
               Comment choisir son setter : les crit&egrave;res qui comptent
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Avant de signer avec un <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">setter B2B</a> ou une agence, v&eacute;rifiez ces 7 points.
+              Avant de signer avec un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setter B2B</a> ou une agence, v&eacute;rifiez ces 7 points.
               Ils s&eacute;parent un programme qui livre de celui qui br&ucirc;le vos leads.
             </p>
 
@@ -910,14 +918,15 @@ export default function CommentDevenirSetterB2BPage() {
             </h2>
             <div className="divide-y divide-white/[0.06]">
               {faqItems.map((item, i) => (
-                <div key={i} className="py-5">
-                  <p className="font-sans font-semibold text-text-primary mb-2">
+                <details key={i} className="group py-5" {...(i === 0 ? { open: true } : {})}>
+                  <summary className="font-sans font-semibold text-text-primary cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
                     {item.question}
-                  </p>
-                  <p className="font-sans text-text-secondary leading-relaxed text-sm faq-answer">
+                    <span className="shrink-0 text-accent transition-transform group-open:rotate-45 text-lg">+</span>
+                  </summary>
+                  <p className="font-sans text-text-secondary leading-relaxed text-sm faq-answer mt-3">
                     {item.answer}
                   </p>
-                </div>
+                </details>
               ))}
             </div>
           </section>
@@ -931,7 +940,7 @@ export default function CommentDevenirSetterB2BPage() {
               {[
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : le guide complet' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : le guide complet' },
-                { href: '/ressources/setter-b2b-definition', label: "C\u2019est quoi un setter en B2B ?" },
+                { href: '/ressources/setting-commercial-b2b', label: "C\u2019est quoi un setter en B2B ?" },
                 { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs externalis\u00e9 : le comparatif' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
@@ -961,7 +970,7 @@ export default function CommentDevenirSetterB2BPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/closing-b2b', title: 'Closing B2B : le guide complet', readTime: '15 min' },
-            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/setting-commercial-b2b', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
             { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
           ]} />
 

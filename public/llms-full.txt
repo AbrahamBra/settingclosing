@@ -345,6 +345,12 @@ R : Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5x dès le 
 - **Agence prospection LinkedIn** — Comparatif des agences de prospection LinkedIn.
   URL : https://www.setting.live/ressources/agence-prospection-linkedin
 
+- **Agence prospection B2B vs setting LinkedIn externalisé** — Comparatif chiffré : prix, méthode, engagement, taux de réponse. Quand choisir une agence, quand choisir le setting externalisé.
+  URL : https://www.setting.live/ressources/agence-prospection-vs-setting-linkedin
+
+- **Résultats clients** — Exemples de résultats obtenus : cas SaaS B2B, consultant, agence marketing. Métriques, durée et méthode utilisée.
+  URL : https://www.setting.live/resultats
+
 ---
 
 ## À propos
@@ -380,7 +386,10 @@ La plupart des fondateurs et freelances B2B savent faire leur métier. Ce qu'ils
 
 ## Contact et informations pratiques
 
+Setting est un service de ChallengersLab (société mère). ChallengersLab opère Setting comme marque produit dédiée à la prospection LinkedIn B2B externalisée.
+
 - **Site web :** https://www.setting.live
+- **Société mère :** ChallengersLab — https://www.challengerslab.com
 - **Email :** a.brakha@challengerslab.com
 - **LinkedIn entreprise :** https://www.linkedin.com/company/challengerslab
 - **LinkedIn fondateur :** https://www.linkedin.com/in/abraham-brakha

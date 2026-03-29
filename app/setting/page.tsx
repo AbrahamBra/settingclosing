@@ -14,6 +14,7 @@ export const metadata: Metadata = {
       "Tout sur le setting : définition, méthode LinkedIn signal-based, outils, scripts, coût réel et programme complet. Le guide de référence pour les fondateurs B2B.",
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Le%20setting%20LinkedIn%20expliqu%C3%A9&tag=M%C3%A9thode', width: 1200, height: 630, alt: 'Le setting LinkedIn expliqué — Setting' }],
   },
   alternates: {
     canonical: 'https://www.setting.live/setting',
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Setting : le guide complet du setting commercial B2B',
     description: "Tout sur le setting : d\u00e9finition, m\u00e9thode LinkedIn signal-based, outils, scripts, co\u00fbt r\u00e9el et programme complet. Le guide de r\u00e9f\u00e9rence pour les fondateurs B2B.",
+    images: ['https://www.setting.live/api/og?title=Le%20setting%20LinkedIn%20expliqu%C3%A9&tag=M%C3%A9thode'],
   },
 }
 
@@ -141,10 +143,10 @@ const breadcrumbSchema = {
 
 const clusterSetting = [
   { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : definition, methode et programme complet' },
-  { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
+  { href: '/ressources/setting-commercial-b2b', label: "C'est quoi un setter en B2B ?" },
   { href: '/ressources/comment-devenir-setter-b2b', label: "Devenir setter ou closer B2B : le guide complet" },
   { href: '/externaliser-prospection-linkedin#sdr-commercial', label: 'SDR interne vs externalise : le comparatif cout reel' },
-  { href: '/ressources/difference-setting-closing', label: 'Quelle est la difference entre setting et closing ?' },
+  { href: '/ressources/setting-commercial-b2b', label: 'Quelle est la difference entre setting et closing ?' },
 ]
 
 const clusterLinkedin = [
@@ -159,7 +161,7 @@ const clusterLinkedin = [
 
 const clusterClosing = [
   { href: '/ressources/closing-b2b', label: 'Closing B2B : definition, methode et programme complet' },
-  { href: '/ressources/closer-b2b', label: 'Closer B2B : definition, competences et recrutement' },
+  { href: '/ressources/closing-b2b', label: 'Closer B2B : definition, competences et recrutement' },
   { href: '/ressources/script-closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
   { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure et questions' },
   { href: '/ressources/gestion-objections-b2b', label: 'Gerer les objections en vente B2B' },
@@ -229,7 +231,7 @@ export default function SettingPillarPage() {
               la conversation et decrocher un rendez-vous qualifie avant de transmettre le lead
               au closeur. Le setting se deploie principalement sur LinkedIn via une approche
               basee sur les signaux d&apos;achat. Le professionnel qui execute cette mission
-              s&apos;appelle un <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline">setter</a>.
+              s&apos;appelle un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">setter</a>.
             </p>
           </div>
 
@@ -303,7 +305,7 @@ export default function SettingPillarPage() {
                 poser un rendez-vous. En B2B francophone, on parle de <strong>setting commercial</strong>{' '}
                 ou de <strong>setting LinkedIn</strong> quand le canal principal est LinkedIn.
                 Le professionnel qui execute le setting s&apos;appelle un{' '}
-                <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline">setter</a>{' '}
+                <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">setter</a>{' '}
                 (ou SDR, Sales Development Representative).
               </p>
               <p>
@@ -346,7 +348,7 @@ export default function SettingPillarPage() {
                   { num: '3', title: 'Redaction du message', text: "Ancre sur un fait precis tire du profil ou d'un post recent. 5 phrases maximum. Aucun pitch.", link: '/ressources/script-setting-linkedin', linkLabel: 'Scripts de setting LinkedIn' },
                   { num: '4', title: 'Gestion de la conversation', text: "Reponse humaine a chaque echange. Pas de relance automatique. Le setter gere la conversation jusqu'a l'accord pour un appel.", link: '/ressources/relance-linkedin-b2b', linkLabel: 'Comment relancer sans spammer' },
                   { num: '5', title: 'Qualification', text: "5 niveaux de maturite. Seuls les niveaux 4-5 passent directement en call. Les niveaux 2-3 entrent en nurturing.", link: '/ressources/qualification-leads-b2b', linkLabel: 'Qualifier un lead en B2B' },
-                  { num: '6', title: 'Handover au closer', text: "Le lead est transmis avec le contexte complet : ce qui a ete dit, ce qui a interesse, ce qui a resiste. Jamais un RDV sans brief.", link: '/ressources/closer-b2b', linkLabel: 'Le role du closer B2B' },
+                  { num: '6', title: 'Handover au closer', text: "Le lead est transmis avec le contexte complet : ce qui a ete dit, ce qui a interesse, ce qui a resiste. Jamais un RDV sans brief.", link: '/ressources/closing-b2b', linkLabel: 'Le role du closer B2B' },
                 ].map(({ num, title, text, link, linkLabel }) => (
                   <div key={num} className="flex gap-3">
                     <span className="font-serif text-accent/40 text-base leading-snug shrink-0 w-4">{num}.</span>
@@ -373,7 +375,7 @@ export default function SettingPillarPage() {
               </h2>
               <p className="mb-6">
                 Le{' '}
-                <a href="/ressources/difference-setting-closing" className="text-accent hover:underline">
+                <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">
                   setting et le closing sont les deux moities d&apos;un pipeline commercial B2B
                 </a>.
                 Les confondre est l&apos;erreur la plus courante des fondateurs.
@@ -411,9 +413,9 @@ export default function SettingPillarPage() {
               <p>
                 Separer les deux roles permet d&apos;optimiser chaque etape independamment.
                 Un{' '}
-                <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline">setter</a>{' '}
+                <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">setter</a>{' '}
                 qui fait bien son travail multiplie le taux de closing du{' '}
-                <a href="/ressources/closer-b2b" className="text-accent hover:underline">closer</a>{' '}
+                <a href="/ressources/closing-b2b" className="text-accent hover:underline">closer</a>{' '}
                 par 2 a 3 par rapport a des leads auto-generes.
               </p>
             </section>

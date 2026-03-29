@@ -25,11 +25,13 @@ export const metadata: Metadata = {
       'Agence prospection B2B, SDR commercial externalisé, outils setting LinkedIn : tout ce qu\'il faut savoir pour externaliser sa prospection.',
     locale: 'fr_FR',
     type: 'website',
+    images: [{ url: 'https://www.setting.live/api/og?title=Externaliser%20sa%20prospection%20LinkedIn%20B2B&tag=Service', width: 1200, height: 630, alt: 'Externaliser sa prospection LinkedIn B2B — Setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Externaliser sa prospection commerciale B2B | Setting',
     description: 'Agence prospection B2B, SDR commercial externalisé, outils setting LinkedIn : tout ce qu\'il faut savoir pour externaliser sa prospection.',
+    images: ['https://www.setting.live/api/og?title=Externaliser%20sa%20prospection%20LinkedIn%20B2B&tag=Service'],
   },
 }
 
@@ -64,7 +66,7 @@ const serviceSchema = {
       '@type': 'UnitPriceSpecification',
       price: '790',
       priceCurrency: 'EUR',
-      unitText: 'MON',
+      unitText: 'MONTH',
       billingDuration: 'P1M',
       valueAddedTaxIncluded: false,
     },
