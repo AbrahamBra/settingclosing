@@ -27,7 +27,7 @@ const nextConfig: NextConfig = {
       {
         source: '/methode',
         destination: '/methode/setting-linkedin',
-        permanent: false,
+        permanent: true,
       },
       // Consolidation SEO : 4 articles fusionnés dans le pilier setting-commercial-b2b
       {

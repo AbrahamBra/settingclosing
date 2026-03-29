@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
 import Script from 'next/script'
-import { VideoBackground } from '@/components/VideoBackground'
 import { CookieConsent } from '@/components/CookieConsent'
 import './globals.css'
 
@@ -89,7 +88,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        <VideoBackground />
         {children}
         <CookieConsent />
       </body>

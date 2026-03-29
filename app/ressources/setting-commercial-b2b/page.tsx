@@ -397,7 +397,7 @@ export default function SettingCommercialPage() {
               <p className="mb-4">
                 Ce que le setter ne fait pas : fermer des deals, pitcher dans le premier DM,
                 envoyer des propositions commerciales, g&eacute;rer les{' '}
-                <a href="/ressources/relance-linkedin-b2b" className="text-accent hover:underline transition-colors">relances</a>{' '}
+                <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">relances</a>{' '}
                 post-appel.
               </p>
               <p>
@@ -425,7 +425,7 @@ export default function SettingCommercialPage() {
                   prospection sortante. Son r&ocirc;le : identifier des prospects pertinents,
                   les contacter via{' '}
                   <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">LinkedIn</a>,{' '}
-                  <a href="/ressources/qualification-leads-b2b" className="text-accent hover:underline transition-colors">qualifier leur int&eacute;r&ecirc;t</a>{' '}
+                  <a href="/ressources/methodes-vente-b2b" className="text-accent hover:underline transition-colors">qualifier leur int&eacute;r&ecirc;t</a>{' '}
                   et d&eacute;crocher un rendez-vous avec le closeur. Le setter ne vend pas.
                   Il ouvre la porte. En anglais, l&apos;&eacute;quivalent est le SDR (Sales Development Representative).
                 </p>
@@ -570,7 +570,7 @@ export default function SettingCommercialPage() {
                 <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">prospection LinkedIn classique</a>{' '}
                 : le prospect n&apos;est pas froid. Il a d&eacute;j&agrave; montr&eacute; quelque chose.
                 Le message s&apos;ancre sur cette preuve. Voil&agrave; pourquoi les{' '}
-                <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">
                   messages g&eacute;n&eacute;riques n&apos;obtiennent pas de r&eacute;ponses
                 </a>.
               </p>
@@ -1086,7 +1086,7 @@ export default function SettingCommercialPage() {
                 Lui donner vos r&egrave;gles, des exemples de messages qui ont march&eacute;, les
                 objections types. L&apos;IA propose un draft. L&apos;humain valide. Pour les clients
                 qui le souhaitent, on construit un{' '}
-                <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">
                   skill Claude encod&eacute; sur leur expertise
                 </a>.
               </p>
@@ -1312,14 +1312,14 @@ export default function SettingCommercialPage() {
             <div className="space-y-3">
               {[
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, m\u00e9thode et humain : les 3 couches d'un syst\u00e8me de setting" },
-                { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, m\u00e9thode et humain : les 3 couches d'un syst\u00e8me de setting" },
+                { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
                 { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026' },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
-                { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
-                { href: '/ressources/relance-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
-                { href: '/ressources/closer-b2b', label: 'Closer B2B : d\u00e9finition et comment en recruter un' },
-                { href: '/ressources/qualification-leads-b2b', label: 'Qualification des leads B2B : m\u00e9thode et crit\u00e8res' },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
+                { href: '/ressources/closing-b2b', label: 'Closer B2B : d\u00e9finition et comment en recruter un' },
+                { href: '/ressources/methodes-vente-b2b', label: 'Qualification des leads B2B : m\u00e9thode et crit\u00e8res' },
                 { href: '/glossaire', label: 'Glossaire setting & closing B2B' },
               ].map(({ href, label }) => (
                 <a
@@ -1373,7 +1373,7 @@ export default function SettingCommercialPage() {
           <RelatedArticles articles={[
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
             { href: '/ressources/comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min' },
-            { href: '/ressources/closer-b2b', title: 'Closer B2B : d\u00e9finition et comment en recruter un', readTime: '11 min' },
+            { href: '/ressources/closing-b2b', title: 'Closer B2B : d\u00e9finition et comment en recruter un', readTime: '11 min' },
           ]} />
 
         </div>
