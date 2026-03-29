@@ -2,10 +2,10 @@ import { layerConfig } from '@/lib/pipeline-data'
 import type { LayerKey } from '@/lib/pipeline-data'
 
 const glowColors: Record<string, string> = {
-  'text-semantic-ia': '167, 139, 250',       // #A78BFA
+  'text-semantic-ia': '185, 164, 251',       // #B9A4FB
   'text-semantic-methode': '251, 191, 36',    // #FBBF24
   'text-semantic-humain': '52, 211, 153',     // #34D399
-  'text-semantic-hybrid': '192, 132, 252',    // #C084FC
+  'text-semantic-hybrid': '208, 160, 253',    // #D0A0FD
 }
 
 interface PipelineStepProps {
@@ -65,7 +65,7 @@ export function PipelineStep({ num, label, layers, desc, tools, isLast = false, 
             {tools.map((tool) => (
               <span
                 key={tool}
-                className={`inline-flex items-center px-2.5 py-1 rounded-md font-mono text-xs border transition-all duration-200 hover:scale-105 hover:border-white/20 ${primary.bg} ${primary.border} ${primary.text}`}
+                className={`inline-flex items-center px-2.5 py-1 rounded-md font-mono text-xs border transition-[transform,border-color] duration-200 hover:scale-105 hover:border-white/20 ${primary.bg} ${primary.border} ${primary.text}`}
               >
                 {tool}
               </span>
@@ -76,12 +76,12 @@ export function PipelineStep({ num, label, layers, desc, tools, isLast = false, 
           {pedagogy && (
             <div className="mt-4 space-y-2">
               <div className="flex gap-3 items-start rounded-lg bg-red-400/[0.02] border-0 border-l-[3px] border-red-400/30 px-3.5 py-2.5">
-                <span className="shrink-0 mt-0.5 text-red-400/60 text-xs font-semibold uppercase tracking-wider">✕</span>
-                <p className="text-red-400/60 text-xs leading-relaxed">{pedagogy.mistake}</p>
+                <span className="shrink-0 mt-0.5 text-red-400 text-xs font-semibold uppercase tracking-wider">✕</span>
+                <p className="text-red-400 text-xs leading-relaxed">{pedagogy.mistake}</p>
               </div>
               <div className="flex gap-3 items-start rounded-lg bg-emerald-400/[0.02] border-0 border-l-[3px] border-emerald-400/30 px-3.5 py-2.5">
-                <span className="shrink-0 mt-0.5 text-emerald-400/60 text-xs font-semibold uppercase tracking-wider">→</span>
-                <p className="text-emerald-400/60 text-xs leading-relaxed">{pedagogy.arbitrage}</p>
+                <span className="shrink-0 mt-0.5 text-emerald-400 text-xs font-semibold uppercase tracking-wider">→</span>
+                <p className="text-emerald-400 text-xs leading-relaxed">{pedagogy.arbitrage}</p>
               </div>
             </div>
           )}

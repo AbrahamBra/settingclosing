@@ -12,13 +12,13 @@ const featured = {
 const articles = [
   {
     category: 'Setting',
-    categoryColor: '#A78BFA',
+    categoryColor: '#B9A4FB',
     title: 'Setter B2B : comment on prend des RDV pour nos clients',
     meta: '8 min',
   },
   {
     category: 'Setting',
-    categoryColor: '#A78BFA',
+    categoryColor: '#B9A4FB',
     title: 'Comment qualifier un prospect LinkedIn en 3 messages',
     meta: '9 min',
   },

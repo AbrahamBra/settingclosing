@@ -442,7 +442,7 @@ export default function SettingLinkedInDefinitionPage() {
             <div className="grid gap-4 md:grid-cols-2 mb-6">
               {/* Réactif */}
               <div className="bg-emerald-400/[0.03] border border-emerald-400/10 rounded-2xl p-5">
-                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-400/60 mb-3">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-3">
                   Setting r&eacute;actif
                 </p>
                 <p className="font-sans font-semibold text-text-primary mb-2">Le prospect vient &agrave; vous</p>
@@ -452,7 +452,7 @@ export default function SettingLinkedInDefinitionPage() {
                   <li>&bull; Demande de connexion entrante</li>
                   <li>&bull; R&eacute;action &agrave; votre article ou newsletter</li>
                 </ul>
-                <p className="font-sans text-emerald-400/80 text-sm font-semibold mt-3">
+                <p className="font-sans text-emerald-400 text-sm font-semibold mt-3">
                   Taux de r&eacute;ponse : 25&ndash;40&nbsp;%
                 </p>
               </div>
@@ -546,7 +546,7 @@ export default function SettingLinkedInDefinitionPage() {
 
             {/* Bad example first */}
             <div className="mb-8">
-              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-red-400/60 mb-2">
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-red-400 mb-2">
                 &times; Message g&eacute;n&eacute;rique (cold outreach)
               </p>
               <div className="bg-red-400/[0.03] border border-red-400/10 rounded-xl px-5 py-4">
@@ -720,7 +720,7 @@ export default function SettingLinkedInDefinitionPage() {
               {mistakes.map((mistake, i) => (
                 <div key={i} className="bg-white/[0.03] border border-white/[0.06] rounded-2xl p-5">
                   <p className="font-sans font-semibold text-text-primary mb-2">
-                    <span className="text-red-400/60 mr-2">&times;</span>
+                    <span className="text-red-400 mr-2">&times;</span>
                     {mistake.title}
                   </p>
                   <p className="font-sans text-text-secondary text-sm leading-relaxed">{mistake.desc}</p>

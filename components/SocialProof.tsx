@@ -23,7 +23,7 @@ export function SocialProof({ variant = 'dark' }: SocialProofProps) {
                 <p className="font-sans text-3xl sm:text-4xl font-extrabold text-accent tracking-tight">
                   {stat.value}
                 </p>
-                <p className={`font-sans text-xs uppercase tracking-wider mt-1 ${isLight ? 'text-[#6B6560]' : 'text-text-muted'}`}>
+                <p className={`font-sans text-xs uppercase tracking-wider mt-1 ${isLight ? 'text-[#918B85]' : 'text-text-muted'}`}>
                   {stat.label}
                 </p>
               </div>

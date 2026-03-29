@@ -172,7 +172,7 @@ export function PipelineVisual({ compact = false, variant = 'full' }: PipelineVi
             {/* ── OUTBOUND column ──────────────────────────── */}
             <div className="space-y-4">
               <div className="text-center">
-                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#A78BFA]/10 border border-[#A78BFA]/20 text-[#A78BFA]">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[#B9A4FB]/10 border border-[#B9A4FB]/20 text-[#B9A4FB]">
                   Outbound
                 </span>
               </div>

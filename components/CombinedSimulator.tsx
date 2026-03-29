@@ -90,7 +90,7 @@ export function CombinedSimulator() {
               {/* LinkedIn block (always on) */}
               <div className="bg-bg-secondary rounded-2xl border border-white/[0.06] p-6">
                 <div className="flex items-center gap-2 mb-5">
-                  <span className="w-2 h-2 rounded-full bg-[#A78BFA]" />
+                  <span className="w-2 h-2 rounded-full bg-[#B9A4FB]" />
                   <span className="font-sans text-sm font-bold text-text-primary">Setting LinkedIn</span>
                   <span className="ml-auto text-xs text-text-muted">790&nbsp;&euro;/mois</span>
                 </div>
@@ -98,12 +98,12 @@ export function CombinedSimulator() {
                 {/* RDV par semaine */}
                 <div className="mb-4">
                   <div className="flex justify-between mb-1">
-                    <label className="text-xs text-text-primary font-semibold">RDV qualifi&eacute;s / semaine</label>
-                    <span className="text-sm font-extrabold tabular-nums text-[#A78BFA]">{rdvParSemaine}</span>
+                    <label htmlFor="sim-linkedin-rdv" className="text-xs text-text-primary font-semibold">RDV qualifi&eacute;s / semaine</label>
+                    <span className="text-sm font-extrabold tabular-nums text-[#B9A4FB]">{rdvParSemaine}</span>
                   </div>
-                  <input type="range" min={1} max={4} step={1} value={rdvParSemaine}
+                  <input id="sim-linkedin-rdv" type="range" min={1} max={4} step={1} value={rdvParSemaine}
                     onChange={(e) => setRdvParSemaine(Number(e.target.value))}
-                    className={sliderClass} style={{ accentColor: '#A78BFA' }} />
+                    className={sliderClass} style={{ accentColor: '#B9A4FB' }} />
                   <div className="flex justify-between text-[10px] text-text-muted mt-0.5">
                     <span>1</span><span>4</span>
                   </div>
@@ -112,12 +112,12 @@ export function CombinedSimulator() {
                 {/* Ticket moyen */}
                 <div className="mb-4">
                   <div className="flex justify-between mb-1">
-                    <label className="text-xs text-text-primary font-semibold">Ticket moyen</label>
-                    <span className="text-sm font-extrabold tabular-nums text-[#A78BFA]">{formatEur(ticketMoyen)}</span>
+                    <label htmlFor="sim-linkedin-ticket" className="text-xs text-text-primary font-semibold">Ticket moyen</label>
+                    <span className="text-sm font-extrabold tabular-nums text-[#B9A4FB]">{formatEur(ticketMoyen)}</span>
                   </div>
-                  <input type="range" min={1000} max={50000} step={500} value={ticketMoyen}
+                  <input id="sim-linkedin-ticket" type="range" min={1000} max={50000} step={500} value={ticketMoyen}
                     onChange={(e) => setTicketMoyen(Number(e.target.value))}
-                    className={sliderClass} style={{ accentColor: '#A78BFA' }} />
+                    className={sliderClass} style={{ accentColor: '#B9A4FB' }} />
                   <div className="flex justify-between text-[10px] text-text-muted mt-0.5">
                     <span>1&nbsp;000&nbsp;&euro;</span><span>50&nbsp;000&nbsp;&euro;</span>
                   </div>
@@ -126,12 +126,12 @@ export function CombinedSimulator() {
                 {/* Taux closing */}
                 <div>
                   <div className="flex justify-between mb-1">
-                    <label className="text-xs text-text-primary font-semibold">Taux de closing</label>
-                    <span className="text-sm font-extrabold tabular-nums text-[#A78BFA]">{tauxClosing}&nbsp;%</span>
+                    <label htmlFor="sim-linkedin-closing" className="text-xs text-text-primary font-semibold">Taux de closing</label>
+                    <span className="text-sm font-extrabold tabular-nums text-[#B9A4FB]">{tauxClosing}&nbsp;%</span>
                   </div>
-                  <input type="range" min={10} max={50} step={5} value={tauxClosing}
+                  <input id="sim-linkedin-closing" type="range" min={10} max={50} step={5} value={tauxClosing}
                     onChange={(e) => setTauxClosing(Number(e.target.value))}
-                    className={sliderClass} style={{ accentColor: '#A78BFA' }} />
+                    className={sliderClass} style={{ accentColor: '#B9A4FB' }} />
                   <div className="flex justify-between text-[10px] text-text-muted mt-0.5">
                     <span>10&nbsp;%</span><span>50&nbsp;%</span>
                   </div>
@@ -139,7 +139,7 @@ export function CombinedSimulator() {
               </div>
 
               {/* Telephone block (toggleable) */}
-              <div className={`rounded-2xl border p-6 transition-all duration-300 ${
+              <div className={`rounded-2xl border p-6 transition-colors duration-300 ${
                 withTelephone
                   ? 'bg-bg-secondary border-[#FBBF24]/20'
                   : 'bg-bg-secondary/50 border-white/[0.04]'
@@ -147,6 +147,9 @@ export function CombinedSimulator() {
                 <div className="flex items-center gap-3 mb-4">
                   <button
                     onClick={() => setWithTelephone(!withTelephone)}
+                    role="switch"
+                    aria-checked={withTelephone}
+                    aria-label="Activer la qualification téléphonique"
                     className={`relative w-10 h-5 rounded-full transition-colors duration-200 ${
                       withTelephone ? 'bg-[#FBBF24]' : 'bg-white/10'
                     }`}
@@ -170,10 +173,10 @@ export function CombinedSimulator() {
                   <div className="space-y-4 pt-2">
                     <div>
                       <div className="flex justify-between mb-1">
-                        <label className="text-xs text-text-primary font-semibold">Leads entrants / mois</label>
+                        <label htmlFor="sim-tel-leads" className="text-xs text-text-primary font-semibold">Leads entrants / mois</label>
                         <span className="text-sm font-extrabold tabular-nums text-[#FBBF24]">{leadsParMois}</span>
                       </div>
-                      <input type="range" min={10} max={500} step={10} value={leadsParMois}
+                      <input id="sim-tel-leads" type="range" min={10} max={500} step={10} value={leadsParMois}
                         onChange={(e) => setLeadsParMois(Number(e.target.value))}
                         className={sliderClass} style={{ accentColor: '#FBBF24' }} />
                       <div className="flex justify-between text-[10px] text-text-muted mt-0.5">
@@ -183,10 +186,10 @@ export function CombinedSimulator() {
 
                     <div>
                       <div className="flex justify-between mb-1">
-                        <label className="text-xs text-text-primary font-semibold">Taux de prise de RDV</label>
+                        <label htmlFor="sim-tel-rdv" className="text-xs text-text-primary font-semibold">Taux de prise de RDV</label>
                         <span className="text-sm font-extrabold tabular-nums text-[#FBBF24]">{tauxRDV}&nbsp;%</span>
                       </div>
-                      <input type="range" min={3} max={40} step={1} value={tauxRDV}
+                      <input id="sim-tel-rdv" type="range" min={3} max={40} step={1} value={tauxRDV}
                         onChange={(e) => setTauxRDV(Number(e.target.value))}
                         className={sliderClass} style={{ accentColor: '#FBBF24' }} />
                       <div className="flex justify-between text-[10px] text-text-muted mt-0.5">

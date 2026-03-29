@@ -183,7 +183,7 @@ export default function TarifsPage() {
                   Accueil
                 </a>
               </li>
-              <li aria-hidden="true" className="text-white/20">
+              <li aria-hidden="true" className="text-white/40">
                 /
               </li>
               <li className="text-text-primary font-medium" aria-current="page">

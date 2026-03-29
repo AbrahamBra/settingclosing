@@ -1,10 +1,10 @@
 import { ReactNode } from 'react'
 
 const variantColors = {
-  ia: { border: 'border-[#A78BFA]/[0.2]', bg: 'bg-[#A78BFA]/[0.04]', text: 'text-[#A78BFA]' },
+  ia: { border: 'border-[#B9A4FB]/[0.2]', bg: 'bg-[#B9A4FB]/[0.04]', text: 'text-[#B9A4FB]' },
   methode: { border: 'border-[#FBBF24]/[0.2]', bg: 'bg-[#FBBF24]/[0.04]', text: 'text-[#FBBF24]' },
   humain: { border: 'border-[#34D399]/[0.2]', bg: 'bg-[#34D399]/[0.04]', text: 'text-[#34D399]' },
-  hybrid: { border: 'border-[#C084FC]/[0.2]', bg: 'bg-[#C084FC]/[0.04]', text: 'text-[#C084FC]' },
+  hybrid: { border: 'border-[#D0A0FD]/[0.2]', bg: 'bg-[#D0A0FD]/[0.04]', text: 'text-[#D0A0FD]' },
 }
 
 export function ScreenshotCallout({

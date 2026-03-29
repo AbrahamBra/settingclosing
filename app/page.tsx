@@ -271,7 +271,7 @@ export default function Home() {
             <div className="text-center mb-6">
               <span
                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6"
-                style={{ backgroundColor: 'rgba(167,139,250,0.1)', color: '#A78BFA', border: '1px solid rgba(167,139,250,0.2)' }}
+                style={{ backgroundColor: 'rgba(167,139,250,0.1)', color: '#B9A4FB', border: '1px solid rgba(167,139,250,0.2)' }}
               >
                 Setting LinkedIn · Notre offre phare
               </span>
@@ -287,7 +287,7 @@ export default function Home() {
                   href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#A78BFA] text-[#0D0B07] font-semibold text-sm hover:bg-[#B89CFC] transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#B9A4FB] text-[#0D0B07] font-semibold text-sm hover:bg-[#B89CFC] transition-colors"
                 >
                   D&eacute;marrer ma prospection &rarr;
                 </a>
@@ -366,10 +366,10 @@ export default function Home() {
                 href="https://www.challengerslab.com/ia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block rounded-xl p-5 border border-[#A78BFA]/15 hover:border-[#A78BFA]/30 hover:bg-[#A78BFA]/[0.03] transition-all"
+                className="group block rounded-xl p-5 border border-[#B9A4FB]/15 hover:border-[#B9A4FB]/30 hover:bg-[#B9A4FB]/[0.03] transition-all"
               >
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#A78BFA]/10 mb-3">
-                  <span className="text-[#A78BFA] text-base">&#x26A1;</span>
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#B9A4FB]/10 mb-3">
+                  <span className="text-[#B9A4FB] text-base">&#x26A1;</span>
                 </span>
                 <p className="font-semibold text-text-primary text-sm mb-1">Automatisation IA</p>
                 <p className="text-text-muted text-xs leading-relaxed">

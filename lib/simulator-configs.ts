@@ -47,7 +47,7 @@ function formatEur(n: number): string {
 // ── Setting LinkedIn ─────────────────────────────────
 const linkedinConfig: SimulatorConfig = {
   offerId: 'setting-linkedin',
-  color: '#A78BFA',
+  color: '#B9A4FB',
   inputs: [
     {
       id: 'rdvParSemaine',

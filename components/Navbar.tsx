@@ -43,7 +43,7 @@ export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' 
     <>
       <nav
         style={{ zIndex: 50 }}
-        className={`fixed top-0 left-0 right-0 flex items-center justify-between px-6 md:px-12 h-16 transition-all duration-300 ${bgClasses}`}
+        className={`fixed top-0 left-0 right-0 flex items-center justify-between px-6 md:px-12 h-16 transition-[background-color,border-color,backdrop-filter] duration-300 ${bgClasses}`}
       >
         <a href="/" className="font-sans font-extrabold text-xl text-text-primary">
           Setting

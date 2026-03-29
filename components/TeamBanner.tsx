@@ -3,7 +3,7 @@ const members = [
     name: 'Brahim',
     initial: 'B',
     role: 'Setting',
-    color: '#A78BFA',
+    color: '#B9A4FB',
     desc: 'C\u2019est lui qui envoie les messages, qualifie les prospects et te d\u00e9croche des RDV.',
   },
   {

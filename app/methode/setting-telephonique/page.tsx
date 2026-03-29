@@ -222,12 +222,12 @@ export default function SettingTelephoniquePage() {
                     </div>
                     <div className="space-y-2">
                       <div className="flex gap-2.5 items-start">
-                        <span className="shrink-0 mt-0.5 text-red-400/60 text-xs font-semibold">✕</span>
-                        <p className="text-red-400/60 text-xs leading-relaxed italic">{item.bad}</p>
+                        <span className="shrink-0 mt-0.5 text-red-400 text-xs font-semibold">✕</span>
+                        <p className="text-red-400 text-xs leading-relaxed italic">{item.bad}</p>
                       </div>
                       <div className="flex gap-2.5 items-start">
-                        <span className="shrink-0 mt-0.5 text-emerald-400/60 text-xs font-semibold">→</span>
-                        <p className="text-emerald-400/60 text-xs leading-relaxed italic">{item.good}</p>
+                        <span className="shrink-0 mt-0.5 text-emerald-400 text-xs font-semibold">→</span>
+                        <p className="text-emerald-400 text-xs leading-relaxed italic">{item.good}</p>
                       </div>
                     </div>
                   </div>
