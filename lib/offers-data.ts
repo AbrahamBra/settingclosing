@@ -39,7 +39,7 @@ export const offers: Offer[] = [
     id: 'setting-linkedin',
     slug: 'setting-linkedin',
     eyebrow: 'Setting LinkedIn',
-    color: '#A78BFA',
+    color: '#B9A4FB',
     phase: 1,
     phaseLabel: 'Prospection',
     phaseSituation: 'Tu as une offre mais z\u00e9ro pipeline',

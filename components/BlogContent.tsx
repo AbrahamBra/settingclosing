@@ -28,7 +28,7 @@ interface PillarGuide {
 // ─── Category config ─────────────────────────────────────────────────────────
 
 const categoryConfig: Record<Category, { label: string; color: string; bgTint: string }> = {
-  setting: { label: 'Setting', color: '#A78BFA', bgTint: 'rgba(129, 140, 248, 0.04)' },
+  setting: { label: 'Setting', color: '#B9A4FB', bgTint: 'rgba(129, 140, 248, 0.04)' },
   methode: { label: 'Méthode', color: '#FBBF24', bgTint: 'rgba(251, 191, 36, 0.04)' },
 }
 
@@ -36,9 +36,9 @@ type FilterKey = 'all' | Category | 'ia'
 
 const filterPills: { key: FilterKey; label: string; color: string }[] = [
   { key: 'all', label: 'Tous', color: '#C87533' },
-  { key: 'setting', label: 'Setting', color: '#A78BFA' },
+  { key: 'setting', label: 'Setting', color: '#B9A4FB' },
   { key: 'methode', label: 'Méthode', color: '#FBBF24' },
-  { key: 'ia', label: 'IA + Outils', color: '#C084FC' },
+  { key: 'ia', label: 'IA + Outils', color: '#D0A0FD' },
 ]
 
 // ─── Pillar guides ───────────────────────────────────────────────────────────
@@ -49,8 +49,8 @@ const pillarGuides: PillarGuide[] = [
     title: 'Setting commercial B2B : définition et méthode',
     label: 'Guide Setting',
     readTime: '14 min',
-    color: '#A78BFA',
-    borderClass: 'border-l-4 border-[#A78BFA]',
+    color: '#B9A4FB',
+    borderClass: 'border-l-4 border-[#B9A4FB]',
   },
   {
     slug: 'closing-b2b',
@@ -65,8 +65,8 @@ const pillarGuides: PillarGuide[] = [
     title: 'Prospection LinkedIn B2B : méthode complète en 2026',
     label: 'Guide Prospection',
     readTime: '13 min',
-    color: '#A78BFA',
-    borderClass: 'border-l-4 border-[#A78BFA]',
+    color: '#B9A4FB',
+    borderClass: 'border-l-4 border-[#B9A4FB]',
   },
   {
     slug: 'methodes-vente-b2b',
@@ -81,8 +81,8 @@ const pillarGuides: PillarGuide[] = [
     title: 'Devenir setter ou closer B2B en 2026 : le guide complet',
     label: 'Guide Carrière',
     readTime: '20 min',
-    color: '#A78BFA',
-    borderClass: 'border-l-4 border-[#A78BFA]',
+    color: '#B9A4FB',
+    borderClass: 'border-l-4 border-[#B9A4FB]',
   },
 ]
 

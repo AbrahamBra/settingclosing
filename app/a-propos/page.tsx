@@ -196,7 +196,7 @@ export default function AProposPage() {
                   Accueil
                 </a>
               </li>
-              <li aria-hidden="true" className="text-white/20">/</li>
+              <li aria-hidden="true" className="text-white/40">/</li>
               <li className="text-text-primary font-medium">À propos</li>
             </ol>
           </div>

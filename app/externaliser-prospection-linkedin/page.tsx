@@ -213,7 +213,7 @@ export default function ExternaliserProspectionLinkedinPage() {
                   Accueil
                 </Link>
               </li>
-              <li aria-hidden="true" className="text-white/20">
+              <li aria-hidden="true" className="text-white/40">
                 /
               </li>
               <li className="text-text-secondary">

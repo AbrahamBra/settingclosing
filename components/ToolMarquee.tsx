@@ -7,18 +7,18 @@ interface Tool {
 
 const toolsRow1: Tool[] = [
   { name: 'Claude Code', color: '#C87533' },
-  { name: 'Sales Navigator', color: '#A78BFA' },
-  { name: 'Reactin', color: '#A78BFA' },
+  { name: 'Sales Navigator', color: '#B9A4FB' },
+  { name: 'Reactin', color: '#B9A4FB' },
   { name: 'Make', color: '#34D399' },
-  { name: 'Google Sheets', color: '#6B6560' },
+  { name: 'Google Sheets', color: '#918B85' },
   { name: 'Calendly', color: '#C87533' },
 ]
 
 const toolsRow2: Tool[] = [
   { name: 'Claude Cowork', color: '#C87533' },
   { name: 'Breakcold', color: '#34D399' },
-  { name: 'LinkedIn', color: '#A78BFA' },
-  { name: 'Notion', color: '#6B6560' },
+  { name: 'LinkedIn', color: '#B9A4FB' },
+  { name: 'Notion', color: '#918B85' },
   { name: 'HubSpot', color: '#FBBF24' },
   { name: 'Zapier', color: '#34D399' },
 ]
@@ -34,15 +34,13 @@ function Row({ tools, reverse = false }: { tools: Tool[]; reverse?: boolean }) {
       {[...tools, ...tools].map((tool, i) => (
         <span key={`${tool.name}-${i}`} className="flex items-center gap-10 whitespace-nowrap">
           <span
-            className="text-[13px] font-semibold uppercase tracking-[0.15em] transition-all duration-300"
+            className="text-[13px] font-semibold uppercase tracking-[0.15em] transition-opacity duration-300"
             style={{ color: tool.color, opacity: 0.3 }}
             onMouseEnter={(e) => {
               e.currentTarget.style.opacity = '1'
-              e.currentTarget.style.textShadow = `0 0 20px ${tool.color}40`
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.opacity = '0.3'
-              e.currentTarget.style.textShadow = 'none'
             }}
           >
             {tool.name}

@@ -141,7 +141,7 @@ export function GrowthJourney() {
                     <div className="hidden md:flex flex-col items-center gap-1.5 w-28">
                       <div className="flex items-center gap-1 w-full">
                         <div className="h-px flex-1 bg-white/[0.08]" />
-                        <span className="text-white/20 text-base leading-none">→</span>
+                        <span className="text-white/40 text-base leading-none">→</span>
                         <div className="h-px flex-1 bg-white/[0.08]" />
                       </div>
                       <p className="text-text-muted text-xs text-center leading-snug">

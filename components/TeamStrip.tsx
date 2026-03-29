@@ -1,7 +1,7 @@
 import { ScrollReveal } from './ui/ScrollReveal'
 
 const members = [
-  { name: 'Brahim', initial: 'B', role: 'Setting', color: '#A78BFA', desc: 'Envoie les messages, qualifie, d\u00e9croche les RDV' },
+  { name: 'Brahim', initial: 'B', role: 'Setting', color: '#B9A4FB', desc: 'Envoie les messages, qualifie, d\u00e9croche les RDV' },
   { name: 'Abraham', initial: 'A', role: 'IA & Automatisation', color: '#C87533', desc: 'Construit les outils de ciblage et les automatisations' },
   { name: 'Abdelhay', initial: 'A', role: 'Strat\u00e9gie', color: '#FBBF24', desc: 'D\u00e9finit l\u2019angle commercial et la strat\u00e9gie de conversion' },
 ]

@@ -39,7 +39,7 @@ export function AuthorBlock({ date, readTime, dateLabel, updatedDate }: AuthorBl
           >
             Abraham
           </a>
-          <span className="text-white/20">&middot;</span>
+          <span className="text-white/40">&middot;</span>
           <span className="text-text-secondary">Fondateur & Automatisation, Setting</span>
           <a
             href="https://www.linkedin.com/in/abraham-brakha"

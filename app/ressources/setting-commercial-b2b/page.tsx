@@ -490,7 +490,7 @@ export default function SettingCommercialPage() {
               </h3>
               <div className="grid gap-4 md:grid-cols-2 mb-6">
                 <div className="bg-emerald-400/[0.03] border border-emerald-400/10 rounded-2xl p-5">
-                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-400/60 mb-3">
+                  <p className="font-sans text-xs font-semibold uppercase tracking-widest text-emerald-400 mb-3">
                     Setting r&eacute;actif
                   </p>
                   <p className="font-sans font-semibold text-text-primary mb-2">Le prospect vient &agrave; vous</p>
@@ -499,7 +499,7 @@ export default function SettingCommercialPage() {
                     <li>&bull; Visite de votre profil</li>
                     <li>&bull; Demande de connexion entrante</li>
                   </ul>
-                  <p className="font-sans text-emerald-400/80 text-sm font-semibold mt-3">
+                  <p className="font-sans text-emerald-400 text-sm font-semibold mt-3">
                     Taux de r&eacute;ponse : 25&ndash;40 %
                   </p>
                 </div>

@@ -8,7 +8,7 @@ export function StatsBlock({ stats }: { stats: { value: string; label: string }[
             <div className="text-text-muted text-xs mt-1">{s.label}</div>
           </div>
           {i < stats.length - 1 && (
-            <span className="text-white/10 text-xl">→</span>
+            <span className="text-white/40 text-xl">→</span>
           )}
         </div>
       ))}

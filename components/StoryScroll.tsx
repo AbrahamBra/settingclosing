@@ -18,13 +18,13 @@ const STEPS: StoryStep[] = [
   {
     id: 'j1',
     counter: 'J1',
-    color: '#A78BFA',
+    color: '#B9A4FB',
     title: 'On cartographie ton march\u00e9',
     desc: 'ICP, signaux d\u2019achat, angles de message. On comprend ton offre, ton client id\u00e9al, et ce qui le fait r\u00e9agir.',
     tools: [
-      { name: 'Sales Navigator', color: '#A78BFA' },
+      { name: 'Sales Navigator', color: '#B9A4FB' },
       { name: 'Claude Cowork', color: '#C87533' },
-      { name: 'Google Sheets', color: '#6B6560' },
+      { name: 'Google Sheets', color: '#918B85' },
     ],
   },
   {
@@ -34,7 +34,7 @@ const STEPS: StoryStep[] = [
     title: 'Premiers messages envoy\u00e9s',
     desc: 'Ton setter a analys\u00e9 200+ profils. L\u2019IA a r\u00e9dig\u00e9 les messages. Il a valid\u00e9, ajust\u00e9 les angles, et lanc\u00e9 la s\u00e9quence.',
     tools: [
-      { name: 'Reactin', color: '#A78BFA' },
+      { name: 'Reactin', color: '#B9A4FB' },
       { name: 'Claude Code', color: '#C87533' },
       { name: 'Make', color: '#34D399' },
     ],

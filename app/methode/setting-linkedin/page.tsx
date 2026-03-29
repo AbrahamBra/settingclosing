@@ -251,7 +251,7 @@ const phases = [
     accentText: 'text-semantic-ia',
     steps: settingSteps.slice(0, 3),
     bg: 'bg-bg-secondary',
-    gradient: 'from-[#A78BFA]/[0.02]',
+    gradient: 'from-[#B9A4FB]/[0.02]',
   },
   {
     id: 'qualification',
@@ -571,12 +571,12 @@ export default function MethodePage() {
                     </div>
                     <div className="space-y-2">
                       <div className="flex gap-2.5 items-start">
-                        <span className="shrink-0 mt-0.5 text-red-400/60 text-xs font-semibold">&times;</span>
-                        <p className="text-red-400/60 text-xs leading-relaxed italic">{item.bad}</p>
+                        <span className="shrink-0 mt-0.5 text-red-400 text-xs font-semibold">&times;</span>
+                        <p className="text-red-400 text-xs leading-relaxed italic">{item.bad}</p>
                       </div>
                       <div className="flex gap-2.5 items-start">
-                        <span className="shrink-0 mt-0.5 text-emerald-400/60 text-xs font-semibold">&rarr;</span>
-                        <p className="text-emerald-400/60 text-xs leading-relaxed italic">{item.good}</p>
+                        <span className="shrink-0 mt-0.5 text-emerald-400 text-xs font-semibold">&rarr;</span>
+                        <p className="text-emerald-400 text-xs leading-relaxed italic">{item.good}</p>
                       </div>
                     </div>
                   </div>

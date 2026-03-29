@@ -517,7 +517,7 @@ export default function Page() {
                       '✗ Pitch produit dans le premier DM → trop tôt',
                       '✗ Test du téléphone : non',
                     ].map((e) => (
-                      <li key={e} className="font-sans text-sm text-red-400/80">{e}</li>
+                      <li key={e} className="font-sans text-sm text-red-400">{e}</li>
                     ))}
                   </ul>
                 </div>
@@ -565,7 +565,7 @@ export default function Page() {
                       '✗ Chiffre mis en avant sans contexte → sonne comme une promesse commerciale',
                       '✗ La connexion commune n\'est pas mentionnée → signal social manqué',
                     ].map((e) => (
-                      <li key={e} className="font-sans text-sm text-red-400/80">{e}</li>
+                      <li key={e} className="font-sans text-sm text-red-400">{e}</li>
                     ))}
                   </ul>
                 </div>

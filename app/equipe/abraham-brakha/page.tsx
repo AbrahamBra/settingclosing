@@ -155,9 +155,9 @@ export default function AbrahamBrakhaPage() {
           <div className="container-max px-6 md:px-12 lg:px-20 py-3">
             <ol className="flex items-center gap-2 font-sans text-sm text-text-muted">
               <li><a href="/" className="hover:text-text-primary transition-colors">Accueil</a></li>
-              <li aria-hidden="true" className="text-white/20">/</li>
+              <li aria-hidden="true" className="text-white/40">/</li>
               <li><a href="/a-propos" className="hover:text-text-primary transition-colors">&Agrave; propos</a></li>
-              <li aria-hidden="true" className="text-white/20">/</li>
+              <li aria-hidden="true" className="text-white/40">/</li>
               <li className="text-text-primary font-medium">Abraham Brakha</li>
             </ol>
           </div>

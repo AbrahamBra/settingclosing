@@ -144,7 +144,7 @@ export function FAQ() {
                       }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.22, ease: [0.16, 1, 0.3, 1] }}
-                      className="overflow-hidden"
+                      className="overflow-hidden will-change-[height]"
                     >
                       <div className="px-5 pb-5">
                         <p className="font-sans text-sm text-text-secondary leading-relaxed faq-answer">
