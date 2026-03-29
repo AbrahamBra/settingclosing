@@ -182,7 +182,7 @@ export default function DevenirBusinessDeveloperPage() {
 
           <div data-speakable="true">
             <TldrBox>
-              <p>Ce qu&apos;il faut savoir pour devenir business developer en 2026 : comp&eacute;tences attendues, parcours possibles (BTS, &eacute;cole de commerce, reconversion), fourchettes de salaire (30-55k&nbsp;&euro; selon exp&eacute;rience) et r&eacute;alit&eacute;s du m&eacute;tier au quotidien.</p>
+              <p>Ce qu&apos;il faut savoir pour devenir business developer en 2026 : comp&eacute;tences attendues, parcours possibles (BTS, &eacute;cole de commerce, reconversion), fourchettes de salaire (30-55k&nbsp;&euro; selon exp&eacute;rience, source&nbsp;: <a href="https://www.apec.fr" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">APEC</a>) et r&eacute;alit&eacute;s du m&eacute;tier au quotidien.</p>
             </TldrBox>
           </div>
 
@@ -347,8 +347,9 @@ export default function DevenirBusinessDeveloperPage() {
                 </p>
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   En trois à cinq ans, les profils confirmés atteignent{' '}
-                  <span className="font-semibold text-text-primary">45 000 à 60 000 €</span>. Et les
-                  meilleurs dépassent largement ces chiffres.
+                  <span className="font-semibold text-text-primary">45 000 à 60 000 €</span> (source&nbsp;:{' '}
+                  <a href="https://www.apec.fr/tous-nos-metiers/commercial-marketing/business-developer.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">APEC</a>).
+                  Et les meilleurs dépassent largement ces chiffres.
                 </p>
               </div>
             </div>
@@ -646,11 +647,14 @@ export default function DevenirBusinessDeveloperPage() {
               Questions fréquentes
             </h2>
             <div className="space-y-4">
-              {faqItems.map(({ question, answer }) => (
-                <div key={question} className="bg-bg-secondary rounded-xl p-6 border border-white/[0.06]">
-                  <p className="font-sans font-semibold text-text-primary text-sm mb-2">{question}</p>
-                  <p className="font-sans text-text-secondary text-sm leading-relaxed">{answer}</p>
-                </div>
+              {faqItems.map(({ question, answer }, i) => (
+                <details key={question} className="group bg-bg-secondary rounded-xl p-6 border border-white/[0.06]" {...(i === 0 ? { open: true } : {})}>
+                  <summary className="font-sans font-semibold text-text-primary text-sm cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+                    {question}
+                    <span className="shrink-0 text-accent transition-transform group-open:rotate-45 text-lg">+</span>
+                  </summary>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed mt-3 faq-answer">{answer}</p>
+                </details>
               ))}
             </div>
           </section>

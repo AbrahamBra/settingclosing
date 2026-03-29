@@ -98,6 +98,7 @@ const articles: Article[] = [
   // Prospection LinkedIn — articles standalone
   { slug: 'comment-prospecter-sur-linkedin', title: 'Comment prospecter sur LinkedIn en 2026 : guide complet', readTime: '14 min', category: 'setting', date: '2026-03-25' },
   { slug: 'agence-prospection-linkedin', title: 'Agence de prospection LinkedIn : comment choisir en 2026', readTime: '13 min', category: 'setting', date: '2026-03-25' },
+  { slug: 'agence-prospection-vs-setting-linkedin', title: 'Agence prospection B2B vs setting LinkedIn externalisé : comparatif 2026', readTime: '12 min', category: 'setting', date: '2026-03-29' },
   { slug: 'social-selling-linkedin-b2b', title: 'Social selling LinkedIn : définition, méthode et SSI en B2B', readTime: '12 min', category: 'setting', date: '2026-03-25' },
   { slug: 'automatisation-prospection-linkedin', title: 'Automatisation de la prospection LinkedIn : limites et alternatives en 2026', readTime: '14 min', category: 'setting', date: '2026-03-25' },
   // Articles consolidés/redirigés — retirés :
