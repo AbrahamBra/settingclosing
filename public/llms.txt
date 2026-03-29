@@ -70,9 +70,14 @@ Setting construit et opère des pipelines de prospection LinkedIn B2B. Un setter
 - Longueur message LinkedIn : 5 phrases max
 - Connexions LinkedIn par semaine : ~100
 
+## Qui sommes-nous
+
+Setting est un service de ChallengersLab, spécialisé en prospection LinkedIn B2B externalisée. ChallengersLab est la société mère ; Setting est la marque produit opérée sur setting.live.
+
 ## Contact
 
 - Site : https://www.setting.live
+- Société mère : ChallengersLab — https://www.challengerslab.com
 - Email : a.brakha@challengerslab.com
 - Fondateur : Abraham Brakha — https://www.linkedin.com/in/abraham-brakha
 - LinkedIn (entreprise) : https://www.linkedin.com/company/challengerslab

@@ -380,7 +380,10 @@ La plupart des fondateurs et freelances B2B savent faire leur métier. Ce qu'ils
 
 ## Contact et informations pratiques
 
+Setting est un service de ChallengersLab (société mère). ChallengersLab opère Setting comme marque produit dédiée à la prospection LinkedIn B2B externalisée.
+
 - **Site web :** https://www.setting.live
+- **Société mère :** ChallengersLab — https://www.challengerslab.com
 - **Email :** a.brakha@challengerslab.com
 - **LinkedIn entreprise :** https://www.linkedin.com/company/challengerslab
 - **LinkedIn fondateur :** https://www.linkedin.com/in/abraham-brakha
