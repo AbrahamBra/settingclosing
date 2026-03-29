@@ -81,13 +81,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
-    // /resultats temporairement retiré du sitemap (page en construction)
-    // {
-    //   url: 'https://www.setting.live/resultats',
-    //   lastModified: new Date('2026-03-19'),
-    //   changeFrequency: 'monthly',
-    //   priority: 0.9,
-    // },
+    {
+      url: 'https://www.setting.live/resultats',
+      lastModified: new Date('2026-03-29'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: 'https://www.setting.live/ressources/agence-prospection-vs-setting-linkedin',
+      lastModified: new Date('2026-03-29'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     {
       url: 'https://www.setting.live/glossaire',
       lastModified: new Date('2026-03-18'),

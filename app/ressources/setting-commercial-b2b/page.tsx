@@ -1015,16 +1015,19 @@ export default function SettingCommercialPage() {
                   {
                     tool: 'Reactin',
                     role: 'Signaux inbound',
+                    url: 'https://www.reactin.io',
                     detail: "Connect\u00e9 \u00e0 votre compte LinkedIn, Reactin recense qui a interact\u00e9 avec vos posts. Sur un compte qui publie 2-3 fois par semaine, \u00e7a g\u00e9n\u00e8re 15 \u00e0 50 signaux par semaine. Le setter filtre selon l'ICP.",
                   },
                   {
                     tool: 'Spyer',
                     role: 'Signaux concurrents',
+                    url: 'https://www.spyer.io',
                     detail: "Vous d\u00e9finissez une liste de comptes \u00e0 monitorer. Spyer alerte quand des profils int\u00e9ressants interagissent avec leur contenu. Ces prospects n'ont pas interagi avec vous, mais ils ont montr\u00e9 un int\u00e9r\u00eat pour votre th\u00e9matique.",
                   },
                   {
                     tool: 'Sales Navigator',
                     role: 'Ciblage pr\u00e9cis',
+                    url: 'https://business.linkedin.com/sales-solutions',
                     detail: "L'outil LinkedIn premium (~100 \u20ac/mois) pour construire des listes par fonction, secteur, taille d'entreprise, changements r\u00e9cents. Sales Navigator d\u00e9finit qui surveiller. Spyer ex\u00e9cute la surveillance.",
                   },
                   {
@@ -1032,10 +1035,12 @@ export default function SettingCommercialPage() {
                     role: 'Co-r\u00e9daction des messages',
                     detail: "Un skill construit sur votre contexte : offre, march\u00e9, objections connues, formulations qui fonctionnent. Claude propose un draft. Le setter lit, ajuste, valide. Aucun message ne part sans regard humain.",
                   },
-                ].map(({ tool, role, detail }) => (
+                ].map(({ tool, role, detail, url }: { tool: string; role: string; detail: string; url?: string }) => (
                   <div key={tool} className="border border-white/[0.06] rounded-xl overflow-hidden">
                     <div className="bg-bg-secondary px-5 py-3 border-b border-white/[0.06] flex items-center justify-between gap-4">
-                      <p className="font-sans font-semibold text-text-primary text-sm">{tool}</p>
+                      <p className="font-sans font-semibold text-text-primary text-sm">
+                        {url ? <a href={url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">{tool} &nearr;</a> : tool}
+                      </p>
                       <p className="font-sans text-xs text-accent">{role}</p>
                     </div>
                     <div className="px-5 py-4">
@@ -1290,14 +1295,15 @@ export default function SettingCommercialPage() {
               </h2>
               <div className="divide-y divide-white/[0.06]">
                 {faqItems.map((item, i) => (
-                  <div key={i} className="py-5">
-                    <p className="font-sans font-semibold text-text-primary mb-2">
+                  <details key={i} className="group py-5" {...(i === 0 ? { open: true } : {})}>
+                    <summary className="font-sans font-semibold text-text-primary cursor-pointer list-none flex items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
                       {item.question}
-                    </p>
-                    <p className="faq-answer font-sans text-text-secondary leading-relaxed text-sm">
+                      <span className="shrink-0 text-accent transition-transform group-open:rotate-45 text-lg">+</span>
+                    </summary>
+                    <p className="faq-answer font-sans text-text-secondary leading-relaxed text-sm mt-3">
                       {item.answer}
                     </p>
-                  </div>
+                  </details>
                 ))}
               </div>
             </section>
