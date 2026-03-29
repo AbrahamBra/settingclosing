@@ -64,7 +64,7 @@ const serviceSchema = {
       '@type': 'UnitPriceSpecification',
       price: '790',
       priceCurrency: 'EUR',
-      unitText: 'MON',
+      unitText: 'MONTH',
       billingDuration: 'P1M',
       valueAddedTaxIncluded: false,
     },

@@ -61,13 +61,18 @@ const organizationSchema = {
   '@type': 'ProfessionalService',
   '@id': 'https://www.setting.live/#business',
   name: 'Setting',
-  alternateName: 'ChallengersLab',
   url: 'https://www.setting.live',
   description:
     'Service de prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B.',
   sameAs: [
     'https://www.linkedin.com/company/challengerslab',
+    'https://www.linkedin.com/in/abraham-brakha',
   ],
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'ChallengersLab',
+    url: 'https://www.challengerslab.com',
+  },
   employee: [
     {
       '@type': 'Person',
