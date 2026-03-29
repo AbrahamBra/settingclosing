@@ -25,7 +25,7 @@ export function Navbar({ variant = 'default' }: { variant?: 'default' | 'inner' 
   const navLinks = [
     { label: 'Méthode', href: '/methode/setting-linkedin' },
     { label: 'Tarifs', href: '/tarifs' },
-    { label: 'Résultats', href: '/resultats' },
+    { label: 'À propos', href: '/a-propos' },
     { label: 'Ressources', href: '/ressources' },
   ]
 

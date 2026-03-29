@@ -250,9 +250,9 @@ export default function CommentDevenirSetterB2BPage() {
               D&eacute;finition
             </p>
             <p className="font-sans text-text-primary leading-relaxed">
-              <strong><a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">Setter</a></strong> = prospection avant l&apos;appel.
+              <strong><a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">Setter</a></strong> = prospection avant l&apos;appel.
               Il identifie les prospects sur LinkedIn, les contacte et d&eacute;croche des rendez-vous qualifi&eacute;s.{' '}
-              <strong><a href="/ressources/closer-b2b" className="text-accent hover:underline transition-colors">Closer</a></strong> = conversion pendant l&apos;appel.
+              <strong><a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">Closer</a></strong> = conversion pendant l&apos;appel.
               Il prend le RDV, conduit la <a href="/ressources/discovery-call-b2b" className="text-accent hover:underline transition-colors">d&eacute;couverte</a>, g&egrave;re les objections et signe.
               Deux r&ocirc;les compl&eacute;mentaires dans un pipeline B2B.
             </p>
@@ -312,7 +312,7 @@ export default function CommentDevenirSetterB2BPage() {
               Devenir closer B2B : un m&eacute;tier compl&eacute;mentaire
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Le setter d&eacute;croche le rendez-vous. Le <a href="/ressources/closer-b2b" className="text-accent hover:underline transition-colors">closer B2B</a>, lui,
+              Le setter d&eacute;croche le rendez-vous. Le <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">closer B2B</a>, lui,
               prend ce rendez-vous et le transforme en client sign&eacute;.
               Concr&egrave;tement, le closer conduit la <a href="/ressources/discovery-call-b2b" className="text-accent hover:underline transition-colors">discovery call</a>,
               pose les bonnes questions pour comprendre le vrai besoin, g&egrave;re
@@ -709,7 +709,7 @@ export default function CommentDevenirSetterB2BPage() {
               Comment choisir son setter : les crit&egrave;res qui comptent
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Avant de signer avec un <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">setter B2B</a> ou une agence, v&eacute;rifiez ces 7 points.
+              Avant de signer avec un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setter B2B</a> ou une agence, v&eacute;rifiez ces 7 points.
               Ils s&eacute;parent un programme qui livre de celui qui br&ucirc;le vos leads.
             </p>
 
@@ -931,7 +931,7 @@ export default function CommentDevenirSetterB2BPage() {
               {[
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : le guide complet' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : le guide complet' },
-                { href: '/ressources/setter-b2b-definition', label: "C\u2019est quoi un setter en B2B ?" },
+                { href: '/ressources/setting-commercial-b2b', label: "C\u2019est quoi un setter en B2B ?" },
                 { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs externalis\u00e9 : le comparatif' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
@@ -961,7 +961,7 @@ export default function CommentDevenirSetterB2BPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/closing-b2b', title: 'Closing B2B : le guide complet', readTime: '15 min' },
-            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/setting-commercial-b2b', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
             { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
           ]} />
 

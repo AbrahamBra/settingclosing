@@ -37,9 +37,9 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans font-extrabold tracking-tight text-[2rem] sm:text-[2.75rem] md:text-[3.5rem] leading-[1.15] text-text-primary mb-6"
         >
-          Tu as une offre qui marche.{' '}
+          Setting LinkedIn B2B :{' '}
           <br className="hidden sm:block" />
-          <span className="text-accent">Il te manque un pipeline.</span>
+          <span className="text-accent">on te construit un pipeline de RDV.</span>
         </motion.h1>
 
         <motion.p

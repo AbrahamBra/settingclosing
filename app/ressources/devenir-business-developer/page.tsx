@@ -570,7 +570,7 @@ export default function DevenirBusinessDeveloperPage() {
                   des indicateurs clairs.
                 </p>
                 <a
-                  href="/ressources/setter-b2b-definition"
+                  href="/ressources/setting-commercial-b2b"
                   className="font-sans text-xs text-accent hover:underline"
                 >
                   Comprendre le rôle du setter →
@@ -622,7 +622,7 @@ export default function DevenirBusinessDeveloperPage() {
               <ul className="space-y-2">
                 {[
                   { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
-                  { href: '/ressources/difference-setting-closing', label: 'Setting vs Closing : quelle est la différence ?' },
+                  { href: '/ressources/setting-commercial-b2b', label: 'Setting vs Closing : quelle est la différence ?' },
                   { href: '/ressources/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
                   { href: '/ressources/setting-commercial-b2b', label: 'Le setting commercial B2B : guide complet' },
                 ].map(({ href, label }) => (
@@ -657,8 +657,8 @@ export default function DevenirBusinessDeveloperPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min' },
-            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
-            { href: '/ressources/qualification-leads-b2b', title: 'Qualifier un lead en B2B 2026 : m\u00e9thodes, crit\u00e8res et exemples', readTime: '8 min' },
+            { href: '/ressources/closing-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
+            { href: '/ressources/methodes-vente-b2b', title: 'Qualifier un lead en B2B 2026 : m\u00e9thodes, crit\u00e8res et exemples', readTime: '8 min' },
           ]} />
 
         </div>
