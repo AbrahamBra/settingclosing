@@ -17,11 +17,13 @@ export const metadata: Metadata = {
       "Setter definition, setting LinkedIn, m\u00e9thode signal-based, 9 \u00e9tapes, outils, co\u00fbt r\u00e9el et programme de 3 mois. Le guide pilier du setting commercial B2B.",
     locale: 'fr_FR',
     type: 'article',
+    images: [{ url: 'https://www.setting.live/api/og?title=Setting%20commercial%20B2B%20%3A%20guide%20complet&tag=Guide%20pilier', width: 1200, height: 630, alt: 'Setting commercial B2B : guide complet \u2014 Setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Setting commercial B2B : guide complet (2026)',
     description: 'Setter definition, setting LinkedIn, 9 \u00e9tapes, outils et co\u00fbt r\u00e9el du setting commercial.',
+    images: ['https://www.setting.live/api/og?title=Setting%20commercial%20B2B%20%3A%20guide%20complet&tag=Guide%20pilier'],
   },
   alternates: {
     canonical: 'https://www.setting.live/ressources/setting-commercial-b2b',

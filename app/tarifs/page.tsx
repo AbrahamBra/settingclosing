@@ -27,11 +27,13 @@ export const metadata: Metadata = {
     description: 'Tarifs prospection LinkedIn externalisée : setup offert, à partir de 790\u00a0€/mois, zéro engagement.',
     locale: 'fr_FR',
     type: 'website',
+    images: [{ url: 'https://www.setting.live/api/og?title=Tarifs%20prospection%20LinkedIn%20B2B&tag=Tarifs', width: 1200, height: 630, alt: 'Tarifs prospection LinkedIn B2B — Setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | Setting',
     description: 'Tarifs prospection LinkedIn externalisée : setup offert, à partir de 790\u00a0€/mois, zéro engagement.',
+    images: ['https://www.setting.live/api/og?title=Tarifs%20prospection%20LinkedIn%20B2B&tag=Tarifs'],
   },
 }
 

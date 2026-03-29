@@ -27,12 +27,14 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     type: 'website',
     url: 'https://www.setting.live/resultats',
+    images: [{ url: 'https://www.setting.live/api/og?title=R%C3%A9sultats%20clients%20%E2%80%94%20Setting%20LinkedIn%20B2B&tag=R%C3%A9sultats', width: 1200, height: 630, alt: 'Résultats clients — Setting LinkedIn B2B — Setting' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Résultats clients — Setting LinkedIn B2B | Setting',
     description:
       'Nos clients obtiennent 2-4 RDV qualifiés/semaine avec un taux de réponse 5 à 10x supérieur à la prospection classique.',
+    images: ['https://www.setting.live/api/og?title=R%C3%A9sultats%20clients%20%E2%80%94%20Setting%20LinkedIn%20B2B&tag=R%C3%A9sultats'],
   },
 }
 
