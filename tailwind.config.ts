@@ -17,7 +17,7 @@ const config: Config = {
         'surface-hover': '#1C1A16',
         'text-primary': '#F0ECE4',
         'text-secondary': '#BDB5A5',
-        'text-muted': '#918B85',
+        'text-muted': '#A8A29E',
         'semantic-ia': '#B9A4FB',
         'semantic-methode': '#FBBF24',
         'semantic-humain': '#34D399',

@@ -390,27 +390,27 @@ export default function Home() {
                   Les RDV tombent mais le taux de closing stagne. 2h/semaine pour structurer ton process.
                 </p>
               </a>
-              <div className="rounded-xl p-5 border border-[#34D399]/15 opacity-70">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#34D399]/10 mb-3">
+              <div className="rounded-xl p-5 border border-[#34D399]/10">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#34D399]/10 mb-3 opacity-50">
                   <span className="text-[#34D399] text-base">&#x1F9E0;</span>
                 </span>
-                <p className="font-semibold text-text-primary text-sm mb-1">Encodage expertise</p>
+                <p className="font-semibold text-text-secondary text-sm mb-1">Encodage expertise</p>
                 <p className="text-text-muted text-xs leading-relaxed">
                   Ton savoir-faire, encod&eacute; dans un syst&egrave;me IA. D&eacute;l&egrave;gue sans perdre en qualit&eacute;.
                 </p>
-                <span className="inline-block mt-2 text-[10px] font-medium text-text-muted bg-white/[0.06] px-2 py-0.5 rounded-full">
+                <span className="inline-block mt-2 text-[10px] font-medium text-text-secondary bg-white/10 px-2 py-0.5 rounded-full">
                   Bient&ocirc;t
                 </span>
               </div>
-              <div className="rounded-xl p-5 border border-[#F87171]/15 opacity-70">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#F87171]/10 mb-3">
+              <div className="rounded-xl p-5 border border-[#F87171]/10">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#F87171]/10 mb-3 opacity-50">
                   <span className="text-[#F87171] text-base">&#x1F4C8;</span>
                 </span>
-                <p className="font-semibold text-text-primary text-sm mb-1">Growth ops</p>
+                <p className="font-semibold text-text-secondary text-sm mb-1">Growth ops</p>
                 <p className="text-text-muted text-xs leading-relaxed">
                   CRM, reporting, dashboards. L&rsquo;infra commerciale qui manque aux solopreneurs.
                 </p>
-                <span className="inline-block mt-2 text-[10px] font-medium text-text-muted bg-white/[0.06] px-2 py-0.5 rounded-full">
+                <span className="inline-block mt-2 text-[10px] font-medium text-text-secondary bg-white/10 px-2 py-0.5 rounded-full">
                   Bient&ocirc;t
                 </span>
               </div>

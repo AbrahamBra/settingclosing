@@ -127,7 +127,7 @@ export function HeroPretextDescription() {
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div ref={containerRef} className="relative max-w-xl mx-auto mb-12">
+    <div ref={containerRef} className="relative max-w-xl mx-auto mb-12" style={{ minHeight: '112px' }}>
       {/* SEO-safe: full text in DOM for crawlers + speakable selector */}
       <p
         className={`font-sans text-lg text-text-secondary hero-description ${ready ? 'sr-only' : ''}`}
