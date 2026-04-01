@@ -139,6 +139,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    {
+      url: 'https://www.setting.live/ressources/setter-b2b',
+      lastModified: new Date('2026-04-01'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://www.setting.live/ressources/chiffres-prospection-b2b-2026',
+      lastModified: new Date('2026-04-01'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
     // messages-prospection-linkedin-exemples — redirigé vers prospection-linkedin-b2b (consolidation SEO)
     // social-selling-linkedin-b2b — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
     // automatisation-prospection-linkedin — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
