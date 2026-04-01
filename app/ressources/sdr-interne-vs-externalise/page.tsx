@@ -626,8 +626,8 @@ export default function SdrInterneVsExternalisePage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/comment-devenir-setter-b2b', title: "Devenir setter ou closer B2B : le guide complet", readTime: '20 min' },
-            { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '10 min' },
-            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '10 min' },
+            { href: '/ressources/setting-commercial-b2b', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
           ]} />
 
         </div>

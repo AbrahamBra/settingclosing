@@ -363,7 +363,7 @@ export default function SettingLinkedInDefinitionPage() {
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le mot vient du vocabulaire commercial anglophone : &laquo;&nbsp;to set
-              an appointment&nbsp;&raquo;, c&rsquo;est-&agrave;-dire fixer un rendez-vous. Le <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">setter</a> est
+              an appointment&nbsp;&raquo;, c&rsquo;est-&agrave;-dire fixer un rendez-vous. Le <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setter</a> est
               le commercial qui ouvre la porte. Il ne vend pas, il qualifie et d&eacute;croche le cr&eacute;neau.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
@@ -419,12 +419,12 @@ export default function SettingLinkedInDefinitionPage() {
               Avec moins de messages, il g&eacute;n&egrave;re plus de rendez-vous qualifi&eacute;s, sans risque de ban
               et sans d&eacute;grader votre image sur la plateforme.
               Pour aller plus loin :{' '}
-              <a href="/ressources/setting-humain-vs-automatisation-linkedin" className="text-accent hover:underline transition-colors">
+              <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">
                 setting humain vs automatisation LinkedIn
               </a>.
             </p>
             <p className="text-sm text-text-muted italic mt-2">
-              Pour aller plus loin : <a href="/ressources/social-selling-linkedin-b2b" className="text-accent hover:underline">Social selling LinkedIn : d&eacute;finition et m&eacute;thode</a>
+              Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">Social selling LinkedIn : d&eacute;finition et m&eacute;thode</a>
             </p>
           </section>
 
@@ -584,7 +584,7 @@ export default function SettingLinkedInDefinitionPage() {
               Le point commun : chaque message cite un signal r&eacute;el, montre que le profil a &eacute;t&eacute; lu,
               et pose une question au lieu de pitcher.
               Pour d&rsquo;autres sc&eacute;narios :{' '}
-              <a href="/ressources/script-setting-linkedin" className="text-accent hover:underline transition-colors">
+              <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">
                 scripts de setting LinkedIn complets
               </a>.
             </p>
@@ -752,7 +752,7 @@ export default function SettingLinkedInDefinitionPage() {
               se concentrer sur les appels de vente plut&ocirc;t que sur la prospection.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Un <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">setter externalis&eacute;</a> prend
+              Un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setter externalis&eacute;</a> prend
               en charge tout le pipeline : de la d&eacute;tection du signal au rendez-vous dans votre agenda.
               Vous ne g&eacute;rez que les appels de vente.
             </p>
@@ -800,14 +800,14 @@ export default function SettingLinkedInDefinitionPage() {
             <div className="space-y-3">
               {[
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre m\u00e9thode compl\u00e8te en 9 \u00e9tapes' },
-                { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : 6 exemples concrets' },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn : 6 exemples concrets' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
                 { href: '/externaliser-prospection-linkedin#agence-vs-freelance', label: 'Agence setting LinkedIn vs setter freelance : le bon choix' },
                 { href: '/externaliser-prospection-linkedin#outils', label: 'Outils du setting LinkedIn : Reactin, Make et BreakCold' },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: 'IA, m\u00e9thode et humain : les 3 couches du setting LinkedIn' },
-                { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ?" },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: 'IA, m\u00e9thode et humain : les 3 couches du setting LinkedIn' },
+                { href: '/ressources/setting-commercial-b2b', label: "C'est quoi un setter en B2B ?" },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">&rarr;</span>

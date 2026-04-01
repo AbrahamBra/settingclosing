@@ -601,7 +601,7 @@ export default function MessagesLinkedInSansReponsePage() {
               C&apos;est vous qui validez — pas l&apos;algorithme. C&apos;est le principe de base d&apos;un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">programme de setting commercial B2B</a> : IA co-rédige, setter valide, prospect reçoit quelque chose de vrai.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mt-4">
-              Pour comprendre comment les trois couches s&apos;articulent — détection des signaux, scoring, phases de calibration et de scaling — voir <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn</a>.
+              Pour comprendre comment les trois couches s&apos;articulent — détection des signaux, scoring, phases de calibration et de scaling — voir <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">IA, méthode et humain : les 3 couches d&apos;un système de setting LinkedIn</a>.
             </p>
 
             <div className="bg-bg-secondary rounded-xl px-6 py-5 mt-6 border border-white/[0.06]">
@@ -615,7 +615,7 @@ export default function MessagesLinkedInSansReponsePage() {
               </p>
             </div>
             <p className="text-sm text-text-muted italic mt-2">
-              Pour aller plus loin : <a href="/ressources/messages-prospection-linkedin-exemples" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
+              Pour aller plus loin : <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
             </p>
           </section>
 
@@ -647,7 +647,7 @@ export default function MessagesLinkedInSansReponsePage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
@@ -675,8 +675,8 @@ export default function MessagesLinkedInSansReponsePage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : anatomie, exemples et cadre complet', readTime: '11 min' },
-            { href: '/ressources/relance-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Scripts de setting LinkedIn B2B : anatomie, exemples et cadre complet', readTime: '11 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min' },
             { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
           ]} />
 

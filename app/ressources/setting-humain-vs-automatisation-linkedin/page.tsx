@@ -267,7 +267,7 @@ export default function SettingHumainVsAutomatisationPage() {
                 Le volume est plus faible — 20 à 50 profils ciblés par semaine plutôt que 500 contacts en masse.
                 Le taux de réponse compense largement.
                 Vous pouvez lire comment ce système fonctionne en détail dans l&apos;article{' '}
-                <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">
                   IA, méthode et humain
                 </a>.
               </p>
@@ -481,7 +481,7 @@ export default function SettingHumainVsAutomatisationPage() {
                 Si vous cochez deux de ces cases, l&apos;automatisation mérite d&apos;être testée sérieusement.
               </p>
               <p className="text-sm text-text-muted italic mt-2">
-                Pour aller plus loin : <a href="/ressources/automatisation-prospection-linkedin" className="text-accent hover:underline">Automatisation prospection LinkedIn : limites et alternatives</a>
+                Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">Automatisation prospection LinkedIn : limites et alternatives</a>
               </p>
             </section>
 
@@ -643,7 +643,7 @@ export default function SettingHumainVsAutomatisationPage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/ia-methode-humain-setting-linkedin', title: "IA, m\u00e9thode et humain : les 3 couches d\u2019un syst\u00e8me de setting LinkedIn qui tient sur la dur\u00e9e", readTime: '12 min' },
+            { href: '/ressources/comment-prospecter-sur-linkedin', title: "IA, m\u00e9thode et humain : les 3 couches d\u2019un syst\u00e8me de setting LinkedIn qui tient sur la dur\u00e9e", readTime: '12 min' },
             { href: '/externaliser-prospection-linkedin#sdr-commercial', title: 'SDR interne vs SDR externalis\u00e9 : le comparatif co\u00fbt r\u00e9el', readTime: '8 min' },
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
           ]} />

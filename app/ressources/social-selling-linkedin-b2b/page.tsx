@@ -236,7 +236,7 @@ export default function SocialSellingLinkedInB2BPage() {
                 Le social selling ne remplace pas la vente. Il cr&eacute;e les conditions pour que la vente soit plus facile. Tu r&eacute;chauffes le terrain. Quand tu envoies un message &agrave; un prospect qui a lik&eacute; 3 de tes posts, tu n&apos;es plus un inconnu. Tu es quelqu&apos;un dont il conna&icirc;t le point de vue.
               </p>
               <p>
-                C&apos;est un jeu de long terme. Et c&apos;est pr&eacute;cis&eacute;ment pour &ccedil;a qu&apos;il fonctionne mieux quand il est coupl&eacute; &agrave; une action directe de <a href="/ressources/setting-linkedin-definition" className="text-accent hover:underline">setting LinkedIn</a> pour convertir les signaux en RDV.
+                C&apos;est un jeu de long terme. Et c&apos;est pr&eacute;cis&eacute;ment pour &ccedil;a qu&apos;il fonctionne mieux quand il est coupl&eacute; &agrave; une action directe de <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">setting LinkedIn</a> pour convertir les signaux en RDV.
               </p>
             </section>
 
@@ -313,7 +313,7 @@ export default function SocialSellingLinkedInB2BPage() {
                 Si tu fais du social selling sans jamais prospecter, tu accumules de l&apos;audience sans pipeline. Si tu prospectes sans social selling, tu envoies des messages froids &agrave; des gens qui ne te connaissent pas.
               </p>
               <p>
-                Le <a href="/ressources/setting-commercial-linkedin" className="text-accent hover:underline">setting commercial</a> combine les deux. Le setter utilise les signaux g&eacute;n&eacute;r&eacute;s par le social selling (qui a r&eacute;agi, qui a visit&eacute; le profil, qui a comment&eacute;) pour envoyer des messages ancr&eacute;s sur un fait pr&eacute;cis. R&eacute;sultat : un premier contact qui ne ressemble pas &agrave; du d&eacute;marchage.
+                Le <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">setting commercial</a> combine les deux. Le setter utilise les signaux g&eacute;n&eacute;r&eacute;s par le social selling (qui a r&eacute;agi, qui a visit&eacute; le profil, qui a comment&eacute;) pour envoyer des messages ancr&eacute;s sur un fait pr&eacute;cis. R&eacute;sultat : un premier contact qui ne ressemble pas &agrave; du d&eacute;marchage.
               </p>
             </section>
 
@@ -381,7 +381,7 @@ export default function SocialSellingLinkedInB2BPage() {
                 Le timing compte. Un prospect qui a lik&eacute; ton post il y a 2 heures est plus r&eacute;ceptif qu&apos;un prospect qui l&apos;a fait il y a 2 semaines. Sans r&eacute;activit&eacute;, le social selling reste du branding. Avec un setter qui agit vite, il devient un canal d&apos;acquisition.
               </p>
               <p className="mb-4">
-                La m&eacute;thode combine aussi l&apos;<a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline">IA et l&apos;humain</a>. L&apos;IA d&eacute;tecte les signaux &agrave; &eacute;chelle (qui a r&eacute;agi, qui correspond &agrave; l&apos;ICP, quel est le contexte). Le setter humain r&eacute;dige le message, adapte le ton et g&egrave;re la conversation. L&apos;IA lui donne les bonnes cibles au bon moment.
+                La m&eacute;thode combine aussi l&apos;<a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">IA et l&apos;humain</a>. L&apos;IA d&eacute;tecte les signaux &agrave; &eacute;chelle (qui a r&eacute;agi, qui correspond &agrave; l&apos;ICP, quel est le contexte). Le setter humain r&eacute;dige le message, adapte le ton et g&egrave;re la conversation. L&apos;IA lui donne les bonnes cibles au bon moment.
               </p>
               <p>
                 En pratique, les clients Setting qui combinent social selling actif et setting r&eacute;actif obtiennent un taux de r&eacute;ponse 2 &agrave; 3 fois sup&eacute;rieur &agrave; ceux qui font de la prospection &agrave; froid.
@@ -476,7 +476,7 @@ export default function SocialSellingLinkedInB2BPage() {
           {/* Related Articles */}
           <RelatedArticles
             articles={[
-              { href: '/ressources/setting-linkedin-definition', title: 'Setting LinkedIn : d\u00e9finition et m\u00e9thode', readTime: '19 min' },
+              { href: '/ressources/setting-commercial-b2b', title: 'Setting LinkedIn : d\u00e9finition et m\u00e9thode', readTime: '19 min' },
               { href: '/ressources/signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min' },
               { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te', readTime: '13 min' },
             ]}

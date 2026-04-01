@@ -433,10 +433,10 @@ export default function DiscoveryCallPage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition, méthode et programme complet' },
-                { href: '/ressources/gestion-objections-b2b', label: 'Gérer les objections en vente B2B : méthode et exemples' },
-                { href: '/ressources/script-closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
-                { href: '/ressources/closer-b2b', label: 'Closer B2B : définition, compétences et recrutement' },
-                { href: '/ressources/challenger-sale-definition', label: "Qu'est-ce que le Challenger Sale ?" },
+                { href: '/ressources/closing-b2b', label: 'Gérer les objections en vente B2B : méthode et exemples' },
+                { href: '/ressources/closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
+                { href: '/ressources/closing-b2b', label: 'Closer B2B : définition, compétences et recrutement' },
+                { href: '/ressources/methodes-vente-b2b', label: "Qu'est-ce que le Challenger Sale ?" },
               ].map(({ href, label }) => (
                 <a
                   key={href}
@@ -476,8 +476,8 @@ export default function DiscoveryCallPage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/gestion-objections-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min' },
-            { href: '/ressources/qualification-leads-b2b', title: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples', readTime: '8 min' },
+            { href: '/ressources/closing-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min' },
+            { href: '/ressources/methodes-vente-b2b', title: 'Qualifier un lead en B2B 2026 : méthodes, critères et exemples', readTime: '8 min' },
             { href: '/ressources/closing-b2b', title: 'Closing B2B : définition, méthode et programme complet', readTime: '25 min' },
           ]} />
 

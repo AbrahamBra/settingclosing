@@ -428,7 +428,7 @@ export default function MethodeSoncasPage() {
                 setting commercial B2B — définition, méthode et programme complet
               </a>
               . Sur la structure de la discovery call :{' '}
-              <a href="/ressources/discovery-call-b2b" className="text-accent hover:text-text-primary transition-colors">
+              <a href="/ressources/closing-b2b" className="text-accent hover:text-text-primary transition-colors">
                 discovery call B2B — structure et questions
               </a>
               .
@@ -498,10 +498,10 @@ export default function MethodeSoncasPage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition, méthode et programme complet' },
-                { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure, questions et erreurs à éviter' },
-                { href: '/ressources/gestion-objections-b2b', label: 'Gérer les objections en vente B2B' },
+                { href: '/ressources/closing-b2b', label: 'Discovery call B2B : structure, questions et erreurs à éviter' },
+                { href: '/ressources/closing-b2b', label: 'Gérer les objections en vente B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition et méthode' },
-                { href: '/ressources/challenger-sale-definition', label: 'La méthode Challenger Sale expliquée' },
+                { href: '/ressources/methodes-vente-b2b', label: 'La méthode Challenger Sale expliquée' },
                 { href: '/glossaire', label: 'Glossaire : closer, discovery, objection, pipeline' },
                 { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B comparées : Challenger Sale, SPIN, SONCAS' },
               ].map(({ href, label }) => (
@@ -532,8 +532,8 @@ export default function MethodeSoncasPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/methodes-vente-b2b', title: 'M\u00e9thodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS', readTime: '10 min' },
-            { href: '/ressources/methode-spin-selling', title: 'SPIN Selling 2026 : la m\u00e9thode pour vendre en B2B sans forcer', readTime: '9 min' },
-            { href: '/ressources/gestion-objections-b2b', title: 'G\u00e9rer les objections en vente B2B : m\u00e9thode et exemples', readTime: '9 min' },
+            { href: '/ressources/methodes-vente-b2b', title: 'SPIN Selling 2026 : la m\u00e9thode pour vendre en B2B sans forcer', readTime: '9 min' },
+            { href: '/ressources/closing-b2b', title: 'G\u00e9rer les objections en vente B2B : m\u00e9thode et exemples', readTime: '9 min' },
           ]} />
 
         </div>

@@ -483,7 +483,7 @@ export default function Page() {
               <p className="mb-6">
                 Ces exemples sont anonymisés depuis des situations réelles sur deux marchés B2B différents.
                 Même logique dans les deux cas : le premier draft ignore les règles,
-                la version corrigée les applique toutes. Les erreurs les plus communes — et comment les corriger — sont analysées dans <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline transition-colors">Pourquoi vos messages LinkedIn n&apos;obtiennent pas de réponses</a>.
+                la version corrigée les applique toutes. Les erreurs les plus communes — et comment les corriger — sont analysées dans <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">Pourquoi vos messages LinkedIn n&apos;obtiennent pas de réponses</a>.
               </p>
 
               {/* Example 1 */}
@@ -691,8 +691,8 @@ export default function Page() {
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
-                { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
+                { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
@@ -726,7 +726,7 @@ export default function Page() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '10 min' },
+            { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '10 min' },
             { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
           ]} />

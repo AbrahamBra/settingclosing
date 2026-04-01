@@ -226,7 +226,7 @@ export default function SetterDefinitionPage() {
             <p className="font-sans text-text-primary leading-relaxed">
               Un <strong>setter B2B</strong> est un commercial spécialisé dans la prospection sortante.
               Son rôle : identifier des prospects pertinents, les contacter via <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">LinkedIn ou email</a>,
-              <a href="/ressources/qualification-leads-b2b" className="text-accent hover:underline transition-colors">qualifier leur intérêt</a> pour votre offre, et décrocher un rendez-vous avec votre closer
+              <a href="/ressources/methodes-vente-b2b" className="text-accent hover:underline transition-colors">qualifier leur intérêt</a> pour votre offre, et décrocher un rendez-vous avec votre closer
               ou vous-même. Le setter ne vend pas — il ouvre la porte.
             </p>
           </div>
@@ -431,10 +431,10 @@ export default function SetterDefinitionPage() {
             </p>
             <div className="space-y-3">
               {[
-                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
+                { href: '/ressources/setting-commercial-b2b', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
+                { href: '/ressources/setting-commercial-b2b', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Comment devenir setter B2B en 2026' },
                 { href: '/ressources/devenir-business-developer', label: 'Devenir business developer : le métier et comment s\'y former' },
@@ -466,7 +466,7 @@ export default function SetterDefinitionPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
-            { href: '/ressources/difference-setting-closing', title: 'Quelle est la diff\u00e9rence entre setting et closing en B2B ?', readTime: '7 min' },
+            { href: '/ressources/setting-commercial-b2b', title: 'Quelle est la diff\u00e9rence entre setting et closing en B2B ?', readTime: '7 min' },
             { href: '/ressources/comment-devenir-setter-b2b', title: 'Comment devenir setter B2B en 2026', readTime: '11 min' },
           ]} />
 

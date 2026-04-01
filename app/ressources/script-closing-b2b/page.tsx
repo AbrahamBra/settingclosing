@@ -436,10 +436,10 @@ export default function ScriptClosingPage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition, méthode et programme complet' },
-                { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure et questions' },
-                { href: '/ressources/gestion-objections-b2b', label: 'Gérer les objections en vente B2B' },
-                { href: '/ressources/challenger-sale-definition', label: "Qu'est-ce que le Challenger Sale ?" },
-                { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre' },
+                { href: '/ressources/closing-b2b', label: 'Discovery call B2B : structure et questions' },
+                { href: '/ressources/closing-b2b', label: 'Gérer les objections en vente B2B' },
+                { href: '/ressources/methodes-vente-b2b', label: "Qu'est-ce que le Challenger Sale ?" },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn : exemples et cadre' },
               ].map(({ href, label }) => (
                 <a
                   key={href}
@@ -480,8 +480,8 @@ export default function ScriptClosingPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/closing-b2b', title: 'Closing B2B : définition, méthode et programme complet', readTime: '25 min' },
-            { href: '/ressources/gestion-objections-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min' },
-            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que ça demande, comment en recruter un", readTime: '11 min' },
+            { href: '/ressources/closing-b2b', title: 'Gérer les objections en vente B2B : méthode et exemples', readTime: '9 min' },
+            { href: '/ressources/closing-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que ça demande, comment en recruter un", readTime: '11 min' },
           ]} />
 
         </div>

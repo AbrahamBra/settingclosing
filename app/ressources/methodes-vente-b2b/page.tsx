@@ -1002,7 +1002,7 @@ export default function MethodesVenteB2BPage() {
               <p className="font-sans text-text-secondary text-sm leading-relaxed">
                 Si vous ne savez pas par où commencer, partez du SPIN Selling. C&apos;est la méthode
                 la plus polyvalente et la plus facile à intégrer dans des{' '}
-                <a href="/ressources/discovery-call-b2b" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">
                   discovery calls B2B
                 </a> existantes. Une fois que vos questions sont solides, ajoutez SONCAS pour affiner
                 votre lecture du prospect, puis Challenger pour muscler votre présentation de valeur.
@@ -1061,7 +1061,7 @@ export default function MethodesVenteB2BPage() {
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
               La{' '}
-              <a href="/ressources/gestion-objections-b2b" className="text-accent hover:underline transition-colors">
+              <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">
                 gestion des objections
               </a>{' '}
               traverse toutes les étapes. SONCAS identifie la motivation derrière l&apos;objection.
@@ -1123,10 +1123,10 @@ export default function MethodesVenteB2BPage() {
               {[
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : guide complet pour conclure vos ventes' },
-                { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure, questions et erreurs à éviter' },
-                { href: '/ressources/gestion-objections-b2b', label: 'Gestion des objections B2B : méthode et exemples concrets' },
+                { href: '/ressources/closing-b2b', label: 'Discovery call B2B : structure, questions et erreurs à éviter' },
+                { href: '/ressources/closing-b2b', label: 'Gestion des objections B2B : méthode et exemples concrets' },
                 { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : le guide complet' },
-                { href: '/ressources/script-closing-b2b', label: 'Script de closing B2B : exemples et modèles' },
+                { href: '/ressources/closing-b2b', label: 'Script de closing B2B : exemples et modèles' },
                 { href: '/glossaire', label: 'Glossaire : ICP, qualification, pipeline, closing' },
               ].map(({ href, label }) => (
                 <a
@@ -1162,7 +1162,7 @@ export default function MethodesVenteB2BPage() {
           <RelatedArticles articles={[
             { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : définition, méthode et programme complet', readTime: '25 min' },
             { href: '/ressources/closing-b2b', title: 'Closing B2B : guide complet pour conclure vos ventes', readTime: '25 min' },
-            { href: '/ressources/discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min' },
+            { href: '/ressources/closing-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min' },
           ]} />
 
         </article>

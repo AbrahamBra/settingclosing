@@ -672,9 +672,9 @@ export default function SettingCommercialLinkedInPage() {
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet' },
                 { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
-                { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn' },
-                { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Setting humain vs automatisation LinkedIn' },
+                { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
               ].map(({ href, label }) => (
                 <a

@@ -282,7 +282,7 @@ export default function RelanceLinkedInB2BPage() {
               Deux relances espacées, avec un angle différent à chaque fois, ne sont jamais du spam.
               Cinq messages identiques en quinze jours, oui. La différence est dans la méthode, pas dans le principe de relancer.
               Pour aller plus loin sur les raisons structurelles derrière les&nbsp;
-              <a href="/ressources/messages-linkedin-sans-reponse" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline transition-colors">
+              <a href="/ressources/prospection-linkedin-b2b" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline transition-colors">
                 messages qui n&apos;obtiennent pas de réponse
               </a>, un article dédié couvre les erreurs de premier message qui rendent la relance encore plus difficile.
             </p>
@@ -471,7 +471,7 @@ export default function RelanceLinkedInB2BPage() {
                 ce qui réduit le sentiment de dette. Paradoxalement, certains prospects répondent à cette relance
                 précisément parce qu&apos;ils sentent que la fenêtre se ferme.
                 Pour des exemples complets de séquences, l&apos;article sur les{' '}
-                <a href="/ressources/script-setting-linkedin" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/prospection-linkedin-b2b" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline transition-colors">
                   scripts de setting LinkedIn
                 </a>{' '}
                 couvre la structure complète du premier message jusqu&apos;à la sortie.
@@ -499,7 +499,7 @@ export default function RelanceLinkedInB2BPage() {
               </div>
             </div>
             <p className="text-sm text-text-muted italic mt-2">
-              Pour aller plus loin : <a href="/ressources/messages-prospection-linkedin-exemples" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
+              Pour aller plus loin : <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
             </p>
           </section>
 
@@ -632,8 +632,8 @@ export default function RelanceLinkedInB2BPage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
-                { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn B2B : exemples et cadre complet' },
+                { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn B2B : exemples et cadre complet' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
               ].map(({ href, label }) => (
                 <a
@@ -668,8 +668,8 @@ export default function RelanceLinkedInB2BPage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B : anatomie, exemples et cadre complet', readTime: '11 min' },
-            { href: '/ressources/messages-linkedin-sans-reponse', title: "Pourquoi vos messages LinkedIn n\u2019obtiennent pas de r\u00e9ponses", readTime: '8 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Scripts de setting LinkedIn B2B : anatomie, exemples et cadre complet', readTime: '11 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: "Pourquoi vos messages LinkedIn n\u2019obtiennent pas de r\u00e9ponses", readTime: '8 min' },
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
           ]} />
 

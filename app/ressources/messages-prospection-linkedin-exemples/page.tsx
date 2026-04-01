@@ -365,7 +365,7 @@ export default function MessagesProspectionLinkedInExemplesPage() {
                 </p>
               </div>
               <p className="text-sm text-text-muted italic">
-                Pour aller plus loin : <a href="/ressources/script-setting-linkedin" className="text-accent hover:underline">Scripts de setting LinkedIn B2B</a>
+                Pour aller plus loin : <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline">Scripts de setting LinkedIn B2B</a>
               </p>
             </section>
 
@@ -428,7 +428,7 @@ export default function MessagesProspectionLinkedInExemplesPage() {
                 </p>
               </div>
               <p className="text-sm text-text-muted italic">
-                Pour aller plus loin : <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline">Pourquoi tes messages LinkedIn n&apos;obtiennent pas de r&eacute;ponse</a>
+                Pour aller plus loin : <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline">Pourquoi tes messages LinkedIn n&apos;obtiennent pas de r&eacute;ponse</a>
               </p>
             </section>
 
@@ -494,7 +494,7 @@ export default function MessagesProspectionLinkedInExemplesPage() {
                 </p>
               </div>
               <p className="text-sm text-text-muted italic">
-                Pour aller plus loin : <a href="/ressources/relance-linkedin-b2b" className="text-accent hover:underline">Relance LinkedIn B2B : m&eacute;thode et exemples</a>
+                Pour aller plus loin : <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline">Relance LinkedIn B2B : m&eacute;thode et exemples</a>
               </p>
             </section>
 
@@ -572,7 +572,7 @@ export default function MessagesProspectionLinkedInExemplesPage() {
                 Le sch&eacute;ma complet : message LinkedIn &rarr; r&eacute;ponse positive &rarr; appel de qualification &rarr; routing (chaud / ti&egrave;de / froid) &rarr; RDV ou nurturing. Sauter la qualification par t&eacute;l&eacute;phone revient &agrave; envoyer des leads non qualifi&eacute;s &agrave; ton closeur, ce qui fait baisser ton taux de closing.
               </p>
               <p className="text-sm text-text-muted italic mt-2">
-                Pour aller plus loin : <a href="/ressources/setting-linkedin-definition" className="text-accent hover:underline">Setting LinkedIn : d&eacute;finition et m&eacute;thode</a>
+                Pour aller plus loin : <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">Setting LinkedIn : d&eacute;finition et m&eacute;thode</a>
               </p>
             </section>
 
@@ -602,9 +602,9 @@ export default function MessagesProspectionLinkedInExemplesPage() {
           {/* Related Articles */}
           <RelatedArticles
             articles={[
-              { href: '/ressources/script-setting-linkedin', title: 'Scripts de setting LinkedIn B2B', readTime: '11 min' },
-              { href: '/ressources/relance-linkedin-b2b', title: 'Relance LinkedIn B2B : m\u00e9thode et exemples', readTime: '9 min' },
-              { href: '/ressources/messages-linkedin-sans-reponse', title: "Pourquoi tes messages LinkedIn n'obtiennent pas de r\u00e9ponse", readTime: '8 min' },
+              { href: '/ressources/prospection-linkedin-b2b', title: 'Scripts de setting LinkedIn B2B', readTime: '11 min' },
+              { href: '/ressources/prospection-linkedin-b2b', title: 'Relance LinkedIn B2B : m\u00e9thode et exemples', readTime: '9 min' },
+              { href: '/ressources/prospection-linkedin-b2b', title: "Pourquoi tes messages LinkedIn n'obtiennent pas de r\u00e9ponse", readTime: '8 min' },
             ]}
           />
         </div>

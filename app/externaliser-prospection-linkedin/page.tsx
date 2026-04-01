@@ -630,7 +630,7 @@ export default function ExternaliserProspectionLinkedinPage() {
             <ScrollReveal>
               <p className="font-sans text-text-muted text-sm text-center mt-6">
                 Total stack&nbsp;: environ 90 &agrave; 130&nbsp;&euro;/mois. D&eacute;tails sur{' '}
-                <Link href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline">
+                <Link href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">
                   les 3 couches du syst&egrave;me de setting
                 </Link>
                 .

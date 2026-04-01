@@ -151,28 +151,28 @@ const clusterSetting = [
 
 const clusterLinkedin = [
   { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : methode complete en 2026' },
-  { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
-  { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de reponses" },
-  { href: '/ressources/relance-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
+  { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn : exemples et cadre complet' },
+  { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de reponses" },
+  { href: '/ressources/prospection-linkedin-b2b', label: 'Relance LinkedIn B2B : quand et comment relancer' },
   { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-  { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
-  { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, methode et humain : les 3 couches d'un systeme de setting" },
+  { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Setting humain vs automatisation LinkedIn : le vrai comparatif' },
+  { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, methode et humain : les 3 couches d'un systeme de setting" },
 ]
 
 const clusterClosing = [
   { href: '/ressources/closing-b2b', label: 'Closing B2B : definition, methode et programme complet' },
   { href: '/ressources/closing-b2b', label: 'Closer B2B : definition, competences et recrutement' },
-  { href: '/ressources/script-closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
-  { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure et questions' },
-  { href: '/ressources/gestion-objections-b2b', label: 'Gerer les objections en vente B2B' },
-  { href: '/ressources/qualification-leads-b2b', label: 'Qualifier un lead en B2B : methodes et criteres' },
+  { href: '/ressources/closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
+  { href: '/ressources/closing-b2b', label: 'Discovery call B2B : structure et questions' },
+  { href: '/ressources/closing-b2b', label: 'Gerer les objections en vente B2B' },
+  { href: '/ressources/methodes-vente-b2b', label: 'Qualifier un lead en B2B : methodes et criteres' },
 ]
 
 const clusterMethodes = [
   { href: '/ressources/methodes-vente-b2b', label: 'Methodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS' },
-  { href: '/ressources/challenger-sale-definition', label: "Qu'est-ce que le Challenger Sale ?" },
-  { href: '/ressources/methode-spin-selling', label: 'SPIN Selling : la methode pour vendre en B2B sans forcer' },
-  { href: '/ressources/methode-soncas', label: 'Methode SONCAS en B2B : 6 leviers et exemples' },
+  { href: '/ressources/methodes-vente-b2b', label: "Qu'est-ce que le Challenger Sale ?" },
+  { href: '/ressources/methodes-vente-b2b', label: 'SPIN Selling : la methode pour vendre en B2B sans forcer' },
+  { href: '/ressources/methodes-vente-b2b', label: 'Methode SONCAS en B2B : 6 leviers et exemples' },
   { href: '/ressources/devenir-business-developer', label: 'Business developer : le metier qui recrute' },
 ]
 
@@ -345,9 +345,9 @@ export default function SettingPillarPage() {
                 {[
                   { num: '1', title: 'Detection des signaux', text: "Identifier les prospects qui ont montre un signe d'interet (like, commentaire, visite de profil) ou qui correspondent a l'ICP defini.", link: '/ressources/signal-achat-linkedin', linkLabel: 'Signaux d\'achat LinkedIn' },
                   { num: '2', title: 'Analyse du profil', text: "Lire les posts recents, comprendre le contexte, decider si le contact vaut la peine et avec quel angle. Pas de message sans cette etape." },
-                  { num: '3', title: 'Redaction du message', text: "Ancre sur un fait precis tire du profil ou d'un post recent. 5 phrases maximum. Aucun pitch.", link: '/ressources/script-setting-linkedin', linkLabel: 'Scripts de setting LinkedIn' },
-                  { num: '4', title: 'Gestion de la conversation', text: "Reponse humaine a chaque echange. Pas de relance automatique. Le setter gere la conversation jusqu'a l'accord pour un appel.", link: '/ressources/relance-linkedin-b2b', linkLabel: 'Comment relancer sans spammer' },
-                  { num: '5', title: 'Qualification', text: "5 niveaux de maturite. Seuls les niveaux 4-5 passent directement en call. Les niveaux 2-3 entrent en nurturing.", link: '/ressources/qualification-leads-b2b', linkLabel: 'Qualifier un lead en B2B' },
+                  { num: '3', title: 'Redaction du message', text: "Ancre sur un fait precis tire du profil ou d'un post recent. 5 phrases maximum. Aucun pitch.", link: '/ressources/prospection-linkedin-b2b', linkLabel: 'Scripts de setting LinkedIn' },
+                  { num: '4', title: 'Gestion de la conversation', text: "Reponse humaine a chaque echange. Pas de relance automatique. Le setter gere la conversation jusqu'a l'accord pour un appel.", link: '/ressources/prospection-linkedin-b2b', linkLabel: 'Comment relancer sans spammer' },
+                  { num: '5', title: 'Qualification', text: "5 niveaux de maturite. Seuls les niveaux 4-5 passent directement en call. Les niveaux 2-3 entrent en nurturing.", link: '/ressources/methodes-vente-b2b', linkLabel: 'Qualifier un lead en B2B' },
                   { num: '6', title: 'Handover au closer', text: "Le lead est transmis avec le contexte complet : ce qui a ete dit, ce qui a interesse, ce qui a resiste. Jamais un RDV sans brief.", link: '/ressources/closing-b2b', linkLabel: 'Le role du closer B2B' },
                 ].map(({ num, title, text, link, linkLabel }) => (
                   <div key={num} className="flex gap-3">
@@ -502,7 +502,7 @@ export default function SettingPillarPage() {
                 <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline">guide complet du setting commercial</a>{' '}
                 detaille comment ces outils s&apos;articulent dans le flux inbound et outbound.
                 Le{' '}
-                <a href="/ressources/setting-humain-vs-automatisation-linkedin" className="text-accent hover:underline">comparatif humain vs automatisation</a>{' '}
+                <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">comparatif humain vs automatisation</a>{' '}
                 explique pourquoi l&apos;automatisation seule ne fonctionne pas.
               </p>
             </section>
@@ -562,7 +562,7 @@ export default function SettingPillarPage() {
               </div>
 
               <p className="text-sm">
-                <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline">
+                <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">
                   IA, methode et humain : les 3 couches d&apos;un systeme de setting &rarr;
                 </a>
               </p>
@@ -652,7 +652,7 @@ export default function SettingPillarPage() {
                     num: '02',
                     titre: 'Pitcher dans le premier message',
                     texte: "Le premier message doit declencher une reponse, pas vendre. Tout ce qui ressemble a un pitch signale au prospect qu'il fait face a un template envoye en masse.",
-                    link: '/ressources/messages-linkedin-sans-reponse',
+                    link: '/ressources/prospection-linkedin-b2b',
                     linkLabel: 'Pourquoi vos messages n\'obtiennent pas de reponses',
                   },
                   {
@@ -671,7 +671,7 @@ export default function SettingPillarPage() {
                     num: '05',
                     titre: 'Automatiser avant d\'avoir calibre',
                     texte: "Les messages automatiques sont detectes et le taux de reponse chute a moins de 1%. La sequence correcte : calibrer d'abord, industrialiser ensuite.",
-                    link: '/ressources/setting-humain-vs-automatisation-linkedin',
+                    link: '/ressources/comment-prospecter-sur-linkedin',
                     linkLabel: 'Humain vs automatisation : le vrai comparatif',
                   },
                 ].map(({ num, titre, texte, link, linkLabel }) => (
@@ -756,10 +756,10 @@ export default function SettingPillarPage() {
 
               <div className="space-y-3 mb-6">
                 {[
-                  { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn', desc: '6 exemples concrets (inbound + outbound) avec les regles de redaction' },
-                  { href: '/ressources/script-closing-b2b', label: 'Scripts de closing B2B', desc: '5 scripts pour chaque phase de l\'appel de vente' },
-                  { href: '/ressources/messages-linkedin-sans-reponse', label: 'Pourquoi vos messages ne marchent pas', desc: '5 erreurs precises qui tuent le taux de reponse, avec corrections' },
-                  { href: '/ressources/relance-linkedin-b2b', label: 'Comment relancer sur LinkedIn', desc: 'Timing optimal (J+3, J+7, J+21) et 3 approches de relance' },
+                  { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn', desc: '6 exemples concrets (inbound + outbound) avec les regles de redaction' },
+                  { href: '/ressources/closing-b2b', label: 'Scripts de closing B2B', desc: '5 scripts pour chaque phase de l\'appel de vente' },
+                  { href: '/ressources/prospection-linkedin-b2b', label: 'Pourquoi vos messages ne marchent pas', desc: '5 erreurs precises qui tuent le taux de reponse, avec corrections' },
+                  { href: '/ressources/prospection-linkedin-b2b', label: 'Comment relancer sur LinkedIn', desc: 'Timing optimal (J+3, J+7, J+21) et 3 approches de relance' },
                 ].map(({ href, label, desc }) => (
                   <a
                     key={href}

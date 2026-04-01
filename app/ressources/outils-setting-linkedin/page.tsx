@@ -341,7 +341,7 @@ export default function OutilsSettingLinkedinPage() {
                 Ajoutez de la complexite apres les 50 premiers leads, quand vous savez ce qui convertit.
               </p>
               <p className="text-sm text-text-muted italic mt-2">
-                Pour aller plus loin : <a href="/ressources/automatisation-prospection-linkedin" className="text-accent hover:underline">Automatisation prospection LinkedIn : limites et alternatives</a>
+                Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">Automatisation prospection LinkedIn : limites et alternatives</a>
               </p>
             </section>
 
@@ -449,7 +449,7 @@ export default function OutilsSettingLinkedinPage() {
               <p>
                 Pour comprendre comment tous ces outils s&apos;integrent dans la methode
                 complete de setting,{' '}
-                <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">
                   lisez l&apos;article sur les 3 couches du systeme
                 </a>.
               </p>
@@ -579,7 +579,7 @@ export default function OutilsSettingLinkedinPage() {
             <div className="space-y-3">
               {[
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn : la methode complete en 9 etapes' },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: 'IA, methode et humain : les 3 couches du systeme de setting' },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: 'IA, methode et humain : les 3 couches du systeme de setting' },
                 { href: '/ressources/signal-achat-linkedin', label: 'Detecter les signaux d\u2019achat LinkedIn pour prospecter au bon moment' },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : le guide complet' },
               ].map(({ href, label }) => (

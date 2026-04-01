@@ -212,7 +212,7 @@ export default function CloserB2BPage() {
               de leads qualifiés en clients. Il intervient uniquement sur la phase finale du cycle de
               vente — l&apos;appel de closing — après qu&apos;un{' '}
               <a
-                href="/ressources/setter-b2b-definition"
+                href="/ressources/setting-commercial-b2b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline transition-colors"
@@ -324,7 +324,7 @@ export default function CloserB2BPage() {
             <p className="font-sans text-text-secondary leading-relaxed mt-6">
               La{' '}
               <a
-                href="/ressources/challenger-sale-definition"
+                href="/ressources/methodes-vente-b2b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline transition-colors"
@@ -353,7 +353,7 @@ export default function CloserB2BPage() {
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               À l&apos;inverse, un{' '}
               <a
-                href="/ressources/setter-b2b-definition"
+                href="/ressources/setting-commercial-b2b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline transition-colors"
@@ -394,7 +394,7 @@ export default function CloserB2BPage() {
             <p className="font-sans text-text-secondary leading-relaxed">
               La{' '}
               <a
-                href="/ressources/difference-setting-closing"
+                href="/ressources/setting-commercial-b2b"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:underline transition-colors"
@@ -575,9 +575,9 @@ export default function CloserB2BPage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/setter-b2b-definition', label: "C'est quoi un setter en B2B ? Rôle, missions et coût" },
-                { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
-                { href: '/ressources/challenger-sale-definition', label: "Qu'est-ce que le Challenger Sale ?" },
+                { href: '/ressources/setting-commercial-b2b', label: "C'est quoi un setter en B2B ? Rôle, missions et coût" },
+                { href: '/ressources/setting-commercial-b2b', label: 'Quelle est la différence entre setting et closing ?' },
+                { href: '/ressources/methodes-vente-b2b', label: "Qu'est-ce que le Challenger Sale ?" },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition et méthode complète' },
               ].map(({ href, label }) => (
                 <a
@@ -612,8 +612,8 @@ export default function CloserB2BPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/closing-b2b', title: 'Closing B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
-            { href: '/ressources/difference-setting-closing', title: 'Quelle est la diff\u00e9rence entre setting et closing en B2B ?', readTime: '7 min' },
-            { href: '/ressources/script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min' },
+            { href: '/ressources/setting-commercial-b2b', title: 'Quelle est la diff\u00e9rence entre setting et closing en B2B ?', readTime: '7 min' },
+            { href: '/ressources/closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min' },
           ]} />
 
         </div>

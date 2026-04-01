@@ -452,7 +452,7 @@ export default function SignalAchatLinkedInPage() {
               qui permet de distinguer les deux.
             </p>
             <p className="text-sm text-text-muted italic mt-2">
-              Pour aller plus loin : <a href="/ressources/social-selling-linkedin-b2b" className="text-accent hover:underline">Social selling LinkedIn : d&eacute;finition et m&eacute;thode</a>
+              Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">Social selling LinkedIn : d&eacute;finition et m&eacute;thode</a>
             </p>
           </section>
 
@@ -483,11 +483,11 @@ export default function SignalAchatLinkedInPage() {
             <div className="space-y-3">
               {[
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
-                { href: '/ressources/setting-linkedin-definition', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
+                { href: '/ressources/setting-commercial-b2b', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
+                { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
@@ -516,8 +516,8 @@ export default function SignalAchatLinkedInPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
-            { href: '/ressources/ia-methode-humain-setting-linkedin', title: "IA, m\u00e9thode et humain : les 3 couches d\u2019un syst\u00e8me de setting LinkedIn qui tient sur la dur\u00e9e", readTime: '12 min' },
-            { href: '/ressources/messages-linkedin-sans-reponse', title: "Pourquoi vos messages LinkedIn n\u2019obtiennent pas de r\u00e9ponses", readTime: '8 min' },
+            { href: '/ressources/comment-prospecter-sur-linkedin', title: "IA, m\u00e9thode et humain : les 3 couches d\u2019un syst\u00e8me de setting LinkedIn qui tient sur la dur\u00e9e", readTime: '12 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: "Pourquoi vos messages LinkedIn n\u2019obtiennent pas de r\u00e9ponses", readTime: '8 min' },
           ]} />
 
         </div>

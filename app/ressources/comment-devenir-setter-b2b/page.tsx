@@ -255,7 +255,7 @@ export default function CommentDevenirSetterB2BPage() {
               <strong><a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">Setter</a></strong> = prospection avant l&apos;appel.
               Il identifie les prospects sur LinkedIn, les contacte et d&eacute;croche des rendez-vous qualifi&eacute;s.{' '}
               <strong><a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">Closer</a></strong> = conversion pendant l&apos;appel.
-              Il prend le RDV, conduit la <a href="/ressources/discovery-call-b2b" className="text-accent hover:underline transition-colors">d&eacute;couverte</a>, g&egrave;re les objections et signe.
+              Il prend le RDV, conduit la <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">d&eacute;couverte</a>, g&egrave;re les objections et signe.
               Deux r&ocirc;les compl&eacute;mentaires dans un pipeline B2B.
             </p>
           </div>
@@ -302,7 +302,7 @@ export default function CommentDevenirSetterB2BPage() {
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
               Le setter n&apos;est pas le closeur. Il n&apos;est pas l&agrave; pour pitcher l&apos;offre dans le premier DM,
-              n&eacute;gocier le prix ou g&eacute;rer les <a href="/ressources/gestion-objections-b2b" className="text-accent hover:underline transition-colors">objections</a> post-appel.
+              n&eacute;gocier le prix ou g&eacute;rer les <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">objections</a> post-appel.
               Ces r&ocirc;les demandent des comp&eacute;tences diff&eacute;rentes. Un bon setter qui essaie de closer br&ucirc;le des leads.
               Un bon closeur qui fait son propre <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> perd un temps qu&apos;il devrait passer &agrave; convertir.
             </p>
@@ -316,9 +316,9 @@ export default function CommentDevenirSetterB2BPage() {
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Le setter d&eacute;croche le rendez-vous. Le <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">closer B2B</a>, lui,
               prend ce rendez-vous et le transforme en client sign&eacute;.
-              Concr&egrave;tement, le closer conduit la <a href="/ressources/discovery-call-b2b" className="text-accent hover:underline transition-colors">discovery call</a>,
+              Concr&egrave;tement, le closer conduit la <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">discovery call</a>,
               pose les bonnes questions pour comprendre le vrai besoin, g&egrave;re
-              les <a href="/ressources/gestion-objections-b2b" className="text-accent hover:underline transition-colors">objections</a> en direct
+              les <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">objections</a> en direct
               et am&egrave;ne le prospect &agrave; d&eacute;cider.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
@@ -554,7 +554,7 @@ export default function CommentDevenirSetterB2BPage() {
 
             <p className="font-sans text-text-secondary text-sm mt-6 leading-relaxed">
               D&eacute;tail complet dans notre article sur
-              les <a href="/ressources/setting-humain-vs-automatisation-linkedin" className="text-accent hover:underline transition-colors">outils et le comparatif setting humain vs automatisation</a>.
+              les <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">outils et le comparatif setting humain vs automatisation</a>.
             </p>
           </section>
 
@@ -837,7 +837,7 @@ export default function CommentDevenirSetterB2BPage() {
               </table>
             </div>
             <p className="font-sans text-text-secondary text-sm mt-4 leading-relaxed">
-              Pour aller plus loin : <a href="/ressources/sdr-interne-vs-externalise" className="text-accent hover:underline transition-colors">SDR interne vs externalis&eacute;</a>.
+              Pour aller plus loin : <a href="/externaliser-prospection-linkedin" className="text-accent hover:underline transition-colors">SDR interne vs externalis&eacute;</a>.
             </p>
           </section>
 
@@ -941,7 +941,7 @@ export default function CommentDevenirSetterB2BPage() {
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : le guide complet' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : le guide complet' },
                 { href: '/ressources/setting-commercial-b2b', label: "C\u2019est quoi un setter en B2B ?" },
-                { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs externalis\u00e9 : le comparatif' },
+                { href: '/externaliser-prospection-linkedin', label: 'SDR interne vs externalis\u00e9 : le comparatif' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">&rarr;</span>

@@ -456,10 +456,10 @@ export default function QualificationLeadsB2BPage() {
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/ressources/discovery-call-b2b', label: 'Discovery call B2B : structure et questions' },
+                { href: '/ressources/closing-b2b', label: 'Discovery call B2B : structure et questions' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition et méthode' },
-                { href: '/ressources/methode-soncas', label: 'Méthode SONCAS : 6 leviers de motivation' },
-                { href: '/ressources/methode-spin-selling', label: 'SPIN Selling : vendre sans forcer' },
+                { href: '/ressources/methodes-vente-b2b', label: 'Méthode SONCAS : 6 leviers de motivation' },
+                { href: '/ressources/methodes-vente-b2b', label: 'SPIN Selling : vendre sans forcer' },
                 { href: '/glossaire', label: 'Glossaire : ICP, qualification, pipeline…' },
                 { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B : quel framework choisir ?' },
               ].map(({ href, label }) => (
@@ -487,9 +487,9 @@ export default function QualificationLeadsB2BPage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs \u00e0 \u00e9viter', readTime: '10 min' },
+            { href: '/ressources/closing-b2b', title: 'Discovery call B2B : structure, questions et erreurs \u00e0 \u00e9viter', readTime: '10 min' },
             { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
-            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/setting-commercial-b2b', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
           ]} />
 
         </div>

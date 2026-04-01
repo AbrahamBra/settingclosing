@@ -500,7 +500,7 @@ export default function DifferenceSettingClosingPage() {
                 </p>
               </a>
               <a
-                href="/ressources/setter-b2b-definition"
+                href="/ressources/setting-commercial-b2b"
                 className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
               >
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-2">Setting</p>
@@ -509,7 +509,7 @@ export default function DifferenceSettingClosingPage() {
                 </p>
               </a>
               <a
-                href="/ressources/challenger-sale-definition"
+                href="/ressources/methodes-vente-b2b"
                 className="group bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors"
               >
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-secondary mb-2">Closing</p>
@@ -538,8 +538,8 @@ export default function DifferenceSettingClosingPage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/setter-b2b-definition', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
-            { href: '/ressources/closer-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
+            { href: '/ressources/setting-commercial-b2b', title: "C\u2019est quoi un setter en B2B ?", readTime: '8 min' },
+            { href: '/ressources/closing-b2b', title: "Closer B2B : ce que c\u2019est vraiment, ce que \u00e7a demande, comment en recruter un", readTime: '11 min' },
             { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
           ]} />
 

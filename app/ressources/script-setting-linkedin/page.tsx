@@ -281,7 +281,7 @@ export default function ScriptSettingLinkedinPage() {
             </div>
 
             <p className="font-sans text-text-secondary leading-relaxed">
-              Les <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline transition-colors" target="_blank" rel="noopener noreferrer">messages LinkedIn sans réponse</a> ont
+              Les <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors" target="_blank" rel="noopener noreferrer">messages LinkedIn sans réponse</a> ont
               souvent un problème commun : trop de texte, pas assez de raison spécifique de répondre.
               Corriger ça ne demande pas d&apos;être brillant. Ça demande d&apos;être précis.
             </p>
@@ -474,7 +474,7 @@ export default function ScriptSettingLinkedinPage() {
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-8">
               L&apos;utilisation d&apos;une{' '}
-              <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline transition-colors" target="_blank" rel="noopener noreferrer">IA comme co-rédacteur</a>{' '}
+              <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors" target="_blank" rel="noopener noreferrer">IA comme co-rédacteur</a>{' '}
               peut aider à générer des variantes rapidement, mais le signal de départ doit toujours
               venir d&apos;une vraie observation humaine.
             </p>
@@ -558,7 +558,7 @@ export default function ScriptSettingLinkedinPage() {
               </div>
             </div>
             <p className="text-sm text-text-muted italic mt-2">
-              Pour aller plus loin : <a href="/ressources/messages-prospection-linkedin-exemples" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
+              Pour aller plus loin : <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline">Messages de prospection LinkedIn : 15 exemples</a>
             </p>
           </section>
 
@@ -737,9 +737,9 @@ export default function ScriptSettingLinkedinPage() {
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/messages-linkedin-sans-reponse', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
+                { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
-                { href: '/ressources/ia-methode-humain-setting-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting" },
+                { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting" },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
                   <span className="text-accent group-hover:translate-x-0.5 transition-transform">→</span>
@@ -770,8 +770,8 @@ export default function ScriptSettingLinkedinPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : m\u00e9thode compl\u00e8te en 2026', readTime: '13 min' },
-            { href: '/ressources/relance-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min' },
-            { href: '/ressources/messages-linkedin-sans-reponse', title: "Pourquoi vos messages LinkedIn n\u2019obtiennent pas de r\u00e9ponses", readTime: '8 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: 'Relance LinkedIn B2B : quand et comment relancer sans passer pour un spammeur', readTime: '9 min' },
+            { href: '/ressources/prospection-linkedin-b2b', title: "Pourquoi vos messages LinkedIn n\u2019obtiennent pas de r\u00e9ponses", readTime: '8 min' },
           ]} />
 
         </div>

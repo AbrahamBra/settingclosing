@@ -281,12 +281,12 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
               </h2>
               <p className="mb-4">
                 Le{' '}
-                <a href="/ressources/setting-linkedin-definition" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">
                   setting LinkedIn
                 </a>{' '}
                 externalis&eacute; est une approche de prospection B2B centr&eacute;e sur un seul canal : LinkedIn.
                 Un{' '}
-                <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">
+                <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">
                   setter d&eacute;di&eacute;
                 </a>{' '}
                 contacte les d&eacute;cideurs directement via des messages personnalis&eacute;s,

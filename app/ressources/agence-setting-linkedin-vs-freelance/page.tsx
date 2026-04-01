@@ -251,7 +251,7 @@ export default function AgenceSettingLinkedinVsFreelancePage() {
                 <p className="font-sans text-text-secondary text-sm leading-relaxed">
                   Si vous savez d&eacute;j&agrave; prospecter sur LinkedIn et que vous avez un process qui
                   tourne, le freelance est une option rentable. Si vous d&eacute;couvrez le{' '}
-                  <a href="/ressources/setter-b2b-definition" className="text-accent hover:underline transition-colors">setting</a>,
+                  <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">setting</a>,
                   vous allez perdre 2 &agrave; 3 mois &agrave; construire la m&eacute;thode en m&ecirc;me
                   temps que le freelance essaie de l&apos;appliquer.
                 </p>
@@ -521,7 +521,7 @@ export default function AgenceSettingLinkedinVsFreelancePage() {
               <p>
                 Ce choix est pertinent si vous avez le volume et la structure pour justifier un poste
                 &agrave; temps plein. On a d&eacute;taill&eacute; le comparatif dans l&apos;article{' '}
-                <a href="/ressources/sdr-interne-vs-externalise" className="text-accent hover:underline transition-colors">SDR interne vs externalis&eacute;</a>,
+                <a href="/externaliser-prospection-linkedin" className="text-accent hover:underline transition-colors">SDR interne vs externalis&eacute;</a>,
                 avec les vrais chiffres c&ocirc;t&eacute; employeur.
               </p>
             </section>
@@ -555,7 +555,7 @@ export default function AgenceSettingLinkedinVsFreelancePage() {
             <div className="space-y-3">
               {[
                 { href: '/ressources/comment-devenir-setter-b2b', label: "Devenir setter ou closer B2B : le guide complet" },
-                { href: '/ressources/sdr-interne-vs-externalise', label: 'SDR interne vs externalis\u00e9 : le comparatif co\u00fbt r\u00e9el' },
+                { href: '/externaliser-prospection-linkedin', label: 'SDR interne vs externalis\u00e9 : le comparatif co\u00fbt r\u00e9el' },
                 { href: '/tarifs', label: 'Tarifs Setting : forfaits et garantie r\u00e9sultats' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">

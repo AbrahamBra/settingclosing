@@ -305,7 +305,7 @@ export default function AutomatisationProspectionLinkedInPage() {
                 ))}
               </div>
               <p className="text-sm text-text-muted italic mt-4">
-                Pour aller plus loin : <a href="/ressources/messages-linkedin-sans-reponse" className="text-accent hover:underline">Messages LinkedIn sans r&eacute;ponse : diagnostic et solutions</a>
+                Pour aller plus loin : <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline">Messages LinkedIn sans r&eacute;ponse : diagnostic et solutions</a>
               </p>
             </section>
 
@@ -353,7 +353,7 @@ export default function AutomatisationProspectionLinkedInPage() {
                 L&apos;automatisation donne l&apos;illusion de la productivit&eacute;. Le setting donne des rendez-vous.
               </p>
               <p className="text-sm text-text-muted italic mt-4">
-                Pour aller plus loin : <a href="/ressources/setting-humain-vs-automatisation-linkedin" className="text-accent hover:underline">Setting humain vs automatisation LinkedIn : comparatif complet</a>
+                Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">Setting humain vs automatisation LinkedIn : comparatif complet</a>
               </p>
             </section>
 
@@ -389,7 +389,7 @@ export default function AutomatisationProspectionLinkedInPage() {
                 L&apos;automatisation sert l&apos;humain. Elle ne le remplace pas.
               </p>
               <p className="text-sm text-text-muted italic mt-4">
-                Pour aller plus loin : <a href="/ressources/ia-methode-humain-setting-linkedin" className="text-accent hover:underline">IA et m&eacute;thode humaine : le mod&egrave;le Setting</a>
+                Pour aller plus loin : <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline">IA et m&eacute;thode humaine : le mod&egrave;le Setting</a>
               </p>
             </section>
 
@@ -473,9 +473,9 @@ export default function AutomatisationProspectionLinkedInPage() {
 
           <RelatedArticles
             articles={[
-              { href: '/ressources/setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn', readTime: '11 min' },
+              { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Setting humain vs automatisation LinkedIn', readTime: '11 min' },
               { href: '/externaliser-prospection-linkedin#outils', title: 'Les meilleurs outils pour le setting LinkedIn', readTime: '9 min' },
-              { href: '/ressources/ia-methode-humain-setting-linkedin', title: 'IA et m\u00e9thode humaine : le mod\u00e8le Setting', readTime: '12 min' },
+              { href: '/ressources/comment-prospecter-sur-linkedin', title: 'IA et m\u00e9thode humaine : le mod\u00e8le Setting', readTime: '12 min' },
             ]}
           />
         </div>

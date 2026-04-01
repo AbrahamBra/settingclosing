@@ -408,7 +408,7 @@ export default function ChallengerSalePage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
-                { href: '/ressources/difference-setting-closing', label: 'Quelle est la différence entre setting et closing ?' },
+                { href: '/ressources/setting-commercial-b2b', label: 'Quelle est la différence entre setting et closing ?' },
                 { href: '/ressources/methodes-vente-b2b', label: 'Méthodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
@@ -438,7 +438,7 @@ export default function ChallengerSalePage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/methodes-vente-b2b', title: 'M\u00e9thodes de vente B2B : Challenger Sale, SPIN Selling, SONCAS', readTime: '10 min' },
-            { href: '/ressources/methode-spin-selling', title: 'SPIN Selling 2026 : la m\u00e9thode pour vendre en B2B sans forcer', readTime: '9 min' },
+            { href: '/ressources/methodes-vente-b2b', title: 'SPIN Selling 2026 : la m\u00e9thode pour vendre en B2B sans forcer', readTime: '9 min' },
             { href: '/ressources/closing-b2b', title: 'Closing B2B : d\u00e9finition, m\u00e9thode et programme complet', readTime: '25 min' },
           ]} />
 

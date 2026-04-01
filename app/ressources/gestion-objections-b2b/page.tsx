@@ -359,10 +359,10 @@ export default function GestionObjectionsPage() {
               {[
                 { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : définition, méthode et programme complet' },
-                { href: '/ressources/discovery-call-b2b', label: "Discovery call B2B : structure, questions et erreurs à éviter" },
-                { href: '/ressources/script-closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
-                { href: '/ressources/challenger-sale-definition', label: "Qu'est-ce que le Challenger Sale ?" },
-                { href: '/ressources/closer-b2b', label: 'Closer B2B : définition et compétences' },
+                { href: '/ressources/closing-b2b', label: "Discovery call B2B : structure, questions et erreurs à éviter" },
+                { href: '/ressources/closing-b2b', label: 'Scripts et phrases de closing B2B : cadre et exemples' },
+                { href: '/ressources/methodes-vente-b2b', label: "Qu'est-ce que le Challenger Sale ?" },
+                { href: '/ressources/closing-b2b', label: 'Closer B2B : définition et compétences' },
               ].map(({ href, label }) => (
                 <a
                   key={href}
@@ -402,9 +402,9 @@ export default function GestionObjectionsPage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/discovery-call-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min' },
+            { href: '/ressources/closing-b2b', title: 'Discovery call B2B : structure, questions et erreurs à éviter', readTime: '10 min' },
             { href: '/ressources/closing-b2b', title: 'Closing B2B : définition, méthode et programme complet', readTime: '25 min' },
-            { href: '/ressources/script-closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min' },
+            { href: '/ressources/closing-b2b', title: 'Scripts et phrases de closing B2B : cadre et exemples', readTime: '10 min' },
           ]} />
 
         </div>

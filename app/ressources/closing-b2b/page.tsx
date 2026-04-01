@@ -843,7 +843,7 @@ export default function ClosingB2BPage() {
             </div>
             <p className="font-sans text-text-secondary leading-relaxed">
               Pour les fondateurs et solopreneurs B2B, le Take Control est la composante la plus difficile. Elle va contre l&apos;instinct de ne pas brusquer le prospect. C&apos;est pourtant ce qui distingue un appel qui se termine par &laquo;&nbsp;je r&eacute;fl&eacute;chis&nbsp;&raquo; d&apos;un appel qui se termine par une d&eacute;cision claire.{' '}
-              <a href="/ressources/challenger-sale-definition" className="text-accent hover:text-text-primary transition-colors">
+              <a href="/ressources/methodes-vente-b2b" className="text-accent hover:text-text-primary transition-colors">
                 L&apos;article complet sur le Challenger Sale
               </a>.
             </p>
@@ -1172,10 +1172,10 @@ export default function ClosingB2BPage() {
             <div className="space-y-3">
               {[
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : guide complet, setter definition et m\u00e9thode LinkedIn' },
-                { href: '/ressources/challenger-sale-definition', label: "Qu'est-ce que le Challenger Sale ?" },
-                { href: '/ressources/qualification-leads-b2b', label: 'Qualifier un lead en B2B : m\u00e9thodes et crit\u00e8res' },
+                { href: '/ressources/methodes-vente-b2b', label: "Qu'est-ce que le Challenger Sale ?" },
+                { href: '/ressources/methodes-vente-b2b', label: 'Qualifier un lead en B2B : m\u00e9thodes et crit\u00e8res' },
                 { href: '/ressources/comment-devenir-setter-b2b', label: 'Devenir setter ou closer B2B : guide complet' },
-                { href: '/ressources/script-setting-linkedin', label: 'Scripts de setting LinkedIn : exemples et cadre' },
+                { href: '/ressources/prospection-linkedin-b2b', label: 'Scripts de setting LinkedIn : exemples et cadre' },
                 { href: '/glossaire', label: 'Glossaire : closer, discovery, objection, pipeline' },
               ].map(({ href, label }) => (
                 <a
@@ -1223,7 +1223,7 @@ export default function ClosingB2BPage() {
 
           <RelatedArticles articles={[
             { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : guide complet, setter definition et m\u00e9thode LinkedIn', readTime: '30 min' },
-            { href: '/ressources/challenger-sale-definition', title: "Qu'est-ce que le Challenger Sale ?", readTime: '8 min' },
+            { href: '/ressources/methodes-vente-b2b', title: "Qu'est-ce que le Challenger Sale ?", readTime: '8 min' },
             { href: '/ressources/comment-devenir-setter-b2b', title: 'Devenir setter ou closer B2B : guide complet', readTime: '25 min' },
           ]} />
 
