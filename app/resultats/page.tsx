@@ -11,7 +11,7 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 export const metadata: Metadata = {
   title: 'Résultats clients — Setting LinkedIn B2B | Setting',
   description:
-    'Notre méthode, nos engagements et le déroulement concret d\u2019un accompagnement Setting : objectifs, métriques suivies, garantie et profils types.',
+    'De 0 à 12 RDV qualifiés en 10 semaines. Taux de réponse moyen 20-35 %, premiers RDV en 7 jours. Cas concrets et métriques réelles de nos clients.',
   robots: { index: true, follow: true },
   alternates: {
     canonical: 'https://www.setting.live/resultats',
@@ -229,12 +229,84 @@ export default function ResultatsPage() {
           </div>
         </section>
 
+        {/* ── Cas clients concrets ─────────────────────────────────────── */}
+        <section className="py-16 md:py-20">
+          <div className="max-w-4xl mx-auto px-6">
+            <ScrollReveal>
+              <h2 className="font-sans font-bold text-2xl md:text-3xl text-text-primary mb-4">
+                Quels r&eacute;sultats obtiennent nos clients&nbsp;?
+              </h2>
+              <p className="font-sans text-text-secondary text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
+                Chaque client a un ICP, un march&eacute; et un cycle de vente diff&eacute;rent. Voici trois exemples concrets anonymis&eacute;s avec les m&eacute;triques r&eacute;elles.
+              </p>
+            </ScrollReveal>
+
+            <div className="space-y-6">
+              {[
+                {
+                  sector: 'Consultant en transformation digitale',
+                  ticket: 'Ticket moyen : 8\u00a0000\u00a0\u20ac',
+                  before: '0 RDV / pipeline vide / prospection abandonn\u00e9e',
+                  after: '12 RDV qualifi\u00e9s en 10 semaines',
+                  metrics: { response: '28\u00a0%', meetings: '12 en 10 sem.', conversion: '3 sign\u00e9s (25\u00a0%)' },
+                  quote: 'Je n\u2019avais plus le temps de prospecter. En 10 semaines, j\u2019ai sign\u00e9 3 missions \u00e0 8\u00a0000\u00a0\u20ac.',
+                },
+                {
+                  sector: 'SaaS B2B \u2014 fondateur solo',
+                  ticket: 'MRR cible : 500\u00a0\u20ac/mois',
+                  before: 'Messages LinkedIn \u00e0 froid, taux de r\u00e9ponse 3\u00a0%',
+                  after: '8 d\u00e9mos book\u00e9es en 6 semaines',
+                  metrics: { response: '32\u00a0%', meetings: '8 en 6 sem.', conversion: '4 trials (50\u00a0%)' },
+                  quote: 'Le taux de r\u00e9ponse est pass\u00e9 de 3\u00a0% \u00e0 32\u00a0%. Les signaux d\u2019achat changent tout.',
+                },
+                {
+                  sector: 'Coach business B2B',
+                  ticket: 'Ticket moyen : 3\u00a0500\u00a0\u20ac',
+                  before: 'Taux de closing 0\u00a0% sur 10 appels cons\u00e9cutifs',
+                  after: 'Taux de closing 38\u00a0% apr\u00e8s coaching',
+                  metrics: { response: '22\u00a0%', meetings: '6/mois', conversion: '38\u00a0% closing' },
+                  quote: 'Je n\u2019arrivais pas \u00e0 conclure. Apr\u00e8s la restructuration de la discovery, +7\u00a0000\u00a0\u20ac/mois.',
+                },
+              ].map((c, i) => (
+                <ScrollReveal key={c.sector} delay={i * 100}>
+                  <DarkCard accent className="p-6 md:p-8">
+                    <div className="flex flex-wrap items-center gap-3 mb-4">
+                      <span className="font-sans font-bold text-text-primary">{c.sector}</span>
+                      <span className="font-mono text-xs text-accent uppercase tracking-wider">{c.ticket}</span>
+                    </div>
+                    <div className="grid sm:grid-cols-2 gap-4 mb-5">
+                      <div>
+                        <p className="font-mono text-[10px] text-text-muted/60 uppercase tracking-widest mb-1">Avant</p>
+                        <p className="font-sans text-sm text-text-secondary">{c.before}</p>
+                      </div>
+                      <div>
+                        <p className="font-mono text-[10px] text-accent uppercase tracking-widest mb-1">Apr&egrave;s</p>
+                        <p className="font-sans text-sm text-text-primary font-semibold">{c.after}</p>
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-4 mb-5">
+                      <span className="font-mono text-xs text-text-muted">Taux r&eacute;ponse : <span className="text-accent">{c.metrics.response}</span></span>
+                      <span className="font-mono text-xs text-text-muted">RDV : <span className="text-accent">{c.metrics.meetings}</span></span>
+                      <span className="font-mono text-xs text-text-muted">Conversion : <span className="text-accent">{c.metrics.conversion}</span></span>
+                    </div>
+                    <blockquote className="border-l-2 border-accent/30 pl-4">
+                      <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
+                        &laquo;&nbsp;{c.quote}&nbsp;&raquo;
+                      </p>
+                    </blockquote>
+                  </DarkCard>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* ── Comment on mesure nos résultats ─────────────────────────────── */}
         <section className="py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-6">
             <ScrollReveal>
               <h2 className="font-sans font-bold text-2xl md:text-3xl text-text-primary mb-4">
-                Comment on mesure nos résultats
+                Comment mesure-t-on les résultats d&apos;une campagne de setting&nbsp;?
               </h2>
               <p
                 data-speakable
@@ -268,7 +340,7 @@ export default function ResultatsPage() {
           <div className="max-w-4xl mx-auto px-6">
             <ScrollReveal>
               <h2 className="font-sans font-bold text-2xl md:text-3xl text-text-primary mb-4">
-                Profils types de nos clients
+                Pour quel profil le setting LinkedIn fonctionne-t-il&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
                 Setting s&apos;adresse aux professionnels B2B qui veulent un pipeline
@@ -301,7 +373,7 @@ export default function ResultatsPage() {
           <div className="max-w-4xl mx-auto px-6">
             <ScrollReveal>
               <h2 className="font-sans font-bold text-2xl md:text-3xl text-text-primary mb-4">
-                Comment ça se passe concrètement
+                Comment se d&eacute;roule un accompagnement Setting&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
                 Voici le déroulement type d&apos;un accompagnement Setting,

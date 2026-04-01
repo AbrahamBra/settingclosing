@@ -108,6 +108,21 @@ export default function ResourcesIndexPage() {
           </div>
         </nav>
 
+        {/* ── Intro SEO ──────────────────────────────────────────────── */}
+        <div className="container-max pt-10 pb-6">
+          <h1 className="font-sans font-extrabold text-3xl md:text-4xl text-text-primary mb-4">
+            Ressources
+          </h1>
+          <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-3xl mb-2">
+            Guides pratiques sur le setting commercial, la prospection LinkedIn B2B et le closing.
+            Chaque article est &eacute;crit par des praticiens qui font du setting au quotidien &mdash; pas de th&eacute;orie sans terrain.
+          </p>
+          <p className="font-sans text-text-muted text-sm leading-relaxed max-w-3xl">
+            Vous trouverez ici nos m&eacute;thodes (BANT, Challenger Sale, SPIN), des scripts de messages LinkedIn,
+            des comparatifs chiffr&eacute;s (SDR interne vs agence vs setting externalis&eacute;) et des retours terrain.
+          </p>
+        </div>
+
         <BlogContent />
       </main>
       <Footer />
