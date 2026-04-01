@@ -76,6 +76,7 @@ const articleSchema = {
     defined('Social Selling Index (SSI)', 'Score LinkedIn sur 100, mis \u00e0 jour quotidiennement, mesurant l\u2019activit\u00e9 sur 4 piliers : marque pro, recherche, \u00e9changes et relations. Indicateur d\u2019hygi\u00e8ne, pas de performance commerciale.'),
     defined('M\u00e9thode signal-based', 'Approche o\u00f9 chaque message de prospection est ancr\u00e9 sur un signal d\u2019achat identifi\u00e9 (post, commentaire, changement de poste). Taux de r\u00e9ponse : 20 \u00e0 35 %.'),
   ],
+  image: 'https://www.setting.live/ressources/comment-prospecter-sur-linkedin/opengraph-image',
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['[data-speakable]'],

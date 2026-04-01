@@ -55,6 +55,7 @@ const articleSchema = {
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   inLanguage: 'fr-FR',
+  wordCount: 3800,
   url: 'https://www.setting.live/ressources/setting-commercial-linkedin',
   mainEntityOfPage: {
     '@type': 'WebPage',

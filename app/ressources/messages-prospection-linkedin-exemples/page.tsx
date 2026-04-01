@@ -66,6 +66,7 @@ const articleSchema = {
     { '@type': 'Thing', name: 'Prospection B2B' },
     { '@type': 'Thing', name: 'Setting commercial' },
   ],
+  image: 'https://www.setting.live/ressources/messages-prospection-linkedin-exemples/opengraph-image',
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['#pourquoi-ignores', '#anatomie'],

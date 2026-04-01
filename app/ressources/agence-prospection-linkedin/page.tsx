@@ -65,6 +65,7 @@ const articleSchema = {
     { '@type': 'Thing', name: 'Agence prospection LinkedIn' },
     { '@type': 'Thing', name: 'Externalisation prospection B2B' },
   ],
+  image: 'https://www.setting.live/ressources/agence-prospection-linkedin/opengraph-image',
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['#modeles', '#criteres'],

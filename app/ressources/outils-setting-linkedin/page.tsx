@@ -54,6 +54,7 @@ const articleSchema = {
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   inLanguage: 'fr-FR',
+  wordCount: 3400,
   url: 'https://www.setting.live/ressources/outils-setting-linkedin',
   mainEntityOfPage: {
     '@type': 'WebPage',

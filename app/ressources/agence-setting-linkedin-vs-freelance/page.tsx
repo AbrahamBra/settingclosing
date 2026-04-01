@@ -54,6 +54,7 @@ const articleSchema = {
   datePublished: '2026-03-25',
   dateModified: '2026-03-25',
   inLanguage: 'fr-FR',
+  wordCount: 3200,
   url: 'https://www.setting.live/ressources/agence-setting-linkedin-vs-freelance',
   mainEntityOfPage: {
     '@type': 'WebPage',

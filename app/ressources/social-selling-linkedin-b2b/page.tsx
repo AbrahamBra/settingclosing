@@ -66,6 +66,7 @@ const articleSchema = {
     { '@type': 'Thing', name: 'Social Selling Index' },
     { '@type': 'Thing', name: 'Setting commercial B2B' },
   ],
+  image: 'https://www.setting.live/ressources/social-selling-linkedin-b2b/opengraph-image',
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: ['#definition', '#ssi'],
