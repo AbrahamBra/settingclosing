@@ -268,7 +268,7 @@ export default function ChiffresProspectionPage() {
                 La dur&eacute;e moyenne d&apos;un SDR en poste en France est de 14 &agrave; 18 mois (source : LinkedIn Workforce Report 2025, Glassdoor). Chaque d&eacute;part relance le cycle recrutement-onboarding-ramp-up. Sur 3 ans, tu peux passer par 2 &agrave; 3 SDR diff&eacute;rents.
               </p>
               <p>
-                En comparaison, un <a href="/externaliser-prospection-linkedin" className="text-accent hover:underline transition-colors">service de setting externalis&eacute;</a> co&ucirc;te ~10&nbsp;000&nbsp;&euro; par an (790&nbsp;&euro;/mois) et livre des RDV d&egrave;s la premi&egrave;re semaine. Pas de ramp-up, pas de charges, pas de management.
+                En comparaison, un <a href="/externaliser-prospection-linkedin" className="text-accent hover:underline transition-colors">service de setting externalis&eacute;</a> co&ucirc;te ~10&nbsp;000&nbsp;&euro; par an (790&nbsp;&euro;/mois) et livre des RDV d&egrave;s la premi&egrave;re semaine. Tu ne portes ni les charges, ni le ramp-up, ni le management au quotidien.
               </p>
             </section>
 
@@ -308,7 +308,7 @@ export default function ChiffresProspectionPage() {
               </div>
 
               <p>
-                Le taux de closing d&eacute;pend surtout de deux choses : la qualit&eacute; de la <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">discovery call</a> et la qualification en amont. Si le setter envoie des prospects mal qualifi&eacute;s, le closeur perd du temps sur des appels qui n&apos;aboutissent pas. Le setting et le closing sont les deux faces de la m&ecirc;me pi&egrave;ce.
+                Le taux de closing d&eacute;pend surtout de la qualit&eacute; de la <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">discovery call</a> et de la qualification en amont. Si le setter envoie des prospects mal qualifi&eacute;s, le closeur perd du temps sur des appels sans issue. On le voit souvent : un fondateur qui close bien mais dont le pipeline est rempli de leads ti&egrave;des. Le probl&egrave;me n&apos;est pas le closing, c&apos;est le tri en amont.
               </p>
             </section>
 
@@ -347,7 +347,7 @@ export default function ChiffresProspectionPage() {
               </div>
 
               <p>
-                Budget minimal : 130&nbsp;&euro;/mois (Sales Navigator + connexion). Budget confortable : 200-250&nbsp;&euro;/mois. Au-del&agrave;, tu payes pour du confort, pas pour des r&eacute;sultats. L&apos;outil le plus rentable reste le temps humain pass&eacute; &agrave; lire les profils et &eacute;crire des messages qui ont du sens.
+                Budget minimal : 130&nbsp;&euro;/mois (Sales Navigator + outil de connexion). Budget confortable : 200-250&nbsp;&euro;/mois. Au-del&agrave;, tu payes pour du confort. On a test&eacute; des stacks &agrave; 500&nbsp;&euro;/mois sans diff&eacute;rence mesurable sur le nombre de RDV. Ce qui fait la diff&eacute;rence, c&apos;est le temps pass&eacute; &agrave; lire les profils, pas le nombre d&apos;outils.
               </p>
             </section>
 

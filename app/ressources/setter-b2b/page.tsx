@@ -144,8 +144,8 @@ export default function SetterB2BPage() {
               Setter B2B : le m&eacute;tier qui remplit ton pipeline
             </h1>
             <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl">
-              Le setter est la personne qui transforme un profil LinkedIn en rendez-vous qualifi&eacute;.
-              Pas un robot. Pas un script automatis&eacute;. Un humain qui lit, analyse et &eacute;crit.
+              Le setter, c&apos;est la personne qui transforme un profil LinkedIn en rendez-vous qualifi&eacute;.
+              Pas un bot, pas un template copi&eacute;-coll&eacute;. Quelqu&apos;un qui lit un profil, comprend le contexte, et &eacute;crit un message qui a du sens.
             </p>
             <div className="mt-6"><AuthorBlock date="2026-04-01" readTime="12 min de lecture" /></div>
           </header>
@@ -167,7 +167,7 @@ export default function SetterB2BPage() {
                 C&apos;est quoi un setter B2B, concr&egrave;tement&nbsp;?
               </h2>
               <p className="mb-4">
-                Un setter B2B, c&apos;est quelqu&apos;un qui rep&egrave;re les bons profils sur LinkedIn, &eacute;crit un premier message adapt&eacute; &agrave; chaque prospect, g&egrave;re la conversation et book un appel quand le prospect est pr&ecirc;t. Le setter ne vend rien. Il ouvre la porte. Le closeur la franchit.
+                Un setter B2B, c&apos;est quelqu&apos;un qui rep&egrave;re les bons profils sur LinkedIn, &eacute;crit un premier message adapt&eacute; &agrave; chaque prospect, g&egrave;re la conversation et book un appel quand le prospect est pr&ecirc;t. Le setter ne vend rien. Son job s&apos;arr&ecirc;te quand le closeur prend le relais.
               </p>
               <p className="mb-4">
                 Le mot vient de &laquo;&nbsp;to set an appointment&nbsp;&raquo;. En fran&ccedil;ais, on parle parfois de &laquo;&nbsp;prise de rendez-vous qualifi&eacute;e&nbsp;&raquo;, mais le terme &laquo;&nbsp;setting&nbsp;&raquo; s&apos;est impos&eacute; dans le B2B francophone depuis 2023.
@@ -207,7 +207,7 @@ export default function SetterB2BPage() {
                 </div>
               </div>
               <p>
-                En volume, un setter g&egrave;re 20 &agrave; 40 messages par jour en phase active. Ce n&apos;est pas beaucoup. L&apos;&eacute;cart avec l&apos;automatisation (200+ messages/jour), c&apos;est la personnalisation. Chaque message est diff&eacute;rent parce que chaque prospect est diff&eacute;rent.
+                En volume, un setter g&egrave;re 20 &agrave; 40 messages par jour en phase active. C&apos;est peu compar&eacute; &agrave; l&apos;automatisation (200+ messages/jour). Mais c&apos;est le point : un message qui cite un post LinkedIn pr&eacute;cis du prospect obtient 10x plus de r&eacute;ponses qu&apos;un template envoy&eacute; &agrave; 500 personnes.
               </p>
             </section>
 
@@ -250,7 +250,7 @@ export default function SetterB2BPage() {
               </div>
 
               <p>
-                En r&eacute;sum&eacute;&nbsp;: le setter ouvre les portes. Le SDR fait la m&ecirc;me chose mais sur un p&eacute;rim&egrave;tre plus large. Le closer ferme les deals. Chez les solopreneurs B2B, le setting est souvent le maillon manquant. Le fondateur fait le closing (il conna&icirc;t son offre), mais personne ne remplit le pipeline.
+                Le setter a un p&eacute;rim&egrave;tre plus cibl&eacute; que le SDR, qui couvre toute la cha&icirc;ne de prospection. Le closer, lui, prend le relais sur l&apos;appel de vente. Chez les solopreneurs B2B, c&apos;est presque toujours le setting qui manque. Le fondateur sait vendre son offre en appel. Mais personne ne remplit le pipeline pour qu&apos;il ait des appels.
               </p>
             </section>
 
@@ -260,7 +260,7 @@ export default function SetterB2BPage() {
                 Quelles comp&eacute;tences faut-il pour &ecirc;tre setter B2B&nbsp;?
               </h2>
               <p className="mb-4">
-                Le setting n&apos;est pas un m&eacute;tier technique. C&apos;est un m&eacute;tier de jugement. Les comp&eacute;tences qui comptent ne s&apos;apprennent pas en formation&nbsp;: elles s&apos;affinent au contact du terrain.
+                Le setting, c&apos;est pas technique. Tu n&apos;as pas besoin de savoir coder ou de ma&icirc;triser 10 outils. Ce qui compte, c&apos;est le jugement. Et &ccedil;a, &ccedil;a ne s&apos;apprend qu&apos;en faisant.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 my-6">
                 {[
@@ -276,7 +276,7 @@ export default function SetterB2BPage() {
                 ))}
               </div>
               <p>
-                Ce qui rend un setter bon, c&apos;est pas la vitesse. C&apos;est la pr&eacute;cision. 20 messages bien plac&eacute;s &gt; 200 messages g&eacute;n&eacute;riques.
+                Le facteur num&eacute;ro un, c&apos;est la pr&eacute;cision. Un setter qui envoie 20 messages bien plac&eacute;s g&eacute;n&egrave;re plus de RDV qu&apos;un outil qui en envoie 200 au hasard. On le voit chaque semaine.
               </p>
             </section>
 
@@ -348,7 +348,7 @@ export default function SetterB2BPage() {
                 </table>
               </div>
               <p>
-                Budget total : 150 &agrave; 250&nbsp;&euro;/mois. L&apos;IA ne remplace pas le setter. Elle acc&eacute;l&egrave;re la personnalisation. Le setter choisit l&apos;angle, l&apos;IA propose une formulation, le setter valide et ajuste. Rien ne part sans relecture humaine.
+                Budget total : 150 &agrave; 250&nbsp;&euro;/mois. L&apos;IA ne remplace pas le setter, elle lui fait gagner du temps sur la formulation. Concr&egrave;tement : le setter choisit l&apos;angle, l&apos;IA propose un brouillon, le setter relit et ajuste. Aucun message ne part sans qu&apos;un humain l&apos;ait valid&eacute;.
               </p>
             </section>
 
@@ -387,7 +387,7 @@ export default function SetterB2BPage() {
                 </table>
               </div>
               <p>
-                Si tu es solopreneur ou fondateur early-stage, l&apos;externalisation est plus rationnelle. Tu ne gaspilles pas 6 mois de ramp-up, tu ne portes pas le risque salarial, et tu peux arr&ecirc;ter du jour au lendemain. Si tu as une &eacute;quipe commerciale structur&eacute;e et un volume de 50+ RDV/mois, le recrutement devient pertinent.
+                Si tu es seul ou en petite &eacute;quipe, l&apos;externalisation est plus logique. Pas de ramp-up de 6 mois, pas de risque salarial, tu peux arr&ecirc;ter quand tu veux. Le recrutement interne ne devient pertinent que quand tu as une &eacute;quipe commerciale structur&eacute;e et un besoin de 50+ RDV par mois.
               </p>
             </section>
 
