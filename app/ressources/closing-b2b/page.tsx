@@ -278,17 +278,17 @@ export default function ClosingB2BPage() {
             </p>
             <ol className="space-y-2">
               {[
-                { id: 'definition', label: "Ce que le closing commercial est (et ce que ce n'est pas)" },
+                { id: 'definition', label: "Qu'est-ce que le closing commercial en B2B ?" },
                 { id: 'closer', label: "Closer B2B : r\u00f4le, comp\u00e9tences et journ\u00e9e type" },
-                { id: 'discovery', label: "La discovery call : structure en 4 phases" },
-                { id: 'questions', label: "Les questions qui font avancer un appel" },
-                { id: 'objections', label: "Gestion des objections : les vraies et les fausses" },
+                { id: 'discovery', label: "Comment structurer une discovery call B2B ?" },
+                { id: 'questions', label: "Quelles questions poser en appel de closing B2B ?" },
+                { id: 'objections', label: "Comment g\u00e9rer les objections en closing B2B ?" },
                 { id: 'scripts', label: "Scripts de closing : cadre et exemples" },
                 { id: 'challenger', label: "La m\u00e9thode Challenger Sale" },
-                { id: 'erreurs', label: "Les 5 erreurs qui d\u00e9truisent le taux de closing" },
+                { id: 'erreurs', label: "Quelles erreurs \u00e9viter en closing B2B ?" },
                 { id: 'programme', label: "Programme de coaching closing : semaine par semaine" },
                 { id: 'cas-client', label: "Cas client : de 0 sign\u00e9 sur 10 \u00e0 8 sign\u00e9s sur 10" },
-                { id: 'taux', label: "Mesurer et am\u00e9liorer son taux de closing" },
+                { id: 'taux', label: "Comment mesurer et am\u00e9liorer son taux de closing ?" },
                 { id: 'freelance', label: "Closer B2B en freelance : mod\u00e8les et r\u00e9mun\u00e9ration" },
                 { id: 'recruter', label: "Recruter un closer B2B" },
                 { id: 'pour-qui', label: "Pour qui le coaching closing fonctionne" },
@@ -313,7 +313,7 @@ export default function ClosingB2BPage() {
           {/* ────────────────────────────────────────────────────────────────── */}
           <section id="definition" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
-              Ce que le closing commercial est (et ce que ce n&apos;est pas)
+              Qu&apos;est-ce que le closing commercial en B2B&nbsp;?
             </h2>
 
             <div className="definition-block bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-6" itemScope itemType="https://schema.org/DefinedTerm" data-speakable="true">
@@ -441,7 +441,7 @@ export default function ClosingB2BPage() {
           {/* ────────────────────────────────────────────────────────────────── */}
           <section id="discovery" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
-              La discovery call : structure en 4 phases
+              Comment structurer une discovery call B2B&nbsp;?
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               La majorit&eacute; des deals perdus en B2B ne se perdent pas sur les objections. Ils se perdent avant. Le closeur a pr&eacute;sent&eacute; son offre sans comprendre ce que le prospect voulait. La discovery call existe pour &eacute;viter &ccedil;a. Et la plupart des gens la b&acirc;clent.
@@ -519,7 +519,7 @@ export default function ClosingB2BPage() {
           {/* ────────────────────────────────────────────────────────────────── */}
           <section id="questions" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
-              Les questions qui font avancer un appel
+              Quelles questions poser en appel de closing B2B&nbsp;?
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Les questions ferm&eacute;es (r&eacute;ponse oui/non) ferment la conversation. Les questions ouvertes l&apos;ouvrent. Les questions de cons&eacute;quence, celles qui font r&eacute;fl&eacute;chir le prospect au co&ucirc;t de son probl&egrave;me, sont les plus utiles.
@@ -579,7 +579,7 @@ export default function ClosingB2BPage() {
           {/* ────────────────────────────────────────────────────────────────── */}
           <section id="objections" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
-              Gestion des objections : les vraies et les fausses
+              Comment g&eacute;rer les objections en closing B2B&nbsp;?
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Toutes les objections ne se traitent pas de la m&ecirc;me fa&ccedil;on. C&apos;est la premi&egrave;re chose qu&apos;un closeur doit comprendre. Il y a les objections r&eacute;elles : le prospect a un doute l&eacute;gitime qui m&eacute;rite une r&eacute;ponse. Et il y a les objections-pr&eacute;textes : il cherche &agrave; finir la conversation sans conflit. Confondre les deux vous fait perdre du temps sur des gens qui ne signeront pas.
@@ -854,7 +854,7 @@ export default function ClosingB2BPage() {
           {/* ────────────────────────────────────────────────────────────────── */}
           <section id="erreurs" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
-              Les 5 erreurs qui d&eacute;truisent le taux de closing
+              Quelles erreurs &eacute;viter en closing B2B&nbsp;?
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Ces erreurs reviennent dans presque tous les audits d&apos;appels qu&apos;on r&eacute;alise. Ce ne sont pas des erreurs de d&eacute;butant. On les retrouve chez des commerciaux avec 5 ou 10 ans d&apos;exp&eacute;rience. La diff&eacute;rence : les d&eacute;butants ne les voient pas, les exp&eacute;riment&eacute;s les rationalisent.
@@ -997,7 +997,7 @@ export default function ClosingB2BPage() {
           {/* ────────────────────────────────────────────────────────────────── */}
           <section id="taux" className="mb-14 scroll-mt-24">
             <h2 className="font-serif text-h2 text-text-primary mb-5">
-              Mesurer et am&eacute;liorer son taux de closing
+              Comment mesurer et am&eacute;liorer son taux de closing&nbsp;?
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Taux de closing = contrats sign&eacute;s / rendez-vous r&eacute;alis&eacute;s. Mais ce ratio seul ne dit pas grand chose. Il faut le croiser avec la source des leads.

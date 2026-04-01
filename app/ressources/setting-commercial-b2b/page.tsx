@@ -361,7 +361,7 @@ export default function SettingCommercialPage() {
             {/* ──────────────────────────────────────────────────── */}
             <section id="definition" className="scroll-mt-24">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
-                Ce que le setting commercial est, et ce qu&apos;il n&apos;est pas
+                Qu&apos;est-ce que le setting commercial en B2B&nbsp;?
               </h2>
               <p className="mb-4">
                 Le setting commercial d&eacute;signe l&apos;ensemble des actions qui transforment
@@ -415,7 +415,7 @@ export default function SettingCommercialPage() {
             {/* ──────────────────────────────────────────────────── */}
             <section id="setter" className="scroll-mt-24">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
-                Setter definition : le r&ocirc;le du setter B2B au quotidien
+                Quel est le r&ocirc;le du setter B2B au quotidien&nbsp;?
               </h2>
 
               <div className="border-l-4 border-accent bg-accent/5 rounded-r-xl px-6 py-5 mb-8" itemScope itemType="https://schema.org/DefinedTerm">
@@ -470,7 +470,7 @@ export default function SettingCommercialPage() {
             {/* ──────────────────────────────────────────────────── */}
             <section id="setting-linkedin" className="scroll-mt-24">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
-                Setting LinkedIn : la m&eacute;thode signal-based
+                Comment fonctionne le setting LinkedIn signal-based&nbsp;?
               </h2>
               <p className="mb-4">
                 Sur LinkedIn, le setting a pris une dimension sp&eacute;cifique.
@@ -644,7 +644,7 @@ export default function SettingCommercialPage() {
             {/* ──────────────────────────────────────────────────── */}
             <section id="setting-closing" className="scroll-mt-24">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
-                Setting vs closing : deux r&ocirc;les, un pipeline
+                Quelle diff&eacute;rence entre setting et closing&nbsp;?
               </h2>
               <p className="mb-4">
                 Le setting et le closing sont les deux moiti&eacute;s d&apos;un pipeline commercial B2B.
@@ -787,7 +787,7 @@ export default function SettingCommercialPage() {
             {/* ──────────────────────────────────────────────────── */}
             <section id="erreurs" className="scroll-mt-24">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
-                Les 5 erreurs qui tuent le setting
+                Quelles sont les 5 erreurs les plus courantes en setting&nbsp;?
               </h2>
               <p className="mb-6">
                 Ces erreurs ne viennent pas d&apos;un manque de motivation.
@@ -1081,7 +1081,7 @@ export default function SettingCommercialPage() {
             {/* ──────────────────────────────────────────────────── */}
             <section id="ia" className="scroll-mt-24">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
-                L&apos;IA dans le setting : co-r&eacute;dacteur, pas automatisation
+                Quel est le r&ocirc;le de l&apos;IA dans le setting commercial&nbsp;?
               </h2>
               <p className="mb-4">
                 Coller un profil dans ChatGPT et demander un message ne fonctionne pas.
@@ -1148,7 +1148,7 @@ export default function SettingCommercialPage() {
             {/* ──────────────────────────────────────────────────── */}
             <section id="cout" className="scroll-mt-24">
               <h2 className="font-serif text-h2 text-text-primary mb-5">
-                Combien co&ucirc;te un setter B2B
+                Combien co&ucirc;te un setter B2B en France&nbsp;?
               </h2>
               <p className="mb-6">
                 Il existe 3 mod&egrave;les de tarification sur le march&eacute;.

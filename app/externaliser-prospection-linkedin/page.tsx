@@ -250,7 +250,7 @@ export default function ExternaliserProspectionLinkedinPage() {
           <div className="container-max">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary text-center mb-12">
-                Pourquoi externaliser sa prospection commerciale
+                Pourquoi externaliser sa prospection commerciale&nbsp;?
               </h2>
             </ScrollReveal>
             <div className="grid md:grid-cols-3 gap-6">
@@ -412,7 +412,7 @@ export default function ExternaliserProspectionLinkedinPage() {
           <div className="container-max max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary text-center mb-4">
-                SDR commercial interne&nbsp;: le vrai co&ucirc;t
+                Combien co&ucirc;te un SDR commercial interne en France&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed text-center mb-10 max-w-xl mx-auto">
                 Tout le monde pense d&apos;abord &agrave; recruter. Sauf que le salaire affich&eacute; n&apos;est que la partie visible.
@@ -469,7 +469,7 @@ export default function ExternaliserProspectionLinkedinPage() {
           <div className="container-max max-w-4xl mx-auto">
             <ScrollReveal>
               <h2 className="font-sans font-extrabold text-h2 text-text-primary text-center mb-4">
-                Agence prospection B2B vs setter freelance
+                Faut-il choisir une agence ou un setter freelance&nbsp;?
               </h2>
               <p className="font-sans text-text-secondary text-lg leading-relaxed text-center mb-10 max-w-xl mx-auto">
                 Les deux fonctionnent. Le prix n&apos;est pas le m&ecirc;me, le risque non plus.
