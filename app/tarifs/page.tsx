@@ -12,9 +12,9 @@ import { SmartContactForm } from '@/components/SmartContactForm'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Tarifs — Prospection LinkedIn B2B à partir de 790\u00a0€/mois | Setting',
+  title: 'Tarifs Setting LinkedIn B2B — à partir de 790 €/mois',
   description:
-    'Tarifs prospection LinkedIn externalisée pour solopreneurs : à partir de 790\u00a0€/mois, setup offert, zéro engagement. Simulez votre ROI.',
+    'Setting LinkedIn externalisé à partir de 790 €/mois, setup offert, zéro engagement. Comparez avec un SDR interne (50k €/an) et simulez votre ROI.',
   alternates: {
     canonical: 'https://www.setting.live/tarifs',
     languages: {

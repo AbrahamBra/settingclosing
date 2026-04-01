@@ -8,9 +8,9 @@ import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
-  title: 'Setting commercial B2B : guide complet, setter definition et setting LinkedIn (2026)',
+  title: 'Setting commercial B2B : guide complet du setter (2026)',
   description:
-    "Qu'est-ce que le setting commercial ? Setter definition, m\u00e9thode LinkedIn signal-based, diff\u00e9rence setting/closing, co\u00fbt, programme 3 mois. Le guide pilier.",
+    "Le setting commercial est la prospection qui précède le closing. Définition du setter, méthode LinkedIn signal-based en 9 étapes, coût réel et programme 3 mois.",
   openGraph: {
     title: 'Setting commercial B2B : guide complet (2026)',
     description:

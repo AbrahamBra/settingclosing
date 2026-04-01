@@ -7,9 +7,9 @@ import { ButtonGlow } from '@/components/ui/ButtonGlow'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'À propos de Setting | Setting LinkedIn B2B',
+  title: 'À propos de Setting | Prospection LinkedIn B2B Lyon',
   description:
-    'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
+    'Équipe de 3 spécialistes en prospection LinkedIn B2B basée à Lyon. 400+ RDV qualifiés délivrés, méthode signal-based, IA + validation humaine. Fondé par Abraham Brakha.',
   alternates: {
     canonical: 'https://www.setting.live/a-propos',
     languages: {

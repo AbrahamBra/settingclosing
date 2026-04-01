@@ -77,6 +77,9 @@ const globalSchema = {
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
         'https://www.linkedin.com/in/abraham-brakha',
+        'https://www.challengerslab.com',
+        'https://www.societe.com/societe/brakha-abraham-902889385.html',
+        'https://www.pappers.fr/entreprise/brakha-abraham-902889385',
       ],
       parentOrganization: {
         '@type': 'Organization',
