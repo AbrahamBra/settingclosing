@@ -270,8 +270,9 @@ export default function SignalAchatLinkedInPage() {
               Les 2 sources de signaux
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-8">
-              Tous les signaux ne viennent pas du même endroit. Dans un <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">système de setting B2B</a> structuré,
+              Tous les signaux ne viennent pas du même endroit. Dans un <a href="/ressources/setting-linkedin" className="text-accent hover:underline transition-colors">système de setting LinkedIn</a> structuré,
               on distingue deux flux d&apos;acquisition distincts — avec des outils et des approches différentes.
+              Les signaux inbound sont au cœur de l&apos;<a href="/ressources/inbound-setting-linkedin" className="text-accent hover:underline transition-colors">inbound setting LinkedIn</a>.
             </p>
 
             <div className="space-y-6">
@@ -483,8 +484,8 @@ export default function SignalAchatLinkedInPage() {
             <div className="space-y-3">
               {[
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
-                { href: '/ressources/setting-commercial-b2b', label: 'Setting LinkedIn : définition, méthode et exemples concrets' },
-                { href: '/setting', label: 'Setting : le guide complet du setting commercial B2B' },
+                { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (définition, méthode et exemples)' },
+                { href: '/ressources/inbound-setting-linkedin', label: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV qualifiés' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme complet' },
                 { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de réponses" },
                 { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn" },

@@ -29,10 +29,10 @@ const nextConfig: NextConfig = {
         destination: '/methode/setting-linkedin',
         permanent: true,
       },
-      // Consolidation SEO : 4 articles fusionnés dans le pilier setting-commercial-b2b
+      // Dé-consolidation : setting-linkedin-definition pointe vers le nouveau pilier dédié
       {
         source: '/ressources/setting-linkedin-definition',
-        destination: '/ressources/setting-commercial-b2b',
+        destination: '/ressources/setting-linkedin',
         permanent: true,
       },
       {

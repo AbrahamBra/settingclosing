@@ -34,6 +34,8 @@ const titles: Record<string, { title: string; category: string }> = {
   'outils-setting-linkedin': { title: 'Outils du setting LinkedIn', category: 'Outils' },
   'setting-commercial-linkedin': { title: 'Setting commercial LinkedIn', category: 'Guide complet' },
   'setting-linkedin-definition': { title: 'Setting LinkedIn : définition', category: 'Définition' },
+  'setting-linkedin': { title: 'Setting LinkedIn : le guide complet', category: 'Guide complet' },
+  'inbound-setting-linkedin': { title: 'Inbound Setting LinkedIn', category: 'Guide complet' },
   // Batch 6 — élargissement prospection LinkedIn
   'comment-prospecter-sur-linkedin': { title: 'Comment prospecter sur LinkedIn', category: 'Guide complet' },
   'agence-prospection-linkedin': { title: 'Agence prospection LinkedIn', category: 'Guide' },

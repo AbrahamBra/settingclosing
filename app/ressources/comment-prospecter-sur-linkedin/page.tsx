@@ -814,8 +814,8 @@ export default function CommentProspecterLinkedInPage() {
           <RelatedArticles
             articles={[
               { href: '/ressources/signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min' },
-              { href: '/ressources/prospection-linkedin-b2b', title: 'Scripts de setting LinkedIn B2B', readTime: '11 min' },
-              { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition et m\u00e9thode', readTime: '19 min' },
+              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet (définition et méthode)', readTime: '18 min' },
+              { href: '/ressources/inbound-setting-linkedin', title: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV', readTime: '15 min' },
             ]}
           />
         </div>

@@ -48,7 +48,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    // setting-linkedin-definition — redirigé vers setting-commercial-b2b (consolidation SEO)
+    {
+      url: 'https://www.setting.live/ressources/setting-linkedin',
+      lastModified: new Date('2026-04-12'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: 'https://www.setting.live/ressources/inbound-setting-linkedin',
+      lastModified: new Date('2026-04-12'),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    // setting-linkedin-definition — redirigé vers setting-linkedin (dé-consolidation SEO)
     // ia-methode-humain-setting-linkedin — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
     // messages-linkedin-sans-reponse — redirigé vers prospection-linkedin-b2b (consolidation SEO)
     {

@@ -479,10 +479,14 @@ export default function SettingCommercialPage() {
                 permet un contact direct sans standard ni filtre email.
               </p>
               <p className="mb-6">
-                Le <strong className="text-text-primary">setting LinkedIn</strong> consiste &agrave;
+                Le{' '}
+                <a href="/ressources/setting-linkedin" className="text-accent hover:underline transition-colors"><strong className="text-text-primary">setting LinkedIn</strong></a>{' '}
+                consiste &agrave;
                 combiner l&apos;observation de ces signaux avec une prise de contact personnalis&eacute;e.
                 Le prospect a montr&eacute; un int&eacute;r&ecirc;t, mais il n&apos;est pas encore
                 pr&ecirc;t &agrave; acheter. Le setter l&apos;accompagne jusqu&apos;au rendez-vous.
+                Pour approfondir le volet r&eacute;actif, consultez notre guide sur l&apos;
+                <a href="/ressources/inbound-setting-linkedin" className="text-accent hover:underline transition-colors">inbound setting LinkedIn</a>.
               </p>
 
               <h3 className="font-serif text-xl text-text-primary mb-4">

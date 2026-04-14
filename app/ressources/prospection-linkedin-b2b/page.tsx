@@ -891,10 +891,10 @@ export default function ProspectionLinkedInB2BPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
-                { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : d\u00e9finition, m\u00e9thode et programme complet' },
+                { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (définition, méthode et exemples)' },
+                { href: '/ressources/inbound-setting-linkedin', label: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV qualifiés' },
                 { href: '/ressources/signal-achat-linkedin', label: "C\u2019est quoi un signal d\u2019achat LinkedIn ?" },
                 { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Comment prospecter sur LinkedIn en 2026' },
-                { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, m\u00e9thode et humain : les 3 couches d\u2019un syst\u00e8me de setting LinkedIn" },
                 { href: '/ressources/agence-prospection-linkedin', label: 'Agence de prospection LinkedIn : comment choisir' },
               ].map(({ href, label }) => (
                 <a key={href} href={href} className="flex items-center gap-2 font-sans text-sm text-text-secondary hover:text-text-primary transition-colors group">
@@ -918,7 +918,7 @@ export default function ProspectionLinkedInB2BPage() {
           <RelatedArticles articles={[
             { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
             { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Comment prospecter sur LinkedIn en 2026', readTime: '12 min' },
-            { href: '/ressources/setting-commercial-b2b', title: 'Setting commercial B2B : d\u00e9finition et programme complet', readTime: '20 min' },
+            { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet (définition et méthode)', readTime: '18 min' },
           ]} />
 
         </div>
