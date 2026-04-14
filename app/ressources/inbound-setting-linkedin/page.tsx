@@ -253,12 +253,11 @@ export default function InboundSettingLinkedinPage() {
               Inbound Setting LinkedIn : transformer l&apos;engagement en RDV qualifi&eacute;s
             </h1>
             <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
-              Vos prospects likent vos posts, commentent vos publications, visitent votre profil.
-              Chaque interaction est un signal d&apos;int&eacute;r&ecirc;t. L&apos;inbound setting
-              consiste &agrave; d&eacute;tecter ces signaux, engager la conversation au bon moment
-              et transformer cet engagement en rendez-vous qualifi&eacute;s. Ce guide couvre
-              la m&eacute;thode en 5 &eacute;tapes, les scripts de messages, les outils
-              et les benchmarks 2026.
+              Quelqu&apos;un a lik&eacute; votre post. Un autre a comment&eacute;. Un troisi&egrave;me
+              a visit&eacute; votre profil. Chaque interaction est un signal. La question :
+              qu&apos;est-ce que vous en faites&nbsp;? L&apos;inbound setting, c&apos;est la m&eacute;thode
+              pour transformer ces signaux en conversations, puis en rendez-vous. Ce guide
+              pose les 5 &eacute;tapes, les scripts, les outils et les benchmarks 2026.
             </p>
             <AuthorBlock date="2026-04-12" readTime="15 min de lecture" dateLabel="12 avril 2026" />
           </header>
@@ -351,10 +350,9 @@ export default function InboundSettingLinkedinPage() {
               Le prospect a fait le premier pas.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
-              C&apos;est une approche particuli&egrave;rement adapt&eacute;e aux fondateurs, consultants
-              et experts qui publient r&eacute;guli&egrave;rement sur LinkedIn. Votre contenu devient
-              votre machine &agrave; g&eacute;n&eacute;rer des signaux. Le setting transforme ces signaux
-              en pipeline commercial.
+              Si vous &ecirc;tes fondateur, consultant ou expert et que vous publiez
+              r&eacute;guli&egrave;rement sur LinkedIn, vous avez d&eacute;j&agrave; la mati&egrave;re premi&egrave;re.
+              Votre contenu g&eacute;n&egrave;re des signaux. Le setting les transforme en pipeline.
             </p>
           </section>
 
@@ -364,10 +362,10 @@ export default function InboundSettingLinkedinPage() {
               Pourquoi l&apos;inbound setting surpasse le cold outreach
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              La diff&eacute;rence entre inbound setting et cold outreach ne tient pas au message.
-              Elle tient au contexte. Un prospect qui a comment&eacute; votre post est dans un
-              &eacute;tat mental diff&eacute;rent de celui qui re&ccedil;oit un message d&apos;un
-              inconnu. Le premier est ouvert. Le second est sur la d&eacute;fensive.
+              Ce n&apos;est pas une question de message. C&apos;est une question de contexte.
+              Un prospect qui a comment&eacute; votre post n&apos;est pas dans le m&ecirc;me
+              &eacute;tat mental qu&apos;un inconnu qui re&ccedil;oit un DM. Le premier est
+              curieux. Le second est m&eacute;fiant.
             </p>
 
             {/* Comparison table */}
@@ -395,11 +393,10 @@ export default function InboundSettingLinkedinPage() {
             </div>
 
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Pourquoi un tel &eacute;cart&nbsp;? Parce que l&apos;inbound setting &eacute;limine la
-              barri&egrave;re de confiance initiale. Quand vous contactez quelqu&apos;un qui a
-              comment&eacute; votre post, il reconna&icirc;t votre nom. Il a d&eacute;j&agrave; lu
-              votre point de vue. Le message n&apos;est plus une interruption. C&apos;est une suite
-              logique.
+              Pourquoi un tel &eacute;cart&nbsp;? La confiance. Quand vous contactez quelqu&apos;un
+              qui a comment&eacute; votre post, il sait qui vous &ecirc;tes. Il a lu votre point
+              de vue. Votre message n&apos;est pas une interruption. C&apos;est la suite d&apos;une
+              conversation qu&apos;il a lui-m&ecirc;me initi&eacute;e.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               L&apos;autre avantage : le volume est naturellement filtr&eacute;. Seuls les profils
@@ -408,11 +405,10 @@ export default function InboundSettingLinkedinPage() {
               la pr&eacute;-qualification pour vous.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
-              Le cold outreach reste utile pour le volume. Mais si vous cherchez la qualit&eacute;
-              des conversations et un taux de conversion &eacute;lev&eacute;, l&apos;inbound setting
-              est la m&eacute;thode la plus efficace disponible sur LinkedIn en 2026. Pour comprendre
-              les bases de la <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">m&eacute;thode setting LinkedIn</a>,
-              consultez notre guide d&eacute;di&eacute;.
+              Le cold outreach reste utile quand on a besoin de volume. Mais pour la qualit&eacute;
+              des conversations et le taux de conversion, l&apos;inbound setting est loin devant.
+              Les bases de la <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">m&eacute;thode setting LinkedIn</a> sont
+              dans notre guide d&eacute;di&eacute;.
             </p>
           </section>
 
@@ -500,13 +496,13 @@ export default function InboundSettingLinkedinPage() {
               Cr&eacute;er du contenu qui g&eacute;n&egrave;re des signaux
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              L&apos;inbound setting commence avant le premier message. Il commence par votre contenu.
-              Sans publication, pas de r&eacute;actions. Sans r&eacute;actions, pas de signaux.
-              Sans signaux, pas d&apos;inbound. Votre contenu LinkedIn est votre machine &agrave;
-              g&eacute;n&eacute;rer des prospects chauds.
+              L&apos;inbound setting ne commence pas au premier message. Il commence
+              &agrave; la publication. Pas de post, pas de r&eacute;actions. Pas de r&eacute;actions,
+              pas de signaux. Pas de signaux, rien &agrave; convertir. Votre contenu LinkedIn,
+              c&apos;est votre g&eacute;n&eacute;rateur de prospects chauds.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              La cl&eacute; n&apos;est pas de publier beaucoup. C&apos;est de publier du contenu
+              L&apos;enjeu n&apos;est pas la fr&eacute;quence. C&apos;est de publier du contenu
               qui attire votre ICP et provoque des r&eacute;actions exploitables. Un post qui
               g&eacute;n&egrave;re 15 commentaires de d&eacute;cideurs vaut plus que 500 likes
               de profils hors cible.
@@ -587,10 +583,10 @@ export default function InboundSettingLinkedinPage() {
               Le premier message : 3 scripts concrets
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
-              Le premier message en inbound setting n&apos;est pas un pitch. C&apos;est une
-              r&eacute;ponse &agrave; un signal. Vous ne vendez rien. Vous engagez une conversation
-              &agrave; partir de quelque chose que le prospect a fait. Voici trois scripts adapt&eacute;s
-              aux trois types de signaux. Pour d&apos;autres exemples de messages, consultez notre guide
+              Premier message = pas de pitch. C&apos;est un rebond sur ce que le prospect
+              a fait. Il a comment&eacute;&nbsp;? Vous r&eacute;pondez &agrave; son commentaire.
+              Il a visit&eacute; votre profil&nbsp;? Vous rebondissez l&agrave;-dessus.
+              Trois scripts, un par type de signal. Pour d&apos;autres exemples de messages, consultez notre guide
               <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors"> prospection LinkedIn B2B</a>.
             </p>
 
@@ -722,7 +718,7 @@ export default function InboundSettingLinkedinPage() {
 
             <p className="font-sans text-text-secondary leading-relaxed">
               Pour une m&eacute;thode compl&egrave;te de <a href="/ressources/comment-prospecter-sur-linkedin" className="text-accent hover:underline transition-colors">prospection sur LinkedIn</a>,
-              consultez notre guide d&eacute;di&eacute;. Si vous pr&eacute;f&eacute;rez
+              tout est l&agrave;-dedans. Si vous pr&eacute;f&eacute;rez
               <a href="/externaliser-prospection-linkedin" className="text-accent hover:underline transition-colors"> externaliser votre prospection LinkedIn</a>,
               d&eacute;couvrez notre offre.
             </p>
@@ -734,9 +730,8 @@ export default function InboundSettingLinkedinPage() {
               Outils pour automatiser votre inbound setting
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              L&apos;inbound setting n&apos;a pas besoin d&apos;une pile technologique
-              complexe. Cinq outils couvrent l&apos;ensemble du pipeline, de la d&eacute;tection
-              au rendez-vous.
+              Pas besoin d&apos;une usine &agrave; gaz. Cinq outils couvrent tout le pipeline,
+              de la d&eacute;tection au rendez-vous.
             </p>
 
             <div className="space-y-4 mb-6">
@@ -775,9 +770,8 @@ export default function InboundSettingLinkedinPage() {
               R&eacute;sultats concrets et benchmarks 2026
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Voici les benchmarks observ&eacute;s sur nos programmes d&apos;inbound setting
-              LinkedIn en 2025-2026. Ces chiffres concernent l&apos;inbound seul, sans comptabiliser
-              les RDV g&eacute;n&eacute;r&eacute;s par l&apos;outbound.
+              Chiffres terrain, tir&eacute;s de nos programmes d&apos;inbound setting
+              en 2025-2026. Inbound seul &mdash; sans compter les RDV outbound.
             </p>
 
             <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden mb-6">
@@ -806,11 +800,10 @@ export default function InboundSettingLinkedinPage() {
               g&eacute;n&egrave;re en moyenne 50 &agrave; 80 signaux exploitables par semaine.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
-              Le ROI de x4 &agrave; x6 signifie que pour chaque euro investi dans les outils et le
-              temps consacr&eacute; &agrave; l&apos;inbound setting, vous g&eacute;n&eacute;rez
-              4 &agrave; 6 euros de chiffre d&apos;affaires. Ce ratio s&apos;am&eacute;liore avec
-              le temps, car votre contenu accumule de la visibilit&eacute; et vos signaux augmentent
-              sans effort suppl&eacute;mentaire.
+              x4 &agrave; x6, concr&egrave;tement : pour 1&nbsp;&euro; investi (outils + temps),
+              vous g&eacute;n&eacute;rez 4 &agrave; 6&nbsp;&euro; de CA. Et le ratio s&apos;am&eacute;liore
+              avec le temps. Vos anciens posts continuent de g&eacute;n&eacute;rer des signaux.
+              Plus vous publiez, plus le volant tourne vite.
             </p>
           </section>
 
@@ -820,8 +813,8 @@ export default function InboundSettingLinkedinPage() {
               Les pi&egrave;ges &agrave; &eacute;viter
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              L&apos;inbound setting est simple en th&eacute;orie. En pratique, cinq erreurs
-              r&eacute;currentes ruinent les r&eacute;sultats.
+              Sur le papier, c&apos;est simple. En pratique, cinq erreurs reviennent
+              sans arr&ecirc;t.
             </p>
 
             <div className="space-y-4">
@@ -900,9 +893,9 @@ export default function InboundSettingLinkedinPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">Setting</p>
             <h3 className="font-serif text-h3 text-text-primary mb-3">Votre inbound setting op&eacute;r&eacute; par des experts</h3>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Contenu, d&eacute;tection des signaux, messages r&eacute;dig&eacute;s et valid&eacute;s,
-              RDV livr&eacute;s dans votre agenda. Garantie 5 RDV qualifi&eacute;s minimum par mois.
-              On d&eacute;marre en 2 semaines.
+              On g&egrave;re le contenu, la d&eacute;tection, la r&eacute;daction des messages
+              et la qualification. Vous, vous recevez les RDV dans votre agenda. 5 RDV qualifi&eacute;s
+              minimum par mois. D&eacute;marrage en 2 semaines.
             </p>
             <ButtonGlow as="a" href="https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab" target="_blank" rel="noopener noreferrer">
               D&eacute;l&eacute;guer mon inbound setting &rarr;

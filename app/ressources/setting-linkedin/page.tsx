@@ -265,12 +265,12 @@ export default function SettingLinkedInPage() {
               Setting LinkedIn : d&eacute;finition, m&eacute;thode et exemples concrets
             </h1>
             <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
-              Le setting LinkedIn, c&apos;est la prospection B2B qui fonctionne en 2026.
-              D&eacute;tecter un signal d&apos;achat. Lire le contexte du prospect. &Eacute;crire
-              un message qui d&eacute;clenche une r&eacute;ponse. Qualifier. D&eacute;crocher le
-              rendez-vous. Ce guide couvre la d&eacute;finition exacte, la m&eacute;thode en 5
-              &eacute;tapes, trois scripts de messages, les outils, les KPIs et les erreurs
-              &agrave; &eacute;viter.
+              La plupart des m&eacute;thodes de prospection LinkedIn ne marchent plus.
+              Trop de bruit. Trop de messages g&eacute;n&eacute;riques. Le setting LinkedIn
+              prend le probl&egrave;me &agrave; l&apos;envers : on ne contacte personne sans raison.
+              D&eacute;tecter un signal. Lire le contexte. &Eacute;crire un message qui fait mouche.
+              Qualifier. D&eacute;crocher le RDV. Ce guide pose tout &agrave; plat : d&eacute;finition,
+              m&eacute;thode en 5 &eacute;tapes, scripts, outils et erreurs &agrave; &eacute;viter.
             </p>
             <AuthorBlock date="2026-04-12" readTime="25 min de lecture" dateLabel="12 avril 2026" />
           </header>
@@ -377,11 +377,11 @@ export default function SettingLinkedInPage() {
                 un sujet. Le message arrive au bon moment, avec le bon contexte.
               </p>
               <p className="mb-4">
-                La m&eacute;thode repose sur cinq piliers : la d&eacute;tection des signaux,
-                la v&eacute;rification de l&apos;ICP, l&apos;analyse du profil, la r&eacute;daction
-                du message et la qualification avant le rendez-vous. Chaque message est
-                valid&eacute; par un humain avant l&apos;envoi. Pas d&apos;automatisation.
-                Pas de templates copi&eacute;s-coll&eacute;s. De la{' '}
+                Cinq &eacute;tapes, toujours les m&ecirc;mes : d&eacute;tecter le signal,
+                v&eacute;rifier l&apos;ICP, analyser le profil, &eacute;crire le message,
+                qualifier avant le RDV. Et un principe non n&eacute;gociable : chaque message
+                est relu et valid&eacute; par un humain. Z&eacute;ro automatisation.
+                Z&eacute;ro template. De la{' '}
                 <a href="/ressources/setting-commercial-b2b" className="text-accent hover:underline transition-colors">prospection
                 sur mesure</a>.
               </p>
@@ -448,8 +448,7 @@ export default function SettingLinkedInPage() {
               </h2>
               <p className="mb-6">
                 Trois approches coexistent sur LinkedIn. Elles n&apos;ont pas le m&ecirc;me
-                m&eacute;canisme, pas le m&ecirc;me co&ucirc;t et pas le m&ecirc;me ROI.
-                Voici ce qui les distingue.
+                m&eacute;canisme, pas le m&ecirc;me co&ucirc;t, pas le m&ecirc;me ROI.
               </p>
 
               <div className="overflow-x-auto mb-6">
@@ -484,11 +483,11 @@ export default function SettingLinkedInPage() {
               </div>
 
               <p className="mb-4">
-                Le setting LinkedIn se positionne entre les deux extr&ecirc;mes. Il offre
-                la rapidit&eacute; du cold outreach (r&eacute;sultats d&egrave;s la premi&egrave;re
-                semaine) avec la pertinence du social selling (contexte, personnalisation).
-                Le co&ucirc;t par RDV est 3 &agrave; 4 fois inf&eacute;rieur au cold outreach
-                classique, car le taux de r&eacute;ponse est 5 &agrave; 10 fois sup&eacute;rieur.
+                Le setting LinkedIn est entre les deux. R&eacute;sultats rapides comme le cold
+                outreach (d&egrave;s la premi&egrave;re semaine), pertinence du social selling
+                (contexte, personnalisation). Co&ucirc;t par RDV 3 &agrave; 4 fois
+                inf&eacute;rieur au cold classique, parce que le taux de r&eacute;ponse est
+                5 &agrave; 10 fois plus &eacute;lev&eacute;.
               </p>
               <p className="mb-4">
                 En pratique, les meilleurs syst&egrave;mes combinent les trois. Le social
@@ -499,7 +498,7 @@ export default function SettingLinkedInPage() {
               <p>
                 Pour aller plus loin sur le{' '}
                 <a href="/ressources/social-selling-linkedin-b2b" className="text-accent hover:underline transition-colors">social
-                selling LinkedIn B2B</a>, consultez notre guide d&eacute;di&eacute;.
+                selling LinkedIn B2B</a>, on a tout d&eacute;taill&eacute; l&agrave;-bas.
               </p>
             </section>
 
@@ -511,10 +510,9 @@ export default function SettingLinkedInPage() {
                 Setting r&eacute;actif (inbound) vs proactif (outbound)
               </h2>
               <p className="mb-6">
-                Le setting LinkedIn se d&eacute;cline en deux modes. Les deux sont
-                compl&eacute;mentaires, mais ils n&apos;ont pas le m&ecirc;me taux de
-                r&eacute;ponse ni la m&ecirc;me m&eacute;canique. Comprendre cette
-                distinction, c&apos;est la base pour calibrer votre pipeline.
+                Deux modes, deux m&eacute;caniques. L&apos;un attend que le prospect
+                vienne &agrave; vous. L&apos;autre va le chercher. Les taux de r&eacute;ponse
+                ne sont pas les m&ecirc;mes. Le volume non plus. Un bon pipeline utilise les deux.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -598,9 +596,9 @@ export default function SettingLinkedInPage() {
                 Les 5 &eacute;tapes du setting LinkedIn
               </h2>
               <p className="mb-8">
-                Voici le pipeline complet, de la d&eacute;tection du signal &agrave; la prise
-                de rendez-vous. Chaque &eacute;tape est indispensable. Sauter une seule d&apos;entre
-                elles fait chuter le taux de r&eacute;ponse.
+                Voici le pipeline, de la d&eacute;tection du signal &agrave; la prise
+                de rendez-vous. Sauter une &eacute;tape et le taux de r&eacute;ponse
+                chute. On l&apos;a vu des dizaines de fois.
               </p>
 
               <div className="space-y-8">
@@ -669,9 +667,9 @@ export default function SettingLinkedInPage() {
                 Scripts de messages : 3 exemples concrets
               </h2>
               <p className="mb-8">
-                Voici trois scripts utilis&eacute;s en setting LinkedIn. Ce ne sont pas
-                des templates &agrave; copier-coller. Ce sont des cadres : la structure reste,
-                les mots changent &agrave; chaque prospect.
+                Trois scripts qu&apos;on utilise au quotidien. Pas des templates &agrave;
+                copier-coller &mdash; des cadres. La structure reste. Les mots changent
+                &agrave; chaque prospect.
               </p>
 
               {/* Script 1 — Inbound */}
@@ -764,8 +762,8 @@ export default function SettingLinkedInPage() {
               </h2>
               <p className="mb-8">
                 Le setting LinkedIn est une m&eacute;thode, pas un outil. Mais certains
-                logiciels acc&eacute;l&egrave;rent consid&eacute;rablement le travail du setter.
-                Voici la stack que nous utilisons et recommandons.
+                logiciels font gagner du temps au setter.
+                Voici la stack qu&apos;on utilise au quotidien.
               </p>
 
               <div className="grid md:grid-cols-2 gap-4 mb-8">
@@ -866,16 +864,15 @@ export default function SettingLinkedInPage() {
               </div>
 
               <p className="mb-4">
-                Ces chiffres varient selon le secteur, le ticket moyen et la maturit&eacute;
-                du profil LinkedIn du client. Mais l&apos;ordre de grandeur est constant :
-                le setting LinkedIn signal-based g&eacute;n&egrave;re un ROI mesurable
-                d&egrave;s le premier trimestre.
+                Ces chiffres bougent selon le secteur, le ticket moyen et la maturit&eacute;
+                du profil LinkedIn. Mais l&apos;ordre de grandeur tient :
+                le setting LinkedIn signal-based se rentabilise en 2-3 mois.
               </p>
               <p>
-                Le KPI le plus important n&apos;est pas le taux de r&eacute;ponse. C&apos;est
-                le nombre de RDV qualifi&eacute;s qui se transforment en opportunit&eacute;s.
+                Le KPI qui compte vraiment, c&apos;est pas le taux de r&eacute;ponse. C&apos;est
+                le nombre de RDV qui se transforment en opportunit&eacute;s.
                 Un taux de r&eacute;ponse &eacute;lev&eacute; avec des RDV non qualifi&eacute;s
-                fait perdre du temps au closeur. La qualification est la cl&eacute;.
+                fait perdre du temps au closeur. Tout se joue &agrave; la qualification.
               </p>
             </section>
 
@@ -887,9 +884,9 @@ export default function SettingLinkedInPage() {
                 Les erreurs qui tuent votre setting LinkedIn
               </h2>
               <p className="mb-8">
-                Ces cinq erreurs d&eacute;truisent le taux de r&eacute;ponse. Si votre setting
-                LinkedIn ne produit pas de r&eacute;sultats, commencez par v&eacute;rifier
-                que vous n&apos;en commettez aucune.
+                Cinq erreurs qu&apos;on voit revenir en permanence. Si votre setting
+                LinkedIn ne d&eacute;colle pas, y&apos;a de bonnes chances que l&apos;une
+                d&apos;entre elles soit en cause.
               </p>
 
               <div className="space-y-4">
@@ -947,10 +944,9 @@ export default function SettingLinkedInPage() {
                 Quand externaliser son setting LinkedIn&nbsp;?
               </h2>
               <p className="mb-4">
-                Le setting LinkedIn prend du temps. Entre la d&eacute;tection des signaux,
-                l&apos;analyse des profils, la r&eacute;daction des messages et la gestion
-                des conversations, comptez 2 &agrave; 3 heures par jour pour un flux
-                constant de RDV qualifi&eacute;s.
+                Le setting LinkedIn prend du temps. D&eacute;tection, analyse des profils,
+                r&eacute;daction, conversations. Comptez 2 &agrave; 3 heures par jour
+                pour maintenir un flux r&eacute;gulier de RDV.
               </p>
               <p className="mb-8">
                 &Agrave; un moment, le choix se pose : continuer seul ou d&eacute;l&eacute;guer.
@@ -1014,10 +1010,11 @@ export default function SettingLinkedInPage() {
               </div>
 
               <p className="mb-4">
-                L&apos;externalisation n&apos;a de sens que si votre offre est valid&eacute;e.
-                Si vous n&apos;avez pas encore vendu votre service, commencez par faire le
-                setting LinkedIn vous-m&ecirc;me. Vous comprendrez les objections, les
-                angles qui fonctionnent et les signaux pertinents pour votre march&eacute;.
+                Honnêtement, si vous n&apos;avez pas encore vendu votre service, ne
+                d&eacute;l&eacute;guez pas encore. Faites le setting vous-m&ecirc;me d&apos;abord.
+                Vous apprendrez les objections, les angles qui marchent, les signaux qui comptent
+                pour votre march&eacute;. Apr&egrave;s, vous d&eacute;l&eacute;guez en sachant exactement
+                ce que vous attendez.
               </p>
               <p>
                 Pour d&eacute;couvrir notre programme externalis&eacute; :{' '}
@@ -1087,10 +1084,9 @@ export default function SettingLinkedInPage() {
                 D&eacute;l&eacute;guez votre setting LinkedIn
               </h2>
               <p className="font-sans text-text-secondary leading-relaxed mb-6 max-w-xl mx-auto">
-                Notre &eacute;quipe d&eacute;tecte les signaux, r&eacute;dige les messages,
-                qualifie les prospects et vous livre des RDV pr&ecirc;ts &agrave; closer.
-                Chaque message est valid&eacute; par un humain. Les premiers rendez-vous
-                arrivent d&egrave;s la premi&egrave;re semaine.
+                On s&apos;occupe de tout : d&eacute;tection des signaux, r&eacute;daction des messages,
+                qualification, et on livre les RDV dans votre agenda.
+                Chaque message est relu par un humain. Premiers RDV en 5 jours.
               </p>
               <ButtonGlow href="/tarifs">
                 Voir nos tarifs
