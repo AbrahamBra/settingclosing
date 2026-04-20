@@ -52,6 +52,9 @@ export const metadata: Metadata = {
       'x-default': 'https://www.setting.live',
     },
   },
+  verification: {
+    google: 'bexY4RrSjhAx3T44xgg4TxJjO2EkG3q79p0VPncfRmI',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
