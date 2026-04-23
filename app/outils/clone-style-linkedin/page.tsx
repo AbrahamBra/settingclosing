@@ -268,7 +268,7 @@ export default function Page() {
               <p>
                 C&apos;est la diff&eacute;rence de fond entre le{' '}
                 <a
-                  href="/ressources/setting-humain-vs-automatisation-linkedin"
+                  href="/ressources/comment-prospecter-sur-linkedin"
                   className="text-accent hover:underline transition-colors"
                 >
                   setting humain et l&apos;automatisation pure
@@ -367,7 +367,7 @@ export default function Page() {
               <p className="mt-6">
                 Besoin d&apos;exemples concrets de messages qui convertissent&nbsp;?{' '}
                 <a
-                  href="/ressources/messages-prospection-linkedin-exemples"
+                  href="/ressources/prospection-linkedin-b2b"
                   className="text-accent hover:underline transition-colors"
                 >
                   15 exemples de messages de prospection LinkedIn
@@ -416,12 +416,12 @@ export default function Page() {
                 {[
                   { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet' },
                   {
-                    href: '/ressources/setting-humain-vs-automatisation-linkedin',
-                    label: 'Setting humain vs automatisation : pourquoi \u00e7a compte',
+                    href: '/ressources/comment-prospecter-sur-linkedin',
+                    label: 'Humain vs automatisation : comment prospecter sur LinkedIn',
                   },
                   { href: '/ressources/signal-achat-linkedin', label: 'D\u00e9tecter les signaux d\u2019achat sur LinkedIn' },
                   {
-                    href: '/ressources/messages-prospection-linkedin-exemples',
+                    href: '/ressources/prospection-linkedin-b2b',
                     label: '15 exemples de messages de prospection LinkedIn',
                   },
                 ].map(({ href, label }) => (
