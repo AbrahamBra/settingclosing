@@ -15,7 +15,7 @@ function tokenize(text: string): string[] {
 
 function splitSentences(text: string): string[] {
   return text
-    .split(/[.!?]+/)
+    .split(/(?<=[.!?])\s+/)
     .map((s) => s.trim())
     .filter(Boolean)
 }
@@ -28,8 +28,7 @@ function metricsFor(text: string): Omit<FidelityMetrics, 'corpus'> {
   const avgWordLength = tokens.reduce((sum, t) => sum + t.length, 0) / tokens.length
 
   const sentences = splitSentences(text)
-  const rawSentences = text.match(/[^.!?]+[.!?]*/g) ?? []
-  const questions = rawSentences.filter((s) => /\?/.test(s)).length
+  const questions = sentences.filter((s) => s.endsWith('?')).length
   const questionRatio = sentences.length === 0 ? 0 : questions / sentences.length
 
   const unique = new Set(tokens)

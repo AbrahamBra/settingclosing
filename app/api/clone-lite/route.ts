@@ -3,8 +3,20 @@ import Anthropic from '@anthropic-ai/sdk'
 import { checkAndConsume } from '../../../lib/clone/rateLimit'
 import { buildSystemPrompt, buildUserPrompt } from '../../../lib/clone/prompt'
 import { computeFidelity } from '../../../lib/clone/fidelity'
+import { getClientIp } from '../../../lib/http'
 
 export const runtime = 'nodejs'
+
+// Lazy singleton so serverless warm invocations reuse the HTTP agent,
+// while keeping test mocks for `@anthropic-ai/sdk` able to register before
+// the client is ever constructed (vi.mock factories run before import-time
+// module body execution, but local vars they reference aren't initialized
+// until after imports).
+let anthropicClient: Anthropic | null = null
+function getAnthropic(): Anthropic {
+  if (!anthropicClient) anthropicClient = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+  return anthropicClient
+}
 
 interface Payload {
   posts?: unknown
@@ -38,8 +50,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: validated }, { status: 400 })
   }
 
-  const ip = request.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown'
-  const rl = checkAndConsume(ip)
+  const rl = checkAndConsume(getClientIp(request))
   if (!rl.allowed) {
     return NextResponse.json(
       { error: '3 générations par jour atteintes. Reviens demain ou rejoins la waitlist.' },
@@ -48,20 +59,17 @@ export async function POST(request: Request) {
   }
 
   try {
-    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
-    const response = await client.messages.create({
+    const response = await getAnthropic().messages.create({
       model: 'claude-haiku-4-5-20251001',
       max_tokens: 400,
       system: buildSystemPrompt(validated.posts),
       messages: [{ role: 'user', content: buildUserPrompt(validated.targetContext) }],
     })
 
-    const text =
-      response.content
-        .filter((c) => c.type === 'text')
-        .map((c) => (c as { type: 'text'; text: string }).text)
-        .join('\n')
-        .trim() || ''
+    const text = response.content
+      .flatMap((c) => (c.type === 'text' ? [c.text] : []))
+      .join('\n')
+      .trim()
 
     const fidelityScore = computeFidelity(text, validated.posts)
 
