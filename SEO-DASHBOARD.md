@@ -210,6 +210,59 @@
 
 ---
 
+## Cycle avril 2026 — setting linkedin + clone lite
+
+### 7. Pilier "Setting LinkedIn" — refresh additif (2026-04-23)
+
+**URL pilier :** `/ressources/setting-linkedin`
+**Titre :** Setting LinkedIn : méthode, exemples, prix, IA — guide complet 2026
+**Objectif :** maintenir la position sur "setting linkedin" (keyword pilier) et capter la longue-traîne via 3 pages filles + 1 outil.
+
+**Keywords longue-traîne ajoutés :**
+
+| Keyword | Volume | URL dédiée |
+|---------|--------|------------|
+| setting linkedin exemples | 40/mo | /ressources/setting-linkedin-exemples |
+| setting linkedin prix | 30/mo | /ressources/setting-linkedin-prix |
+| setting linkedin ia | 20/mo | /ressources/setting-linkedin-ia |
+
+**Nouvelles URLs (non-consolidation, longue-traîne) :**
+- `/ressources/setting-linkedin-exemples` — Exemples de messages setting LinkedIn (~2500 mots)
+- `/ressources/setting-linkedin-prix` — Combien coûte le setting LinkedIn (~2500 mots)
+- `/ressources/setting-linkedin-ia` — IA et setting LinkedIn (~2500 mots)
+- `/outils/clone-style-linkedin` — Générateur de message LinkedIn dans ton style (outil gratuit, priority 0.8)
+
+**Refresh pilier (additif, zéro suppression) :**
+- [x] `dateModified` bumpé à 2026-04-23
+- [x] Speakable cssSelector étendu (+ h2, + .tldr)
+- [x] HowTo JSON-LD ajouté (alongside Article/FAQPage/Breadcrumb)
+- [x] Section "Cas concret 2026" (~400 mots : prospect → signal → message → conversation → RDV → résultat)
+- [x] 3 nouvelles FAQ (prix, IA, externalisation) → +3 liens sortants vers longue-traîne
+- [x] 3 liens contextuels en corps d'article vers les 3 pages filles
+
+**Outil "Clone style LinkedIn" (version lite) :**
+- [x] `/api/clone-lite` — Claude Haiku 4.5, rate-limit 3/jour/IP, analyse stylométrique (TTR, longueur mot, ratio questions)
+- [x] `/api/waitlist-clone` — Resend, double envoi (user + admin), best-effort avec allSettled
+- [x] UI dark theme (ButtonGlow, bg-bg-secondary), 3-5 posts inputs, copy + régénération + quota
+- [x] Landing `/outils/clone-style-linkedin` — ~900 mots, JSON-LD WebApplication/HowTo/FAQ
+- [x] OG image edge-rendered (1200×630)
+
+**Checklist :**
+- [x] Sitemap : +4 URLs, pillar `lastModified` bumpé
+- [x] Maillage interne : liens contextuels depuis `comment-prospecter-sur-linkedin` et `signal-achat-linkedin` vers l'outil
+- [x] 21 tests unitaires (fidelity, rate-limit, routes API)
+- [x] Build Next.js : OK
+
+**Maillage pilier → filles :**
+- → /ressources/setting-linkedin-exemples (section "Exemples")
+- → /ressources/setting-linkedin-prix (section "Combien ça coûte")
+- → /ressources/setting-linkedin-ia (section "IA et méthode humaine")
+- → /outils/clone-style-linkedin (CTA outil)
+
+**Schema structured data (pilier) :** Article + FAQPage + BreadcrumbList + HowTo + speakable
+
+---
+
 ## Structure de contenu actuelle
 
 ### Piliers consolidés (priority 0.9)

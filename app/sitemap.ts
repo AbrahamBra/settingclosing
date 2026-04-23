@@ -50,9 +50,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setting-linkedin',
-      lastModified: new Date('2026-04-12'),
+      lastModified: new Date('2026-04-23'),
       changeFrequency: 'weekly',
       priority: 0.9,
+    },
+    {
+      url: 'https://www.setting.live/ressources/setting-linkedin-exemples',
+      lastModified: new Date('2026-04-23'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/setting-linkedin-prix',
+      lastModified: new Date('2026-04-23'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/setting-linkedin-ia',
+      lastModified: new Date('2026-04-23'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/outils/clone-style-linkedin',
+      lastModified: new Date('2026-04-23'),
+      changeFrequency: 'weekly',
+      priority: 0.8,
     },
     {
       url: 'https://www.setting.live/ressources/inbound-setting-linkedin',

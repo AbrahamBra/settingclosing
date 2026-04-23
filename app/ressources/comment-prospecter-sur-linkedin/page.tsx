@@ -502,6 +502,9 @@ export default function CommentProspecterLinkedInPage() {
                   <li><span className="text-red-400 font-semibold">Ce que l&apos;auto ne doit pas faire</span> : r&eacute;diger les messages ni d&eacute;cider d&apos;envoyer</li>
                 </ul>
               </div>
+              <p className="text-sm text-text-muted italic">
+                Pour g&eacute;n&eacute;rer un message dans ton style d&apos;&eacute;criture sans tomber dans le template : <a href="/outils/clone-style-linkedin" className="text-accent hover:underline">G&eacute;n&eacute;rateur de message LinkedIn dans ton style</a> (gratuit, 3 essais/jour).
+              </p>
             </section>
 
             {/* ─── 7. Comparatif ─── */}

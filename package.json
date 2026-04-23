@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.90.0",
     "@chenglou/pretext": "^0.0.3",
     "@studio-freight/lenis": "^1.0.42",
     "framer-motion": "^12.36.0",

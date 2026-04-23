@@ -63,7 +63,7 @@ const articleSchema = {
     },
   },
   datePublished: '2026-04-12',
-  dateModified: '2026-04-12',
+  dateModified: '2026-04-23',
   inLanguage: 'fr-FR',
   url: 'https://www.setting.live/ressources/setting-linkedin',
   mainEntityOfPage: {
@@ -73,7 +73,7 @@ const articleSchema = {
   image: 'https://www.setting.live/ressources/setting-linkedin/opengraph-image',
   speakable: {
     '@type': 'SpeakableSpecification',
-    cssSelector: ['h1', '[data-speakable]', '.faq-answer'],
+    cssSelector: ['h1', 'h2', '[data-speakable]', '.tldr', '.faq-answer'],
   },
   articleSection: 'Setting LinkedIn',
   wordCount: 4800,
@@ -184,6 +184,21 @@ const faqItems = [
     question: "Le setting LinkedIn est-il l\u00e9gal ?",
     answer:
       "Oui. Le setting LinkedIn est une d\u00e9marche de prospection B2B classique, encadr\u00e9e par le RGPD. L'int\u00e9r\u00eat l\u00e9gitime permet la prospection B2B sans consentement pr\u00e9alable, \u00e0 condition de respecter le droit d'opposition et de ne pas utiliser d'outils d'automatisation qui violent les CGU de LinkedIn.",
+  },
+  {
+    question: "Combien co\u00fbte concr\u00e8tement le setting LinkedIn en 2026 ?",
+    answer:
+      "Un programme externalis\u00e9 co\u00fbte 1 500 \u00e0 4 000 \u20ac/mois selon le volume (setter d\u00e9di\u00e9, outils, coaching). En interne, compter 45-70 k\u20ac/an charg\u00e9s pour un setter junior, plus 200-300 \u20ac/mois d'outils. Le d\u00e9tail des grilles de prix, ROI et comparatif setter interne vs freelance vs agence : voir le guide Setting LinkedIn prix.",
+  },
+  {
+    question: "Peut-on remplacer le setter par de l'IA ?",
+    answer:
+      "Non, mais on peut l'aider. L'IA d\u00e9tecte les signaux, enrichit les donn\u00e9es, propose des premiers jets. L'humain d\u00e9cide d'envoyer, adapte le ton et qualifie la conversation. Un message 100 % IA reste reconnaissable \u00e0 son template, donc filtr\u00e9 par le prospect. La bonne combinaison IA + setter double la productivit\u00e9 sans sacrifier le taux de r\u00e9ponse.",
+  },
+  {
+    question: "Internaliser ou externaliser son setting LinkedIn ?",
+    answer:
+      "Externaliser est plus rapide (1-2 semaines vs 3-6 mois pour recruter et former), co\u00fbte moins cher pour moins de 15 RDV/mois, et r\u00e9duit le risque d'\u00e9chec. Internaliser devient pertinent au-del\u00e0 de 20 RDV/mois r\u00e9currents ou si le setting est core business. La plupart des PME commencent externalis\u00e9 puis internalisent.",
   },
 ]
 
@@ -746,7 +761,11 @@ export default function SettingLinkedInPage() {
               <p>
                 Pour plus de scripts et d&apos;exemples :{' '}
                 <a href="/ressources/prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">15
-                exemples de messages de prospection LinkedIn</a>.
+                exemples de messages de prospection LinkedIn</a>. Pour 5 cas concrets
+                format&eacute;s par type de signal (like passif, commentaire, changement de poste,
+                visite de profil, inbound), voir{' '}
+                <a href="/ressources/setting-linkedin-exemples" className="text-accent hover:underline transition-colors">5
+                exemples de setting LinkedIn avec messages et r&eacute;sultats</a>.
               </p>
             </section>
 
@@ -820,6 +839,12 @@ export default function SettingLinkedInPage() {
                   co&ucirc;t du setting LinkedIn, c&apos;est le temps humain, pas les outils.
                 </p>
               </div>
+              <p className="text-sm text-text-muted italic mt-4">
+                Sur la place exacte de l&apos;IA dans la stack, ses limites et ce qu&apos;elle ne doit
+                jamais faire seule :{' '}
+                <a href="/ressources/setting-linkedin-ia" className="text-accent hover:underline transition-colors">Setting
+                LinkedIn et IA : combiner intelligence artificielle et humain</a>.
+              </p>
             </section>
 
             {/* ──────────────────────────────────────────────────── */}
@@ -1021,6 +1046,84 @@ export default function SettingLinkedInPage() {
                 <a href="/externaliser-prospection-linkedin" className="text-accent hover:underline transition-colors">externaliser
                 sa prospection LinkedIn</a>. Pour conna&icirc;tre nos tarifs :{' '}
                 <a href="/tarifs" className="text-accent hover:underline transition-colors">tarifs Setting</a>.
+                Pour le d&eacute;tail complet des grilles de prix (interne, freelance, agence), ROI et
+                benchmarks 2026 :{' '}
+                <a href="/ressources/setting-linkedin-prix" className="text-accent hover:underline transition-colors">Combien
+                co&ucirc;te le setting LinkedIn en 2026</a>.
+              </p>
+            </section>
+
+            {/* ──────────────────────────────────────────────────── */}
+            {/* Cas concret 2026 */}
+            {/* ──────────────────────────────────────────────────── */}
+            <section id="cas-concret" className="scroll-mt-24">
+              <h2 className="font-serif text-h2 text-text-primary mb-6">
+                Cas concret 2026 : de la d&eacute;tection au RDV sign&eacute;
+              </h2>
+
+              <div className="tldr bg-bg-secondary border border-accent/20 rounded-xl p-6 mb-6">
+                <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
+                  R&eacute;sum&eacute; du cas
+                </p>
+                <p className="font-sans text-text-primary text-sm leading-relaxed">
+                  PME SaaS RH, 80 salari&eacute;s. Cible : DRH d&apos;ETI industrielles (500-2 000 personnes).
+                  R&eacute;sultat en 5 semaines : 14 RDV qualifi&eacute;s, 3 opportunit&eacute;s en cycle de vente,
+                  1 contrat sign&eacute; &agrave; 42 k&euro; ARR. Co&ucirc;t du programme : 2 400 &euro;.
+                </p>
+              </div>
+
+              <h3 className="font-sans font-semibold text-text-primary text-lg mb-3">Le prospect</h3>
+              <p className="mb-4">
+                Claire, DRH d&apos;un groupe industriel familial de 1 200 salari&eacute;s dans les Hauts-de-France.
+                Prise de poste il y a 4 mois. Probl&eacute;matique publique : la pyramide des &acirc;ges et
+                la difficult&eacute; &agrave; recruter des profils techniques junior.
+              </p>
+
+              <h3 className="font-sans font-semibold text-text-primary text-lg mb-3">Le signal</h3>
+              <p className="mb-4">
+                Claire commente un post d&apos;un &eacute;diteur concurrent sur la marque employeur industrielle.
+                Son commentaire : &laquo;&nbsp;Int&eacute;ressant. Nous cherchons justement &agrave; structurer
+                notre approche pour attirer les jeunes techniciens&nbsp;&raquo;. Le setter d&eacute;tecte ce
+                signal outbound via Reactin dans l&apos;heure qui suit.
+              </p>
+
+              <h3 className="font-sans font-semibold text-text-primary text-lg mb-3">Le message</h3>
+              <div className="bg-bg-secondary border border-white/[0.06] rounded-xl p-5 mb-4">
+                <p className="font-sans text-sm text-text-secondary italic leading-relaxed">
+                  Bonjour Claire, j&apos;ai vu votre commentaire chez [concurrent] sur l&apos;attractivit&eacute;
+                  des techniciens. On travaille avec 3 ETI industrielles qui ont montr&eacute; +40 % de
+                  candidatures qualifi&eacute;es en 6 mois en inversant leur fa&ccedil;on de raconter le m&eacute;tier.
+                  Le d&eacute;clic, c&apos;est un chiffre qu&apos;ils ne publiaient pas. Vous auriez 15 min pour
+                  que je vous raconte lequel ?
+                </p>
+              </div>
+              <p className="mb-4 text-sm text-text-muted">
+                4 lignes. Ancrage sur le commentaire pr&eacute;cis. Une preuve chiffr&eacute;e. Une question
+                ferm&eacute;e qui facilite le oui. Pas de pitch, pas de lien Calendly dans le premier DM.
+              </p>
+
+              <h3 className="font-sans font-semibold text-text-primary text-lg mb-3">La conversation</h3>
+              <p className="mb-4">
+                R&eacute;ponse de Claire 4 heures plus tard : &laquo;&nbsp;Bonjour, oui je veux bien en
+                discuter&nbsp;&raquo;. Le setter pose 2 questions de qualification (volume de recrutements
+                annuels, outils en place). Claire r&eacute;pond : 60 recrutements/an, pas d&apos;ATS d&eacute;di&eacute;.
+                Le setter propose 3 cr&eacute;neaux. Claire prend mardi 10h.
+              </p>
+
+              <h3 className="font-sans font-semibold text-text-primary text-lg mb-3">Le RDV et la suite</h3>
+              <p className="mb-4">
+                Brief complet transmis au closer : contexte, signal, qualification, r&eacute;ponses pr&eacute;cises.
+                Le closer arrive en sachant exactement o&ugrave; appuyer. Discovery call de 35 min. Claire
+                confirme le besoin. Proposition envoy&eacute;e sous 48h. Sign&eacute;e 3 semaines plus tard pour
+                42 k&euro; ARR.
+              </p>
+
+              <p className="mb-4">
+                Sur les 14 RDV g&eacute;n&eacute;r&eacute;s ce mois-l&agrave;, 11 venaient de signaux outbound
+                (comme Claire), 3 de signaux inbound (prospects ayant r&eacute;agi aux posts du dirigeant).
+                Temps setter total : 22 heures. Ratio : 1 RDV toutes les 1h35 de travail. C&apos;est ce que
+                produit une m&eacute;thode signal-based vs 200 messages automatis&eacute;s qui auraient donn&eacute;
+                2-3 r&eacute;ponses, aucune qualifi&eacute;e.
               </p>
             </section>
 

@@ -410,6 +410,13 @@ export default function SignalAchatLinkedInPage() {
                 Pas vendre. Pas présenter l&apos;offre. Pas mentionner les prix.
                 Un seul objectif : créer un échange. La qualification vient après. Le pitch vient encore après.
               </p>
+              <p className="font-sans text-text-muted text-xs italic mt-3">
+                Pour rédiger ce premier message dans ton style (pas un template reconnaissable) :{' '}
+                <a href="/outils/clone-style-linkedin" className="text-accent hover:underline">
+                  Générateur de message LinkedIn dans ton style
+                </a>{' '}
+                (gratuit, clone à partir de 3 posts).
+              </p>
             </div>
           </section>
 
