@@ -72,8 +72,10 @@ Utilisateur
 
 - **Pas de Supabase** : aucun storage persistant n'est nécessaire pour le MVP. Les emails partent directement dans la boîte d'Abraham, qui copie-colle dans son CRM au rythme du volume. Si le volume explose on ajoutera une table.
 - **Pas de Voyage/pgvector/graphe** : on livre un « style transfer » one-shot via few-shot prompting. Même valeur perçue utilisateur, zéro dépendance sur l'infra AhmetA.
-- **In-memory rate limit** : suffisant pour le volume attendu (< 1000 générations/jour) ; les serverless Next.js sur Vercel peuvent perdre l'état entre deux cold starts, mais c'est acceptable pour un MVP. Upstash Redis à ajouter si abus détecté.
+- **In-memory rate limit** : suffisant pour le volume attendu (< 1000 générations/jour) ; les serverless Next.js sur Vercel peuvent perdre l'état entre deux cold starts, mais c'est acceptable pour un MVP. Upstash Redis à ajouter si abus détecté. **Runtime : Node.js (pas Edge)** — la Map in-memory nécessite une isolation process-level, pas compatible avec les Edge workers multi-régions.
 - **Claude Haiku 4.5** : rapide, peu cher, suffisant pour du style transfer sur 50-80 mots.
+
+**Règle rate limit explicite :** le compteur 3/24h/IP couvre toutes les générations, régénérations incluses. Le bouton « régénérer (2 max) » est une limite UX par session (empêcher le spam de clics), pas un budget séparé côté serveur.
 
 ### 3.3 Format de la réponse API `/api/clone-lite`
 
@@ -98,6 +100,14 @@ Utilisateur
   }
 }
 ```
+
+**Calcul du `fidelityScore` (déterministe, côté serveur après génération) :**
+
+- `avgWordLength` : moyenne arithmétique du nombre de caractères par mot sur le message généré (split sur `\s+`, filtrer empty)
+- `questionRatio` : nombre de phrases se terminant par `?` / nombre total de phrases (split sur `[.!?]`)
+- `ttr` (type-token ratio) : tokens uniques / tokens totaux après lowercasing et dépunctuation — indicateur simple de diversité lexicale
+
+Chaque métrique comparée à la même métrique calculée sur les posts source de l'utilisateur → UI affiche un delta en pourcentage (« 92% de fidélité stylistique » vs ton corpus). Volontairement approximatif, pas l'algo complet d'AhmetA.
 
 **Errors :**
 
@@ -292,7 +302,7 @@ RESEND_API_KEY=re_...           # déjà utilisé ailleurs
 
 ### Outil `/api/waitlist-clone`
 
-- Si Resend down : log l'email côté serveur + retourne 200 pour ne pas bloquer l'UX. Abraham récupère manuellement depuis les logs. Événement rare, pas de réessai automatique pour MVP.
+- Si Resend down : log l'email côté serveur (`console.error` avec tag `[WAITLIST_FALLBACK]` → visible dans Vercel Logs / dashboard Functions) + retourne 200 pour ne pas bloquer l'UX. Abraham récupère manuellement. Événement rare, pas de réessai automatique pour MVP.
 
 ### Contenu SEO
 
@@ -302,8 +312,8 @@ RESEND_API_KEY=re_...           # déjà utilisé ailleurs
 
 Tests unitaires minimalistes (le projet utilise Vitest d'après `vitest.config.ts`) :
 
-- `tests/clone-lite.test.ts` : validation input, format de sortie, rate limit (mock IP)
-- `tests/waitlist-clone.test.ts` : validation email, appel Resend mocké
+- `tests/clone-lite.test.ts` : validation input, format de sortie, rate limit (mock IP), **smoke test bout-en-bout avec client Anthropic mocké pour verrouiller le shape de la réponse**
+- `tests/waitlist-clone.test.ts` : validation email, appel Resend mocké, fallback log quand Resend down
 
 **Pas de test visuel / e2e** sur le MVP. Verification manuelle via preview Vercel avant merge.
 
