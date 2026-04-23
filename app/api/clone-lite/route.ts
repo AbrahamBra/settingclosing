@@ -19,8 +19,8 @@ function validate(data: Payload): { posts: string[]; targetContext: string } | s
   if (posts.some((p) => p.length < 50)) {
     return 'Chaque post doit faire au moins 50 caractères.'
   }
-  if (typeof data.targetContext !== 'string' || data.targetContext.trim().length === 0) {
-    return 'Contexte prospect requis.'
+  if (typeof data.targetContext !== 'string' || data.targetContext.trim().length < 20) {
+    return 'Contexte prospect : 20 caractères minimum.'
   }
   return { posts, targetContext: data.targetContext.trim() }
 }

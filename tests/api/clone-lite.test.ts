@@ -56,7 +56,7 @@ describe('/api/clone-lite', () => {
   it('returns 429 when rate limit exhausted', async () => {
     createMock.mockResolvedValue({ content: [{ type: 'text', text: 'ok ok ok ok ok' }] })
     const longPost = 'x'.repeat(60)
-    const body = { posts: [longPost, longPost, longPost], targetContext: 'contexte' }
+    const body = { posts: [longPost, longPost, longPost], targetContext: 'contexte prospect suffisamment long pour validation' }
     await POST(makeReq(body, '7.7.7.7'))
     await POST(makeReq(body, '7.7.7.7'))
     await POST(makeReq(body, '7.7.7.7'))
@@ -67,7 +67,7 @@ describe('/api/clone-lite', () => {
   it('returns 500 on Anthropic failure with generic message', async () => {
     createMock.mockRejectedValue(new Error('API down'))
     const longPost = 'x'.repeat(60)
-    const res = await POST(makeReq({ posts: [longPost, longPost, longPost], targetContext: 'contexte' }, '8.8.8.8'))
+    const res = await POST(makeReq({ posts: [longPost, longPost, longPost], targetContext: 'contexte prospect suffisamment long pour validation' }, '8.8.8.8'))
     expect(res.status).toBe(500)
     const json = await res.json()
     expect(json.error).toBeDefined()
