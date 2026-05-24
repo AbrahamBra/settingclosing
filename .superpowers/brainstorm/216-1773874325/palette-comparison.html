@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ChallengersLab — Palette Comparison</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #111;
+    color: #fff;
+    min-height: 100vh;
+  }
+
+  .header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .header p {
+    color: #999;
+    font-size: 0.9rem;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px 20px 0;
+    flex-wrap: wrap;
+  }
+  .tab {
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.03);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tab:hover { border-color: rgba(255,255,255,0.2); }
+  .tab.active { border-color: var(--tab-accent, #E5A630); background: rgba(255,255,255,0.06); }
+  .tab .swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .mockup-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  .mockup-frame {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.06);
+    display: none;
+    position: relative;
+  }
+  .mockup-frame.active { display: block; }
+
+  /* ===== HERO MOCKUP ===== */
+  .hero-mock {
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-mock .radial-glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    pointer-events: none;
+  }
+
+  .hero-mock .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-mock .eyebrow .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  .hero-mock h2 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-mock .subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    max-width: 540px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-mock .personas {
+    font-size: 1rem;
+    margin-bottom: 48px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-mock .personas .rotating {
+    font-weight: 700;
+  }
+
+  .hero-mock .cta-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 56px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-mock .btn-primary {
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: #000;
+  }
+  .hero-mock .btn-primary:hover {
+    transform: translateY(-2px);
+  }
+
+  .hero-mock .btn-secondary {
+    font-size: 0.85rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .hero-mock .stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    padding-top: 28px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-mock .stat-num {
+    font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+  .hero-mock .stat-label {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-top: 4px;
+  }
+
+  /* PALETTE SWATCH below mockup */
+  .palette-bar {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    background: rgba(0,0,0,0.3);
+    flex-wrap: wrap;
+  }
+  .palette-bar .color-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.75rem;
+    font-family: monospace;
+  }
+  .palette-bar .chip-swatch {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .palette-bar .chip-label {
+    color: #999;
+    font-size: 0.65rem;
+    display: block;
+  }
+
+  /* ===== GRAIN OVERLAY ===== */
+  .grain {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+    opacity: 0.015;
+  }
+
+  /* Vote button */
+  .vote-bar {
+    text-align: center;
+    padding: 30px;
+  }
+  .vote-btn {
+    padding: 14px 40px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .vote-btn:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
+  }
+
+  /* Pipeline preview section */
+  .pipeline-preview {
+    padding: 40px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .pipeline-preview h3 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .pipeline-steps {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pipeline-step {
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .pipeline-step .step-num {
+    font-family: monospace;
+    font-size: 0.65rem;
+    opacity: 0.5;
+  }
+  .step-arrow {
+    color: rgba(255,255,255,0.15);
+    font-size: 0.8rem;
+  }
+
+  /* Glassmorphism card preview */
+  .card-preview {
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .glass-card {
+    padding: 24px;
+    border-radius: 14px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+  }
+  .glass-card h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .glass-card p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ChallengersLab — Direction Couleur</h1>
+  <p>Compare les 3 palettes sur ton hero actuel. Clique sur un onglet pour switcher.</p>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-palette="amber" onclick="switchPalette('amber')" style="--tab-accent:#E5A630">
+    <span class="swatch" style="background:#E5A630"></span>
+    Amber Gold
+  </div>
+  <div class="tab" data-palette="chartreuse" onclick="switchPalette('chartreuse')" style="--tab-accent:#A8E000">
+    <span class="swatch" style="background:#A8E000"></span>
+    Electric Chartreuse
+  </div>
+  <div class="tab" data-palette="copper" onclick="switchPalette('copper')" style="--tab-accent:#C87533">
+    <span class="swatch" style="background:#C87533"></span>
+    Warm Copper
+  </div>
+</div>
+
+<div class="mockup-container">
+
+  <!-- ===== AMBER GOLD ===== -->
+  <div class="mockup-frame active" id="amber">
+    <div class="hero-mock" style="background: #0A0908;">
+      <div class="radial-glow" style="background: radial-gradient(ellipse at 50% 0%, rgba(229,166,48,0.12) 0%, transparent 60%);"></div>
+      <svg class="grain"><filter id="g1"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(#g1)"/></svg>
+
+      <div class="eyebrow" style="border: 1px solid rgba(229,166,48,0.25); background: rgba(229,166,48,0.08); color: #E5A630;">
+        <span class="dot" style="background: #E5A630;"></span>
+        Setting & Closing B2B
+      </div>
+
+      <h2 style="color: #F0ECE4;">Vous avez déjà l'offre.<br>Nous avons la machine.</h2>
+
+      <p class="subtitle" style="color: #A8A090;">Premiers rendez-vous qualifiés dès la première semaine. Pipeline complet : setting délégué, closing coaché.</p>
+
+      <div class="personas" style="color: #6B6560;">
+        Pour les <span class="rotating" style="color: #E5A630;">fondateurs</span> qui veulent plus de clients.
+      </div>
+
+      <div class="cta-row">
+        <button class="btn-primary" style="background: linear-gradient(135deg, #E5A630, #CC8E1A); box-shadow: 0 0 20px rgba(229,166,48,0.4), 0 0 40px rgba(229,166,48,0.15);">Réserver un appel gratuit</button>
+        <button class="btn-secondary" style="color: #6B6560;">Découvrir l'offre ↓</button>
+      </div>
+
+      <div class="stats-row" style="border-top: 1px solid rgba(240,236,228,0.06);">
+        <div>
+          <div class="stat-num" style="color: #E5A630;">5+</div>
+          <div class="stat-label" style="color: #6B6560;">RDV/mois garantis</div>
+        </div>
+        <div>
+          <div class="stat-num" style="color: #E5A630;">500€</div>
+          <div class="stat-label" style="color: #6B6560;">/mois</div>
+        </div>
+        <div>
+          <div class="stat-num" style="color: #E5A630;">14j</div>
+          <div class="stat-label" style="color: #6B6560;">premiers résultats</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pipeline preview -->
+    <div class="pipeline-preview" style="background: #0A0908;">
+      <h3 style="color: #6B6560;">Pipeline Preview</h3>
+      <div class="pipeline-steps">
+        <div class="pipeline-step" style="background: rgba(229,166,48,0.06); color: #E5A630;">
+          <span class="step-num">01</span> Stratégie
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(229,166,48,0.06); color: #E5A630;">
+          <span class="step-num">02</span> Signaux
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(168,160,144,0.06); color: #A8A090;">
+          <span class="step-num">05</span> Scoring
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(52,211,153,0.06); color: #34D399;">
+          <span class="step-num">09</span> RDV Qualifié
+        </div>
+      </div>
+    </div>
+
+    <!-- Card preview -->
+    <div class="card-preview" style="background: #0A0908;">
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #E5A630;">IA + Méthode</h4>
+        <p style="color: #A8A090;">Claude analyse le profil, la méthode impose les règles.</p>
+      </div>
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #34D399;">Humain</h4>
+        <p style="color: #A8A090;">Test du téléphone. Aucun message ne part sans validation.</p>
+      </div>
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #A78BFA;">Closing</h4>
+        <p style="color: #A8A090;">Le setter convertit la conversation en rendez-vous.</p>
+      </div>
+    </div>
+
+    <div class="palette-bar" style="background: rgba(10,9,8,0.8);">
+      <div class="color-chip"><span class="chip-swatch" style="background:#0A0908"></span><div><span class="chip-label">Background</span>#0A0908</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#141210"></span><div><span class="chip-label">Surface</span>#141210</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#E5A630"></span><div><span class="chip-label">Accent</span>#E5A630</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#CC8E1A"></span><div><span class="chip-label">Hover</span>#CC8E1A</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#F0ECE4"></span><div><span class="chip-label">Text</span>#F0ECE4</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#A8A090"></span><div><span class="chip-label">Muted</span>#A8A090</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#34D399"></span><div><span class="chip-label">Closing</span>#34D399</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#A78BFA"></span><div><span class="chip-label">Premium</span>#A78BFA</div></div>
+    </div>
+  </div>
+
+  <!-- ===== ELECTRIC CHARTREUSE ===== -->
+  <div class="mockup-frame" id="chartreuse">
+    <div class="hero-mock" style="background: #0A0908;">
+      <div class="radial-glow" style="background: radial-gradient(ellipse at 50% 0%, rgba(168,224,0,0.10) 0%, transparent 60%);"></div>
+      <svg class="grain"><filter id="g2"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(#g2)"/></svg>
+
+      <div class="eyebrow" style="border: 1px solid rgba(168,224,0,0.25); background: rgba(168,224,0,0.08); color: #A8E000;">
+        <span class="dot" style="background: #A8E000;"></span>
+        Setting & Closing B2B
+      </div>
+
+      <h2 style="color: #F0ECE4;">Vous avez déjà l'offre.<br>Nous avons la machine.</h2>
+
+      <p class="subtitle" style="color: #A8A090;">Premiers rendez-vous qualifiés dès la première semaine. Pipeline complet : setting délégué, closing coaché.</p>
+
+      <div class="personas" style="color: #6B6560;">
+        Pour les <span class="rotating" style="color: #A8E000;">fondateurs</span> qui veulent plus de clients.
+      </div>
+
+      <div class="cta-row">
+        <button class="btn-primary" style="background: linear-gradient(135deg, #A8E000, #8BC000); color: #0A0908; box-shadow: 0 0 20px rgba(168,224,0,0.35), 0 0 40px rgba(168,224,0,0.12);">Réserver un appel gratuit</button>
+        <button class="btn-secondary" style="color: #6B6560;">Découvrir l'offre ↓</button>
+      </div>
+
+      <div class="stats-row" style="border-top: 1px solid rgba(240,236,228,0.06);">
+        <div>
+          <div class="stat-num" style="color: #A8E000;">5+</div>
+          <div class="stat-label" style="color: #6B6560;">RDV/mois garantis</div>
+        </div>
+        <div>
+          <div class="stat-num" style="color: #A8E000;">500€</div>
+          <div class="stat-label" style="color: #6B6560;">/mois</div>
+        </div>
+        <div>
+          <div class="stat-num" style="color: #A8E000;">14j</div>
+          <div class="stat-label" style="color: #6B6560;">premiers résultats</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pipeline preview -->
+    <div class="pipeline-preview" style="background: #0A0908;">
+      <h3 style="color: #6B6560;">Pipeline Preview</h3>
+      <div class="pipeline-steps">
+        <div class="pipeline-step" style="background: rgba(168,224,0,0.06); color: #A8E000;">
+          <span class="step-num">01</span> Stratégie
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(168,224,0,0.06); color: #A8E000;">
+          <span class="step-num">02</span> Signaux
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(168,160,144,0.06); color: #A8A090;">
+          <span class="step-num">05</span> Scoring
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(52,211,153,0.06); color: #34D399;">
+          <span class="step-num">09</span> RDV Qualifié
+        </div>
+      </div>
+    </div>
+
+    <!-- Card preview -->
+    <div class="card-preview" style="background: #0A0908;">
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #A8E000;">IA + Méthode</h4>
+        <p style="color: #A8A090;">Claude analyse le profil, la méthode impose les règles.</p>
+      </div>
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #34D399;">Humain</h4>
+        <p style="color: #A8A090;">Test du téléphone. Aucun message ne part sans validation.</p>
+      </div>
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #C084FC;">Closing</h4>
+        <p style="color: #A8A090;">Le setter convertit la conversation en rendez-vous.</p>
+      </div>
+    </div>
+
+    <div class="palette-bar" style="background: rgba(10,9,8,0.8);">
+      <div class="color-chip"><span class="chip-swatch" style="background:#0A0908"></span><div><span class="chip-label">Background</span>#0A0908</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#141210"></span><div><span class="chip-label">Surface</span>#141210</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#A8E000"></span><div><span class="chip-label">Accent</span>#A8E000</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#8BC000"></span><div><span class="chip-label">Hover</span>#8BC000</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#F0ECE4"></span><div><span class="chip-label">Text</span>#F0ECE4</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#A8A090"></span><div><span class="chip-label">Muted</span>#A8A090</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#34D399"></span><div><span class="chip-label">Closing</span>#34D399</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#C084FC"></span><div><span class="chip-label">Premium</span>#C084FC</div></div>
+    </div>
+  </div>
+
+  <!-- ===== WARM COPPER ===== -->
+  <div class="mockup-frame" id="copper">
+    <div class="hero-mock" style="background: #0A0908;">
+      <div class="radial-glow" style="background: radial-gradient(ellipse at 50% 0%, rgba(200,117,51,0.12) 0%, transparent 60%);"></div>
+      <svg class="grain"><filter id="g3"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(#g3)"/></svg>
+
+      <div class="eyebrow" style="border: 1px solid rgba(200,117,51,0.25); background: rgba(200,117,51,0.08); color: #C87533;">
+        <span class="dot" style="background: #C87533;"></span>
+        Setting & Closing B2B
+      </div>
+
+      <h2 style="color: #F0ECE4;">Vous avez déjà l'offre.<br>Nous avons la machine.</h2>
+
+      <p class="subtitle" style="color: #A8A090;">Premiers rendez-vous qualifiés dès la première semaine. Pipeline complet : setting délégué, closing coaché.</p>
+
+      <div class="personas" style="color: #6B6560;">
+        Pour les <span class="rotating" style="color: #D4956A;">fondateurs</span> qui veulent plus de clients.
+      </div>
+
+      <div class="cta-row">
+        <button class="btn-primary" style="background: linear-gradient(135deg, #C87533, #A85E28); color: #F0ECE4; box-shadow: 0 0 20px rgba(200,117,51,0.4), 0 0 40px rgba(200,117,51,0.15);">Réserver un appel gratuit</button>
+        <button class="btn-secondary" style="color: #6B6560;">Découvrir l'offre ↓</button>
+      </div>
+
+      <div class="stats-row" style="border-top: 1px solid rgba(240,236,228,0.06);">
+        <div>
+          <div class="stat-num" style="color: #D4956A;">5+</div>
+          <div class="stat-label" style="color: #6B6560;">RDV/mois garantis</div>
+        </div>
+        <div>
+          <div class="stat-num" style="color: #D4956A;">500€</div>
+          <div class="stat-label" style="color: #6B6560;">/mois</div>
+        </div>
+        <div>
+          <div class="stat-num" style="color: #D4956A;">14j</div>
+          <div class="stat-label" style="color: #6B6560;">premiers résultats</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pipeline preview -->
+    <div class="pipeline-preview" style="background: #0A0908;">
+      <h3 style="color: #6B6560;">Pipeline Preview</h3>
+      <div class="pipeline-steps">
+        <div class="pipeline-step" style="background: rgba(200,117,51,0.06); color: #C87533;">
+          <span class="step-num">01</span> Stratégie
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(200,117,51,0.06); color: #C87533;">
+          <span class="step-num">02</span> Signaux
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(168,160,144,0.06); color: #A8A090;">
+          <span class="step-num">05</span> Scoring
+        </div>
+        <span class="step-arrow">→</span>
+        <div class="pipeline-step" style="background: rgba(52,211,153,0.06); color: #34D399;">
+          <span class="step-num">09</span> RDV Qualifié
+        </div>
+      </div>
+    </div>
+
+    <!-- Card preview -->
+    <div class="card-preview" style="background: #0A0908;">
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #D4956A;">IA + Méthode</h4>
+        <p style="color: #A8A090;">Claude analyse le profil, la méthode impose les règles.</p>
+      </div>
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #34D399;">Humain</h4>
+        <p style="color: #A8A090;">Test du téléphone. Aucun message ne part sans validation.</p>
+      </div>
+      <div class="glass-card" style="background: linear-gradient(135deg, rgba(240,236,228,0.03), rgba(240,236,228,0.01)); border: 1px solid rgba(240,236,228,0.06);">
+        <h4 style="color: #A78BFA;">Closing</h4>
+        <p style="color: #A8A090;">Le setter convertit la conversation en rendez-vous.</p>
+      </div>
+    </div>
+
+    <div class="palette-bar" style="background: rgba(10,9,8,0.8);">
+      <div class="color-chip"><span class="chip-swatch" style="background:#0A0908"></span><div><span class="chip-label">Background</span>#0A0908</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#141210"></span><div><span class="chip-label">Surface</span>#141210</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#C87533"></span><div><span class="chip-label">Accent</span>#C87533</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#A85E28"></span><div><span class="chip-label">Hover</span>#A85E28</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#F0ECE4"></span><div><span class="chip-label">Text</span>#F0ECE4</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#A8A090"></span><div><span class="chip-label">Muted</span>#A8A090</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#34D399"></span><div><span class="chip-label">Closing</span>#34D399</div></div>
+      <div class="color-chip"><span class="chip-swatch" style="background:#A78BFA"></span><div><span class="chip-label">Premium</span>#A78BFA</div></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function switchPalette(id) {
+  document.querySelectorAll('.mockup-frame').forEach(f => f.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelector(`[data-palette="${id}"]`).classList.add('active');
+}
+</script>
+
+</body>
+</html>

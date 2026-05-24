@@ -1,0 +1,285 @@
+<h2>Bloc Méthode — Curseurs qui bougent</h2>
+<p class="subtitle">Prévisualisation du concept : sliders + progression mensuelle + pédagogie. Juge le poids et le rythme.</p>
+
+<div class="cards">
+
+  <!-- VERSION A: Compact — tabs mois -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)" style="max-width:100%;">
+    <div class="card-body">
+      <h3>A. Compact — Onglets par mois</h3>
+      <p style="margin-bottom:16px;color:#999;font-size:13px;">Un seul jeu de curseurs. On switch entre les mois. Léger, rapide à scanner.</p>
+
+      <div style="background:#0A0908;border-radius:16px;padding:32px;border:1px solid rgba(255,255,255,0.06);">
+        <!-- Eyebrow -->
+        <div style="font-family:monospace;font-size:11px;color:#FBBF24;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">Notre méthode</div>
+        <div style="font-size:22px;font-weight:700;color:#F0ECE4;margin-bottom:6px;">On sait où placer le curseur.</div>
+        <div style="font-size:14px;color:#888;margin-bottom:24px;">Et il bouge — parce qu'on encode votre expertise en skills réutilisables.</div>
+
+        <!-- Month tabs -->
+        <div style="display:flex;gap:4px;margin-bottom:20px;">
+          <div style="padding:6px 16px;border-radius:999px;background:rgba(251,191,36,0.15);color:#FBBF24;font-size:12px;font-weight:600;">Mois 1</div>
+          <div style="padding:6px 16px;border-radius:999px;background:rgba(255,255,255,0.04);color:#666;font-size:12px;">Mois 2</div>
+          <div style="padding:6px 16px;border-radius:999px;background:rgba(255,255,255,0.04);color:#666;font-size:12px;">Mois 3+</div>
+        </div>
+
+        <!-- Pedagogy note -->
+        <div style="background:rgba(251,191,36,0.05);border-left:2px solid #FBBF24;padding:10px 14px;border-radius:0 8px 8px 0;margin-bottom:20px;font-size:13px;color:#ccc;">
+          <strong style="color:#FBBF24;">Calibrage.</strong> On apprend votre marché, votre ton, vos clients. L'IA observe, la méthode structure, l'humain décide tout.
+        </div>
+
+        <!-- Sliders for Month 1 -->
+        <div style="display:flex;flex-direction:column;gap:14px;">
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="color:#ccc;font-size:13px;">Détecter un signal d'achat</span>
+              <span style="font-size:11px;color:#A78BFA;font-family:monospace;">IA ●●●○</span>
+            </div>
+            <div style="height:5px;background:#1a1a1a;border-radius:3px;overflow:hidden;">
+              <div style="width:75%;height:100%;background:linear-gradient(to right,#A78BFA,#A78BFA);border-radius:3px;"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="color:#ccc;font-size:13px;">Qualifier un prospect</span>
+              <span style="font-size:11px;color:#34D399;font-family:monospace;">Humain ●●●○</span>
+            </div>
+            <div style="height:5px;background:#1a1a1a;border-radius:3px;overflow:hidden;">
+              <div style="width:30%;height:100%;background:linear-gradient(to right,#A78BFA,#34D399);border-radius:3px;"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="color:#ccc;font-size:13px;">Rédiger le message</span>
+              <span style="font-size:11px;color:#34D399;font-family:monospace;">Humain ●●●●</span>
+            </div>
+            <div style="height:5px;background:#1a1a1a;border-radius:3px;overflow:hidden;">
+              <div style="width:15%;height:100%;background:#34D399;border-radius:3px;"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+              <span style="color:#ccc;font-size:13px;">Closer le deal</span>
+              <span style="font-size:11px;color:#34D399;font-family:monospace;">Humain ●●●●</span>
+            </div>
+            <div style="height:5px;background:#1a1a1a;border-radius:3px;overflow:hidden;">
+              <div style="width:5%;height:100%;background:#34D399;border-radius:3px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERSION B: Timeline — les 3 mois côte à côte -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)" style="max-width:100%;">
+    <div class="card-body">
+      <h3>B. Timeline — Les 3 mois visibles d'un coup</h3>
+      <p style="margin-bottom:16px;color:#999;font-size:13px;">On voit la progression en un scan. Plus lourd, mais l'effet "curseur qui bouge" est immédiat.</p>
+
+      <div style="background:#0A0908;border-radius:16px;padding:32px;border:1px solid rgba(255,255,255,0.06);">
+        <!-- Eyebrow -->
+        <div style="font-family:monospace;font-size:11px;color:#FBBF24;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">Notre méthode</div>
+        <div style="font-size:22px;font-weight:700;color:#F0ECE4;margin-bottom:6px;">On sait où placer le curseur.</div>
+        <div style="font-size:14px;color:#888;margin-bottom:28px;">Et il bouge — parce qu'on encode votre expertise en skills réutilisables.</div>
+
+        <!-- 3 columns -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+
+          <!-- Month 1 -->
+          <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;">
+            <div style="font-size:13px;font-weight:700;color:#FBBF24;margin-bottom:4px;">Mois 1</div>
+            <div style="font-size:11px;color:#888;margin-bottom:14px;">Calibrage</div>
+            <div style="font-size:12px;color:#aaa;margin-bottom:14px;line-height:1.5;">On apprend votre marché et votre ton. L'humain décide tout.</div>
+
+            <!-- Mini sliders -->
+            <div style="display:flex;flex-direction:column;gap:10px;font-size:11px;">
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Détection</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:75%;height:100%;background:#A78BFA;border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Qualification</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:30%;height:100%;background:linear-gradient(to right,#FBBF24,#34D399);border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Rédaction</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:15%;height:100%;background:#34D399;border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Closing</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:5%;height:100%;background:#34D399;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Month 2 -->
+          <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:16px;">
+            <div style="font-size:13px;font-weight:700;color:#FBBF24;margin-bottom:4px;">Mois 2</div>
+            <div style="font-size:11px;color:#888;margin-bottom:14px;">Accélération</div>
+            <div style="font-size:12px;color:#aaa;margin-bottom:14px;line-height:1.5;">Vos premiers skills sont encodés. La qualification s'automatise.</div>
+
+            <div style="display:flex;flex-direction:column;gap:10px;font-size:11px;">
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Détection</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:90%;height:100%;background:#A78BFA;border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Qualification</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:60%;height:100%;background:linear-gradient(to right,#A78BFA,#FBBF24);border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Rédaction</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:40%;height:100%;background:linear-gradient(to right,#FBBF24,#34D399);border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Closing</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:8%;height:100%;background:#34D399;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Month 3+ -->
+          <div style="background:rgba(255,255,255,0.02);border:1px solid rgba(52,211,153,0.12);border-radius:12px;padding:16px;">
+            <div style="font-size:13px;font-weight:700;color:#34D399;margin-bottom:4px;">Mois 3+</div>
+            <div style="font-size:11px;color:#888;margin-bottom:14px;">Autonomie</div>
+            <div style="font-size:12px;color:#aaa;margin-bottom:14px;line-height:1.5;">Votre équipe maîtrise les skills. L'humain ne gère que le closing.</div>
+
+            <div style="display:flex;flex-direction:column;gap:10px;font-size:11px;">
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Détection</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:95%;height:100%;background:#A78BFA;border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Qualification</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:85%;height:100%;background:linear-gradient(to right,#A78BFA,#FBBF24);border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Rédaction</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:60%;height:100%;background:linear-gradient(to right,#FBBF24,#34D399);border-radius:2px;"></div>
+                </div>
+              </div>
+              <div>
+                <div style="color:#999;margin-bottom:3px;">Closing</div>
+                <div style="height:4px;background:#1a1a1a;border-radius:2px;overflow:hidden;">
+                  <div style="width:10%;height:100%;background:#34D399;border-radius:2px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill encoding callout -->
+        <div style="margin-top:20px;text-align:center;padding:12px;background:rgba(251,191,36,0.04);border:1px solid rgba(251,191,36,0.1);border-radius:8px;">
+          <span style="font-size:12px;color:#ccc;">↻ Chaque ajustement est encodé en <strong style="color:#FBBF24;">skill</strong> — votre équipe monte en autonomie, pas en dépendance.</span>
+        </div>
+
+        <!-- CTA -->
+        <div style="margin-top:20px;text-align:center;">
+          <span style="font-size:13px;color:#C87533;cursor:pointer;">Voir les 9 étapes en détail →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERSION C: Hybride — un slider animé + notes -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)" style="max-width:100%;">
+    <div class="card-body">
+      <h3>C. Hybride — Un seul slider par ligne, avec marqueurs temporels</h3>
+      <p style="margin-bottom:16px;color:#999;font-size:13px;">Chaque slider montre la position actuelle ET la direction. Compact mais expressif.</p>
+
+      <div style="background:#0A0908;border-radius:16px;padding:32px;border:1px solid rgba(255,255,255,0.06);">
+        <div style="font-family:monospace;font-size:11px;color:#FBBF24;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;">Notre méthode</div>
+        <div style="font-size:22px;font-weight:700;color:#F0ECE4;margin-bottom:6px;">On sait où placer le curseur.</div>
+        <div style="font-size:14px;color:#888;margin-bottom:28px;">Et il bouge — parce qu'on encode votre expertise en skills réutilisables.</div>
+
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <!-- Slider 1: Détection -->
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;">
+              <span style="color:#F0ECE4;font-size:14px;font-weight:600;">Détecter les signaux</span>
+              <span style="font-size:11px;color:#A78BFA;font-family:monospace;">IA dès le jour 1</span>
+            </div>
+            <div style="height:6px;background:#1a1a1a;border-radius:3px;position:relative;">
+              <div style="width:90%;height:100%;background:#A78BFA;border-radius:3px;opacity:0.3;"></div>
+              <div style="position:absolute;left:72%;top:-4px;width:14px;height:14px;background:#A78BFA;border-radius:50%;border:2px solid #0A0908;opacity:0.4;"></div>
+              <div style="position:absolute;left:88%;top:-4px;width:14px;height:14px;background:#A78BFA;border-radius:50%;border:2px solid #0A0908;"></div>
+            </div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">Mois 1 → Mois 3 : l'IA couvre de plus en plus de sources</div>
+          </div>
+
+          <!-- Slider 2: Qualification -->
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;">
+              <span style="color:#F0ECE4;font-size:14px;font-weight:600;">Qualifier les prospects</span>
+              <span style="font-size:11px;color:#FBBF24;font-family:monospace;">Humain → Méthode</span>
+            </div>
+            <div style="height:6px;background:#1a1a1a;border-radius:3px;position:relative;">
+              <div style="width:75%;height:100%;background:linear-gradient(to right,#A78BFA,#FBBF24);border-radius:3px;opacity:0.3;"></div>
+              <div style="position:absolute;left:28%;top:-4px;width:14px;height:14px;background:#34D399;border-radius:50%;border:2px solid #0A0908;opacity:0.4;"></div>
+              <div style="position:absolute;left:72%;top:-4px;width:14px;height:14px;background:#FBBF24;border-radius:50%;border:2px solid #0A0908;"></div>
+            </div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">Vos critères de qualification sont encodés en skills → le scoring s'automatise</div>
+          </div>
+
+          <!-- Slider 3: Rédaction -->
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;">
+              <span style="color:#F0ECE4;font-size:14px;font-weight:600;">Rédiger les messages</span>
+              <span style="font-size:11px;color:#34D399;font-family:monospace;">Humain → IA+Humain</span>
+            </div>
+            <div style="height:6px;background:#1a1a1a;border-radius:3px;position:relative;">
+              <div style="width:55%;height:100%;background:linear-gradient(to right,#FBBF24,#34D399);border-radius:3px;opacity:0.3;"></div>
+              <div style="position:absolute;left:12%;top:-4px;width:14px;height:14px;background:#34D399;border-radius:50%;border:2px solid #0A0908;opacity:0.4;"></div>
+              <div style="position:absolute;left:52%;top:-4px;width:14px;height:14px;background:#FBBF24;border-radius:50%;border:2px solid #0A0908;"></div>
+            </div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">Votre ton est capturé → l'IA rédige des brouillons de plus en plus justes</div>
+          </div>
+
+          <!-- Slider 4: Closing -->
+          <div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;">
+              <span style="color:#F0ECE4;font-size:14px;font-weight:600;">Closer le deal</span>
+              <span style="font-size:11px;color:#34D399;font-family:monospace;">Toujours humain</span>
+            </div>
+            <div style="height:6px;background:#1a1a1a;border-radius:3px;position:relative;">
+              <div style="width:10%;height:100%;background:#34D399;border-radius:3px;"></div>
+              <div style="position:absolute;left:5%;top:-4px;width:14px;height:14px;background:#34D399;border-radius:50%;border:2px solid #0A0908;"></div>
+            </div>
+            <div style="font-size:11px;color:#666;margin-top:4px;">Pas d'IA ici. La relation et le jugement humain ne se délèguent pas.</div>
+          </div>
+        </div>
+
+        <!-- Skill encoding -->
+        <div style="margin-top:24px;padding:12px 16px;background:rgba(251,191,36,0.04);border:1px solid rgba(251,191,36,0.1);border-radius:8px;">
+          <span style="font-size:12px;color:#ccc;">↻ Chaque ajustement est encodé en <strong style="color:#FBBF24;">skill</strong> — votre équipe monte en autonomie, pas en dépendance.</span>
+        </div>
+
+        <div style="margin-top:16px;text-align:center;">
+          <span style="font-size:13px;color:#C87533;cursor:pointer;">Voir les 9 étapes en détail →</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
