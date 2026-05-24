@@ -1,0 +1,408 @@
+import type { Metadata } from 'next'
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
+import { ScrollReveal } from '@/components/ui/ScrollReveal'
+import { ButtonGlow } from '@/components/ui/ButtonGlow'
+
+// ─── Metadata ─────────────────────────────────────────────────────────────────
+
+export const metadata: Metadata = {
+  title: 'À propos de Setting | Prospection LinkedIn B2B Lyon',
+  description:
+    'Équipe de 3 spécialistes en prospection LinkedIn B2B basée à Lyon. 400+ RDV qualifiés délivrés, méthode signal-based, IA + validation humaine. Fondé par Abraham Brakha.',
+  alternates: {
+    canonical: 'https://www.setting.live/a-propos',
+    languages: {
+      'fr': 'https://www.setting.live/a-propos',
+      'x-default': 'https://www.setting.live/a-propos',
+    },
+  },
+  openGraph: {
+    title: 'À propos de Setting | Setting LinkedIn B2B',
+    description: 'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
+    locale: 'fr_FR',
+    type: 'website',
+    images: [{ url: 'https://www.setting.live/api/og?title=%C3%80%20propos%20de%20Setting&tag=%C3%80%20propos', width: 1200, height: 630, alt: 'À propos de Setting — Setting' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'À propos de Setting | Setting LinkedIn B2B',
+    description: 'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B. Découvrez l\'équipe et notre approche.',
+    images: ['https://www.setting.live/api/og?title=%C3%80%20propos%20de%20Setting&tag=%C3%80%20propos'],
+  },
+}
+
+// ─── Structured Data ──────────────────────────────────────────────────────────
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+    { '@type': 'ListItem', position: 2, name: '\u00c0 propos', item: 'https://www.setting.live/a-propos' },
+  ],
+}
+
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'À propos de Setting',
+  description:
+    'Setting externalise la prospection LinkedIn pour fondateurs, freelances et solopreneurs B2B.',
+  url: 'https://www.setting.live/a-propos',
+  inLanguage: 'fr-FR',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Setting',
+    url: 'https://www.setting.live',
+  },
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': 'https://www.setting.live/#business',
+  name: 'Setting',
+  url: 'https://www.setting.live',
+  description:
+    'Service de prospection LinkedIn externalisée pour fondateurs, freelances et solopreneurs B2B.',
+  sameAs: [
+    'https://www.linkedin.com/company/challengerslab',
+    'https://www.linkedin.com/in/abraham-brakha',
+    'https://www.societe.com/societe/brakha-abraham-902889385.html',
+    'https://www.pappers.fr/entreprise/brakha-abraham-902889385',
+    'https://annuaire-entreprises.data.gouv.fr/entreprise/brakha-abraham-902889385',
+  ],
+  taxID: 'FR09902889385',
+  vatID: 'FR09902889385',
+  employee: [
+    {
+      '@type': 'Person',
+      '@id': 'https://www.setting.live/a-propos#brahim',
+      name: 'Brahim Brakha',
+      givenName: 'Brahim',
+      familyName: 'Brakha',
+      jobTitle: 'Setter LinkedIn B2B',
+      description:
+        'Envoie les messages, qualifie les prospects et décroche les RDV. 400+ RDV qualifiés livrés, 3 ans de spécialisation en outreach LinkedIn B2B.',
+      knowsAbout: ['prospection LinkedIn', 'setting commercial B2B', 'qualification de leads'],
+      worksFor: { '@type': 'Organization', '@id': 'https://www.setting.live/#business' },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.setting.live/a-propos#abraham',
+      name: 'Abraham Brakha',
+      givenName: 'Abraham',
+      familyName: 'Brakha',
+      jobTitle: 'Fondateur & Automatisation IA',
+      url: 'https://www.setting.live/a-propos',
+      sameAs: [
+        'https://www.linkedin.com/in/abraham-brakha',
+      ],
+      description:
+        'Développeur spécialisé en automatisation et IA appliquée au sales. Créateur du système de détection de signaux d\'achat LinkedIn.',
+      knowsAbout: ['automatisation commerciale', 'IA appliquée au sales', 'détection de signaux d\'achat LinkedIn'],
+      worksFor: { '@type': 'Organization', '@id': 'https://www.setting.live/#business' },
+    },
+    {
+      '@type': 'Person',
+      '@id': 'https://www.setting.live/a-propos#abdelhay',
+      name: 'Abdelhay Brakha',
+      givenName: 'Abdelhay',
+      familyName: 'Brakha',
+      jobTitle: 'Stratégie commerciale & Closing B2B',
+      description:
+        'Expérience en closing B2B et copywriting commercial. Conçoit les séquences de messages et affine les scripts. Approche Challenger Sale. Taux de réponse moyen : 20-35%.',
+      knowsAbout: ['closing B2B', 'Challenger Sale', 'copywriting commercial', 'stratégie de conversion'],
+      worksFor: { '@type': 'Organization', '@id': 'https://www.setting.live/#business' },
+    },
+  ],
+}
+
+// ─── Team data ────────────────────────────────────────────────────────────────
+
+const members = [
+  {
+    name: 'Brahim',
+    role: 'Setting',
+    desc: 'Il envoie les messages, qualifie les prospects et vous décroche des RDV. 400+ RDV qualifiés livrés.',
+    bio: 'Spécialisé en outreach LinkedIn B2B depuis 3 ans. Il a géré des campagnes pour des consultants IT, agences marketing, coaches et SaaS. Il sait lire une conversation et détecter quand un prospect est prêt à avancer.',
+  },
+  {
+    name: 'Abraham',
+    role: 'IA & Automatisation',
+    desc: 'Il construit les outils de ciblage IA et les automatisations qui réduisent les coûts de 60\u00a0% vs une agence classique.',
+    bio: 'Développeur spécialisé en automatisation et IA appliquée au sales. Il a construit le système de détection de signaux d\u2019achat qui permet de cibler les décideurs au bon moment, et les workflows qui font tourner le pipeline sans intervention manuelle.',
+  },
+  {
+    name: 'Abdelhay',
+    role: 'Stratégie commerciale',
+    desc: 'Il définit l\u2019angle commercial, les scripts et la stratégie de conversion. Taux de réponse moyen : 20-35\u00a0%.',
+    bio: 'Expérience en closing B2B et copywriting commercial. Il conçoit les séquences de messages qui déclenchent des réponses, et affine les scripts chaque semaine en fonction des données terrain. Approche Challenger Sale.',
+  },
+]
+
+// ─── Approach data ────────────────────────────────────────────────────────────
+
+const approachPoints = [
+  {
+    eyebrow: 'IA pour la détection',
+    title: 'On repère les bons signaux, pas les bons mots-clés',
+    desc: 'L\u2019IA analyse les comportements LinkedIn pour identifier les prospects qui sont actuellement en recherche active. On ne cherche pas à automatiser les messages. On cherche à ne jamais prospecter les mauvaises personnes.',
+  },
+  {
+    eyebrow: 'Méthode pour le cadrage',
+    title: 'Chaque étape suit des règles précises',
+    desc: 'Le pipeline a des critères clairs à chaque étape : qui on contacte, quand on relance, quand on arrête. Ces règles s\u2019affinent chaque semaine. Rien n\u2019est laissé à l\u2019appréciation du moment.',
+  },
+  {
+    eyebrow: 'Humain pour la validation',
+    title: 'Aucun message ne part sans relecture',
+    desc: 'Avant chaque envoi, un humain vérifie le message, le contexte et le profil. C\u2019est ce qui nous empêche d\u2019envoyer des âneries automatisées au nom de vos clients.',
+  },
+]
+
+// ─── Page ─────────────────────────────────────────────────────────────────────
+
+export default function AProposPage() {
+  const calendlyUrl = process.env.NEXT_PUBLIC_CALENDLY_URL ?? 'https://calendly.com/a-brakha-challengerslab/echange-decouverte-challengerslab'
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <Navbar />
+      <main className="pt-20">
+
+        {/* ── Breadcrumb ───────────────────────────────────────────────────── */}
+        <nav
+          aria-label="Fil d'Ariane"
+          className="bg-bg-primary border-b border-white/[0.06]"
+        >
+          <div className="container-max px-6 md:px-12 lg:px-20 py-3">
+            <ol className="flex items-center gap-2 font-sans text-sm text-text-muted">
+              <li>
+                <a href="/" className="hover:text-text-primary transition-colors">
+                  Accueil
+                </a>
+              </li>
+              <li aria-hidden="true" className="text-white/40">/</li>
+              <li className="text-text-primary font-medium">À propos</li>
+            </ol>
+          </div>
+        </nav>
+
+        {/* ── Hero ─────────────────────────────────────────────────────────── */}
+        <section id="apropos-hero" className="bg-bg-primary section-padding">
+          <div className="container-max max-w-3xl mx-auto text-center">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+                À propos
+              </p>
+              <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
+                Trois personnes, un pipeline
+              </h1>
+              <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto">
+                Chacun a un rôle précis. Brahim prospecte, Abraham automatise, Abdelhay cadre la
+                stratégie. On n&apos;essaie pas de tout faire. On fait bien ce qu&apos;on a décidé de faire.
+              </p>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ── Notre mission ─────────────────────────────────────────────────── */}
+        <section id="mission" className="bg-bg-secondary section-padding">
+          <div className="container-max max-w-2xl mx-auto">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+                Notre mission
+              </p>
+              <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6">
+                Pourquoi on a créé Setting
+              </h2>
+              <div className="font-sans text-text-secondary text-lg leading-relaxed space-y-4">
+                <p>
+                  La plupart des fondateurs et freelances B2B savent faire leur métier. Ce qu&apos;ils ne
+                  savent pas faire, c&apos;est prospecter. Ou plutôt, ils savent, mais ça leur prend un
+                  temps fou pour des résultats décevants.
+                </p>
+                <p>
+                  Deux heures sur LinkedIn chaque matin. Des messages qui restent sans réponse. Des
+                  profils mal ciblés. Un pipeline vide à la fin du mois. On a vu ça trop souvent.
+                </p>
+                <p>
+                  Setting prend cette tâche en charge. Pas avec des outils en self-service. Pas
+                  avec de l&apos;automatisation à l&apos;aveugle. Avec une équipe qui gère votre prospection comme
+                  si c&apos;était la sienne.
+                </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ── L'équipe ──────────────────────────────────────────────────────── */}
+        <section id="equipe" className="bg-bg-primary section-padding">
+          <div className="container-max px-6 md:px-12 lg:px-20">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4 text-center">
+                L&apos;équipe
+              </p>
+              <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4 text-center">
+                Qui fait quoi
+              </h2>
+              <p className="font-sans text-text-muted text-center max-w-xl mx-auto mb-14">
+                Trois personnes, trois compétences distinctes. Le système fonctionne parce que les
+                rôles ne se chevauchent pas.
+              </p>
+            </ScrollReveal>
+
+            <div className="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              {members.map(({ name, role, desc, bio }, i) => (
+                <ScrollReveal key={name} delay={i * 60}>
+                  <div className="bg-bg-secondary rounded-2xl border border-white/[0.06] p-6 flex flex-col items-center text-center h-full">
+                    {/* Photo placeholder */}
+                    <div className="w-28 h-28 rounded-2xl bg-bg-primary border-2 border-dashed border-accent/30 flex items-center justify-center mb-5 shrink-0">
+                      <svg
+                        className="w-10 h-10 text-accent/30"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={1.5}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                        />
+                      </svg>
+                    </div>
+
+                    <h3 className="font-sans font-extrabold text-lg text-text-primary">
+                      {name}
+                    </h3>
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mt-1 mb-3">
+                      {role}
+                    </p>
+                    <p className="font-sans text-text-muted text-sm leading-relaxed mb-3">
+                      {desc}
+                    </p>
+                    <p className="font-sans text-text-muted/70 text-xs leading-relaxed mt-auto pt-3 border-t border-white/[0.06] w-full">
+                      {bio}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Notre approche en 3 points ────────────────────────────────────── */}
+        <section id="approche" className="bg-bg-secondary section-padding">
+          <div className="container-max px-6 md:px-12 lg:px-20">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4 text-center">
+                Notre approche
+              </p>
+              <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4 text-center">
+                Comment on travaille
+              </h2>
+              <p className="font-sans text-text-muted text-center max-w-xl mx-auto mb-14">
+                Trois principes qui guident chaque campagne. Pas des valeurs affichées. Des règles
+                de fonctionnement.
+              </p>
+            </ScrollReveal>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {approachPoints.map(({ eyebrow, title, desc }, i) => (
+                <ScrollReveal key={eyebrow} delay={i * 80}>
+                  <div className="bg-bg-primary rounded-2xl border border-white/[0.06] p-6 h-full flex flex-col">
+                    <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">
+                      {eyebrow}
+                    </p>
+                    <h3 className="font-sans font-extrabold text-h3 text-text-primary mb-3 leading-snug">
+                      {title}
+                    </h3>
+                    <p className="font-sans text-text-secondary text-sm leading-relaxed mt-auto">
+                      {desc}
+                    </p>
+                  </div>
+                </ScrollReveal>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── ChallengersLab (structure groupe, services complémentaires) ─── */}
+        <section id="groupe" className="bg-bg-primary section-padding border-t border-white/[0.04]">
+          <div className="container-max max-w-3xl mx-auto">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4 text-center">
+                Structure
+              </p>
+              <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4 text-center">
+                Setting fait partie de ChallengersLab
+              </h2>
+              <p className="font-sans text-text-secondary text-base leading-relaxed text-center max-w-2xl mx-auto mb-10">
+                ChallengersLab est le studio qu&apos;Abraham a fond&eacute; pour aider les solopreneurs B2B &agrave; scaler. Setting en est la brique acquisition. Pour la delivery ou le closing, on a deux autres services compl&eacute;mentaires.
+              </p>
+            </ScrollReveal>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a
+                href="https://www.challengerslab.com/ia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block rounded-xl p-5 border border-white/[0.06] hover:border-accent/30 hover:bg-accent/[0.03] transition-all"
+              >
+                <p className="font-semibold text-text-primary text-sm mb-1">Automatisation IA</p>
+                <p className="font-sans text-text-muted text-xs leading-relaxed">
+                  On automatise votre delivery pour lib&eacute;rer du temps de vente.
+                </p>
+              </a>
+              <a
+                href="https://www.challengerslab.com/sales"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block rounded-xl p-5 border border-white/[0.06] hover:border-accent/30 hover:bg-accent/[0.03] transition-all"
+              >
+                <p className="font-semibold text-text-primary text-sm mb-1">Coaching closing</p>
+                <p className="font-sans text-text-muted text-xs leading-relaxed">
+                  2h/semaine pour structurer votre process et faire monter le taux de closing.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ── CTA ──────────────────────────────────────────────────────────── */}
+        <section className="bg-bg-primary section-padding">
+          <div className="container-max text-center max-w-2xl mx-auto">
+            <ScrollReveal>
+              <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-4">
+                Vous voulez qu&apos;on s&apos;en occupe ?
+              </h2>
+              <p className="font-sans text-text-secondary text-lg leading-relaxed mb-8">
+                Un appel de 30 minutes pour comprendre votre contexte et voir si on peut vous aider.
+                Sans engagement.
+              </p>
+              <ButtonGlow as="a" href={calendlyUrl} target="_blank" rel="noopener noreferrer">
+                Réserver un appel découverte
+              </ButtonGlow>
+            </ScrollReveal>
+          </div>
+        </section>
+
+      </main>
+      <Footer />
+    </>
+  )
+}

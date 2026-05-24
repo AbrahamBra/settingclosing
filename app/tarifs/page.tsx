@@ -1,0 +1,271 @@
+import type { Metadata } from 'next'
+import { Suspense } from 'react'
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
+import { ScrollReveal } from '@/components/ui/ScrollReveal'
+import { DarkCard } from '@/components/ui/DarkCard'
+import { CombinedSimulator } from '@/components/CombinedSimulator'
+import { PricingComparison } from '@/components/PricingComparison'
+import { FAQ } from '@/components/FAQ'
+import { SmartContactForm } from '@/components/SmartContactForm'
+
+// ─── Metadata ─────────────────────────────────────────────────────────────────
+
+export const metadata: Metadata = {
+  title: 'Tarifs Setting : 790 €/mois, setup offert, sans engagement',
+  description:
+    "Setting LinkedIn B2B : 790 € HT par mois, setup offert, sans engagement. Garantie RDV (5 RDV qualifiés/mois ou mois suivant offert). Comparatif SDR interne + simulateur ROI.",
+  alternates: {
+    canonical: 'https://www.setting.live/tarifs',
+    languages: {
+      'fr': 'https://www.setting.live/tarifs',
+      'x-default': 'https://www.setting.live/tarifs',
+    },
+  },
+  openGraph: {
+    title: 'Tarifs Setting LinkedIn B2B : 790 €/mois, sans engagement | Setting',
+    description: 'Setting LinkedIn B2B : 790 € HT par mois, setup offert, sans engagement. Garantie RDV (5 qualifiés/mois ou mois suivant offert).',
+    locale: 'fr_FR',
+    type: 'website',
+    images: [{ url: 'https://www.setting.live/api/og?title=Tarifs%20prospection%20LinkedIn%20B2B&tag=Tarifs', width: 1200, height: 630, alt: 'Tarifs prospection LinkedIn B2B — Setting' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Tarifs Setting LinkedIn B2B : 790 €/mois, sans engagement | Setting',
+    description: 'Setting LinkedIn B2B : 790 € HT par mois, setup offert, sans engagement. Garantie RDV (5 qualifiés/mois ou mois suivant offert).',
+    images: ['https://www.setting.live/api/og?title=Tarifs%20prospection%20LinkedIn%20B2B&tag=Tarifs'],
+  },
+}
+
+// ─── Structured Data ──────────────────────────────────────────────────────────
+
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Tarifs Setting LinkedIn B2B : 790 €/mois, sans engagement | Setting',
+  description:
+    'Tarifs Setting LinkedIn B2B : 790 € HT par mois, setup offert, sans engagement. Garantie RDV (5 qualifiés/mois ou mois suivant offert). Simulateur ROI inclus.',
+  url: 'https://www.setting.live/tarifs',
+  inLanguage: 'fr-FR',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'Setting',
+    url: 'https://www.setting.live',
+  },
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '[data-speakable]', '.faq-answer'],
+  },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.setting.live' },
+      { '@type': 'ListItem', position: 2, name: 'Tarifs', item: 'https://www.setting.live/tarifs' },
+    ],
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        position: 1,
+        name: 'Setting LinkedIn',
+        description: 'Votre pipeline LinkedIn, clé en main. Setter dédié, ciblage ICP, messages co-rédigés avec IA, validation humaine. Prime par RDV : 50 € (ticket < 5k €), 150 € (5-15k €), 250 € (> 15k €).',
+        priceSpecification: [
+          {
+            '@type': 'PriceSpecification',
+            price: '790',
+            priceCurrency: 'EUR',
+            unitText: 'MONTH',
+            description: 'Mois 1 à 3 : même tarif sur toute la durée',
+          },
+        ],
+      },
+      {
+        '@type': 'Offer',
+        position: 2,
+        name: 'Setting téléphonique — Demi-journée',
+        description: 'Qualification téléphonique des leads entrants. Routing intelligent selon niveau de maturité. Prime par RDV : 25 € (ticket < 5k €), 100 € (5-15k €), 200 € (> 15k €).',
+        priceSpecification: [
+          {
+            '@type': 'PriceSpecification',
+            price: '175',
+            priceCurrency: 'EUR',
+            unitText: 'DAY',
+            description: '175 EUR par demi-journée',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Combien coûte le Setting LinkedIn ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '790 €/mois, setup offert. Même tarif sur les 3 premiers mois. Sans engagement.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Le setup est vraiment offert ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui. Le cadrage ICP, la rédaction des séquences et le paramétrage des outils sont inclus dans le premier mois. Vous ne payez que l\'abonnement mensuel.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Comment fonctionne le tarif du Setting téléphonique ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: '175 €/demi-journée, facturé au réel selon votre flux de leads entrants. Zéro setup fee.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Y a-t-il un engagement ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Non. Le Setting LinkedIn est sans engagement, résiliable à tout moment. Garantie RDV incluse.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Je peux ajouter la qualification téléphonique ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Oui. Si tu reçois des leads entrants (lead magnets, formulaires, contenu), on les qualifie par téléphone à 175 €/demi-journée. Activable à tout moment.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quel ROI puis-je attendre ?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Avec un ticket moyen de 5 000 € et 8 RDV/mois, le ROI dépasse 5× dès le 2e mois. Simulez votre pipeline directement sur la page.',
+      },
+    },
+  ],
+}
+
+// ─── Page ─────────────────────────────────────────────────────────────────────
+
+export default function TarifsPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <Navbar />
+      <main className="pt-20">
+
+        {/* ── Breadcrumb ───────────────────────────────────────────────────── */}
+        <nav
+          aria-label="Fil d&apos;Ariane"
+          className="bg-bg-primary border-b border-white/[0.06]"
+        >
+          <div className="container-max py-3">
+            <ol className="flex items-center gap-2 font-sans text-sm text-text-muted">
+              <li>
+                <a href="/" className="hover:text-text-primary transition-colors">
+                  Accueil
+                </a>
+              </li>
+              <li aria-hidden="true" className="text-white/40">
+                /
+              </li>
+              <li className="text-text-primary font-medium" aria-current="page">
+                Tarifs
+              </li>
+            </ol>
+          </div>
+        </nav>
+
+        {/* ── Hero ─────────────────────────────────────────────────────────── */}
+        <section id="tarifs-hero" className="bg-bg-primary section-padding">
+          <div className="container-max max-w-3xl mx-auto text-center">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-text-muted mb-4">
+                Tarifs
+              </p>
+              <h1 className="font-sans font-extrabold text-h1 text-text-primary mb-5 leading-tight">
+                Un pipeline LinkedIn &agrave; 790&nbsp;&euro;/mois
+              </h1>
+              <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl mx-auto mb-6">
+                Setup offert, z&eacute;ro engagement. Simule ton ROI en temps r&eacute;el.
+              </p>
+              <a
+                href="/methode/setting-linkedin"
+                className="font-sans text-sm text-text-muted hover:text-text-primary transition-colors"
+              >
+                Voir comment &ccedil;a marche &darr;
+              </a>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ── Simulateur ROI LinkedIn + Téléphonique ────────────────────── */}
+        <CombinedSimulator />
+
+        {/* ── PricingComparison ─────────────────────────────────────────────── */}
+        <PricingComparison />
+
+        {/* ── Pourquoi ce prix ──────────────────────────────────────────────── */}
+        <section id="pourquoi-ce-prix" className="bg-bg-primary section-padding">
+          <div className="container-max max-w-2xl mx-auto">
+            <ScrollReveal>
+              <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4 text-center">
+                Transparence
+              </p>
+              <h2 className="font-sans font-extrabold text-h2 text-text-primary mb-6 text-center">
+                Pourquoi ce prix
+              </h2>
+              <div className="space-y-4">
+                <DarkCard className="p-6">
+                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">Un système qui s&apos;améliore</h3>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
+                    Base de connaissance dédiée, feedback setter, expertise marché enrichie chaque semaine. Mois 3 n&apos;a rien à voir avec mois 1.
+                  </p>
+                </DarkCard>
+                <DarkCard className="p-6">
+                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">IA + humain, pas IA toute seule</h3>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
+                    L&apos;IA détecte et rédige. Ton setter pilote par la data, choisit les angles, et itère le système chaque semaine.
+                  </p>
+                </DarkCard>
+                <DarkCard className="p-6">
+                  <h3 className="font-sans font-semibold text-text-primary text-sm mb-2">Zéro engagement, zéro risque</h3>
+                  <p className="font-sans text-text-secondary text-sm leading-relaxed">
+                    Garantie RDV sur chaque offre. Tu peux arrêter à tout moment. On gagne quand tu gagnes.
+                  </p>
+                </DarkCard>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* ── FAQ ──────────────────────────────────────────────────────────── */}
+        <FAQ />
+
+        {/* ── Smart Contact Form ────────────────────────────────────────────── */}
+        <Suspense fallback={null}>
+          <SmartContactForm />
+        </Suspense>
+
+      </main>
+      <Footer />
+    </>
+  )
+}

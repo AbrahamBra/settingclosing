@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #C87533;
+  --accent-hover: #A85E28;
+  --accent-rgb: 200, 117, 51;
+  --bg-primary: #0A0908;
+  --bg-secondary: #141210;
+  --surface-hover: #1C1A16;
+  --text-primary: #F0ECE4;
+  --text-secondary: #BDB5A5;
+  --text-muted: #A8A29E;
+  --border: rgba(240, 236, 228, 0.06);
+
+  --z-base: 0;
+  --z-card: 10;
+  --z-navbar: 50;
+  --z-modal-backdrop: 80;
+  --z-modal: 90;
+  --z-cursor: 9999;
+  --z-grain: 9998;
+  --navbar-height: 4rem;
+  --z-phase-nav: 40;
+}
+
+@layer base {
+  html {
+    background: radial-gradient(ellipse at 50% 0%, rgba(var(--accent-rgb), 0.10) 0%, var(--bg-primary) 55%) no-repeat top center / 100% 700px, var(--bg-primary);
+    color: var(--text-primary);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans), system-ui, sans-serif;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 py-[48px] lg:py-[72px];
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+}
+
+@keyframes shine {
+  0% { transform: rotate(30deg) translateX(-100%); }
+  100% { transform: rotate(30deg) translateX(200%); }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
