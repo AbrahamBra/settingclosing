@@ -134,7 +134,7 @@ const faqItems = [
   {
     question: 'Quelle est la limite d’invitations LinkedIn par semaine ?',
     answer:
-      "LinkedIn applique un quota hebdomadaire d'invitations, mais ne publie pas de chiffre officiel unique. Le plafond varie selon l'ancienneté du compte, le score SSI et surtout le taux d'acceptation des invitations précédentes. Un compte récent avec un faible taux d'acceptation est limité bien plus tôt qu'un compte ancien dont les invitations sont acceptées.",
+      "La limite officielle est de 200 invitations par semaine. Elle varie selon l'ancienneté du compte et le score SSI, et surtout selon le taux d'acceptation des invitations précédentes. Un compte récent dont les invitations sont peu acceptées est limité bien plus tôt qu'un compte ancien au bon taux d'acceptation.",
   },
   {
     question: 'Pourquoi mon compte LinkedIn est-il restreint ?',
@@ -219,7 +219,7 @@ const limites = [
   {
     name: 'Invitations',
     detail:
-      "Quota hebdomadaire. LinkedIn ne publie pas de chiffre unique. Le plafond dépend de l’ancienneté du compte, du SSI et du taux d’acceptation.",
+      "200 par semaine. Le plafond varie selon l’ancienneté du compte et le SSI, et surtout selon votre taux d’acceptation.",
   },
   {
     name: 'Recherche de profils',
@@ -352,9 +352,9 @@ export default function RestrictionsLinkedInPage() {
           {/* Stats grid */}
           <div className="grid grid-cols-3 gap-4 mb-14">
             {[
-              { stat: '3', label: 'niveaux de sanction chez LinkedIn' },
+              { stat: '200', label: 'invitations/semaine : la limite officielle' },
               { stat: '300', label: 'actions/jour : la zone rouge' },
-              { stat: '1er', label: 'du mois : reset du quota de recherche' },
+              { stat: '3', label: 'niveaux de sanction chez LinkedIn' },
             ].map(({ stat, label }) => (
               <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
                 <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
@@ -396,8 +396,8 @@ export default function RestrictionsLinkedInPage() {
               <p className="mb-4" data-speakable="true">
                 LinkedIn plafonne quatre choses. Les invitations, les recherches de profils,
                 le stock d&apos;invitations en attente, et le renvoi apr&egrave;s retrait.
-                Aucune de ces limites n&apos;est publi&eacute;e avec un chiffre ferme.
-                Elles varient d&apos;un compte &agrave; l&apos;autre.
+                Seul le quota d&apos;invitations a un chiffre annonc&eacute;. Les autres
+                varient d&apos;un compte &agrave; l&apos;autre.
               </p>
 
               <div className="bg-bg-secondary rounded-xl p-6 my-6">
@@ -412,15 +412,20 @@ export default function RestrictionsLinkedInPage() {
               </div>
 
               <p className="mb-4">
-                Le quota d&apos;invitations est celui qui g&ecirc;ne le plus. Il d&eacute;pend
+                Le quota d&apos;invitations est celui qui g&ecirc;ne le plus. La limite
+                officielle est de 200 invitations par semaine. Elle varie selon
+                l&apos;anciennet&eacute; du compte et le SSI. Surtout, elle d&eacute;pend
                 de votre taux d&apos;acceptation. Deux comptes du m&ecirc;me &acirc;ge
                 n&apos;ont pas le m&ecirc;me plafond. Celui dont les invitations sont
-                accept&eacute;es en envoie davantage. C&apos;est la logique &agrave; retenir :
-                LinkedIn ne compte pas vos envois, il &eacute;value vos r&eacute;sultats.
-                Les volumes couramment pratiqu&eacute;s et leurs cons&eacute;quences sont
-                d&eacute;taill&eacute;s dans notre guide sur{' '}
-                <a href="/ressources/automatisation-prospection-linkedin" className="text-accent hover:underline transition-colors">l&apos;automatisation
-                de la prospection LinkedIn</a>.
+                accept&eacute;es en envoie davantage.
+              </p>
+              <p className="mb-4">
+                C&apos;est ce qui renverse la logique de la prospection. LinkedIn ne compte
+                pas vos envois, il &eacute;value vos r&eacute;sultats. Une liste mal
+                cibl&eacute;e fait baisser le taux d&apos;acceptation. Le plafond baisse
+                avec lui. Vous pouvez donc envoyer moins la semaine suivante, parce que
+                vous avez mal cibl&eacute; la pr&eacute;c&eacute;dente. La qualit&eacute;
+                de la liste ne prime pas sur le volume par principe. Elle le conditionne.
               </p>
             </section>
 
@@ -626,12 +631,12 @@ export default function RestrictionsLinkedInPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  { href: '/ressources/automatisation-prospection-linkedin', label: 'Automatisation LinkedIn : limites et alternatives' },
+                  { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Comment prospecter sur LinkedIn' },
                   { href: '/ressources/parametres-linkedin', label: 'Paramètres LinkedIn : le guide complet' },
                   { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet' },
                   { href: '/ressources/signal-achat-linkedin', label: 'Signaux d’achat LinkedIn' },
-                  { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Comment prospecter sur LinkedIn' },
-                  { href: '/ressources/setting-humain-vs-automatisation-linkedin', label: 'Setting humain vs automatisation' },
+                  { href: '/ressources/message-linkedin-b2b', label: 'Messages LinkedIn B2B qui obtiennent une réponse' },
+                  { href: '/ressources/inbound-setting-linkedin', label: 'Inbound setting LinkedIn' },
                 ].map(({ href, label }) => (
                   <a
                     key={href}
@@ -670,7 +675,7 @@ export default function RestrictionsLinkedInPage() {
           {/* Related articles */}
           <div className="mt-16">
             <RelatedArticles articles={[
-              { href: '/ressources/automatisation-prospection-linkedin', title: 'Automatisation de la prospection LinkedIn : limites et alternatives', readTime: '14 min' },
+              { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Comment prospecter sur LinkedIn en 2026', readTime: '14 min' },
               { href: '/ressources/parametres-linkedin', title: 'Paramètres LinkedIn : le guide complet', readTime: '12 min' },
               { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : définition, méthode et exemples concrets', readTime: '25 min' },
             ]} />
