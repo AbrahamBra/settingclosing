@@ -631,6 +631,7 @@ export default function RestrictionsLinkedInPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                   { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Comment prospecter sur LinkedIn' },
                   { href: '/ressources/parametres-linkedin', label: 'Paramètres LinkedIn : le guide complet' },
                   { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet' },

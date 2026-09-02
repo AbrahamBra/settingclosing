@@ -8,11 +8,11 @@ import { RelatedArticles } from '@/components/RelatedArticles'
 import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
-  title: "C'est quoi le setting ? Définition simple et exemples",
+  title: "Le setting, c'est quoi ? Définition, méthode et exemples (2026)",
   description:
-    "Le setting, c'est la phase commerciale qui précède le closing : un setter identifie des prospects qualifiés, les contacte, qualifie l'intérêt et passe les RDV au closer. Définition, exemples et différence avec le closing.",
+    "Le setting est la phase commerciale qui précède le closing. Définition, méthode en 5 étapes pour faire du setting, différence avec le closing, chiffres de référence et erreurs à éviter.",
   openGraph: {
-    title: "C'est quoi le setting ? Définition simple et exemples | Setting",
+    title: "Le setting, c'est quoi ? Définition, méthode et exemples | Setting",
     description:
       "Définition du setting commercial : rôle du setter, différence avec le closing, méthode signal-based et exemples concrets en B2B.",
     locale: 'fr_FR',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "C'est quoi le setting ? Définition simple et exemples | Setting",
+    title: "Le setting, c'est quoi ? Définition, méthode et exemples | Setting",
     description:
       "Définition du setting commercial : rôle du setter, différence avec le closing, méthode signal-based et exemples concrets en B2B.",
   },
@@ -39,7 +39,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   '@id': 'https://www.setting.live/ressources/setting-definition',
-  headline: "C'est quoi le setting ? Définition simple et exemples",
+  headline: "Le setting, c'est quoi ? Définition, méthode et exemples (2026)",
   description:
     "Le setting est la phase commerciale qui précède le closing. Un setter détecte des prospects qualifiés, engage la conversation, qualifie l'intérêt et passe les RDV au closer.",
   author: {
@@ -63,7 +63,7 @@ const articleSchema = {
     },
   },
   datePublished: '2026-05-24',
-  dateModified: '2026-05-24',
+  dateModified: '2026-09-02',
   inLanguage: 'fr-FR',
   url: 'https://www.setting.live/ressources/setting-definition',
   mainEntityOfPage: {
@@ -75,7 +75,7 @@ const articleSchema = {
     cssSelector: ['h1', '[data-speakable]', '.tldr', '.faq-answer'],
   },
   articleSection: 'Setting commercial',
-  wordCount: 1400,
+  wordCount: 2600,
   about: [
     { '@type': 'Thing', name: 'Setting commercial' },
     { '@type': 'Thing', name: 'Setter B2B' },
@@ -87,7 +87,7 @@ const definedTermSchema = {
   '@context': 'https://schema.org',
   '@type': 'DefinedTerm',
   name: 'Setting',
-  alternateName: ['Setting commercial', 'Sales setting'],
+  alternateName: ['Setting commercial', 'Sales setting', 'Appointment setting', 'Prise de rendez-vous qualifiée'],
   description:
     "Le setting est la phase commerciale qui précède le closing : un setter identifie des prospects qualifiés, les contacte, qualifie l'intérêt et passe les rendez-vous à un closer. En B2B, le setting se fait principalement sur LinkedIn via la détection de signaux d'achat.",
   inDefinedTermSet: {
@@ -127,6 +127,26 @@ const faqItems = [
     question: 'Combien coûte un setter en B2B ?',
     answer:
       "Trois options : en interne, un setter junior coûte 35 000 à 45 000 €/an salaire chargé, avec 3 à 6 mois de ramp-up. En freelance, comptez 1 500 à 3 000 €/mois selon l'expérience. En externalisé en mode abonnement (comme Setting), 790 €/mois sans engagement, opérationnel sous 7 jours.",
+  },
+  {
+    question: "Comment faire du setting quand on débute ?",
+    answer:
+      "Commencez par écrire l'ICP, pas par écrire des messages. Poste exact, taille d'entreprise, secteur, et un déclencheur récent. Identifiez ensuite une source de signaux : réactions à vos posts, commentaires chez vos concurrents, changements de poste. Ce n'est qu'après que vous rédigez. Un message correct au bon profil bat un message parfait au mauvais profil.",
+  },
+  {
+    question: "Setting et closing, c'est quoi la différence exactement ?",
+    answer:
+      "Le setting s'arrête à la prise de rendez-vous, le closing commence au discovery call. Le setter ne présente pas l'offre, ne donne pas de prix et ne traite pas d'objection. Ce qui passe d'un métier à l'autre, c'est un brief : une phrase de contexte, le signal qui a déclenché le contact, et un verbatim du prospect.",
+  },
+  {
+    question: 'Quels sont les taux de réponse en setting ?',
+    answer:
+      "20 à 35 % avec une méthode signal-based, contre 2 à 5 % en cold outreach sans contexte. L'écart ne vient pas de la qualité d'écriture mais du moment : un message envoyé à quelqu'un qui vient de manifester un intérêt arrive dans une fenêtre d'attention ouverte. Comptez 2 à 4 rendez-vous qualifiés par semaine en rythme de croisière.",
+  },
+  {
+    question: 'Le setting se fait-il uniquement sur LinkedIn ?',
+    answer:
+      "Non. Il existe trois formes : le setting LinkedIn (le plus répandu en B2B français, parce que les signaux y sont publics), le setting téléphonique sur leads entrants, et le setting sur base entrante (formulaires, lead magnets, réponses à une newsletter). Le canal change, la logique reste la même.",
   },
   {
     question: "Setting, prospection, business development : c'est la même chose ?",
@@ -195,12 +215,12 @@ export default function SettingDefinitionPage() {
               Définition
             </p>
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
-              C&apos;est quoi le setting&nbsp;?
+              Le setting, c&apos;est quoi&nbsp;?
             </h1>
             <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Le setting, c&apos;est la phase commerciale qui précède le closing. Un setter identifie des prospects qualifiés, les contacte, qualifie l&apos;intérêt et passe les rendez-vous à un closer.
             </p>
-            <AuthorBlock date="2026-05-24" readTime="5 min de lecture" dateLabel="24 mai 2026" />
+            <AuthorBlock date="2026-05-24" readTime="14 min de lecture" dateLabel="24 mai 2026" updatedDate="2026-09-02" />
           </header>
 
           <TldrBox>
@@ -241,6 +261,62 @@ export default function SettingDefinitionPage() {
                   <strong className="text-text-primary">Passer le RDV.</strong> Planifier le rendez-vous dans le calendrier du closer avec un brief contextuel (1 phrase de synthèse + verbatim clé). Livrable&nbsp;: 2 à 4 RDV qualifiés par semaine.
                 </li>
               </ol>
+            </section>
+
+            {/* Comment faire du setting */}
+            <section>
+              <h2 className="font-serif text-h2 text-text-primary mb-4">Comment faire du setting&nbsp;: les conditions à réunir</h2>
+              <p data-speakable="true" className="font-sans text-text-secondary text-base leading-relaxed mb-4">
+                Les cinq étapes ci-dessus décrivent le geste. Elles ne suffisent pas. Faire du setting qui produit des rendez-vous demande quatre briques en place avant le premier message.
+              </p>
+              <div className="bg-bg-secondary rounded-xl p-6 my-6">
+                <div className="space-y-4">
+                  {[
+                    { t: 'Un ICP écrit, pas approximatif', d: 'Poste exact, taille d’entreprise, secteur, et un déclencheur récent. « Les dirigeants de PME » n’est pas un ICP. « Fondateur de SaaS B2B, 5 à 30 salariés, qui vient de recruter un commercial » en est un.' },
+                    { t: 'Une source de signaux', d: 'Sans signal, vous faites du cold outreach et vous plafonnez à 2-5 % de réponse. Les signaux viennent de vos posts, de ceux de vos concurrents, et des changements de poste.' },
+                    { t: 'Une IA co-rédactrice, pas rédactrice', d: 'Elle lit le profil et propose des angles. Un humain choisit, réécrit et valide. C’est ce qui sépare 25 % de réponse de 3 %.' },
+                    { t: 'Une cadence de relance courte', d: 'Deux relances maximum, espacées de 7 jours. Au-delà, le taux de réponse ne monte plus et le risque de signalement augmente.' },
+                  ].map(({ t, d }) => (
+                    <div key={t}>
+                      <p className="font-sans font-semibold text-text-primary text-sm mb-1">{t}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{d}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <p className="font-sans text-text-secondary text-base leading-relaxed mb-4">
+                L&apos;ordre compte. La plupart des gens commencent par le message, parce que c&apos;est la partie visible. C&apos;est l&apos;erreur classique. Un message parfait envoyé au mauvais profil ne produit rien. Un message correct envoyé au bon profil au bon moment fonctionne.
+              </p>
+              <p className="font-sans text-text-secondary text-base leading-relaxed">
+                Le détail opérationnel, canal par canal, est dans notre{' '}
+                <a href="/ressources/setting-linkedin" className="text-accent hover:underline transition-colors">guide du setting LinkedIn</a>.
+              </p>
+            </section>
+
+            {/* Les chiffres */}
+            <section>
+              <h2 className="font-serif text-h2 text-text-primary mb-4">Les chiffres de référence du setting</h2>
+              <p className="font-sans text-text-secondary text-base leading-relaxed mb-4">
+                Trois repères permettent de savoir si un setting fonctionne ou non.
+              </p>
+              <div className="grid grid-cols-3 gap-4 my-6">
+                {[
+                  { stat: '20-35 %', label: 'taux de réponse en signal-based' },
+                  { stat: '2-5 %', label: 'taux de réponse en cold outreach' },
+                  { stat: '2-4', label: 'RDV qualifiés par semaine' },
+                ].map(({ stat, label }) => (
+                  <div key={label} className="bg-bg-secondary rounded-xl p-5 text-center">
+                    <p className="font-serif text-2xl text-accent mb-1">{stat}</p>
+                    <p className="font-sans text-xs text-text-secondary leading-snug">{label}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="font-sans text-text-secondary text-base leading-relaxed mb-4">
+                L&apos;écart entre 3 % et 25 % ne vient pas du talent d&apos;écriture. Il vient du moment. Un message envoyé à quelqu&apos;un qui vient de commenter un post sur votre sujet arrive dans une fenêtre d&apos;attention ouverte. Le même message envoyé trois mois plus tard tombe dans le vide.
+              </p>
+              <p className="font-sans text-text-secondary text-base leading-relaxed">
+                Un quatrième chiffre mérite d&apos;être suivi&nbsp;: le taux de no-show. Un setting qui produit 4 RDV par semaine dont la moitié ne se présente pas ne produit pas 4 RDV. Il en produit 2, et il coûte le double.
+              </p>
             </section>
 
             {/* Setting vs closing */}
@@ -287,6 +363,57 @@ export default function SettingDefinitionPage() {
                   </tbody>
                 </table>
               </div>
+
+              <p data-speakable="true" className="font-sans text-text-secondary text-base leading-relaxed mb-4">
+                La confusion la plus fréquente porte sur le passage de relais. Le setter ne fait pas une mini-vente. Il ne présente pas l&apos;offre, ne donne pas de prix, ne traite pas d&apos;objection. S&apos;il le fait, le closer arrive sur un prospect qui croit déjà savoir, et l&apos;appel démarre mal.
+              </p>
+              <p className="font-sans text-text-secondary text-base leading-relaxed">
+                Ce qui passe d&apos;un métier à l&apos;autre, c&apos;est un brief. Une phrase de contexte, le signal qui a déclenché le contact, et un verbatim du prospect. Trente secondes de lecture pour le closer. C&apos;est ce brief qui fait la différence entre un RDV qualifié et un simple créneau dans un agenda. Le détail du métier de closer est dans notre{' '}
+                <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">guide du closing B2B</a>.
+              </p>
+            </section>
+
+            {/* Les formes de setting */}
+            <section>
+              <h2 className="font-serif text-h2 text-text-primary mb-4">Les trois formes de setting</h2>
+              <p data-speakable="true" className="font-sans text-text-secondary text-base leading-relaxed mb-4">
+                Le setting n&apos;est pas qu&apos;une pratique LinkedIn. Le canal change, la logique reste la même&nbsp;: un signal, un message contextualisé, une qualification, un rendez-vous.
+              </p>
+              <div className="bg-bg-secondary rounded-xl p-6 my-6">
+                <div className="space-y-4">
+                  {[
+                    { t: 'Setting LinkedIn', d: 'Le plus répandu en B2B français. Les signaux sont visibles publiquement : réactions, commentaires, changements de poste. C’est ce qui rend la contextualisation possible à grande échelle.' },
+                    { t: 'Setting téléphonique', d: 'Sur des leads entrants, pas à froid. Chaque lead est appelé, scoré et routé. Le rythme est différent : la qualification prend cinq minutes au lieu de trois échanges écrits.' },
+                    { t: 'Setting sur base entrante', d: 'Formulaires, lead magnets, réponses à une newsletter. Le signal est déjà là, il est explicite. Le travail porte sur la vitesse de réponse et la qualification.' },
+                  ].map(({ t, d }) => (
+                    <div key={t}>
+                      <p className="font-sans font-semibold text-text-primary text-sm mb-1">{t}</p>
+                      <p className="font-sans text-text-secondary text-sm leading-relaxed">{d}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <p className="font-sans text-text-secondary text-base leading-relaxed">
+                Une distinction transversale compte plus que le canal&nbsp;: le setting <strong className="text-text-primary">réactif</strong> traite ceux qui se sont manifestés. Le setting <strong className="text-text-primary">proactif</strong> va chercher ceux qui correspondent à l&apos;ICP sans s&apos;être manifestés. Le premier a de meilleurs taux, le second fait le volume. Un pipeline sain utilise les deux.
+              </p>
+            </section>
+
+            {/* Erreurs */}
+            <section>
+              <h2 className="font-serif text-h2 text-text-primary mb-4">Les erreurs qui font échouer un setting</h2>
+              <p className="font-sans text-text-secondary text-base leading-relaxed mb-4">
+                Quatre reviennent systématiquement. Aucune n&apos;est une question de talent.
+              </p>
+              <ul className="font-sans text-text-secondary text-base leading-relaxed space-y-3 list-disc pl-5 mb-4">
+                <li><strong className="text-text-primary">Pitcher dans le premier message.</strong> Le prospect n&apos;a rien demandé. Un pitch non sollicité fait chuter le taux de réponse sous 5 %, quel que soit le ciblage.</li>
+                <li><strong className="text-text-primary">Confondre volume et résultat.</strong> 200 messages à 3 % donnent 6 réponses. 60 messages ciblés à 25 % en donnent 15. Le volume coûte aussi en réputation de compte.</li>
+                <li><strong className="text-text-primary">Automatiser la rédaction.</strong> Un message généré sans relecture finit par se voir. Les prospects B2B reçoivent une quinzaine de sollicitations par semaine, ils reconnaissent un template en deux lignes.</li>
+                <li><strong className="text-text-primary">Qualifier trop peu.</strong> Un RDV pris sans vérifier le budget, le timing et le pouvoir de décision est un RDV que le closer va perdre. Le no-show et l&apos;appel stérile coûtent plus cher qu&apos;un rendez-vous en moins.</li>
+              </ul>
+              <p className="font-sans text-text-secondary text-base leading-relaxed">
+                Une cinquième erreur, plus discrète&nbsp;: prospecter sans surveiller son taux d&apos;acceptation. LinkedIn ajuste vos quotas en fonction de vos résultats. Une liste mal ciblée réduit le volume que vous pourrez envoyer la semaine suivante. Le détail est dans notre guide sur les{' '}
+                <a href="/ressources/restrictions-linkedin-prospection" className="text-accent hover:underline transition-colors">restrictions LinkedIn</a>.
+              </p>
             </section>
 
             {/* Origines */}
@@ -340,10 +467,10 @@ export default function SettingDefinitionPage() {
             {/* Final CTA */}
             <section className="text-center py-6">
               <p className="font-sans text-text-secondary text-base leading-relaxed mb-6">
-                Pour aller plus loin — méthode complète, scripts, exemples chiffrés —, consultez le guide pilier.
+                Vous savez ce qu&apos;est le setting. La suite, c&apos;est la méthode : scripts, signaux, cadences et exemples chiffrés.
               </p>
-              <ButtonGlow as="a" href="/ressources/setting-commercial-b2b">
-                Lire le guide complet du setting B2B
+              <ButtonGlow as="a" href="/ressources/setting-linkedin">
+                Lire le guide du setting LinkedIn
               </ButtonGlow>
             </section>
 

@@ -265,7 +265,7 @@ export default function SetterB2BPage() {
                 Un setter B2B, c&apos;est quelqu&apos;un qui rep&egrave;re les bons profils sur LinkedIn, &eacute;crit un premier message adapt&eacute; &agrave; chaque prospect, g&egrave;re la conversation et book un appel quand le prospect est pr&ecirc;t. Le setter ne vend rien. Son job s&apos;arr&ecirc;te quand le closeur prend le relais.
               </p>
               <p className="mb-4">
-                Le mot vient de &laquo;&nbsp;to set an appointment&nbsp;&raquo;. En fran&ccedil;ais, on parle parfois de &laquo;&nbsp;prise de rendez-vous qualifi&eacute;e&nbsp;&raquo;, mais le terme &laquo;&nbsp;setting&nbsp;&raquo; s&apos;est impos&eacute; dans le B2B francophone depuis 2023.
+                Le mot vient de &laquo;&nbsp;to set an appointment&nbsp;&raquo;. En fran&ccedil;ais, on parle parfois de &laquo;&nbsp;prise de rendez-vous qualifi&eacute;e&nbsp;&raquo;, mais le terme &laquo;&nbsp;setting&nbsp;&raquo; s&apos;est impos&eacute; dans le B2B francophone depuis 2023. Si c&apos;est la pratique elle-m&ecirc;me que tu cherches &agrave; comprendre, on l&apos;a pos&eacute;e &agrave; plat ici&nbsp;: <a href="/ressources/setting-definition" className="text-accent hover:underline transition-colors">le setting, c&apos;est quoi</a>.
               </p>
               <p>
                 Un bon setter ne se mesure pas au nombre de messages envoy&eacute;s. Il se mesure au nombre de RDV qualifi&eacute;s. Chez Setting.live, on vise 2 &agrave; 4 RDV par semaine. Avec un taux de r&eacute;ponse de 20 &agrave; 35&nbsp;% (contre 2-5&nbsp;% en automatisation pure).

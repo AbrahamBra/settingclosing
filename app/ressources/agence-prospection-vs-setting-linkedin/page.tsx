@@ -539,6 +539,7 @@ export default function AgenceProspectionVsSettingLinkedinPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/externaliser-prospection-linkedin', label: 'Externaliser sa prospection LinkedIn B2B' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : guide complet' },
                 { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : le guide pratique' },

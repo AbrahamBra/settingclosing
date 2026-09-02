@@ -1157,6 +1157,7 @@ export default function SettingLinkedInPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                   { href: '/ressources/inbound-setting-linkedin', label: 'Inbound setting LinkedIn' },
                   { href: '/methode/setting-linkedin', label: 'M\u00e9thode de setting LinkedIn en 9 \u00e9tapes' },
                   { href: '/ressources/signal-achat-linkedin', label: 'Signaux d\u2019achat LinkedIn' },

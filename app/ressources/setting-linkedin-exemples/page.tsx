@@ -741,6 +741,7 @@ export default function SettingLinkedInExemplesPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                   { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide pilier' },
                   { href: '/ressources/setting-linkedin-prix', label: 'Setting LinkedIn : combien \u00e7a co\u00fbte ?' },
                   { href: '/ressources/setting-linkedin-ia', label: 'Setting LinkedIn et IA : ce qui marche (ou pas)' },

@@ -714,6 +714,7 @@ export default function SettingLinkedInIaPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                   { href: '/outils/clone-style-linkedin', label: 'G\u00e9n\u00e9rateur clone de style LinkedIn' },
                   { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide pilier' },
                   { href: '/ressources/setting-linkedin-exemples', label: 'Setting LinkedIn : exemples concrets' },

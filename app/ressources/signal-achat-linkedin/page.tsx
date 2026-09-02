@@ -490,6 +490,7 @@ export default function SignalAchatLinkedInPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
                 { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (définition, méthode et exemples)' },
                 { href: '/ressources/inbound-setting-linkedin', label: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV qualifiés' },

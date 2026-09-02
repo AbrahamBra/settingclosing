@@ -874,6 +874,7 @@ export default function InboundSettingLinkedinPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (d\u00e9finition et m\u00e9thode)' },
                 { href: '/ressources/signal-achat-linkedin', label: "Signal d'achat LinkedIn : comment les d\u00e9tecter" },
                 { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : scripts et exemples' },

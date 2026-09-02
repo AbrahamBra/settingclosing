@@ -1121,6 +1121,7 @@ export default function MethodesVenteB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : définition, méthode et programme' },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : guide complet pour conclure vos ventes' },
                 { href: '/ressources/closing-b2b', label: 'Discovery call B2B : structure, questions et erreurs à éviter' },

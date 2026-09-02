@@ -956,6 +956,7 @@ export default function CommentDevenirSetterB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : le guide complet' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : le guide complet' },
                 { href: '/ressources/setting-commercial-b2b', label: "C\u2019est quoi un setter en B2B ?" },

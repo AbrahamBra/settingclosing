@@ -390,6 +390,13 @@ export default function SettingCommercialPage() {
                 fixer un rendez-vous. Le setter ouvre la porte. Il ne vend pas. Il d&eacute;tecte,
                 contacte, qualifie et transmet au closeur.
               </p>
+              <p className="mb-4">
+                Ce guide couvre la mise en &oelig;uvre compl&egrave;te. Si vous cherchez
+                d&apos;abord la d&eacute;finition courte, la fronti&egrave;re avec le closing
+                et les chiffres de r&eacute;f&eacute;rence, commencez par&nbsp;:{' '}
+                <a href="/ressources/setting-definition" className="text-accent hover:underline transition-colors">le
+                setting, c&apos;est quoi</a>.
+              </p>
 
               <div className="bg-bg-secondary rounded-xl p-6 my-6">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">

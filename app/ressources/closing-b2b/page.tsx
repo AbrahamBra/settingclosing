@@ -1171,6 +1171,7 @@ export default function ClosingB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : guide complet, setter definition et m\u00e9thode LinkedIn' },
                 { href: '/ressources/methodes-vente-b2b', label: "Qu'est-ce que le Challenger Sale ?" },
                 { href: '/ressources/methodes-vente-b2b', label: 'Qualifier un lead en B2B : m\u00e9thodes et crit\u00e8res' },

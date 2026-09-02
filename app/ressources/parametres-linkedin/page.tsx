@@ -716,6 +716,7 @@ export default function ParametresLinkedInPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                   { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet' },
                   { href: '/ressources/signal-achat-linkedin', label: 'Signaux d’achat LinkedIn' },
                   { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Comment prospecter sur LinkedIn' },

@@ -45,8 +45,8 @@ const terms = [
     definition:
       "Le setting commercial est la phase de prospection qui précède le closing. Le setter identifie des prospects qualifiés, envoie des messages de prise de contact, gère les échanges jusqu'à la prise de rendez-vous, puis passe le lead au closeur. En B2B, le setting se fait principalement sur LinkedIn.",
     relatedTerms: ['setter', 'closing', 'signal-achat'],
-    articleHref: '/ressources/setting-commercial-b2b',
-    articleLabel: 'Guide complet du setting commercial B2B',
+    articleHref: '/ressources/setting-definition',
+    articleLabel: "Le setting, c'est quoi ? Définition complète",
   },
   {
     id: 'setter',
@@ -54,8 +54,8 @@ const terms = [
     definition:
       "Un setter est un commercial spécialisé dans la prospection et la prise de rendez-vous. Il ne signe pas les contrats — c'est le rôle du closeur. Son travail : identifier les prospects selon des critères précis, envoyer des messages personnalisés, qualifier les réponses et remplir l'agenda du closeur de rendez-vous pertinents.",
     relatedTerms: ['setting-commercial', 'closer', 'qualification'],
-    articleHref: '/ressources/setting-commercial-b2b',
-    articleLabel: 'Guide complet du setting commercial B2B',
+    articleHref: '/ressources/setter-b2b',
+    articleLabel: 'Setter B2B : le métier, le salaire et l’évolution',
   },
   {
     id: 'closer',

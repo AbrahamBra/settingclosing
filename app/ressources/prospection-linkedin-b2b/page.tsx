@@ -906,6 +906,7 @@ export default function ProspectionLinkedInB2BPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (définition, méthode et exemples)' },
                 { href: '/ressources/inbound-setting-linkedin', label: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV qualifiés' },
                 { href: '/ressources/signal-achat-linkedin', label: "C\u2019est quoi un signal d\u2019achat LinkedIn ?" },
