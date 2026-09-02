@@ -205,7 +205,8 @@ export default function AutomatisationProspectionLinkedInPage() {
                 Les outils fonctionnent de deux fa&ccedil;ons. Soit via une extension Chrome qui pilote ton navigateur LinkedIn en arri&egrave;re-plan (Waalaxy, Phantombuster). Soit via un serveur cloud qui se connecte &agrave; ton compte LinkedIn par cookie de session (Dripify, Expandi). La m&eacute;thode cloud est moins d&eacute;tect&eacute;e, mais les deux exposent ton compte.
               </p>
               <p className="mb-4">
-                Les volumes habituels : 100 &agrave; 200 demandes de connexion par semaine, 200 &agrave; 300 messages par semaine. LinkedIn impose une limite officielle de 200 invitations par semaine (variable selon l&apos;anciennet&eacute; du compte et le SSI). Les outils contournent ces limites, ce qui d&eacute;clenche les algorithmes de d&eacute;tection.
+                Les volumes habituels : 100 &agrave; 200 demandes de connexion par semaine, 200 &agrave; 300 messages par semaine. LinkedIn impose une limite officielle de 200 invitations par semaine (variable selon l&apos;anciennet&eacute; du compte et le SSI). Les outils contournent ces limites, ce qui d&eacute;clenche les algorithmes de d&eacute;tection. Le d&eacute;tail des sanctions et la proc&eacute;dure de d&eacute;blocage sont dans notre guide sur les{' '}
+                <a href="/ressources/restrictions-linkedin-prospection" className="text-accent hover:underline transition-colors">restrictions LinkedIn</a>.
               </p>
               <p>
                 Techniquement, ces outils marchent. Le probl&egrave;me est commercial : quand un prospect re&ccedil;oit un message g&eacute;n&eacute;rique qu&apos;il a d&eacute;j&agrave; re&ccedil;u 15 fois cette semaine, il ne r&eacute;pond pas. Et quand LinkedIn d&eacute;tecte le pattern, il restreint ton compte.

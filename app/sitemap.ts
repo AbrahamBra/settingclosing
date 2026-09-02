@@ -55,6 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: 'https://www.setting.live/ressources/restrictions-linkedin-prospection',
+      lastModified: new Date('2026-09-02'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: 'https://www.setting.live/ressources/parametres-linkedin',
       lastModified: new Date('2026-09-02'),
       changeFrequency: 'monthly',
