@@ -906,6 +906,13 @@ export default function ProspectionLinkedInB2BPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/agence-prospection-vs-setting-linkedin', label: "Agence prospection B2B vs setting externalisé" },
+                { href: '/ressources/setting-linkedin-ia', label: "Setting LinkedIn et IA : où mettre l’humain, où laisser la machine" },
+                { href: '/ressources/parametres-linkedin', label: "Paramètres LinkedIn : le guide complet" },
+                { href: '/ressources/restrictions-linkedin-prospection', label: "Restrictions LinkedIn : limites et prospection adaptée" },
+                { href: '/ressources/script-linkedin-prospection', label: "10 scripts LinkedIn de prospection B2B" },
+                { href: '/ressources/liste-prospection-linkedin-b2b', label: "Liste de prospection LinkedIn B2B : les 4 sources qui marchent" },
+                { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (définition, méthode et exemples)' },
                 { href: '/ressources/inbound-setting-linkedin', label: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV qualifiés' },

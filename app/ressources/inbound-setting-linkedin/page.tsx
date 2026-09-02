@@ -874,6 +874,11 @@ export default function InboundSettingLinkedinPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/message-linkedin-b2b', label: "Messages LinkedIn B2B qui obtiennent une réponse" },
+                { href: '/ressources/setting-linkedin-ia', label: "Setting LinkedIn et IA : où mettre l’humain, où laisser la machine" },
+                { href: '/ressources/parametres-linkedin', label: "Paramètres LinkedIn : le guide complet" },
+                { href: '/ressources/restrictions-linkedin-prospection', label: "Restrictions LinkedIn : limites et prospection adaptée" },
+                { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (d\u00e9finition et m\u00e9thode)' },
                 { href: '/ressources/signal-achat-linkedin', label: "Signal d'achat LinkedIn : comment les d\u00e9tecter" },

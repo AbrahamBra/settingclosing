@@ -322,7 +322,7 @@ export default function CommentDevenirSetterB2BPage() {
               Le setter n&apos;est pas le closeur. Il n&apos;est pas l&agrave; pour pitcher l&apos;offre dans le premier DM,
               n&eacute;gocier le prix ou g&eacute;rer les <a href="/ressources/closing-b2b" className="text-accent hover:underline transition-colors">objections</a> post-appel.
               Ces r&ocirc;les demandent des comp&eacute;tences diff&eacute;rentes. Un bon setter qui essaie de closer br&ucirc;le des leads.
-              Un bon closeur qui fait son propre <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> perd un temps qu&apos;il devrait passer &agrave; convertir.
+              Un bon closeur qui fait son propre <a href="/ressources/setting-definition" className="text-accent hover:underline transition-colors">setting</a> perd un temps qu&apos;il devrait passer &agrave; convertir.
             </p>
           </section>
 
@@ -364,7 +364,7 @@ export default function CommentDevenirSetterB2BPage() {
               Les comp&eacute;tences qui comptent pour devenir setter ou closer
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Pas le charisme. Pas la &ldquo;fibre commerciale&rdquo;. Le <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> et
+              Pas le charisme. Pas la &ldquo;fibre commerciale&rdquo;. Le <a href="/ressources/setting-definition" className="text-accent hover:underline transition-colors">setting</a> et
               le closing demandent trois choses pr&eacute;cises, et elles s&apos;apprennent toutes sur le terrain.
             </p>
 
@@ -901,7 +901,7 @@ export default function CommentDevenirSetterB2BPage() {
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Si le r&eacute;sultat est inf&eacute;rieur &agrave; 3, le programme est mal calibr&eacute; ou votre taux de
               closing est &agrave; travailler en priorit&eacute;. Si le r&eacute;sultat est sup&eacute;rieur &agrave; 5, chaque
-              euro investi dans le <a href="/setting" className="text-accent hover:underline transition-colors">setting</a> rapporte cinq fois sa valeur.
+              euro investi dans le <a href="/ressources/setting-definition" className="text-accent hover:underline transition-colors">setting</a> rapporte cinq fois sa valeur.
             </p>
 
             <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
@@ -956,6 +956,8 @@ export default function CommentDevenirSetterB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-linkedin-prix', label: "Combien coûte le setting LinkedIn" },
+                { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/closing-b2b', label: 'Closing B2B : le guide complet' },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : le guide complet' },

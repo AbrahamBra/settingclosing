@@ -204,7 +204,7 @@ export default function SignalAchatLinkedInPage() {
           {/* Header */}
           <header className="mb-12">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">
-              <a href="/setting" className="hover:underline transition-colors">Setting</a>
+              <a href="/ressources/setting-definition" className="hover:underline transition-colors">Setting</a>
             </p>
             <h1 className="font-serif text-h1 text-text-primary mb-5 leading-tight">
               C&apos;est quoi un signal d&apos;achat LinkedIn ?
@@ -490,6 +490,12 @@ export default function SignalAchatLinkedInPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/message-linkedin-b2b', label: "Messages LinkedIn B2B qui obtiennent une réponse" },
+                { href: '/ressources/setting-linkedin-ia', label: "Setting LinkedIn et IA : où mettre l’humain, où laisser la machine" },
+                { href: '/ressources/parametres-linkedin', label: "Paramètres LinkedIn : le guide complet" },
+                { href: '/ressources/restrictions-linkedin-prospection', label: "Restrictions LinkedIn : limites et prospection adaptée" },
+                { href: '/ressources/liste-prospection-linkedin-b2b', label: "Liste de prospection LinkedIn B2B : les 4 sources qui marchent" },
+                { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/methode/setting-linkedin', label: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes' },
                 { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (définition, méthode et exemples)' },

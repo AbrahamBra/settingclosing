@@ -1346,6 +1346,14 @@ export default function SettingCommercialPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/setting-linkedin-prix', label: "Combien coûte le setting LinkedIn" },
+                { href: '/ressources/message-linkedin-b2b', label: "Messages LinkedIn B2B qui obtiennent une réponse" },
+                { href: '/ressources/agence-prospection-vs-setting-linkedin', label: "Agence prospection B2B vs setting externalisé" },
+                { href: '/ressources/setting-linkedin-ia', label: "Setting LinkedIn et IA : où mettre l’humain, où laisser la machine" },
+                { href: '/ressources/parametres-linkedin', label: "Paramètres LinkedIn : le guide complet" },
+                { href: '/ressources/restrictions-linkedin-prospection', label: "Restrictions LinkedIn : limites et prospection adaptée" },
+                { href: '/ressources/liste-prospection-linkedin-b2b', label: "Liste de prospection LinkedIn B2B : les 4 sources qui marchent" },
+                { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/signal-achat-linkedin', label: "C'est quoi un signal d'achat LinkedIn ?" },
                 { href: '/ressources/comment-prospecter-sur-linkedin', label: "IA, m\u00e9thode et humain : les 3 couches d'un syst\u00e8me de setting" },
                 { href: '/ressources/prospection-linkedin-b2b', label: "Pourquoi vos messages LinkedIn n'obtiennent pas de r\u00e9ponses" },
