@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: 'https://www.setting.live',
-      lastModified: new Date('2026-03-20'),
+      lastModified: new Date('2026-09-02'),
       changeFrequency: 'monthly',
       priority: 1,
     },
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources',
-      lastModified: new Date('2026-03-20'),
+      lastModified: new Date('2026-09-02'),
       changeFrequency: 'weekly',
       priority: 0.8,
     },
@@ -107,7 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setting-definition',
-      lastModified: new Date('2026-05-24'),
+      lastModified: new Date('2026-09-02'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
@@ -213,7 +213,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setter-b2b',
-      lastModified: new Date('2026-04-01'),
+      lastModified: new Date('2026-09-02'),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
