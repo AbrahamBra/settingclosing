@@ -90,6 +90,7 @@ const pillarGuides: PillarGuide[] = [
 
 const articles: Article[] = [
   // Setting — articles standalone (non consolidés)
+  { slug: 'parametres-linkedin', title: 'Paramètres LinkedIn : le guide complet', readTime: '12 min', category: 'setting', date: '2026-09-02' },
   { slug: 'signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min', category: 'setting', date: '2026-03-17' },
   { slug: 'ia-methode-humain-setting-linkedin', title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn", readTime: '12 min', category: 'setting', date: '2026-03-17' },
   { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting', date: '2026-03-19' },

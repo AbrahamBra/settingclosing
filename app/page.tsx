@@ -65,6 +65,12 @@ const globalSchema = {
       '@type': 'ProfessionalService',
       '@id': 'https://www.setting.live/#business',
       name: 'Setting',
+      // Désambiguïsation d'entité : Setting est la marque commerciale, ChallengersLab
+      // reste l'identité historique (page LinkedIn, e-mails, Calendly). Déclarer le lien
+      // explicitement évite que les moteurs traitent les deux noms comme des entités
+      // contradictoires. Cf. GEO-AUDIT-REPORT.md § "sameAs Organisation limité".
+      alternateName: ['ChallengersLab', 'Setting LinkedIn'],
+      legalName: 'BRAKHA ABRAHAM',
       url: 'https://www.setting.live',
       logo: {
         '@type': 'ImageObject',
@@ -75,6 +81,7 @@ const globalSchema = {
       description: 'Prospection LinkedIn externalisée pour solopreneurs et fondateurs B2B. Méthode signal-based, setter dédié, IA + validation humaine.',
       sameAs: [
         'https://www.linkedin.com/company/challengerslab',
+        'https://www.challengerslab.com',
         'https://www.linkedin.com/in/abraham-brakha',
         'https://www.societe.com/societe/brakha-abraham-902889385.html',
         'https://www.pappers.fr/entreprise/brakha-abraham-902889385',

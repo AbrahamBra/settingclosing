@@ -18,6 +18,7 @@ const titles: Record<string, { title: string; category: string }> = {
   'closer-b2b': { title: 'Closer B2B : définition', category: 'Définition' },
   'difference-setting-closing': { title: 'Setting vs Closing', category: 'Comparaison' },
   'signal-achat-linkedin': { title: 'Signaux d\'achat LinkedIn', category: 'Guide' },
+  'parametres-linkedin': { title: 'Paramètres LinkedIn', category: 'Guide pratique' },
   'messages-linkedin-sans-reponse': { title: 'Messages LinkedIn sans réponse', category: 'Guide' },
   'relance-linkedin-b2b': { title: 'Relance LinkedIn B2B', category: 'Guide' },
   'ia-methode-humain-setting-linkedin': { title: 'IA + humain : setting LinkedIn', category: 'Méthode' },

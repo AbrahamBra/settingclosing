@@ -63,7 +63,7 @@ const articleSchema = {
     },
   },
   datePublished: '2026-04-12',
-  dateModified: '2026-04-23',
+  dateModified: '2026-09-02',
   inLanguage: 'fr-FR',
   url: 'https://www.setting.live/ressources/setting-linkedin',
   mainEntityOfPage: {
@@ -287,7 +287,7 @@ export default function SettingLinkedInPage() {
               Qualifier. D&eacute;crocher le RDV. Ce guide pose tout &agrave; plat : d&eacute;finition,
               m&eacute;thode en 5 &eacute;tapes, scripts, outils et erreurs &agrave; &eacute;viter.
             </p>
-            <AuthorBlock date="2026-04-12" readTime="25 min de lecture" dateLabel="12 avril 2026" />
+            <AuthorBlock date="2026-04-12" readTime="25 min de lecture" dateLabel="12 avril 2026" updatedDate="2026-09-02" />
           </header>
 
           {/* TL;DR */}
@@ -1163,6 +1163,7 @@ export default function SettingLinkedInPage() {
                   { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : scripts et exemples' },
                   { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : guide complet' },
                   { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Comment prospecter sur LinkedIn' },
+                  { href: '/ressources/parametres-linkedin', label: 'Paramètres LinkedIn : le guide complet' },
                 ].map(({ href, label }) => (
                   <a
                     key={href}

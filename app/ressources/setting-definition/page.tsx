@@ -211,7 +211,8 @@ export default function SettingDefinitionPage() {
               <strong>Qui fait quoi&nbsp;:</strong> le setter prospecte et qualifie. Le closer prend le RDV qualifié et signe.
             </p>
             <p className="tldr">
-              <strong>Où ça se passe en 2026&nbsp;:</strong> 80 % du setting B2B se fait sur LinkedIn, avec une méthode signal-based (on contacte ceux qui ont déjà montré un signe d&apos;intérêt).
+              <strong>Où ça se passe en 2026&nbsp;:</strong> 80 % du setting B2B se fait sur LinkedIn, avec une méthode signal-based (on contacte ceux qui ont déjà montré un signe d&apos;intérêt). Le détail de cette approche est dans notre guide de référence&nbsp;:{' '}
+              <a href="/ressources/setting-linkedin" className="text-accent hover:underline transition-colors">setting LinkedIn</a>.
             </p>
           </TldrBox>
 

@@ -50,9 +50,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setting-linkedin',
-      lastModified: new Date('2026-04-23'),
+      lastModified: new Date('2026-09-02'),
       changeFrequency: 'weekly',
       priority: 0.9,
+    },
+    {
+      url: 'https://www.setting.live/ressources/parametres-linkedin',
+      lastModified: new Date('2026-09-02'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
     },
     {
       url: 'https://www.setting.live/ressources/setting-linkedin-exemples',
