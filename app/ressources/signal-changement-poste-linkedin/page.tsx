@@ -212,12 +212,12 @@ export default function SignalChangementPosteLinkedInPage() {
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Un décideur qui vient d&apos;arriver n&apos;a rien signé. Il découvre un existant qu&apos;il
               n&apos;a pas choisi, et il est même attendu sur sa capacité à le remettre à plat. Changer
-              de prestataire dans ses trois premiers mois n&apos;est pas un aveu d&apos;échec, c&apos;est
-              une prise de fonction.
+              de prestataire dans ses trois premiers mois passe pour une prise de fonction,
+              pas pour un aveu d&apos;échec.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
-              C&apos;est toute la différence. Sur le même compte, avec la même offre, le même message
-              obtient une réponse polie six mois trop tard et une réunion dans la bonne fenêtre.
+              Sur le même compte, avec la même offre, le même message obtient une réponse polie
+              six mois trop tard et une réunion dans la bonne fenêtre.
             </p>
           </section>
 
@@ -227,8 +227,8 @@ export default function SignalChangementPosteLinkedInPage() {
               La fenêtre des 90 jours, et pourquoi ce n&apos;est pas la première semaine
             </h2>
             <p data-speakable="true" className="font-sans text-text-secondary leading-relaxed mb-5">
-              La bonne fenêtre se situe entre le 30<sup>e</sup> et le 90<sup>e</sup> jour. La plupart
-              des gens contactent le premier jour, ce qui est le pire moment.
+              La bonne fenêtre se situe entre le 30<sup>e</sup> et le 90<sup>e</sup> jour. Le réflexe
+              est de contacter le premier jour, au pire moment possible.
             </p>
 
             <div className="space-y-4 my-6">
@@ -246,9 +246,8 @@ export default function SignalChangementPosteLinkedInPage() {
 
             <p className="font-sans text-text-secondary leading-relaxed">
               Concrètement, cela veut dire qu&apos;un changement de poste détecté aujourd&apos;hui ne
-              se travaille pas aujourd&apos;hui. Il se note, et il se ressort dans un mois. Peu
-              d&apos;équipes ont la discipline de faire ça, ce qui explique que la fenêtre reste peu
-              encombrée alors que le signal est connu de tous.
+              se travaille pas aujourd&apos;hui. Il se note, et il se ressort dans un mois. Le signal
+              est connu de tous, la fenêtre reste pourtant peu encombrée. Tout se joue sur ce report.
             </p>
           </section>
 
@@ -260,7 +259,7 @@ export default function SignalChangementPosteLinkedInPage() {
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Sales Navigator envoie une alerte pour chaque changement de poste dans vos listes de
               prospects sauvegardées. C&apos;est la fonction la plus rentable de l&apos;abonnement,
-              et celle que la plupart des utilisateurs n&apos;activent jamais.
+              et elle n&apos;est pas activée par défaut.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Sans Sales Navigator, LinkedIn remonte l&apos;information dans les notifications, mais
@@ -296,8 +295,7 @@ export default function SignalChangementPosteLinkedInPage() {
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Ce qui fonctionne consiste à parler de ce qu&apos;il hérite, pas de ce qu&apos;il vient
-              d&apos;obtenir. La prise de poste n&apos;est pas le sujet du message, elle en est
-              seulement la raison.
+              d&apos;obtenir. La prise de poste est la raison du message, pas son sujet.
             </p>
 
             <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">
@@ -341,7 +339,8 @@ export default function SignalChangementPosteLinkedInPage() {
               Le cas le plus rentable : votre client qui change d&apos;entreprise
             </h2>
             <p data-speakable="true" className="font-sans text-text-secondary leading-relaxed mb-5">
-              C&apos;est le signal le plus fort du B2B, et celui que presque personne ne surveille.
+              Le signal le plus fort du B2B, et le plus facile à rater : il ne déclenche aucune
+              alerte si la personne n&apos;est plus dans vos listes.
               Une personne qui a travaillé avec vous et qui rejoint une autre entreprise connaît déjà
               votre travail. La preuve est faite. Vous n&apos;avez plus à vendre la confiance, seulement
               la pertinence dans le nouveau contexte.
@@ -354,8 +353,7 @@ export default function SignalChangementPosteLinkedInPage() {
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
               En pratique, cela suppose de tenir une liste de vos anciens interlocuteurs et de la
-              surveiller. C&apos;est un fichier de quelques dizaines de lignes qui produit plus que
-              des centaines de contacts froids.
+              surveiller. Quelques dizaines de lignes qui produisent plus que des centaines de contacts froids.
             </p>
           </section>
 
@@ -419,7 +417,7 @@ export default function SignalChangementPosteLinkedInPage() {
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6 max-w-xl mx-auto">
               Un changement de poste détecté aujourd&apos;hui se travaille dans un mois.
-              C&apos;est le genre de discipline qu&apos;un setter dédié tient à votre place.
+              Un setter dédié tient ce calendrier à votre place.
             </p>
             <ButtonGlow href="/tarifs">
               Voir nos tarifs

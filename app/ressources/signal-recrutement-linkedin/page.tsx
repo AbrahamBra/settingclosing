@@ -211,8 +211,8 @@ export default function SignalRecrutementLinkedInPage() {
               avant que l&apos;annonce sorte. Quand vous la lisez, la décision est déjà prise.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
-              C&apos;est ce qui distingue ce signal de tous les autres. Un like sur un post indique un
-              intérêt. Une offre d&apos;emploi indique un budget.
+              Un like sur un post indique un intérêt. Une offre d&apos;emploi indique un budget
+              validé. Les deux ne se travaillent pas pareil.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
               Elle dit aussi trois choses que le prospect ne vous dirait jamais en premier appel :
@@ -284,14 +284,14 @@ export default function SignalRecrutementLinkedInPage() {
               candidats sont en process et la douleur devient temporaire dans son esprit.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
-              Il existe une seconde fenêtre que presque personne n&apos;exploite : le moment où
+              Il existe une seconde fenêtre, moins évidente : le moment où
               l&apos;offre est republiée. Une entreprise qui remet la même annonce en ligne deux mois
               plus tard vient de vous dire qu&apos;elle n&apos;a trouvé personne. La douleur est
               redevenue aiguë, et la solution alternative devient beaucoup plus audible.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
               Surveiller les republications demande de garder un historique de vos détections.
-              C&apos;est le genre de détail qui sépare une méthode d&apos;une bonne intention.
+              Sans cet historique, une republication passe inaperçue.
             </p>
           </section>
 
@@ -329,7 +329,7 @@ export default function SignalRecrutementLinkedInPage() {
               Le message : ce qui marche et ce qui tue
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
-              L&apos;erreur quasi universelle est de traiter le recrutement comme un prétexte
+              L&apos;erreur classique est de traiter le recrutement comme un prétexte
               d&apos;accroche, puis de pivoter immédiatement vers son offre. « J&apos;ai vu que vous
               recrutiez un SDR, avez-vous pensé à externaliser ? » Le prospect lit une objection à sa
               propre décision, dans le premier message d&apos;un inconnu.
@@ -338,7 +338,7 @@ export default function SignalRecrutementLinkedInPage() {
               Ce qui fonctionne est plus lent. Vous citez un élément précis de la fiche de poste, et
               vous posez une question sur le délai ou sur l&apos;intérim. Le manager, lui, sait très
               bien qu&apos;un recrutement prend trois mois. Il se demande déjà ce qu&apos;il fait
-              d&apos;ici là. C&apos;est cette question qu&apos;il faut ouvrir, pas la vôtre.
+              d&apos;ici là. Ouvrez cette question-là, pas la vôtre.
             </p>
 
             <div className="rounded-xl border border-white/[0.06] bg-bg-secondary overflow-hidden">

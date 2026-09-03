@@ -179,8 +179,8 @@ export default function SignalLeveeDeFondsLinkedInPage() {
             </h1>
             <p data-speakable="true" className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Une levée débloque un budget et crée une obligation de le dépenser vite.
-              C&apos;est le signal le plus lisible du B2B. C&apos;est aussi le plus disputé,
-              et la plupart des gens le jouent au mauvais moment.
+              Le signal le plus lisible du B2B, et le plus disputé. La plupart des gens le
+              jouent au mauvais moment.
             </p>
             <AuthorBlock date="2026-09-03" readTime="8 min de lecture" dateLabel="3 septembre 2026" />
           </header>
@@ -216,7 +216,7 @@ export default function SignalLeveeDeFondsLinkedInPage() {
               recrutement. Le dirigeant se retrouve avec une pression nouvelle : dépenser vite et bien.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
-              C&apos;est ce renversement qui crée l&apos;opportunité, pas l&apos;argent lui-même.
+              L&apos;opportunité vient de ce renversement, pas de l&apos;argent lui-même.
               Une entreprise riche qui n&apos;a rien à prouver n&apos;achète pas plus vite.
             </p>
 
@@ -316,8 +316,8 @@ export default function SignalLeveeDeFondsLinkedInPage() {
               voient le même jour.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-5">
-              C&apos;est pour ça que le timing compte plus ici qu&apos;ailleurs. Arriver trois semaines
-              après tout le monde n&apos;est pas un retard, c&apos;est un positionnement. Vous êtes seul
+              Le timing compte donc plus ici qu&apos;ailleurs. Arriver trois semaines après tout le
+              monde n&apos;est pas un retard, c&apos;est un positionnement. Vous êtes seul
               dans une boîte de réception qui a été saturée puis vidée.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed">
