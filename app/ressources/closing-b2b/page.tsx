@@ -1171,6 +1171,7 @@ export default function ClosingB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/chiffres-prospection-b2b-2026', label: "Les chiffres de la prospection B2B en 2026" },
                 { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
                 { href: '/ressources/setting-commercial-b2b', label: 'Setting commercial B2B : guide complet, setter definition et m\u00e9thode LinkedIn' },

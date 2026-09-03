@@ -1346,6 +1346,7 @@ export default function SettingCommercialPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/chiffres-prospection-b2b-2026', label: "Les chiffres de la prospection B2B en 2026" },
                 { href: '/ressources/setting-linkedin-prix', label: "Combien coûte le setting LinkedIn" },
                 { href: '/ressources/message-linkedin-b2b', label: "Messages LinkedIn B2B qui obtiennent une réponse" },
                 { href: '/ressources/agence-prospection-vs-setting-linkedin', label: "Agence prospection B2B vs setting externalisé" },

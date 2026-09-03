@@ -1157,6 +1157,7 @@ export default function SettingLinkedInPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { href: '/ressources/chiffres-prospection-b2b-2026', label: "Les chiffres de la prospection B2B en 2026" },
                   { href: '/ressources/agence-prospection-vs-setting-linkedin', label: "Agence prospection B2B vs setting externalisé" },
                   { href: '/ressources/script-linkedin-prospection', label: "10 scripts LinkedIn de prospection B2B" },
                   { href: '/ressources/liste-prospection-linkedin-b2b', label: "Liste de prospection LinkedIn B2B : les 4 sources qui marchent" },

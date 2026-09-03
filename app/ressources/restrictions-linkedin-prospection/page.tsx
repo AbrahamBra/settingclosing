@@ -631,6 +631,7 @@ export default function RestrictionsLinkedInPage() {
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {[
+                  { href: '/ressources/chiffres-prospection-b2b-2026', label: "Les chiffres de la prospection B2B en 2026" },
                   { href: '/ressources/setting-linkedin-ia', label: "Setting LinkedIn et IA : où mettre l’humain, où laisser la machine" },
                   { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                   { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },

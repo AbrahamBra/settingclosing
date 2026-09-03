@@ -906,6 +906,7 @@ export default function ProspectionLinkedInB2BPage() {
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-5">Pour aller plus loin</p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/chiffres-prospection-b2b-2026', label: "Les chiffres de la prospection B2B en 2026" },
                 { href: '/ressources/agence-prospection-vs-setting-linkedin', label: "Agence prospection B2B vs setting externalisé" },
                 { href: '/ressources/setting-linkedin-ia', label: "Setting LinkedIn et IA : où mettre l’humain, où laisser la machine" },
                 { href: '/ressources/parametres-linkedin', label: "Paramètres LinkedIn : le guide complet" },

@@ -956,6 +956,7 @@ export default function CommentDevenirSetterB2BPage() {
             </p>
             <div className="space-y-3">
               {[
+                { href: '/ressources/chiffres-prospection-b2b-2026', label: "Les chiffres de la prospection B2B en 2026" },
                 { href: '/ressources/setting-linkedin-prix', label: "Combien coûte le setting LinkedIn" },
                 { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
