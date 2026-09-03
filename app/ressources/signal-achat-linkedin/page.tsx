@@ -513,6 +513,36 @@ export default function SignalAchatLinkedInPage() {
             </div>
           </div>
 
+          {/* Les signaux en détail */}
+          <section className="mb-14">
+            <h2 className="font-serif text-h2 text-text-primary mb-5">
+              Les signaux outbound, un par un
+            </h2>
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
+              Chaque type de signal a sa propre fenêtre de tir, son bon interlocuteur et sa façon
+              d&apos;être abordé. Traiter un recrutement comme une levée de fonds, c&apos;est arriver
+              au mauvais moment sur les deux.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                { href: '/ressources/signal-recrutement-linkedin', t: 'Le recrutement', d: 'Une déclaration publique de manque, budget déjà validé.' },
+                { href: '/ressources/signal-changement-poste-linkedin', t: 'Le changement de poste', d: 'Une fenêtre de 90 jours, et le premier jour est le pire moment.' },
+                { href: '/ressources/signal-levee-de-fonds-linkedin', t: 'La levée de fonds', d: 'Le signal le plus disputé. Arriver trois semaines après tout le monde.' },
+              ].map(({ href, t, d }) => (
+                <a
+                  key={href}
+                  href={href}
+                  className="bg-bg-secondary rounded-xl px-5 py-5 border border-white/[0.06] hover:border-accent/30 transition-colors group"
+                >
+                  <p className="font-sans font-semibold text-text-primary group-hover:text-accent transition-colors mb-2">
+                    {t}
+                  </p>
+                  <p className="font-sans text-xs text-text-secondary leading-relaxed">{d}</p>
+                </a>
+              ))}
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="bg-bg-secondary rounded-2xl p-8 border border-white/[0.06]">
             <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-3">

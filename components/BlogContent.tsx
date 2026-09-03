@@ -92,6 +92,9 @@ const articles: Article[] = [
   // Setting — articles standalone (non consolidés)
   { slug: 'restrictions-linkedin-prospection', title: 'Restrictions LinkedIn : limites, comptes bloqués et prospection adaptée', readTime: '11 min', category: 'setting', date: '2026-09-02' },
   { slug: 'parametres-linkedin', title: 'Paramètres LinkedIn : le guide complet', readTime: '12 min', category: 'setting', date: '2026-09-02' },
+  { slug: 'signal-recrutement-linkedin', title: 'Le recrutement comme signal d’achat', readTime: '8 min', category: 'setting', date: '2026-09-03' },
+  { slug: 'signal-changement-poste-linkedin', title: 'Le changement de poste comme signal d’achat', readTime: '8 min', category: 'setting', date: '2026-09-03' },
+  { slug: 'signal-levee-de-fonds-linkedin', title: 'La levée de fonds comme signal d’achat', readTime: '8 min', category: 'setting', date: '2026-09-03' },
   { slug: 'signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min', category: 'setting', date: '2026-03-17' },
   { slug: 'ia-methode-humain-setting-linkedin', title: "IA, méthode et humain : les 3 couches d'un système de setting LinkedIn", readTime: '12 min', category: 'setting', date: '2026-03-17' },
   { slug: 'setting-humain-vs-automatisation-linkedin', title: 'Setting humain vs automatisation LinkedIn : le vrai comparatif', readTime: '11 min', category: 'setting', date: '2026-03-19' },

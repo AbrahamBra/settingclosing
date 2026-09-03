@@ -100,6 +100,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ia-methode-humain-setting-linkedin — redirigé vers comment-prospecter-sur-linkedin (consolidation SEO)
     // messages-linkedin-sans-reponse — redirigé vers prospection-linkedin-b2b (consolidation SEO)
     {
+      url: 'https://www.setting.live/ressources/signal-recrutement-linkedin',
+      lastModified: new Date('2026-09-03'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/signal-changement-poste-linkedin',
+      lastModified: new Date('2026-09-03'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://www.setting.live/ressources/signal-levee-de-fonds-linkedin',
+      lastModified: new Date('2026-09-03'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: 'https://www.setting.live/ressources/signal-achat-linkedin',
       lastModified: new Date('2026-03-17'),
       changeFrequency: 'monthly',
