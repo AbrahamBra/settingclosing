@@ -12,9 +12,9 @@ import { SmartContactForm } from '@/components/SmartContactForm'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Tarif setter LinkedIn externalisé : 790 €/mois sans engagement',
+  title: 'Tarifs Setting : 790 €/mois, setup offert, sans engagement',
   description:
-    "790 € HT/mois, setup offert, sans engagement. Garantie 5 RDV qualifiés/mois ou mois suivant offert. Comparatif vs SDR interne et simulateur ROI.",
+    "Setting LinkedIn B2B : 790 € HT par mois, setup offert, sans engagement. Garantie RDV (5 RDV qualifiés/mois ou mois suivant offert). Comparatif SDR interne + simulateur ROI.",
   alternates: {
     canonical: 'https://www.setting.live/tarifs',
     languages: {
