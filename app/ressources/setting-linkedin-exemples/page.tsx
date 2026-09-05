@@ -682,7 +682,8 @@ export default function SettingLinkedInExemplesPage() {
               </h2>
               <p className="mb-4">
                 Cinq sc&eacute;narios, cinq secteurs, cinq profils. Quand on met les messages
-                c&ocirc;te &agrave; c&ocirc;te, quatre patterns reviennent.
+                c&ocirc;te &agrave; c&ocirc;te, quatre patterns reviennent. Ces messages ne sortent pas
+                de nulle part&nbsp;: ils sont le produit de <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">notre m&eacute;thode en 9 &eacute;tapes</a>.
               </p>
               <p className="mb-4">
                 Aucun message ne pitche. Z&eacute;ro mention de notre offre, z&eacute;ro lien,

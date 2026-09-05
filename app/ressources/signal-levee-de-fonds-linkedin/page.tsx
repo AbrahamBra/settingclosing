@@ -358,6 +358,9 @@ export default function SignalLeveeDeFondsLinkedInPage() {
               votre liste. C&apos;est le seul moyen de capter les levées de comptes que vous ne
               surveilliez pas encore.
             </p>
+            <p className="font-sans text-text-secondary leading-relaxed mt-5">
+              Une fois la levée détectée, le reste du travail est un enchaînement décrit dans <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">notre méthode de setting LinkedIn en 9 étapes</a>.
+            </p>
           </section>
 
           <CtaArticle variant="setting" />

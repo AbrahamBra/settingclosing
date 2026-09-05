@@ -542,6 +542,9 @@ export default function RestrictionsLinkedInPage() {
                 60 messages cibl&eacute;s &agrave; 25 % donnent 15 r&eacute;ponses,
                 et un compte tranquille. Le volume n&apos;est pas la bonne m&eacute;trique.
               </p>
+              <p className="mb-4">
+                Ce basculement du volume vers le signal est structur&eacute; &eacute;tape par &eacute;tape dans <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">notre m&eacute;thode de setting LinkedIn</a>.
+              </p>
 
               <div className="bg-bg-secondary rounded-xl p-6 my-6">
                 <p className="font-sans text-xs font-semibold uppercase tracking-widest text-accent mb-4">

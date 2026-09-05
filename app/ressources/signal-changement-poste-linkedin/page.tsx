@@ -268,6 +268,9 @@ export default function SignalChangementPosteLinkedInPage() {
               <a href="/ressources/parametres-linkedin" className="text-accent hover:underline transition-colors">garder
               vos invitations ouvertes</a> : chaque relation devient un capteur.
             </p>
+            <p className="font-sans text-text-secondary leading-relaxed mb-5">
+              Détecter le signal n&apos;est que la première étape — <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">notre méthode de setting LinkedIn</a> décrit les huit suivantes, jusqu&apos;au RDV qualifié.
+            </p>
 
             <div className="bg-bg-secondary rounded-xl px-6 py-5 border border-white/[0.06]">
               <div className="w-6 h-0.5 bg-accent mb-3 rounded-full" />

@@ -162,7 +162,7 @@ export default function ChiffresProspectionPage() {
                 Quel est le taux de r&eacute;ponse moyen en prospection LinkedIn&nbsp;?
               </h2>
               <p className="mb-6">
-                Tout d&eacute;pend de la m&eacute;thode. Le m&ecirc;me message, envoy&eacute; &agrave; 100 personnes au hasard vs. 20 personnes qui viennent de montrer un signal d&apos;achat, ne produit pas le m&ecirc;me r&eacute;sultat.
+                Tout d&eacute;pend de la m&eacute;thode. Le m&ecirc;me message, envoy&eacute; &agrave; 100 personnes au hasard vs. 20 personnes qui viennent de montrer un signal d&apos;achat, ne produit pas le m&ecirc;me r&eacute;sultat. C&apos;est tout l&apos;objet de <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">notre m&eacute;thode de setting LinkedIn en 9 &eacute;tapes</a>.
               </p>
 
               <div className="overflow-x-auto mb-6" style={{ WebkitOverflowScrolling: 'touch' }}>

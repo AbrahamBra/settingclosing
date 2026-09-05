@@ -319,7 +319,7 @@ export default function ScriptLinkedinProspectionPage() {
             <section>
               <h2 className="font-serif text-h2 text-text-primary mb-4">Les 5 scripts d&apos;ouverture LinkedIn</h2>
               <p className="font-sans text-text-secondary text-base leading-relaxed mb-2">
-                Le premier message conditionne tout. Voici 5 cadres selon le type de signal (ou son absence) disponible sur le prospect.
+                Le premier message conditionne tout. Voici 5 cadres selon le type de signal (ou son absence) disponible sur le prospect. Pour savoir d&apos;où viennent ces signaux, voir <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">notre méthode de setting LinkedIn en 9 étapes</a>.
               </p>
               {openingScripts.map((s) => <ScriptCard key={s.id} script={s} />)}
             </section>

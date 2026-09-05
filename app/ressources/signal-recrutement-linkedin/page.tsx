@@ -241,7 +241,8 @@ export default function SignalRecrutementLinkedInPage() {
               Où détecter les recrutements
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
-              Trois sources, de la plus manuelle à la plus automatisable.
+              Trois sources, de la plus manuelle à la plus automatisable. La détection n&apos;est
+              qu&apos;une étape : la suite est décrite dans <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">notre méthode de setting LinkedIn en 9 étapes</a>.
             </p>
 
             <div className="space-y-4">

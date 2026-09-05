@@ -418,9 +418,10 @@ export default function SettingLinkedInPrixPage() {
                 Prix d&apos;une agence de setting LinkedIn externalis&eacute;e
               </h2>
               <p className="mb-4">
-                Le march&eacute; des agences de setting LinkedIn a mri en 2026. Trois
+                Le march&eacute; des agences de setting LinkedIn a m&ucirc;ri en 2026. Trois
                 fourchettes se d&eacute;gagent, selon le p&eacute;rim&egrave;tre et la
-                qualit&eacute; d&apos;ex&eacute;cution.
+                qualit&eacute; d&apos;ex&eacute;cution. Ce qu&apos;on facture &agrave; ce prix,
+                c&apos;est <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">une m&eacute;thode en 9 &eacute;tapes</a>, pas un volume de messages.
               </p>
 
               <div className="grid md:grid-cols-3 gap-4 mb-6">
