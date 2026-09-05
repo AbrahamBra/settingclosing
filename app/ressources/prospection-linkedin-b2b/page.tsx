@@ -8,8 +8,8 @@ import { RelatedArticles } from '@/components/RelatedArticles'
 import { TldrBox } from '@/components/TldrBox'
 
 export const metadata: Metadata = {
-  title: "Prospection LinkedIn B2B 2026 : 20\u202f%+ de r\u00e9ponse, m\u00e9thode IA",
-  description: "M\u00e9thode signal-based + IA co-r\u00e9dactrice\u202f: on contacte uniquement les profils qui ont lev\u00e9 la main. Scripts, 15 exemples, relances. 2 \u00e0 4 RDV qualifi\u00e9s/semaine, premiers RDV en 7 jours.",
+  title: "Prospection LinkedIn B2B : le guide complet 2026 | 15 exemples",
+  description: "M\u00e9thode signal-based, scripts inbound et outbound, 15 exemples de messages et s\u00e9quences de relance. Le guide terrain de la prospection LinkedIn B2B en 2026.",
   openGraph: {
     title: "Prospection LinkedIn B2B 2026 : 20\u202f%+ de r\u00e9ponse, m\u00e9thode IA | Setting",
     description: "Signaux d'achat LinkedIn + IA + validation humaine. 15 exemples de messages, s\u00e9quence de relances, scripts inbound et outbound. 2 \u00e0 4 RDV/semaine en r\u00e9gime de croisi\u00e8re.",

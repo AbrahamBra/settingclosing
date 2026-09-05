@@ -9,9 +9,9 @@ import { DarkCard } from '@/components/ui/DarkCard'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Externaliser sa prospection LinkedIn B2B — comparatif 2026',
+  title: 'Externaliser sa prospection LinkedIn B2B : 790 € vs 50k €/an',
   description:
-    "Agence, SDR interne ou setting externalisé ? Comparatif chiffré des coûts réels (790 € vs 50k €/an) et délais. Premiers RDV en 7 jours.",
+    "Agence, SDR interne ou setting externalisé ? Comparatif chiffré des coûts réels et des délais de mise en route. Premiers RDV qualifiés en 7 jours.",
   alternates: {
     canonical: 'https://www.setting.live/externaliser-prospection-linkedin',
     languages: {

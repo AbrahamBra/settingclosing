@@ -11,7 +11,7 @@ import { telephoniqueSteps } from '@/lib/methode-telephonique-data'
 // ─── Metadata ─────────────────────────────────────────────────────────────────
 
 export const metadata: Metadata = {
-  title: 'Setting LinkedIn B2B : notre méthode complète (9 étapes) | Setting',
+  title: 'Setting LinkedIn B2B : notre méthode complète en 9 étapes',
   description:
     'Notre méthode de setting LinkedIn en 9 étapes : détection des signaux d\u2019achat, ciblage IA, messages personnalisés + qualification téléphonique BANT. Pipeline B2B complet.',
   alternates: {

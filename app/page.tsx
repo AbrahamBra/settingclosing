@@ -14,9 +14,9 @@ import { VideoBackground } from '@/components/VideoBackground'
 const CursorGlowClient = dynamic(() => import('@/components/CursorGlowClient').then(m => m.CursorGlowClient))
 
 export const metadata: Metadata = {
-  title: 'Setting LinkedIn B2B | RDV qualifiés dès la semaine 1 — Setting',
+  title: 'Setting LinkedIn B2B | RDV qualifiés dès 7 jours, 790 €/mois',
   description:
-    'Service de setting LinkedIn pour solopreneurs et fondateurs B2B : setter dédié, ciblage par signaux d\u2019achat IA, RDV qualifiés dès la première semaine. À partir de 790\u00a0€/mois.',
+    'Setter dédié + détection IA des signaux d\u2019achat. Des RDV qualifiés pour votre closer dès la première semaine. 790\u00a0€ HT/mois, sans engagement, setup offert.',
   alternates: {
     canonical: 'https://www.setting.live',
     languages: {

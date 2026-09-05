@@ -8,9 +8,9 @@ import { CtaArticle } from '@/components/CtaArticle'
 import { RelatedArticles } from '@/components/RelatedArticles'
 
 export const metadata: Metadata = {
-  title: 'Setter B2B : le m\u00e9tier, le salaire et l\u2019\u00e9volution (2026)',
+  title: 'Setter B2B : fiche m\u00e9tier, salaire et \u00e9volution (2026)',
   description:
-    'Fiche m\u00e9tier compl\u00e8te du setter B2B : missions, journ\u00e9e type, comp\u00e9tences, salaire (25-40k \u20ac), freelance ou salari\u00e9, \u00e9volution de carri\u00e8re et fiche de poste.',
+    'Missions, journ\u00e9e type, comp\u00e9tences, salaire (25-40k \u20ac), freelance ou salari\u00e9, \u00e9volution vers closer ou AE. La fiche m\u00e9tier compl\u00e8te du setter B2B.',
   openGraph: {
     title: 'Setter B2B : le guide terrain (2026)',
     description:
@@ -234,7 +234,7 @@ export default function SetterB2BPage() {
           <header className="mb-12">
             <span className="font-mono text-xs text-accent uppercase tracking-widest mb-4 block">Guide</span>
             <h1 className="font-serif text-h1 text-text-primary mb-4 leading-tight">
-              Setter B2B : le m&eacute;tier qui remplit ton pipeline
+              Setter B2B : la fiche m&eacute;tier compl&egrave;te (missions, salaire, &eacute;volution)
             </h1>
             <p className="font-sans text-text-secondary text-lg leading-relaxed max-w-2xl">
               Le setter, c&apos;est la personne qui transforme un profil LinkedIn en rendez-vous qualifi&eacute;.
