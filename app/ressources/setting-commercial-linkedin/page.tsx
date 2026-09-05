@@ -474,8 +474,7 @@ export default function SettingCommercialLinkedInPage() {
               <p className="mb-6">
                 Le setting LinkedIn n&apos;est pas pour tout le monde. Il fonctionne dans
                 des conditions pr&eacute;cises. Voici qui en tire le plus de valeur, et qui
-                devrait chercher autre chose. Si tu te reconnais dans la premi&egrave;re colonne,
-                nos <a href="/tarifs" className="text-accent hover:underline transition-colors">tarifs</a> partent de 790&nbsp;&euro; HT par mois.
+                devrait chercher autre chose.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4 mb-6">

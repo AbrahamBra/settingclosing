@@ -334,11 +334,6 @@ export default function CloserB2BPage() {
               formalise une partie de ces compétences — notamment la façon de structurer une
               perspective avant de pitcher et de tenir une posture face aux objections de prix.
             </p>
-            <p className="font-sans text-text-secondary leading-relaxed mt-6">
-              Reste qu&apos;un excellent closer ne signe rien sans agenda rempli. Remplir cet agenda,
-              c&apos;est le travail du setter en amont — un poste qu&apos;on peut internaliser ou
-              externaliser, à partir de 790 € HT par mois côté <a href="/tarifs" className="text-accent hover:underline transition-colors">setting externalisé</a>.
-            </p>
           </section>
 
           <CtaArticle variant="methode" />
