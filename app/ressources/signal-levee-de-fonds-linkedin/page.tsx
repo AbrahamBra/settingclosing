@@ -435,7 +435,7 @@ export default function SignalLeveeDeFondsLinkedInPage() {
             <RelatedArticles articles={[
               { href: '/ressources/signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min' },
               { href: '/ressources/signal-recrutement-linkedin', title: 'Le recrutement comme signal d’achat', readTime: '8 min' },
-              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : définition, méthode et exemples', readTime: '25 min' },
+              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : la méthode et des exemples', readTime: '25 min' },
             ]} />
           </div>
 

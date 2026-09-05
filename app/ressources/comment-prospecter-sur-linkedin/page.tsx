@@ -490,6 +490,10 @@ export default function CommentProspecterLinkedInPage() {
                 ))}
               </div>
 
+              <p className="mb-8">
+                Si le compte est d&eacute;j&agrave; limit&eacute;, le sujet est trait&eacute; &agrave; part dans notre guide pour <a href="/ressources/restrictions-linkedin-prospection" className="text-accent hover:underline transition-colors">adapter sa prospection aux restrictions LinkedIn</a> : quotas r&eacute;els, niveaux de sanction et proc&eacute;dure de d&eacute;blocage.
+              </p>
+
               <h3 className="font-sans font-semibold text-text-primary text-lg mb-3">Le bon usage de l&apos;automatisation</h3>
               <p className="mb-4">
                 L&apos;automatisation a sa place. Le probl&egrave;me, c&apos;est de l&apos;utiliser pour envoyer des messages. Utilis&eacute;e en amont ou en aval, elle apporte une vraie valeur.
@@ -817,7 +821,7 @@ export default function CommentProspecterLinkedInPage() {
           <RelatedArticles
             articles={[
               { href: '/ressources/signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min' },
-              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet (définition et méthode)', readTime: '18 min' },
+              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet', readTime: '18 min' },
               { href: '/ressources/inbound-setting-linkedin', title: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV', readTime: '15 min' },
             ]}
           />

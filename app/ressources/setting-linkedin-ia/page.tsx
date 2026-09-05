@@ -278,7 +278,7 @@ export default function SettingLinkedInIaPage() {
               <p>
                 Ce qui fait la diff&eacute;rence en prospection B2B, c&apos;est le
                 jugement humain sur le signal et le contexte. Le <a href="/ressources/setting-linkedin" className="text-accent hover:underline transition-colors">setting
-                LinkediIn</a> pose la m&eacute;thode : signal, contexte, message, qualif.
+                LinkedIn</a> pose la m&eacute;thode : signal, contexte, message, qualif.
                 L&apos;IA peut acc&eacute;l&eacute;rer 3 de ces 4 &eacute;tapes. Elle
                 ne peut pas les faire seule.
               </p>

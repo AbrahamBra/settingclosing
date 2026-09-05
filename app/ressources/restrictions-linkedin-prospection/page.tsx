@@ -684,7 +684,7 @@ export default function RestrictionsLinkedInPage() {
             <RelatedArticles articles={[
               { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Comment prospecter sur LinkedIn en 2026', readTime: '14 min' },
               { href: '/ressources/parametres-linkedin', title: 'Paramètres LinkedIn : le guide complet', readTime: '12 min' },
-              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : définition, méthode et exemples concrets', readTime: '25 min' },
+              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : la méthode et des exemples concrets', readTime: '25 min' },
             ]} />
           </div>
 

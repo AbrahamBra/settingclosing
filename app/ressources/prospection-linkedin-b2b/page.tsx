@@ -915,7 +915,7 @@ export default function ProspectionLinkedInB2BPage() {
                 { href: '/ressources/liste-prospection-linkedin-b2b', label: "Liste de prospection LinkedIn B2B : les 4 sources qui marchent" },
                 { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
-                { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (définition, méthode et exemples)' },
+                { href: '/ressources/setting-definition', label: "Le setting, c’est quoi ? Définition et exemples" },
                 { href: '/ressources/inbound-setting-linkedin', label: 'Inbound Setting LinkedIn : transformer l\'engagement en RDV qualifiés' },
                 { href: '/ressources/signal-achat-linkedin', label: "C\u2019est quoi un signal d\u2019achat LinkedIn ?" },
                 { href: '/ressources/comment-prospecter-sur-linkedin', label: 'Comment prospecter sur LinkedIn en 2026' },
@@ -979,7 +979,7 @@ export default function ProspectionLinkedInB2BPage() {
 <RelatedArticles articles={[
             { href: '/ressources/signal-achat-linkedin', title: "C\u2019est quoi un signal d\u2019achat LinkedIn ?", readTime: '7 min' },
             { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Comment prospecter sur LinkedIn en 2026', readTime: '12 min' },
-            { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet (définition et méthode)', readTime: '18 min' },
+            { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet', readTime: '18 min' },
           ]} />
 
         </div>

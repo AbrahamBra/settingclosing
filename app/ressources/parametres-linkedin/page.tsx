@@ -762,7 +762,7 @@ export default function ParametresLinkedInPage() {
           {/* Related articles */}
           <div className="mt-16">
             <RelatedArticles articles={[
-              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : définition, méthode et exemples concrets', readTime: '25 min' },
+              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : la méthode et des exemples concrets', readTime: '25 min' },
               { href: '/ressources/signal-achat-linkedin', title: 'Signaux d’achat LinkedIn : les repérer et les exploiter', readTime: '14 min' },
               { href: '/ressources/comment-prospecter-sur-linkedin', title: 'Comment prospecter sur LinkedIn en 2026', readTime: '18 min' },
             ]} />

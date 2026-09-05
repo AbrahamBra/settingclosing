@@ -269,7 +269,7 @@ export default function SignalRecrutementLinkedInPage() {
 
             <p className="font-sans text-text-secondary leading-relaxed mt-6">
               La détection ne vaut rien sans filtrage. Une offre publiée par une entreprise hors de votre{' '}
-              <a href="/ressources/setting-linkedin" className="text-accent hover:underline transition-colors">ICP</a>{' '}
+              <a href="/ressources/liste-prospection-linkedin-b2b" className="text-accent hover:underline transition-colors">ICP</a>{' '}
               reste une offre hors ICP. Le signal ne remplace pas le ciblage, il le priorise.
             </p>
           </section>
@@ -451,7 +451,7 @@ export default function SignalRecrutementLinkedInPage() {
           <div className="mt-16">
             <RelatedArticles articles={[
               { href: '/ressources/signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min' },
-              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : définition, méthode et exemples', readTime: '25 min' },
+              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : la méthode et des exemples', readTime: '25 min' },
               { href: '/ressources/liste-prospection-linkedin-b2b', title: 'Liste de prospection LinkedIn B2B', readTime: '12 min' },
             ]} />
           </div>

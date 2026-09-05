@@ -881,7 +881,7 @@ export default function InboundSettingLinkedinPage() {
                 { href: '/ressources/restrictions-linkedin-prospection', label: "Restrictions LinkedIn : limites et prospection adaptée" },
                 { href: '/ressources/setter-b2b', label: "Setter B2B : le métier, le salaire et l’évolution" },
                 { href: '/ressources/setting-definition', label: "Le setting, c'est quoi ? Définition complète" },
-                { href: '/ressources/setting-linkedin', label: 'Setting LinkedIn : le guide complet (d\u00e9finition et m\u00e9thode)' },
+                { href: '/ressources/setting-definition', label: "Le setting, c’est quoi ? Définition et exemples" },
                 { href: '/ressources/signal-achat-linkedin', label: "Signal d'achat LinkedIn : comment les d\u00e9tecter" },
                 { href: '/ressources/prospection-linkedin-b2b', label: 'Prospection LinkedIn B2B : scripts et exemples' },
                 { href: '/methode/setting-linkedin', label: 'La m\u00e9thode setting LinkedIn en d\u00e9tail' },
@@ -910,7 +910,7 @@ export default function InboundSettingLinkedinPage() {
           </div>
 
           <RelatedArticles articles={[
-            { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet (d\u00e9finition et m\u00e9thode)', readTime: '18 min' },
+            { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : le guide complet', readTime: '18 min' },
             { href: '/ressources/signal-achat-linkedin', title: "Signal d'achat LinkedIn : comment les d\u00e9tecter", readTime: '8 min' },
             { href: '/ressources/prospection-linkedin-b2b', title: 'Prospection LinkedIn B2B : scripts et exemples', readTime: '22 min' },
           ]} />

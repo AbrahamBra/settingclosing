@@ -431,7 +431,7 @@ export default function SignalChangementPosteLinkedInPage() {
           <div className="mt-16">
             <RelatedArticles articles={[
               { href: '/ressources/signal-achat-linkedin', title: "C'est quoi un signal d'achat LinkedIn ?", readTime: '7 min' },
-              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : définition, méthode et exemples', readTime: '25 min' },
+              { href: '/ressources/setting-linkedin', title: 'Setting LinkedIn : la méthode et des exemples', readTime: '25 min' },
               { href: '/ressources/message-linkedin-b2b', title: 'Messages LinkedIn B2B qui obtiennent une réponse', readTime: '14 min' },
             ]} />
           </div>

@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setting-commercial-b2b',
-      lastModified: new Date('2026-05-24'),
+      lastModified: new Date('2026-09-05'),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/parametres-linkedin',
-      lastModified: new Date('2026-09-02'),
+      lastModified: new Date('2026-09-05'),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
@@ -80,7 +80,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/setting-linkedin-ia',
-      lastModified: new Date('2026-04-23'),
+      lastModified: new Date('2026-09-05'),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
@@ -92,7 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/inbound-setting-linkedin',
-      lastModified: new Date('2026-04-12'),
+      lastModified: new Date('2026-09-05'),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
@@ -119,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: 'https://www.setting.live/ressources/signal-achat-linkedin',
-      lastModified: new Date('2026-03-17'),
+      lastModified: new Date('2026-09-05'),
       changeFrequency: 'monthly',
       priority: 0.7,
     },
@@ -219,7 +219,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // outils-setting-linkedin → 301 vers /externaliser-prospection-linkedin
     {
       url: 'https://www.setting.live/ressources/comment-prospecter-sur-linkedin',
-      lastModified: new Date('2026-03-26'),
+      lastModified: new Date('2026-09-05'),
       changeFrequency: 'weekly',
       priority: 0.9,
     },

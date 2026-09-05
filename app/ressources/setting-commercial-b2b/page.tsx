@@ -280,6 +280,7 @@ export default function SettingCommercialPage() {
             </h1>
             <p className="font-sans text-text-secondary text-lg leading-relaxed mb-6">
               Le setting commercial, c&apos;est tout ce qui se passe avant l&apos;appel de vente.
+              Si vous cherchez d&apos;abord <a href="/ressources/setting-definition" className="text-accent hover:underline transition-colors">ce qu&apos;est le setting, en une d&eacute;finition courte</a>, commencez par l&agrave;.
               D&eacute;tecter un signal sur LinkedIn. Lire un profil. &Eacute;crire un message qui
               d&eacute;clenche une r&eacute;ponse. Qualifier. D&eacute;crocher le cr&eacute;neau.
               Ce guide couvre la d&eacute;finition exacte, le r&ocirc;le du setter, la m&eacute;thode
