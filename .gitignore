@@ -49,3 +49,6 @@ next-env.d.ts
 .claude/settings.local.json
 .claude/worktrees/
 .superpowers/
+
+# exports Search Console (donnees locales)
+.gsc/
