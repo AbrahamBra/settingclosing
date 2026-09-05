@@ -304,6 +304,9 @@ export default function SetterB2BPage() {
               <p>
                 En volume, un setter g&egrave;re 20 &agrave; 40 messages par jour en phase active. C&apos;est peu compar&eacute; &agrave; l&apos;automatisation (200+ messages/jour). Mais c&apos;est le point : un message qui cite un post LinkedIn pr&eacute;cis du prospect obtient 10x plus de r&eacute;ponses qu&apos;un template envoy&eacute; &agrave; 500 personnes.
               </p>
+              <p>
+                Ce d&eacute;roul&eacute; n&apos;a rien d&apos;improvis&eacute;&nbsp;: c&apos;est ce que formalise notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">m&eacute;thode de setting LinkedIn en 9 &eacute;tapes</a>, de la d&eacute;tection du signal jusqu&apos;au RDV transmis au closer.
+              </p>
             </section>
 
             {/* Section 3 — Setter vs SDR vs Closer */}

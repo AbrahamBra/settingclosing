@@ -441,6 +441,9 @@ export default function SettingDefinitionPage() {
               <p className="font-sans text-text-secondary text-base leading-relaxed">
                 À l&apos;inverse, le setting est inefficace pour&nbsp;: le B2C, les marchés où LinkedIn n&apos;est pas le canal des acheteurs (artisanat local, retail), et les offres mal définies dont l&apos;ICP est flou.
               </p>
+              <p className="font-sans text-text-secondary text-base leading-relaxed mt-4">
+                Si ces trois conditions sont réunies, la question suivante est celle du coût&nbsp;: nos <a href="/tarifs" className="text-accent hover:underline transition-colors">tarifs de setting externalisé</a> partent de 790 € HT par mois, sans engagement.
+              </p>
             </section>
 
             {/* CTA mid-article */}

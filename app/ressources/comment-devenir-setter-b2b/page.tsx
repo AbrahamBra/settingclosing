@@ -324,6 +324,9 @@ export default function CommentDevenirSetterB2BPage() {
               Ces r&ocirc;les demandent des comp&eacute;tences diff&eacute;rentes. Un bon setter qui essaie de closer br&ucirc;le des leads.
               Un bon closeur qui fait son propre <a href="/ressources/setting-definition" className="text-accent hover:underline transition-colors">setting</a> perd un temps qu&apos;il devrait passer &agrave; convertir.
             </p>
+            <p className="font-sans text-text-secondary leading-relaxed mt-4">
+              Ce d&eacute;coupage des r&ocirc;les est exactement ce que structure notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">m&eacute;thode de setting LinkedIn en 9 &eacute;tapes</a>.
+            </p>
           </section>
 
           {/* ─── Section 2 : Devenir closer B2B ─── */}

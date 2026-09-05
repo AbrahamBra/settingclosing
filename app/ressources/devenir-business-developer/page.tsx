@@ -483,6 +483,9 @@ export default function DevenirBusinessDeveloperPage() {
               et les automatisations qui permettent de faire plus avec moins.
             </p>
             <p className="font-sans text-text-secondary leading-relaxed mb-4">
+              Ce travail suit un déroulé documenté, lisible en détail dans notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn en 9 étapes</a>.
+            </p>
+            <p className="font-sans text-text-secondary leading-relaxed mb-4">
               Un alternant chez nous ne fait pas du classement de dossiers. Il est intégré aux opérations
               dès le début. Il apprend à utiliser un CRM, à construire des séquences de prospection, à
               analyser les résultats d&apos;une campagne. Il voit comment l&apos;IA transforme le métier

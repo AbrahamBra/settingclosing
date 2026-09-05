@@ -361,6 +361,10 @@ export default function ClosingB2BPage() {
             </div>
 
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
+              Ces leads qualifi&eacute;s ne tombent pas du ciel&nbsp;: quelqu&apos;un doit les produire en amont.
+              C&apos;est le travail du setter, qui peut s&apos;externaliser &agrave; partir de 790&nbsp;&euro; HT par mois — voir nos <a href="/tarifs" className="text-accent hover:underline transition-colors">tarifs</a>.
+            </p>
+            <p className="font-sans text-text-secondary leading-relaxed mb-6">
               Ce que fait concr&egrave;tement un closer B2B sur un appel :
             </p>
             <ul className="space-y-3 mb-8">

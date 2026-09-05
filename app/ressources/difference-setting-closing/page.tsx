@@ -363,7 +363,8 @@ export default function DifferenceSettingClosingPage() {
             </h2>
             <p className="font-sans text-text-secondary leading-relaxed mb-6">
               La plupart des solopreneurs font les deux eux-mêmes sans s&apos;en rendre compte.
-              Ce mélange crée 3 problèmes structurels.
+              Ce mélange crée 3 problèmes structurels. Séparer les deux suppose un déroulé
+              explicite pour la partie amont — c&apos;est l&apos;objet de notre <a href="/methode/setting-linkedin" className="text-accent hover:underline transition-colors">méthode de setting LinkedIn en 9 étapes</a>.
             </p>
             <div className="space-y-4">
               {mistakeItems.map((item, i) => (
